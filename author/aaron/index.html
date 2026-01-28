@@ -7,9 +7,9 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="True" name="HandheldFriendly"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link as="style" href="/assets/built/screen.css?v=55a3bf375b" rel="preload"/>
-<link as="script" href="/assets/built/casper.js?v=55a3bf375b" rel="preload"/>
-<link href="/assets/built/screen.css?v=55a3bf375b" rel="stylesheet" type="text/css"/>
+<link as="style" href="/assets/built/screen.css?v=fde11de744" rel="preload"/>
+<link as="script" href="/assets/built/casper.js?v=fde11de744" rel="preload"/>
+<link href="/assets/built/screen.css?v=fde11de744" rel="stylesheet" type="text/css"/>
 <link href="https://aaronevans.ca/author/aaron/" rel="canonical"/>
 <meta content="no-referrer-when-downgrade" name="referrer"/>
 <meta content="Aaron Evans" property="og:site_name"/>
@@ -35,8 +35,51 @@
 <link href="https://aaronevans.ca/rss/" rel="alternate" title="Aaron Evans" type="application/rss+xml"/>
 <script crossorigin="anonymous" data-key="2bbbc4cb6727d2f21a13f2b212" data-locale="en" data-sodo-search="https://aaronevans.ca/" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/main.css" defer="" src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/sodo-search.min.js"></script>
 <link href="https://aaronevans.ca/webmentions/receive/" rel="webmention"/>
-<script defer="" src="/public/cards.min.js?v=55a3bf375b"></script><style>:root {--ghost-accent-color: #546e7a;}</style>
-<link href="/public/cards.min.css?v=55a3bf375b" rel="stylesheet" type="text/css"/>
+<script defer="" src="/public/cards.min.js?v=fde11de744"></script><style>:root {--ghost-accent-color: #546e7a;}</style>
+<link href="/public/cards.min.css?v=fde11de744" rel="stylesheet" type="text/css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<style>
+  /* 1. Hide the Search Bar Icon */
+  /* This targets the most common Ghost search button classes */
+  .gh-search, 
+  button[data-ghost-search], 
+  .gh-head-search { 
+      display: none !important; 
+  }
+
+  /* 2. Style your new social icons */
+  .social-icons-wrapper {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      margin-left: 10px;
+  }
+  
+  .social-icon {
+      font-size: 3rem;
+      color: inherit;
+      transition: opacity 0.2s ease;
+  }
+
+  .social-icon:hover {
+      opacity: 0.7;
+  }
+</style>
+<style>
+  /* Fix for cutoff tables on mobile */
+  .gh-content table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  /* Optional: Add a subtle border or padding to make it look cleaner */
+  .gh-content table {
+      border-collapse: collapse;
+      margin-bottom: 1.5em;
+  }
+</style>
 <style>
     /* ================================================================= */
     /* 1. BACKGROUND (Dots = 25% Opacity)                                */
@@ -122,72 +165,77 @@
         font-family: 'Consolas', 'Monaco', monospace;
     }
 
-    /* ================================================================= */
-    /* 5. TABLES (NUCLEAR FIX: High Specificity)                         */
+   /* ================================================================= */
+    /* 5. TABLES (RESPONSIVE & SAFE)                                     */
     /* ================================================================= */
     
-    /* A. The Wrapper - Force full expansion */
+    /* A. The Wrapper - Safe container */
     body .table-wrapper, body .kg-table-card {
-        background: transparent !important;   
-        box-shadow: none !important;          
-        border: none !important;
-        margin: 40px auto !important;         
-        padding: 0 !important;
-        width: 100% !important;
         display: block !important;
-        overflow: visible !important; /* Lets table grow out of scroll area */
+        width: 100% !important;
+        overflow-x: auto !important; /* Allow scroll ONLY if needed */
+        margin: 40px auto !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
     }
 
-    /* B. The Table Itself */
+    /* B. The Table - Desktop First (The "Good" Desktop Look) */
     .gh-content table {
         width: 100% !important;
-        background-color: #ffffff !important; 
+        /* 'auto' allows columns to widen so text isn't cut off on desktop */
+        table-layout: auto !important; 
         border-collapse: collapse !important;
-        border: 1px solid #e5e7eb !important;
+        border: 1px solid #e5e7eb !important; /* Your grey border */
         border-radius: 8px !important;
-        overflow: hidden !important;
-        table-layout: fixed !important;       
-        margin: 0 auto !important;            
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 0.9rem;
+        background-color: #ffffff !important;
+        margin: 0 !important;
     }
 
-    /* C. Headers */
+    /* C. The Mobile Trigger (The "Fix") */
+    /* This ONLY applies to screens smaller than 800px */
+    @media (max-width: 800px) {
+        .gh-content table {
+            /* Forces table to be wider than the phone screen, triggering scroll */
+            min-width: 600px !important; 
+        }
+    }
+
+    /* D. Headers */
     .gh-content table thead th {
         background-color: #f4f6f8 !important;
         color: #374151 !important;
-        font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
-        font-size: 0.75rem; padding: 12px 15px !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        padding: 12px 15px !important;
         border-bottom: 2px solid #e5e7eb !important;
-        text-align: center !important; /* Force Center */
+        text-align: center !important;
+        white-space: nowrap; /* Keeps headers clean on one line */
     }
 
-    /* D. Rows & Cells */
-    .gh-content table tbody tr { background-color: #ffffff !important; }
+    /* E. Rows & Cells */
     .gh-content table tbody td {
-        background-color: transparent !important; 
+        background-color: transparent !important;
         padding: 12px 15px !important;
         border-bottom: 1px solid #f3f4f6 !important;
-        color: #1f2937; vertical-align: middle;
-        text-align: center !important; /* Force Center */
+        color: #1f2937;
+        vertical-align: middle;
+        text-align: center !important;
     }
 
-    /* E. Zebra Striping */
+    /* F. Zebra Striping */
     .gh-content table tbody tr:nth-of-type(even) {
-        background-color: #fcfcfc !important; 
+        background-color: #fcfcfc !important;
     }
 
-    /* F. KILL SCROLL HINTS (THE FIX) */
-    /* We use body and #main to be 'stronger' than the theme's CSS */
-    body .table-wrapper::after, body .table-wrapper::before,
-    body .kg-table-card::after, body .kg-table-card::before,
-    #main .table-wrapper::after, #main .table-wrapper::before { 
-        display: none !important; 
+    /* G. THE "WHITE BORDER" KILLER */
+    /* This ensures those white gradients/shadows never come back */
+    .table-wrapper::after, .table-wrapper::before,
+    .kg-table-card::after, .kg-table-card::before { 
+        display: none !important;
         content: none !important;
-        width: 0 !important;
-        height: 0 !important;
         background: none !important;
-        opacity: 0 !important;
     }
 </style>
 </head>
@@ -205,7 +253,6 @@
 <nav class="gh-head-menu">
 <ul class="nav">
 <li class="nav-home"><a href="https://aaronevans.ca/">Home</a></li>
-<li class="nav-about"><a href="https://aaronevans.ca/about/">About</a></li>
 <li class="nav-resume"><a href="https://aaronevans.ca/resume/">Resume</a></li>
 </ul>
 </nav>
@@ -246,7 +293,7 @@
 </header>
 <div class="post-card-excerpt">Two summers ago, I scavenged materials to build a last-minute trailer hitch for a mountain biking trip. Although it was functional and lasted, whenever we hit a large bump, the bike rack would swing backwards.
 
-To gain more insight into why my hitch was having issues, I first developed a</div>
+To figure out what was wrong, I wrote a MATLAB script then did a more</div>
 </a>
 <footer class="post-card-meta">
 <time class="post-card-meta-date" datetime="2026-01-10">10 Jan 2026</time>
@@ -265,6 +312,9 @@ To gain more insight into why my hitch was having issues, I first developed a</d
 <div class="inner">
 <section class="copyright"><a href="https://aaronevans.ca">Aaron Evans</a> © 2026</section>
 <nav class="site-footer-nav">
+<ul class="nav">
+<li class="nav-test"><a href="https://aaronevans.ca/">test</a></li>
+</ul>
 </nav>
 <div class="gh-powered-by"><a href="https://ghost.org/" rel="noopener" target="_blank">Powered by Ghost</a></div>
 </div>
@@ -272,7 +322,7 @@ To gain more insight into why my hitch was having issues, I first developed a</d
 </div>
 <script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="https://code.jquery.com/jquery-3.5.1.min.js">
 </script>
-<script src="/assets/built/casper.js?v=55a3bf375b"></script>
+<script src="/assets/built/casper.js?v=fde11de744"></script>
 <script>
 $(document).ready(function () {
     // Mobile Menu Trigger
@@ -295,6 +345,26 @@ $(document).ready(function () {
             body.classList.remove('scrolled-nav');
         }
     });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // We look for the navigation container (usually .gh-head-actions or .gh-head-menu)
+    const navContainer = document.querySelector('.gh-head-actions') || document.querySelector('.gh-head-menu');
+    
+    if (navContainer) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'social-icons-wrapper';
+        wrapper.innerHTML = `
+            <a href="https://www.linkedin.com/in/aevans-eng/" target="_blank" class="social-icon">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/aevans-eng" target="_blank" class="social-icon">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        `;
+        navContainer.appendChild(wrapper);
+    }
+});
 </script>
 </body>
 </html>
