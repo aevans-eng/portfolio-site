@@ -210,6 +210,14 @@
   }
   .back-link:hover { color: var(--green); }
 
+  /* ===== WHY/HOW/WHAT LABELS ===== */
+  .whw-label {
+    font-family: var(--mono); font-size: 13px; font-weight: 700;
+    color: var(--green); text-transform: uppercase; letter-spacing: 0.06em;
+    margin: 20px 0 6px;
+  }
+  .whw-label:first-child { margin-top: 0; }
+
   /* ===== RESPONSIVE ===== */
   @media (max-width: 1060px) {
     .project-layout { grid-template-columns: 1fr; }
@@ -261,14 +269,15 @@
       <div class="sidebar-subtitle">3D-printed planetary gearbox for backdrivable robotic actuators</div>
 
       <ul class="sidebar-nav">
-        <li><a href="#overview"><span class="nav-num">00</span> Overview</a></li>
-        <li><a href="#trade-studies"><span class="nav-num">01</span> Trade Studies</a></li>
-        <li><a href="#catia"><span class="nav-num">02</span> CATIA V6</a></li>
-        <li><a href="#tolerancing"><span class="nav-num">03</span> Tolerancing</a></li>
-        <li><a href="#prototype"><span class="nav-num">04</span> Prototype</a></li>
-        <li><a href="#testing"><span class="nav-num">05</span> Testing</a></li>
-        <li><a href="#gdt" class="coming-soon"><span class="nav-num">06</span> GD&amp;T</a></li>
-        <li><a href="#controls" class="coming-soon"><span class="nav-num">07</span> Controls</a></li>
+        <li><a href="#motivation"><span class="nav-num">00</span> Motivation</a></li>
+        <li><a href="#overview"><span class="nav-num">01</span> Overview</a></li>
+        <li><a href="#trade-studies"><span class="nav-num">02</span> Trade Studies</a></li>
+        <li><a href="#catia"><span class="nav-num">03</span> CATIA V6</a></li>
+        <li><a href="#tolerancing"><span class="nav-num">04</span> Tolerancing</a></li>
+        <li><a href="#prototype"><span class="nav-num">05</span> Prototype</a></li>
+        <li><a href="#testing"><span class="nav-num">06</span> Testing</a></li>
+        <li><a href="#gdt" class="coming-soon"><span class="nav-num">07</span> GD&amp;T</a></li>
+        <li><a href="#controls" class="coming-soon"><span class="nav-num">08</span> Controls</a></li>
       </ul>
 
       <div class="sidebar-specs">
@@ -288,10 +297,36 @@
 
       <a href="/preview/" class="back-link">&larr; Back to all projects</a>
 
+      <!-- MOTIVATION -->
+      <section class="content-section" id="motivation">
+        <div class="content-section-header">
+          <span class="cs-number">00</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Context</div>
+            <h2 class="cs-title">Motivation</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p class="whw-label">Why</p>
+          <p>January 2026, hackathon day. I'd been studying mechanical engineering for three years but hadn't designed a complete electromechanical system — let alone touched CATIA or followed a V-model development process. I wanted to fix that gap by building the kind of actuator used in Tesla Optimus and modern legged robots: a quasi-direct-drive.</p>
+
+          <p class="whw-label">How</p>
+          <p>Structured engineering process from day one. Requirements defined before any CAD existed. Trade studies scored quantitatively. Interfaces locked before detail design started. Every decision traces back to a spec.</p>
+
+          <p class="whw-label">What</p>
+          <p>A 5:1 FDM 3D-printed planetary gearbox with a BLDC motor, magnetic encoder, and ODrive controller — designed for transparency (backdrivable, low friction, minimal backlash). The full project covers requirements, trade studies, CATIA assembly design, prototyping, and iterative testing.</p>
+        </div>
+
+        <div class="callout">
+          <strong>Collaboration:</strong> This project started as a hackathon day co-run with <a href="https://www.linkedin.com/in/russell-bilinski/" target="_blank">Russell Bilinski</a> (previous Tesla Optimus intern), who provides equipment, parts, and ongoing mentorship. Gear profiles are generated using Caden Kraft's <a href="https://github.com/russlib/HackathonActuator" target="_blank">pygeartrain</a> library. All CAD, mechanical design, prototyping, and testing are my own work.
+        </div>
+      </section>
+
       <!-- OVERVIEW -->
       <section class="content-section" id="overview">
         <div class="content-section-header">
-          <span class="cs-number">00</span>
+          <span class="cs-number">01</span>
           <div class="cs-titles">
             <div class="cs-tag">Project</div>
             <h2 class="cs-title">Overview</h2>
@@ -325,7 +360,7 @@
         </table>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Current Status</h3>
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Project Status</h3>
         <div class="timeline-strip">
           <span class="tl-step done">Design</span><span class="tl-arrow">&rarr;</span>
           <span class="tl-step done">CAD</span><span class="tl-arrow">&rarr;</span>
@@ -340,7 +375,7 @@
       <!-- TRADE STUDIES -->
       <section class="content-section" id="trade-studies">
         <div class="content-section-header">
-          <span class="cs-number">01</span>
+          <span class="cs-number">02</span>
           <div class="cs-titles">
             <div class="cs-tag">Design</div>
             <h2 class="cs-title">Weighted Trade Studies</h2>
@@ -397,7 +432,7 @@
       <!-- CATIA V6 -->
       <section class="content-section" id="catia">
         <div class="content-section-header">
-          <span class="cs-number">02</span>
+          <span class="cs-number">03</span>
           <div class="cs-titles">
             <div class="cs-tag">CAD</div>
             <h2 class="cs-title">Skeleton-Driven CATIA V6</h2>
@@ -441,7 +476,7 @@
       <!-- TOLERANCING -->
       <section class="content-section" id="tolerancing">
         <div class="content-section-header">
-          <span class="cs-number">03</span>
+          <span class="cs-number">04</span>
           <div class="cs-titles">
             <div class="cs-tag">Manufacturing</div>
             <h2 class="cs-title">FDM Tolerancing &amp; Calibration</h2>
@@ -494,7 +529,7 @@
       <!-- PROTOTYPE -->
       <section class="content-section" id="prototype">
         <div class="content-section-header">
-          <span class="cs-number">04</span>
+          <span class="cs-number">05</span>
           <div class="cs-titles">
             <div class="cs-tag">Prototype</div>
             <h2 class="cs-title">Rev 00A Build</h2>
@@ -537,7 +572,7 @@
       <!-- TESTING -->
       <section class="content-section" id="testing">
         <div class="content-section-header">
-          <span class="cs-number">05</span>
+          <span class="cs-number">06</span>
           <div class="cs-titles">
             <div class="cs-tag">Validation</div>
             <h2 class="cs-title">Structured Testing &amp; Rev 00B</h2>
@@ -604,7 +639,7 @@
       <!-- GD&T PLACEHOLDER -->
       <section class="content-section" id="gdt">
         <div class="content-section-header">
-          <span class="cs-number">06</span>
+          <span class="cs-number">07</span>
           <div class="cs-titles">
             <div class="cs-tag">Coming Soon</div>
             <h2 class="cs-title">GD&amp;T &amp; Engineering Drawings</h2>
@@ -619,7 +654,7 @@
       <!-- CONTROLS PLACEHOLDER -->
       <section class="content-section" id="controls">
         <div class="content-section-header">
-          <span class="cs-number">07</span>
+          <span class="cs-number">08</span>
           <div class="cs-titles">
             <div class="cs-tag">Coming Soon</div>
             <h2 class="cs-title">Controls &amp; Motor Integration</h2>
