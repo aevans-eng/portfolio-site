@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QDD Gearbox Actuator — Aaron Evans</title>
+<link rel="icon" type="image/png" href="../assets/favicon-32.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+  /* ===== PROJECT PAGE LAYOUT ===== */
+  .project-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 0;
+    min-height: calc(100vh - 120px);
+  }
+
+  /* ===== SIDEBAR ===== */
+  .sidebar {
+    position: sticky; top: 0; height: 100vh;
+    padding: 32px 24px 32px 0;
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+  }
+  .sidebar-title {
+    font-family: var(--serif); font-size: 18px; font-weight: 600;
+    margin-bottom: 4px; letter-spacing: -0.01em;
+  }
+  .sidebar-subtitle {
+    font-size: 11px; color: var(--text-light); margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .sidebar-phase {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--mono); font-size: 9px; font-weight: 600;
+    color: var(--green); text-transform: uppercase; letter-spacing: 0.04em;
+    margin-bottom: 20px;
+  }
+  .sidebar-phase .pulse-dot { width: 5px; height: 5px; }
+
+  .sidebar-nav { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .sidebar-nav a {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 12px; border-radius: 4px;
+    text-decoration: none; color: var(--text-mid);
+    font-size: 13px; font-weight: 500;
+    transition: all 0.15s;
+  }
+  .sidebar-nav a:hover { background: var(--green-bg); color: var(--text); }
+  .sidebar-nav a.active {
+    background: var(--green-bg); color: var(--green);
+    font-weight: 600; border-left: 2px solid var(--green);
+    padding-left: 10px;
+  }
+  .sidebar-nav .nav-num {
+    font-family: var(--mono); font-size: 10px;
+    color: var(--text-faint); width: 18px; flex-shrink: 0;
+  }
+  .sidebar-nav a.active .nav-num { color: var(--green); }
+  .sidebar-nav a.coming-soon { color: var(--text-faint); font-style: italic; }
+  .sidebar-nav a.coming-soon:hover { background: none; cursor: default; }
+
+  .sidebar-specs {
+    margin-top: 24px; padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .sidebar-specs .section-label { margin: 0 0 8px; }
+  .sidebar-spec-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 3px 0; font-size: 11px;
+  }
+  .sidebar-spec-row .ssl { color: var(--text-light); }
+  .sidebar-spec-row .ssv { font-family: var(--mono); font-weight: 600; color: var(--green); }
+
+  /* ===== CONTENT AREA ===== */
+  .content {
+    padding: 32px 0 64px 48px;
+    max-width: 820px;
+  }
+
+  .content-section {
+    margin-bottom: 64px;
+    scroll-margin-top: 24px;
+  }
+
+  .content-section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 20px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .cs-number {
+    font-family: var(--mono); font-size: 12px; font-weight: 700;
+    color: var(--green); background: var(--green-bg);
+    border: 1px solid var(--green-border);
+    width: 28px; height: 28px; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .cs-titles { flex: 1; }
+  .cs-tag {
+    font-family: var(--mono); font-size: 9px; font-weight: 600;
+    color: var(--text-light); text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .cs-title {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .content-body { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+  .content-body p { margin-bottom: 12px; }
+  .content-body strong { color: var(--text); font-weight: 600; }
+
+  /* Full-width tables in content */
+  .content-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 12px; margin: 16px 0;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 4px; overflow: hidden;
+  }
+  .content-table th {
+    text-align: left; padding: 8px 12px;
+    background: rgba(0,0,0,0.02);
+    font-family: var(--mono); font-size: 10px; font-weight: 600;
+    color: var(--text-light); text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--border);
+  }
+  .content-table td {
+    padding: 8px 12px; color: var(--text-mid);
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+  }
+  .content-table tr.winner td { color: var(--green); font-weight: 600; }
+  .content-table .mono { font-family: var(--mono); }
+  .content-table .pass { color: var(--green); font-weight: 600; }
+
+  /* Content images */
+  .content-img {
+    width: 100%; border-radius: 4px;
+    border: 1px solid var(--border); margin: 16px 0;
+    background: #1a1a1a;
+  }
+  .content-img-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    margin: 16px 0;
+  }
+  .content-img-row img {
+    width: 100%; border-radius: 4px;
+    border: 1px solid var(--border); background: #1a1a1a;
+  }
+  .img-caption {
+    font-size: 11px; color: var(--text-light);
+    font-style: italic; margin-top: 4px;
+  }
+
+  /* Content bar chart — wider version */
+  .content-bar-chart { margin: 20px 0; }
+  .content-bar-chart .bar-label { width: 100px; font-size: 12px; }
+  .content-bar-chart .bar-track { height: 24px; }
+  .content-bar-chart .bar-val { font-size: 11px; }
+
+  /* Callout box */
+  .callout {
+    background: var(--green-bg); border: 1px solid var(--green-border);
+    border-radius: 4px; padding: 14px 16px; margin: 16px 0;
+    font-size: 13px; color: var(--text-mid); line-height: 1.6;
+  }
+  .callout strong { color: var(--green); }
+
+  /* Assembly tree visual */
+  .tree-block {
+    background: #1a1a1a; color: #ccc; border-radius: 4px;
+    padding: 16px 20px; margin: 16px 0;
+    font-family: var(--mono); font-size: 12px; line-height: 1.8;
+    border: 1px solid var(--border); overflow-x: auto;
+  }
+  .tree-block .tree-highlight { color: var(--green-light); font-weight: 600; }
+  .tree-block .tree-dim { color: #666; }
+
+  /* Timeline */
+  .timeline-strip {
+    display: flex; align-items: center; gap: 4px;
+    flex-wrap: wrap; margin: 16px 0;
+  }
+  .tl-step {
+    display: flex; align-items: center; gap: 6px;
+    padding: 4px 10px; border-radius: 3px;
+    font-size: 11px; font-weight: 500;
+  }
+  .tl-step.done { background: rgba(74,103,65,0.08); color: var(--green); }
+  .tl-step.current { background: var(--green); color: #fff; font-weight: 600; }
+  .tl-step.future { background: rgba(0,0,0,0.03); color: var(--text-faint); }
+  .tl-arrow { color: var(--text-faint); font-size: 10px; }
+
+  /* Placeholder section */
+  .placeholder-section {
+    border: 2px dashed var(--border); border-radius: 6px;
+    padding: 32px; text-align: center; color: var(--text-faint);
+  }
+  .placeholder-section h3 {
+    font-family: var(--serif); font-size: 18px;
+    margin-bottom: 6px; color: var(--text-light);
+  }
+  .placeholder-section p { font-size: 13px; }
+
+  /* Back link */
+  .back-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12px; color: var(--text-light); text-decoration: none;
+    margin-bottom: 24px; transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--green); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1060px) {
+    .project-layout { grid-template-columns: 1fr; }
+    .sidebar {
+      position: relative; height: auto;
+      border-right: none; border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .sidebar-nav { flex-direction: row; flex-wrap: wrap; gap: 4px; }
+    .sidebar-nav a { padding: 6px 10px; font-size: 12px; }
+    .sidebar-nav .nav-num { display: none; }
+    .sidebar-specs { display: none; }
+    .content { padding: 32px 0; }
+  }
+  @media (max-width: 600px) {
+    .cs-title { font-size: 18px; }
+    .content-img-row { grid-template-columns: 1fr; }
+    .content-section-header { gap: 8px; }
+    .tree-block { font-size: 11px; padding: 12px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-identity">
+    <a href="/preview/" class="nav-name">Aaron Evans</a>
+    <span class="nav-tagline">Mechanical Engineering &middot; University of Victoria</span>
+  </div>
+  <div class="nav-right">
+    <a href="/preview/" class="nav-link active">Projects</a>
+    <a href="/preview/about/" class="nav-link">About</a>
+    <a href="/preview/resume/" class="nav-link">Resume</a>
+    <div class="nav-divider"></div>
+    <a href="https://www.linkedin.com/in/aaron-evans-eng/" class="nav-icon" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="https://github.com/aevans-eng" class="nav-icon" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+  </div>
+</nav>
+
+<div class="container">
+  <hr class="nav-rule">
+
+  <div class="project-layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-phase"><span class="pulse-dot"></span> Rev 00B in progress</div>
+      <div class="sidebar-title">QDD Gearbox Actuator</div>
+      <div class="sidebar-subtitle">3D-printed planetary gearbox for backdrivable robotic actuators</div>
+
+      <ul class="sidebar-nav">
+        <li><a href="#overview"><span class="nav-num">00</span> Overview</a></li>
+        <li><a href="#trade-studies"><span class="nav-num">01</span> Trade Studies</a></li>
+        <li><a href="#catia"><span class="nav-num">02</span> CATIA V6</a></li>
+        <li><a href="#tolerancing"><span class="nav-num">03</span> Tolerancing</a></li>
+        <li><a href="#prototype"><span class="nav-num">04</span> Prototype</a></li>
+        <li><a href="#testing"><span class="nav-num">05</span> Testing</a></li>
+        <li><a href="#gdt" class="coming-soon"><span class="nav-num">06</span> GD&amp;T</a></li>
+        <li><a href="#controls" class="coming-soon"><span class="nav-num">07</span> Controls</a></li>
+      </ul>
+
+      <div class="sidebar-specs">
+        <div class="section-label">Specs</div>
+        <div class="sidebar-spec-row"><span class="ssl">Ratio</span><span class="ssv">5:1</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Peak torque</span><span class="ssv">16 Nm</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Backlash</span><span class="ssv">&le;0.5&deg;</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Budget</span><span class="ssv">&lt;$120</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Efficiency</span><span class="ssv">&gt;90%</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Manufacturing</span><span class="ssv">FDM</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Printer</span><span class="ssv">Bambu P1S</span></div>
+      </div>
+    </aside>
+
+    <!-- ===== CONTENT ===== -->
+    <main class="content">
+
+      <a href="/preview/" class="back-link">&larr; Back to all projects</a>
+
+      <!-- OVERVIEW -->
+      <section class="content-section" id="overview">
+        <div class="content-section-header">
+          <span class="cs-number">00</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Project</div>
+            <h2 class="cs-title">Overview</h2>
+          </div>
+        </div>
+
+        <img class="content-img" src="images/full-assembly-cross-section.png" alt="QDD Gearbox — full assembly cross-section">
+
+        <div class="content-body">
+          <p>A quasi-direct-drive (QDD) actuator built around a 5:1 FDM 3D-printed planetary gearbox, interfacing with a BLDC motor, magnetic encoder, and ODrive controller. The defining property of a QDD is <strong>transparency</strong>: the gearbox must be backdrivable with low friction and minimal backlash, so the motor can feel and respond to external forces.</p>
+
+          <p>QDD actuators are the standard in legged robots and collaborative arms (e.g., Tesla Optimus). I designed this one from scratch to build end-to-end actuator design experience, from requirements through testing.</p>
+        </div>
+
+        <div class="callout">
+          <strong>Key insight:</strong> The #1 failure mode in student robotics is not the gearbox itself, but how it attaches to the motor or how the magnet attaches to the shaft. So I prioritized interface definition from the start.
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Design Requirements</h3>
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>ID</th><th>Requirement</th><th>Target</th><th>Type</th></tr>
+          <tr><td class="mono">R-01</td><td>Backlash</td><td class="mono">&le; 0.5&deg;</td><td>Hard</td></tr>
+          <tr><td class="mono">R-02</td><td>Cost</td><td class="mono">&lt; $120 CAD</td><td>Hard</td></tr>
+          <tr><td class="mono">R-04</td><td>Backdrivability</td><td class="mono">&lt; 1 Nm friction</td><td>Hard</td></tr>
+          <tr><td class="mono">R-06</td><td>Peak torque</td><td class="mono">&ge; 16 Nm</td><td>Hard</td></tr>
+          <tr><td class="mono">R-07</td><td>Continuous torque</td><td class="mono">&ge; 12 Nm</td><td>Hard</td></tr>
+          <tr><td class="mono">R-09</td><td>Efficiency</td><td class="mono">&gt; 90%</td><td>Soft</td></tr>
+          <tr><td class="mono">R-10</td><td>Weight</td><td class="mono">&lt; 2 kg</td><td>Soft</td></tr>
+          <tr><td class="mono">R-11</td><td>Speed</td><td class="mono">&ge; 600 RPM</td><td>Soft</td></tr>
+        </table>
+        </div>
+
+        <div class="timeline-strip">
+          <span class="tl-step done">Design</span><span class="tl-arrow">&rarr;</span>
+          <span class="tl-step done">CAD</span><span class="tl-arrow">&rarr;</span>
+          <span class="tl-step done">Calibration</span><span class="tl-arrow">&rarr;</span>
+          <span class="tl-step done">Rev 00A</span><span class="tl-arrow">&rarr;</span>
+          <span class="tl-step current">Rev 00B</span><span class="tl-arrow">&rarr;</span>
+          <span class="tl-step future">GD&amp;T</span><span class="tl-arrow">&rarr;</span>
+          <span class="tl-step future">Controls</span>
+        </div>
+      </section>
+
+      <!-- TRADE STUDIES -->
+      <section class="content-section" id="trade-studies">
+        <div class="content-section-header">
+          <span class="cs-number">01</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Design</div>
+            <h2 class="cs-title">Weighted Trade Studies</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>I followed a structured sprint: quantifiable requirements, concept research, weighted Pugh matrices, interface definition, then detailed CAD with DFM built in.</p>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Gear Type Selection</h3>
+        <div class="content-body"><p>6 gear concepts scored across 7 weighted criteria. Planetary won on cost, printability, and backdrivability.</p></div>
+
+        <div class="bar-chart content-bar-chart" id="trade-bars-page">
+          <div class="bar-row"><span class="bar-label">Planetary</span><div class="bar-track"><div class="bar-fill winner-bar" data-width="88"><span class="bar-val">4.40</span></div></div></div>
+          <div class="bar-row"><span class="bar-label">Sequential</span><div class="bar-track"><div class="bar-fill" data-width="81"><span class="bar-val">4.05</span></div></div></div>
+          <div class="bar-row"><span class="bar-label">Drive Belt</span><div class="bar-track"><div class="bar-fill" data-width="80"><span class="bar-val">3.98</span></div></div></div>
+          <div class="bar-row"><span class="bar-label">Cycloidal</span><div class="bar-track"><div class="bar-fill" data-width="75"><span class="bar-val">3.73</span></div></div></div>
+          <div class="bar-row"><span class="bar-label">Capstan</span><div class="bar-track"><div class="bar-fill" data-width="73"><span class="bar-val">3.65</span></div></div></div>
+          <div class="bar-row"><span class="bar-label">Strain Wave</span><div class="bar-track"><div class="bar-fill" data-width="73"><span class="bar-val">3.65</span></div></div></div>
+        </div>
+
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Metric (Weight)</th><th>Planetary</th><th>Cycloidal</th><th>Belt</th><th>Capstan</th><th>Strain Wave</th><th>Sequential</th></tr>
+          <tr class="winner"><td>Cheapness (0.20)</td><td class="mono">5</td><td class="mono">3</td><td class="mono">3.5</td><td class="mono">4</td><td class="mono">3.5</td><td class="mono">4.5</td></tr>
+          <tr><td>Transparency (0.15)</td><td class="mono">4</td><td class="mono">3.5</td><td class="mono">5</td><td class="mono">4</td><td class="mono">3</td><td class="mono">4</td></tr>
+          <tr><td>Torque Density (0.10)</td><td class="mono">4</td><td class="mono">4</td><td class="mono">3</td><td class="mono">3</td><td class="mono">5</td><td class="mono">2</td></tr>
+          <tr><td>Precision (0.15)</td><td class="mono">4</td><td class="mono">5</td><td class="mono">3.5</td><td class="mono">3</td><td class="mono">5</td><td class="mono">4</td></tr>
+          <tr><td>DFM/DFA (0.15)</td><td class="mono">4</td><td class="mono">3</td><td class="mono">4</td><td class="mono">3</td><td class="mono">3</td><td class="mono">4</td></tr>
+          <tr><td>Efficiency (0.10)</td><td class="mono">4.5</td><td class="mono">4</td><td class="mono">5</td><td class="mono">4.5</td><td class="mono">3.5</td><td class="mono">4</td></tr>
+          <tr><td>Durability (0.15)</td><td class="mono">5</td><td class="mono">4</td><td class="mono">4</td><td class="mono">4</td><td class="mono">3</td><td class="mono">5</td></tr>
+          <tr class="winner"><td><strong>Weighted Total</strong></td><td class="mono"><strong>4.40</strong></td><td class="mono">3.73</td><td class="mono">3.98</td><td class="mono">3.65</td><td class="mono">3.65</td><td class="mono">4.05</td></tr>
+        </table>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Ratio Selection</h3>
+        <div class="content-body">
+          <p>5:1 won at 4.83/5, the best compromise between transparency and torque multiplication. Scored across transparency (0.15), torque density (0.20), and durability (0.20).</p>
+        </div>
+        <div class="bar-chart content-bar-chart">
+          <div class="bar-row"><span class="bar-label">5:1</span><div class="bar-track"><div class="bar-fill winner-bar" data-width="97"><span class="bar-val">4.83</span></div></div></div>
+          <div class="bar-row"><span class="bar-label">4:1</span><div class="bar-track"><div class="bar-fill" data-width="96"><span class="bar-val">4.80</span></div></div></div>
+          <div class="bar-row"><span class="bar-label">6:1</span><div class="bar-track"><div class="bar-fill" data-width="92"><span class="bar-val">4.60</span></div></div></div>
+          <div class="bar-row"><span class="bar-label">7:1</span><div class="bar-track"><div class="bar-fill" data-width="91"><span class="bar-val">4.53</span></div></div></div>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Bearing Selection</h3>
+        <div class="content-body">
+          <p>Ball bearings won at 4.05/5. Cost weighted at 60% to reflect prototype budget constraint ($120). Crossed rollers scored higher on performance but cost 5x more.</p>
+        </div>
+      </section>
+
+      <!-- CATIA V6 -->
+      <section class="content-section" id="catia">
+        <div class="content-section-header">
+          <span class="cs-number">02</span>
+          <div class="cs-titles">
+            <div class="cs-tag">CAD</div>
+            <h2 class="cs-title">Skeleton-Driven CATIA V6</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>The entire assembly is skeleton-driven: a master skeleton part contains all parameters, reference planes, and axes. Individual parts read from the skeleton via formulas and publications. They never reference each other directly. Changing a skeleton parameter propagates to every downstream part automatically.</p>
+          <p>I learned CATIA V6 (3DEXPERIENCE) from scratch for this project. Roughly <strong>60-80 hours</strong> of self-directed learning and modeling.</p>
+        </div>
+
+        <img class="content-img" src="images/master-assembly-tree.png" alt="CATIA master assembly tree">
+        <div class="img-caption">Master assembly tree showing skeleton-driven sub-assemblies</div>
+
+        <div class="callout">
+          <strong>Core principles:</strong> Parts constrain to skeleton, never to each other. No B-Rep references; sketch on planes, reference wireframe. Body-level patterning over feature-level. Placeholder gears as geometric contracts.
+        </div>
+
+        <img class="content-img" src="images/catia-tree-diagram.png" alt="CATIA assembly tree structure — skeleton-driven hierarchy">
+
+        <div class="content-body">
+          <p><strong>Chain-of-zeros positioning:</strong> Skeleton at (0,0,0) &rarr; sub-assembly constrained to skeleton midplane &rarr; parts constrained to sub-assembly origin. Geometry pastes without offsets.</p>
+          <p><strong>Cutting bodies</strong> for bearing pockets and bolt holes reference only skeleton datums, so they survive STEP swaps and revision changes.</p>
+        </div>
+
+        <img class="content-img" src="images/master-assembly-with-gears.png" alt="Master assembly with real cycloidal tooth geometry">
+        <div class="img-caption">Master assembly cross-section with real cycloidal tooth geometry</div>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/before-after.png" alt="Early model vs current parametric design">
+            <div class="img-caption">Early learning model vs. current parametric design</div>
+          </div>
+          <div>
+            <img src="images/carrier-assembly-tree.png" alt="Carrier sub-assembly tree">
+            <div class="img-caption">Carrier sub-assembly with cutting bodies</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOLERANCING -->
+      <section class="content-section" id="tolerancing">
+        <div class="content-section-header">
+          <span class="cs-number">03</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Manufacturing</div>
+            <h2 class="cs-title">FDM Tolerancing &amp; Calibration</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>Standard ISO fit designations describe the <em>intent</em>, what the joint should behave like. FDM-specific offsets approximate those fits. Every bearing interface uses a separate named offset parameter in the skeleton, keeping nominal bearing dimensions pure.</p>
+        </div>
+
+        <div class="callout">
+          <strong>Fit philosophy:</strong> All bearing interfaces target a finger-press transition fit. Firm finger pressure seats the bearing, it clicks in and doesn't fall out. FDM surface texture provides grip, and backdrivability is the priority.
+        </div>
+
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Interface</th><th>Offset Parameter</th><th>Value</th><th>Status</th></tr>
+          <tr><td>Housing bearing shaft</td><td class="mono">main_bearing_shaft_offset</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
+          <tr><td>Carrier bearing bore</td><td class="mono">carrier_bearing_bore_offset</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
+          <tr><td>Lid bearing bore</td><td class="mono">lid_bearing_bore_offset</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
+          <tr><td>Carrier output shaft</td><td class="mono">carrier_shaft_offset</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
+          <tr><td>Planet bearing bore</td><td class="mono">planet_bearing_offset</td><td class="mono">+0.15 mm</td><td>Pending</td></tr>
+          <tr><td>Ring-to-housing bore</td><td class="mono">ring_housing_diam_offset</td><td class="mono">+0.30 mm</td><td>Applied</td></tr>
+        </table>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Calibration Coupon Method</h3>
+        <div class="content-body">
+          <p>Before the full build, I printed a test coupon with representative features. I measured each with calipers and compared to nominal, then fed the results directly back into CATIA skeleton offsets.</p>
+        </div>
+
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Feature</th><th>Nominal</th><th>Measured</th><th>Deviation</th><th>Result</th></tr>
+          <tr><td>Main bearing bore</td><td class="mono">37.10 mm</td><td class="mono">37.10 mm</td><td class="mono">0.00</td><td class="pass">Perfect fit</td></tr>
+          <tr><td>Bearing shaft post</td><td class="mono">25.10 mm</td><td class="mono">25.01 mm</td><td class="mono">-0.09</td><td class="pass">Correct</td></tr>
+          <tr><td>Planet bore</td><td class="mono">14.00 mm</td><td class="mono">13.75 mm</td><td class="mono">-0.25</td><td>Offset increased</td></tr>
+          <tr><td>M3 clearance holes</td><td class="mono">3.40 mm</td><td class="mono">~3.00 mm</td><td class="mono">-0.40</td><td>Offset extrapolated</td></tr>
+        </table>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">DFM Lessons</h3>
+        <div class="content-body">
+          <p><strong>Heat-set inserts:</strong> Model pilot hole at insert OD, not generic tables (those assume injection molding). Plate-press technique for flush seating.</p>
+          <p><strong>Self-tapping validated:</strong> M3: 2.6mm, M4: 3.6mm, M5: 4.6mm pilots. Simpler than heat inserts for prototyping.</p>
+          <p><strong>Print orientation:</strong> Critical bores vertical for roundness. Gear teeth printed flat. Carrier orientation creates a conflict: output shaft up gives good top bearing surface but bad planet bearing shoulders.</p>
+        </div>
+      </section>
+
+      <!-- PROTOTYPE -->
+      <section class="content-section" id="prototype">
+        <div class="content-section-header">
+          <span class="cs-number">04</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Prototype</div>
+            <h2 class="cs-title">Rev 00A Build</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>I printed the first complete prototype on a Bambu P1S in PLA with off-the-shelf ball bearings, then assembled and hand-tested everything to validate fits, find issues, and calibrate offsets for the next revision.</p>
+        </div>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/cad-assembly.png" alt="CAD assembly">
+            <div class="img-caption">CATIA master assembly</div>
+          </div>
+          <div class="placeholder-slot" style="aspect-ratio:4/3; border-radius:4px;">
+            <span class="ph-icon">&#128247;</span>
+            <span class="ph-text">Prototype photo</span>
+          </div>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Fit Results</h3>
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Interface</th><th>Result</th><th>Action</th></tr>
+          <tr><td>Housing main bearing</td><td>Slightly too loose</td><td class="mono">Offset adjusted</td></tr>
+          <tr><td>Lid-to-bearing</td><td class="pass">Good transition fit</td><td class="mono">No change</td></tr>
+          <tr><td>Planet bearings</td><td>Inconsistent (1 of 3 loose)</td><td class="mono">Tolerance review</td></tr>
+          <tr><td>M3 motor holes</td><td>0.13mm too tight</td><td class="mono">Bore enlarged</td></tr>
+          <tr><td>Sun gear bore</td><td>Very tight, needed pressing</td><td class="mono">10.05 &rarr; 10.075mm</td></tr>
+        </table>
+        </div>
+
+        <div class="content-body">
+          <p><strong>Reprints:</strong> I reprinted the bottom carrier shell and housing body with adjusted offsets. Abandoned heat inserts in favor of self-tapping threads. Updated 4 skeleton offset parameters.</p>
+          <p><strong>Issues identified:</strong> I flagged 5 concerns for structured testing: lid drag, gear mesh feel, carrier shoulder deformation, indexing play, and bolt torque sensitivity.</p>
+        </div>
+      </section>
+
+      <!-- TESTING -->
+      <section class="content-section" id="testing">
+        <div class="content-section-header">
+          <span class="cs-number">05</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Validation</div>
+            <h2 class="cs-title">Structured Testing &amp; Rev 00B</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>I set up testing so every unknown traces back to a requirement and a specific test. Each one is categorized by risk &times; uncertainty, and I define the question and acceptance criteria <em>before</em> running anything.</p>
+        </div>
+
+        <div class="callout">
+          <strong>Dependency map:</strong> Component &rarr; Interface &rarr; Subsystem &rarr; System. Tests resolve bottom-up. 10 unknowns mapped to 11 requirements (R-01 through R-11), 5 completed tests on Rev 00A.
+        </div>
+
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Test</th><th>Question</th><th>Finding</th><th>Decision</th></tr>
+          <tr>
+            <td><strong>T-001</strong></td>
+            <td>Why does the gearbox feel notchy?</td>
+            <td>Herringbone misalignment on at least one planet</td>
+            <td class="mono">Switch to spur gears</td>
+          </tr>
+          <tr>
+            <td><strong>T-002</strong></td>
+            <td>Is the lid over-constraining the carrier?</td>
+            <td>Yes — double-constrains via ring gear + bearing recess</td>
+            <td class="mono">Decouple lid constraints</td>
+          </tr>
+          <tr>
+            <td><strong>T-003</strong></td>
+            <td>Does the printed shoulder deform?</td>
+            <td>Top carrier shoulders have print quality issues</td>
+            <td class="mono">New print strategy</td>
+          </tr>
+          <tr>
+            <td><strong>T-004</strong></td>
+            <td>Can carrier halves clock under load?</td>
+            <td>Play exists but no operational clocking force</td>
+            <td class="pass">No change needed</td>
+          </tr>
+          <tr>
+            <td><strong>T-005</strong></td>
+            <td>Does tightening bolts bind planets?</td>
+            <td>Narrow window — 1.1 Nm causes drag</td>
+            <td class="mono">Shoulder redesign</td>
+          </tr>
+        </table>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Rev 00B Scoped Changes</h3>
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Change</th><th>Source</th><th>Part</th></tr>
+          <tr><td>Switch herringbone &rarr; spur gears</td><td class="mono">T-001</td><td>All gears</td></tr>
+          <tr><td>Enlarge output shaft + larger top bearing</td><td class="mono">T-001, U-07</td><td>Carrier top</td></tr>
+          <tr><td>Fix planet bearing shoulder print quality</td><td class="mono">T-003, T-005</td><td>Carrier top/bottom</td></tr>
+          <tr><td>Decouple lid constraint</td><td class="mono">T-002</td><td>Lid</td></tr>
+          <tr><td>Thread into plastic (no heat inserts)</td><td class="mono">T-001</td><td>Carrier</td></tr>
+        </table>
+        </div>
+      </section>
+
+      <!-- GD&T PLACEHOLDER -->
+      <section class="content-section" id="gdt">
+        <div class="content-section-header">
+          <span class="cs-number">06</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Coming Soon</div>
+            <h2 class="cs-title">GD&amp;T &amp; Engineering Drawings</h2>
+          </div>
+        </div>
+        <div class="placeholder-section">
+          <h3>In Progress</h3>
+          <p>Formal tolerance callouts, datum schemes, and tolerance stack-up analysis. Coming after Rev 00B validation.</p>
+        </div>
+      </section>
+
+      <!-- CONTROLS PLACEHOLDER -->
+      <section class="content-section" id="controls">
+        <div class="content-section-header">
+          <span class="cs-number">07</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Coming Soon</div>
+            <h2 class="cs-title">Controls &amp; Motor Integration</h2>
+          </div>
+        </div>
+        <div class="placeholder-section">
+          <h3>Planned</h3>
+          <p>ODrive S1 integration, impedance control, backdrivability measurement, and torque capacity verification.</p>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <span>&copy; 2026 Aaron Evans</span>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/aaron-evans-eng/" class="footer-link"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+          <a href="https://github.com/aevans-eng" class="footer-link"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</a>
+          <a href="mailto:aaronevans.eng@outlook.com" class="footer-link"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg> Email</a>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<script>
+// Scroll-spy for sidebar
+const sections = document.querySelectorAll('.content-section');
+const navLinks = document.querySelectorAll('.sidebar-nav a:not(.coming-soon)');
+
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+
+sections.forEach(section => scrollObserver.observe(section));
+
+// Animate bars when they come into view
+const barObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+        const w = bar.dataset.width;
+        bar.style.width = '0%';
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => { bar.style.width = w + '%'; });
+        });
+      });
+      barObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.bar-chart').forEach(chart => barObserver.observe(chart));
+
+// Smooth scroll for sidebar links
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+
+</body>
+</html>

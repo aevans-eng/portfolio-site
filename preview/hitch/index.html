@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Torsion-Optimized Hitch — Aaron Evans</title>
+<link rel="icon" type="image/png" href="../assets/favicon-32.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+  /* ===== PROJECT PAGE LAYOUT ===== */
+  .project-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 0;
+    min-height: calc(100vh - 120px);
+  }
+
+  /* ===== SIDEBAR ===== */
+  .sidebar {
+    position: sticky; top: 0; height: 100vh;
+    padding: 32px 24px 32px 0;
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+  }
+  .sidebar-title {
+    font-family: var(--serif); font-size: 18px; font-weight: 600;
+    margin-bottom: 4px; letter-spacing: -0.01em;
+  }
+  .sidebar-subtitle {
+    font-size: 11px; color: var(--text-light); margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .sidebar-phase {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--mono); font-size: 9px; font-weight: 600;
+    color: var(--green); text-transform: uppercase; letter-spacing: 0.04em;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-nav { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .sidebar-nav a {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 12px; border-radius: 4px;
+    text-decoration: none; color: var(--text-mid);
+    font-size: 13px; font-weight: 500;
+    transition: all 0.15s;
+  }
+  .sidebar-nav a:hover { background: var(--green-bg); color: var(--text); }
+  .sidebar-nav a.active {
+    background: var(--green-bg); color: var(--green);
+    font-weight: 600; border-left: 2px solid var(--green);
+    padding-left: 10px;
+  }
+  .sidebar-nav .nav-num {
+    font-family: var(--mono); font-size: 10px;
+    color: var(--text-faint); width: 18px; flex-shrink: 0;
+  }
+  .sidebar-nav a.active .nav-num { color: var(--green); }
+
+  .sidebar-specs {
+    margin-top: 24px; padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .sidebar-specs .section-label { margin: 0 0 8px; }
+  .sidebar-spec-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 3px 0; font-size: 11px;
+  }
+  .sidebar-spec-row .ssl { color: var(--text-light); }
+  .sidebar-spec-row .ssv { font-family: var(--mono); font-weight: 600; color: var(--green); }
+
+  /* ===== CONTENT AREA ===== */
+  .content {
+    padding: 32px 0 64px 48px;
+    max-width: 820px;
+  }
+
+  .content-section {
+    margin-bottom: 64px;
+    scroll-margin-top: 24px;
+  }
+
+  .content-section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 20px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .cs-number {
+    font-family: var(--mono); font-size: 12px; font-weight: 700;
+    color: var(--green); background: var(--green-bg);
+    border: 1px solid var(--green-border);
+    width: 28px; height: 28px; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .cs-titles { flex: 1; }
+  .cs-tag {
+    font-family: var(--mono); font-size: 9px; font-weight: 600;
+    color: var(--text-light); text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .cs-title {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .content-body { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+  .content-body p { margin-bottom: 12px; }
+  .content-body strong { color: var(--text); font-weight: 600; }
+
+  .content-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 12px; margin: 16px 0;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 4px; overflow: hidden;
+  }
+  .content-table th {
+    text-align: left; padding: 8px 12px;
+    background: rgba(0,0,0,0.02);
+    font-family: var(--mono); font-size: 10px; font-weight: 600;
+    color: var(--text-light); text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--border);
+  }
+  .content-table td {
+    padding: 8px 12px; color: var(--text-mid);
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+  }
+  .content-table tr.winner td { color: var(--green); font-weight: 600; }
+  .content-table .mono { font-family: var(--mono); }
+  .content-table .pass { color: var(--green); font-weight: 600; }
+
+  .content-img {
+    width: 100%; border-radius: 4px;
+    border: 1px solid var(--border); margin: 16px 0;
+  }
+  .content-img-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    margin: 16px 0;
+  }
+  .content-img-row img {
+    width: 100%; border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .content-img-trio {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;
+    margin: 16px 0;
+  }
+  .content-img-trio img {
+    width: 100%; border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .img-caption {
+    font-size: 11px; color: var(--text-light);
+    font-style: italic; margin-top: 4px;
+  }
+
+  .callout {
+    background: var(--green-bg); border: 1px solid var(--green-border);
+    border-radius: 4px; padding: 14px 16px; margin: 16px 0;
+    font-size: 13px; color: var(--text-mid); line-height: 1.6;
+  }
+  .callout strong { color: var(--green); }
+
+  .equation-img {
+    display: block; max-width: 400px; margin: 16px auto;
+    border-radius: 4px; border: 1px solid var(--border);
+  }
+
+  .result-block {
+    background: #1a1a1a; color: #ccc; border-radius: 4px;
+    padding: 16px 20px; margin: 16px 0;
+    font-family: var(--mono); font-size: 11px; line-height: 1.7;
+    border: 1px solid var(--border); overflow-x: auto;
+    white-space: pre;
+  }
+  .result-highlight { color: var(--green-light); font-weight: 600; }
+
+  .methodology-steps {
+    display: flex; flex-direction: column; gap: 8px;
+    margin: 16px 0;
+  }
+  .method-step {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 10px 14px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 4px; font-size: 13px;
+  }
+  .method-num {
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    color: var(--green); background: var(--green-bg);
+    border: 1px solid var(--green-border);
+    width: 24px; height: 24px; border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .method-text { color: var(--text-mid); line-height: 1.5; }
+  .method-text strong { color: var(--text); }
+
+  .back-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12px; color: var(--text-light); text-decoration: none;
+    margin-bottom: 24px; transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--green); }
+
+  .gif-container {
+    margin: 20px 0; text-align: center;
+  }
+  .gif-container img {
+    max-width: 100%; border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1060px) {
+    .project-layout { grid-template-columns: 1fr; }
+    .sidebar {
+      position: relative; height: auto;
+      border-right: none; border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .sidebar-nav { flex-direction: row; flex-wrap: wrap; gap: 4px; }
+    .sidebar-nav a { padding: 6px 10px; font-size: 12px; }
+    .sidebar-nav .nav-num { display: none; }
+    .sidebar-specs { display: none; }
+    .content { padding: 32px 0; }
+  }
+  @media (max-width: 600px) {
+    .cs-title { font-size: 18px; }
+    .content-img-row { grid-template-columns: 1fr; }
+    .content-img-trio { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-identity">
+    <a href="/preview/" class="nav-name">Aaron Evans</a>
+    <span class="nav-tagline">Mechanical Engineering &middot; University of Victoria</span>
+  </div>
+  <div class="nav-right">
+    <a href="/preview/" class="nav-link active">Projects</a>
+    <a href="/preview/about/" class="nav-link">About</a>
+    <a href="/preview/resume/" class="nav-link">Resume</a>
+    <div class="nav-divider"></div>
+    <a href="https://www.linkedin.com/in/aaron-evans-eng/" class="nav-icon" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="https://github.com/aevans-eng" class="nav-icon" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+  </div>
+</nav>
+
+<div class="container">
+  <hr class="nav-rule">
+
+  <div class="project-layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-phase">Complete</div>
+      <div class="sidebar-title">Torsion-Optimized High-Clearance Hitch</div>
+      <div class="sidebar-subtitle">First-principles analysis, MATLAB parametric modeling, and FEA validation</div>
+
+      <ul class="sidebar-nav">
+        <li><a href="#why"><span class="nav-num">00</span> Why</a></li>
+        <li><a href="#approach"><span class="nav-num">01</span> Approach</a></li>
+        <li><a href="#v1"><span class="nav-num">02</span> V1 Prototype</a></li>
+        <li><a href="#analysis"><span class="nav-num">03</span> Analysis</a></li>
+        <li><a href="#solution"><span class="nav-num">04</span> V2 Solution</a></li>
+        <li><a href="#validation"><span class="nav-num">05</span> FEA Validation</a></li>
+      </ul>
+
+      <div class="sidebar-specs">
+        <div class="section-label">Results</div>
+        <div class="sidebar-spec-row"><span class="ssl">Deflection reduction</span><span class="ssv">31%</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Avg. FoS (4G)</span><span class="ssv">2.7</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">MATLAB vs FEA</span><span class="ssv">8.9%</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Torsion contribution</span><span class="ssv">94%</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">V1 cost</span><span class="ssv">~$50</span></div>
+      </div>
+    </aside>
+
+    <!-- ===== CONTENT ===== -->
+    <main class="content">
+
+      <a href="/preview/" class="back-link">&larr; Back to all projects</a>
+
+      <!-- WHY -->
+      <section class="content-section" id="why">
+        <div class="content-section-header">
+          <span class="cs-number">00</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Context</div>
+            <h2 class="cs-title">Why</h2>
+          </div>
+        </div>
+
+        <img class="content-img" src="images/cover.png" alt="Torsion-optimized high-clearance hitch">
+
+        <div class="content-body">
+          <p>I built a trailer hitch from scrap for a mountain biking trip. $50 budget, tight timeline, marketplace donor hitch cut and rewelded to fit. It worked, but on rough terrain the bike rack would swing backwards on every big bump.</p>
+
+          <p>I wanted to figure out why and fix it properly. The goal was to minimize angular deflection using first-principles analysis, without over-complicating the design, while maintaining a 2.0 FoS under a 4G dynamic bump scenario.</p>
+        </div>
+
+        <div class="callout">
+          <strong>Result:</strong> V2 reduced tip deflection by 31%, maintained an average 2.7 FoS at critical nodes under 4G loading. MATLAB predictions matched FEA within 8.9% for V1, confirming the hand-calc model before committing to geometry changes.
+        </div>
+      </section>
+
+      <!-- APPROACH -->
+      <section class="content-section" id="approach">
+        <div class="content-section-header">
+          <span class="cs-number">01</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Methodology</div>
+            <h2 class="cs-title">Approach</h2>
+          </div>
+        </div>
+
+        <div class="methodology-steps">
+          <div class="method-step">
+            <span class="method-num">1</span>
+            <div class="method-text"><strong>Isolate the problem.</strong> Identify which component in the load path is driving deflection. Treat side plates as rigid (justified by stiffness ratio), focus on receiver + crossbar.</div>
+          </div>
+          <div class="method-step">
+            <span class="method-num">2</span>
+            <div class="method-text"><strong>Build a parametric MATLAB model.</strong> Cantilever beam for the receiver, Bredt's thin-wall torsion for the crossbar. Quick feedback on geometry changes before committing to FEA.</div>
+          </div>
+          <div class="method-step">
+            <span class="method-num">3</span>
+            <div class="method-text"><strong>Analyze the governing equation.</strong> Find which variable gives the best stiffness-per-dollar. Midline area has a squared relationship; wall thickness is linear.</div>
+          </div>
+          <div class="method-step">
+            <span class="method-num">4</span>
+            <div class="method-text"><strong>Check the failure point.</strong> Weld stress at the receiver-to-crossbar joint using Norton's line-weld method. V1 showed 0.95 FoS under 4G. Reinforcement required.</div>
+          </div>
+          <div class="method-step">
+            <span class="method-num">5</span>
+            <div class="method-text"><strong>Validate with FEA.</strong> Compare V1 and V2 results against MATLAB predictions. Check full assembly under 4G loading with gusset reinforcement.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- V1 PROTOTYPE -->
+      <section class="content-section" id="v1">
+        <div class="content-section-header">
+          <span class="cs-number">02</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Prototype</div>
+            <h2 class="cs-title">V1 Prototype</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>Market options cost around $500 and reduced departure angle. I salvaged a free donor hitch from marketplace, cut it down, and rewelded it to fit with the tow bar that came with the vehicle.</p>
+        </div>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/v1-prototype-2.png" alt="V1 hitch fabrication">
+            <div class="img-caption">Donor hitch cut and adapted</div>
+          </div>
+          <div>
+            <img src="images/v1-prototype-3.png" alt="V1 hitch mounted">
+            <div class="img-caption">Mounted on vehicle</div>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>It lasted the 4-day trip, but there was visible angular deflection on rougher terrain. The bike rack would swing backwards going over bumps, especially cross-ditches. It didn't fail, but the movement was concerning enough to investigate.</p>
+        </div>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/v1-field-test.png" alt="V1 field test">
+            <div class="img-caption">Field test setup</div>
+          </div>
+          <div>
+            <img src="images/v1-prototype-1.png" alt="V1 overview">
+            <div class="img-caption">V1 hitch overview</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANALYSIS -->
+      <section class="content-section" id="analysis">
+        <div class="content-section-header">
+          <span class="cs-number">03</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Analysis</div>
+            <h2 class="cs-title">First-Principles Modeling</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>The first question was which component was actually causing the deflection. I isolated the receiver and crossbar assembly, treating the side plates as rigid fixed supports.</p>
+
+          <p>The justification: the side plates are vertically oriented with a high area moment of inertia relative to the load, and there are two of them sharing the load. In a series mechanical system, deflection concentrates in the most compliant component. The crossbar is the softest spring in the chain.</p>
+        </div>
+
+        <img class="content-img" src="images/receiver-diagram.png" alt="V1 receiver and crossbar free body diagram" style="max-width: 500px;">
+        <div class="img-caption">V1 receiver and crossbar assembly model</div>
+
+        <div class="content-body">
+          <p>I modeled the receiver tube as a cantilever beam and the crossbar as a non-circular shaft in torsion using Bredt's thin-wall formula. The MATLAB script is parametric so I could change any dimension and immediately see the effect on deflection.</p>
+
+          <p>The analysis confirmed what I suspected: torsion in the crossbar accounted for 94% of the vertical deflection at the tip. Bending in the receiver was almost irrelevant.</p>
+        </div>
+
+        <div class="callout">
+          <strong>94% of deflection was torsion.</strong> The crossbar was twisting, not the receiver bending. This told me exactly where to focus the geometry change.
+        </div>
+
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Parameter</th><th>V1 Value</th><th>Notes</th></tr>
+          <tr><td>Crossbar section</td><td class="mono">2.0" x 2.0" x 0.25" wall</td><td>Original salvaged tube</td></tr>
+          <tr><td>Static tip deflection</td><td class="mono">0.0175"</td><td>180 lb load at COG</td></tr>
+          <tr><td>Tip angle (twist + bend)</td><td class="mono">0.21&deg;</td><td>Torsion dominant</td></tr>
+          <tr><td>Deflection from twist</td><td class="mono">0.0164"</td><td>94% of total</td></tr>
+          <tr><td>Deflection from bending</td><td class="mono">0.0011"</td><td>6% of total</td></tr>
+        </table>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Governing Equation</h3>
+        <div class="content-body">
+          <p>To find the most efficient stiffness increase, I looked at the angle of twist equation. Torque, length, and material are all constrained. The only lever is the polar moment of inertia, J.</p>
+        </div>
+
+        <img class="equation-img" src="images/angle-of-twist-equation.png" alt="Angle of twist equation">
+
+        <div class="content-body">
+          <p>Using Bredt's formula for J of a thin-walled closed section: wall thickness t has a linear relationship with stiffness, but midline area A<sub>m</sub> is squared. Upsizing from 2.0" to 2.5" square tube gave a 52.6% theoretical stiffness gain without needing custom materials or complicated fabrication.</p>
+        </div>
+
+        <img class="equation-img" src="images/polar-moment-formula.png" alt="Polar moment of inertia - Bredt's formula">
+      </section>
+
+      <!-- V2 SOLUTION -->
+      <section class="content-section" id="solution">
+        <div class="content-section-header">
+          <span class="cs-number">04</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Design</div>
+            <h2 class="cs-title">V2 Solution</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>Before committing to the crossbar upsize, I checked the weld at the receiver-to-crossbar joint. This is where failure would happen first.</p>
+        </div>
+
+        <img class="content-img" src="images/critical-weld-location.png" alt="Critical weld location" style="max-width: 500px;">
+        <div class="img-caption">Critical weld location at receiver-to-crossbar joint</div>
+
+        <div class="content-body">
+          <p>I used Norton's "weld as a line" method. It combines direct shear and torque into a force-per-unit-length on the weld, then converts to throat stress. Material: standard E70 electrode, 70,000 psi tensile. Per AWS D1.1, allowable shear is 30% of tensile, roughly 21,000 psi.</p>
+        </div>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/weld-force-equation.png" alt="Force per unit length equation">
+            <div class="img-caption">Force per unit length on weld</div>
+          </div>
+          <div>
+            <img src="images/throat-stress-equation.png" alt="Throat stress equation">
+            <div class="img-caption">Throat stress calculation</div>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>The V1 weld showed a 0.95 FoS under 4G loading. Theoretical failure. The upsized crossbar alone wouldn't fix this; the joint needed reinforcement.</p>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Reinforcement Selection</h3>
+
+        <div class="content-body">
+          <p>I evaluated several reinforcement options using a weighted matrix against cost, ease of fabrication, stiffness gain, and space constraints.</p>
+        </div>
+
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Option</th><th>Description</th><th>Pros</th><th>Cons</th></tr>
+          <tr class="winner"><td><strong>A. Angle iron gusset</strong></td><td>Standard angle welded at joint</td><td>Cheap, simple, available</td><td>Stress concentration at corner</td></tr>
+          <tr><td>B. Triangle gusset</td><td>Plate gusset welded at 45&deg;</td><td>Better load path</td><td>More fabrication, tight space</td></tr>
+          <tr><td>C. Full box plating</td><td>Plates on all faces</td><td>Maximum stiffness</td><td>Heavy, expensive, overkill</td></tr>
+          <tr><td>D. Tube sleeve</td><td>Larger tube sleeved over joint</td><td>Clean look</td><td>Fitment issues, availability</td></tr>
+        </table>
+        </div>
+
+        <div class="content-body">
+          <p>Angle iron gusset won. Available off the shelf, easy to cut and weld, gets the FoS above 2.0 with minimal cost.</p>
+        </div>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/gusset-triangle.png" alt="Triangle gusset option">
+            <div class="img-caption">Triangle gusset option</div>
+          </div>
+          <div>
+            <img src="images/gusset-box-plating.png" alt="Full box plating option">
+            <div class="img-caption">Full box plating option</div>
+          </div>
+        </div>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/gusset-detail.png" alt="Selected gusset design">
+            <div class="img-caption">Selected angle iron gusset detail</div>
+          </div>
+          <div>
+            <img src="images/gusset-implementation.png" alt="Gusset implementation">
+            <div class="img-caption">Implementation</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEA VALIDATION -->
+      <section class="content-section" id="validation">
+        <div class="content-section-header">
+          <span class="cs-number">05</span>
+          <div class="cs-titles">
+            <div class="cs-tag">Validation</div>
+            <h2 class="cs-title">FEA Validation</h2>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>I ran FEA on both V1 and V2 to check the MATLAB predictions and validate the full assembly under 4G loading. Boundary conditions: fixed both ends of the crossbar, remote load applied at the previously derived COG location. Standard curvature-based mesh with element refinement at corners and features.</p>
+        </div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">V1 vs V2 Deflection</h3>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/fea-v1-deflection.png" alt="FEA V1 deflection result">
+            <div class="img-caption">V1: 0.0190" tip deflection</div>
+          </div>
+          <div>
+            <img src="images/fea-v2-deflection.png" alt="FEA V2 deflection result">
+            <div class="img-caption">V2: 0.0119" tip deflection (37% less)</div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+        <table class="content-table">
+          <tr><th>Metric</th><th>V1 (2.0" crossbar)</th><th>V2 (2.5" crossbar + gusset)</th></tr>
+          <tr><td>FEA tip deflection</td><td class="mono">0.0190"</td><td class="mono">0.0119"</td></tr>
+          <tr><td>MATLAB prediction</td><td class="mono">0.0175"</td><td class="mono">0.0087"</td></tr>
+          <tr><td>MATLAB vs FEA variance</td><td class="mono pass">8.9%</td><td class="mono">37%</td></tr>
+          <tr><td>Deflection reduction</td><td colspan="2" class="mono" style="text-align:center;">31% (FEA) / 50% (MATLAB)</td></tr>
+        </table>
+        </div>
+
+        <div class="content-body">
+          <p>V1 MATLAB matched FEA within 8.9%, which confirmed the hand-calc model was valid for that geometry. V2 showed a larger 37% variance. The reason: upsizing to 2.5" increased the b/t ratio from 8 to 10, which pushes past where Bredt's thin-wall assumption holds. The tube walls start distorting locally under torsion, and FEA captures that; Bredt's formula doesn't. That variance is the boundary where hand calcs stop being sufficient and FEA becomes necessary.</p>
+        </div>
+
+        <img class="content-img" src="images/fea-crossbar-distortion.png" alt="Crossbar wall distortion at 318x scale" style="max-width: 500px;">
+        <div class="img-caption">Crossbar wall distortion visible at 318x deformation scale. This local effect is what Bredt's formula misses.</div>
+
+        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Full Assembly, 4G Loading</h3>
+
+        <div class="content-body">
+          <p>For the final safety check, I applied the 4G dynamic load to the full assembly with side plates, ribs, and gusset included. This is the worst-case bump scenario.</p>
+        </div>
+
+        <div class="content-img-row">
+          <div>
+            <img src="images/fea-v1-stress-1.png" alt="V1 stress analysis">
+            <div class="img-caption">V1 stress, 4G loading</div>
+          </div>
+          <div>
+            <img src="images/fea-v2-stress-1.png" alt="V2 stress analysis">
+            <div class="img-caption">V2 stress, 4G loading</div>
+          </div>
+        </div>
+        <div class="content-img-row">
+          <div>
+            <img src="images/fea-v1-stress-2.png" alt="V1 stress detail">
+            <div class="img-caption">V1 stress detail</div>
+          </div>
+          <div>
+            <img src="images/fea-v2-stress-2.png" alt="V2 stress detail">
+            <div class="img-caption">V2 stress detail with gusset</div>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <p>Average FoS at critical nodes was 2.7 under 4G. There's a stress concentration at the corner of the angle iron gusset, but under a 4G catastrophic load (not cyclic), local yielding in ductile steel actually relieves that concentration. It would become a problem under fatigue loading, which is where a V3 triangle gusset would be the better option.</p>
+
+          <p>Some simulation artifacts showed up where the crossbar meets the side plates due to gaps from the non-flat repurposed plates. In practice, weld fills those gaps.</p>
+        </div>
+
+        <div class="gif-container">
+          <img src="images/design-progression.gif" alt="Design progression from V1 to V2 to V3 concept">
+          <div class="img-caption">V1 to V2 to V3 concept progression</div>
+        </div>
+
+        <div class="callout">
+          <strong>V3 concept notes (not built):</strong> For heavier duty use, fish-plating the crossbar faces would increase local wall thickness and reduce the b/t ratio back below Bredt's validity range. Replacing the angle iron with a triangle web gusset would eliminate the stress concentration. These are the right moves for a ground-up redesign, but V2 met the requirements for this application.
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <span>&copy; 2026 Aaron Evans</span>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/aaron-evans-eng/" class="footer-link"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+          <a href="https://github.com/aevans-eng" class="footer-link"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</a>
+          <a href="mailto:aaronevans.eng@outlook.com" class="footer-link"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg> Email</a>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<script>
+// Scroll-spy for sidebar
+const sections = document.querySelectorAll('.content-section');
+const navLinks = document.querySelectorAll('.sidebar-nav a');
+
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+
+sections.forEach(section => scrollObserver.observe(section));
+
+// Smooth scroll for sidebar links
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aaron Evans — Mechanical Engineering</title>
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  /* ===== HOMEPAGE-SPECIFIC ===== */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 500px);
+    gap: 48px;
+    align-items: start;
+  }
+  .hero-media { display: flex; flex-direction: column; gap: 8px; }
+  .hero-image-main {
+    position: relative; border-radius: 5px; overflow: hidden;
+    border: 1px solid var(--border); background: #1a1a1a;
+  }
+  .hero-image-main img { width: 100%; }
+  .hero-gallery { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+  .hero-gallery-item {
+    border-radius: 4px; overflow: hidden; border: 1px solid var(--border);
+    background: #d5d0c8; aspect-ratio: 4/3; position: relative;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .hero-gallery-item:hover {
+    border-color: var(--green-border); transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  .hero-gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+  .gallery-label {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 4px 8px; background: rgba(0,0,0,0.6);
+    font-size: 9px; font-weight: 600; color: rgba(255,255,255,0.8);
+    text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--mono);
+  }
+
+  .hero-info { padding-top: 4px; }
+  .hero-label {
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--green); margin-bottom: 8px;
+    font-family: var(--mono);
+  }
+  .hero-title {
+    font-family: var(--serif); font-size: 32px; font-weight: 600;
+    line-height: 1.2; margin-bottom: 10px; letter-spacing: -0.01em;
+  }
+  .hero-desc {
+    font-size: 15px; color: var(--text-mid); line-height: 1.65; margin-bottom: 20px;
+  }
+
+  /* Project rows */
+  .project-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 64px; }
+  .project-row {
+    display: flex; align-items: center; gap: 20px;
+    padding: 16px 20px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 4px;
+    text-decoration: none; color: inherit; transition: all 0.2s;
+  }
+  .project-row:hover {
+    background: var(--surface-hover); border-color: var(--green-border);
+    transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .project-row-thumb {
+    width: 88px; height: 64px; background: #d5d0c7;
+    border-radius: 3px; flex-shrink: 0; overflow: hidden;
+  }
+  .project-row-body { flex: 1; }
+  .project-row-title { font-size: 16px; font-weight: 600; margin-bottom: 3px; }
+  .project-row-desc { font-size: 13px; color: var(--text-mid); }
+  .project-row-arrow { color: var(--text-faint); flex-shrink: 0; transition: all 0.2s; }
+  .project-row:hover .project-row-arrow { color: var(--green); transform: translateX(3px); }
+
+  @media (max-width: 1060px) {
+    .hero { grid-template-columns: 1fr; gap: 32px; }
+  }
+  @media (max-width: 600px) {
+    .hero-title { font-size: 26px; }
+    .hero-desc { font-size: 14px; }
+    .hero-gallery { grid-template-columns: 1fr 1fr; }
+    .sc-content { padding-left: 16px; }
+    .project-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .project-row-thumb { width: 100%; height: auto; aspect-ratio: 16/9; }
+    .project-row-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-identity">
+    <a href="/preview/" class="nav-name">Aaron Evans</a>
+    <span class="nav-tagline">Mechanical Engineering &middot; University of Victoria</span>
+  </div>
+  <div class="nav-right">
+    <a href="/preview/" class="nav-link active">Projects</a>
+    <a href="/preview/about/" class="nav-link">About</a>
+    <a href="/preview/resume/" class="nav-link">Resume</a>
+    <div class="nav-divider"></div>
+    <a href="https://www.linkedin.com/in/aaron-evans-eng/" class="nav-icon" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="https://github.com/aevans-eng" class="nav-icon" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+  </div>
+</nav>
+
+<div class="container">
+  <hr class="nav-rule">
+
+  <div class="hero">
+    <!-- LEFT: Media -->
+    <div class="hero-media">
+      <div class="hero-image-main">
+        <img src="qdd-gearbox/images/full-assembly-cross-section.png" alt="QDD Gearbox — CATIA cross-section">
+        <div class="phase-badge"><span class="pulse-dot"></span> REV 00B — ACTIVE</div>
+      </div>
+      <div class="hero-gallery">
+        <div class="hero-gallery-item">
+          <img src="qdd-gearbox/images/cad-assembly.png" alt="CATIA master assembly">
+          <div class="gallery-label">cad assembly</div>
+        </div>
+        <div class="hero-gallery-item">
+          <img src="qdd-gearbox/images/before-after.png" alt="Before/after CAD comparison">
+          <div class="gallery-label">before / after</div>
+        </div>
+        <div class="hero-gallery-item placeholder-slot">
+          <span class="ph-icon">&#128247;</span>
+          <span class="ph-text">Hardware photo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Info -->
+    <div class="hero-info">
+      <div class="hero-label">Featured Project</div>
+      <h1 class="hero-title">QDD Gearbox Actuator</h1>
+      <p class="hero-desc">A backdrivable 5:1 planetary gearbox, 3D-printed and designed from scratch. Trade studies, skeleton-driven CATIA, FDM calibration, and structured prototype testing.</p>
+
+      <div class="specs-strip">
+        <div class="spec-chip"><span class="sv">5:1</span><span class="sl">ratio</span></div>
+        <div class="spec-chip"><span class="sv">16 Nm</span><span class="sl">peak</span></div>
+        <div class="spec-chip"><span class="sv">&le;0.5&deg;</span><span class="sl">backlash</span></div>
+        <div class="spec-chip"><span class="sv">&lt;$120</span><span class="sl">budget</span></div>
+      </div>
+
+      <div class="section-cards">
+        <!-- TRADE STUDY -->
+        <div class="section-card" id="card-trade">
+          <div class="sc-header" onclick="toggleCard('card-trade')">
+            <div class="sc-icon">&#9878;</div>
+            <div class="sc-text">
+              <div class="sc-title">Weighted Trade Study</div>
+              <div class="sc-subtitle">6 gear concepts, 7 criteria &mdash; Pugh matrix</div>
+            </div>
+            <span class="sc-chevron">&#9654;</span>
+          </div>
+          <div class="sc-body">
+            <div class="sc-content">
+              <div class="bar-chart" id="trade-bars">
+                <div class="bar-row"><span class="bar-label">Planetary</span><div class="bar-track"><div class="bar-fill winner-bar" data-width="88"><span class="bar-val">4.40</span></div></div></div>
+                <div class="bar-row"><span class="bar-label">Sequential</span><div class="bar-track"><div class="bar-fill" data-width="81"><span class="bar-val">4.05</span></div></div></div>
+                <div class="bar-row"><span class="bar-label">Drive Belt</span><div class="bar-track"><div class="bar-fill" data-width="80"><span class="bar-val">3.98</span></div></div></div>
+                <div class="bar-row"><span class="bar-label">Cycloidal</span><div class="bar-track"><div class="bar-fill" data-width="75"><span class="bar-val">3.73</span></div></div></div>
+                <div class="bar-row"><span class="bar-label">Capstan</span><div class="bar-track"><div class="bar-fill" data-width="73"><span class="bar-val">3.65</span></div></div></div>
+                <div class="bar-row"><span class="bar-label">Strain Wave</span><div class="bar-track"><div class="bar-fill" data-width="73"><span class="bar-val">3.65</span></div></div></div>
+              </div>
+              <div class="sc-desc">Scored across cost, transparency, torque density, precision, DFM, efficiency, and durability. Planetary won on the combination of cost, printability, and backdrivability.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATIA -->
+        <div class="section-card" id="card-cad">
+          <div class="sc-header" onclick="toggleCard('card-cad')">
+            <div class="sc-icon">&#9633;</div>
+            <div class="sc-text">
+              <div class="sc-title">Skeleton-Driven CATIA V6</div>
+              <div class="sc-subtitle">Parametric assembly, learned from scratch &mdash; 60-80 hrs</div>
+            </div>
+            <span class="sc-chevron">&#9654;</span>
+          </div>
+          <div class="sc-body">
+            <div class="sc-content">
+              <div class="sc-desc">Single source of truth skeleton — parts constrain to skeleton, never to each other. Placeholder gears as geometric contracts. Body-level patterning. Chain-of-zeros positioning. No prior CATIA experience.</div>
+              <img class="sc-img" src="qdd-gearbox/images/master-assembly-tree.png" alt="CATIA assembly tree">
+            </div>
+          </div>
+        </div>
+
+        <!-- TOLERANCING -->
+        <div class="section-card" id="card-tol">
+          <div class="sc-header" onclick="toggleCard('card-tol')">
+            <div class="sc-icon">&#8982;</div>
+            <div class="sc-text">
+              <div class="sc-title">FDM Tolerancing &amp; Calibration</div>
+              <div class="sc-subtitle">ISO fit intent &rarr; FDM offsets, validated with coupons</div>
+            </div>
+            <span class="sc-chevron">&#9654;</span>
+          </div>
+          <div class="sc-body">
+            <div class="sc-content">
+              <div class="table-wrap">
+              <table class="sc-table">
+                <tr><th>Interface</th><th>Offset</th><th>Status</th></tr>
+                <tr><td>Main bearing bore</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
+                <tr><td>Lid bearing bore</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
+                <tr><td>Carrier bearing bore</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
+                <tr><td>Planet bearing bore</td><td class="mono">+0.15 mm</td><td>Pending</td></tr>
+                <tr><td>Ring-to-housing</td><td class="mono">+0.30 mm</td><td>Applied</td></tr>
+              </table>
+              </div>
+              <div class="sc-desc">Every bearing interface targets a finger-press transition fit. Calibration coupons measured with calipers before the full build. Validated bores, shaft posts, and clearance holes.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TESTING -->
+        <div class="section-card" id="card-test">
+          <div class="sc-header" onclick="toggleCard('card-test')">
+            <div class="sc-icon">&#10003;</div>
+            <div class="sc-text">
+              <div class="sc-title">Structured Testing &rarr; Rev 00B</div>
+              <div class="sc-subtitle">5 tests, root causes identified, 5 must-have design changes</div>
+            </div>
+            <span class="sc-chevron">&#9654;</span>
+          </div>
+          <div class="sc-body">
+            <div class="sc-content">
+              <div class="status-row"><span class="status-dot action"></span><span class="status-name"><strong>T-001:</strong> Gear mesh — herringbone misalignment</span><span class="status-action">&rarr; spur gears</span></div>
+              <div class="status-row"><span class="status-dot action"></span><span class="status-name"><strong>T-002:</strong> Lid drag — tolerance stackup over-constraint</span><span class="status-action">&rarr; decouple lid</span></div>
+              <div class="status-row"><span class="status-dot action"></span><span class="status-name"><strong>T-003:</strong> Carrier shoulder — print orientation trade-off</span><span class="status-action">&rarr; new print strategy</span></div>
+              <div class="status-row"><span class="status-dot ok"></span><span class="status-name"><strong>T-004:</strong> Carrier indexing — no operational clocking load</span><span class="status-action">no change</span></div>
+              <div class="status-row"><span class="status-dot action"></span><span class="status-name"><strong>T-005:</strong> Bolt torque — narrow window before planet binding</span><span class="status-action">&rarr; shoulder redesign</span></div>
+              <div class="sc-desc" style="margin-top: 10px;">Each test defined question + acceptance criteria before testing. Dependency mapping resolves bottom-up: component &rarr; interface &rarr; subsystem &rarr; system.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="qdd-gearbox/" class="btn-primary">
+        Explore full project <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="reveal">
+    <div class="section-label">Other Work</div>
+    <div class="project-list">
+      <a href="hitch/" class="project-row">
+        <div class="project-row-thumb">
+          <img src="hitch/images/cover.png" alt="Hitch project" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="project-row-body">
+          <div class="project-row-title">High-Clearance Hitch Receiver</div>
+          <div class="project-row-desc">Torsion analysis, weld optimization, and FEA validation for an off-road hitch receiver.</div>
+        </div>
+        <svg class="project-row-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <footer class="reveal">
+    <span>&copy; 2026 Aaron Evans</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/aaron-evans-eng/" class="footer-link"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      <a href="https://github.com/aevans-eng" class="footer-link"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</a>
+      <a href="mailto:aaronevans.eng@outlook.com" class="footer-link"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg> aaronevans.eng@outlook.com</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleCard(id) {
+  const card = document.getElementById(id);
+  const wasOpen = card.classList.contains('open');
+  document.querySelectorAll('.section-card.open').forEach(c => c.classList.remove('open'));
+  if (!wasOpen) {
+    card.classList.add('open');
+    if (id === 'card-trade') setTimeout(() => animateBars(), 50);
+  }
+}
+
+function animateBars() {
+  document.querySelectorAll('#trade-bars .bar-fill').forEach(bar => {
+    const w = bar.dataset.width;
+    bar.style.width = '0%';
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => { bar.style.width = w + '%'; });
+    });
+  });
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
