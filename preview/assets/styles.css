@@ -247,7 +247,7 @@ nav {
 
 /* ===== SECTION LABELS ===== */
 .section-label {
-  font-size: 11px; font-weight: 600; color: var(--text-light);
+  font-size: 12px; font-weight: 700; color: var(--text-mid);
   text-transform: uppercase; letter-spacing: 0.06em;
   margin: 32px 0 16px; font-family: var(--mono);
 }
