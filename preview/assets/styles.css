@@ -11,7 +11,7 @@
   --surface: rgba(255,255,255,0.55);
   --surface-hover: rgba(255,255,255,0.85);
   --text: #2a2a2a;
-  --text-mid: #555;
+  --text-mid: #444;
   --text-light: #888;
   --text-faint: #aaa;
   --green: #4a6741;
@@ -136,20 +136,20 @@ nav {
   max-height: 0; overflow: hidden;
   transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-card.open .sc-body { max-height: 800px; }
+.section-card.open .sc-body { max-height: 1200px; } /* ceiling — bump if content grows */
 
 .sc-content { padding: 0 16px 16px 60px; }
-.sc-desc { font-size: 12px; color: var(--text-mid); line-height: 1.6; margin-bottom: 12px; }
+.sc-desc { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 12px; }
 .sc-img {
   width: 100%; max-width: 380px; border-radius: 3px;
   border: 1px solid var(--border); margin: 8px 0;
 }
 
 /* ===== DATA TABLES ===== */
-.sc-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 8px; }
+.sc-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 8px; }
 .sc-table th {
   text-align: left; padding: 5px 8px; color: var(--text-light);
-  font-weight: 500; font-size: 9px; text-transform: uppercase;
+  font-weight: 500; font-size: 10px; text-transform: uppercase;
   letter-spacing: 0.04em; border-bottom: 1px solid var(--border);
   font-family: var(--mono);
 }
@@ -160,7 +160,7 @@ nav {
 .sc-table tr.winner td { color: var(--green); font-weight: 600; }
 .sc-table .pass { color: var(--green); font-weight: 600; }
 .sc-table .fail { color: #a05a2c; font-weight: 600; }
-.sc-table .mono { font-family: var(--mono); font-size: 11px; }
+.sc-table .mono { font-family: var(--mono); font-size: 12px; }
 
 /* ===== BAR CHARTS ===== */
 .bar-chart { margin: 12px 0 8px; }
@@ -196,19 +196,19 @@ nav {
   font-size: 12px;
 }
 .status-row:last-child { border-bottom: none; }
-.status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.status-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 .status-dot.resolved { background: var(--green); }
 .status-dot.action { background: #c4873b; }
 .status-dot.ok { background: var(--green); opacity: 0.5; }
 .status-name { flex: 1; color: var(--text-mid); }
-.status-action { font-size: 11px; color: var(--text-light); font-family: var(--mono); }
+.status-action { font-size: 12px; color: var(--text-light); font-family: var(--mono); }
 
 /* ===== BADGES ===== */
 .phase-badge {
   position: absolute; top: 14px; left: 14px;
-  font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+  font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
   background: rgba(255,255,255,0.92); backdrop-filter: blur(4px);
-  color: var(--green); padding: 5px 12px; border-radius: 3px;
+  color: var(--green); padding: 6px 14px; border-radius: 3px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   display: flex; align-items: center; gap: 6px;
   font-family: var(--mono);
@@ -267,6 +267,11 @@ footer {
 }
 .footer-link:hover { color: var(--green); background: var(--green-bg); }
 .footer-link svg { width: 14px; height: 14px; fill: currentColor; }
+
+/* ===== CLICKABLE IMAGES ===== */
+a.img-link { display: block; text-decoration: none; }
+a.img-link img { cursor: pointer; transition: all 0.2s; }
+a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01); }
 
 /* ===== ANIMATIONS ===== */
 .reveal {

@@ -3,9 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QDD Gearbox Actuator — Aaron Evans</title>
+<title>QDD Gearbox Actuator — Aaron Evans | Mechanical Engineering Project</title>
+<meta name="description" content="Quasi-direct-drive 5:1 planetary gearbox designed from scratch by Aaron Evans. Trade studies, skeleton-driven CATIA V6, FDM tolerancing, and structured prototype testing.">
+<link rel="canonical" href="https://aaronevans.ca/qdd-gearbox/">
+<meta property="og:title" content="QDD Gearbox Actuator — Aaron Evans">
+<meta property="og:description" content="Backdrivable 5:1 planetary gearbox designed from scratch. Trade studies, CATIA V6, FDM tolerancing, and structured testing.">
+<meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/full-assembly-cross-section.png">
+<meta property="og:url" content="https://aaronevans.ca/qdd-gearbox/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aaron Evans">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="QDD Gearbox Actuator — Aaron Evans">
+<meta name="twitter:description" content="Backdrivable 5:1 planetary gearbox designed from scratch. Trade studies, CATIA V6, FDM tolerancing, and structured testing.">
+<meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/full-assembly-cross-section.png">
 <link rel="icon" type="image/png" href="../assets/favicon-32.png">
 <link rel="stylesheet" href="../assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "QDD Gearbox Actuator",
+  "author": { "@type": "Person", "name": "Aaron Evans" },
+  "description": "A backdrivable 5:1 FDM 3D-printed planetary gearbox for robotic actuators. Designed from scratch with trade studies, skeleton-driven CATIA V6, and structured prototype testing.",
+  "url": "https://aaronevans.ca/qdd-gearbox/"
+}
+</script>
 <style>
   /* ===== PROJECT PAGE LAYOUT ===== */
   .project-layout {
@@ -32,7 +54,7 @@
   }
   .sidebar-phase {
     display: inline-flex; align-items: center; gap: 6px;
-    font-family: var(--mono); font-size: 9px; font-weight: 600;
+    font-family: var(--mono); font-size: 11px; font-weight: 600;
     color: var(--green); text-transform: uppercase; letter-spacing: 0.04em;
     margin-bottom: 20px;
   }
@@ -98,29 +120,29 @@
   }
   .cs-titles { flex: 1; }
   .cs-tag {
-    font-family: var(--mono); font-size: 9px; font-weight: 600;
+    font-family: var(--mono); font-size: 11px; font-weight: 600;
     color: var(--text-light); text-transform: uppercase; letter-spacing: 0.06em;
   }
   .cs-title {
-    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    font-family: var(--serif); font-size: 24px; font-weight: 600;
     letter-spacing: -0.01em;
   }
 
-  .content-body { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+  .content-body { font-size: 15px; color: var(--text-mid); line-height: 1.7; }
   .content-body p { margin-bottom: 12px; }
   .content-body strong { color: var(--text); font-weight: 600; }
 
   /* Full-width tables in content */
   .content-table {
     width: 100%; border-collapse: collapse;
-    font-size: 12px; margin: 16px 0;
+    font-size: 13px; margin: 16px 0;
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 4px; overflow: hidden;
   }
   .content-table th {
     text-align: left; padding: 8px 12px;
     background: rgba(0,0,0,0.02);
-    font-family: var(--mono); font-size: 10px; font-weight: 600;
+    font-family: var(--mono); font-size: 11px; font-weight: 600;
     color: var(--text-light); text-transform: uppercase;
     letter-spacing: 0.04em;
     border-bottom: 1px solid var(--border);
@@ -161,10 +183,15 @@
   /* Callout box */
   .callout {
     background: var(--green-bg); border: 1px solid var(--green-border);
-    border-radius: 4px; padding: 14px 16px; margin: 16px 0;
-    font-size: 13px; color: var(--text-mid); line-height: 1.6;
+    border-radius: 4px; padding: 16px 18px; margin: 16px 0;
+    font-size: 14px; color: var(--text-mid); line-height: 1.6;
   }
   .callout strong { color: var(--green); }
+
+  .content-h3 {
+    font-size: 15px; font-weight: 600; margin: 20px 0 8px;
+    color: var(--text); letter-spacing: -0.01em;
+  }
 
   /* Assembly tree visual */
   .tree-block {
@@ -233,7 +260,7 @@
     .content { padding: 32px 0; }
   }
   @media (max-width: 600px) {
-    .cs-title { font-size: 18px; }
+    .cs-title { font-size: 19px; }
     .content-img-row { grid-template-columns: 1fr; }
     .content-section-header { gap: 8px; }
     .tree-block { font-size: 11px; padding: 12px 14px; }
@@ -244,16 +271,16 @@
 
 <nav>
   <div class="nav-identity">
-    <a href="/preview/" class="nav-name">Aaron Evans</a>
+    <a href="/" class="nav-name">Aaron Evans</a>
     <span class="nav-tagline">Mechanical Engineering &middot; University of Victoria</span>
   </div>
   <div class="nav-right">
-    <a href="/preview/" class="nav-link active">Projects</a>
-    <a href="/preview/about/" class="nav-link">About</a>
-    <a href="/preview/resume/" class="nav-link">Resume</a>
+    <a href="/" class="nav-link active">Projects</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a href="/resume/" class="nav-link">Resume</a>
     <div class="nav-divider"></div>
-    <a href="https://www.linkedin.com/in/aaron-evans-eng/" class="nav-icon" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-    <a href="https://github.com/aevans-eng" class="nav-icon" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+    <a href="https://www.linkedin.com/in/aevans-eng/" class="nav-icon" title="LinkedIn" target="_blank"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="https://github.com/aevans-eng" class="nav-icon" title="GitHub" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
   </div>
 </nav>
 
@@ -264,7 +291,7 @@
 
     <!-- ===== SIDEBAR ===== -->
     <aside class="sidebar">
-      <div class="sidebar-phase"><span class="pulse-dot"></span> Rev 00B in progress</div>
+      <div class="sidebar-phase"><span class="pulse-dot"></span> REV 00B — IN PROGRESS</div>
       <div class="sidebar-title">QDD Gearbox Actuator</div>
       <div class="sidebar-subtitle">3D-printed planetary gearbox for backdrivable robotic actuators</div>
 
@@ -295,7 +322,7 @@
     <!-- ===== CONTENT ===== -->
     <main class="content">
 
-      <a href="/preview/" class="back-link">&larr; Back to all projects</a>
+      <a href="/" class="back-link">&larr; Back to all projects</a>
 
       <!-- MOTIVATION -->
       <section class="content-section" id="motivation">
@@ -333,7 +360,7 @@
           </div>
         </div>
 
-        <img class="content-img" src="images/full-assembly-cross-section.png" alt="QDD Gearbox — full assembly cross-section">
+        <a class="img-link" href="images/full-assembly-cross-section.png" target="_blank"><img class="content-img" src="images/full-assembly-cross-section.png" alt="QDD Gearbox — full assembly cross-section"></a>
 
         <div class="content-body">
           <p>A quasi-direct-drive (QDD) actuator built around a 5:1 FDM 3D-printed planetary gearbox, interfacing with a BLDC motor, magnetic encoder, and ODrive controller. The defining property of a QDD is <strong>transparency</strong>: the gearbox must be backdrivable with low friction and minimal backlash, so the motor can feel and respond to external forces.</p>
@@ -345,7 +372,7 @@
           <strong>Key insight:</strong> The #1 failure mode in student robotics is not the gearbox itself, but how it attaches to the motor or how the magnet attaches to the shaft. So I prioritized interface definition from the start.
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Design Requirements</h3>
+        <h3 class="content-h3">Design Requirements</h3>
         <div class="table-wrap">
         <table class="content-table">
           <tr><th>ID</th><th>Requirement</th><th>Target</th><th>Type</th></tr>
@@ -360,7 +387,7 @@
         </table>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Project Status</h3>
+        <h3 class="content-h3">Project Status</h3>
         <div class="timeline-strip">
           <span class="tl-step done">Design</span><span class="tl-arrow">&rarr;</span>
           <span class="tl-step done">CAD</span><span class="tl-arrow">&rarr;</span>
@@ -386,7 +413,7 @@
           <p>I followed a structured sprint: quantifiable requirements, concept research, weighted Pugh matrices, interface definition, then detailed CAD with DFM built in.</p>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Gear Type Selection</h3>
+        <h3 class="content-h3">Gear Type Selection</h3>
         <div class="content-body"><p>6 gear concepts scored across 7 weighted criteria. Planetary won on cost, printability, and backdrivability.</p></div>
 
         <div class="bar-chart content-bar-chart" id="trade-bars-page">
@@ -412,7 +439,7 @@
         </table>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Ratio Selection</h3>
+        <h3 class="content-h3">Ratio Selection</h3>
         <div class="content-body">
           <p>5:1 won at 4.83/5, the best compromise between transparency and torque multiplication. Scored across transparency (0.15), torque density (0.20), and durability (0.20).</p>
         </div>
@@ -423,7 +450,7 @@
           <div class="bar-row"><span class="bar-label">7:1</span><div class="bar-track"><div class="bar-fill" data-width="91"><span class="bar-val">4.53</span></div></div></div>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Bearing Selection</h3>
+        <h3 class="content-h3">Bearing Selection</h3>
         <div class="content-body">
           <p>Ball bearings won at 4.05/5. Cost weighted at 60% to reflect prototype budget constraint ($120). Crossed rollers scored higher on performance but cost 5x more.</p>
         </div>
@@ -444,30 +471,30 @@
           <p>I learned CATIA V6 (3DEXPERIENCE) from scratch for this project. Roughly <strong>60-80 hours</strong> of self-directed learning and modeling.</p>
         </div>
 
-        <img class="content-img" src="images/master-assembly-tree.png" alt="CATIA master assembly tree">
+        <a class="img-link" href="images/master-assembly-tree.png" target="_blank"><img class="content-img" src="images/master-assembly-tree.png" alt="CATIA master assembly tree"></a>
         <div class="img-caption">Master assembly tree showing skeleton-driven sub-assemblies</div>
 
         <div class="callout">
           <strong>Core principles:</strong> Parts constrain to skeleton, never to each other. No B-Rep references; sketch on planes, reference wireframe. Body-level patterning over feature-level. Placeholder gears as geometric contracts.
         </div>
 
-        <img class="content-img" src="images/catia-tree-diagram.png" alt="CATIA assembly tree structure — skeleton-driven hierarchy">
+        <a class="img-link" href="images/catia-tree-diagram.png" target="_blank"><img class="content-img" src="images/catia-tree-diagram.png" alt="CATIA assembly tree structure — skeleton-driven hierarchy"></a>
 
         <div class="content-body">
           <p><strong>Chain-of-zeros positioning:</strong> Skeleton at (0,0,0) &rarr; sub-assembly constrained to skeleton midplane &rarr; parts constrained to sub-assembly origin. Geometry pastes without offsets.</p>
           <p><strong>Cutting bodies</strong> for bearing pockets and bolt holes reference only skeleton datums, so they survive STEP swaps and revision changes.</p>
         </div>
 
-        <img class="content-img" src="images/master-assembly-with-gears.png" alt="Master assembly with real cycloidal tooth geometry">
+        <a class="img-link" href="images/master-assembly-with-gears.png" target="_blank"><img class="content-img" src="images/master-assembly-with-gears.png" alt="Master assembly with real cycloidal tooth geometry"></a>
         <div class="img-caption">Master assembly cross-section with real cycloidal tooth geometry</div>
 
         <div class="content-img-row">
           <div>
-            <img src="images/before-after.png" alt="Early model vs current parametric design">
+            <a class="img-link" href="images/before-after.png" target="_blank"><img src="images/before-after.png" alt="Early model vs current parametric design"></a>
             <div class="img-caption">Early learning model vs. current parametric design</div>
           </div>
           <div>
-            <img src="images/carrier-assembly-tree.png" alt="Carrier sub-assembly tree">
+            <a class="img-link" href="images/carrier-assembly-tree.png" target="_blank"><img src="images/carrier-assembly-tree.png" alt="Carrier sub-assembly tree"></a>
             <div class="img-caption">Carrier sub-assembly with cutting bodies</div>
           </div>
         </div>
@@ -503,7 +530,7 @@
         </table>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Calibration Coupon Method</h3>
+        <h3 class="content-h3">Calibration Coupon Method</h3>
         <div class="content-body">
           <p>Before the full build, I printed a test coupon with representative features. I measured each with calipers and compared to nominal, then fed the results directly back into CATIA skeleton offsets.</p>
         </div>
@@ -518,7 +545,7 @@
         </table>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">DFM Lessons</h3>
+        <h3 class="content-h3">DFM Lessons</h3>
         <div class="content-body">
           <p><strong>Heat-set inserts:</strong> Model pilot hole at insert OD, not generic tables (those assume injection molding). Plate-press technique for flush seating.</p>
           <p><strong>Self-tapping validated:</strong> M3: 2.6mm, M4: 3.6mm, M5: 4.6mm pilots. Simpler than heat inserts for prototyping.</p>
@@ -542,7 +569,7 @@
 
         <div class="content-img-row">
           <div>
-            <img src="images/cad-assembly.png" alt="CAD assembly">
+            <a class="img-link" href="images/cad-assembly.png" target="_blank"><img src="images/cad-assembly.png" alt="CAD assembly"></a>
             <div class="img-caption">CATIA master assembly</div>
           </div>
           <div class="placeholder-slot" style="aspect-ratio:4/3; border-radius:4px;">
@@ -551,7 +578,7 @@
           </div>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Fit Results</h3>
+        <h3 class="content-h3">Fit Results</h3>
         <div class="table-wrap">
         <table class="content-table">
           <tr><th>Interface</th><th>Result</th><th>Action</th></tr>
@@ -623,7 +650,7 @@
         </table>
         </div>
 
-        <h3 style="font-size:14px; font-weight:600; margin: 20px 0 8px; color: var(--text);">Rev 00B Scoped Changes</h3>
+        <h3 class="content-h3">Rev 00B Scoped Changes</h3>
         <div class="table-wrap">
         <table class="content-table">
           <tr><th>Change</th><th>Source</th><th>Part</th></tr>
@@ -670,8 +697,8 @@
       <footer>
         <span>&copy; 2026 Aaron Evans</span>
         <div class="footer-links">
-          <a href="https://www.linkedin.com/in/aaron-evans-eng/" class="footer-link"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
-          <a href="https://github.com/aevans-eng" class="footer-link"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</a>
+          <a href="https://www.linkedin.com/in/aevans-eng/" class="footer-link" target="_blank"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+          <a href="https://github.com/aevans-eng" class="footer-link" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</a>
           <a href="mailto:aaronevans.eng@outlook.com" class="footer-link"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg> Email</a>
         </div>
       </footer>
