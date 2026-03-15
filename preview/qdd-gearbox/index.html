@@ -299,15 +299,13 @@
       <div class="sidebar-subtitle">3D-printed planetary gearbox for backdrivable robotic actuators</div>
 
       <ul class="sidebar-nav">
-        <li><a href="#motivation"><span class="nav-num">00</span> Motivation</a></li>
         <li><a href="#overview"><span class="nav-num">01</span> Overview</a></li>
         <li><a href="#trade-studies"><span class="nav-num">02</span> Trade Studies</a></li>
-        <li><a href="#catia"><span class="nav-num">03</span> CATIA V6</a></li>
+        <li><a href="#catia"><span class="nav-num">03</span> CAD</a></li>
         <li><a href="#tolerancing"><span class="nav-num">04</span> Tolerancing</a></li>
-        <li><a href="#prototype"><span class="nav-num">05</span> Prototype</a></li>
-        <li><a href="#testing"><span class="nav-num">06</span> Testing</a></li>
-        <li><a href="#gdt" class="coming-soon"><span class="nav-num">07</span> GD&amp;T</a></li>
-        <li><a href="#controls" class="coming-soon"><span class="nav-num">08</span> Controls</a></li>
+        <li><a href="#prototype"><span class="nav-num">05</span> Rev 00A</a></li>
+        <li><a href="#testing"><span class="nav-num">06</span> Testing &amp; Rev 00B</a></li>
+        <li><a href="#next"><span class="nav-num">07</span> What's Next</a></li>
       </ul>
 
       <div class="sidebar-specs">
@@ -327,32 +325,6 @@
 
       <a href="/preview/" class="back-link">&larr; Back to all projects</a>
 
-      <!-- MOTIVATION -->
-      <section class="content-section" id="motivation">
-        <div class="content-section-header">
-          <span class="cs-number">00</span>
-          <div class="cs-titles">
-            <div class="cs-tag">Context</div>
-            <h2 class="cs-title">Motivation</h2>
-          </div>
-        </div>
-
-        <div class="content-body">
-          <p class="whw-label">Why</p>
-          <p>January 2026, hackathon day. Three years into a mechanical engineering degree and I still hadn't designed a complete electromechanical system or touched CATIA. I wanted to close that gap by building the kind of actuator used in Optimus and modern legged robots: a quasi-direct-drive.</p>
-
-          <p class="whw-label">How</p>
-          <p>I defined requirements before any CAD existed, scored trade studies quantitatively, and locked interfaces before detail design started, so every downstream decision had something concrete to trace back to.</p>
-
-          <p class="whw-label">What</p>
-          <p>A 5:1 FDM 3D-printed planetary gearbox paired with a BLDC motor, magnetic encoder, and ODrive controller. Designed for transparency: low friction, minimal backlash, backdrivable by hand.</p>
-        </div>
-
-        <div class="callout">
-          <strong>Collaboration:</strong> This project started as a hackathon day co-run with <a href="https://www.linkedin.com/in/russell-bilinski/" target="_blank">Russell Bilinski</a> (previous Tesla Optimus intern), who provides equipment, parts, and ongoing mentorship. Gear profiles are generated using Caden Kraft's <a href="https://github.com/russlib/HackathonActuator" target="_blank">pygeartrain</a> library. All CAD, mechanical design, prototyping, and testing are my own work.
-        </div>
-      </section>
-
       <!-- OVERVIEW -->
       <section class="content-section" id="overview">
         <div class="content-section-header">
@@ -363,30 +335,29 @@
           </div>
         </div>
 
-        <a class="img-link" href="images/full-assembly-cross-section.png" target="_blank"><img class="content-img" src="images/full-assembly-cross-section.png" alt="QDD Gearbox — full assembly cross-section"></a>
+        <a class="img-link" href="images/full-assembly-cross-section.png" target="_blank"><img class="content-img" src="images/full-assembly-cross-section.png" alt="QDD Gearbox — full assembly cross-section in CATIA"></a>
 
         <div class="content-body">
-          <p>A quasi-direct-drive actuator built around a 5:1 FDM 3D-printed planetary gearbox, interfacing with a BLDC motor, magnetic encoder, and ODrive controller. The whole point of a QDD is <strong>transparency</strong>; you need to be able to backdrive the output by hand, which means low friction and tight backlash control through the entire gear train.</p>
+          <p>Three years into a mechanical engineering degree and I still hadn't designed a complete electromechanical system. I started this project at a hackathon in January 2026 because I wanted to build the kind of actuator that shows up in Optimus and modern legged robots: a quasi-direct-drive.</p>
 
-          <p>I designed this from scratch because I wanted to understand how these actuators actually work, not just read about them. The same architecture shows up in Optimus, ANYmal, and most modern legged robots, so it felt like the right system to learn on.</p>
+          <p>The whole point of a QDD is that you can backdrive the output by hand. Low friction, tight backlash, no cogging. That means the motor can feel external forces through the gearbox, which is what makes impedance control possible. I designed a 5:1 planetary gearbox from scratch, 3D-printed on a Bambu P1S, paired with a BLDC motor and ODrive controller.</p>
         </div>
 
         <div class="callout">
-          <strong>Key insight:</strong> The #1 failure mode in student robotics is not the gearbox itself, but how it attaches to the motor or how the magnet attaches to the shaft. So I prioritized interface definition from the start.
+          <strong>Collaboration:</strong> This started as a hackathon day with <a href="https://www.linkedin.com/in/russell-bilinski/" target="_blank">Russell Bilinski</a> (previous Tesla Optimus intern), who provides equipment, parts, and mentorship. Gear profiles come from Caden Kraft's <a href="https://github.com/russlib/HackathonActuator" target="_blank">pygeartrain</a> library. All CAD, mechanical design, prototyping, and testing are my own work.
         </div>
 
-        <h3 class="content-h3">Design Requirements</h3>
+        <h3 class="content-h3">Requirements</h3>
         <div class="table-wrap">
         <table class="content-table">
-          <tr><th>ID</th><th>Requirement</th><th>Target</th><th>Type</th></tr>
-          <tr><td class="mono">R-01</td><td>Backlash</td><td class="mono">&le; 0.5&deg;</td><td>Hard</td></tr>
-          <tr><td class="mono">R-02</td><td>Cost</td><td class="mono">&lt; $120 CAD</td><td>Hard</td></tr>
-          <tr><td class="mono">R-04</td><td>Backdrivability</td><td class="mono">&lt; 1 Nm friction</td><td>Hard</td></tr>
-          <tr><td class="mono">R-06</td><td>Peak torque</td><td class="mono">&ge; 16 Nm</td><td>Hard</td></tr>
-          <tr><td class="mono">R-07</td><td>Continuous torque</td><td class="mono">&ge; 12 Nm</td><td>Hard</td></tr>
-          <tr><td class="mono">R-09</td><td>Efficiency</td><td class="mono">&gt; 90%</td><td>Soft</td></tr>
-          <tr><td class="mono">R-10</td><td>Weight</td><td class="mono">&lt; 2 kg</td><td>Soft</td></tr>
-          <tr><td class="mono">R-11</td><td>Speed</td><td class="mono">&ge; 600 RPM</td><td>Soft</td></tr>
+          <tr><th>Requirement</th><th>Target</th><th>Type</th></tr>
+          <tr><td>Backlash</td><td class="mono">&le; 0.5&deg;</td><td>Hard</td></tr>
+          <tr><td>Cost</td><td class="mono">&lt; $120 CAD</td><td>Hard</td></tr>
+          <tr><td>Backdrivability (friction torque)</td><td class="mono">&lt; 1 Nm</td><td>Hard</td></tr>
+          <tr><td>Peak torque</td><td class="mono">&ge; 16 Nm</td><td>Hard</td></tr>
+          <tr><td>Continuous torque</td><td class="mono">&ge; 12 Nm</td><td>Hard</td></tr>
+          <tr><td>Efficiency</td><td class="mono">&gt; 90%</td><td>Soft</td></tr>
+          <tr><td>Weight</td><td class="mono">&lt; 2 kg</td><td>Soft</td></tr>
         </table>
         </div>
 
@@ -408,16 +379,16 @@
           <span class="cs-number">02</span>
           <div class="cs-titles">
             <div class="cs-tag">Design</div>
-            <h2 class="cs-title">Weighted Trade Studies</h2>
+            <h2 class="cs-title">Trade Studies</h2>
           </div>
         </div>
 
         <div class="content-body">
-          <p>Before touching CAD, I wanted every major design choice locked down with numbers behind it. That meant Pugh matrices with weighted criteria, not gut feel.</p>
+          <p>I scored every major design choice with a weighted matrix before touching CAD. Gear type, ratio, and bearing type were all decided this way.</p>
         </div>
 
-        <h3 class="content-h3">Gear Type Selection</h3>
-        <div class="content-body"><p>6 gear concepts scored across 7 weighted criteria. Planetary won on cost, printability, and backdrivability.</p></div>
+        <h3 class="content-h3">Gear Type</h3>
+        <div class="content-body"><p>I compared 6 gear concepts across 7 criteria. Planetary came out on top because it's cheap, printable, and backdrivable, which are the three things that matter most for this project.</p></div>
 
         <div class="bar-chart content-bar-chart" id="trade-bars-page">
           <div class="bar-row"><span class="bar-label">Planetary</span><div class="bar-track"><div class="bar-fill winner-bar" data-width="88"><span class="bar-val">4.40</span></div></div></div>
@@ -442,9 +413,9 @@
         </table>
         </div>
 
-        <h3 class="content-h3">Ratio Selection</h3>
+        <h3 class="content-h3">Ratio</h3>
         <div class="content-body">
-          <p>5:1 won at 4.83/5, the best compromise between transparency and torque multiplication. Scored across transparency (0.15), torque density (0.20), and durability (0.20).</p>
+          <p>5:1 scored highest at 4.83/5. Lower ratios are more backdrivable but give up torque multiplication; higher ratios add friction and reduce transparency. 5:1 was the sweet spot.</p>
         </div>
         <div class="bar-chart content-bar-chart">
           <div class="bar-row"><span class="bar-label">5:1</span><div class="bar-track"><div class="bar-fill winner-bar" data-width="97"><span class="bar-val">4.83</span></div></div></div>
@@ -453,52 +424,44 @@
           <div class="bar-row"><span class="bar-label">7:1</span><div class="bar-track"><div class="bar-fill" data-width="91"><span class="bar-val">4.53</span></div></div></div>
         </div>
 
-        <h3 class="content-h3">Bearing Selection</h3>
+        <h3 class="content-h3">Bearings</h3>
         <div class="content-body">
-          <p>Ball bearings won at 4.05/5. Cost weighted at 60% to reflect prototype budget constraint ($120). Crossed rollers scored higher on performance but cost 5x more.</p>
+          <p>Ball bearings won at 4.05/5. I weighted cost at 60% because crossed rollers scored better on performance but cost 5x more, which would have blown the $120 budget.</p>
         </div>
       </section>
 
-      <!-- CATIA V6 -->
+      <!-- CAD -->
       <section class="content-section" id="catia">
         <div class="content-section-header">
           <span class="cs-number">03</span>
           <div class="cs-titles">
             <div class="cs-tag">CAD</div>
-            <h2 class="cs-title">Skeleton-Driven CATIA V6</h2>
+            <h2 class="cs-title">CATIA V6</h2>
           </div>
         </div>
 
         <div class="content-body">
-          <p>Everything is skeleton-driven. A master skeleton part holds all parameters, reference planes, and axes, and individual parts read from it via formulas and publications rather than referencing each other directly. Change one skeleton parameter and it propagates everywhere downstream.</p>
-          <p>I had no CATIA experience before this project. Roughly <strong>60-80 hours</strong> of self-directed learning went into getting the assembly to where it is now, most of that spent figuring out what not to do.</p>
+          <p>I had no CATIA experience before this project. About 60-80 hours of self-directed learning went into the assembly, and most of that was figuring out what not to do.</p>
+
+          <p>The assembly is skeleton-driven: a single master part holds all the parameters, reference planes, and axes. Every other part reads from the skeleton instead of referencing other parts directly, so changing one dimension in the skeleton updates everything downstream automatically. This matters for iteration speed, because when a test result says "make the output shaft 2mm bigger," I change one number and the carrier, lid, and bearings all update.</p>
         </div>
 
-        <a class="img-link" href="images/master-assembly-tree.png" target="_blank"><img class="content-img" src="images/master-assembly-tree.png" alt="CATIA master assembly tree"></a>
-        <div class="img-caption">Master assembly tree showing skeleton-driven sub-assemblies</div>
+        <a class="img-link" href="images/master-assembly-tree.png" target="_blank"><img class="content-img" src="images/master-assembly-tree.png" alt="CATIA master assembly with skeleton-driven hierarchy"></a>
+        <div class="img-caption">Master assembly in CATIA, showing the skeleton-driven structure</div>
 
-        <div class="callout">
-          <strong>Core principles:</strong> Parts constrain to skeleton, never to each other. No B-Rep references; sketch on planes, reference wireframe. Body-level patterning over feature-level. Placeholder gears as geometric contracts.
-        </div>
+        <a class="img-link" href="images/catia-tree-diagram.png" target="_blank"><img class="content-img" src="images/catia-tree-diagram.png" alt="Assembly tree diagram"></a>
 
-        <a class="img-link" href="images/catia-tree-diagram.png" target="_blank"><img class="content-img" src="images/catia-tree-diagram.png" alt="CATIA assembly tree structure — skeleton-driven hierarchy"></a>
-
-        <div class="content-body">
-          <p><strong>Chain-of-zeros positioning:</strong> Skeleton at (0,0,0) &rarr; sub-assembly constrained to skeleton midplane &rarr; parts constrained to sub-assembly origin. Geometry pastes without offsets.</p>
-          <p><strong>Cutting bodies</strong> for bearing pockets and bolt holes reference only skeleton datums, so they survive STEP swaps and revision changes.</p>
-        </div>
-
-        <a class="img-link" href="images/master-assembly-with-gears.png" target="_blank"><img class="content-img" src="images/master-assembly-with-gears.png" alt="Master assembly with real cycloidal tooth geometry"></a>
-        <div class="img-caption">Master assembly cross-section with real cycloidal tooth geometry</div>
+        <a class="img-link" href="images/master-assembly-with-gears.png" target="_blank"><img class="content-img" src="images/master-assembly-with-gears.png" alt="Cross-section with gear tooth geometry"></a>
+        <div class="img-caption">Cross-section with imported gear tooth geometry (Rev 00A, herringbone profile)</div>
 
         <div class="content-img-row">
           <div>
-            <a class="img-link" href="images/before-after.png" target="_blank"><img src="images/before-after.png" alt="Early model vs current parametric design"></a>
-            <div class="img-caption">Early learning model vs. current parametric design</div>
+            <a class="img-link" href="images/before-after.png" target="_blank"><img src="images/before-after.png" alt="Early model vs skeleton-driven design"></a>
+            <div class="img-caption">First attempt vs. skeleton-driven redesign</div>
           </div>
           <div>
-            <a class="img-link" href="images/carrier-assembly-tree.png" target="_blank"><img src="images/carrier-assembly-tree.png" alt="Carrier sub-assembly tree"></a>
-            <div class="img-caption">Carrier sub-assembly with cutting bodies</div>
+            <a class="img-link" href="images/carrier-assembly-tree.png" target="_blank"><img src="images/carrier-assembly-tree.png" alt="Carrier sub-assembly"></a>
+            <div class="img-caption">Carrier sub-assembly</div>
           </div>
         </div>
       </section>
@@ -509,50 +472,45 @@
           <span class="cs-number">04</span>
           <div class="cs-titles">
             <div class="cs-tag">Manufacturing</div>
-            <h2 class="cs-title">FDM Tolerancing &amp; Calibration</h2>
+            <h2 class="cs-title">FDM Tolerancing</h2>
           </div>
         </div>
 
         <div class="content-body">
-          <p>ISO fit designations describe the intent; FDM-specific offsets get you there. Each bearing interface has its own named offset parameter in the skeleton, so the nominal bearing dimensions stay pure and I can tune fits independently.</p>
-        </div>
+          <p>FDM prints aren't accurate enough for bearing fits out of the box. Bores print undersized by 0.1-0.4mm depending on diameter, so every bearing interface needs a calibrated offset in the CAD model. I keep each offset as a named parameter in the CATIA skeleton, which means the nominal bearing dimensions stay clean and I can tune each fit independently.</p>
 
-        <div class="callout">
-          <strong>Fit philosophy:</strong> All bearing interfaces target a finger-press transition fit. Firm finger pressure seats the bearing, it clicks in and doesn't fall out. FDM surface texture provides grip, and backdrivability is the priority.
+          <p>All bearing interfaces target a finger-press transition fit: firm pressure seats the bearing, it clicks in, and it doesn't fall out. I went with this instead of the textbook answer (press fit on the rotating ring) because FDM surface texture provides enough grip on its own, and backdrivability is the priority.</p>
         </div>
 
         <div class="table-wrap">
         <table class="content-table">
-          <tr><th>Interface</th><th>Offset Parameter</th><th>Value</th><th>Status</th></tr>
-          <tr><td>Housing bearing shaft</td><td class="mono">main_bearing_shaft_offset</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
-          <tr><td>Carrier bearing bore</td><td class="mono">carrier_bearing_bore_offset</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
-          <tr><td>Lid bearing bore</td><td class="mono">lid_bearing_bore_offset</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
-          <tr><td>Carrier output shaft</td><td class="mono">carrier_shaft_offset</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
-          <tr><td>Planet bearing bore</td><td class="mono">planet_bearing_offset</td><td class="mono">+0.15 mm</td><td>Pending</td></tr>
-          <tr><td>Ring-to-housing bore</td><td class="mono">ring_housing_diam_offset</td><td class="mono">+0.30 mm</td><td>Applied</td></tr>
+          <tr><th>Interface</th><th>Offset</th><th>Status</th></tr>
+          <tr><td>Housing bearing shaft</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
+          <tr><td>Carrier bearing bore</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
+          <tr><td>Lid bearing bore</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
+          <tr><td>Carrier output shaft</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
+          <tr><td>Planet bearing bore</td><td class="mono">+0.15 mm</td><td>Pending</td></tr>
+          <tr><td>Ring-to-housing bore</td><td class="mono">+0.30 mm</td><td>Applied</td></tr>
         </table>
         </div>
 
-        <h3 class="content-h3">Calibration Coupon Method</h3>
+        <h3 class="content-h3">Calibration Coupon</h3>
         <div class="content-body">
-          <p>Before the full build, I printed a test coupon with representative features. I measured each with calipers and compared to nominal, then fed the results directly back into CATIA skeleton offsets.</p>
+          <p>Before printing the full build, I printed a test coupon with representative features (bearing bores, shaft posts, clearance holes) and measured each one with calipers. The results went straight back into the CATIA offsets.</p>
         </div>
 
         <div class="table-wrap">
         <table class="content-table">
           <tr><th>Feature</th><th>Nominal</th><th>Measured</th><th>Deviation</th><th>Result</th></tr>
           <tr><td>Main bearing bore</td><td class="mono">37.10 mm</td><td class="mono">37.10 mm</td><td class="mono">0.00</td><td class="pass">Perfect fit</td></tr>
-          <tr><td>Bearing shaft post</td><td class="mono">25.10 mm</td><td class="mono">25.01 mm</td><td class="mono">-0.09</td><td class="pass">Correct</td></tr>
+          <tr><td>Bearing shaft post</td><td class="mono">25.10 mm</td><td class="mono">25.01 mm</td><td class="mono">-0.09</td><td class="pass">Good</td></tr>
           <tr><td>Planet bore</td><td class="mono">14.00 mm</td><td class="mono">13.75 mm</td><td class="mono">-0.25</td><td>Offset increased</td></tr>
           <tr><td>M3 clearance holes</td><td class="mono">3.40 mm</td><td class="mono">~3.00 mm</td><td class="mono">-0.40</td><td>Offset extrapolated</td></tr>
         </table>
         </div>
 
-        <h3 class="content-h3">DFM Lessons</h3>
         <div class="content-body">
-          <p><strong>Heat-set inserts:</strong> Model pilot hole at insert OD, not generic tables (those assume injection molding). Plate-press technique for flush seating.</p>
-          <p><strong>Self-tapping validated:</strong> M3: 2.6mm, M4: 3.6mm, M5: 4.6mm pilots. Simpler than heat inserts for prototyping.</p>
-          <p><strong>Print orientation:</strong> Critical bores vertical for roundness. Gear teeth printed flat. Carrier orientation creates a conflict: output shaft up gives good top bearing surface but bad planet bearing shoulders.</p>
+          <p>Smaller holes had worse deviation, which makes sense given FDM accuracy scales with feature size. The planet bore and clearance holes needed the largest corrections. I also ended up switching from heat-set inserts to self-tapping screws (M3: 2.6mm pilot, M4: 3.6mm, M5: 4.6mm), which turned out to be simpler and plenty strong enough for a prototype.</p>
         </div>
       </section>
 
@@ -562,24 +520,16 @@
           <span class="cs-number">05</span>
           <div class="cs-titles">
             <div class="cs-tag">Prototype</div>
-            <h2 class="cs-title">Rev 00A Build</h2>
+            <h2 class="cs-title">Rev 00A</h2>
           </div>
         </div>
 
         <div class="content-body">
-          <p>I printed the first complete prototype on a Bambu P1S in PLA with off-the-shelf ball bearings, then assembled and hand-tested everything to validate fits, find issues, and calibrate offsets for the next revision.</p>
+          <p>First complete build. Printed on a Bambu P1S in PLA with off-the-shelf ball bearings, assembled by hand, and tested to validate fits and find issues.</p>
         </div>
 
-        <div class="content-img-row">
-          <div>
-            <a class="img-link" href="images/cad-assembly.png" target="_blank"><img src="images/cad-assembly.png" alt="CAD assembly"></a>
-            <div class="img-caption">CATIA master assembly</div>
-          </div>
-          <div class="placeholder-slot" style="aspect-ratio:4/3; border-radius:4px;">
-            <span class="ph-icon">&#128247;</span>
-            <span class="ph-text">Prototype photo</span>
-          </div>
-        </div>
+        <a class="img-link" href="images/cad-assembly.png" target="_blank"><img class="content-img" src="images/cad-assembly.png" alt="Rev 00A CAD assembly in CATIA"></a>
+        <div class="img-caption">Rev 00A assembly in CATIA</div>
 
         <h3 class="content-h3">Fit Results</h3>
         <div class="table-wrap">
@@ -594,8 +544,7 @@
         </div>
 
         <div class="content-body">
-          <p><strong>Reprints:</strong> I reprinted the bottom carrier shell and housing body with adjusted offsets. Abandoned heat inserts in favor of self-tapping threads. Updated 4 skeleton offset parameters.</p>
-          <p><strong>Issues identified:</strong> Five things felt wrong during hand testing: lid drag, notchy gear mesh, carrier shoulder deformation, indexing play, and bolt torque sensitivity. Each one became a formal test in the next phase.</p>
+          <p>I reprinted the carrier and housing with adjusted offsets and updated 4 skeleton parameters. But beyond the dimensional stuff, five things felt wrong during hand testing: the lid added drag when tightened, the gear mesh felt notchy, the carrier shoulders were deforming, there was play between carrier halves, and bolt torque was too sensitive. Each of those became a formal test.</p>
         </div>
       </section>
 
@@ -605,16 +554,12 @@
           <span class="cs-number">06</span>
           <div class="cs-titles">
             <div class="cs-tag">Validation</div>
-            <h2 class="cs-title">Structured Testing &amp; Rev 00B</h2>
+            <h2 class="cs-title">Testing &amp; Rev 00B</h2>
           </div>
         </div>
 
         <div class="content-body">
-          <p>Every test started with a question and acceptance criteria written down before I touched the prototype. I wanted to know what I was looking for, not just poke at it and see what happened.</p>
-        </div>
-
-        <div class="callout">
-          <strong>Dependency map:</strong> Component &rarr; Interface &rarr; Subsystem &rarr; System. Tests resolve bottom-up. 10 unknowns mapped to 11 requirements (R-01 through R-11), 5 completed tests on Rev 00A.
+          <p>For each of the five issues from Rev 00A, I wrote down the question I was trying to answer and what would count as a pass before touching the prototype. The table below is the result.</p>
         </div>
 
         <div class="table-wrap">
@@ -629,7 +574,7 @@
           <tr>
             <td><strong>T-002</strong></td>
             <td>Is the lid over-constraining the carrier?</td>
-            <td>Yes — double-constrains via ring gear + bearing recess</td>
+            <td>Yes, double-constrained via ring gear + bearing recess</td>
             <td class="mono">Decouple lid constraints</td>
           </tr>
           <tr>
@@ -647,82 +592,71 @@
           <tr>
             <td><strong>T-005</strong></td>
             <td>Does tightening bolts bind planets?</td>
-            <td>Narrow window — 1.1 Nm causes drag</td>
+            <td>Narrow window; 1.1 Nm causes drag</td>
             <td class="mono">Shoulder redesign</td>
           </tr>
         </table>
         </div>
 
-        <h3 class="content-h3">Rev 00B Scoped Changes</h3>
+        <div class="content-body">
+          <p>The biggest finding was T-001. The herringbone tooth profile was causing notchy mesh because even a small alignment error between the two halves of each planet creates interference. At this scale and with FDM tolerances, the helix angle wasn't doing anything useful, so I switched to straight spur gears for Rev 00B.</p>
+        </div>
+
+        <h3 class="content-h3">Rev 00B Changes</h3>
         <div class="table-wrap">
         <table class="content-table">
           <tr><th>Change</th><th>Source</th><th>Part</th></tr>
-          <tr><td>Switch herringbone &rarr; spur gears</td><td class="mono">T-001</td><td>All gears</td></tr>
-          <tr><td>Enlarge output shaft + larger top bearing</td><td class="mono">T-001, U-07</td><td>Carrier top</td></tr>
+          <tr><td>Herringbone &rarr; spur gears</td><td class="mono">T-001</td><td>All gears</td></tr>
+          <tr><td>Larger output shaft + bigger top bearing</td><td class="mono">T-001</td><td>Carrier top</td></tr>
           <tr><td>Fix planet bearing shoulder print quality</td><td class="mono">T-003, T-005</td><td>Carrier top/bottom</td></tr>
-          <tr><td>Decouple lid constraint</td><td class="mono">T-002</td><td>Lid</td></tr>
-          <tr><td>Thread into plastic (no heat inserts)</td><td class="mono">T-001</td><td>Carrier</td></tr>
+          <tr><td>Decouple lid constraint from carrier</td><td class="mono">T-002</td><td>Lid</td></tr>
+          <tr><td>Self-tapping threads (no heat inserts)</td><td class="mono">T-001</td><td>Carrier</td></tr>
         </table>
         </div>
 
         <h3 class="content-h3">Rev 00B Build</h3>
         <div class="content-body">
-          <p>All Rev 00B parts printed on the Bambu P1S with the updated spur gear profiles and revised carrier geometry. Assembly confirmed improved fits across the board.</p>
+          <p>Printed all Rev 00B parts with the updated spur gear profiles and revised carrier geometry. The fits were noticeably better than Rev 00A, and the notchy mesh from the herringbone gears is gone.</p>
         </div>
 
-        <a class="img-link" href="images/rev00b-3d-printing.jpg" target="_blank"><img class="content-img" src="images/rev00b-3d-printing.jpg" alt="Rev 00B parts printing on Bambu P1S"></a>
-        <div class="img-caption">Rev 00B parts on the Bambu P1S print bed</div>
+        <a class="img-link" href="images/rev00b-3d-printing.jpg" target="_blank"><img class="content-img" src="images/rev00b-3d-printing.jpg" alt="Rev 00B parts on the Bambu P1S"></a>
+        <div class="img-caption">Rev 00B parts on the print bed</div>
 
         <div class="content-img-row">
           <div>
-            <a class="img-link" href="images/rev00b-sun-planets-ring-bearings-installed.jpg" target="_blank"><img src="images/rev00b-sun-planets-ring-bearings-installed.jpg" alt="Sun, planets, and ring gear with bearings installed"></a>
+            <a class="img-link" href="images/rev00b-sun-planets-ring-bearings-installed.jpg" target="_blank"><img src="images/rev00b-sun-planets-ring-bearings-installed.jpg" alt="Sun, planets, and ring gear with bearings"></a>
             <div class="img-caption">Sun, planets, and ring with bearings installed</div>
           </div>
           <div>
-            <a class="img-link" href="images/rev00b-lower-carrier-planets-sun-installed.jpg" target="_blank"><img src="images/rev00b-lower-carrier-planets-sun-installed.jpg" alt="Lower carrier with planets and sun gear installed"></a>
+            <a class="img-link" href="images/rev00b-lower-carrier-planets-sun-installed.jpg" target="_blank"><img src="images/rev00b-lower-carrier-planets-sun-installed.jpg" alt="Lower carrier with gear train installed"></a>
             <div class="img-caption">Lower carrier with planets and sun installed</div>
           </div>
         </div>
 
         <div class="content-img-row">
           <div>
-            <a class="img-link" href="images/rev00b-lid-off-rest-installed.jpg" target="_blank"><img src="images/rev00b-lid-off-rest-installed.jpg" alt="Gearbox assembled with lid removed"></a>
-            <div class="img-caption">Assembled gearbox, lid off</div>
+            <a class="img-link" href="images/rev00b-lid-off-rest-installed.jpg" target="_blank"><img src="images/rev00b-lid-off-rest-installed.jpg" alt="Assembled gearbox without lid"></a>
+            <div class="img-caption">Assembled, lid off</div>
           </div>
           <div>
-            <a class="img-link" href="images/rev00b-testing-with-claude-code.jpg" target="_blank"><img src="images/rev00b-testing-with-claude-code.jpg" alt="Testing Rev 00B with Claude Code"></a>
-            <div class="img-caption">Testing Rev 00B with Claude Code</div>
+            <a class="img-link" href="images/rev00b-testing-with-claude-code.jpg" target="_blank"><img src="images/rev00b-testing-with-claude-code.jpg" alt="Test bench setup"></a>
+            <div class="img-caption">Test bench with ODrive and power supply</div>
           </div>
         </div>
       </section>
 
-      <!-- GD&T PLACEHOLDER -->
-      <section class="content-section" id="gdt">
+      <!-- WHAT'S NEXT -->
+      <section class="content-section" id="next">
         <div class="content-section-header">
           <span class="cs-number">07</span>
           <div class="cs-titles">
-            <div class="cs-tag">Coming Soon</div>
-            <h2 class="cs-title">GD&amp;T &amp; Engineering Drawings</h2>
+            <div class="cs-tag">Ongoing</div>
+            <h2 class="cs-title">What's Next</h2>
           </div>
         </div>
-        <div class="placeholder-section">
-          <h3>In Progress</h3>
-          <p>Formal tolerance callouts, datum schemes, and tolerance stack-up analysis. Coming after Rev 00B validation.</p>
-        </div>
-      </section>
 
-      <!-- CONTROLS PLACEHOLDER -->
-      <section class="content-section" id="controls">
-        <div class="content-section-header">
-          <span class="cs-number">08</span>
-          <div class="cs-titles">
-            <div class="cs-tag">Coming Soon</div>
-            <h2 class="cs-title">Controls &amp; Motor Integration</h2>
-          </div>
-        </div>
-        <div class="placeholder-section">
-          <h3>Planned</h3>
-          <p>ODrive S1 integration, impedance control, backdrivability measurement, and torque capacity verification.</p>
+        <div class="content-body">
+          <p>Rev 00B is built and assembled. Next steps are quantitative testing (backlash measurement, friction torque, efficiency), GD&amp;T with formal tolerance stack-ups, and ODrive motor integration for impedance control. This page will be updated as those happen.</p>
         </div>
       </section>
 
