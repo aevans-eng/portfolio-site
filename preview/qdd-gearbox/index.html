@@ -339,13 +339,13 @@
 
         <div class="content-body">
           <p class="whw-label">Why</p>
-          <p>January 2026, hackathon day. I'd been studying mechanical engineering for three years but hadn't designed a complete electromechanical system, let alone touched CATIA or followed a V-model development process. I wanted to close that gap by building the kind of actuator used in Tesla Optimus and modern legged robots: a quasi-direct-drive.</p>
+          <p>January 2026, hackathon day. Three years into a mechanical engineering degree and I still hadn't designed a complete electromechanical system or touched CATIA. I wanted to close that gap by building the kind of actuator used in Optimus and modern legged robots: a quasi-direct-drive.</p>
 
           <p class="whw-label">How</p>
-          <p>I defined requirements before any CAD existed, scored trade studies quantitatively, and locked interfaces before detail design started. Every decision traces back to a requirement.</p>
+          <p>I defined requirements before any CAD existed, scored trade studies quantitatively, and locked interfaces before detail design started, so every downstream decision had something concrete to trace back to.</p>
 
           <p class="whw-label">What</p>
-          <p>A 5:1 FDM 3D-printed planetary gearbox paired with a BLDC motor, magnetic encoder, and ODrive controller. The gearbox is designed for transparency, meaning it's backdrivable with low friction and minimal backlash. The project covers the full loop: requirements, CATIA assembly design, prototyping, and iterative testing.</p>
+          <p>A 5:1 FDM 3D-printed planetary gearbox paired with a BLDC motor, magnetic encoder, and ODrive controller. Designed for transparency: low friction, minimal backlash, backdrivable by hand.</p>
         </div>
 
         <div class="callout">
@@ -366,9 +366,9 @@
         <a class="img-link" href="images/full-assembly-cross-section.png" target="_blank"><img class="content-img" src="images/full-assembly-cross-section.png" alt="QDD Gearbox — full assembly cross-section"></a>
 
         <div class="content-body">
-          <p>A quasi-direct-drive (QDD) actuator built around a 5:1 FDM 3D-printed planetary gearbox, interfacing with a BLDC motor, magnetic encoder, and ODrive controller. The defining property of a QDD is <strong>transparency</strong>: the gearbox must be backdrivable with low friction and minimal backlash, so the motor can feel and respond to external forces.</p>
+          <p>A quasi-direct-drive actuator built around a 5:1 FDM 3D-printed planetary gearbox, interfacing with a BLDC motor, magnetic encoder, and ODrive controller. The whole point of a QDD is <strong>transparency</strong>; you need to be able to backdrive the output by hand, which means low friction and tight backlash control through the entire gear train.</p>
 
-          <p>QDD actuators are the standard in legged robots and collaborative arms (e.g., Tesla Optimus). I designed this one from scratch to build end-to-end actuator design experience, from requirements through testing.</p>
+          <p>I designed this from scratch because I wanted to understand how these actuators actually work, not just read about them. The same architecture shows up in Optimus, ANYmal, and most modern legged robots, so it felt like the right system to learn on.</p>
         </div>
 
         <div class="callout">
@@ -413,7 +413,7 @@
         </div>
 
         <div class="content-body">
-          <p>I followed a structured sprint: quantifiable requirements, concept research, weighted Pugh matrices, interface definition, then detailed CAD with DFM built in.</p>
+          <p>Before touching CAD, I wanted every major design choice locked down with numbers behind it. That meant Pugh matrices with weighted criteria, not gut feel.</p>
         </div>
 
         <h3 class="content-h3">Gear Type Selection</h3>
@@ -470,8 +470,8 @@
         </div>
 
         <div class="content-body">
-          <p>The entire assembly is skeleton-driven: a master skeleton part contains all parameters, reference planes, and axes. Individual parts read from the skeleton via formulas and publications. They never reference each other directly. Changing a skeleton parameter propagates to every downstream part automatically.</p>
-          <p>I learned CATIA V6 (3DEXPERIENCE) from scratch for this project. Roughly <strong>60-80 hours</strong> of self-directed learning and modeling.</p>
+          <p>Everything is skeleton-driven. A master skeleton part holds all parameters, reference planes, and axes, and individual parts read from it via formulas and publications rather than referencing each other directly. Change one skeleton parameter and it propagates everywhere downstream.</p>
+          <p>I had no CATIA experience before this project. Roughly <strong>60-80 hours</strong> of self-directed learning went into getting the assembly to where it is now, most of that spent figuring out what not to do.</p>
         </div>
 
         <a class="img-link" href="images/master-assembly-tree.png" target="_blank"><img class="content-img" src="images/master-assembly-tree.png" alt="CATIA master assembly tree"></a>
@@ -514,7 +514,7 @@
         </div>
 
         <div class="content-body">
-          <p>Standard ISO fit designations describe the <em>intent</em>, what the joint should behave like. FDM-specific offsets approximate those fits. Every bearing interface uses a separate named offset parameter in the skeleton, keeping nominal bearing dimensions pure.</p>
+          <p>ISO fit designations describe the intent; FDM-specific offsets get you there. Each bearing interface has its own named offset parameter in the skeleton, so the nominal bearing dimensions stay pure and I can tune fits independently.</p>
         </div>
 
         <div class="callout">
@@ -595,7 +595,7 @@
 
         <div class="content-body">
           <p><strong>Reprints:</strong> I reprinted the bottom carrier shell and housing body with adjusted offsets. Abandoned heat inserts in favor of self-tapping threads. Updated 4 skeleton offset parameters.</p>
-          <p><strong>Issues identified:</strong> I flagged 5 concerns for structured testing: lid drag, gear mesh feel, carrier shoulder deformation, indexing play, and bolt torque sensitivity.</p>
+          <p><strong>Issues identified:</strong> Five things felt wrong during hand testing: lid drag, notchy gear mesh, carrier shoulder deformation, indexing play, and bolt torque sensitivity. Each one became a formal test in the next phase.</p>
         </div>
       </section>
 
@@ -610,7 +610,7 @@
         </div>
 
         <div class="content-body">
-          <p>I set up testing so every unknown traces back to a requirement and a specific test. Each one is categorized by risk &times; uncertainty, and I define the question and acceptance criteria <em>before</em> running anything.</p>
+          <p>Every test started with a question and acceptance criteria written down before I touched the prototype. I wanted to know what I was looking for, not just poke at it and see what happened.</p>
         </div>
 
         <div class="callout">
