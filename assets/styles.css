@@ -295,3 +295,20 @@ a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01)
   footer { flex-direction: column; gap: 12px; align-items: flex-start; }
   .footer-links { flex-wrap: wrap; }
 }
+
+/* ===== LIGHTBOX ===== */
+.lightbox-overlay {
+  display: none; position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,.85); cursor: zoom-out;
+  justify-content: center; align-items: center;
+}
+.lightbox-overlay.active { display: flex; }
+.lightbox-overlay img {
+  max-width: 92vw; max-height: 92vh; border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.5);
+}
+.lightbox-caption {
+  position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+  color: rgba(255,255,255,.7); font-size: 13px; text-align: center;
+  max-width: 80vw; pointer-events: none;
+}

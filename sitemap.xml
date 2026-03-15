@@ -1,1 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//localhost:2368/sitemap.xsl"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://aaronevans.ca/sitemap-pages.xml</loc><lastmod>2026-01-28T05:45:38.161Z</lastmod></sitemap><sitemap><loc>https://aaronevans.ca/sitemap-posts.xml</loc><lastmod>2026-01-28T06:33:13.363Z</lastmod></sitemap><sitemap><loc>https://aaronevans.ca/sitemap-authors.xml</loc><lastmod>2026-01-28T05:46:22.699Z</lastmod></sitemap></sitemapindex>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://aaronevans.ca/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aaronevans.ca/about/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aaronevans.ca/resume/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aaronevans.ca/qdd-gearbox/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aaronevans.ca/hitch/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
