@@ -296,6 +296,13 @@ a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01)
   .footer-links { flex-wrap: wrap; }
 }
 
+/* ===== SCREEN-READER ONLY ===== */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
 /* ===== LIGHTBOX ===== */
 .lightbox-overlay {
   display: none; position: fixed; inset: 0; z-index: 1000;
