@@ -309,7 +309,7 @@
       </ul>
 
       <div class="sidebar-specs">
-        <div class="section-label">Specs</div>
+        <div class="section-label">Design Targets</div>
         <div class="sidebar-spec-row"><span class="ssl">Ratio</span><span class="ssv">5:1</span></div>
         <div class="sidebar-spec-row"><span class="ssl">Peak torque</span><span class="ssv">16 Nm</span></div>
         <div class="sidebar-spec-row"><span class="ssl">Backlash</span><span class="ssv">&le;0.5&deg;</span></div>
@@ -443,7 +443,7 @@
         <div class="content-body">
           <p>I had no CATIA experience before this project. About 60-80 hours of self-directed learning went into the assembly, and most of that was figuring out what not to do.</p>
 
-          <p>The assembly is skeleton-driven: a single master part holds all the parameters, reference planes, and axes. Every other part reads from the skeleton instead of referencing other parts directly, so changing one dimension in the skeleton updates everything downstream automatically. This matters for iteration speed, because when a test result says "make the output shaft 2mm bigger," I change one number and the carrier, lid, and bearings all update.</p>
+          <p>The assembly is skeleton-driven: a single master part holds all the parameters, reference planes, and axes. Every other part reads from the skeleton, so changing one dimension updates everything downstream automatically. This matters for iteration speed, because when a test result says "make the output shaft 2mm bigger," I change one number and the carrier, lid, and bearings all update.</p>
         </div>
 
         <a class="img-link" href="images/master-assembly-tree.png"><img class="content-img" loading="lazy" src="images/master-assembly-tree.png" alt="CATIA master assembly with skeleton-driven hierarchy"></a>
@@ -575,13 +575,13 @@
             <td class="mono"><strong>T-002</strong></td>
             <td>Is the lid over-constraining the carrier?</td>
             <td>Yes, double-constrained via ring gear + bearing recess</td>
-            <td class="mono">Decouple lid constraints</td>
+            <td class="mono">Floating lid bearing</td>
           </tr>
           <tr>
             <td class="mono"><strong>T-003</strong></td>
             <td>Does the printed shoulder deform?</td>
-            <td>Top carrier shoulders have print quality issues</td>
-            <td class="mono">New print strategy</td>
+            <td>Top carrier bearing shoulders printed poorly (overhang)</td>
+            <td class="mono">Carrier wall redesign</td>
           </tr>
           <tr>
             <td class="mono"><strong>T-004</strong></td>
@@ -608,8 +608,8 @@
           <tr><th>Change</th><th>Source</th><th>Part</th></tr>
           <tr><td>Herringbone &rarr; spur gears</td><td class="mono">T-001</td><td>All gears</td></tr>
           <tr><td>Larger output shaft + bigger top bearing</td><td class="mono">T-001</td><td>Carrier top</td></tr>
-          <tr><td>Fix planet bearing shoulder print quality</td><td class="mono">T-003, T-005</td><td>Carrier top/bottom</td></tr>
-          <tr><td>Decouple lid constraint from carrier</td><td class="mono">T-002</td><td>Lid</td></tr>
+          <tr><td>Shorter top carrier walls (bearing shoulders on print bed), taller bottom walls</td><td class="mono">T-003, T-005</td><td>Carrier top/bottom</td></tr>
+          <tr><td>Floating lid bearing arrangement</td><td class="mono">T-002</td><td>Lid</td></tr>
           <tr><td>Self-tapping threads (no heat inserts)</td><td class="mono">T-001</td><td>Carrier</td></tr>
         </table>
         </div>

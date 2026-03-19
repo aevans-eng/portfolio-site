@@ -524,8 +524,8 @@
         <div class="test-stat"><div class="test-stat-val">1</div><div class="test-stat-label">Passed</div></div>
       </div>
       <div class="test-row"><span class="test-dot fix"></span> Gear mesh notchy <span class="test-action">&rarr; spur gears</span></div>
-      <div class="test-row"><span class="test-dot fix"></span> Lid over-constraining <span class="test-action">&rarr; decouple</span></div>
-      <div class="test-row"><span class="test-dot fix"></span> Carrier shoulder deform <span class="test-action">&rarr; reprint</span></div>
+      <div class="test-row"><span class="test-dot fix"></span> Lid over-constraining <span class="test-action">&rarr; floating bearing</span></div>
+      <div class="test-row"><span class="test-dot fix"></span> Carrier shoulder deform <span class="test-action">&rarr; redesign</span></div>
       <div class="test-row"><span class="test-dot ok"></span> Carrier indexing OK <span class="test-action">no change</span></div>
       <div class="test-row"><span class="test-dot fix"></span> Bolt torque binding <span class="test-action">&rarr; redesign</span></div>
 
@@ -534,8 +534,8 @@
         <table class="test-detail-table">
           <tr><th>Test</th><th>Root Cause</th><th>Fix</th></tr>
           <tr><td>Gear mesh</td><td class="root">Herringbone halves misaligned at FDM resolution</td><td>Switch to spur gears</td></tr>
-          <tr><td>Lid drag</td><td class="root">Tolerance stackup over-constrained assembly</td><td>Decouple lid from housing</td></tr>
-          <tr><td>Carrier shoulder</td><td class="root">FDM surface quality at small features</td><td>New print orientation strategy</td></tr>
+          <tr><td>Lid drag</td><td class="root">Tolerance stackup over-constrained assembly</td><td>Floating lid bearing</td></tr>
+          <tr><td>Carrier shoulder</td><td class="root">Bearing shoulders printed as overhang</td><td>Carrier wall redesign</td></tr>
           <tr><td>Bolt torque</td><td class="root">Bolt preload deflected planets into ring gear</td><td>Redesign load path</td></tr>
         </table>
         <p style="font-size:12px; color:var(--text-mid); margin-top:12px; line-height:1.5;">
@@ -575,7 +575,7 @@
 
       <div class="test-summary">
         <div class="test-stat"><div class="test-stat-val">1</div><div class="test-stat-label">Skeleton</div></div>
-        <div class="test-stat"><div class="test-stat-val">0</div><div class="test-stat-label">Inter-part refs</div></div>
+        <div class="test-stat"><div class="test-stat-val">Full</div><div class="test-stat-label">Parametric</div></div>
         <div class="test-stat"><div class="test-stat-val">60-80</div><div class="test-stat-label">Hrs self-taught</div></div>
       </div>
       <p style="font-size:12px; color:var(--text-mid); line-height:1.5; margin-top:8px;">Single skeleton drives all parts. Change one parameter, whole assembly updates.</p>
@@ -583,7 +583,7 @@
       <div class="panel-expanded">
         <p style="font-size:13px; font-weight:600; margin-bottom:8px;">Core Principles</p>
         <div class="tol-detail">
-          <div class="tol-detail-row"><span class="tol-detail-label">Constraints</span><span>Parts constrain to skeleton, never to each other</span></div>
+          <div class="tol-detail-row"><span class="tol-detail-label">Constraints</span><span>All constraints reference skeleton planes and wireframe</span></div>
           <div class="tol-detail-row"><span class="tol-detail-label">References</span><span>No B-Rep refs. Sketch on planes, reference wireframe</span></div>
           <div class="tol-detail-row"><span class="tol-detail-label">Positioning</span><span>Chain-of-zeros: skeleton at origin, parts relative to sub-assembly</span></div>
           <div class="tol-detail-row"><span class="tol-detail-label">Cutting bodies</span><span>Bearing pockets + bolt holes reference skeleton datums only</span></div>
