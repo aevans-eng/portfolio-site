@@ -646,6 +646,36 @@
             <div class="img-caption">Test bench with ODrive and power supply</div>
           </div>
         </div>
+
+        <!-- Interactive RTM Explorer -->
+        <div style="margin-top: 32px; text-align: center;">
+          <button id="rtm-toggle" style="
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 20px; border-radius: 4px;
+            background: var(--surface); border: 1px solid var(--border);
+            font-family: var(--mono); font-size: 12px; font-weight: 600;
+            color: var(--text-mid); cursor: pointer;
+            transition: all 0.2s;
+          " onmouseover="this.style.background='var(--green-bg)';this.style.borderColor='var(--green-border)';this.style.color='var(--green)'"
+             onmouseout="if(!this.classList.contains('active')){this.style.background='var(--surface)';this.style.borderColor='var(--border)';this.style.color='var(--text-mid)'}">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+            Explore Test Data
+          </button>
+        </div>
+
+        <div id="rtm-explorer" style="display:none; margin-top: 20px;">
+          <div id="rtm-tabs" style="
+            display: flex; gap: 2px; margin-bottom: 0;
+            border-bottom: 1px solid var(--border);
+            overflow-x: auto;
+          "></div>
+          <div id="rtm-content" style="
+            background: var(--surface); border: 1px solid var(--border);
+            border-top: none; border-radius: 0 0 4px 4px;
+            padding: 16px; overflow-x: auto;
+            max-height: 520px; overflow-y: auto;
+          "></div>
+        </div>
       </section>
 
       <!-- WHAT'S NEXT -->
@@ -750,6 +780,309 @@ navLinks.forEach(link => {
   function close() {
     overlay.classList.remove('active');
     document.body.style.overflow = '';
+  }
+})();
+
+// ===== RTM EXPLORER =====
+(function() {
+  const rtmData = {
+    "Dashboard": {
+      type: "kv",
+      sections: [
+        { title: "Requirements Summary", rows: [
+          ["Total Requirements", "13"],
+          ["Verified", "0"],
+          ["Failed", "2"],
+          ["Partial", "1"],
+          ["Pending Review", "2"],
+          ["Not Verified", "8"],
+          ["% Verified", "0%"]
+        ]},
+        { title: "Test Campaign", rows: [
+          ["Total Tests", "19"],
+          ["Complete", "5"],
+          ["In Progress", "0"],
+          ["Not Started", "14"],
+          ["Pass", "1"],
+          ["Fail", "2"],
+          ["% Complete", "26%"]
+        ]},
+        { title: "Traceability Coverage", rows: [
+          ["Covered (Primary Test)", "2"],
+          ["Partial (Secondary Only)", "4"],
+          ["Via Inspection/Demo/Analysis", "5"],
+          ["Gap (No Coverage)", "2"],
+          ["Gap Req IDs", "R-07, R-08"]
+        ]},
+        { title: "Unknowns Register", rows: [
+          ["Total Unknowns", "10"],
+          ["Resolved", "1"],
+          ["Open", "8"],
+          ["% Resolved", "11%"]
+        ]}
+      ]
+    },
+    "Requirements": {
+      type: "table",
+      headers: ["ID", "Requirement", "Target", "Type", "Priority", "Method", "Status"],
+      rows: [
+        ["R-01", "Backlash", "\u2264 0.5\u00b0", "Hard", "1", "Test", "Partial"],
+        ["R-02", "Cost", "< $120 CAD", "Hard", "2", "Inspection", "Pending Review"],
+        ["R-03", "DFM/DFA", "Off-the-shelf + FDM", "Hard", "3", "Inspection", "Pending Review"],
+        ["R-04", "Backdrivability", "< 1 Nm friction", "Hard", "4", "Test", "Failed"],
+        ["R-05", "Durability", "No self-destruction < 1 min", "Hard", "5", "Test", "Not Verified"],
+        ["R-06", "Peak Torque", "\u2265 16 Nm", "Hard", "6", "Test", "Not Verified"],
+        ["R-07", "Continuous Torque", "\u2265 12 Nm", "Hard", "7", "Test", "Not Verified"],
+        ["R-08", "Thermal Performance", "No melting < 5 min", "Hard", "8", "Test", "Not Verified"],
+        ["R-09", "Efficiency", "> 90%", "Soft", "9", "Test", "Failed"],
+        ["R-10", "Weight", "< 2 kg", "Soft", "10", "Inspection", "Not Verified"],
+        ["R-11", "Speed", "\u2265 600 RPM", "Soft", "11", "Test", "Not Verified"],
+        ["R-12", "Integratable", "Shafts or bolted plates", "Soft", "12", "Demo", "Not Verified"],
+        ["R-13", "Torque Density", "No target set", "Soft", "13", "Analysis", "Not Verified"]
+      ]
+    },
+    "Test Log": {
+      type: "table",
+      headers: ["ID", "Test Name", "Phase", "Level", "Status", "Result", "Pass/Fail"],
+      rows: [
+        ["T-001", "Root cause \u2014 tight gear meshing", "Rev 00A", "Interface", "Complete", "Herringbone misalignment", "Partial"],
+        ["T-002", "Lid drag \u2014 over-constraint", "Rev 00A", "Interface", "Complete", "Tolerance stackup identified", "Fail"],
+        ["T-003", "Carrier shoulder deformation", "Rev 00A", "Component", "Complete", "Print quality issue on top", "Inconclusive"],
+        ["T-004", "Carrier half indexing", "Rev 00A", "Interface", "Complete", "No operational clocking force", "Pass"],
+        ["T-005", "Bolt torque vs planet drag", "Rev 00A", "Interface", "Complete", "Narrow window, 1.1 Nm \u2192 drag", "Fail"],
+        ["T-006", "Friction characterization", "Phase 2", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-007", "Step response", "Phase 2", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-008", "Backdriving torque", "Phase 2", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-009", "Motor Kt verification", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
+        ["T-010", "Motor cogging profile", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
+        ["T-011", "Motor friction vs speed", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
+        ["T-012", "Backlash measurement", "Phase 1", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-013", "Hand backdriving", "Phase 1", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-014", "Motor step response", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
+        ["T-015", "Plant identification", "Phase 3", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-016", "Bode plot", "Phase 3", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-017", "Virtual spring", "Phase 4", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-018", "Spring-damper", "Phase 4", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-019", "Variable impedance demo", "Phase 4", "System", "Not Started", "\u2014", "\u2014"]
+      ]
+    },
+    "Traceability": {
+      type: "matrix",
+      testIds: ["T-009","T-010","T-011","T-014","T-012","T-013","T-006","T-007","T-008","T-015","T-016","T-017","T-018","T-019","T-001","T-002","T-003","T-004","T-005"],
+      phases:  ["Ph0",  "Ph0",  "Ph0",  "Ph0",  "Ph1",  "Ph1",  "Ph2",  "Ph2",  "Ph2",  "Ph3",  "Ph3",  "Ph4",  "Ph4",  "Ph4",  "00A",  "00A",  "00A",  "00A",  "00A"],
+      reqIds: ["R-01","R-02","R-03","R-04","R-05","R-06","R-07","R-08","R-09","R-10","R-11","R-12","R-13"],
+      reqNames: ["Backlash","Cost","DFM/DFA","Backdrivability","Durability","Peak Torque","Continuous Torque","Thermal","Efficiency","Weight","Speed","Integratable","Torque Density"],
+      coverage: ["Covered","Via Inspection","Via Inspection","Covered","Partial","Partial","Gap","Gap","Partial","Via Inspection","Partial","Via Demo","Via Analysis"],
+      // matrix[reqIdx][testIdx] = "P"|"S"|""
+      matrix: [
+        ["","","","","P","","","","","","","","","","S","","","S",""],
+        ["","","","","","","","","","","","","","","","","","",""],
+        ["","","","","","","","","","","","","","","","","","",""],
+        ["","","","","","P","P","","P","","","","","","S","S","","","S"],
+        ["","","","","","","","","","","","","","","","","S","","S"],
+        ["","","","","","","","","","","","","","","","","S","","S"],
+        ["","","","","","","","","","","","","","","","","","",""],
+        ["","","","","","","","","","","","","","","","","","",""],
+        ["","","S","","","","S","","","","","","","","","","","",""],
+        ["","","","","","","","","","","","","","","","","","",""],
+        ["","","","","","","","","","","S","","","","","","","",""],
+        ["","","","","","","","","","","","","","","","","","",""],
+        ["","","","","","","","","","","","","","","","","","",""]
+      ]
+    },
+    "Unknowns": {
+      type: "table",
+      headers: ["ID", "Description", "Category", "Priority", "Status", "Linked Tests", "Resolution"],
+      rows: [
+        ["U-01", "Planet positioning & mesh clearance", "Assembly/fit", "Test first", "Postponed \u2192 Rev 00B", "T-001", "Herringbone misalignment. Switched to spur gears."],
+        ["U-03", "Lid causing drag \u2014 over-constraint?", "Assembly/fit", "Test first", "Root cause identified", "T-002", "Tolerance stackup. Redesign for Rev 00B."],
+        ["U-04", "Carrier shoulder deformation under bolt torque", "Structural", "Test first", "Confirmed", "T-003, T-005", "Shoulders sensitive to torque. Rev 00B redesign."],
+        ["U-05", "Carrier halves need indexing?", "Assembly/fit", "Monitor/skip", "Resolved", "T-004", "No operational clocking load."],
+        ["U-06", "Gearbox structural capacity", "Structural", "After fundamentals", "Not Started", "", ""],
+        ["U-07", "Output shaft strength", "Structural", "Verify early", "Known Issue", "", "Undersized \u2192 enlarged in Rev 00B."],
+        ["U-08", "Backlash \u2014 quantified", "Performance", "After fundamentals", "Not Started", "T-012", ""],
+        ["U-09", "Backdrivability \u2014 quantified", "Performance", "After fundamentals", "Not Started", "T-013, T-006, T-008", ""],
+        ["U-10", "Durability under sustained use", "Degradation", "After fundamentals", "Not Started", "", ""]
+      ]
+    }
+  };
+
+  const toggle = document.getElementById('rtm-toggle');
+  const explorer = document.getElementById('rtm-explorer');
+  const tabsEl = document.getElementById('rtm-tabs');
+  const contentEl = document.getElementById('rtm-content');
+  let activeTab = null;
+  let isOpen = false;
+  let sortState = {};
+
+  toggle.addEventListener('click', () => {
+    isOpen = !isOpen;
+    explorer.style.display = isOpen ? 'block' : 'none';
+    toggle.classList.toggle('active', isOpen);
+    if (isOpen) {
+      toggle.style.background = 'var(--green-bg)';
+      toggle.style.borderColor = 'var(--green-border)';
+      toggle.style.color = 'var(--green)';
+      if (!activeTab) switchTab('Dashboard');
+    } else {
+      toggle.style.background = 'var(--surface)';
+      toggle.style.borderColor = 'var(--border)';
+      toggle.style.color = 'var(--text-mid)';
+    }
+  });
+
+  // Build tabs
+  Object.keys(rtmData).forEach(name => {
+    const btn = document.createElement('button');
+    btn.textContent = name;
+    btn.dataset.tab = name;
+    Object.assign(btn.style, {
+      padding: '8px 14px', border: 'none', background: 'transparent',
+      fontFamily: 'var(--mono)', fontSize: '11px', fontWeight: '600',
+      color: 'var(--text-light)', cursor: 'pointer',
+      borderBottom: '2px solid transparent', transition: 'all 0.15s',
+      whiteSpace: 'nowrap', textTransform: 'uppercase', letterSpacing: '0.04em'
+    });
+    btn.addEventListener('click', () => switchTab(name));
+    btn.addEventListener('mouseover', () => { if (activeTab !== name) btn.style.color = 'var(--text-mid)'; });
+    btn.addEventListener('mouseout', () => { if (activeTab !== name) btn.style.color = 'var(--text-light)'; });
+    tabsEl.appendChild(btn);
+  });
+
+  function switchTab(name) {
+    activeTab = name;
+    tabsEl.querySelectorAll('button').forEach(b => {
+      const isActive = b.dataset.tab === name;
+      b.style.color = isActive ? 'var(--green)' : 'var(--text-light)';
+      b.style.borderBottomColor = isActive ? 'var(--green)' : 'transparent';
+    });
+    renderTab(name);
+  }
+
+  function renderTab(name) {
+    const data = rtmData[name];
+    if (data.type === 'kv') renderDashboard(data);
+    else if (data.type === 'table') renderTable(name, data);
+    else if (data.type === 'matrix') renderMatrix(data);
+  }
+
+  function renderDashboard(data) {
+    let html = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">';
+    data.sections.forEach(sec => {
+      html += '<div style="background:rgba(0,0,0,0.02);border-radius:4px;padding:14px;">';
+      html += '<div style="font-family:var(--mono);font-size:11px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:10px;">' + sec.title + '</div>';
+      sec.rows.forEach(([k, v]) => {
+        const isHighlight = k.includes('%') || k === 'Gap Req IDs';
+        html += '<div style="display:flex;justify-content:space-between;padding:3px 0;font-size:13px;">';
+        html += '<span style="color:var(--text-mid)">' + k + '</span>';
+        html += '<span style="font-family:var(--mono);font-weight:600;color:' + (isHighlight ? 'var(--green)' : 'var(--text)') + '">' + v + '</span>';
+        html += '</div>';
+      });
+      html += '</div>';
+    });
+    html += '</div>';
+    contentEl.innerHTML = html;
+  }
+
+  function renderTable(name, data, sortCol, sortDir) {
+    sortCol = sortCol ?? null;
+    sortDir = sortDir ?? 'asc';
+    let rows = data.rows.map(r => [...r]);
+    if (sortCol !== null) {
+      rows.sort((a, b) => {
+        const va = a[sortCol], vb = b[sortCol];
+        const cmp = va.localeCompare(vb, undefined, {numeric: true});
+        return sortDir === 'asc' ? cmp : -cmp;
+      });
+    }
+
+    let html = '<table style="width:100%;border-collapse:collapse;font-size:13px;">';
+    html += '<tr>';
+    data.headers.forEach((h, i) => {
+      const arrow = sortCol === i ? (sortDir === 'asc' ? ' \u25b2' : ' \u25bc') : '';
+      html += '<th data-col="' + i + '" style="text-align:left;padding:6px 10px;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:0.04em;border-bottom:1px solid var(--border);cursor:pointer;white-space:nowrap;user-select:none;">' + h + arrow + '</th>';
+    });
+    html += '</tr>';
+
+    rows.forEach(row => {
+      html += '<tr>';
+      row.forEach((cell, i) => {
+        let style = 'padding:6px 10px;color:var(--text-mid);border-bottom:1px solid rgba(0,0,0,0.03);';
+        if (i === 0) style += 'font-family:var(--mono);font-weight:600;white-space:nowrap;';
+        // Status coloring
+        const cl = cell.toLowerCase();
+        if (cl === 'pass' || cl === 'complete' || cl === 'verified' || cl === 'resolved' || cl === 'covered')
+          style += 'color:var(--green);font-weight:600;';
+        else if (cl === 'fail' || cl === 'failed' || cl === 'gap')
+          style += 'color:#b54;font-weight:600;';
+        else if (cl === 'partial' || cl === 'inconclusive' || cl === 'pending review' || cl === 'confirmed' || cl === 'known issue')
+          style += 'color:#b98a2d;font-weight:600;';
+        html += '<td style="' + style + '">' + cell + '</td>';
+      });
+      html += '</tr>';
+    });
+    html += '</table>';
+    contentEl.innerHTML = html;
+
+    // Attach sort handlers
+    contentEl.querySelectorAll('th').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = parseInt(th.dataset.col);
+        const dir = (sortState[name]?.col === col && sortState[name]?.dir === 'asc') ? 'desc' : 'asc';
+        sortState[name] = { col, dir };
+        renderTable(name, data, col, dir);
+      });
+    });
+  }
+
+  function renderMatrix(data) {
+    let html = '<div style="font-size:11px;color:var(--text-light);margin-bottom:8px;">';
+    html += '<span style="display:inline-block;width:12px;height:12px;background:var(--green);border-radius:2px;vertical-align:middle;margin-right:4px;"></span> Primary &nbsp;&nbsp;';
+    html += '<span style="display:inline-block;width:12px;height:12px;background:var(--green-bg);border:1px solid var(--green-border);border-radius:2px;vertical-align:middle;margin-right:4px;"></span> Secondary &nbsp;&nbsp;';
+    html += '<span style="display:inline-block;width:12px;height:12px;background:rgba(0,0,0,0.02);border:1px solid var(--border);border-radius:2px;vertical-align:middle;margin-right:4px;"></span> None';
+    html += '</div>';
+    html += '<div style="overflow-x:auto;">';
+    html += '<table style="border-collapse:collapse;font-size:11px;min-width:100%;">';
+
+    // Phase header row
+    html += '<tr><td colspan="2" style="border:none;"></td>';
+    data.phases.forEach(ph => {
+      html += '<td style="text-align:center;padding:2px 4px;font-family:var(--mono);font-size:9px;color:var(--text-faint);font-weight:600;">' + ph + '</td>';
+    });
+    html += '<td style="border:none;"></td></tr>';
+
+    // Test ID header row
+    html += '<tr><td style="padding:4px 6px;font-family:var(--mono);font-weight:600;color:var(--text-light);white-space:nowrap;">Req</td>';
+    html += '<td style="padding:4px 6px;font-weight:500;color:var(--text-light);min-width:80px;"></td>';
+    data.testIds.forEach(t => {
+      const short = t.replace('T-0','T');
+      html += '<td style="text-align:center;padding:4px 2px;font-family:var(--mono);font-size:9px;font-weight:600;color:var(--text-light);writing-mode:vertical-lr;transform:rotate(180deg);white-space:nowrap;height:60px;">' + short + '</td>';
+    });
+    html += '<td style="padding:4px 8px;font-family:var(--mono);font-size:10px;font-weight:600;color:var(--text-light);">Coverage</td></tr>';
+
+    // Data rows
+    data.reqIds.forEach((req, ri) => {
+      html += '<tr>';
+      html += '<td style="padding:4px 6px;font-family:var(--mono);font-weight:600;color:var(--text);white-space:nowrap;border-bottom:1px solid rgba(0,0,0,0.03);">' + req + '</td>';
+      html += '<td style="padding:4px 6px;color:var(--text-mid);border-bottom:1px solid rgba(0,0,0,0.03);white-space:nowrap;">' + data.reqNames[ri] + '</td>';
+      data.matrix[ri].forEach(cell => {
+        let bg = 'rgba(0,0,0,0.02)'; let txt = '';
+        if (cell === 'P') { bg = 'var(--green)'; txt = '<span style="color:#fff;font-weight:700;">P</span>'; }
+        else if (cell === 'S') { bg = 'var(--green-bg)'; txt = '<span style="color:var(--green);font-weight:600;">S</span>'; }
+        html += '<td style="text-align:center;padding:3px;border-bottom:1px solid rgba(0,0,0,0.03);background:' + bg + ';min-width:22px;">' + txt + '</td>';
+      });
+      // Coverage
+      const cov = data.coverage[ri];
+      let covColor = 'var(--text-light)';
+      if (cov === 'Covered') covColor = 'var(--green)';
+      else if (cov === 'Gap') covColor = '#b54';
+      else if (cov === 'Partial') covColor = '#b98a2d';
+      html += '<td style="padding:4px 8px;font-size:10px;font-weight:600;color:' + covColor + ';border-bottom:1px solid rgba(0,0,0,0.03);white-space:nowrap;">' + cov + '</td>';
+      html += '</tr>';
+    });
+
+    html += '</table></div>';
+    contentEl.innerHTML = html;
   }
 })();
 </script>
