@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>/* Reset zoom on mobile navigation */!function(){var v=document.querySelector('meta[name=viewport]');if(v){v.content='width=device-width,initial-scale=1,maximum-scale=1';setTimeout(function(){v.content='width=device-width,initial-scale=1,maximum-scale=5'},100)}}()</script>
 <title>QDD Gearbox Actuator — Aaron Evans | Mechanical Engineering Project</title>
 <meta name="description" content="Quasi-direct-drive 5:1 planetary gearbox designed from scratch by Aaron Evans, mechanical engineering student at the University of Victoria. Trade studies, CATIA V6, and FDM tolerancing.">
 <link rel="canonical" href="https://aaronevans.ca/qdd-gearbox/">
@@ -892,36 +893,21 @@ navLinks.forEach(link => {
     "Dashboard": {
       type: "kv",
       sections: [
-        { title: "Requirements Summary", rows: [
-          ["Total Requirements", "13"],
-          ["Verified", "1"],
-          ["Failed", "0"],
-          ["Partial", "0"],
-          ["Pending Review", "2"],
-          ["Not Verified", "10"],
-          ["% Verified", "8%"]
+        { title: "Requirements", rows: [
+          ["Verified (Pass)", "1"],
+          ["Total Defined", "13"]
         ]},
         { title: "Test Campaign", rows: [
-          ["Total Tests", "19"],
-          ["Complete", "6"],
-          ["In Progress", "0"],
-          ["Not Started", "13"],
+          ["Complete", "6 of 19"],
           ["Pass", "2"],
           ["Fail", "2"],
-          ["% Complete", "32%"]
+          ["Partial / Inconclusive", "2"]
         ]},
-        { title: "Traceability Coverage", rows: [
-          ["Covered (Primary Test)", "2"],
-          ["Partial (Secondary Only)", "4"],
-          ["Via Inspection/Demo/Analysis", "5"],
-          ["Gap (No Coverage)", "2"],
-          ["Gap Req IDs", "R-07, R-08"]
-        ]},
-        { title: "Unknowns Register", rows: [
-          ["Total Unknowns", "10"],
+        { title: "Unknowns", rows: [
+          ["Investigated", "6 of 10"],
           ["Resolved", "3"],
-          ["Open", "6"],
-          ["% Resolved", "30%"]
+          ["Confirmed / Known", "2"],
+          ["Postponed \u2192 Rev 00B", "1"]
         ]}
       ]
     },
@@ -929,19 +915,7 @@ navLinks.forEach(link => {
       type: "table",
       headers: ["ID", "Requirement", "Target", "Type", "Priority", "Method", "Status"],
       rows: [
-        ["R-01", "Backlash", "\u2264 0.5\u00b0", "Hard", "1", "Test", "Pass"],
-        ["R-02", "Cost", "< $120 CAD", "Hard", "2", "Inspection", "Pending Review"],
-        ["R-03", "DFM/DFA", "Off-the-shelf + FDM", "Hard", "3", "Inspection", "Pending Review"],
-        ["R-04", "Backdrivability", "< 1 Nm friction", "Hard", "4", "Test", "Not Verified"],
-        ["R-05", "Durability", "No self-destruction < 1 min", "Hard", "5", "Test", "Not Verified"],
-        ["R-06", "Peak Torque", "\u2265 16 Nm", "Hard", "6", "Test", "Not Verified"],
-        ["R-07", "Continuous Torque", "\u2265 12 Nm", "Hard", "7", "Test", "Not Verified"],
-        ["R-08", "Thermal Performance", "No melting < 5 min", "Hard", "8", "Test", "Not Verified"],
-        ["R-09", "Efficiency", "> 90%", "Soft", "9", "Test", "Not Verified"],
-        ["R-10", "Weight", "< 2 kg", "Soft", "10", "Inspection", "Not Verified"],
-        ["R-11", "Speed", "\u2265 600 RPM", "Soft", "11", "Test", "Not Verified"],
-        ["R-12", "Integratable", "Shafts or bolted plates", "Soft", "12", "Demo", "Not Verified"],
-        ["R-13", "Torque Density", "No target set", "Soft", "13", "Analysis", "Not Verified"]
+        ["R-01", "Backlash", "\u2264 0.5\u00b0", "Hard", "1", "Test", "Pass"]
       ]
     },
     "Test Log": {
@@ -953,44 +927,31 @@ navLinks.forEach(link => {
         ["T-003", "Carrier shoulder deformation", "Rev 00A", "Component", "Complete", "Print quality issue on top", "Inconclusive"],
         ["T-004", "Carrier half indexing", "Rev 00A", "Interface", "Complete", "Some flex by hand, not operational concern", "Pass"],
         ["T-005", "Bolt torque vs planet drag", "Rev 00A", "Interface", "Complete", "Narrow window, 1.1 Nm \u2192 drag", "Fail"],
-        ["T-006", "Friction characterization", "Phase 2", "System", "Not Started", "\u2014", "\u2014"],
-        ["T-007", "Step response", "Phase 2", "System", "Not Started", "\u2014", "\u2014"],
-        ["T-008", "Backdriving torque", "Phase 2", "System", "Not Started", "\u2014", "\u2014"],
-        ["T-009", "Motor Kt verification", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
-        ["T-010", "Motor cogging profile", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
-        ["T-011", "Motor friction vs speed", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
-        ["T-012", "Backlash measurement", "Phase 1", "System", "Complete", "0\u00b0 measurable backlash", "Pass"],
-        ["T-013", "Hand backdriving", "Phase 1", "System", "Not Started", "\u2014", "\u2014"],
-        ["T-014", "Motor step response", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
-        ["T-015", "Plant identification", "Phase 3", "System", "Not Started", "\u2014", "\u2014"],
-        ["T-016", "Bode plot", "Phase 3", "System", "Not Started", "\u2014", "\u2014"],
-        ["T-017", "Virtual spring", "Phase 4", "System", "Not Started", "\u2014", "\u2014"],
-        ["T-018", "Spring-damper", "Phase 4", "System", "Not Started", "\u2014", "\u2014"],
-        ["T-019", "Variable impedance demo", "Phase 4", "System", "Not Started", "\u2014", "\u2014"]
+        ["T-012", "Backlash measurement", "Phase 1", "System", "Complete", "0\u00b0 measurable backlash", "Pass"]
       ]
     },
     "Traceability": {
       type: "matrix",
-      testIds: ["T-009","T-010","T-011","T-014","T-012","T-013","T-006","T-007","T-008","T-015","T-016","T-017","T-018","T-019","T-001","T-002","T-003","T-004","T-005"],
-      phases:  ["Ph0",  "Ph0",  "Ph0",  "Ph0",  "Ph1",  "Ph1",  "Ph2",  "Ph2",  "Ph2",  "Ph3",  "Ph3",  "Ph4",  "Ph4",  "Ph4",  "00A",  "00A",  "00A",  "00A",  "00A"],
+      testIds: ["T-012","T-001","T-002","T-003","T-004","T-005"],
+      phases:  ["Ph1",  "00A",  "00A",  "00A",  "00A",  "00A"],
       reqIds: ["R-01","R-02","R-03","R-04","R-05","R-06","R-07","R-08","R-09","R-10","R-11","R-12","R-13"],
       reqNames: ["Backlash","Cost","DFM/DFA","Backdrivability","Durability","Peak Torque","Continuous Torque","Thermal","Efficiency","Weight","Speed","Integratable","Torque Density"],
       coverage: ["Covered","Via Inspection","Via Inspection","Covered","Partial","Partial","Gap","Gap","Partial","Via Inspection","Partial","Via Demo","Via Analysis"],
       // matrix[reqIdx][testIdx] = "P"|"S"|""
       matrix: [
-        ["","","","","P","","","","","","","","","","S","","","S",""],
-        ["","","","","","","","","","","","","","","","","","",""],
-        ["","","","","","","","","","","","","","","","","","",""],
-        ["","","","","","P","P","","P","","","","","","S","S","","","S"],
-        ["","","","","","","","","","","","","","","","","S","","S"],
-        ["","","","","","","","","","","","","","","","","S","","S"],
-        ["","","","","","","","","","","","","","","","","","",""],
-        ["","","","","","","","","","","","","","","","","","",""],
-        ["","","S","","","","S","","","","","","","","","","","",""],
-        ["","","","","","","","","","","","","","","","","","",""],
-        ["","","","","","","","","","","S","","","","","","","",""],
-        ["","","","","","","","","","","","","","","","","","",""],
-        ["","","","","","","","","","","","","","","","","","",""]
+        ["P","S","","","S",""],
+        ["","","","","",""],
+        ["","","","","",""],
+        ["","S","S","","","S"],
+        ["","","","S","","S"],
+        ["","","","S","","S"],
+        ["","","","","",""],
+        ["","","","","",""],
+        ["","","","","",""],
+        ["","","","","",""],
+        ["","","","","",""],
+        ["","","","","",""],
+        ["","","","","",""]
       ]
     },
     "Unknowns": {
@@ -1001,11 +962,8 @@ navLinks.forEach(link => {
         ["U-03", "Lid causing drag \u2014 over-constraint?", "Assembly/fit", "Test first", "Resolved", "T-002", "Tolerance stackup fixed in Rev 00B. No lid drag confirmed."],
         ["U-04", "Carrier shoulder deformation under bolt torque", "Structural", "Test first", "Confirmed", "T-003, T-005", "Shoulders sensitive to torque. Rev 00B redesign."],
         ["U-05", "Carrier halves need indexing?", "Assembly/fit", "Monitor/skip", "Resolved", "T-004", "No operational clocking load."],
-        ["U-06", "Gearbox structural capacity", "Structural", "After fundamentals", "Not Started", "", ""],
         ["U-07", "Output shaft strength", "Structural", "Verify early", "Known Issue", "", "Undersized \u2192 enlarged in Rev 00B."],
-        ["U-08", "Backlash \u2014 quantified", "Performance", "After fundamentals", "Resolved", "T-012", "0\u00b0 backlash measured. R-01 pass."],
-        ["U-09", "Backdrivability \u2014 quantified", "Performance", "After fundamentals", "Not Started", "T-013, T-006, T-008", ""],
-        ["U-10", "Durability under sustained use", "Degradation", "After fundamentals", "Not Started", "", ""]
+        ["U-08", "Backlash \u2014 quantified", "Performance", "After fundamentals", "Resolved", "T-012", "0\u00b0 backlash measured. R-01 pass."]
       ]
     }
   };
