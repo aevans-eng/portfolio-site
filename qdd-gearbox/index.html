@@ -8,14 +8,14 @@
 <link rel="canonical" href="https://aaronevans.ca/qdd-gearbox/">
 <meta property="og:title" content="QDD Gearbox Actuator — Aaron Evans">
 <meta property="og:description" content="Backdrivable 5:1 planetary gearbox designed from scratch. Trade studies, CATIA V6, FDM tolerancing, and structured testing.">
-<meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/full-assembly-cross-section.png">
+<meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/rev00b-mounted-with-motor.jpg">
 <meta property="og:url" content="https://aaronevans.ca/qdd-gearbox/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Aaron Evans">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="QDD Gearbox Actuator — Aaron Evans">
 <meta name="twitter:description" content="Backdrivable 5:1 planetary gearbox designed from scratch. Trade studies, CATIA V6, FDM tolerancing, and structured testing.">
-<meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/full-assembly-cross-section.png">
+<meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/rev00b-mounted-with-motor.jpg">
 <link rel="icon" type="image/png" href="../assets/favicon-32.png">
 <link rel="stylesheet" href="../assets/styles.css">
 <script type="application/ld+json">
@@ -303,7 +303,7 @@
 
     <!-- ===== SIDEBAR ===== -->
     <aside class="sidebar">
-      <div class="sidebar-phase"><span class="pulse-dot"></span> REV 00B — IN PROGRESS</div>
+      <div class="sidebar-phase"><span class="pulse-dot"></span> PROTOTYPE — REV 00B TESTING</div>
       <h1 class="sidebar-title">QDD Gearbox Actuator</h1>
       <div class="sidebar-subtitle">3D-printed planetary gearbox for backdrivable robotic actuators</div>
 
@@ -312,8 +312,8 @@
         <li><a href="#trade-studies"><span class="nav-num">02</span> Trade Studies</a></li>
         <li><a href="#catia"><span class="nav-num">03</span> CAD</a></li>
         <li><a href="#tolerancing"><span class="nav-num">04</span> Tolerancing</a></li>
-        <li><a href="#prototype"><span class="nav-num">05</span> Rev 00A</a></li>
-        <li><a href="#testing"><span class="nav-num">06</span> Testing &amp; Rev 00B</a></li>
+        <li><a href="#prototype"><span class="nav-num">05</span> Prototyping</a></li>
+        <li><a href="#testing"><span class="nav-num">06</span> Testing</a></li>
         <li><a href="#next"><span class="nav-num">07</span> What's Next</a></li>
       </ul>
 
@@ -321,8 +321,9 @@
         <div class="section-label">Design Targets</div>
         <div class="sidebar-spec-row"><span class="ssl">Ratio</span><span class="ssv">5:1</span></div>
         <div class="sidebar-spec-row"><span class="ssl">Peak torque</span><span class="ssv">16 Nm</span></div>
-        <div class="sidebar-spec-row"><span class="ssl">Backlash</span><span class="ssv">&le;0.5&deg;</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Backlash</span><span class="ssv">0&deg; measured</span></div>
         <div class="sidebar-spec-row"><span class="ssl">Budget</span><span class="ssv">&lt;$120</span></div>
+        <div class="sidebar-spec-row"><span class="ssl">Current cost</span><span class="ssv">~$30</span></div>
         <div class="sidebar-spec-row"><span class="ssl">Efficiency</span><span class="ssv">&gt;90%</span></div>
         <div class="sidebar-spec-row"><span class="ssl">Manufacturing</span><span class="ssv">FDM</span></div>
         <div class="sidebar-spec-row"><span class="ssl">Printer</span><span class="ssv">Bambu P1S</span></div>
@@ -344,7 +345,8 @@
           </div>
         </div>
 
-        <a class="img-link" href="images/full-assembly-cross-section.png"><img class="content-img" src="images/full-assembly-cross-section.png" alt="QDD Gearbox — full assembly cross-section in CATIA"></a>
+        <a class="img-link" href="images/rev00b-mounted-with-motor.jpg"><img class="content-img" src="images/rev00b-mounted-with-motor.jpg" alt="QDD Gearbox Rev 00B assembled with D6374 motor" style="object-fit: cover; max-height: 500px;"></a>
+        <div class="img-caption">Rev 00B gearbox assembled with D6374 150KV motor — the complete actuator</div>
 
         <div class="content-body">
           <p>Three years into a mechanical engineering degree and I still hadn't designed a complete electromechanical system. I started this project at a hackathon in January 2026 because I wanted to build the kind of actuator that shows up in Optimus and modern legged robots: a quasi-direct-drive.</p>
@@ -376,8 +378,8 @@
           <span class="tl-step done">CAD</span><span class="tl-arrow">&rarr;</span>
           <span class="tl-step done">Calibration</span><span class="tl-arrow">&rarr;</span>
           <span class="tl-step done">Rev 00A</span><span class="tl-arrow">&rarr;</span>
-          <span class="tl-step current">Rev 00B <small style="opacity:.6">— assembled Mar 2026</small></span><span class="tl-arrow">&rarr;</span>
-          <span class="tl-step future">GD&amp;T</span><span class="tl-arrow">&rarr;</span>
+          <span class="tl-step done">Rev 00B</span><span class="tl-arrow">&rarr;</span>
+          <span class="tl-step current">Testing <small style="opacity:.6">— Mar 2026</small></span><span class="tl-arrow">&rarr;</span>
           <span class="tl-step future">Controls</span>
         </div>
       </section>
@@ -495,11 +497,11 @@
         <table class="content-table">
           <tr><th>Interface</th><th>Offset</th><th>Status</th></tr>
           <tr><td>Housing bearing shaft</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
-          <tr><td>Carrier bearing bore</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
+          <tr><td>Carrier bearing bore</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
           <tr><td>Lid bearing bore</td><td class="mono">+0.10 mm</td><td class="pass">Validated</td></tr>
           <tr><td>Carrier output shaft</td><td class="mono">+0.10 mm</td><td>Applied</td></tr>
-          <tr><td>Planet bearing bore</td><td class="mono">+0.15 mm</td><td>Pending</td></tr>
-          <tr><td>Ring-to-housing bore</td><td class="mono">+0.30 mm</td><td>Applied</td></tr>
+          <tr><td>Planet bearing bore</td><td class="mono">+0.15 mm</td><td class="pass">Validated</td></tr>
+          <tr><td>Ring-to-housing bore</td><td class="mono">+0.30 mm</td><td class="pass">Validated</td></tr>
         </table>
         </div>
 
@@ -529,31 +531,136 @@
           <span class="cs-number">05</span>
           <div class="cs-titles">
             <div class="cs-tag">Prototype</div>
-            <h2 class="cs-title">Rev 00A</h2>
+            <h2 class="cs-title">Prototyping</h2>
           </div>
         </div>
 
-        <div class="content-body">
-          <p>First complete build. Printed on a Bambu P1S in PLA with off-the-shelf ball bearings, assembled by hand, and tested to validate fits and find issues.</p>
+        <!-- Revision tabs -->
+        <div class="rev-tabs" style="display: flex; gap: 4px; margin-bottom: 24px;">
+          <button class="rev-tab active" onclick="switchRevTab('00b')" id="tab-00b" style="
+            padding: 10px 20px; border: 1px solid var(--green-border); border-radius: 4px; cursor: pointer;
+            font-family: var(--mono); font-size: 13px; font-weight: 700;
+            color: #fff; background: var(--green);
+            letter-spacing: 0.02em;
+          ">Rev 00B — Current Build</button>
+          <button class="rev-tab" onclick="switchRevTab('00a')" id="tab-00a" style="
+            padding: 10px 20px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;
+            font-family: var(--mono); font-size: 13px; font-weight: 500;
+            color: var(--text-light); background: var(--surface);
+            letter-spacing: 0.02em;
+          ">Rev 00A — First Build</button>
         </div>
 
-        <a class="img-link" href="images/cad-assembly.png"><img class="content-img" loading="lazy" src="images/cad-assembly.png" alt="Rev 00A CAD assembly in CATIA"></a>
-        <div class="img-caption">Rev 00A assembly in CATIA</div>
+        <!-- Rev 00B content (default) -->
+        <div id="rev-00b">
+          <div class="content-body">
+            <p>Every change in this revision came from a formal test on Rev 00A: herringbone gears replaced with spur, carrier shoulders redesigned, lid bearing made floating, heat-set inserts swapped for self-tapping screws. All fits validated. The gearbox runs smooth and quiet, though it still needs lubrication.</p>
+          </div>
 
-        <h3 class="content-h3">Fit Results</h3>
-        <div class="table-wrap">
-        <table class="content-table">
-          <tr><th>Interface</th><th>Result</th><th>Action</th></tr>
-          <tr><td>Housing main bearing</td><td>Slightly too loose</td><td class="mono">Offset adjusted</td></tr>
-          <tr><td>Lid-to-bearing</td><td class="pass">Good transition fit</td><td class="mono">No change</td></tr>
-          <tr><td>Planet bearings</td><td>Inconsistent (1 of 3 loose)</td><td class="mono">Tolerance review</td></tr>
-          <tr><td>M3 motor holes</td><td>0.13mm too tight</td><td class="mono">Bore enlarged</td></tr>
-          <tr><td>Sun gear bore</td><td>Very tight, needed pressing</td><td class="mono">10.05 &rarr; 10.075mm</td></tr>
-        </table>
+          <div class="content-img-row">
+            <div>
+              <a class="img-link" href="images/rev00b-side-profile.jpg"><img loading="lazy" src="images/rev00b-side-profile.jpg" alt="Rev 00B assembled — side profile"></a>
+              <div class="img-caption">Rev 00B assembled with D6374 motor</div>
+            </div>
+            <div>
+              <a class="img-link" href="images/rev00b-cross-section.png"><img loading="lazy" src="images/rev00b-cross-section.png" alt="Rev 00B cross-section render"></a>
+              <div class="img-caption">Rev 00B cross-section — internal gear train</div>
+            </div>
+          </div>
+
+          <h3 class="content-h3">What Changed from 00A</h3>
+          <div class="table-wrap">
+          <table class="content-table">
+            <tr><th>Change</th><th>Source</th><th>Part</th></tr>
+            <tr><td>Herringbone &rarr; spur gears</td><td class="mono">T-001</td><td>All gears</td></tr>
+            <tr><td>Larger output shaft + bigger top bearing</td><td class="mono">T-001</td><td>Carrier top</td></tr>
+            <tr><td>Shorter top carrier walls, taller bottom walls</td><td class="mono">T-003, T-005</td><td>Carrier top/bottom</td></tr>
+            <tr><td>Floating lid bearing arrangement</td><td class="mono">T-002</td><td>Lid</td></tr>
+            <tr><td>Self-tapping threads (no heat inserts)</td><td class="mono">T-001</td><td>Carrier</td></tr>
+          </table>
+          </div>
+
+          <h3 class="content-h3">Fit Results</h3>
+          <div class="table-wrap">
+          <table class="content-table">
+            <tr><th>Interface</th><th>Result</th><th>Status</th></tr>
+            <tr><td>All bearing bores</td><td class="pass">Good transition fits</td><td class="pass">Validated</td></tr>
+            <tr><td>Ring-to-housing</td><td class="pass">Consistent press fit</td><td class="pass">Validated</td></tr>
+            <tr><td>Planet bearings</td><td class="pass">All 3 consistent (fixed from 00A)</td><td class="pass">Validated</td></tr>
+            <tr><td>Lid drag</td><td class="pass">No parasitic drag when tightened</td><td class="pass">Resolved</td></tr>
+            <tr><td>Gear mesh</td><td class="pass">Smooth — spur gears eliminated notchiness</td><td class="pass">Resolved</td></tr>
+          </table>
+          </div>
+
+          <div class="content-body">
+            <p>All interfaces that failed in Rev 00A are now validated. The gearbox still needs lubrication before friction characterization.</p>
+          </div>
+
+          <!-- Backdriving video -->
+          <h3 class="content-h3">Backdrivability Demo</h3>
+          <video controls preload="metadata" style="width: 100%; border-radius: 4px; border: 1px solid var(--border); margin: 16px 0; max-height: 500px; background: #1a1a1a;">
+            <source src="videos/rev00b-hand-backdriving.mp4" type="video/mp4">
+          </video>
+          <div class="img-caption">Hand backdriving the output shaft. Motor disconnected, no resistance.</div>
+
+          <!-- Spinning video -->
+          <h3 class="content-h3">Powered Operation</h3>
+          <video controls preload="metadata" style="width: 100%; border-radius: 4px; border: 1px solid var(--border); margin: 16px 0; max-height: 500px; background: #1a1a1a;">
+            <source src="videos/rev00b-spinning.mp4" type="video/mp4">
+          </video>
+          <div class="img-caption">Rev 00B under power. D6374 motor through ODrive v3.6, tested stable up to 300 RPM output (1500 RPM motor side).</div>
+
+          <!-- Extra videos (collapsible) -->
+          <details style="margin-top: 24px; border: 1px solid var(--border); border-radius: 4px; padding: 0;">
+            <summary style="padding: 12px 16px; cursor: pointer; font-family: var(--mono); font-size: 12px; font-weight: 600; color: var(--text-mid); background: var(--surface);">More videos: backlash measurement, assembly</summary>
+            <div style="padding: 16px;">
+              <h3 class="content-h3" style="margin-top: 0;">Backlash Measurement</h3>
+              <video controls preload="metadata" style="width: 100%; border-radius: 4px; border: 1px solid var(--border); margin: 8px 0; max-height: 500px; background: #1a1a1a;">
+                <source src="videos/rev00b-backlash-demo.mp4" type="video/mp4">
+              </video>
+              <div class="img-caption">Dial indicator on output shaft, motor phases shorted for EM braking. 0° measurable backlash.</div>
+
+              <h3 class="content-h3">Assembly</h3>
+              <video controls preload="metadata" style="width: 100%; border-radius: 4px; border: 1px solid var(--border); margin: 8px 0; max-height: 500px; background: #1a1a1a;">
+                <source src="videos/rev00b-easy-assembly.mp4" type="video/mp4">
+              </video>
+              <div class="img-caption">Full assembly by hand. No special tools, just hex keys.</div>
+            </div>
+          </details>
         </div>
 
-        <div class="content-body">
-          <p>I reprinted the carrier and housing with adjusted offsets and updated 4 skeleton parameters. But beyond the dimensional stuff, five things felt wrong during hand testing: the lid added drag when tightened, the gear mesh felt notchy, the carrier shoulders were deforming, there was play between carrier halves, and bolt torque was too sensitive. Each of those became a formal test.</p>
+        <!-- Rev 00A content (hidden by default) -->
+        <div id="rev-00a" style="display: none;">
+          <div class="content-body">
+            <p>First complete build, printed on a Bambu P1S in PLA with off-the-shelf ball bearings. Assembled by hand and tested to validate fits and find issues.</p>
+          </div>
+
+          <div class="content-img-row">
+            <div>
+              <a class="img-link" href="images/rev00a-with-lid.jpg"><img loading="lazy" src="images/rev00a-with-lid.jpg" alt="Rev 00A assembled with lid"></a>
+              <div class="img-caption">Rev 00A assembled with lid</div>
+            </div>
+            <div>
+              <a class="img-link" href="images/rev00a-no-lid.jpg"><img loading="lazy" src="images/rev00a-no-lid.jpg" alt="Rev 00A without lid, internals visible"></a>
+              <div class="img-caption">Rev 00A without lid, showing herringbone gear train</div>
+            </div>
+          </div>
+
+          <h3 class="content-h3">Fit Results</h3>
+          <div class="table-wrap">
+          <table class="content-table">
+            <tr><th>Interface</th><th>Result</th><th>Action</th></tr>
+            <tr><td>Housing main bearing</td><td>Slightly too loose</td><td class="mono">Offset adjusted</td></tr>
+            <tr><td>Lid-to-bearing</td><td class="pass">Good transition fit</td><td class="mono">No change</td></tr>
+            <tr><td>Planet bearings</td><td>Inconsistent (1 of 3 loose)</td><td class="mono">Tolerance review</td></tr>
+            <tr><td>M3 motor holes</td><td>0.13mm too tight</td><td class="mono">Bore enlarged</td></tr>
+            <tr><td>Sun gear bore</td><td>Very tight, needed pressing</td><td class="mono">10.05 &rarr; 10.075mm</td></tr>
+          </table>
+          </div>
+
+          <div class="content-body">
+            <p>I reprinted the carrier and housing with adjusted offsets and updated 4 skeleton parameters. But beyond the dimensional stuff, five things felt wrong during hand testing: the lid added drag when tightened, the gear mesh felt notchy, the carrier shoulders were deforming, there was play between carrier halves, and bolt torque was too sensitive. Each of those became a formal test.</p>
+          </div>
         </div>
       </section>
 
@@ -563,12 +670,13 @@
           <span class="cs-number">06</span>
           <div class="cs-titles">
             <div class="cs-tag">Validation</div>
-            <h2 class="cs-title">Testing &amp; Rev 00B</h2>
+            <h2 class="cs-title">Testing</h2>
           </div>
         </div>
 
+        <h3 class="content-h3">Rev 00A Findings</h3>
         <div class="content-body">
-          <p>For each of the five issues from Rev 00A, I wrote down the question I was trying to answer and what would count as a pass before touching the prototype. The table below is the result.</p>
+          <p>For each of the five issues from Rev 00A, I wrote down the question I was trying to answer and what would count as a pass before touching the prototype.</p>
         </div>
 
         <div class="table-wrap">
@@ -595,7 +703,7 @@
           <tr>
             <td class="mono"><strong>T-004</strong></td>
             <td>Can carrier halves clock under load?</td>
-            <td>Play exists but no operational clocking force</td>
+            <td>Some flex when twisting by hand, not a concern operationally</td>
             <td class="pass">No change needed</td>
           </tr>
           <tr>
@@ -608,51 +716,35 @@
         </div>
 
         <div class="content-body">
-          <p>The biggest finding was T-001. The herringbone tooth profile was causing notchy mesh because even a small alignment error between the two halves of each planet creates interference. At this scale and with FDM tolerances, the helix angle wasn't doing anything useful, so I switched to straight spur gears for Rev 00B.</p>
-
-          <p>Beyond fixing the notch, spur gears simplified the whole assembly. The carrier can now be removed from the gearbox without disassembling the gear train inside, and there's no risk of the herringbone ring gear halves being slightly misaligned and causing uneven wear. Assembly is faster, printing is easier, and for a prototype the herringbone gain would have been negligible. In theory herringbone helps with axial loads, runs quieter, and has higher contact area, but none of that is worth the added complexity before the basic design is proven. It's an easy swap for a future revision once I want to test those claims.</p>
+          <p>The biggest finding was T-001. The herringbone tooth profile was causing notchy mesh because even a small alignment error between the two halves of each planet creates interference. At this scale and with FDM tolerances, the helix angle wasn't doing anything useful, so I switched to straight spur gears for Rev 00B. That simplified the assembly, eliminated the risk of misaligned ring gear halves, and made printing easier, all without meaningful loss at this prototype stage.</p>
         </div>
 
-        <h3 class="content-h3">Rev 00B Changes</h3>
+        <div class="content-img-row">
+          <div>
+            <a class="img-link" href="images/rev00b-vs-00a-side-by-side.jpg"><img loading="lazy" src="images/rev00b-vs-00a-side-by-side.jpg" alt="Rev 00B assembled next to Rev 00A parts"></a>
+            <div class="img-caption">Rev 00B assembled next to Rev 00A carrier and lid</div>
+          </div>
+          <div>
+            <a class="img-link" href="images/rev00a-herringbone-closeup.jpg"><img loading="lazy" src="images/rev00a-herringbone-closeup.jpg" alt="Rev 00A herringbone gears closeup"></a>
+            <div class="img-caption">Rev 00A herringbone sun gear — replaced with spur in 00B</div>
+          </div>
+        </div>
+
+        <h3 class="content-h3">Rev 00B Quantitative Results</h3>
+        <div class="content-body">
+          <p>With Rev 00B assembled and all fits validated, I started structured testing against the requirements.</p>
+        </div>
+
+        <a class="img-link" href="images/rev00b-dial-gauge-backlash-setup.jpg"><img class="content-img" loading="lazy" src="images/rev00b-dial-gauge-backlash-setup.jpg" alt="Dial indicator measuring backlash on output shaft"></a>
+        <div class="img-caption">T-012 backlash measurement — dial indicator on output shaft screw, motor phases shorted for EM braking</div>
+
         <div class="table-wrap">
         <table class="content-table">
-          <tr><th>Change</th><th>Source</th><th>Part</th></tr>
-          <tr><td>Herringbone &rarr; spur gears</td><td class="mono">T-001</td><td>All gears</td></tr>
-          <tr><td>Larger output shaft + bigger top bearing</td><td class="mono">T-001</td><td>Carrier top</td></tr>
-          <tr><td>Shorter top carrier walls (bearing shoulders on print bed), taller bottom walls</td><td class="mono">T-003, T-005</td><td>Carrier top/bottom</td></tr>
-          <tr><td>Floating lid bearing arrangement</td><td class="mono">T-002</td><td>Lid</td></tr>
-          <tr><td>Self-tapping threads (no heat inserts)</td><td class="mono">T-001</td><td>Carrier</td></tr>
+          <tr><th>Test</th><th>Requirement</th><th>Result</th><th>Status</th></tr>
+          <tr><td>T-012 Backlash</td><td class="mono">&le; 0.5&deg;</td><td class="mono">0&deg;</td><td class="pass">PASS</td></tr>
+          <tr><td>T-013 Backdrivability</td><td class="mono">&lt; 1 Nm</td><td class="mono">—</td><td>In progress</td></tr>
+          <tr><td>T-006 Friction</td><td class="mono">Characterize</td><td class="mono">—</td><td>Pending</td></tr>
         </table>
-        </div>
-
-        <h3 class="content-h3">Rev 00B Build</h3>
-        <div class="content-body">
-          <p>Printed all Rev 00B parts with the updated spur gear profiles and revised carrier geometry. The fits were noticeably better than Rev 00A, and the notchy mesh from the herringbone gears is gone.</p>
-        </div>
-
-        <a class="img-link" href="images/rev00b-3d-printing.jpg"><img class="content-img" loading="lazy" src="images/rev00b-3d-printing.jpg" alt="Rev 00B parts on the Bambu P1S"></a>
-        <div class="img-caption">Rev 00B parts on the print bed</div>
-
-        <div class="content-img-row">
-          <div>
-            <a class="img-link" href="images/rev00b-sun-planets-ring-bearings-installed.jpg"><img loading="lazy" src="images/rev00b-sun-planets-ring-bearings-installed.jpg" alt="Sun, planets, and ring gear with bearings"></a>
-            <div class="img-caption">Sun, planets, and ring with bearings installed</div>
-          </div>
-          <div>
-            <a class="img-link" href="images/rev00b-lower-carrier-planets-sun-installed.jpg"><img loading="lazy" src="images/rev00b-lower-carrier-planets-sun-installed.jpg" alt="Lower carrier with gear train installed"></a>
-            <div class="img-caption">Lower carrier with planets and sun installed</div>
-          </div>
-        </div>
-
-        <div class="content-img-row">
-          <div>
-            <a class="img-link" href="images/rev00b-lid-off-rest-installed.jpg"><img loading="lazy" src="images/rev00b-lid-off-rest-installed.jpg" alt="Assembled gearbox without lid"></a>
-            <div class="img-caption">Assembled, lid off</div>
-          </div>
-          <div>
-            <a class="img-link" href="images/rev00b-testing-with-claude-code.jpg"><img loading="lazy" src="images/rev00b-testing-with-claude-code.jpg" alt="Test bench setup"></a>
-            <div class="img-caption">Test bench with ODrive and power supply</div>
-          </div>
         </div>
 
         <!-- Interactive RTM Explorer -->
@@ -697,7 +789,10 @@
         </div>
 
         <div class="content-body">
-          <p>Rev 00B is built and assembled. Next steps are quantitative testing (backlash measurement, friction torque, efficiency), GD&amp;T with formal tolerance stack-ups, and ODrive motor integration for impedance control. This page will be updated as those happen.</p>
+          <p>Rev 00B is assembled and passing initial tests. Backlash measured at 0°, and I'm currently running the quantitative test campaign: backdrivability torque, friction characterization (dry vs lubricated), and powered step response. After characterization, the plan is system identification, then impedance control.</p>
+
+          <h3 class="content-h3">Design Direction</h3>
+          <p>Once the current prototype meets all design requirements, future revisions will focus on reducing the form factor: integrating the ring gear into the housing wall (cylindrical instead of box-shaped), replacing the lower main bearing with a thinner, larger-diameter one to match the top bearing and cut overall height, and designing a motor housing that integrates with the gearbox for cleaner mounting.</p>
         </div>
       </section>
 
@@ -799,21 +894,21 @@ navLinks.forEach(link => {
       sections: [
         { title: "Requirements Summary", rows: [
           ["Total Requirements", "13"],
-          ["Verified", "0"],
-          ["Failed", "2"],
-          ["Partial", "1"],
+          ["Verified", "1"],
+          ["Failed", "0"],
+          ["Partial", "0"],
           ["Pending Review", "2"],
-          ["Not Verified", "8"],
-          ["% Verified", "0%"]
+          ["Not Verified", "10"],
+          ["% Verified", "8%"]
         ]},
         { title: "Test Campaign", rows: [
           ["Total Tests", "19"],
-          ["Complete", "5"],
+          ["Complete", "6"],
           ["In Progress", "0"],
-          ["Not Started", "14"],
-          ["Pass", "1"],
+          ["Not Started", "13"],
+          ["Pass", "2"],
           ["Fail", "2"],
-          ["% Complete", "26%"]
+          ["% Complete", "32%"]
         ]},
         { title: "Traceability Coverage", rows: [
           ["Covered (Primary Test)", "2"],
@@ -824,9 +919,9 @@ navLinks.forEach(link => {
         ]},
         { title: "Unknowns Register", rows: [
           ["Total Unknowns", "10"],
-          ["Resolved", "1"],
-          ["Open", "8"],
-          ["% Resolved", "11%"]
+          ["Resolved", "3"],
+          ["Open", "6"],
+          ["% Resolved", "30%"]
         ]}
       ]
     },
@@ -834,15 +929,15 @@ navLinks.forEach(link => {
       type: "table",
       headers: ["ID", "Requirement", "Target", "Type", "Priority", "Method", "Status"],
       rows: [
-        ["R-01", "Backlash", "\u2264 0.5\u00b0", "Hard", "1", "Test", "Partial"],
+        ["R-01", "Backlash", "\u2264 0.5\u00b0", "Hard", "1", "Test", "Pass"],
         ["R-02", "Cost", "< $120 CAD", "Hard", "2", "Inspection", "Pending Review"],
         ["R-03", "DFM/DFA", "Off-the-shelf + FDM", "Hard", "3", "Inspection", "Pending Review"],
-        ["R-04", "Backdrivability", "< 1 Nm friction", "Hard", "4", "Test", "Failed"],
+        ["R-04", "Backdrivability", "< 1 Nm friction", "Hard", "4", "Test", "Not Verified"],
         ["R-05", "Durability", "No self-destruction < 1 min", "Hard", "5", "Test", "Not Verified"],
         ["R-06", "Peak Torque", "\u2265 16 Nm", "Hard", "6", "Test", "Not Verified"],
         ["R-07", "Continuous Torque", "\u2265 12 Nm", "Hard", "7", "Test", "Not Verified"],
         ["R-08", "Thermal Performance", "No melting < 5 min", "Hard", "8", "Test", "Not Verified"],
-        ["R-09", "Efficiency", "> 90%", "Soft", "9", "Test", "Failed"],
+        ["R-09", "Efficiency", "> 90%", "Soft", "9", "Test", "Not Verified"],
         ["R-10", "Weight", "< 2 kg", "Soft", "10", "Inspection", "Not Verified"],
         ["R-11", "Speed", "\u2265 600 RPM", "Soft", "11", "Test", "Not Verified"],
         ["R-12", "Integratable", "Shafts or bolted plates", "Soft", "12", "Demo", "Not Verified"],
@@ -856,7 +951,7 @@ navLinks.forEach(link => {
         ["T-001", "Root cause \u2014 tight gear meshing", "Rev 00A", "Interface", "Complete", "Herringbone misalignment", "Partial"],
         ["T-002", "Lid drag \u2014 over-constraint", "Rev 00A", "Interface", "Complete", "Tolerance stackup identified", "Fail"],
         ["T-003", "Carrier shoulder deformation", "Rev 00A", "Component", "Complete", "Print quality issue on top", "Inconclusive"],
-        ["T-004", "Carrier half indexing", "Rev 00A", "Interface", "Complete", "No operational clocking force", "Pass"],
+        ["T-004", "Carrier half indexing", "Rev 00A", "Interface", "Complete", "Some flex by hand, not operational concern", "Pass"],
         ["T-005", "Bolt torque vs planet drag", "Rev 00A", "Interface", "Complete", "Narrow window, 1.1 Nm \u2192 drag", "Fail"],
         ["T-006", "Friction characterization", "Phase 2", "System", "Not Started", "\u2014", "\u2014"],
         ["T-007", "Step response", "Phase 2", "System", "Not Started", "\u2014", "\u2014"],
@@ -864,7 +959,7 @@ navLinks.forEach(link => {
         ["T-009", "Motor Kt verification", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
         ["T-010", "Motor cogging profile", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
         ["T-011", "Motor friction vs speed", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
-        ["T-012", "Backlash measurement", "Phase 1", "System", "Not Started", "\u2014", "\u2014"],
+        ["T-012", "Backlash measurement", "Phase 1", "System", "Complete", "0\u00b0 measurable backlash", "Pass"],
         ["T-013", "Hand backdriving", "Phase 1", "System", "Not Started", "\u2014", "\u2014"],
         ["T-014", "Motor step response", "Phase 0", "Component", "Not Started", "\u2014", "\u2014"],
         ["T-015", "Plant identification", "Phase 3", "System", "Not Started", "\u2014", "\u2014"],
@@ -903,12 +998,12 @@ navLinks.forEach(link => {
       headers: ["ID", "Description", "Category", "Priority", "Status", "Linked Tests", "Resolution"],
       rows: [
         ["U-01", "Planet positioning & mesh clearance", "Assembly/fit", "Test first", "Postponed \u2192 Rev 00B", "T-001", "Herringbone misalignment. Switched to spur gears."],
-        ["U-03", "Lid causing drag \u2014 over-constraint?", "Assembly/fit", "Test first", "Root cause identified", "T-002", "Tolerance stackup. Redesign for Rev 00B."],
+        ["U-03", "Lid causing drag \u2014 over-constraint?", "Assembly/fit", "Test first", "Resolved", "T-002", "Tolerance stackup fixed in Rev 00B. No lid drag confirmed."],
         ["U-04", "Carrier shoulder deformation under bolt torque", "Structural", "Test first", "Confirmed", "T-003, T-005", "Shoulders sensitive to torque. Rev 00B redesign."],
         ["U-05", "Carrier halves need indexing?", "Assembly/fit", "Monitor/skip", "Resolved", "T-004", "No operational clocking load."],
         ["U-06", "Gearbox structural capacity", "Structural", "After fundamentals", "Not Started", "", ""],
         ["U-07", "Output shaft strength", "Structural", "Verify early", "Known Issue", "", "Undersized \u2192 enlarged in Rev 00B."],
-        ["U-08", "Backlash \u2014 quantified", "Performance", "After fundamentals", "Not Started", "T-012", ""],
+        ["U-08", "Backlash \u2014 quantified", "Performance", "After fundamentals", "Resolved", "T-012", "0\u00b0 backlash measured. R-01 pass."],
         ["U-09", "Backdrivability \u2014 quantified", "Performance", "After fundamentals", "Not Started", "T-013, T-006, T-008", ""],
         ["U-10", "Durability under sustained use", "Degradation", "After fundamentals", "Not Started", "", ""]
       ]
@@ -1093,6 +1188,33 @@ navLinks.forEach(link => {
     contentEl.innerHTML = html;
   }
 })();
+
+// Rev tab switching
+function switchRevTab(rev) {
+  document.getElementById('rev-00a').style.display = rev === '00a' ? 'block' : 'none';
+  document.getElementById('rev-00b').style.display = rev === '00b' ? 'block' : 'none';
+  const tabA = document.getElementById('tab-00a');
+  const tabB = document.getElementById('tab-00b');
+  if (rev === '00a') {
+    tabA.style.color = '#fff';
+    tabA.style.background = 'var(--green)';
+    tabA.style.borderColor = 'var(--green-border)';
+    tabA.style.fontWeight = '700';
+    tabB.style.color = 'var(--text-light)';
+    tabB.style.background = 'var(--surface)';
+    tabB.style.borderColor = 'var(--border)';
+    tabB.style.fontWeight = '500';
+  } else {
+    tabB.style.color = '#fff';
+    tabB.style.background = 'var(--green)';
+    tabB.style.borderColor = 'var(--green-border)';
+    tabB.style.fontWeight = '700';
+    tabA.style.color = 'var(--text-light)';
+    tabA.style.background = 'var(--surface)';
+    tabA.style.borderColor = 'var(--border)';
+    tabA.style.fontWeight = '500';
+  }
+}
 </script>
 
 </body>

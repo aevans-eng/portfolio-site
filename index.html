@@ -9,14 +9,14 @@
 <link rel="canonical" href="https://aaronevans.ca/">
 <meta property="og:title" content="Aaron Evans — Mechanical Engineering Portfolio">
 <meta property="og:description" content="Mechanical engineering student at UVic. Actuator design, QDD gearbox, FEA analysis, and prototyping projects.">
-<meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/full-assembly-cross-section.png">
+<meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/rev00b-mounted-with-motor.jpg">
 <meta property="og:url" content="https://aaronevans.ca/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Aaron Evans">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Aaron Evans — Mechanical Engineering Portfolio">
 <meta name="twitter:description" content="Mechanical engineering student at UVic. Actuator design, QDD gearbox, FEA analysis, and prototyping projects.">
-<meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/full-assembly-cross-section.png">
+<meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/rev00b-mounted-with-motor.jpg">
 <link rel="icon" type="image/png" href="assets/favicon-32.png">
 <link rel="stylesheet" href="assets/styles.css">
 <script type="application/ld+json">
@@ -404,16 +404,19 @@
       <div class="carousel-badge"><span class="dot"></span> REV 00B — IN PROGRESS</div>
 
       <div class="carousel-track" id="carousel-track">
-        <img src="qdd-gearbox/images/full-assembly-cross-section.png" alt="Full assembly cross-section" class="active" data-caption="Full assembly cross-section">
-        <img src="qdd-gearbox/images/cad-assembly.png" alt="CAD assembly view" data-caption="CAD assembly view">
-        <img src="qdd-gearbox/images/master-assembly-tree.png" alt="Skeleton-driven assembly tree" data-caption="Skeleton-driven CATIA assembly tree">
-        <img src="qdd-gearbox/images/master-assembly-with-gears.png" alt="Assembly with gears" data-caption="Assembly with gear train visible">
-        <img src="qdd-gearbox/images/housing-lid-detail.png" alt="Housing lid detail" data-caption="Housing lid detail — bearing interfaces">
-        <img src="qdd-gearbox/images/before-after.png" alt="Before/after comparison" data-caption="Rev 00A before/after">
+        <img src="qdd-gearbox/images/rev00b-dial-gauge-backlash-setup.jpg" alt="Backlash measurement with dial indicator" class="active" data-caption="Backlash measurement — dial indicator on output shaft (result: 0&deg;)">
+        <img src="qdd-gearbox/images/rev00b-mounted-with-motor.jpg" alt="Rev 00B gearbox mounted with D6374 motor" data-caption="Rev 00B assembled with D6374 motor — full actuator">
+        <img src="qdd-gearbox/images/rev00b-side-profile.jpg" alt="Rev 00B side profile" data-caption="Rev 00B side profile — gearbox + motor proportions">
+        <img src="qdd-gearbox/images/rev00b-vs-00a-side-by-side.jpg" alt="Rev 00B next to Rev 00A parts" data-caption="Rev 00B assembled next to Rev 00A carrier and lid">
+        <img src="qdd-gearbox/images/rev00a-herringbone-closeup.jpg" alt="Herringbone gear closeup" data-caption="Rev 00A herringbone sun gear — FDM print quality detail">
+        <img src="qdd-gearbox/images/rev00b-cross-section.png" alt="Rev 00B cross-section render" data-caption="Rev 00B cross-section — internal gear train and motor interface">
+        <img src="qdd-gearbox/images/rev00b-top-output-shaft.jpg" alt="Rev 00B top view showing output shaft" data-caption="Rev 00B top-down — output shaft and lid fasteners">
+        <img src="qdd-gearbox/images/rev00b-parts-laid-out.jpg" alt="All Rev 00B parts laid out" data-caption="All Rev 00B components with bearings and hardware">
+        <img src="qdd-gearbox/images/rev00b-testing-with-claude-code.jpg" alt="Test bench setup" data-caption="Test bench — ODrive + laptop running characterization scripts">
       </div>
 
       <div class="carousel-caption">
-        <span class="carousel-count" id="carousel-count">1 / 6</span>
+        <span class="carousel-count" id="carousel-count">1 / 9</span>
         <span class="carousel-caption-text" id="carousel-caption">Full assembly cross-section</span>
       </div>
 
@@ -431,12 +434,12 @@
       <div class="dash-label">Featured Project</div>
       <h1 class="sr-only">Aaron Evans — UVic Mechanical Engineering Portfolio</h1>
       <h2 class="dash-title">QDD Gearbox Actuator</h2>
-      <p class="dash-desc">A backdrivable 5:1 planetary gearbox, 3D-printed and designed from scratch for robotic actuators. Independent project by a 4th year UVic mechanical engineering student.</p>
+      <p class="dash-desc">A backdrivable 5:1 planetary gearbox, 3D-printed and designed from scratch for robotic actuators. Independent project by a UVic mechanical engineering student.</p>
 
       <div class="specs-grid">
         <div class="sg-item"><span class="sg-val">5:1</span><span class="sg-label">Ratio</span></div>
         <div class="sg-item"><span class="sg-val">16 Nm</span><span class="sg-label">Peak</span></div>
-        <div class="sg-item"><span class="sg-val">&le;0.5&deg;</span><span class="sg-label">Backlash</span></div>
+        <div class="sg-item"><span class="sg-val">0&deg;</span><span class="sg-label">Backlash</span></div>
         <div class="sg-item"><span class="sg-val">&lt;$120</span><span class="sg-label">Budget</span></div>
         <div class="sg-item"><span class="sg-val">&gt;90%</span><span class="sg-label">Efficiency</span></div>
         <div class="sg-item"><span class="sg-val">FDM</span><span class="sg-label">Mfg</span></div>
@@ -448,8 +451,8 @@
         <span class="tl-step done">CAD</span><span class="tl-arrow">&rarr;</span>
         <span class="tl-step done">Calibration</span><span class="tl-arrow">&rarr;</span>
         <span class="tl-step done">Rev 00A</span><span class="tl-arrow">&rarr;</span>
-        <span class="tl-step current">Rev 00B <small style="opacity:.6">— Mar 2026</small></span><span class="tl-arrow">&rarr;</span>
-        <span class="tl-step future">GD&T</span><span class="tl-arrow">&rarr;</span>
+        <span class="tl-step done">Rev 00B</span><span class="tl-arrow">&rarr;</span>
+        <span class="tl-step current">Testing <small style="opacity:.6">— Mar 2026</small></span><span class="tl-arrow">&rarr;</span>
         <span class="tl-step future">Controls</span>
       </div>
     </div>
@@ -498,9 +501,9 @@
         <tr><th>Interface</th><th>Offset</th><th>Status</th></tr>
         <tr><td>Main bearing bore</td><td class="mono">+0.10</td><td class="pass">Validated</td></tr>
         <tr><td>Lid bearing bore</td><td class="mono">+0.10</td><td class="pass">Validated</td></tr>
-        <tr><td>Carrier bore</td><td class="mono">+0.10</td><td>Applied</td></tr>
-        <tr><td>Planet bore</td><td class="mono">+0.15</td><td class="pending">Pending</td></tr>
-        <tr><td>Ring-to-housing</td><td class="mono">+0.30</td><td>Applied</td></tr>
+        <tr><td>Carrier bore</td><td class="mono">+0.10</td><td class="pass">Validated</td></tr>
+        <tr><td>Planet bore</td><td class="mono">+0.15</td><td class="pass">Validated</td></tr>
+        <tr><td>Ring-to-housing</td><td class="mono">+0.30</td><td class="pass">Validated</td></tr>
       </table>
 
       <div class="panel-expanded">
@@ -511,12 +514,12 @@
         <p style="font-size:13px; font-weight:600; margin: 12px 0 8px;">Calibration Method</p>
         <div class="tol-detail">
           <div class="tol-detail-row"><span class="tol-detail-label">Approach</span><span>Print test coupons before full build</span></div>
-          <div class="tol-detail-row"><span class="tol-detail-label">Printer</span><span>Bambu Lab X1C, 0.2mm layer height</span></div>
+          <div class="tol-detail-row"><span class="tol-detail-label">Printer</span><span>Bambu P1S, 0.2mm layer height</span></div>
           <div class="tol-detail-row"><span class="tol-detail-label">Material</span><span>PLA, consistent shrinkage profile</span></div>
-          <div class="tol-detail-row"><span class="tol-detail-label">Validated</span><span class="tol-detail-val">2 / 5 interfaces</span></div>
+          <div class="tol-detail-row"><span class="tol-detail-label">Validated</span><span class="tol-detail-val">5 / 5 interfaces</span></div>
         </div>
         <p style="font-size:12px; color:var(--text-mid); margin-top:10px; line-height:1.5;">
-          Each interface calibrated independently. Bore shrinkage depends on diameter, wall thickness, and print orientation. Coupons tested with go/no-go fit checks.
+          Each interface was calibrated independently because bore shrinkage depends on diameter, wall thickness, and print orientation. Go/no-go fit checks on coupons confirmed all five interfaces in Rev 00B.
         </p>
       </div>
     </div>
@@ -525,30 +528,30 @@
     <div class="panel" id="panel-test" onclick="focusPanel('panel-test')">
       <span class="panel-hint">+ expand</span>
       <div class="panel-tag">Validation</div>
-      <div class="panel-title">Rev 00A Test Results</div>
+      <div class="panel-title">Test Results</div>
 
       <div class="test-summary">
-        <div class="test-stat"><div class="test-stat-val">5</div><div class="test-stat-label">Tests Run</div></div>
-        <div class="test-stat"><div class="test-stat-val">4</div><div class="test-stat-label">Changes</div></div>
-        <div class="test-stat"><div class="test-stat-val">1</div><div class="test-stat-label">Passed</div></div>
+        <div class="test-stat"><div class="test-stat-val">6</div><div class="test-stat-label">Tests Run</div></div>
+        <div class="test-stat"><div class="test-stat-val">0&deg;</div><div class="test-stat-label">Backlash</div></div>
+        <div class="test-stat"><div class="test-stat-val">2</div><div class="test-stat-label">Revisions</div></div>
       </div>
-      <div class="test-row"><span class="test-dot fix"></span> Gear mesh notchy <span class="test-action">&rarr; spur gears</span></div>
-      <div class="test-row"><span class="test-dot fix"></span> Lid over-constraining <span class="test-action">&rarr; floating bearing</span></div>
-      <div class="test-row"><span class="test-dot fix"></span> Carrier shoulder deform <span class="test-action">&rarr; redesign</span></div>
-      <div class="test-row"><span class="test-dot ok"></span> Carrier indexing OK <span class="test-action">no change</span></div>
-      <div class="test-row"><span class="test-dot fix"></span> Bolt torque binding <span class="test-action">&rarr; redesign</span></div>
+      <div class="test-row"><span class="test-dot ok"></span> T-012 Backlash: 0&deg; <span class="test-action">PASS</span></div>
+      <div class="test-row"><span class="test-dot ok"></span> All bearing fits validated <span class="test-action">Rev 00B</span></div>
+      <div class="test-row"><span class="test-dot ok"></span> Lid drag eliminated <span class="test-action">Rev 00B</span></div>
+      <div class="test-row"><span class="test-dot fix"></span> Backdrivability torque <span class="test-action">in progress</span></div>
+      <div class="test-row"><span class="test-dot fix"></span> Friction characterization <span class="test-action">pending</span></div>
 
       <div class="panel-expanded">
-        <p style="font-size:13px; font-weight:600; margin-bottom:10px;">Root Causes &amp; Rev 00B Fixes</p>
+        <p style="font-size:13px; font-weight:600; margin-bottom:10px;">Rev 00A &rarr; Rev 00B: Root Causes &amp; Fixes</p>
         <table class="test-detail-table">
-          <tr><th>Test</th><th>Root Cause</th><th>Fix</th></tr>
-          <tr><td>Gear mesh</td><td class="root">Herringbone halves misaligned at FDM resolution</td><td>Switch to spur gears</td></tr>
+          <tr><th>Issue</th><th>Root Cause</th><th>Fix in 00B</th></tr>
+          <tr><td>Gear mesh notchy</td><td class="root">Herringbone halves misaligned at FDM resolution</td><td>Switched to spur gears</td></tr>
           <tr><td>Lid drag</td><td class="root">Tolerance stackup over-constrained assembly</td><td>Floating lid bearing</td></tr>
           <tr><td>Carrier shoulder</td><td class="root">Bearing shoulders printed as overhang</td><td>Carrier wall redesign</td></tr>
-          <tr><td>Bolt torque</td><td class="root">Bolt preload deflected planets into ring gear</td><td>Redesign load path</td></tr>
+          <tr><td>Bolt torque binding</td><td class="root">Bolt preload deflected planets into ring gear</td><td>Redesigned load path</td></tr>
         </table>
         <p style="font-size:12px; color:var(--text-mid); margin-top:12px; line-height:1.5;">
-          Every test was defined with a specific question and acceptance criteria before running. Each failure traced to a root cause, not just symptoms.
+          Rev 00A turned up 5 issues, and each one got a formal test before I changed anything. All fixes confirmed in Rev 00B, now running quantitative characterization.
         </p>
       </div>
     </div>
@@ -571,7 +574,7 @@
         </div>
         <div class="fit-vis" style="margin-top:12px;">
           <span class="fit-vis-label">Key insight</span>
-          <span class="fit-vis-text">The #1 failure mode in student robotics is not the gearbox, but <strong>how it attaches to the motor</strong>. Interface definition was prioritized from day one.</span>
+          <span class="fit-vis-text">The #1 failure mode in student robotics is not the gearbox, but <strong>how it attaches to the motor</strong>. I defined the motor interface before any detail design started.</span>
         </div>
       </div>
     </div>
@@ -604,32 +607,41 @@
       </div>
     </div>
 
-    <!-- Panel 6: Rev 00A Build -->
+    <!-- Panel 6: Prototype Build -->
     <div class="panel" id="panel-build" onclick="focusPanel('panel-build')">
       <span class="panel-hint">+ expand</span>
       <div class="panel-tag">Prototype</div>
-      <div class="panel-title">Rev 00A Build &amp; Fit Check</div>
+      <div class="panel-title">Rev 00B Build — Current</div>
 
-      <table class="tol-table">
-        <tr><th>Interface</th><th>Result</th><th>Action</th></tr>
-        <tr><td>Housing bearing</td><td>Slightly loose</td><td class="mono">Offset adjusted</td></tr>
-        <tr><td>Lid-to-bearing</td><td class="pass">Good fit</td><td class="mono">No change</td></tr>
-        <tr><td>Planet bearings</td><td>1 of 3 loose</td><td class="mono">Tolerance review</td></tr>
-        <tr><td>M3 motor holes</td><td>0.13mm tight</td><td class="mono">Bore enlarged</td></tr>
-        <tr><td>Sun gear bore</td><td>Needed pressing</td><td class="mono">+0.025mm</td></tr>
-      </table>
+      <div class="test-summary">
+        <div class="test-stat"><div class="test-stat-val">2</div><div class="test-stat-label">Revisions</div></div>
+        <div class="test-stat"><div class="test-stat-val">~$30</div><div class="test-stat-label">Current Cost</div></div>
+        <div class="test-stat"><div class="test-stat-val">5/5</div><div class="test-stat-label">Fits Validated</div></div>
+      </div>
+      <div class="test-row"><span class="test-dot ok"></span> Spur gears (replaced herringbone) <span class="test-action">smoother mesh</span></div>
+      <div class="test-row"><span class="test-dot ok"></span> Floating lid bearing <span class="test-action">no drag</span></div>
+      <div class="test-row"><span class="test-dot ok"></span> Carrier wall redesign <span class="test-action">no deformation</span></div>
+      <div class="test-row"><span class="test-dot ok"></span> Backdrivable by hand <span class="test-action">0&deg; backlash</span></div>
 
       <div class="panel-expanded">
-        <p style="font-size:13px; font-weight:600; margin-bottom:8px;">Build Details</p>
+        <p style="font-size:13px; font-weight:600; margin-bottom:8px;">What Changed from Rev 00A</p>
+        <table class="test-detail-table">
+          <tr><th>Change</th><th>Why</th></tr>
+          <tr><td>Herringbone &rarr; spur gears</td><td>FDM couldn't resolve herringbone halves accurately</td></tr>
+          <tr><td>Fixed lid &rarr; floating bearing</td><td>Tolerance stackup caused lid drag</td></tr>
+          <tr><td>Carrier shoulder redesign</td><td>Overhang geometry deformed under bearing load</td></tr>
+          <tr><td>Fastener load path rerouted</td><td>Bolt preload was deflecting planets into ring gear</td></tr>
+        </table>
+        <p style="font-size:13px; font-weight:600; margin: 12px 0 8px;">Build Details</p>
         <div class="tol-detail">
-          <div class="tol-detail-row"><span class="tol-detail-label">Printer</span><span>Bambu P1S, PLA</span></div>
-          <div class="tol-detail-row"><span class="tol-detail-label">Bearings</span><span>Off-the-shelf ball bearings</span></div>
-          <div class="tol-detail-row"><span class="tol-detail-label">Fasteners</span><span>Abandoned heat inserts for self-tapping threads</span></div>
-          <div class="tol-detail-row"><span class="tol-detail-label">Params updated</span><span class="tol-detail-val">4 skeleton offsets</span></div>
-          <div class="tol-detail-row"><span class="tol-detail-label">Reprints</span><span>Carrier shell + housing body with adjusted offsets</span></div>
+          <div class="tol-detail-row"><span class="tol-detail-label">Printer</span><span>Bambu P1S, PLA, 0.2mm layers</span></div>
+          <div class="tol-detail-row"><span class="tol-detail-label">Motor</span><span>D6374 150KV BLDC + ODrive v3.6</span></div>
+          <div class="tol-detail-row"><span class="tol-detail-label">Bearings</span><span>6805 + 6710ZZ + 685ZZ ball bearings</span></div>
+          <div class="tol-detail-row"><span class="tol-detail-label">Fasteners</span><span>M3 shoulder bolts (5mm shaft as planet axles)</span></div>
+          <div class="tol-detail-row"><span class="tol-detail-label">Max tested speed</span><span class="tol-detail-val">300 RPM output (25 t/s motor)</span></div>
         </div>
         <p style="font-size:12px; color:var(--text-mid); margin-top:10px; line-height:1.5;">
-          Five things felt wrong during hand testing: lid drag, notchy gear mesh, carrier shoulder deformation, indexing play, and bolt torque sensitivity. Each one became a formal test in the next phase.
+          Hand testing Rev 00A turned up 5 issues, each of which became a formal test before I made changes. All 5 fixes are confirmed in Rev 00B, and I'm now running quantitative characterization (backdrive torque, friction, speed limits).
         </p>
       </div>
     </div>
