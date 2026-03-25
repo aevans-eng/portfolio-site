@@ -540,7 +540,7 @@
       <div class="test-row"><span class="test-dot ok"></span> All bearing fits validated <span class="test-action">Rev 00B</span></div>
       <div class="test-row"><span class="test-dot ok"></span> Lid drag eliminated <span class="test-action">Rev 00B</span></div>
       <div class="test-row"><span class="test-dot fix"></span> Backdrivability torque <span class="test-action">in progress</span></div>
-      <div class="test-row"><span class="test-dot fix"></span> Friction characterization <span class="test-action">pending</span></div>
+      <div class="test-row"><span class="test-dot fix"></span> Peak torque (static) <span class="test-action">pending</span></div>
 
       <div class="panel-expanded">
         <p style="font-size:13px; font-weight:600; margin-bottom:10px;">Rev 00A &rarr; Rev 00B: Root Causes &amp; Fixes</p>
@@ -552,7 +552,7 @@
           <tr><td>Bolt torque binding</td><td class="root">Bolt preload deflected planets into ring gear</td><td>Redesigned load path</td></tr>
         </table>
         <p style="font-size:12px; color:var(--text-mid); margin-top:12px; line-height:1.5;">
-          Rev 00A turned up 5 issues, and each one got a formal test before I changed anything. All fixes confirmed in Rev 00B, now running quantitative characterization.
+          Rev 00A turned up 5 issues, and each one got a formal test before I changed anything. All fixes confirmed in Rev 00B, now validating against the design requirements.
         </p>
       </div>
     </div>
@@ -591,7 +591,7 @@
         <div class="test-stat"><div class="test-stat-val">Full</div><div class="test-stat-label">Parametric</div></div>
         <div class="test-stat"><div class="test-stat-val">60-80</div><div class="test-stat-label">Hrs self-taught</div></div>
       </div>
-      <p style="font-size:12px; color:var(--text-mid); line-height:1.5; margin-top:8px;">Single skeleton drives all parts. Change one parameter, whole assembly updates.</p>
+      <p style="font-size:12px; color:var(--text-mid); line-height:1.5; margin-top:8px;">All parts reference a single skeleton, so a parameter change in one place updates every downstream component automatically.</p>
 
       <div class="panel-expanded">
         <p style="font-size:13px; font-weight:600; margin-bottom:8px;">Core Principles</p>
@@ -642,7 +642,7 @@
           <div class="tol-detail-row"><span class="tol-detail-label">Max tested speed</span><span class="tol-detail-val">300 RPM output (25 t/s motor)</span></div>
         </div>
         <p style="font-size:12px; color:var(--text-mid); margin-top:10px; line-height:1.5;">
-          Hand testing Rev 00A turned up 5 issues, each of which became a formal test before I made changes. All 5 fixes are confirmed in Rev 00B, and I'm now running quantitative characterization (backdrive torque, friction, speed limits).
+          Hand testing Rev 00A turned up 5 issues, each of which became a formal test before I made changes. All 5 fixes are confirmed in Rev 00B, and I'm now validating against the design requirements (backdrive torque, peak torque, efficiency, speed endurance).
         </p>
       </div>
     </div>

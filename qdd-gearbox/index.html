@@ -594,7 +594,7 @@
           </div>
 
           <div class="content-body">
-            <p>All interfaces that failed in Rev 00A are now validated. The gearbox still needs lubrication before friction characterization.</p>
+            <p>All interfaces that failed in Rev 00A are now validated, and quantitative requirement testing is underway.</p>
           </div>
 
           <!-- Backdriving video -->
@@ -744,7 +744,11 @@
           <tr><th>Test</th><th>Requirement</th><th>Result</th><th>Status</th></tr>
           <tr><td>T-012 Backlash</td><td class="mono">&le; 0.5&deg;</td><td class="mono">0&deg;</td><td class="pass">PASS</td></tr>
           <tr><td>T-013 Backdrivability</td><td class="mono">&lt; 1 Nm</td><td class="mono">—</td><td>In progress</td></tr>
-          <tr><td>T-006 Friction</td><td class="mono">Characterize</td><td class="mono">—</td><td>Pending</td></tr>
+          <tr><td>T-020 Peak Torque</td><td class="mono">&ge; 16 Nm</td><td class="mono">—</td><td>Pending</td></tr>
+          <tr><td>T-021 Continuous Torque</td><td class="mono">&ge; 12 Nm</td><td class="mono">—</td><td>Pending</td></tr>
+          <tr><td>T-022 Efficiency</td><td class="mono">&gt; 90%</td><td class="mono">—</td><td>Pending</td></tr>
+          <tr><td>T-023 Speed Endurance</td><td class="mono">&ge; 600 RPM</td><td class="mono">—</td><td>Pending</td></tr>
+          <tr><td>T-024 Health Comparison</td><td class="mono">No major damage</td><td class="mono">—</td><td>Pending</td></tr>
         </table>
         </div>
 
@@ -790,7 +794,7 @@
         </div>
 
         <div class="content-body">
-          <p>Rev 00B is assembled and passing initial tests. Backlash measured at 0°, and I'm currently running the quantitative test campaign: backdrivability torque, friction characterization (dry vs lubricated), and powered step response. After characterization, the plan is system identification, then impedance control.</p>
+          <p>Rev 00B is assembled and the first quantitative result is in: 0° backlash, passing R-01. Backdrive torque is next, using a lever arm and kitchen scale to measure friction against the 1 Nm requirement. After that, the remaining validation tests need a secure actuator mount and a dyno setup. Peak torque, continuous torque, efficiency, and speed endurance all require loaded operation that the current fixturing can't support, so the gearbox housing likely needs a mounting redesign before those can run. A health comparison before and after the stress tests will check for wear or damage.</p>
 
           <h3 class="content-h3">Design Direction</h3>
           <p>Once the current prototype meets all design requirements, future revisions will focus on reducing the form factor: integrating the ring gear into the housing wall (cylindrical instead of box-shaped), replacing the lower main bearing with a thinner, larger-diameter one to match the top bearing and cut overall height, and designing a motor housing that integrates with the gearbox for cleaner mounting.</p>
@@ -895,75 +899,97 @@ navLinks.forEach(link => {
       sections: [
         { title: "Requirements", rows: [
           ["Verified (Pass)", "1"],
+          ["Not Yet Verified", "12"],
           ["Total Defined", "13"]
         ]},
-        { title: "Test Campaign", rows: [
-          ["Complete", "6 of 19"],
+        { title: "Tests", rows: [
+          ["Complete", "6 of 12"],
           ["Pass", "2"],
           ["Fail", "2"],
-          ["Partial / Inconclusive", "2"]
+          ["Partial / Inconclusive", "2"],
+          ["Not Started", "6"]
         ]},
         { title: "Unknowns", rows: [
-          ["Investigated", "6 of 10"],
-          ["Resolved", "3"],
-          ["Confirmed / Known", "2"],
-          ["Postponed \u2192 Rev 00B", "1"]
+          ["Open", "1"],
+          ["Resolved", "8"],
+          ["Total", "9"]
         ]}
       ]
     },
     "Requirements": {
       type: "table",
-      headers: ["ID", "Requirement", "Target", "Type", "Priority", "Method", "Status"],
+      headers: ["ID", "Requirement", "Target", "Type", "Method", "Status"],
       rows: [
-        ["R-01", "Backlash", "\u2264 0.5\u00b0", "Hard", "1", "Test", "Pass"]
+        ["R-01", "Backlash", "\u2264 0.5\u00b0", "Hard", "Test", "Verified"],
+        ["R-02", "Cost", "< $120 CAD", "Hard", "Inspection", "Pending"],
+        ["R-03", "DFM/DFA", "FDM + off-the-shelf", "Hard", "Inspection", "Pending"],
+        ["R-04", "Backdrivability", "< 1 Nm friction", "Hard", "Test", "Not Verified"],
+        ["R-05", "Durability", "No major damage", "Hard", "Test", "Not Verified"],
+        ["R-06", "Peak Torque", "\u2265 16 Nm", "Hard", "Test", "Not Verified"],
+        ["R-07", "Continuous Torque", "\u2265 12 Nm", "Hard", "Test", "Not Verified"],
+        ["R-08", "Thermal", "No melting < 5 min", "Hard", "Test", "Not Verified"],
+        ["R-09", "Efficiency", "> 90%", "Soft", "Test", "Not Verified"],
+        ["R-10", "Weight", "< 2 kg", "Soft", "Inspection", "Not Verified"],
+        ["R-11", "Speed", "\u2265 600 RPM", "Soft", "Test", "Not Verified"],
+        ["R-12", "Integratable", "Shaft or bolted plate", "Soft", "Demonstration", "Not Verified"],
+        ["R-13", "Torque Density", "No target set", "Soft", "Analysis", "Not Verified"]
       ]
     },
     "Test Log": {
       type: "table",
-      headers: ["ID", "Test Name", "Phase", "Level", "Status", "Result", "Pass/Fail"],
+      headers: ["ID", "Test Name", "Rev", "Level", "Status", "Result", "Pass/Fail"],
       rows: [
-        ["T-001", "Root cause \u2014 tight gear meshing", "Rev 00A", "Interface", "Complete", "Herringbone misalignment", "Partial"],
-        ["T-002", "Lid drag \u2014 over-constraint", "Rev 00A", "Interface", "Complete", "Tolerance stackup identified", "Fail"],
-        ["T-003", "Carrier shoulder deformation", "Rev 00A", "Component", "Complete", "Print quality issue on top", "Inconclusive"],
-        ["T-004", "Carrier half indexing", "Rev 00A", "Interface", "Complete", "Some flex by hand, not operational concern", "Pass"],
-        ["T-005", "Bolt torque vs planet drag", "Rev 00A", "Interface", "Complete", "Narrow window, 1.1 Nm \u2192 drag", "Fail"],
-        ["T-012", "Backlash measurement", "Phase 1", "System", "Complete", "0\u00b0 measurable backlash", "Pass"]
+        ["T-001", "Root cause \u2014 tight gear meshing", "00A", "Interface", "Complete", "Herringbone misalignment", "Partial"],
+        ["T-002", "Lid drag \u2014 over-constraint", "00A", "Interface", "Complete", "Tolerance stackup identified", "Fail"],
+        ["T-003", "Carrier shoulder deformation", "00A", "Component", "Complete", "Print quality issue on top", "Inconclusive"],
+        ["T-004", "Carrier half indexing", "00A", "Interface", "Complete", "Some flex by hand, not operational concern", "Pass"],
+        ["T-005", "Bolt torque vs planet drag", "00A", "Interface", "Complete", "Narrow window, 1.1 Nm \u2192 drag", "Fail"],
+        ["T-012", "Backlash measurement", "00B", "Subsystem", "Complete", "0\u00b0 measurable backlash", "Pass"],
+        ["T-013", "Hand backdrivability", "00B", "Subsystem", "Not Started", "\u2014", "\u2014"],
+        ["T-020", "Peak torque (static)", "00B", "Subsystem", "Not Started", "\u2014", "\u2014"],
+        ["T-021", "Continuous torque + thermal", "00B", "Subsystem", "Not Started", "\u2014", "\u2014"],
+        ["T-022", "Efficiency", "00B", "Subsystem", "Not Started", "\u2014", "\u2014"],
+        ["T-023", "Speed endurance", "00B", "Subsystem", "Not Started", "\u2014", "\u2014"],
+        ["T-024", "Pre/post health comparison", "00B", "Subsystem", "Not Started", "\u2014", "\u2014"]
       ]
     },
     "Traceability": {
       type: "matrix",
-      testIds: ["T-012","T-001","T-002","T-003","T-004","T-005"],
-      phases:  ["Ph1",  "00A",  "00A",  "00A",  "00A",  "00A"],
+      testIds: ["T-012","T-013","T-020","T-021","T-022","T-023","T-024","T-001","T-002","T-003","T-004","T-005"],
+      phases:  ["00B",  "00B",  "00B",  "00B",  "00B",  "00B",  "00B",  "00A",  "00A",  "00A",  "00A",  "00A"],
       reqIds: ["R-01","R-02","R-03","R-04","R-05","R-06","R-07","R-08","R-09","R-10","R-11","R-12","R-13"],
       reqNames: ["Backlash","Cost","DFM/DFA","Backdrivability","Durability","Peak Torque","Continuous Torque","Thermal","Efficiency","Weight","Speed","Integratable","Torque Density"],
-      coverage: ["Covered","Via Inspection","Via Inspection","Covered","Partial","Partial","Gap","Gap","Partial","Via Inspection","Partial","Via Demo","Via Analysis"],
+      coverage: ["Covered","Via Inspection","Via Inspection","Covered","Covered","Covered","Covered","Covered","Covered","Via Inspection","Covered","Via Demo","Via Analysis"],
       // matrix[reqIdx][testIdx] = "P"|"S"|""
       matrix: [
-        ["P","S","","","S",""],
-        ["","","","","",""],
-        ["","","","","",""],
-        ["","S","S","","","S"],
-        ["","","","S","","S"],
-        ["","","","S","","S"],
-        ["","","","","",""],
-        ["","","","","",""],
-        ["","","","","",""],
-        ["","","","","",""],
-        ["","","","","",""],
-        ["","","","","",""],
-        ["","","","","",""]
+        ["P","","","","","","","S","","","S",""],
+        ["","","","","","","","","","","",""],
+        ["","","","","","","","","","","",""],
+        ["","P","","","","","","S","S","","","S"],
+        ["","","","","","","P","","","S","","S"],
+        ["","","P","","","","","","","S","","S"],
+        ["","","","P","","","","","","","",""],
+        ["","","","P","","","","","","","",""],
+        ["","","","","P","","","","S","","",""],
+        ["","","","","","","","","","","",""],
+        ["","","","","","P","","","","","",""],
+        ["","","","","","","","","","","",""],
+        ["","","","","","","","","","","",""]
       ]
     },
     "Unknowns": {
       type: "table",
-      headers: ["ID", "Description", "Category", "Priority", "Status", "Linked Tests", "Resolution"],
+      headers: ["ID", "Description", "Category", "Status", "Linked Tests", "Resolution"],
       rows: [
-        ["U-01", "Planet positioning & mesh clearance", "Assembly/fit", "Test first", "Postponed \u2192 Rev 00B", "T-001", "Herringbone misalignment. Switched to spur gears."],
-        ["U-03", "Lid causing drag \u2014 over-constraint?", "Assembly/fit", "Test first", "Resolved", "T-002", "Tolerance stackup fixed in Rev 00B. No lid drag confirmed."],
-        ["U-04", "Carrier shoulder deformation under bolt torque", "Structural", "Test first", "Confirmed", "T-003, T-005", "Shoulders sensitive to torque. Rev 00B redesign."],
-        ["U-05", "Carrier halves need indexing?", "Assembly/fit", "Monitor/skip", "Resolved", "T-004", "No operational clocking load."],
-        ["U-07", "Output shaft strength", "Structural", "Verify early", "Known Issue", "", "Undersized \u2192 enlarged in Rev 00B."],
-        ["U-08", "Backlash \u2014 quantified", "Performance", "After fundamentals", "Resolved", "T-012", "0\u00b0 backlash measured. R-01 pass."]
+        ["U-01", "Planet positioning & mesh clearance", "Assembly/fit", "Addressed in Rev 00B", "T-001", "Herringbone misalignment. Switched to spur gears."],
+        ["U-03", "Lid causing drag \u2014 over-constraint?", "Assembly/fit", "Resolved", "T-002", "Tolerance stackup fixed in Rev 00B. No lid drag confirmed."],
+        ["U-04", "Carrier shoulder deformation under bolt torque", "Structural", "Addressed in Rev 00B", "T-003, T-005", "Shoulders sensitive to torque. Rev 00B redesign."],
+        ["U-05", "Carrier halves need indexing?", "Assembly/fit", "Resolved", "T-004", "No operational clocking load."],
+        ["U-06", "Gearbox structural capacity", "Structural", "Covered by T-020, T-024", "T-020, T-024", "Peak torque tests structural limit; health comparison checks for damage."],
+        ["U-07", "Output shaft strength", "Structural", "Addressed in Rev 00B", "\u2014", "Undersized \u2192 enlarged in Rev 00B."],
+        ["U-08", "Backlash \u2014 quantified", "Performance", "Resolved", "T-012", "0\u00b0 backlash measured. R-01 pass."],
+        ["U-09", "Backdrivability \u2014 quantified", "Performance", "Open \u2014 Pending T-013", "T-013", "Hand backdrive test pending."],
+        ["U-10", "Durability under sustained use", "Degradation", "Covered by T-024", "T-024", "Pre/post health comparison addresses sustained-use degradation."]
       ]
     }
   };
