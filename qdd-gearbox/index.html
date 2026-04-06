@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>/* Reset zoom on mobile navigation */!function(){var v=document.querySelector('meta[name=viewport]');if(v){v.content='width=device-width,initial-scale=1,maximum-scale=1';setTimeout(function(){v.content='width=device-width,initial-scale=1,maximum-scale=5'},100)}}()</script>
 <title>QDD Gearbox Actuator — Aaron Evans | Mechanical Engineering Project</title>
-<meta name="description" content="Quasi-direct-drive 5:1 planetary gearbox designed from scratch by Aaron Evans, mechanical engineering student at the University of Victoria. Trade studies, CATIA V6, and FDM tolerancing.">
+<meta name="description" content="I designed a 5:1 planetary gearbox from scratch for a quasi-direct-drive actuator. 3D-printed on a Bambu P1S, currently in testing. By Aaron Evans, UVic mech eng.">
 <link rel="canonical" href="https://aaronevans.ca/qdd-gearbox/">
 <meta property="og:title" content="QDD Gearbox Actuator — Aaron Evans">
-<meta property="og:description" content="Backdrivable 5:1 planetary gearbox designed from scratch. Trade studies, CATIA V6, FDM tolerancing, and structured testing.">
+<meta property="og:description" content="5:1 planetary gearbox I designed from scratch for a QDD actuator. 3D-printed, backdrivable, 0 degrees backlash so far.">
 <meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/rev00b-mounted-with-motor.jpg">
 <meta property="og:url" content="https://aaronevans.ca/qdd-gearbox/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Aaron Evans">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="QDD Gearbox Actuator — Aaron Evans">
-<meta name="twitter:description" content="Backdrivable 5:1 planetary gearbox designed from scratch. Trade studies, CATIA V6, FDM tolerancing, and structured testing.">
+<meta name="twitter:description" content="5:1 planetary gearbox I designed from scratch for a QDD actuator. 3D-printed, backdrivable, 0 degrees backlash so far.">
 <meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/rev00b-mounted-with-motor.jpg">
 <link rel="icon" type="image/png" href="../assets/favicon-32.png">
 <link rel="stylesheet" href="../assets/styles.css">
@@ -33,7 +33,7 @@
       "sameAs": "https://www.uvic.ca"
     }
   },
-  "description": "A backdrivable 5:1 FDM 3D-printed planetary gearbox for robotic actuators. Designed from scratch with trade studies, skeleton-driven CATIA V6, and structured prototype testing.",
+  "description": "A 5:1 planetary gearbox designed from scratch for a quasi-direct-drive actuator. 3D-printed on a Bambu P1S, modeled in CATIA V6, currently in testing.",
   "url": "https://aaronevans.ca/qdd-gearbox/"
 }
 </script>
@@ -347,16 +347,16 @@
         </div>
 
         <a class="img-link" href="images/rev00b-mounted-with-motor.jpg"><img class="content-img" src="images/rev00b-mounted-with-motor.jpg" alt="QDD Gearbox Rev 00B assembled with D6374 motor" style="object-fit: cover; max-height: 500px;"></a>
-        <div class="img-caption">Rev 00B gearbox assembled with D6374 150KV motor — the complete actuator</div>
+        <div class="img-caption">Rev 00B gearbox assembled with D6374 150KV motor</div>
 
         <div class="content-body">
-          <p>Three years into a mechanical engineering degree and I still hadn't designed a complete electromechanical system. I started this project at a hackathon in January 2026 because I wanted to build the kind of actuator that shows up in Optimus and modern legged robots: a quasi-direct-drive.</p>
+          <p>This started as a hackathon day in January 2026 with <a href="https://www.linkedin.com/in/russell-bilinski/" target="_blank" rel="noopener noreferrer">Russell Bilinski</a>. We'd been looking at <a href="https://cadenkraft.com/ironless-cycloidal-planetary-actuator/" target="_blank" rel="noopener noreferrer">Caeden Kraft's actuator work</a> and wanted to learn more about how QDD gearboxes actually work by building one. Russell had a D6374 motor, an ODrive controller, bearings, and an encoder, so we started from there.</p>
 
-          <p>The whole point of a QDD is that you can backdrive the output by hand. Low friction, tight backlash, no cogging. That means the motor can feel external forces through the gearbox, which is what makes impedance control possible. I designed a 5:1 planetary gearbox from scratch, 3D-printed on a Bambu P1S, paired with a BLDC motor and ODrive controller.</p>
+          <p>The whole point of a QDD is that you can backdrive the output by hand. Low friction, tight backlash, no cogging. That means the motor can feel external forces through the gearbox, which is what makes impedance control possible. I designed a 5:1 planetary gearbox from scratch and 3D-printed it on a Bambu P1S.</p>
         </div>
 
         <div class="callout">
-          <strong>Collaboration:</strong> This started as a hackathon day with <a href="https://www.linkedin.com/in/russell-bilinski/" target="_blank" rel="noopener noreferrer">Russell Bilinski</a> (previous Tesla battery design engineering intern), who provided equipment, parts, and mentorship. Russell built the workflow that takes Caeden Kraft's <a href="https://github.com/CKraft11/pygeartrain" target="_blank" rel="noopener noreferrer">pygeartrain</a> gear profiles and generates STEP files. All CAD, mechanical design, prototyping, and testing are my own work.
+          <strong>Collaboration:</strong> Russell Bilinski (previous Tesla battery design engineering intern) provided the motor, ODrive, encoder, and bearings, plus mentorship throughout. He built the workflow that takes Caeden Kraft's <a href="https://github.com/CKraft11/pygeartrain" target="_blank" rel="noopener noreferrer">pygeartrain</a> gear profiles and generates STEP files, and is handling motor control setup for testing. All CAD, mechanical design, prototyping, and test fixturing are my own work. Dyno testing is a joint effort.
         </div>
 
         <h3 class="content-h3">Requirements</h3>
@@ -396,7 +396,7 @@
         </div>
 
         <div class="content-body">
-          <p>I scored every major design choice with a weighted matrix before touching CAD. Gear type, ratio, and bearing type were all decided this way.</p>
+          <p>I scored every major design choice with a weighted matrix before I started CAD. Gear type, ratio, and bearing type were all decided this way.</p>
         </div>
 
         <h3 class="content-h3">Gear Type</h3>
@@ -555,7 +555,7 @@
         <!-- Rev 00B content (default) -->
         <div id="rev-00b">
           <div class="content-body">
-            <p>Every change in this revision came from a formal test on Rev 00A: herringbone gears replaced with spur, carrier shoulders redesigned, lid bearing made floating, heat-set inserts swapped for self-tapping screws. All fits validated. The gearbox runs smooth and quiet, though it still needs lubrication.</p>
+            <p>Every change in this revision came from a test on Rev 00A: herringbone gears replaced with spur, carrier shoulders redesigned, lid bearing made floating, heat-set inserts swapped for self-tapping screws. All fits validated.</p>
           </div>
 
           <div class="content-img-row">
@@ -594,7 +594,7 @@
           </div>
 
           <div class="content-body">
-            <p>All interfaces that failed in Rev 00A are now validated, and quantitative requirement testing is underway.</p>
+            <p>All interfaces that failed in Rev 00A are now validated, and I've started testing against the requirements.</p>
           </div>
 
           <!-- Backdriving video -->
@@ -677,7 +677,7 @@
 
         <h3 class="content-h3">Rev 00A Findings</h3>
         <div class="content-body">
-          <p>For each of the five issues from Rev 00A, I wrote down the question I was trying to answer and what would count as a pass before touching the prototype.</p>
+          <p>For each of the five issues from Rev 00A, I wrote down the question I was trying to answer and what would count as a pass before running the test.</p>
         </div>
 
         <div class="table-wrap">
@@ -733,7 +733,7 @@
 
         <h3 class="content-h3">Rev 00B Quantitative Results</h3>
         <div class="content-body">
-          <p>With Rev 00B assembled and all fits validated, I started structured testing against the requirements.</p>
+          <p>With Rev 00B assembled and all fits validated, I started testing against the requirements.</p>
         </div>
 
         <a class="img-link" href="images/rev00b-dial-gauge-backlash-setup.jpg"><img class="content-img" loading="lazy" src="images/rev00b-dial-gauge-backlash-setup.jpg" alt="Dial indicator measuring backlash on output shaft"></a>
