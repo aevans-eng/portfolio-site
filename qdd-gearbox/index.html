@@ -9,14 +9,14 @@
 <link rel="canonical" href="https://aaronevans.ca/qdd-gearbox/">
 <meta property="og:title" content="QDD Gearbox Actuator — Aaron Evans">
 <meta property="og:description" content="5:1 planetary gearbox I designed from scratch for a QDD actuator. 3D-printed, backdrivable, 0 degrees backlash so far.">
-<meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/rev00b-mounted-with-motor.jpg">
+<meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/rev01-with-motor-housing.jpg">
 <meta property="og:url" content="https://aaronevans.ca/qdd-gearbox/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Aaron Evans">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="QDD Gearbox Actuator — Aaron Evans">
 <meta name="twitter:description" content="5:1 planetary gearbox I designed from scratch for a QDD actuator. 3D-printed, backdrivable, 0 degrees backlash so far.">
-<meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/rev00b-mounted-with-motor.jpg">
+<meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/rev01-with-motor-housing.jpg">
 <link rel="icon" type="image/png" href="../assets/favicon-32.png">
 <link rel="stylesheet" href="../assets/styles.css">
 <script type="application/ld+json">
@@ -115,26 +115,27 @@
   }
 
   .content-section-header {
-    display: flex; align-items: center; gap: 12px;
-    margin-bottom: 20px; padding-bottom: 12px;
-    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 24px; padding-bottom: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.16);
   }
   .cs-number {
-    font-family: var(--mono); font-size: 12px; font-weight: 700;
-    color: var(--green); background: var(--green-bg);
+    font-family: var(--mono); font-size: 15px; font-weight: 700;
+    color: var(--green); background: rgba(74,103,65,0.12);
     border: 1px solid var(--green-border);
-    width: 28px; height: 28px; border-radius: 4px;
+    width: 38px; height: 38px; border-radius: 6px;
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
   }
   .cs-titles { flex: 1; }
-  .cs-tag {
-    font-family: var(--mono); font-size: 11px; font-weight: 600;
-    color: var(--text-light); text-transform: uppercase; letter-spacing: 0.06em;
-  }
   .cs-title {
-    font-family: var(--serif); font-size: 24px; font-weight: 600;
+    font-family: var(--serif); font-size: 29px; font-weight: 600;
     letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  #testing .content-section-header {
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .content-body { font-size: 15px; color: var(--text-mid); line-height: 1.7; }
@@ -200,6 +201,128 @@
   .content-h3 {
     font-size: 15px; font-weight: 600; margin: 20px 0 8px;
     color: var(--text); letter-spacing: -0.01em;
+  }
+
+  .rev-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .rev-sequence {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 14px;
+    padding: 0 20px;
+  }
+  .rev-sequence::before {
+    content: "";
+    position: absolute;
+    left: 36px;
+    right: 36px;
+    top: 13px;
+    height: 3px;
+    border-radius: 999px;
+    background: rgba(74,103,65,0.16);
+  }
+  .rev-sequence-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    z-index: 1;
+  }
+  .rev-sequence-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid rgba(74,103,65,0.24);
+    background: #fff;
+    transition: transform 0.15s, background 0.15s, border-color 0.15s, box-shadow 0.15s;
+  }
+  .rev-sequence-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-light);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.15s;
+  }
+  .rev-sequence-step.completed .rev-sequence-dot {
+    border-color: var(--green-border);
+    background: rgba(74,103,65,0.34);
+  }
+  .rev-sequence-step.completed .rev-sequence-label {
+    color: var(--text-mid);
+  }
+  .rev-sequence-step.active .rev-sequence-dot {
+    border-color: var(--green);
+    background: var(--green);
+    transform: scale(1.15);
+    box-shadow: 0 0 0 7px rgba(74,103,65,0.14);
+  }
+  .rev-sequence-step.active .rev-sequence-label {
+    color: var(--green);
+  }
+  .rev-tab {
+    position: relative;
+    padding: 14px 16px;
+    border: 2px solid rgba(74,103,65,0.14);
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--surface);
+    text-align: left;
+    transition: border-color 0.15s, background 0.15s, color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+  .rev-tab::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 10px 0 0 10px;
+    background: transparent;
+    transition: background 0.15s;
+  }
+  .rev-tab:hover {
+    border-color: var(--green-border);
+    background: var(--green-bg);
+  }
+  .rev-tab:focus-visible {
+    outline: 2px solid rgba(74,103,65,0.22);
+    outline-offset: 2px;
+  }
+  .rev-tab.active {
+    border-color: var(--green);
+    background: var(--green-bg);
+    box-shadow: 0 12px 28px rgba(74,103,65,0.10);
+  }
+  .rev-tab.active::before {
+    background: var(--green);
+  }
+  .rev-tab-name {
+    display: block;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.04em;
+  }
+  .rev-tab-meta {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    color: var(--text-light);
+    line-height: 1.4;
+  }
+  .rev-tab.active .rev-tab-meta {
+    color: var(--green);
   }
 
   /* Assembly tree visual */
@@ -273,10 +396,13 @@
   }
   @media (max-width: 600px) {
     .container, nav { padding-left: 16px; padding-right: 16px; }
-    .cs-title { font-size: 19px; }
+    .cs-number { width: 32px; height: 32px; font-size: 13px; }
+    .cs-title { font-size: 23px; }
     .content-img-row { grid-template-columns: 1fr; }
     .content-section-header { gap: 8px; }
     .tree-block { font-size: 11px; padding: 12px 14px; }
+    .rev-sequence { padding: 0 10px; }
+    .rev-tabs { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -303,10 +429,10 @@
   <div class="project-layout">
 
     <!-- ===== SIDEBAR ===== -->
-    <aside class="sidebar">
-      <div class="sidebar-phase"><span class="pulse-dot"></span> PROTOTYPE — REV 00B TESTING</div>
-      <h1 class="sidebar-title">QDD Gearbox Actuator</h1>
-      <div class="sidebar-subtitle">3D-printed planetary gearbox for backdrivable robotic actuators</div>
+<aside class="sidebar">
+  <div class="sidebar-phase"><span class="pulse-dot"></span> REV 01 ASSEMBLED - REQUIREMENT TESTS</div>
+  <h1 class="sidebar-title">QDD Gearbox Actuator</h1>
+  <div class="sidebar-subtitle">3D-printed planetary gearbox for backdrivable robotic actuators</div>
 
       <ul class="sidebar-nav">
         <li><a href="#overview"><span class="nav-num">01</span> Overview</a></li>
@@ -318,17 +444,16 @@
         <li><a href="#next"><span class="nav-num">07</span> What's Next</a></li>
       </ul>
 
-      <div class="sidebar-specs">
-        <div class="section-label">Design Targets</div>
-        <div class="sidebar-spec-row"><span class="ssl">Ratio</span><span class="ssv">5:1</span></div>
-        <div class="sidebar-spec-row"><span class="ssl">Peak torque</span><span class="ssv">16 Nm</span></div>
-        <div class="sidebar-spec-row"><span class="ssl">Backlash</span><span class="ssv">0&deg; measured</span></div>
-        <div class="sidebar-spec-row"><span class="ssl">Budget</span><span class="ssv">&lt;$120</span></div>
-        <div class="sidebar-spec-row"><span class="ssl">Current cost</span><span class="ssv">~$30</span></div>
-        <div class="sidebar-spec-row"><span class="ssl">Efficiency</span><span class="ssv">&gt;90%</span></div>
-        <div class="sidebar-spec-row"><span class="ssl">Manufacturing</span><span class="ssv">FDM</span></div>
-        <div class="sidebar-spec-row"><span class="ssl">Printer</span><span class="ssv">Bambu P1S</span></div>
-      </div>
+  <div class="sidebar-specs">
+    <div class="section-label">Current Status</div>
+    <div class="sidebar-spec-row"><span class="ssl">Build</span><span class="ssv">Rev 01</span></div>
+    <div class="sidebar-spec-row"><span class="ssl">Backlash</span><span class="ssv">0&deg; measured</span></div>
+    <div class="sidebar-spec-row"><span class="ssl">Next test</span><span class="ssv">Backdrive</span></div>
+    <div class="sidebar-spec-row"><span class="ssl">Peak target</span><span class="ssv">16 Nm</span></div>
+    <div class="sidebar-spec-row"><span class="ssl">Current spend</span><span class="ssv">&lt;$30</span></div>
+    <div class="sidebar-spec-row"><span class="ssl">Efficiency</span><span class="ssv">Pending</span></div>
+    <div class="sidebar-spec-row"><span class="ssl">Manufacturing</span><span class="ssv">FDM</span></div>
+  </div>
     </aside>
 
     <!-- ===== CONTENT ===== -->
@@ -341,25 +466,27 @@
         <div class="content-section-header">
           <span class="cs-number">01</span>
           <div class="cs-titles">
-            <div class="cs-tag">Project</div>
             <h2 class="cs-title">Overview</h2>
           </div>
         </div>
 
-        <a class="img-link" href="images/rev00b-mounted-with-motor.jpg"><img class="content-img" src="images/rev00b-mounted-with-motor.jpg" alt="QDD Gearbox Rev 00B assembled with D6374 motor" style="object-fit: cover; max-height: 500px;"></a>
-        <div class="img-caption">Rev 00B gearbox assembled with D6374 150KV motor</div>
+        <a class="img-link" href="images/rev01-with-motor-housing.jpg"><img class="content-img" src="images/rev01-with-motor-housing.jpg" alt="QDD Gearbox Rev 01 mated to integrated motor housing" style="object-fit: cover; max-height: 500px;"></a>
+        <div class="img-caption">Rev 01 gearbox mated to the integrated motor housing</div>
 
         <div class="content-body">
           <p>This started as a hackathon day in January 2026 with <a href="https://www.russlib.ca/" target="_blank" rel="noopener noreferrer">Russell Bilinski</a>. We'd been looking at <a href="https://cadenkraft.com/ironless-cycloidal-planetary-actuator/" target="_blank" rel="noopener noreferrer">Caden Kraft's actuator work</a> and wanted to learn more about how QDD gearboxes actually work by building one. Russell had a D6374 motor, an ODrive controller, bearings, and an encoder, so we started from there.</p>
 
-          <p>A QDD uses a low-ratio gearbox to increase the torque density of a motor without needing an oversized one. The tradeoff with gearing is reflected inertia, which scales with the square of the ratio, so a higher ratio makes the actuator less sensitive to external forces. Keeping the ratio low means you can still do impedance control, because the motor can feel what's happening at the output. That requires minimal backlash and friction in the gearbox, which is what most of the design effort went into. I designed a 5:1 planetary from scratch and 3D-printed it on a Bambu P1S.</p>
+          <p>A QDD uses a low-ratio gearbox to get torque multiplication without the reflected inertia penalty of a high-ratio reduction. Keeping the ratio low helps preserve backdrivability and makes impedance control more practical, which is why low backlash and low friction mattered throughout this design. For this project, we went with a 5:1 planetary layout and a 3D-printed prototype on a Bambu P1S.</p>
         </div>
 
         <div class="callout">
-          <strong>Collaboration:</strong> Russell Bilinski (previous Tesla battery design engineering intern) provided the motor, ODrive, encoder, and bearings, plus mentorship throughout. He built the workflow that takes Caden Kraft's <a href="https://github.com/CKraft11/pygeartrain" target="_blank" rel="noopener noreferrer">pygeartrain</a> gear profiles and generates STEP files, and is handling motor control setup for testing. All CAD, mechanical design, prototyping, and test fixturing are my own work. Dyno testing is a joint effort.
+          <strong>Collaboration:</strong> Russell Bilinski (previous Tesla battery design engineering intern) provided the motor, ODrive, encoder, and bearings, plus mentorship throughout. He built the workflow that takes Caden Kraft's <a href="https://github.com/CKraft11/pygeartrain" target="_blank" rel="noopener noreferrer">pygeartrain</a> gear profiles and generates STEP files, and is handling the H2 trainer and motor controller setup for testing. All CAD, mechanical design, prototyping, and test fixturing are my own work. Dyno testing is a joint effort.
         </div>
 
         <h3 class="content-h3">Requirements</h3>
+        <div class="content-body">
+          <p>We set the initial requirements around backlash, backdrivability, torque, cost, and basic practicality for a student-built prototype.</p>
+        </div>
         <div class="table-wrap">
         <table class="content-table">
           <tr><th>Requirement</th><th>Target</th><th>Type</th></tr>
@@ -380,8 +507,7 @@
           <span class="tl-step done">Calibration</span><span class="tl-arrow">&rarr;</span>
           <span class="tl-step done">Rev 00A</span><span class="tl-arrow">&rarr;</span>
           <span class="tl-step done">Rev 00B</span><span class="tl-arrow">&rarr;</span>
-          <span class="tl-step current">Testing <small style="opacity:.6">— Mar 2026</small></span><span class="tl-arrow">&rarr;</span>
-          <span class="tl-step future">Controls</span>
+          <span class="tl-step current">Requirement Tests</span>
         </div>
       </section>
 
@@ -390,17 +516,16 @@
         <div class="content-section-header">
           <span class="cs-number">02</span>
           <div class="cs-titles">
-            <div class="cs-tag">Design</div>
             <h2 class="cs-title">Trade Studies</h2>
           </div>
         </div>
 
         <div class="content-body">
-          <p>I scored every major design choice with a weighted matrix before I started CAD. Gear type, ratio, and bearing type were all decided this way.</p>
+          <p>We scored the major design choices with a weighted matrix on the original hackathon day before any CAD started. Gear type, ratio, and bearing type were all decided this way.</p>
         </div>
 
         <h3 class="content-h3">Gear Type</h3>
-        <div class="content-body"><p>I compared 6 gear concepts across 7 criteria. Planetary came out on top because it's cheap, printable, and backdrivable, which are the three things that matter most for this project.</p></div>
+        <div class="content-body"><p>We compared 6 gear concepts across 7 criteria. Planetary came out on top because it was cheap, printable, and backdrivable, which were the three things that mattered most for this project.</p></div>
 
         <div class="bar-chart content-bar-chart" id="trade-bars-page">
           <div class="bar-row"><span class="bar-label">Planetary</span><div class="bar-track"><div class="bar-fill winner-bar" data-width="88"><span class="bar-val">4.40</span></div></div></div>
@@ -438,7 +563,7 @@
 
         <h3 class="content-h3">Bearings</h3>
         <div class="content-body">
-          <p>Ball bearings won at 4.05/5. I weighted cost at 60% because crossed rollers scored better on performance but cost 5x more, which would have blown the $120 budget.</p>
+          <p>Ball bearings won at 4.05/5. We weighted cost at 60% because crossed rollers scored better on performance but cost 5x more, which would have blown the $120 budget.</p>
         </div>
       </section>
 
@@ -447,33 +572,52 @@
         <div class="content-section-header">
           <span class="cs-number">03</span>
           <div class="cs-titles">
-            <div class="cs-tag">CAD</div>
             <h2 class="cs-title">CATIA V6</h2>
           </div>
         </div>
 
         <div class="content-body">
-          <p>I had no CATIA experience before this project. About 60-80 hours of self-directed learning went into the assembly, and most of that was figuring out what not to do.</p>
+          <p>The first concept pass happened in Onshape during the original hackathon day. I rebuilt the project in CATIA because I wanted to learn the CAD software used in a lot of industry work. About 60-80 hours of self-directed learning went into that assembly, much of it in rebuilding the model so future parameter changes would not break downstream parts.</p>
 
-          <p>The assembly is skeleton-driven: a single master part holds all the parameters, reference planes, and axes. Every other part reads from the skeleton, so changing one dimension updates everything downstream automatically. This matters for iteration speed, because when a test result says "make the output shaft 2mm bigger," I change one number and the carrier, lid, and bearings all update.</p>
+          <p>The assembly is skeleton-driven: one master part holds the main parameters, reference planes, and axes. The rest of the parts reference that skeleton, so when I change a key dimension the related parts update with it.</p>
         </div>
-
-        <a class="img-link" href="images/master-assembly-tree.png"><img class="content-img" loading="lazy" src="images/master-assembly-tree.png" alt="CATIA master assembly with skeleton-driven hierarchy"></a>
-        <div class="img-caption">Master assembly in CATIA, showing the skeleton-driven structure</div>
-
-        <a class="img-link" href="images/catia-tree-diagram.png"><img class="content-img" loading="lazy" src="images/catia-tree-diagram.png" alt="Assembly tree diagram"></a>
-
-        <a class="img-link" href="images/master-assembly-with-gears.png"><img class="content-img" loading="lazy" src="images/master-assembly-with-gears.png" alt="Cross-section with gear tooth geometry"></a>
-        <div class="img-caption">Cross-section with imported gear tooth geometry (Rev 00A, herringbone profile)</div>
 
         <div class="content-img-row">
           <div>
-            <a class="img-link" href="images/before-after.png"><img loading="lazy" src="images/before-after.png" alt="Early model vs skeleton-driven design"></a>
-            <div class="img-caption">First attempt vs. skeleton-driven redesign</div>
+            <a class="img-link" href="images/initial-onshape-design-with-sketches.jpg"><img loading="lazy" src="images/initial-onshape-design-with-sketches.jpg" alt="Initial Onshape draft beside hand sketches"></a>
+            <div class="img-caption">Initial Onshape draft from the hackathon day, beside the sketches it came from</div>
           </div>
           <div>
-            <a class="img-link" href="images/carrier-assembly-tree.png"><img loading="lazy" src="images/carrier-assembly-tree.png" alt="Carrier sub-assembly"></a>
-            <div class="img-caption">Carrier sub-assembly</div>
+            <a class="img-link" href="images/before-after.png"><img loading="lazy" src="images/before-after.png" alt="Early model vs skeleton-driven design"></a>
+            <div class="img-caption">First CATIA attempt vs. the skeleton-driven redesign</div>
+          </div>
+        </div>
+
+        <a class="img-link" href="images/rev01-catia-master-assembly-tree.png"><img class="content-img" loading="lazy" src="images/rev01-catia-master-assembly-tree.png" alt="Rev 01 CATIA master assembly tree"></a>
+        <div class="img-caption">Rev 01 master assembly tree in CATIA</div>
+
+        <a class="img-link" href="images/catia-tree-diagram.png"><img class="content-img" loading="lazy" src="images/catia-tree-diagram.png" alt="Assembly tree diagram"></a>
+        <div class="img-caption">Simplified assembly hierarchy showing how the skeleton drives downstream parts</div>
+
+        <div class="content-img-row">
+          <div>
+            <a class="img-link" href="images/rev01-cad-view.png"><img loading="lazy" src="images/rev01-cad-view.png" alt="Rev 01 CATIA assembly render"></a>
+            <div class="img-caption">Rev 01 assembly render from CATIA</div>
+          </div>
+          <div>
+            <a class="img-link" href="images/rev01-cad-cross-section.png"><img loading="lazy" src="images/rev01-cad-cross-section.png" alt="Rev 01 CAD cross-section"></a>
+            <div class="img-caption">Rev 01 cross-section, carrier, bearings, and motor interface</div>
+          </div>
+        </div>
+
+        <div class="content-img-row">
+          <div>
+            <a class="img-link" href="images/carrier-assembly-tree.png"><img loading="lazy" src="images/carrier-assembly-tree.png" alt="Carrier sub-assembly tree from an earlier revision"></a>
+            <div class="img-caption">Carrier sub-assembly tree from an earlier revision</div>
+          </div>
+          <div>
+            <a class="img-link" href="images/catia-gears-closeup.png"><img loading="lazy" src="images/catia-gears-closeup.png" alt="CATIA gear mesh closeup"></a>
+            <div class="img-caption">Gear mesh close-up from CATIA</div>
           </div>
         </div>
       </section>
@@ -483,7 +627,6 @@
         <div class="content-section-header">
           <span class="cs-number">04</span>
           <div class="cs-titles">
-            <div class="cs-tag">Manufacturing</div>
             <h2 class="cs-title">FDM Tolerancing</h2>
           </div>
         </div>
@@ -491,7 +634,7 @@
         <div class="content-body">
           <p>FDM prints aren't accurate enough for bearing fits out of the box. Bores print undersized by 0.1-0.4mm depending on diameter, so every bearing interface needs a calibrated offset in the CAD model. I keep each offset as a named parameter in the CATIA skeleton, which means the nominal bearing dimensions stay clean and I can tune each fit independently.</p>
 
-          <p>All bearing interfaces target a finger-press transition fit: firm pressure seats the bearing, it clicks in, and it doesn't fall out. I went with this instead of the textbook answer (press fit on the rotating ring) because FDM surface texture provides enough grip on its own, and backdrivability is the priority.</p>
+          <p>All bearing interfaces target a firm finger-press transition fit. For this prototype, that was enough for retention without pushing the fits tighter than needed.</p>
         </div>
 
         <div class="table-wrap">
@@ -511,6 +654,9 @@
           <p>Before printing the full build, I printed a test coupon with representative features (bearing bores, shaft posts, clearance holes) and measured each one with calipers. The results went straight back into the CATIA offsets.</p>
         </div>
 
+        <a class="img-link" href="images/calibration-coupon.jpg"><img class="content-img" loading="lazy" src="images/calibration-coupon.jpg" alt="FDM calibration coupon with bearing bores, shaft posts, and clearance holes"></a>
+        <div class="img-caption">Test coupon with representative bearing bores, shaft posts, and clearance holes</div>
+
         <div class="table-wrap">
         <table class="content-table">
           <tr><th>Feature</th><th>Nominal</th><th>Measured</th><th>Deviation</th><th>Result</th></tr>
@@ -522,7 +668,7 @@
         </div>
 
         <div class="content-body">
-          <p>Smaller holes had worse deviation, which makes sense given FDM accuracy scales with feature size. The planet bore and clearance holes needed the largest corrections. I also ended up switching from heat-set inserts to self-tapping screws (M3: 2.6mm pilot, M4: 3.6mm, M5: 4.6mm), which turned out to be simpler and plenty strong enough for a prototype.</p>
+          <p>Smaller holes had worse deviation, which makes sense given FDM accuracy scales with feature size. The planet bore and clearance holes needed the largest corrections. I also ended up switching from heat-set inserts to self-tapping screws (M3: 2.6mm pilot, M4: 3.6mm, M5: 4.6mm), which was simpler and worked well for this prototype.</p>
         </div>
       </section>
 
@@ -531,29 +677,105 @@
         <div class="content-section-header">
           <span class="cs-number">05</span>
           <div class="cs-titles">
-            <div class="cs-tag">Prototype</div>
             <h2 class="cs-title">Prototyping</h2>
           </div>
         </div>
 
         <!-- Revision tabs -->
-        <div class="rev-tabs" style="display: flex; gap: 4px; margin-bottom: 24px;">
-          <button class="rev-tab active" onclick="switchRevTab('00b')" id="tab-00b" style="
+        <!--
+        <div class="rev-tabs" role="tablist" aria-label="Prototype revisions">
+          <button class="rev-tab active" type="button" onclick="switchRevTab('01')" id="tab-01" role="tab" aria-selected="true" aria-controls="rev-01">
             padding: 10px 20px; border: 1px solid var(--green-border); border-radius: 4px; cursor: pointer;
             font-family: var(--mono); font-size: 13px; font-weight: 700;
             color: #fff; background: var(--green);
             letter-spacing: 0.02em;
-          ">Rev 00B — Current Build</button>
-          <button class="rev-tab" onclick="switchRevTab('00a')" id="tab-00a" style="
+          ">Rev 01 — Current Build</button>
+          <button class="rev-tab" type="button" onclick="switchRevTab('00b')" id="tab-00b" role="tab" aria-selected="false" aria-controls="rev-00b">
+            padding: 10px 20px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;
+            font-family: var(--mono); font-size: 13px; font-weight: 500;
+            color: var(--text-light); background: var(--surface);
+            letter-spacing: 0.02em;
+          ">Rev 00B — Tested Build</button>
+          <button class="rev-tab" type="button" onclick="switchRevTab('00a')" id="tab-00a" role="tab" aria-selected="false" aria-controls="rev-00a">
             padding: 10px 20px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;
             font-family: var(--mono); font-size: 13px; font-weight: 500;
             color: var(--text-light); background: var(--surface);
             letter-spacing: 0.02em;
           ">Rev 00A — First Build</button>
         </div>
+        <div class="rev-tabs-note">Select a build to compare what changed between revisions before the testing section starts.</div>
+        -->
+        <div class="rev-sequence" aria-hidden="true">
+          <div class="rev-sequence-step" data-rev-sequence="00a">
+            <span class="rev-sequence-dot"></span>
+            <span class="rev-sequence-label">Rev 00A</span>
+          </div>
+          <div class="rev-sequence-step" data-rev-sequence="00b">
+            <span class="rev-sequence-dot"></span>
+            <span class="rev-sequence-label">Rev 00B</span>
+          </div>
+          <div class="rev-sequence-step active" data-rev-sequence="01">
+            <span class="rev-sequence-dot"></span>
+            <span class="rev-sequence-label">Rev 01</span>
+          </div>
+        </div>
+        <div class="rev-tabs" role="tablist" aria-label="Prototype revisions">
+          <button class="rev-tab" type="button" onclick="switchRevTab('00a')" id="tab-00a" role="tab" aria-selected="false" aria-controls="rev-00a">
+            <span class="rev-tab-name">Rev 00A</span>
+            <span class="rev-tab-meta">First assembled prototype</span>
+          </button>
+          <button class="rev-tab" type="button" onclick="switchRevTab('00b')" id="tab-00b" role="tab" aria-selected="false" aria-controls="rev-00b">
+            <span class="rev-tab-name">Rev 00B</span>
+            <span class="rev-tab-meta">Validated fit and backlash</span>
+          </button>
+          <button class="rev-tab active" type="button" onclick="switchRevTab('01')" id="tab-01" role="tab" aria-selected="true" aria-controls="rev-01">
+            <span class="rev-tab-name">Rev 01</span>
+            <span class="rev-tab-meta">Current assembled build</span>
+          </button>
+        </div>
 
-        <!-- Rev 00B content (default) -->
-        <div id="rev-00b">
+        <!-- Rev 01 content (default) -->
+        <div id="rev-01" role="tabpanel" aria-labelledby="tab-01" aria-hidden="false">
+          <div class="content-body">
+            <p>Rev 01 is the current assembled build. The main change is the integrated motor housing and the hardware for the dyno setup.</p>
+          </div>
+
+          <div class="content-img-row">
+            <div>
+              <a class="img-link" href="images/rev01-with-motor-housing.jpg"><img loading="lazy" src="images/rev01-with-motor-housing.jpg" alt="Rev 01 assembled with integrated motor housing"></a>
+              <div class="img-caption">Rev 01 assembled with the integrated motor housing</div>
+            </div>
+            <div>
+              <a class="img-link" href="images/rev01-cad-cross-section.png"><img loading="lazy" src="images/rev01-cad-cross-section.png" alt="Rev 01 cross-section render"></a>
+              <div class="img-caption">Rev 01 cross-section render</div>
+            </div>
+          </div>
+
+          <div class="content-img-row">
+            <div>
+              <a class="img-link" href="images/rev01-gearbox-front.jpg"><img loading="lazy" src="images/rev01-gearbox-front.jpg" alt="Rev 01 front view"></a>
+              <div class="img-caption">Rev 01 front view</div>
+            </div>
+            <div>
+              <a class="img-link" href="images/rev01-vs-rev00b-assembled.jpg"><img loading="lazy" src="images/rev01-vs-rev00b-assembled.jpg" alt="Rev 01 next to Rev 00B"></a>
+              <div class="img-caption">Rev 01 next to Rev 00B</div>
+            </div>
+          </div>
+
+          <div class="content-img-row">
+            <div>
+              <a class="img-link" href="images/rev01-parts-laid-out.jpg"><img loading="lazy" src="images/rev01-parts-laid-out.jpg" alt="Rev 01 parts laid out"></a>
+              <div class="img-caption">Rev 01 parts laid out before assembly</div>
+            </div>
+            <div>
+              <a class="img-link" href="images/rev01-carrier-closeup.jpg"><img loading="lazy" src="images/rev01-carrier-closeup.jpg" alt="Rev 01 assembled carrier closeup"></a>
+              <div class="img-caption">Rev 01 assembled carrier closeup</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rev 00B content -->
+        <div id="rev-00b" style="display: none;" role="tabpanel" aria-labelledby="tab-00b" aria-hidden="true">
           <div class="content-body">
             <p>Every change in this revision came from a test on Rev 00A: herringbone gears replaced with spur, carrier shoulders redesigned, lid bearing made floating, heat-set inserts swapped for self-tapping screws. All fits validated.</p>
           </div>
@@ -579,6 +801,21 @@
             <tr><td>Floating lid bearing arrangement</td><td class="mono">T-002</td><td>Lid</td></tr>
             <tr><td>Self-tapping threads (no heat inserts)</td><td class="mono">T-001</td><td>Carrier</td></tr>
           </table>
+          </div>
+
+          <div class="content-body">
+            <p>The biggest driver for Rev 00B was T-001. The herringbone tooth profile was causing notchy mesh because small alignment errors between the two halves of each planet created interference. At this scale and with FDM tolerances, that tradeoff was not worth it, so I switched to spur gears for Rev 00B.</p>
+          </div>
+
+          <div class="content-img-row">
+            <div>
+              <a class="img-link" href="images/rev00b-vs-00a-side-by-side.jpg"><img loading="lazy" src="images/rev00b-vs-00a-side-by-side.jpg" alt="Rev 00B assembled next to Rev 00A parts"></a>
+              <div class="img-caption">Rev 00B assembled next to Rev 00A carrier and lid</div>
+            </div>
+            <div>
+              <a class="img-link" href="images/rev00a-herringbone-closeup.jpg"><img loading="lazy" src="images/rev00a-herringbone-closeup.jpg" alt="Rev 00A herringbone gears closeup"></a>
+              <div class="img-caption">Rev 00A herringbone sun gear, replaced with spur in Rev 00B</div>
+            </div>
           </div>
 
           <h3 class="content-h3">Fit Results</h3>
@@ -631,7 +868,7 @@
         </div>
 
         <!-- Rev 00A content (hidden by default) -->
-        <div id="rev-00a" style="display: none;">
+        <div id="rev-00a" style="display: none;" role="tabpanel" aria-labelledby="tab-00a" aria-hidden="true">
           <div class="content-body">
             <p>First complete build, printed on a Bambu P1S in PLA with off-the-shelf ball bearings. Assembled by hand and tested to validate fits and find issues.</p>
           </div>
@@ -660,9 +897,47 @@
           </div>
 
           <div class="content-body">
-            <p>I reprinted the carrier and housing with adjusted offsets and updated 4 skeleton parameters. But beyond the dimensional stuff, five things felt wrong during hand testing: the lid added drag when tightened, the gear mesh felt notchy, the carrier shoulders were deforming, there was play between carrier halves, and bolt torque was too sensitive. Each of those became a formal test.</p>
+            <p>I reprinted the carrier and housing with adjusted offsets and updated 4 skeleton parameters. But beyond the dimensional stuff, five things still felt wrong during hand testing: the lid added drag when tightened, the gear mesh felt notchy, the carrier shoulders were deforming, there was play between carrier halves, and bolt torque was too sensitive. I tracked each of those separately in Rev 00B.</p>
+          </div>
+
+          <h3 class="content-h3">Issues Found in Rev 00A</h3>
+          <div class="table-wrap">
+          <table class="content-table">
+            <tr><th>Test</th><th>Question</th><th>Finding</th><th>Decision</th></tr>
+            <tr>
+              <td class="mono"><strong>T-001</strong></td>
+              <td>Why does the gearbox feel notchy?</td>
+              <td>Herringbone misalignment on at least one planet</td>
+              <td class="mono">Switch to spur gears</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>T-002</strong></td>
+              <td>Is the lid over-constraining the carrier?</td>
+              <td>Yes, double-constrained via ring gear + bearing recess</td>
+              <td class="mono">Floating lid bearing</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>T-003</strong></td>
+              <td>Does the printed shoulder deform?</td>
+              <td>Top carrier bearing shoulders printed poorly (overhang)</td>
+              <td class="mono">Carrier wall redesign</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>T-004</strong></td>
+              <td>Can carrier halves clock under load?</td>
+              <td>Some flex when twisting by hand, not a concern operationally</td>
+              <td class="pass">No change needed</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>T-005</strong></td>
+              <td>Does tightening bolts bind planets?</td>
+              <td>Narrow window; 1.1 Nm causes drag</td>
+              <td class="mono">Shoulder redesign</td>
+            </tr>
+          </table>
           </div>
         </div>
+
       </section>
 
       <!-- TESTING -->
@@ -670,70 +945,33 @@
         <div class="content-section-header">
           <span class="cs-number">06</span>
           <div class="cs-titles">
-            <div class="cs-tag">Validation</div>
             <h2 class="cs-title">Testing</h2>
           </div>
         </div>
 
-        <h3 class="content-h3">Rev 00A Findings</h3>
-        <div class="content-body">
-          <p>For each of the five issues from Rev 00A, I wrote down the question I was trying to answer and what would count as a pass before running the test.</p>
-        </div>
+        <h3 class="content-h3">Fixture Evolution</h3>
 
-        <div class="table-wrap">
-        <table class="content-table">
-          <tr><th>Test</th><th>Question</th><th>Finding</th><th>Decision</th></tr>
-          <tr>
-            <td class="mono"><strong>T-001</strong></td>
-            <td>Why does the gearbox feel notchy?</td>
-            <td>Herringbone misalignment on at least one planet</td>
-            <td class="mono">Switch to spur gears</td>
-          </tr>
-          <tr>
-            <td class="mono"><strong>T-002</strong></td>
-            <td>Is the lid over-constraining the carrier?</td>
-            <td>Yes, double-constrained via ring gear + bearing recess</td>
-            <td class="mono">Floating lid bearing</td>
-          </tr>
-          <tr>
-            <td class="mono"><strong>T-003</strong></td>
-            <td>Does the printed shoulder deform?</td>
-            <td>Top carrier bearing shoulders printed poorly (overhang)</td>
-            <td class="mono">Carrier wall redesign</td>
-          </tr>
-          <tr>
-            <td class="mono"><strong>T-004</strong></td>
-            <td>Can carrier halves clock under load?</td>
-            <td>Some flex when twisting by hand, not a concern operationally</td>
-            <td class="pass">No change needed</td>
-          </tr>
-          <tr>
-            <td class="mono"><strong>T-005</strong></td>
-            <td>Does tightening bolts bind planets?</td>
-            <td>Narrow window; 1.1 Nm causes drag</td>
-            <td class="mono">Shoulder redesign</td>
-          </tr>
-        </table>
-        </div>
+        <a class="img-link" href="images/early-test-setup-2x4s.jpg"><img class="content-img" loading="lazy" src="images/early-test-setup-2x4s.jpg" alt="Early QDD test setup on 2x4s and clamps"></a>
+        <div class="img-caption">Early dyno setup with the gearbox clamped directly and the structure built up from 2x4s</div>
 
         <div class="content-body">
-          <p>The biggest finding was T-001. The herringbone tooth profile was causing notchy mesh because even a small alignment error between the two halves of each planet creates interference. At this scale and with FDM tolerances, the helix angle wasn't doing anything useful, so I switched to straight spur gears for Rev 00B. That simplified the assembly, eliminated the risk of misaligned ring gear halves, and made printing easier, all without meaningful loss at this prototype stage.</p>
+          <p>Rev 01 shifted the setup toward a more repeatable dyno fixture. We started by mounting the motor on its own so Russell could get the H2 trainer and motor controllers set up before coupling the gearbox back in. That fixturing is now figured out. The remaining work is running the motor and gearbox together against the remaining requirements.</p>
         </div>
 
         <div class="content-img-row">
           <div>
-            <a class="img-link" href="images/rev00b-vs-00a-side-by-side.jpg"><img loading="lazy" src="images/rev00b-vs-00a-side-by-side.jpg" alt="Rev 00B assembled next to Rev 00A parts"></a>
-            <div class="img-caption">Rev 00B assembled next to Rev 00A carrier and lid</div>
+            <a class="img-link" href="images/rev01-motor-only-dyno-test-setup.jpg"><img loading="lazy" src="images/rev01-motor-only-dyno-test-setup.jpg" alt="Rev 01 motor-only dyno setup"></a>
+            <div class="img-caption">Motor-only dyno setup for the next round of characterization</div>
           </div>
           <div>
-            <a class="img-link" href="images/rev00a-herringbone-closeup.jpg"><img loading="lazy" src="images/rev00a-herringbone-closeup.jpg" alt="Rev 00A herringbone gears closeup"></a>
-            <div class="img-caption">Rev 00A herringbone sun gear — replaced with spur in 00B</div>
+            <a class="img-link" href="images/rev01-dyno-coupling.jpg"><img loading="lazy" src="images/rev01-dyno-coupling.jpg" alt="V1 dyno coupling between gearbox and test stand"></a>
+            <div class="img-caption">V1 coupling used between the gearbox output and the dyno input</div>
           </div>
         </div>
 
-        <h3 class="content-h3">Rev 00B Quantitative Results</h3>
+        <h3 class="content-h3">Requirement Verification</h3>
         <div class="content-body">
-          <p>With Rev 00B assembled and all fits validated, I started testing against the requirements.</p>
+          <p>With Rev 00B assembled and the fit issues resolved, I started checking the gearbox against the project requirements.</p>
         </div>
 
         <a class="img-link" href="images/rev00b-dial-gauge-backlash-setup.jpg"><img class="content-img" loading="lazy" src="images/rev00b-dial-gauge-backlash-setup.jpg" alt="Dial indicator measuring backlash on output shaft"></a>
@@ -788,16 +1026,12 @@
         <div class="content-section-header">
           <span class="cs-number">07</span>
           <div class="cs-titles">
-            <div class="cs-tag">Ongoing</div>
             <h2 class="cs-title">What's Next</h2>
           </div>
         </div>
 
         <div class="content-body">
-          <p>Rev 00B is assembled and the first quantitative result is in: 0° backlash, passing R-01. Backdrive torque is next, using a lever arm and kitchen scale to measure friction against the 1 Nm requirement. After that, the remaining validation tests need a secure actuator mount and a dyno setup. Peak torque, continuous torque, efficiency, and speed endurance all require loaded operation that the current fixturing can't support, so the gearbox housing likely needs a mounting redesign before those can run. A health comparison before and after the stress tests will check for wear or damage.</p>
-
-          <h3 class="content-h3">Design Direction</h3>
-          <p>Once the current prototype meets all design requirements, future revisions will focus on reducing the form factor: integrating the ring gear into the housing wall (cylindrical instead of box-shaped), replacing the lower main bearing with a thinner, larger-diameter one to match the top bearing and cut overall height, and designing a motor housing that integrates with the gearbox for cleaner mounting.</p>
+          <p>Rev 01 is assembled and installed in the motor housing. The remaining work is test execution. Backdrive torque is next, using a lever arm and kitchen scale to measure friction against the 1 Nm requirement. After that, the remaining checks are peak torque, continuous torque, efficiency, speed endurance, and the post-test health comparison. Geometry and fixturing are settled, so the project has shifted from build changes to finishing the requirement test sweep.</p>
         </div>
       </section>
 
@@ -1131,31 +1365,47 @@ navLinks.forEach(link => {
 
 // Rev tab switching
 function switchRevTab(rev) {
-  document.getElementById('rev-00a').style.display = rev === '00a' ? 'block' : 'none';
-  document.getElementById('rev-00b').style.display = rev === '00b' ? 'block' : 'none';
+  const tab01 = document.getElementById('tab-01');
   const tabA = document.getElementById('tab-00a');
   const tabB = document.getElementById('tab-00b');
-  if (rev === '00a') {
-    tabA.style.color = '#fff';
-    tabA.style.background = 'var(--green)';
-    tabA.style.borderColor = 'var(--green-border)';
-    tabA.style.fontWeight = '700';
-    tabB.style.color = 'var(--text-light)';
-    tabB.style.background = 'var(--surface)';
-    tabB.style.borderColor = 'var(--border)';
-    tabB.style.fontWeight = '500';
-  } else {
-    tabB.style.color = '#fff';
-    tabB.style.background = 'var(--green)';
-    tabB.style.borderColor = 'var(--green-border)';
-    tabB.style.fontWeight = '700';
-    tabA.style.color = 'var(--text-light)';
-    tabA.style.background = 'var(--surface)';
-    tabA.style.borderColor = 'var(--border)';
-    tabA.style.fontWeight = '500';
-  }
+  const sequenceOrder = ['00a', '00b', '01'];
+  const tabs = [
+    { key: '00a', tab: tabA, panel: document.getElementById('rev-00a') },
+    { key: '00b', tab: tabB, panel: document.getElementById('rev-00b') },
+    { key: '01', tab: tab01, panel: document.getElementById('rev-01') }
+  ];
+
+  tabs.forEach(({ key, tab, panel }) => {
+    const active = key === rev;
+    panel.style.display = active ? 'block' : 'none';
+    tab.classList.toggle('active', active);
+    tab.setAttribute('aria-selected', active ? 'true' : 'false');
+    tab.setAttribute('tabindex', active ? '0' : '-1');
+    panel.setAttribute('aria-hidden', active ? 'false' : 'true');
+  });
+
+  const activeIndex = sequenceOrder.indexOf(rev);
+  document.querySelectorAll('[data-rev-sequence]').forEach((step) => {
+    const stepIndex = sequenceOrder.indexOf(step.dataset.revSequence);
+    step.classList.toggle('active', step.dataset.revSequence === rev);
+    step.classList.toggle('completed', stepIndex < activeIndex);
+  });
 }
+
+document.querySelectorAll('.rev-tab').forEach((tab, index, allTabs) => {
+  tab.addEventListener('keydown', (event) => {
+    if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+    event.preventDefault();
+    const direction = event.key === 'ArrowRight' ? 1 : -1;
+    const nextIndex = (index + direction + allTabs.length) % allTabs.length;
+    allTabs[nextIndex].click();
+    allTabs[nextIndex].focus();
+  });
+});
+
+switchRevTab('01');
 </script>
 
 </body>
 </html>
+

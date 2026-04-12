@@ -124,10 +124,6 @@
     flex-shrink: 0;
   }
   .cs-titles { flex: 1; }
-  .cs-tag {
-    font-family: var(--mono); font-size: 11px; font-weight: 600;
-    color: var(--text-light); text-transform: uppercase; letter-spacing: 0.06em;
-  }
   .cs-title {
     font-family: var(--serif); font-size: 24px; font-weight: 600;
     letter-spacing: -0.01em;
@@ -330,7 +326,6 @@
         <div class="content-section-header">
           <span class="cs-number">00</span>
           <div class="cs-titles">
-            <div class="cs-tag">Context</div>
             <h2 class="cs-title">Why</h2>
           </div>
         </div>
@@ -353,7 +348,6 @@
         <div class="content-section-header">
           <span class="cs-number">01</span>
           <div class="cs-titles">
-            <div class="cs-tag">Methodology</div>
             <h2 class="cs-title">Approach</h2>
           </div>
         </div>
@@ -361,23 +355,23 @@
         <div class="methodology-steps">
           <div class="method-step">
             <span class="method-num">1</span>
-            <div class="method-text"><strong>Isolate the problem.</strong> Identify which component in the load path is driving deflection. Treat side plates as rigid (justified by stiffness ratio), focus on receiver + crossbar.</div>
+            <div class="method-text"><strong>Find the soft part of the load path.</strong> I treated the side plates as rigid and focused on the receiver and crossbar, which looked like the most compliant part of the assembly.</div>
           </div>
           <div class="method-step">
             <span class="method-num">2</span>
-            <div class="method-text"><strong>Build a parametric MATLAB model.</strong> Cantilever beam for the receiver, Bredt's thin-wall torsion for the crossbar. Quick feedback on geometry changes before committing to FEA.</div>
+            <div class="method-text"><strong>Build a parametric MATLAB model.</strong> I modeled the receiver as a cantilever beam and the crossbar with Bredt's thin-wall torsion equation so I could check geometry changes quickly before running FEA.</div>
           </div>
           <div class="method-step">
             <span class="method-num">3</span>
-            <div class="method-text"><strong>Analyze the governing equation.</strong> Find which variable gives the best stiffness-per-dollar. Midline area has a squared relationship; wall thickness is linear.</div>
+            <div class="method-text"><strong>Use the twist equation to choose the geometry change.</strong> Midline area has a squared effect on stiffness, while wall thickness is linear, so upsizing the crossbar was the best stiffness-per-dollar move.</div>
           </div>
           <div class="method-step">
             <span class="method-num">4</span>
-            <div class="method-text"><strong>Check the failure point.</strong> Weld stress at the receiver-to-crossbar joint using Norton's line-weld method. V1 showed 0.95 FoS under 4G. Reinforcement required.</div>
+            <div class="method-text"><strong>Check the receiver-to-crossbar weld.</strong> I used Norton's line-weld method to estimate weld stress under 4G loading. V1 came out at 0.95 FoS, so the joint needed reinforcement.</div>
           </div>
           <div class="method-step">
             <span class="method-num">5</span>
-            <div class="method-text"><strong>Validate with FEA.</strong> Compare V1 and V2 results against MATLAB predictions. Check full assembly under 4G loading with gusset reinforcement.</div>
+            <div class="method-text"><strong>Run FEA on V1 and V2.</strong> I compared the MATLAB predictions against FEA, then checked the full reinforced assembly under the same 4G load case.</div>
           </div>
         </div>
       </section>
@@ -387,7 +381,6 @@
         <div class="content-section-header">
           <span class="cs-number">02</span>
           <div class="cs-titles">
-            <div class="cs-tag">Prototype</div>
             <h2 class="cs-title">V1 Prototype</h2>
           </div>
         </div>
@@ -428,7 +421,6 @@
         <div class="content-section-header">
           <span class="cs-number">03</span>
           <div class="cs-titles">
-            <div class="cs-tag">Analysis</div>
             <h2 class="cs-title">First-Principles Modeling</h2>
           </div>
         </div>
@@ -446,10 +438,6 @@
           <p>I modeled the receiver tube as a cantilever beam and the crossbar as a non-circular shaft in torsion using Bredt's thin-wall formula. The MATLAB script is parametric so I could change any dimension and immediately see the effect on deflection.</p>
 
           <p>The analysis confirmed what I suspected: torsion in the crossbar accounted for 94% of the vertical deflection at the tip. Bending in the receiver was almost irrelevant.</p>
-        </div>
-
-        <div class="callout">
-          <strong>94% of deflection was torsion.</strong> The crossbar was twisting, not the receiver bending. This told me exactly where to focus the geometry change.
         </div>
 
         <div class="table-wrap">
@@ -482,7 +470,6 @@
         <div class="content-section-header">
           <span class="cs-number">04</span>
           <div class="cs-titles">
-            <div class="cs-tag">Design</div>
             <h2 class="cs-title">V2 Solution</h2>
           </div>
         </div>
@@ -510,7 +497,7 @@
         </div>
 
         <div class="content-body">
-          <p>The V1 weld showed a 0.95 FoS under 4G loading. Theoretical failure. The upsized crossbar alone wouldn't fix this; the joint needed reinforcement.</p>
+          <p>The V1 weld came out at 0.95 FoS under 4G loading, so upsizing the crossbar alone wasn't enough. The joint needed reinforcement too.</p>
         </div>
 
         <h3 class="content-h3">Reinforcement Selection</h3>
@@ -561,7 +548,6 @@
         <div class="content-section-header">
           <span class="cs-number">05</span>
           <div class="cs-titles">
-            <div class="cs-tag">Validation</div>
             <h2 class="cs-title">FEA Validation</h2>
           </div>
         </div>
