@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teacher Guide | Design Challenge: Robot Actuator</title>
+  <style>
+    :root {
+      --paper: #f5f0e7;
+      --ink: #1f1d1a;
+      --muted: #5f5a52;
+      --line: #d6cbb8;
+      --accent: #8b3d24;
+      --card: rgba(255,255,255,0.74);
+      --shadow: 0 24px 70px rgba(44, 31, 22, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(139,61,36,0.09), transparent 34%),
+        linear-gradient(180deg, #efe6d7, var(--paper));
+      line-height: 1.55;
+    }
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 36px 22px 48px;
+    }
+    .hero,
+    .layout {
+      display: grid;
+      gap: 18px;
+    }
+    .hero {
+      grid-template-columns: 1.4fr 0.9fr;
+      align-items: stretch;
+      margin-bottom: 20px;
+    }
+    .layout {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+    .hero-main,
+    .hero-side,
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .hero-main {
+      padding: 28px 28px 24px;
+      background:
+        linear-gradient(135deg, rgba(139,61,36,0.12), rgba(255,255,255,0.82) 48%),
+        var(--card);
+    }
+    .hero-side,
+    .panel {
+      padding: 24px 22px 20px;
+    }
+    .panel {
+      margin-bottom: 18px;
+    }
+    .eyebrow {
+      font-size: 0.73rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    h1,
+    h2 {
+      margin: 0 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.08;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+    }
+    h2 {
+      font-size: 1.25rem;
+    }
+    .hero-copy,
+    .muted,
+    .footer-note {
+      color: var(--muted);
+    }
+    .hero-chip-grid,
+    .goal-grid,
+    .prompt-grid {
+      display: grid;
+      gap: 14px;
+    }
+    .hero-chip-grid {
+      margin-top: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+    .hero-chip,
+    .goal-card,
+    .prompt-card,
+    .side-list li,
+    .mini-list li {
+      padding: 14px 15px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.76);
+      border: 1px solid rgba(139,61,36,0.1);
+    }
+    .hero-chip-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .hero-chip-value {
+      font-size: 0.92rem;
+      color: var(--ink);
+      font-weight: 600;
+    }
+    .side-list,
+    .mini-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .flow-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    .flow-table th,
+    .flow-table td {
+      padding: 12px 10px;
+      border-bottom: 1px solid rgba(139,61,36,0.14);
+      text-align: left;
+      vertical-align: top;
+    }
+    .flow-table th {
+      font-size: 0.74rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .goal-grid,
+    .prompt-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .goal-card strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.96rem;
+    }
+    .standards {
+      display: grid;
+      gap: 10px;
+    }
+    .standard {
+      padding: 12px 13px;
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      background: rgba(240,221,210,0.6);
+    }
+    .standard code {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: transparent;
+      padding: 0;
+    }
+    .footer-note {
+      margin-top: 6px;
+      font-size: 0.84rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    @media (max-width: 900px) {
+      .hero,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-main">
+        <div class="eyebrow">Companion Teacher Guide</div>
+        <h1>Design Challenge: Robot Actuator</h1>
+        <p class="hero-copy">
+          A 45-60 minute browser-based engineering design challenge for ages 15-17 &mdash; fits a single class block or splits cleanly across two periods. Students work as junior engineers, turn a robot brief into requirements, select a motor, design a gearbox, tune a controller, and defend the result in review.
+        </p>
+        <div class="hero-chip-grid">
+          <div class="hero-chip">
+            <div class="hero-chip-label">Target age</div>
+            <div class="hero-chip-value">15-17</div>
+          </div>
+          <div class="hero-chip">
+            <div class="hero-chip-label">Class time</div>
+            <div class="hero-chip-value">45-60 minutes</div>
+          </div>
+          <div class="hero-chip">
+            <div class="hero-chip-label">Student output</div>
+            <div class="hero-chip-value">Actuator design brief</div>
+          </div>
+          <div class="hero-chip">
+            <div class="hero-chip-label">Prerequisites</div>
+            <div class="hero-chip-value">Basic algebra and ratio comfort</div>
+          </div>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div class="eyebrow">At a Glance</div>
+        <ul class="side-list">
+          <li><strong>Platform:</strong> Web browser only. No accounts, installs, or backend.</li>
+          <li><strong>Best use:</strong> STEM class, robotics club, enrichment block, or career-exploration session.</li>
+          <li><strong>Core question:</strong> How do engineers balance force, speed, size, mass, and control in one actuator?</li>
+          <li><strong>Student stance:</strong> Treated like a junior engineer, not a quiz taker.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="layout">
+      <div>
+        <section class="panel">
+          <div class="eyebrow">Learning Goals</div>
+          <h2>What Students Should Be Able To Explain</h2>
+          <div class="goal-grid">
+            <div class="goal-card">
+              <strong>Translate a real-world problem into specs</strong>
+              Turn payload, distance, and motion needs into torque, speed, size, and mass requirements.
+            </div>
+            <div class="goal-card">
+              <strong>Evaluate components under constraints</strong>
+              Compare motors as tradeoffs, not as isolated specs.
+            </div>
+            <div class="goal-card">
+              <strong>Design under multiple simultaneous constraints</strong>
+              Use gearing choices to trade torque, speed, packaging, efficiency, and mass.
+            </div>
+            <div class="goal-card">
+              <strong>Reason about systems</strong>
+              See how motor choice, gearing, and control affect one another.
+            </div>
+            <div class="goal-card">
+              <strong>Interpret control behavior</strong>
+              Read overshoot, settling, and stability as part of engineering judgment.
+            </div>
+            <div class="goal-card">
+              <strong>Defend a design</strong>
+              Explain choices in plain English the way an engineering review demands.
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="eyebrow">Suggested Flow</div>
+          <h2>Single Block (or Split Across Two Periods)</h2>
+          <p style="font-size:0.88rem;color:#666;margin:0 0 12px;">Targets 45-60 min total. A natural split point is between Stage 3 and Stage 4 &mdash; gear design wraps day one, control tuning + review opens day two.</p>
+          <table class="flow-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Student activity</th>
+                <th>Teacher look-for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7-10 min</td>
+                <td>Stage 0-1: Read the brief and compute the worst-case torque requirement.</td>
+                <td>Students can explain where the target number came from.</td>
+              </tr>
+              <tr>
+                <td>10-12 min</td>
+                <td>Stage 2: Choose a motor and justify the tradeoff.</td>
+                <td>They talk about constraints, not just "best" motor.</td>
+              </tr>
+              <tr>
+                <td>12-15 min</td>
+                <td>Stage 3: Build a gearbox and iterate after visible failures.</td>
+                <td>Students notice cascading effects between ratio, size, mass, and efficiency.</td>
+              </tr>
+              <tr>
+                <td>8-10 min</td>
+                <td>Stage 4: Tune control and watch motion quality change.</td>
+                <td>They use stability language instead of guessing from vibes.</td>
+              </tr>
+              <tr>
+                <td>8-13 min</td>
+                <td>Stage 5: Review, compare, and defend the design. See the Sim-to-Real preview showing how an AI policy would behave on their actuator. Click <strong>Print Brief</strong> to produce a clean engineering handoff document with motor, gear, performance, and Forward Scope (thermal, EMC, MTBF, fault tolerance) sections.</td>
+                <td>They can name the biggest risk, the next revision route, connect hardware quality to AI behavior, and identify what concept design <em>doesn't</em> cover.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="panel">
+          <div class="eyebrow">Discussion Prompts</div>
+          <h2>Questions Worth Asking Out Loud</h2>
+          <div class="prompt-grid">
+            <div class="prompt-card">What single decision changed the rest of your design the most?</div>
+            <div class="prompt-card">Where did you gain performance, and what did you pay for it?</div>
+            <div class="prompt-card">Did your control tuning expose a hardware weakness, or cover one up?</div>
+            <div class="prompt-card">What would you change on the next iteration if a real team were waiting on you?</div>
+            <div class="prompt-card">The Sim-to-Real preview claims an AI trained on your actuator would behave a certain way. Why might that be true? What would change if the simulation didn't match the real hardware?</div>
+            <div class="prompt-card">If two students hit the same Stage 5 verdict with different motors and gear types, are their designs equivalent? What would it take to call one "better"?</div>
+            <div class="prompt-card">The Print Brief includes a Forward Scope section listing thermal, EMC, MTBF, and fault-tolerance work that concept design didn't cover. Pick one of those topics and explain why a real product team can't ship without it.</div>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section class="panel">
+          <div class="eyebrow">Standards Alignment</div>
+          <h2>Research-Based STEM Fit</h2>
+          <div class="standards">
+            <div class="standard">
+              <code>NGSS HS-ETS1-2</code>
+              Breaking a complex real-world problem into manageable engineering sub-problems.
+            </div>
+            <div class="standard">
+              <code>NGSS HS-ETS1-3</code>
+              Evaluating solutions using prioritized criteria and tradeoffs.
+            </div>
+            <div class="standard">
+              <code>NGSS HS-ETS1-4</code>
+              Using simulation to model system interactions and compare design choices.
+            </div>
+            <div class="standard">
+              <code>NGSS CCC-4</code>
+              Systems and system models: changes in one subsystem cascade through the whole actuator.
+            </div>
+            <div class="standard">
+              <code>ITEEA STEL 8 / TEP-1</code>
+              Engineering design and systems thinking from requirements through review.
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="eyebrow">Evidence of Learning</div>
+          <h2>What To Collect</h2>
+          <ul class="mini-list">
+            <li>The final actuator design brief (printable from Stage 5) including the personalized Decision Trace and Forward Scope sections.</li>
+            <li>The student's written motor rationale and one-line "next iteration" reflection from Stage 5.</li>
+            <li>A short reflection on the biggest tradeoff they made.</li>
+            <li>A comparison between a failed iteration and the final revision.</li>
+            <li>An explanation of which subsystem decision created the biggest downstream effect.</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <div class="eyebrow">Deployment Notes</div>
+          <h2>Access and Inclusivity</h2>
+          <ul class="mini-list">
+            <li>Runs in a browser on laptops, desktops, Chromebooks, and tablets.</li>
+            <li>No account creation, downloads, plugins, or server setup required.</li>
+            <li>Plain-English labels are used first, with formal engineering vocabulary layered in context.</li>
+            <li>Students with robotics background can go deeper, while new learners can still complete a coherent run.</li>
+            <li><strong>Accessibility:</strong> ARIA labels on all interactive controls; screen-reader live regions announce engineering numbers as they update; status indicators pair color with text and glyphs (no color-only signaling); 44&nbsp;px touch targets on phone viewports.</li>
+            <li><strong>Audio:</strong> Subtle sound cues fire on stage transitions and design verdicts. A speaker toggle in the top-right of the page mutes them entirely; preference persists per browser. Default-on at low volume.</li>
+            <li><strong>Reduced motion:</strong> The Sim-to-Real preview respects <code>prefers-reduced-motion</code> and pauses arm animation for students who need it.</li>
+          </ul>
+          <p class="footer-note">
+            Companion snapshot:
+            <a href="app-v3.html?dev=1">open the latest build</a>
+            &nbsp;•&nbsp;
+            <a href="gear-math-tests.html">live gear-math test runner</a>
+            (drives the engine through 9 hand-calculated cases and prints PASS/FAIL).
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

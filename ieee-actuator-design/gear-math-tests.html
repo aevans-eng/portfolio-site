@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gear-Math Verification — Live Test Runner</title>
+<style>
+  :root {
+    --bg: #0c1118;
+    --panel: #141a24;
+    --panel-2: #1a212d;
+    --line: #2a3140;
+    --text: #e6e9ee;
+    --text-dim: #a8acb8;
+    --text-mute: #7a808c;
+    --accent: #4fc3f7;
+    --pass: #4caf50;
+    --pass-bg: rgba(76,175,80,0.10);
+    --fail: #ef5350;
+    --fail-bg: rgba(239,83,80,0.12);
+    --warn: #ffb74d;
+    --warn-bg: rgba(255,183,77,0.10);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5; padding: 24px; max-width: 1100px; margin: 0 auto;
+  }
+  h1 { margin: 0 0 4px; font-size: 1.6rem; }
+  h2 { margin: 1.6em 0 0.5em; font-size: 1.05rem; color: var(--text); }
+  .lede { color: var(--text-dim); margin-bottom: 1.2em; }
+  .lede a { color: var(--accent); }
+  .verdict {
+    padding: 14px 18px; border-radius: 8px; margin: 16px 0;
+    border: 1px solid var(--line); background: var(--panel);
+    font-weight: 600; font-size: 1.05rem;
+  }
+  .verdict.pass { color: var(--pass); border-color: var(--pass); background: var(--pass-bg); }
+  .verdict.fail { color: var(--fail); border-color: var(--fail); background: var(--fail-bg); }
+  .verdict.pending { color: var(--warn); border-color: var(--warn); background: var(--warn-bg); }
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+  button {
+    background: var(--panel-2); color: var(--text); border: 1px solid var(--line);
+    padding: 8px 14px; border-radius: 6px; cursor: pointer; font: inherit;
+    min-height: 38px;
+  }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .case { border: 1px solid var(--line); border-radius: 8px; margin: 12px 0; background: var(--panel); }
+  .case-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 14px; border-bottom: 1px solid var(--line);
+    background: var(--panel-2); border-radius: 8px 8px 0 0;
+  }
+  .case-head .title { font-weight: 600; }
+  .case-head .meta { color: var(--text-dim); font-size: 0.85rem; }
+  .badge { padding: 3px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; }
+  .badge.pass { color: var(--pass); background: var(--pass-bg); border: 1px solid var(--pass); }
+  .badge.fail { color: var(--fail); background: var(--fail-bg); border: 1px solid var(--fail); }
+  .badge.pending { color: var(--warn); background: var(--warn-bg); border: 1px solid var(--warn); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  th, td { padding: 6px 10px; text-align: left; border-bottom: 1px solid var(--line); }
+  th { color: var(--text-dim); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  td.delta { text-align: right; font-variant-numeric: tabular-nums; }
+  td.value { font-variant-numeric: tabular-nums; }
+  .row-pass td:last-child { color: var(--pass); }
+  .row-fail td:last-child { color: var(--fail); font-weight: 700; }
+  .summary { margin: 24px 0; padding: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+  .summary table { font-size: 0.9rem; }
+  .footer-note { color: var(--text-mute); font-size: 0.8rem; margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .footer-note a { color: var(--accent); }
+  iframe { display: none; }
+  .small { font-size: 0.85rem; color: var(--text-dim); }
+  code { background: var(--panel-2); padding: 1px 5px; border-radius: 3px; font-size: 0.88em; }
+  ul.notes { margin: 8px 0 8px 22px; padding: 0; color: var(--text-dim); font-size: 0.9rem; }
+  ul.notes li { margin: 4px 0; }
+</style>
+</head>
+<body>
+
+<h1>Gear-Math Verification — Live Test Runner</h1>
+<p class="lede">
+  This page loads the live engine from
+  <a href="app-v3.html?dev=1" target="_blank" rel="noopener">app-v3.html</a>,
+  drives it through 9 hand-calculated test cases (spur, planetary, harmonic, cycloidal),
+  and prints PASS/FAIL with diffs. It is the permanent re-runnable companion to
+  <code>docs/gear-math-verification.md</code> and
+  <code>docs/gear-math-verification-results.md</code>.
+</p>
+
+<div id="verdict" class="verdict pending">⏳ Loading engine&hellip;</div>
+
+<div class="controls">
+  <button id="runBtn" disabled>Re-run all tests</button>
+  <a href="app-v3.html?dev=1" target="_blank" rel="noopener" style="text-decoration:none;">
+    <button>Open product (dev mode)</button>
+  </a>
+  <span class="small" id="meta"></span>
+</div>
+
+<div id="results"></div>
+
+<div class="summary" id="summary" hidden>
+  <h2 style="margin-top:0;">Coverage summary</h2>
+  <table>
+    <thead><tr><th>Branch</th><th>Cases</th><th>Status</th></tr></thead>
+    <tbody id="coverageBody"></tbody>
+  </table>
+</div>
+
+<p class="footer-note">
+  <strong>What this verification proves:</strong> the engine implements its declared formulas
+  consistently across all four gear families. <strong>What it does not prove:</strong> that the
+  formulas themselves match published standards (AGMA tooth strength, ISO 6336 efficiency, real
+  bearing losses) — the in-product Stage&nbsp;3 simplification disclaimer flags this honestly.
+  See <code>docs/gear-math-verification.md</code> for the hand-calc derivations and
+  <code>docs/decisions/ADR-005-gear-math-engine.md</code> for the design rationale.
+</p>
+
+<iframe id="engine" src="app-v3.html?dev=1" title="engine host"></iframe>
+
+<script>
+'use strict';
+
+/* Tolerance for numerical comparison: 0.6% relative or 0.05 absolute, whichever is greater.
+   This generously covers rounding in display vs full-precision engine values without hiding bugs. */
+const REL_TOL = 0.006;
+const ABS_TOL = 0.05;
+
+function close(actual, expected) {
+  const a = Number(actual), e = Number(expected);
+  if (!isFinite(a) || !isFinite(e)) return false;
+  if (a === e) return true;
+  const diff = Math.abs(a - e);
+  if (diff <= ABS_TOL) return true;
+  const rel = Math.abs(e) > 1e-9 ? diff / Math.abs(e) : diff;
+  return rel <= REL_TOL;
+}
+
+function fmt(v, digits) {
+  if (typeof v !== 'number' || !isFinite(v)) return String(v);
+  if (Number.isInteger(v) && Math.abs(v) < 10000) return String(v);
+  if (digits === undefined) digits = (Math.abs(v) >= 100 ? 1 : Math.abs(v) >= 10 ? 2 : 3);
+  return v.toFixed(digits);
+}
+
+/* Test cases mirror docs/gear-math-verification.md / -results.md.
+   Each case sets gearType, then invokes computeGearTrain(ratio, stages, mod) and asserts on
+   stage[0] and train totals. */
+const CASES = [
+  {
+    id: 'TC1', name: 'Spur 10:1 / 1 stage / m=1.0',
+    gearType: 'spur', ratio: 10, stages: 1, mod: 1.0,
+    branch: 'spur-single',
+    checks: [
+      { label: 'Pinion teeth', path: 's0.pinionTeeth', expected: 12 },
+      { label: 'Driven teeth', path: 's0.drivenTeeth', expected: 120 },
+      { label: 'Actual ratio', path: 'totalRatio', expected: 10.0 },
+      { label: 'Pinion PD (mm)', path: 's0.pinionPD', expected: 12.0 },
+      { label: 'Driven PD (mm)', path: 's0.drivenPD', expected: 120.0 },
+      { label: 'Center dist (mm)', path: 's0.centerDist', expected: 66.0 },
+      { label: 'Envelope diam (mm)', path: 'envelopeDiam_mm', expected: 134.0 },
+      { label: 'Face width (mm)', path: 's0.faceWidth', expected: 10.0 },
+      { label: 'Per-stage eff (%)', path: 's0.efficiency', expected: 0.97 },
+      { label: 'Total eff (%)', path: 'totalEfficiency', expected: 0.97 },
+      { label: 'Total axial (mm)', path: 'totalAxial_mm', expected: 10.0 },
+    ],
+  },
+  {
+    id: 'TC2', name: 'Spur 100:1 / 2 stages / m=1.0',
+    gearType: 'spur', ratio: 100, stages: 2, mod: 1.0,
+    branch: 'spur-multi',
+    checks: [
+      { label: 'Per-stage ratio', path: 's0.ratio', expected: 10.0 },
+      { label: 'Total ratio', path: 'totalRatio', expected: 100.0 },
+      { label: 'Total efficiency (0.97²)', path: 'totalEfficiency', expected: 0.9409 },
+      { label: 'Envelope (max stage)', path: 'envelopeDiam_mm', expected: 134.0 },
+      { label: 'Total axial (mm)', path: 'totalAxial_mm', expected: 22.0 },
+    ],
+  },
+  {
+    id: 'TC3', name: 'Planetary 5:1 / 1 stage / m=1.0',
+    gearType: 'planetary', ratio: 5, stages: 1, mod: 1.0,
+    branch: 'planetary-single',
+    checks: [
+      { label: 'Sun teeth', path: 's0.sunTeeth', expected: 12 },
+      { label: 'Planet teeth', path: 's0.planetTeeth', expected: 18 },
+      { label: 'Ring teeth', path: 's0.ringTeeth', expected: 48 },
+      { label: 'Constraint R = S + 2P', path: 's0.ringTeeth - s0.sunTeeth - 2*s0.planetTeeth', expected: 0 },
+      { label: 'Assembly: (S + R) % 3', path: '(s0.sunTeeth + s0.ringTeeth) % 3', expected: 0 },
+      { label: 'Actual ratio (1 + R/S)', path: 'totalRatio', expected: 5.0 },
+      { label: 'Sun PD (mm)', path: 's0.sunPD', expected: 12.0 },
+      { label: 'Ring PD (mm)', path: 's0.ringPD', expected: 48.0 },
+      /* Engine uses ringOD = ringPD + 2 × max(3×mod, 2) → 48 + 6 = 54 mm.
+         Doc TC3 originally said 55; engine is correct and the doc was patched in 4th run. */
+      { label: 'Ring OD / housing wall (mm)', path: 's0.outerDiam', expected: 54.0 },
+      { label: 'Per-stage eff', path: 's0.efficiency', expected: 0.965 },
+    ],
+  },
+  {
+    id: 'TC4', name: 'Spur 10:1 / 1 stage / m=0.5 (cubed-volume sanity)',
+    gearType: 'spur', ratio: 10, stages: 1, mod: 0.5,
+    branch: 'spur-single',
+    checks: [
+      { label: 'Pinion teeth', path: 's0.pinionTeeth', expected: 12 },
+      { label: 'Pinion PD (mm)', path: 's0.pinionPD', expected: 6.0 },
+      { label: 'Driven PD (mm)', path: 's0.drivenPD', expected: 60.0 },
+      { label: 'Envelope (≈ TC1/2)', path: 'envelopeDiam_mm', expected: 67.0 },
+      { label: 'Face width (mm)', path: 's0.faceWidth', expected: 5.0 },
+      { label: 'Weight scaling (≈ 0.125 × TC1)', path: 'totalWeight_g', expected: 69.7 },
+    ],
+  },
+  {
+    id: 'TC5', name: 'Planetary 25:1 / 2 stages / m=1.0',
+    gearType: 'planetary', ratio: 25, stages: 2, mod: 1.0,
+    branch: 'planetary-multi',
+    checks: [
+      { label: 'Per-stage ratio (√25)', path: 's0.ratio', expected: 5.0 },
+      { label: 'Total ratio', path: 'totalRatio', expected: 25.0 },
+      { label: 'Total efficiency (0.965²)', path: 'totalEfficiency', expected: 0.9312 },
+      { label: 'Envelope (max stage)', path: 'envelopeDiam_mm', expected: 54.0 },
+    ],
+  },
+  {
+    id: 'TC6', name: 'Harmonic 50:1 / 1 stage / m=0.5',
+    gearType: 'harmonic', ratio: 50, stages: 1, mod: 0.5,
+    branch: 'harmonic',
+    checks: [
+      { label: 'Flex teeth (2×ratio)', path: 's0.pinionTeeth', expected: 100 },
+      { label: 'Circular teeth (flex+2)', path: 's0.drivenTeeth', expected: 102 },
+      { label: 'Constraint: circular − flex = 2', path: 's0.drivenTeeth - s0.pinionTeeth', expected: 2 },
+      { label: 'Actual ratio', path: 'totalRatio', expected: 50.0 },
+      { label: 'Flex PD (mm)', path: 's0.pinionPD', expected: 50.0 },
+      { label: 'Outer diameter (mm)', path: 's0.outerDiam', expected: 53.0 },
+      { label: 'Efficiency (0.88 − r/800)', path: 's0.efficiency', expected: 0.818 },
+    ],
+  },
+  {
+    id: 'TC7', name: 'Harmonic 100:1 / 1 stage / m=0.5',
+    gearType: 'harmonic', ratio: 100, stages: 1, mod: 0.5,
+    branch: 'harmonic',
+    checks: [
+      { label: 'Flex teeth', path: 's0.pinionTeeth', expected: 200 },
+      { label: 'Circular teeth', path: 's0.drivenTeeth', expected: 202 },
+      { label: 'Actual ratio', path: 'totalRatio', expected: 100.0 },
+      { label: 'Flex PD (mm)', path: 's0.pinionPD', expected: 100.0 },
+      { label: 'Outer diameter (mm)', path: 's0.outerDiam', expected: 103.0 },
+      { label: 'Efficiency', path: 's0.efficiency', expected: 0.755 },
+    ],
+  },
+  {
+    id: 'TC8', name: 'Cycloidal 30:1 / 1 stage / m=0.5',
+    gearType: 'cycloidal', ratio: 30, stages: 1, mod: 0.5,
+    branch: 'cycloidal',
+    checks: [
+      { label: 'Ring pins (round(ratio)+1)', path: 's0.drivenTeeth', expected: 31 },
+      { label: 'Lobes (pins − 1)', path: 's0.pinionTeeth', expected: 30 },
+      { label: 'Constraint: pins − lobes = 1', path: 's0.drivenTeeth - s0.pinionTeeth', expected: 1 },
+      { label: 'Actual ratio (= lobes)', path: 'totalRatio', expected: 30.0 },
+      { label: 'Outer diameter (mm)', path: 's0.outerDiam', expected: 41.2 },
+      { label: 'Efficiency (0.96 − r/1000)', path: 's0.efficiency', expected: 0.93 },
+    ],
+  },
+  {
+    id: 'TC9', name: 'Cycloidal 60:1 / 1 stage / m=0.5',
+    gearType: 'cycloidal', ratio: 60, stages: 1, mod: 0.5,
+    branch: 'cycloidal',
+    checks: [
+      { label: 'Ring pins', path: 's0.drivenTeeth', expected: 61 },
+      { label: 'Lobes', path: 's0.pinionTeeth', expected: 60 },
+      { label: 'Actual ratio', path: 'totalRatio', expected: 60.0 },
+      { label: 'Outer diameter (mm)', path: 's0.outerDiam', expected: 77.2 },
+      { label: 'Efficiency', path: 's0.efficiency', expected: 0.90 },
+    ],
+  },
+];
+
+/* ----------------------------------------------------------- */
+
+const iframe = document.getElementById('engine');
+const verdictEl = document.getElementById('verdict');
+const resultsEl = document.getElementById('results');
+const runBtn = document.getElementById('runBtn');
+const summaryEl = document.getElementById('summary');
+const coverageBody = document.getElementById('coverageBody');
+const metaEl = document.getElementById('meta');
+
+function evalPath(train, expr) {
+  /* Evaluate a small expression against the train { s0, ...totals } object. */
+  const s0 = train.stages && train.stages[0];
+  // eslint-disable-next-line no-new-func
+  return Function('s0', 'totalRatio', 'totalEfficiency', 'totalWeight_g', 'envelopeDiam_mm', 'totalAxial_mm', 'gearType',
+    'return (' + expr + ');')(
+      s0,
+      train.totalRatio, train.totalEfficiency, train.totalWeight_g,
+      train.envelopeDiam_mm, train.totalAxial_mm, train.gearType
+    );
+}
+
+function runOne(win, c) {
+  if (typeof win.computeGearTrain !== 'function') {
+    throw new Error('engine not ready');
+  }
+  /* STATE is declared with `const` inside the engine's script, so it is NOT on
+     window. Use the iframe's own eval() to reach it through lexical scope. */
+  const train = win.eval(
+    '(function(){ STATE.gearType = ' + JSON.stringify(c.gearType) +
+    '; return computeGearTrain(' + c.ratio + ',' + c.stages + ',' + c.mod + '); })()'
+  );
+  const rows = c.checks.map(check => {
+    let actual, ok = false, errMsg = '';
+    try {
+      actual = evalPath(train, check.path);
+      ok = close(actual, check.expected);
+    } catch (e) {
+      errMsg = String(e && e.message || e);
+    }
+    return { label: check.label, expected: check.expected, actual, ok, errMsg };
+  });
+  const allPass = rows.every(r => r.ok);
+  return { case: c, rows, allPass, train };
+}
+
+function renderResults(results) {
+  resultsEl.innerHTML = '';
+  results.forEach(r => {
+    const div = document.createElement('div');
+    div.className = 'case';
+    const head = document.createElement('div');
+    head.className = 'case-head';
+    head.innerHTML =
+      '<div><span class="title">' + r.case.id + ' — ' + r.case.name + '</span></div>' +
+      '<div><span class="badge ' + (r.allPass ? 'pass">PASS' : 'fail">FAIL') + '</span></div>';
+    div.appendChild(head);
+    const body = document.createElement('div');
+    body.style.padding = '8px 14px 14px';
+    let html = '<table><thead><tr><th>Quantity</th><th>Expected</th><th>Engine</th><th>Δ</th></tr></thead><tbody>';
+    r.rows.forEach(row => {
+      const isPct = String(row.label).toLowerCase().includes('eff');
+      const eDisp = (typeof row.expected === 'number') ? fmt(row.expected) : String(row.expected);
+      const aDisp = (row.errMsg) ? '⚠ ' + row.errMsg
+                  : (typeof row.actual === 'number' ? fmt(row.actual) : String(row.actual));
+      let dDisp = '';
+      if (!row.errMsg && typeof row.expected === 'number' && typeof row.actual === 'number') {
+        const diff = row.actual - row.expected;
+        dDisp = (diff === 0) ? '✓' : (Math.abs(diff) < 0.01 ? '✓ (≈0)' : (diff > 0 ? '+' : '') + fmt(diff));
+      }
+      html += '<tr class="' + (row.ok ? 'row-pass' : 'row-fail') + '">' +
+        '<td>' + row.label + (isPct ? ' <span class="small">(decimal)</span>' : '') + '</td>' +
+        '<td class="value">' + eDisp + '</td>' +
+        '<td class="value">' + aDisp + '</td>' +
+        '<td class="delta">' + (row.ok ? dDisp : '✗ FAIL') + '</td>' +
+        '</tr>';
+    });
+    html += '</tbody></table>';
+    body.innerHTML = html;
+    div.appendChild(body);
+    resultsEl.appendChild(div);
+  });
+}
+
+function renderCoverage(results) {
+  const branches = {};
+  results.forEach(r => {
+    const b = r.case.branch;
+    if (!branches[b]) branches[b] = { ids: [], pass: true };
+    branches[b].ids.push(r.case.id);
+    if (!r.allPass) branches[b].pass = false;
+  });
+  coverageBody.innerHTML = '';
+  Object.keys(branches).forEach(b => {
+    const tr = document.createElement('tr');
+    const status = branches[b].pass
+      ? '<span class="badge pass">PASS</span>'
+      : '<span class="badge fail">FAIL</span>';
+    tr.innerHTML = '<td>' + b + '</td><td>' + branches[b].ids.join(', ') + '</td><td>' + status + '</td>';
+    coverageBody.appendChild(tr);
+  });
+  summaryEl.hidden = false;
+}
+
+function setVerdict(passCount, total, error) {
+  verdictEl.classList.remove('pass', 'fail', 'pending');
+  if (error) {
+    verdictEl.classList.add('fail');
+    verdictEl.textContent = '✗ Engine error: ' + error;
+    return;
+  }
+  if (passCount === total) {
+    verdictEl.classList.add('pass');
+    verdictEl.textContent = '✓ PASS — all ' + total + '/' + total + ' test cases match the live engine within tolerance.';
+  } else {
+    verdictEl.classList.add('fail');
+    verdictEl.textContent = '✗ FAIL — ' + (total - passCount) + ' of ' + total + ' cases failed. Review the diffs below.';
+  }
+}
+
+function runAll() {
+  runBtn.disabled = true;
+  verdictEl.classList.remove('pass', 'fail');
+  verdictEl.classList.add('pending');
+  verdictEl.textContent = '⏳ Running 9 cases against the live engine…';
+  const win = iframe.contentWindow;
+  let results;
+  try {
+    results = CASES.map(c => runOne(win, c));
+  } catch (e) {
+    setVerdict(0, CASES.length, String(e && e.message || e));
+    runBtn.disabled = false;
+    return;
+  }
+  renderResults(results);
+  renderCoverage(results);
+  const passCount = results.filter(r => r.allPass).length;
+  setVerdict(passCount, results.length);
+  metaEl.textContent =
+    'Last run: ' + new Date().toLocaleString() +
+    ' • ' + passCount + '/' + results.length + ' cases pass' +
+    ' • tolerance: ' + (REL_TOL * 100).toFixed(1) + '% rel or ' + ABS_TOL + ' abs';
+  runBtn.disabled = false;
+}
+
+function whenEngineReady(cb, attempts) {
+  attempts = attempts || 0;
+  const win = iframe.contentWindow;
+  /* STATE is `const` inside the engine — only visible via eval. Probe it with eval. */
+  let stateOk = false;
+  try { stateOk = win && win.eval && win.eval('typeof STATE === "object" && STATE !== null'); }
+  catch (_) { stateOk = false; }
+  const ready = win && typeof win.computeGearTrain === 'function' && stateOk;
+  if (ready) { cb(); return; }
+  if (attempts > 100) { /* ~10s */
+    setVerdict(0, CASES.length, 'engine did not become ready within 10s');
+    return;
+  }
+  setTimeout(() => whenEngineReady(cb, attempts + 1), 100);
+}
+
+iframe.addEventListener('load', () => {
+  whenEngineReady(() => {
+    runBtn.disabled = false;
+    runAll();
+  });
+});
+
+runBtn.addEventListener('click', runAll);
+</script>
+</body>
+</html>
