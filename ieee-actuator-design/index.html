@@ -5227,10 +5227,101 @@ body.theme-catalog .s2-catalog .catalog-breadcrumb {
   border-bottom: 1px solid #eee;
 }
 
-/* Body layout: sidebar + main */
+/* Body layout: was sidebar + main, now stacked (sidebar collapsed to just
+   the engineering-honesty disclosure). Aaron flagged that the e-commerce
+   filter chrome made motor selection feel daunting for a 15-year-old who
+   doesn't yet know what to filter on. */
 body.theme-catalog .s2-catalog .catalog-body {
   display: flex;
-  min-height: 500px;
+  flex-direction: column;
+  min-height: 0;
+}
+/* Sidebar collapses to a thin row holding only the simplification note. */
+body.theme-catalog .s2-catalog .catalog-sidebar {
+  width: auto !important;
+  border-right: none !important;
+  border-bottom: 1px solid #eee;
+  background: transparent !important;
+  padding: 8px 16px !important;
+  overflow: visible !important;
+  order: 1; /* below main content */
+}
+/* Hide all the old filter / sort / voltage / curves groups. The
+   simplification-note inside the sidebar stays visible. */
+body.theme-catalog .s2-catalog .catalog-filter-header,
+body.theme-catalog .s2-catalog .catalog-sidebar .catalog-filter-group {
+  display: none !important;
+}
+/* Hide the inline results-bar count (a one-line "Showing 3 motors..." has no
+   value when only 3 are ever shown and there's no filtering). */
+body.theme-catalog .s2-catalog .catalog-results-count { display: none; }
+/* Cut the per-card Pin / Compare button. Pin/compare was the heaviest piece
+   of cognitive overhead for a student who isn't yet building a real shortlist. */
+body.theme-catalog .s2-catalog .mc-compare-btn { display: none !important; }
+/* The card "Why?" disclosure is being replaced with always-visible intel
+   so a student doesn't have to click to see what the choice means downstream. */
+body.theme-catalog .s2-catalog .mc-insight-why summary { display: none !important; }
+body.theme-catalog .s2-catalog .mc-insight-why > div { display: block !important; margin-top: 6px !important; }
+body.theme-catalog .s2-catalog .mc-insight-why { display: block !important; margin-left: 0 !important; }
+/* Locked-teaser cards (the "complete a Stage 3 test to unlock the rest"
+   placeholders) cut entirely — three motors, three cards, no chrome. */
+body.theme-catalog .s2-catalog .motor-card.locked-teaser { display: none !important; }
+/* Trade-off comparator above the cards — three bars per axis. */
+body.theme-catalog .s2-catalog .s2-tradeoff {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 0 0 16px;
+}
+body.theme-catalog .s2-catalog .s2-to-title {
+  font-size: 0.72rem;
+  color: #6a7a8c;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 10px;
+}
+body.theme-catalog .s2-catalog .s2-to-grid {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 8px 14px;
+  align-items: center;
+}
+body.theme-catalog .s2-catalog .s2-to-label {
+  font-size: 0.78rem;
+  color: #aab8c6;
+}
+body.theme-catalog .s2-catalog .s2-to-bars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+body.theme-catalog .s2-catalog .s2-to-bar {
+  position: relative;
+  height: 22px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 3px;
+  overflow: hidden;
+}
+body.theme-catalog .s2-catalog .s2-to-bar-fill {
+  position: absolute; inset: 0 auto 0 0;
+  background: linear-gradient(90deg, rgba(79,195,247,0.7) 0%, rgba(79,195,247,0.4) 100%);
+  transition: width 0.4s ease;
+}
+body.theme-catalog .s2-catalog .s2-to-bar.over .s2-to-bar-fill {
+  background: linear-gradient(90deg, rgba(239,83,80,0.7) 0%, rgba(239,83,80,0.4) 100%);
+}
+body.theme-catalog .s2-catalog .s2-to-bar-text {
+  position: relative;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: rgba(255,255,255,0.92);
+  white-space: nowrap;
+}
+@media (max-width: 720px) {
+  body.theme-catalog .s2-catalog .s2-to-grid { grid-template-columns: 1fr; gap: 4px 0; }
+  body.theme-catalog .s2-catalog .s2-to-label { font-size: 0.7rem; margin-top: 6px; }
 }
 
 /* Sidebar */
@@ -11796,6 +11887,12 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="compare-grid" id="s2CompareGrid" style="display:none;"></div>
         </div>
 
+        <!-- Trade-off comparator. Three motors, four axes (push force /
+             spin speed / size / weight). Lets the student see the shape of
+             the decision before drilling into a card. Populated by
+             renderStage2Tradeoff() during renderMotorCards(). -->
+        <div class="s2-tradeoff" id="s2TradeoffChart"></div>
+
         <!-- Motor product cards -->
         <div class="motor-cards" id="motorCards"></div>
 
@@ -18226,24 +18323,17 @@ function renderMotorCards() {
     container.appendChild(card);
   });
 
-  if (!showAll) {
-    MOTORS.forEach((m, idx) => {
-      if (STARTER_MOTORS.has(idx)) return;
-      const card = document.createElement('div');
-      card.className = 'motor-card locked-teaser';
-      card.style.opacity = '0.5';
-      card.style.pointerEvents = 'none';
-      card.innerHTML = `
-        <div class="mc-top-row">
-          <div class="mc-name">${m.manufacturer} ${m.model}</div>
-          <div class="mc-verdict ok">Locked</div>
-        </div>
-        <div class="mc-type">${m.plainType}</div>
-        <div class="mc-desc">${m.description}</div>
-        <div class="mc-insight"><strong>Unlocks after first test:</strong> Complete a Stage 3 test to access the full catalog.</div>`;
-      container.appendChild(card);
-    });
-  }
+  // The locked-teaser placeholder cards are gone. Three motors, three cards,
+  // no chrome. Whatever progression / unlock logic the rest of the codebase
+  // expects is still intact; the additional motor data is simply not
+  // surfaced in the catalog UI anymore.
+
+  // Trade-off comparator: show all three motors on the same axes (torque,
+  // speed, mass) so the shape of the decision is visible BEFORE the student
+  // drills into a card. Each bar normalises to the strongest motor on that
+  // axis; the requirement is marked so students can see if a motor is over
+  // or under the spec.
+  renderStage2Tradeoff(visibleOrder);
 
   // Show Chen popup after cards render
   const chenPopup = document.getElementById('s2ChenPopup');
@@ -18251,6 +18341,42 @@ function renderMotorCards() {
     chenPopup.style.display = 'block';
     chenPopup.dataset.shown = '1';
   }
+}
+
+// Trade-off comparator. Renders into #s2TradeoffChart if present.
+function renderStage2Tradeoff(visibleOrder) {
+  const host = document.getElementById('s2TradeoffChart');
+  if (!host) return;
+  if (!visibleOrder || !visibleOrder.length) { host.innerHTML = ''; return; }
+  const motors = visibleOrder.map(i => MOTORS[i]);
+  // Axes the student actually decides on
+  const axes = [
+    { key: 'stallTorque_Nm', label: 'Push force',  fmt: v => v.toFixed(2) + ' Nm', spec: REQUIREMENTS.torque_Nm, scale: 'higher' },
+    { key: 'noLoadSpeed_rpm', label: 'Spin speed', fmt: v => v.toFixed(0) + ' rpm', spec: null, scale: 'higher' },
+    { key: 'outerDiameter_mm', label: 'Size',      fmt: v => v.toFixed(0) + ' mm', spec: REQUIREMENTS.diameter_mm, scale: 'lower' },
+    { key: 'mass_g',           label: 'Weight',    fmt: v => v.toFixed(0) + ' g',  spec: REQUIREMENTS.mass_g,      scale: 'lower' },
+  ];
+  // Find max across visible motors per axis so each row normalises locally
+  const html = ['<div class="s2-to-title">How they compare</div>'];
+  html.push('<div class="s2-to-grid">');
+  axes.forEach(ax => {
+    const vals = motors.map(m => m.specs[ax.key]);
+    const maxV = Math.max(...vals);
+    html.push('<div class="s2-to-label">' + ax.label + '</div>');
+    html.push('<div class="s2-to-bars">');
+    motors.forEach((m, j) => {
+      const v = m.specs[ax.key];
+      const widthPct = maxV > 0 ? Math.max(8, (v / maxV) * 100) : 0;
+      const over = (ax.spec != null) && (ax.scale === 'higher' ? v < ax.spec : v > ax.spec);
+      html.push('<div class="s2-to-bar' + (over ? ' over' : '') + '" title="' + m.manufacturer + ' ' + m.model + '">');
+      html.push('<div class="s2-to-bar-fill" style="width:' + widthPct.toFixed(1) + '%"></div>');
+      html.push('<div class="s2-to-bar-text">' + ax.fmt(v) + '</div>');
+      html.push('</div>');
+    });
+    html.push('</div>');
+  });
+  html.push('</div>');
+  host.innerHTML = html.join('');
 }
 
 function renderCurveToggles() {
