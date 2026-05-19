@@ -20747,6 +20747,12 @@ const ConveyorSim = {
       if (n) n.textContent = 'No committed design yet. Finish Stage 4 first.';
       return;
     }
+    // Wipe any in-flight chat from the previous run BEFORE the countdown
+    // begins. Without this, the wall-clock verdict drain from the prior
+    // shift keeps pushing lines into the message list during the 3-second
+    // countdown of the new shift, mixing old verdict text with the new
+    // intro lines.
+    if (window.StageFiveChat) StageFiveChat.reset();
     this.status = 'countdown'; this.countdown = 3;
     this.running = true; this.finished = false;
     this.lastTick = performance.now();
@@ -20757,6 +20763,10 @@ const ConveyorSim = {
     // Reset post-shift reveal so this new run hides them again
     const shell = document.querySelector('.stage5-livestream-shell');
     if (shell) shell.classList.remove('shift-complete');
+    // Wipe the chat NOW (not at countdown-end) so any wall-clock verdict
+    // drain still pending from the previous shift can't deliver into the
+    // new shift's countdown window.
+    if (window.StageFiveChat) StageFiveChat.reset();
     this._narrate('Belt starting. Watch arm 1 take the first box.');
     const status = document.getElementById('s5ConvStatus');
     if (status) status.textContent = 'Countdown';
@@ -21072,7 +21082,13 @@ const ConveyorSim = {
         // or returning: those are normal post-success swings even if the
         // arm has had a malfunction earlier in the cycle.
         const dangerousMode = arm && (arm.mode === 'tracking' || arm.mode === 'lifting' || arm.mode === 'returning');
-        if (arm && w.stateT > 0.6 && arm.malfunctioning && (arm._malfCount || 0) >= 2 && dangerousMode && Math.abs(arm.omega) > 3.5) {
+        // Smack gate. Worker has been inspecting for >=0.6s (settled).
+        // Arm is still flagged malfunctioning. Arm is in an active failure
+        // mode (tracking / lifting / returning). Omega is high enough to
+        // be a real swing, not a brief transient. Together these keep a
+        // smooth design from clipping a worker on a single hiccup while
+        // letting chaotic arms reliably smack inspectors.
+        if (arm && w.stateT > 0.6 && arm.malfunctioning && dangerousMode && Math.abs(arm.omega) > 4.5) {
           const armLenN = 0.32 * (this.canvas._logicalH / this.canvas._logicalW);
           const tipX = arm.stationX - Math.sin(arm.theta) * armLenN;
           const tipY = 0.40 + Math.cos(arm.theta) * 0.32;
@@ -21258,6 +21274,13 @@ const ConveyorSim = {
   },
 
   _endShift() {
+    // Zero out live-diagnosis flash flags so the lingering frame state
+    // doesn't keep the motor glowing red or the arm wobbling after the
+    // verdict lands. The scorecard is the official call from here.
+    this.arms.forEach(a => {
+      a._satFlash = 0; a._spdFlash = 0; a._swingFlash = 0;
+      a.flash = 0;
+    });
     const total = this.packed + this.lost;
     let tier, line;
     if (this.packed >= 9) { tier = 'GREEN'; line = `Shift cleared. ${this.packed} of ${total} packed. Production-ready.`; }
@@ -21455,15 +21478,19 @@ const ConveyorSim = {
       ctx.fillRect(-7, armLenPx, 14, 5);
       ctx.restore();
 
-      // Status badge above motor when actively flagging a cause. Persists
-      // briefly past the flash so the student can read it.
+      // Status badge above motor when actively flagging a cause during the
+      // shift. Once the shift is over the scorecard is the official
+      // verdict — don't keep flashing live-diagnosis badges based on the
+      // frozen final-frame state (a clean shift's last lift was almost
+      // certainly torque-saturated reaching theta=pi, which would otherwise
+      // leave "TORQUE LIMIT" stuck on every arm after a passing run).
       const badgePool = [
         { v: satGlow,   txt: 'TORQUE LIMIT', col: '#ff6f60' },
         { v: spdGlow,   txt: 'SPEED CAP',    col: '#50b4ff' },
         { v: swingGlow, txt: 'OVERSHOOT',    col: '#ffa726' },
       ];
       const top = badgePool.reduce((a, b) => b.v > a.v ? b : a);
-      if (top.v > 0.15) {
+      if (top.v > 0.15 && this.status === 'running') {
         ctx.font = 'bold 9px "JetBrains Mono", monospace';
         const m = ctx.measureText(top.txt);
         const bx = armX - m.width / 2 - 5;
@@ -21724,6 +21751,11 @@ const StageFiveChat = {
     this.lastDeliveryT = -10;
     this.seenEvents.clear();
     this._recent = [];
+    // Per-shift instance counters — without these the "every 3rd pack"
+    // throttle and the mid-shift beat fire at offset positions on rerun.
+    this._packCount = 0;
+    this._midBeatFired = false;
+    this.lastSpeakerKey = null;
     if (this._wallTimer) { clearTimeout(this._wallTimer); this._wallTimer = null; }
     // Strip any prior dynamic messages from the stream (keep statics)
     const list = document.getElementById('s5SlackMessages');
