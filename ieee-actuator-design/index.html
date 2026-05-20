@@ -4202,28 +4202,46 @@
   .codex-overlay-actions .btn { margin: 0; }
   .typing-cursor { display: inline-block; width: 2px; height: 1em; background: var(--accent); margin-left: 2px; vertical-align: text-bottom; animation: blink 0.8s infinite; }
 
-  /* Ops toast feed: makes the world feel alive without blocking flow (Codex) */
-  .ops-host { position: fixed; right: 28px; top: 84px; display: flex; flex-direction: column; gap: 8px; z-index: 9998; max-width: 320px; pointer-events: none; }
+  /* Ops toast feed: Aaron flagged the popups felt small and skippable.
+     Beefed up — larger padding, bigger body font, taller label band,
+     stronger left bar, slide-in animation with a small bounce so the
+     eye catches them. Hold time bumped to 8.5s in the JS path. */
+  .ops-host { position: fixed; right: 24px; top: 92px; display: flex; flex-direction: column; gap: 10px; z-index: 9998; max-width: 380px; pointer-events: none; }
   .ops-toast { pointer-events: auto; }
   .ops-toast {
-    background: rgba(24,27,36,0.92);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-left: 3px solid rgba(79,195,247,0.55);
+    background: rgba(20,24,32,0.96);
+    border: 1px solid rgba(79,195,247,0.18);
+    border-left: 5px solid rgba(79,195,247,0.75);
     border-radius: 12px;
-    padding: 10px 12px;
-    box-shadow: 0 12px 36px rgba(0,0,0,0.35);
-    backdrop-filter: blur(6px);
+    padding: 14px 18px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(79,195,247,0.06);
+    backdrop-filter: blur(8px);
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transform: translateY(14px) scale(0.97);
+    transition: opacity 0.32s ease, transform 0.42s cubic-bezier(0.34, 1.56, 0.64, 1);
     color: var(--text);
-    font-size: 0.78rem;
-    line-height: 1.45;
+    font-size: 0.92rem;
+    line-height: 1.5;
   }
-  .ops-toast.show { opacity: 1; transform: translateY(0); }
-  .ops-toast .ops-label { display:block; font-size: 0.62rem; letter-spacing: 0.12em; color: rgba(255,255,255,0.55); font-weight: 800; margin-bottom: 4px; }
-  .ops-toast.warn { border-left-color: rgba(255,167,38,0.65); }
-  .ops-toast.danger { border-left-color: rgba(239,83,80,0.65); }
+  .ops-toast.show { opacity: 1; transform: translateY(0) scale(1); }
+  .ops-toast .ops-label {
+    display: block;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    color: rgba(79,195,247,0.9);
+    font-weight: 800;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .ops-toast.warn { border-left-color: rgba(255,167,38,0.85); }
+  .ops-toast.warn .ops-label { color: rgba(255,167,38,0.95); }
+  .ops-toast.danger { border-left-color: rgba(239,83,80,0.85); }
+  .ops-toast.danger .ops-label { color: rgba(239,83,80,0.95); }
+  @media (max-width: 720px) {
+    .ops-host { right: 10px; left: 10px; max-width: none; top: 76px; }
+    .ops-toast { padding: 12px 14px; font-size: 0.88rem; }
+    .ops-toast .ops-label { font-size: 0.64rem; }
+  }
 
   /* ============================================================
      PRINT BRIEF: when the user clicks "Print Brief" on Stage 5,
@@ -15758,7 +15776,9 @@ function pushOpsToast(text, opts = {}) {
 
   requestAnimationFrame(() => el.classList.add('show'));
 
-  const ttlMs = Number.isFinite(opts.ttlMs) ? opts.ttlMs : 6200;
+  // Hold time bumped from 6.2s -> 8.5s so a 15-year-old reading at a normal
+  // pace finishes the line before it fades. Callers can override via opts.ttlMs.
+  const ttlMs = Number.isFinite(opts.ttlMs) ? opts.ttlMs : 8500;
   setTimeout(() => {
     el.classList.remove('show');
     setTimeout(() => { try { el.remove(); } catch (_) {} }, 320);
