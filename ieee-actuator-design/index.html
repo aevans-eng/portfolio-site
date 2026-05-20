@@ -822,6 +822,29 @@
     margin: 6px 0 10px;
     line-height: 1.5;
   }
+  /* Module slider trade-off chip — both directions of consequence always
+     visible so the cost of reducing module isn't invisible. */
+  .s3-module-tradeoff {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    align-items: center;
+    margin-top: 8px;
+    padding: 8px 10px;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 6px;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    line-height: 1.45;
+  }
+  .s3-module-tradeoff strong { color: var(--text); font-weight: 600; }
+  .s3-mtt-arrow { color: rgba(79,195,247,0.65); font-weight: 700; }
+  .s3-mtt-pipe { color: rgba(255,255,255,0.25); }
+  @media (max-width: 720px) {
+    .s3-module-tradeoff { font-size: 0.7rem; }
+    .s3-mtt-pipe { display: none; }
+  }
   .delta-section {
     margin-top: 12px;
     padding-top: 12px;
@@ -12199,6 +12222,18 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <span class="s3-target-marker best"></span>
           </div>
           <div class="s3-axis-hint" id="s3ModuleHint" data-tone="hold">Module guidance will appear here once the live geometry readout updates.</div>
+          <!-- Always-visible trade-off chip for the module slider. Aaron's
+               note: when reducing module the tooth-load cost wasn't being
+               surfaced. This chip names both directions inline so the
+               consequence is visible regardless of where the student is
+               on the slider. -->
+          <div class="s3-module-tradeoff" id="s3ModuleTradeoff">
+            <span class="s3-mtt-arrow">&larr;</span>
+            <span><strong>Smaller</strong>: tighter package. Each tooth carries less load — risk of breakage at high torque.</span>
+            <span class="s3-mtt-pipe">·</span>
+            <span><strong>Bigger</strong>: stronger teeth. Gears grow and crowd the envelope.</span>
+            <span class="s3-mtt-arrow">&rarr;</span>
+          </div>
         </div>
         <p class="stage3-slider-note" id="s3GeometrySupport">Stages shrink diameter but add losses. Bigger teeth are stronger but larger.</p>
         <details class="s3-knob-map" id="s3KnobMap">
