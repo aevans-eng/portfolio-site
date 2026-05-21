@@ -9412,9 +9412,9 @@ body.theme-slack .stage5-livestream-shell .slack-channel-header {
   body.theme-slack .stage5-livestream-shell .slack-channel-header .slack-ch-topic { display: none; }
   body.theme-slack .stage5-livestream-shell .stage5-ls-channel-info { display: none; }
   .stage5-ls-statusbar { flex: 1; justify-content: space-between; gap: 4px; flex-wrap: nowrap; }
-  .stage5-ls-stat { padding: 3px 6px; font-size: 0.68rem; flex: 1 1 0; min-width: 0; }
-  .stage5-ls-stat-lbl { font-size: 0.58rem; }
-  .stage5-ls-stat-val { font-size: 0.78rem; }
+  .stage5-ls-stat { padding: 3px 6px; font-size: 0.68rem; flex: 1 1 0; min-width: 0; overflow: hidden; }
+  .stage5-ls-stat-lbl { font-size: 0.58rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .stage5-ls-stat-val { font-size: 0.78rem; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 }
 body.theme-slack .stage5-livestream-shell .slack-messages {
   display: grid;
