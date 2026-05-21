@@ -21444,20 +21444,23 @@ const ConveyorSim = {
         // arm has had a malfunction earlier in the cycle.
         const dangerousMode = arm && (arm.mode === 'tracking' || arm.mode === 'lifting' || arm.mode === 'returning');
         // Smack gate. Worker has been inspecting for >=0.6s (settled).
-        // Arm is still flagged malfunctioning. Arm is in an active failure
-        // mode (tracking / lifting / returning). Omega is high enough to
-        // be a real swing, not a brief transient. Together these keep a
-        // smooth design from clipping a worker on a single hiccup while
-        // letting chaotic arms reliably smack inspectors.
-        if (arm && w.stateT > 0.6 && arm.malfunctioning && dangerousMode && Math.abs(arm.omega) > 4.5) {
+        // Arm must have had at least 2 failures in the current window
+        // (sustained chaos, not a single hiccup). Arm is in an active
+        // failure mode (tracking / lifting / returning). Omega cleared
+        // a moderate threshold so a brief transient on a smooth design
+        // doesn't fire. Chaotic arms get stuck oscillating near theta=pi
+        // with sustained omega in the 3-5 range, which this catches.
+        if (arm && w.stateT > 0.6 && arm.malfunctioning && (arm._malfCount || 0) >= 2 && dangerousMode && Math.abs(arm.omega) > 3.0) {
           const armLenN = 0.32 * (this.canvas._logicalH / this.canvas._logicalW);
           const tipX = arm.stationX - Math.sin(arm.theta) * armLenN;
           const tipY = 0.40 + Math.cos(arm.theta) * 0.32;
           const dx = tipX - w.x, dy = tipY - w.yNorm;
-          // Widened hit window — the inspecting worker stands offset from the
-          // arm's vertical axis, so the arm tip has to sweep through a band
-          // of theta ~32°–84° to reach them.
-          if (Math.abs(dx) < 0.13 && Math.abs(dy) < 0.12) {
+          // Widened hit window. The chaotic-arm failure mode tends to be
+          // "stuck oscillating near theta=pi" rather than "swing through
+          // horizontal." Widening the Y tolerance lets the worker's
+          // catwalk-zone include the lower half of the upper swing, so
+          // a stuck-at-pi arm with high omega still smacks the inspector.
+          if (Math.abs(dx) < 0.16 && Math.abs(dy) < 0.20) {
             w.state = 'flying'; w.stateT = 0;
             w.vx = Math.sign(arm.omega || 1) * (0.4 + Math.random() * 0.3);
             w.vyNorm = -0.6 - Math.random() * 0.3;
