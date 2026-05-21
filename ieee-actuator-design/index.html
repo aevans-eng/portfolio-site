@@ -9568,6 +9568,11 @@ body.theme-slack .stage5-livestream-shell .slack-messages > *:not(.stage5-pinned
 body.theme-slack .stage5-livestream-shell .slack-system-msg {
   grid-column: 2;
 }
+/* Desktop: Aaron flagged Stage 5 reads as "weird infinite page of message
+   bar." Cap is handled in JS by capping the live-chat message count
+   (StageFiveChat.deliver removes the oldest .s5-chat-live when the count
+   exceeds a max). The grid container itself stays uncapped so the
+   scorecard + Q&A still expand the page after the shift completes. */
 @media (max-width: 900px) {
   body.theme-slack .stage5-livestream-shell .slack-messages {
     grid-template-columns: minmax(0, 1fr);
@@ -22211,6 +22216,16 @@ const StageFiveChat = {
       </div>`;
     msg.querySelector('.slack-msg-text').textContent = text;
     list.appendChild(msg);
+    // Cap the live chat to the most-recent N messages so the page doesn't
+    // grow unbounded as the shift produces more commentary. Older lines
+    // fade out and get removed. The static intro + pinned-feed messages
+    // (not .s5-chat-live) are untouched.
+    const liveMax = 8;
+    const liveMsgs = list.querySelectorAll('.s5-chat-live');
+    if (liveMsgs.length > liveMax) {
+      const toRemove = liveMsgs.length - liveMax;
+      for (let i = 0; i < toRemove; i++) liveMsgs[i].remove();
+    }
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!reduce && msg.animate) {
       msg.animate(
