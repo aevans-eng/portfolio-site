@@ -9704,9 +9704,16 @@ body.theme-slack .stage5-livestream-shell .slack-messages > .stage5-pinned-feed 
    hidden. */
 body.theme-slack .stage5-livestream-shell .s5-post-shift { display: none; }
 body.theme-slack .stage5-livestream-shell.shift-complete #s5PollMsg,
-body.theme-slack .stage5-livestream-shell.shift-complete #s5BotReviewMsg { display: flex !important; }
+body.theme-slack .stage5-livestream-shell.shift-complete #s5BotReviewMsg,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5TeamRoomMsg,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5SummaryMsg,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5RequirementsMsg,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5MechanicalReviewerMsg,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5ControlsReviewerMsg,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5ClientReviewerMsg { display: flex !important; }
 body.theme-slack .stage5-livestream-shell.shift-complete #s5ResultsCard,
-body.theme-slack .stage5-livestream-shell.shift-complete #s5StakeholderPanel { display: block !important; }
+body.theme-slack .stage5-livestream-shell.shift-complete #s5StakeholderPanel,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5ContinueToCompare { display: block !important; }
 /* Span the full width of the 2-column grid */
 body.theme-slack .stage5-livestream-shell .s5-results-card,
 body.theme-slack .stage5-livestream-shell .s5-stake-panel { grid-column: 1 / -1; }
@@ -13317,7 +13324,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
         </div>
 
-        <div class="slack-msg stage5-live-seq" id="s5SummaryMsg">
+        <div class="slack-msg stage5-live-seq s5-post-shift" id="s5SummaryMsg">
           <div class="slack-msg-avatar chen">SC</div>
           <div class="slack-msg-content">
             <div class="slack-msg-header"><span class="slack-msg-name">Dr. Sarah Chen</span><span class="slack-msg-time">now</span></div>
@@ -13406,7 +13413,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
         </div>
 
-        <div class="slack-msg stage5-live-seq" id="s5RequirementsMsg">
+        <div class="slack-msg stage5-live-seq s5-post-shift" id="s5RequirementsMsg">
           <div class="slack-msg-avatar chen">SC</div>
           <div class="slack-msg-content">
             <div class="slack-msg-header"><span class="slack-msg-name">Dr. Sarah Chen</span><span class="slack-msg-time">now</span></div>
@@ -13418,7 +13425,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
         </div>
 
-        <div class="slack-msg slack-reviewer-msg stage5-live-seq" id="s5MechanicalReviewerMsg">
+        <div class="slack-msg slack-reviewer-msg stage5-live-seq s5-post-shift" id="s5MechanicalReviewerMsg">
           <div class="slack-msg-avatar mech">JL</div>
           <div class="slack-msg-content">
             <div class="slack-msg-header"><span class="slack-msg-name">Jamie Liu</span><span class="slack-msg-time">now</span></div>
@@ -13427,7 +13434,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
         </div>
 
-        <div class="slack-msg slack-reviewer-msg stage5-live-seq" id="s5ControlsReviewerMsg">
+        <div class="slack-msg slack-reviewer-msg stage5-live-seq s5-post-shift" id="s5ControlsReviewerMsg">
           <div class="slack-msg-avatar ctrl">AT</div>
           <div class="slack-msg-content">
             <div class="slack-msg-header"><span class="slack-msg-name">Alex Torres</span><span class="slack-msg-time">now</span></div>
@@ -13436,7 +13443,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
         </div>
 
-        <div class="slack-msg slack-reviewer-msg stage5-live-seq" id="s5ClientReviewerMsg">
+        <div class="slack-msg slack-reviewer-msg stage5-live-seq s5-post-shift" id="s5ClientReviewerMsg">
           <div class="slack-msg-avatar hr">PK</div>
           <div class="slack-msg-content">
             <div class="slack-msg-header"><span class="slack-msg-name">Priya Kapoor</span><span class="slack-msg-time">now</span></div>
@@ -13542,7 +13549,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
         </div>
 
-        <div style="text-align:center;margin:16px 0;" id="s5ContinueToCompare"><button class="btn btn-primary" id="s5CompareCtaBtn" onclick="revealS5Section('s5CompareSection')">See How Your Design Compares &rarr;</button></div>
+        <div class="s5-post-shift" style="text-align:center;margin:16px 0;" id="s5ContinueToCompare"><button class="btn btn-primary" id="s5CompareCtaBtn" onclick="revealS5Section('s5CompareSection')">See How Your Design Compares &rarr;</button></div>
 
         <div id="s5CompareSection" style="display:none;">
           <div class="panel">
@@ -14382,7 +14389,7 @@ function ensureSnapshotSlackChrome() {
   const summaryAttachment = document.getElementById('s5SlackSummaryAttachment');
   if (summaryAttachment && !document.getElementById('s5TeamRoomMsg')) {
     const msg = document.createElement('div');
-    msg.className = 'slack-msg slack-room-call';
+    msg.className = 'slack-msg slack-room-call s5-post-shift';
     msg.id = 's5TeamRoomMsg';
     msg.innerHTML = `
       <div class="slack-msg-avatar mech" id="s5RoomCallAvatar">JL</div>
