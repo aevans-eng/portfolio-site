@@ -9875,6 +9875,380 @@ body.theme-slack .slack-messages {
   padding-top: 18px;
 }
 
+/* ================================================================
+   STAGE 5 REPORT MODE — channel-to-report transition
+   Pre-shift + during-shift = 2-col Slack channel (existing).
+   Post-shift = single-column review report below the channel grid.
+   Triggered by .shift-complete class on .stage5-livestream-shell.
+   ================================================================ */
+
+/* Default: report hidden. Only flips visible after the shift ends. */
+#s5PostShift { display: none; }
+body.theme-slack .stage5-livestream-shell.shift-complete #s5PostShift {
+  display: block;
+  max-width: 880px;
+  margin: 0 auto 48px;
+  padding: 0 16px 96px;
+  grid-column: 1 / -1; /* span both columns of .slack-messages grid */
+  grid-row: auto;
+}
+
+/* On shift-complete, collapse the slack-messages 2-col grid to a
+   single-column stack so the sim + chat transcript appear above the
+   report wrapper naturally. The .stage5-pinned-feed `grid-row: 1 /
+   span 999` rule above otherwise pushes #s5PostShift to row 1000+. */
+body.theme-slack .stage5-livestream-shell.shift-complete .slack-messages {
+  grid-template-columns: 1fr;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete .slack-messages > .stage5-pinned-feed {
+  grid-column: 1;
+  grid-row: auto;
+  position: static;
+  top: auto;
+  max-height: none;
+  overflow: visible;
+  align-self: stretch;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete .slack-messages > * {
+  grid-column: 1;
+}
+
+/* On shift-complete, the sim has run -- collapse it to a quiet
+   summary card so the verdict + report take focal point. The canvas
+   still renders the final frame; user can still see what just ran
+   without it dominating the page. */
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .slack-video-embed {
+  max-height: 240px;
+  overflow: hidden;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed canvas {
+  max-height: 180px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .conveyor-controls,
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .stage5-tableau,
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .stage5-tableau-status-grid,
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .conveyor-sentiment { display: none; }
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .slack-video-header {
+  background: rgba(0,0,0,0.4);
+}
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .slack-msg-avatar,
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .slack-msg-text { display: none; }
+
+/* On shift-complete, the channel chat shrinks to a transcript card.
+   The chat DOM stays mounted (preserves scroll state + listeners);
+   we just visually compress it. The "expand" button restores full height. */
+body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block {
+  margin-bottom: 14px;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete:not(.transcript-expanded) .s5-chat-scroll {
+  max-height: 120px;
+  min-height: 0;
+  opacity: 0.78;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block-header {
+  cursor: pointer;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block-header::after {
+  content: "Expand transcript ↓";
+  font-size: 0.62rem;
+  color: rgba(214, 221, 234, 0.5);
+  letter-spacing: 0.08em;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete.transcript-expanded .s5-chat-block-header::after {
+  content: "Collapse transcript ↑";
+}
+
+/* On shift-complete, hide the bottom compose bar -- its buttons move
+   to the report's primary action bar. */
+body.theme-slack .stage5-livestream-shell.shift-complete .slack-compose {
+  display: none;
+}
+
+/* ---- Verdict banner ---- */
+.s5-verdict-banner {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: linear-gradient(180deg, #1a1d24 0%, #14171c 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+}
+.s5-verdict-stamp {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 2px solid currentColor;
+  background: rgba(255, 255, 255, 0.02);
+  flex-shrink: 0;
+  text-align: center;
+  min-width: 130px;
+}
+.s5-verdict-banner.verdict-pass .s5-verdict-stamp { color: #7ee787; }
+.s5-verdict-banner.verdict-marginal .s5-verdict-stamp { color: #ffa726; }
+.s5-verdict-banner.verdict-fail .s5-verdict-stamp { color: #ff8a80; }
+.s5-verdict-banner.verdict-pending .s5-verdict-stamp { color: #8a99ab; }
+.s5-verdict-body {
+  flex: 1;
+  min-width: 0;
+}
+.s5-verdict-kicker {
+  font-size: 0.66rem;
+  color: rgba(214, 221, 234, 0.55);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+#s5VerdictBannerText {
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: #e9eef5;
+  font-weight: 500;
+}
+
+/* ---- Report action bar — three primary CTAs ---- */
+.s5-report-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.s5-report-actions .btn {
+  flex: 1 1 200px;
+  min-height: 44px;
+}
+
+/* ---- Report sections ---- */
+.s5-report-section {
+  padding: 24px 0 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  scroll-margin-top: 60px;
+}
+.s5-report-section:first-of-type { border-top: none; padding-top: 8px; }
+.s5-report-section-header {
+  position: sticky;
+  top: 88px; /* sit below the verdict banner (~70px) */
+  z-index: 3;
+  background: linear-gradient(180deg, rgba(20, 23, 28, 0.96) 0%, rgba(20, 23, 28, 0.88) 100%);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 10px 0 12px;
+  margin: 0 0 16px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: rgba(214, 221, 234, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.s5-report-section-header .s5-section-sub {
+  font-size: 0.66rem;
+  font-weight: 500;
+  color: rgba(214, 221, 234, 0.45);
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+/* Inside report sections: existing wired panels keep their look but
+   shed the slack-msg chrome (avatars, "Dr. Sarah Chen · now" headers
+   that don't make sense outside a chat) */
+.s5-report-section .slack-msg-avatar { display: none; }
+.s5-report-section .slack-msg-content { padding: 0; }
+.s5-report-section .slack-msg-header { margin-bottom: 8px; }
+
+/* Collapsible "Deeper insights" section */
+#s5ReportDeeper > details {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0;
+  overflow: hidden;
+}
+#s5ReportDeeper > details > summary {
+  cursor: pointer;
+  padding: 14px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(214, 221, 234, 0.85);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#s5ReportDeeper > details > summary::after {
+  content: "▾";
+  font-size: 0.7rem;
+  color: rgba(214, 221, 234, 0.5);
+  transition: transform 0.2s ease;
+}
+#s5ReportDeeper > details[open] > summary::after { transform: rotate(180deg); }
+#s5ReportDeeper .s5-deeper-body { padding: 8px 18px 18px; }
+
+/* ---- Pre-shift channel polish: pinned card + empty state ---- */
+.s5-chat-pinned-card {
+  background: linear-gradient(180deg, rgba(255, 184, 0, 0.06) 0%, rgba(255, 184, 0, 0.02) 100%);
+  border: 1px solid rgba(255, 184, 0, 0.18);
+  border-left: 3px solid #ffb800;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #e9eef5;
+}
+.s5-chat-pinned-eyebrow {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  color: #ffb800;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.s5-chat-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 22px 16px;
+  color: rgba(214, 221, 234, 0.45);
+  font-size: 0.82rem;
+  font-style: italic;
+  gap: 10px;
+}
+.s5-chat-empty-watchers {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.s5-chat-empty-watchers .s5-watcher-dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.62rem;
+  font-weight: 700;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #fff;
+  border: 2px solid #1a1d24;
+}
+.s5-chat-empty-watchers .s5-watcher-sc { background: linear-gradient(135deg, #1264a3, #2d8cdb); }
+.s5-chat-empty-watchers .s5-watcher-jl { background: linear-gradient(135deg, #4a9d5a, #6bc97d); }
+.s5-chat-empty-watchers .s5-watcher-at { background: linear-gradient(135deg, #b66dff, #d39cff); }
+.s5-chat-empty-watchers .s5-watcher-pk { background: linear-gradient(135deg, #ecb22e, #f0c75e); color: #333; }
+/* Hide the empty state once any live message arrives. Uses :has() with
+   a JS fallback (StageFiveChat.deliver toggles .has-live on the wrap). */
+.s5-chat-scroll-wrap.has-live .s5-chat-empty-state,
+.s5-chat-scroll:has(.s5-chat-live) .s5-chat-empty-state { display: none; }
+/* And hide on shift-complete since the transcript is collapsed anyway */
+.stage5-livestream-shell.shift-complete .s5-chat-empty-state { display: none; }
+
+/* ---- Mobile (max-width: 900px) ---- */
+@media (max-width: 900px) {
+  body.theme-slack .stage5-livestream-shell.shift-complete #s5PostShift {
+    padding: 0 12px 96px;
+    margin-top: 16px;
+  }
+  .s5-verdict-banner {
+    padding: 16px 14px;
+    gap: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+  }
+  .s5-verdict-stamp {
+    align-self: flex-start;
+    font-size: 1.4rem;
+    padding: 6px 14px;
+  }
+  #s5VerdictBannerText { font-size: 0.95rem; }
+  .s5-report-actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 4;
+    background: rgba(14, 17, 22, 0.92);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 12px;
+    margin: 0 -12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0;
+  }
+  .s5-report-actions .btn { flex: 1 1 100%; }
+  .s5-report-section-header {
+    top: 0; /* on mobile, verdict isn't sticky so sections can use top:0 */
+    font-size: 0.66rem;
+  }
+  /* Status pills row: horizontal scroll instead of wrap */
+  body.theme-slack .stage5-livestream-shell .stage5-ls-statusbar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  body.theme-slack .stage5-livestream-shell .stage5-ls-statusbar::-webkit-scrollbar { display: none; }
+  body.theme-slack .stage5-livestream-shell .stage5-ls-statusbar .stage5-ls-stat {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+  }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  body.theme-slack .stage5-livestream-shell.shift-complete:not(.transcript-expanded) .s5-chat-scroll {
+    transition: none;
+  }
+  #s5ReportDeeper > details > summary::after { transition: none; }
+}
+
+/* ---- Print mode ---- */
+@media print {
+  body.theme-slack .stage5-livestream-shell .slack-channel-header,
+  body.theme-slack .stage5-livestream-shell .slack-compose,
+  body.theme-slack .stage5-livestream-shell .conveyor-controls,
+  body.theme-slack .stage5-livestream-shell .s5-chat-block,
+  body.theme-slack .stage5-livestream-shell .stage5-pinned-feed .slack-video-embed { display: none !important; }
+  body.theme-slack .stage5-livestream-shell #s5PostShift {
+    display: block !important;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  body.theme-slack .stage5-livestream-shell #s5PostShift details { display: block; }
+  body.theme-slack .stage5-livestream-shell #s5PostShift details[open],
+  body.theme-slack .stage5-livestream-shell #s5PostShift details:not([open]) > * { display: block !important; }
+  body.theme-slack .stage5-livestream-shell .s5-verdict-banner,
+  body.theme-slack .stage5-livestream-shell .s5-report-actions,
+  body.theme-slack .stage5-livestream-shell .s5-report-section-header { position: static !important; }
+  body.theme-slack .stage5-livestream-shell .s5-report-actions { display: none !important; }
+  body * { color: #000 !important; background: #fff !important; box-shadow: none !important; }
+  .s5-verdict-banner.verdict-pass .s5-verdict-stamp { color: #006400 !important; border-color: #006400 !important; }
+  .s5-verdict-banner.verdict-marginal .s5-verdict-stamp { color: #b06000 !important; border-color: #b06000 !important; }
+  .s5-verdict-banner.verdict-fail .s5-verdict-stamp { color: #8b0000 !important; border-color: #8b0000 !important; }
+  .s5-report-section { page-break-inside: avoid; border-top: 1px solid #aaa !important; }
+  #s5ReportScorecard, #s5ReportCompare, #s5ReportSpec { page-break-before: always; }
+}
+
 body.theme-slack .slack-messages > * {
   flex: 0 0 auto;
 }
@@ -13123,18 +13497,13 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
       <div class="slack-messages" id="s5SlackMessages">
         <div class="slack-system-msg">Dr. Sarah Chen started a live review in #performance-reviews</div>
 
-        <div class="slack-msg">
-          <div class="slack-msg-avatar chen">SC</div>
+        <!-- Hidden carrier for the dynamic pre-shift intro line (motor + ratio summary).
+             JS writes to #s5ChenIntroText; the visible pinned card inside #s5ChatScroll
+             mirrors this text via the s5IntroMirror code path. Kept in DOM so existing
+             wiring at app-v3.html line ~26627 doesn't error. -->
+        <div class="slack-msg" hidden aria-hidden="true">
           <div class="slack-msg-content">
-            <div class="slack-msg-header">
-              <span class="slack-msg-name">Dr. Sarah Chen</span>
-              <span class="slack-msg-time">now</span>
-            </div>
-            <div class="slack-msg-text" id="s5ChenIntroText">Alright, the full picture. Hardware specs, control performance, everything. Let me give you my honest assessment.</div>
-            <div class="slack-reactions">
-              <span class="slack-reaction">&#128064; <span class="count">5</span></span>
-              <span class="slack-reaction">&#129300; <span class="count">2</span></span>
-            </div>
+            <div class="slack-msg-text" id="s5ChenIntroText"></div>
           </div>
         </div>
 
@@ -13785,10 +14154,100 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <span id="s5ChatScrollCount" aria-live="polite">0 messages</span>
           </div>
           <div class="s5-chat-scroll-wrap">
-            <div class="s5-chat-scroll" id="s5ChatScroll" tabindex="0" role="log" aria-live="polite" aria-relevant="additions" aria-label="Live channel chat messages"></div>
+            <div class="s5-chat-scroll" id="s5ChatScroll" tabindex="0" role="log" aria-live="polite" aria-relevant="additions" aria-label="Live channel chat messages">
+              <!-- Pinned card. Persists across runs (no .s5-chat-live class, so StageFiveChat.reset() leaves it alone).
+                   #s5IntroPinned receives the dynamic motor+ratio summary from JS (line ~26632). -->
+              <div class="s5-chat-pinned-card">
+                <div class="s5-chat-pinned-eyebrow">&#128204; Pinned by Dr. Sarah Chen</div>
+                <div id="s5IntroPinned">Chen's about to run your design through the review room. Press <strong>Start shift</strong> when ready &mdash; the room is gathered.</div>
+              </div>
+              <!-- Empty state. Hidden by CSS as soon as any .s5-chat-live arrives. -->
+              <div class="s5-chat-empty-state">
+                <div class="s5-chat-empty-watchers" aria-hidden="true">
+                  <span class="s5-watcher-dot s5-watcher-sc" title="Dr. Sarah Chen">SC</span>
+                  <span class="s5-watcher-dot s5-watcher-jl" title="Jamie Liu">JL</span>
+                  <span class="s5-watcher-dot s5-watcher-at" title="Alex Torres">AT</span>
+                  <span class="s5-watcher-dot s5-watcher-pk" title="Priya Kapoor">PK</span>
+                </div>
+                <div>Jamie, Alex, Priya, and Sarah will react here in real time.</div>
+              </div>
+            </div>
             <button class="s5-chat-newmsg-pill" id="s5ChatNewMsgPill" type="button" aria-label="Jump to newest messages">&darr; New messages</button>
           </div>
         </div>
+
+        <!-- ============================================================
+             POST-SHIFT REPORT REGION
+             Hidden by default. Revealed when .shift-complete is added to
+             .stage5-livestream-shell (by ConveyorSim._endShift). Wired
+             post-shift containers (#s5ResultsCard, #s5StakeholderPanel,
+             #s5CompareSection, etc.) move INTO their respective report
+             sections in the next commit.
+             ============================================================ -->
+        <section id="s5PostShift" class="s5-post-shift" aria-labelledby="s5VerdictBanner">
+          <div class="s5-verdict-banner verdict-pending" id="s5VerdictBanner" role="status" aria-live="polite">
+            <div class="s5-verdict-stamp" id="s5VerdictStamp">Pending</div>
+            <div class="s5-verdict-body">
+              <div class="s5-verdict-kicker">Review Verdict</div>
+              <div id="s5VerdictBannerText">Run the shift to see how your design performs against the room's expectations.</div>
+            </div>
+          </div>
+
+          <div class="s5-report-actions" id="s5ReportActions">
+            <button class="btn btn-primary" id="s5ReportIterateBtn" onclick="codexIterateNext()">Iterate Next Bottleneck</button>
+            <button class="btn btn-secondary" id="s5ReportReviseBtn" onclick="codexIterateAlternate()">Revise Hardware</button>
+            <button class="btn btn-secondary" id="s5ReportCompareBtn" onclick="revealS5Section('s5CompareSection')">Open Comparison Board</button>
+          </div>
+
+          <div class="s5-report-section" id="s5ReportScorecard">
+            <h2 class="s5-report-section-header">Scorecard <span class="s5-section-sub">Did the design meet spec?</span></h2>
+            <!-- #s5ResultsCard moves here in commit 2 -->
+          </div>
+
+          <div class="s5-report-section" id="s5ReportQA">
+            <h2 class="s5-report-section-header">Stakeholder Q&amp;A <span class="s5-section-sub">Defend your choices</span></h2>
+            <!-- #s5StakeholderPanel + #s5DefenseMsg move here in commit 2 -->
+          </div>
+
+          <div class="s5-report-section" id="s5ReportReviewers">
+            <h2 class="s5-report-section-header">Reviewer Voices <span class="s5-section-sub">Specialist take</span></h2>
+            <!-- 3 reviewer msgs move here in commit 2 -->
+          </div>
+
+          <div class="s5-report-section" id="s5ReportSummary">
+            <h2 class="s5-report-section-header">Executive Summary <span class="s5-section-sub">The room read</span></h2>
+            <!-- #s5SummaryMsg moves here in commit 2 -->
+          </div>
+
+          <div class="s5-report-section" id="s5ReportScenario">
+            <h2 class="s5-report-section-header">Scenario Fit <span class="s5-section-sub">Does it match the brief?</span></h2>
+            <!-- #s5ScenarioGatePanel moves here in commit 2 -->
+          </div>
+
+          <div class="s5-report-section" id="s5ReportCompare">
+            <h2 class="s5-report-section-header">Comparison Board <span class="s5-section-sub">How does it stack up?</span></h2>
+            <!-- #s5CompareSection moves here in commit 2 -->
+          </div>
+
+          <div class="s5-report-section" id="s5ReportSpec">
+            <h2 class="s5-report-section-header">Design Spec &amp; Handoff <span class="s5-section-sub">What ships next</span></h2>
+            <!-- #s5SpecSection moves here in commit 2 -->
+          </div>
+
+          <div class="s5-report-section" id="s5ReportCareer">
+            <h2 class="s5-report-section-header">Where This Lives in the Real World <span class="s5-section-sub">Careers + case studies</span></h2>
+            <!-- #s5CareerPanel + #s5CaseStudyPanel move here in commit 2 -->
+          </div>
+
+          <div class="s5-report-section" id="s5ReportDeeper">
+            <details>
+              <summary>Deeper insights &mdash; poll, PIP, debrief notebook, impact analysis</summary>
+              <div class="s5-deeper-body">
+                <!-- #s5PollMsg, #s5BotReviewMsg, notebook, impact, iteration route move here in commit 2 -->
+              </div>
+            </details>
+          </div>
+        </section>
       </div>
 
       <div class="slack-compose">
@@ -13953,6 +14412,123 @@ function patchGoToStage() {
 
   console.log('[reskin] goToStage() patched — themes will auto-switch on stage transitions');
 }
+
+/* ================================================================
+   STAGE 5 REPORT LAYOUT
+   Moves wired post-shift containers from their legacy positions
+   (free-floating inside #s5SlackMessages) into the new report
+   sections (#s5ReportScorecard, #s5ReportQA, etc.). Runs once on
+   DOMContentLoaded. Idempotent -- guards against double-runs.
+
+   Using runtime re-parenting (vs source HTML moves) because:
+   - Stage 5 has ~100 wired DOM IDs spread across a 26k-line file
+   - JS modules use getElementById() so parent location doesn't matter
+   - Single edit point is much safer than manual cut/paste in source
+   - appendChild() naturally removes from old parent + reinserts in new
+   ================================================================ */
+const Stage5ReportLayout = {
+  // Element ID -> target section ID. Order matters when one element
+  // is nested inside another (the parent moves first, then the child
+  // is plucked out to its own section).
+  MOVES: [
+    // Summary first (it contains nested scenario gate / client voice)
+    { from: 's5SummaryMsg',          to: 's5ReportSummary' },
+    // Then yank the scenario gate out of summary into its own section
+    { from: 's5ScenarioGatePanel',   to: 's5ReportScenario' },
+    // Scorecard
+    { from: 's5ResultsCard',         to: 's5ReportScorecard' },
+    { from: 's5RequirementsMsg',     to: 's5ReportScorecard' },
+    // Q&A
+    { from: 's5StakeholderPanel',    to: 's5ReportQA' },
+    { from: 's5DefenseMsg',          to: 's5ReportQA' },
+    // Reviewer voices (3-card cluster)
+    { from: 's5MechanicalReviewerMsg', to: 's5ReportReviewers' },
+    { from: 's5ControlsReviewerMsg',   to: 's5ReportReviewers' },
+    { from: 's5ClientReviewerMsg',     to: 's5ReportReviewers' },
+    { from: 's5TeamRoomMsg',           to: 's5ReportReviewers' }, // created lazily by ensureSnapshotSlackChrome
+    // Comparison + spec
+    { from: 's5CompareSection',      to: 's5ReportCompare' },
+    { from: 's5SpecSection',         to: 's5ReportSpec' },
+    // Career + case studies (closing beat)
+    { from: 's5ClosingPanel',        to: 's5ReportCareer' },
+    { from: 's5CareerPanel',         to: 's5ReportCareer' },
+    { from: 's5CaseStudyPanel',      to: 's5ReportCareer' },
+    { from: 's5AiTrainingPanel',     to: 's5ReportCareer' },
+    // "Deeper insights" collapsible -- post-shift debrief panels
+    { from: 's5PollMsg',             to: 's5ReportDeeper', deeper: true },
+    { from: 's5BotReviewMsg',        to: 's5ReportDeeper', deeper: true },
+    { from: 's5IterateRoutePanel',   to: 's5ReportDeeper', deeper: true },
+    { from: 's5ContinueToCompare',   to: 's5ReportDeeper', deeper: true },
+  ],
+
+  apply() {
+    if (this._applied) return;
+    this.MOVES.forEach(m => this._moveOne(m));
+    this._applied = true;
+    // Several legacy containers (#s5CompareSection, #s5SpecSection,
+    // #s5ClosingPanel, etc.) ship with inline `style="display:none"`
+    // from the old "click to reveal" flow. In report mode they live
+    // inside always-visible sections, so clear the inline override.
+    // Sections still get scroll-into-view from the action-bar buttons.
+    ['s5CompareSection', 's5SpecSection', 's5ClosingPanel',
+     's5CareerPanel', 's5CaseStudyPanel', 's5AiTrainingPanel'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.style.display === 'none') el.style.display = '';
+    });
+  },
+
+  // Idempotent move. If the source element exists and isn't already
+  // inside the target, append it. For "deeper" items, append into the
+  // .s5-deeper-body inside the section's <details>.
+  _moveOne(m) {
+    const src = document.getElementById(m.from);
+    if (!src) return; // element doesn't exist (e.g., lazy-created later)
+    const targetSection = document.getElementById(m.to);
+    if (!targetSection) return;
+    const target = m.deeper
+      ? targetSection.querySelector('.s5-deeper-body') || targetSection
+      : targetSection;
+    if (src.parentElement === target) return; // already moved
+    target.appendChild(src);
+  },
+
+  // Some elements (like #s5TeamRoomMsg) are created dynamically by
+  // ensureSnapshotSlackChrome AFTER the initial DOM. Call this from
+  // there to ensure late-arrivals also get re-parented.
+  applyLate() {
+    if (!this._applied) return;
+    this.MOVES.forEach(m => this._moveOne(m));
+  },
+};
+window.Stage5ReportLayout = Stage5ReportLayout;
+document.addEventListener('DOMContentLoaded', () => {
+  // Defer one tick so any inline script that mutates #stage5 markup
+  // finishes first. Safer than racing.
+  setTimeout(() => Stage5ReportLayout.apply(), 0);
+  // Wire the transcript expand/collapse toggle on shift-complete.
+  // Clicking the chat block header (which shows "Expand transcript ↓"
+  // via CSS pseudo on shift-complete) toggles .transcript-expanded on
+  // the shell. The chat scroll's max-height CSS rule respects this.
+  const chatHeader = document.querySelector('#stage5 .s5-chat-block-header');
+  if (chatHeader) {
+    chatHeader.addEventListener('click', () => {
+      const shell = document.querySelector('.stage5-livestream-shell');
+      if (shell && shell.classList.contains('shift-complete')) {
+        shell.classList.toggle('transcript-expanded');
+      }
+    });
+    chatHeader.setAttribute('tabindex', '0');
+    chatHeader.setAttribute('role', 'button');
+    chatHeader.setAttribute('aria-label', 'Expand or collapse the channel chat transcript');
+    chatHeader.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        chatHeader.click();
+      }
+    });
+  }
+});
+
 
 /* ================================================================
    COLD OPEN CONTROLLER
@@ -14408,6 +14984,9 @@ function ensureSnapshotSlackChrome() {
     if (hostMsg && hostMsg.parentNode) {
       hostMsg.parentNode.insertBefore(msg, hostMsg);
     }
+    // The team-room msg is created here; if the report layout has
+    // already been applied, relocate it to the Reviewers section now.
+    if (window.Stage5ReportLayout) Stage5ReportLayout.applyLate();
   }
 
   const closingPanel = document.getElementById('s5ClosingPanel');
@@ -22259,10 +22838,11 @@ const ConveyorSim = {
           );
         });
       }
-      // Scroll the stakeholder questions into view shortly after.
+      // Scroll the verdict banner into view -- it's the user's first
+      // post-shift focal point. Q&A panel comes after in the report.
       setTimeout(() => {
-        const defense = document.getElementById('s5DefenseMsg');
-        if (defense) defense.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        const verdict = document.getElementById('s5VerdictBanner');
+        if (verdict) verdict.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 700);
     }
     this.render();
@@ -22705,6 +23285,10 @@ const StageFiveChat = {
     this._updateChatCount();
     const pill = document.getElementById('s5ChatNewMsgPill');
     if (pill) pill.classList.remove('show');
+    // Reset the empty-state visibility flag so the pre-shift placeholder
+    // returns on stage re-entry (after an iterate-from-Stage-4 round-trip).
+    const wrap = document.querySelector('.s5-chat-scroll-wrap');
+    if (wrap) wrap.classList.remove('has-live');
   },
 
   // Helpers for the chat scroll region (live message log).
@@ -22868,6 +23452,11 @@ const StageFiveChat = {
       || host.querySelectorAll('.s5-chat-live').length === 0
       || (this._followBottom !== false);
     host.appendChild(msg);
+    // Mark the wrap as "has-live" so CSS can hide the empty state.
+    // Belt-and-suspenders alongside the :has() selector for browsers
+    // that don't support :has() yet (older Safari/Firefox builds).
+    const wrap = host.closest('.s5-chat-scroll-wrap');
+    if (wrap) wrap.classList.add('has-live');
     // Cap the live chat to the most-recent N messages so the box
     // doesn't grow unbounded across a long shift. Older lines drop
     // off the top. Statics (intro, summary etc.) live outside the
@@ -23167,16 +23756,35 @@ function renderStage5Scorecard(packed, lost, smackCount) {
 
   const failCount = rows.filter(r => !r.pass && !r.warn).length;
   const warnCount = rows.filter(r => r.warn).length;
+  let stamp, banner, headline;
   if (failCount === 0 && warnCount === 0) {
     verdictEl.textContent = 'All targets met';
     verdictEl.className = 's5-results-verdict pass';
+    stamp = 'PASS';
+    banner = 'verdict-pass';
+    headline = 'All ' + rows.length + ' requirements met. Design is ready to hand off.';
   } else if (failCount === 0) {
     verdictEl.textContent = warnCount + ' marginal';
     verdictEl.className = 's5-results-verdict warn';
+    stamp = 'MARGINAL';
+    banner = 'verdict-marginal';
+    headline = warnCount + ' requirement' + (warnCount === 1 ? '' : 's') + ' on the edge. Design likely needs one more iteration before sign-off.';
   } else {
     verdictEl.textContent = failCount + ' failed';
     verdictEl.className = 's5-results-verdict fail';
+    stamp = 'FAIL';
+    banner = 'verdict-fail';
+    const failNames = rows.filter(r => !r.pass && !r.warn).map(r => r.label.toLowerCase()).join(', ');
+    headline = failCount + ' requirement' + (failCount === 1 ? '' : 's') + ' missed (' + failNames + '). Iterate before this ships.';
   }
+
+  // Mirror the verdict to the post-shift report banner.
+  const banEl = document.getElementById('s5VerdictBanner');
+  const banStamp = document.getElementById('s5VerdictStamp');
+  const banText = document.getElementById('s5VerdictBannerText');
+  if (banEl) banEl.className = 's5-verdict-banner ' + banner;
+  if (banStamp) banStamp.textContent = stamp;
+  if (banText) banText.textContent = headline;
 }
 
 // Fullscreen-ish stakeholder Q&A. Uses STATE.stage5Defense session
@@ -26284,7 +26892,11 @@ function onEnterStage5() {
   const simVerdict = STATE.simResults; // used by other s5 sections below
   const motorShort = motor.manufacturer + ' ' + motor.model.split('(')[0].trim();
   const ratioTxt = train.totalRatio.toFixed(0) + ':1 ' + gType;
-  s5Intro.textContent = motorShort + ', ' + ratioTxt + ', ' + STATE.numStages + ' stage' + (STATE.numStages > 1 ? 's' : '') + '. Run the line when you’re ready and we’ll go through it.';
+  const introLine = motorShort + ', ' + ratioTxt + ', ' + STATE.numStages + ' stage' + (STATE.numStages > 1 ? 's' : '') + '. Run the line when you’re ready and we’ll go through it.';
+  s5Intro.textContent = introLine;
+  // Mirror to the visible pinned card inside #s5ChatScroll.
+  const pinnedIntro = document.getElementById('s5IntroPinned');
+  if (pinnedIntro) pinnedIntro.textContent = introLine;
 
   // Build checks
   const s5Checks = [
