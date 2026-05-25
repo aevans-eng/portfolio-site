@@ -9970,6 +9970,26 @@ body.theme-slack .stage5-livestream-shell.shift-complete .slack-compose {
   display: none;
 }
 
+/* On shift-complete, hide the channel header. Both it and the
+   verdict banner are position:sticky; top:0 -- they were colliding
+   visually as the user scrolled. The verdict takes the channel
+   header's role (status, stamp, headline) post-shift. */
+body.theme-slack .stage5-livestream-shell.shift-complete .slack-channel-header {
+  display: none;
+}
+
+/* Belt-and-suspenders: make sure the chat block (above the verdict
+   in flow) can never paint over the sticky verdict during scroll.
+   The verdict creates its own stacking context (position:sticky) at
+   z-index:5; explicitly setting the chat block to z-index:1 keeps
+   the painting order unambiguous even if the chat scroll region
+   develops its own stacking context. */
+body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
 /* ---- Verdict banner ---- */
 .s5-verdict-banner {
   position: sticky;
