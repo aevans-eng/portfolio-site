@@ -4873,7 +4873,7 @@ body.theme-linkedin .offer-chen-note {
 
 /* --- Buttons in prologue (generic) --- */
 body.theme-linkedin .btn-primary,
-body.theme-linkedin button:not(.demo-controls button):not(.li-action-btn):not(.ic-choice):not(.li-easy-apply):not(.li-apply-btn) {
+body.theme-linkedin button:not(.demo-controls button):not(.li-action-btn):not(.ic-choice):not(.li-easy-apply):not(.li-apply-btn):not(.co-continue):not(#coldSkipBtn) {
   background: #0a66c2;
   color: white;
   border: none;
@@ -4941,6 +4941,252 @@ body.theme-linkedin .chen-name {
 body.theme-linkedin .chen-text {
   color: #333;
 }
+
+
+/* ================================================================
+   COLD OPEN — Pre-prologue cinematic intro
+   Sets up "you, a student, mid-internship hunt" before LinkedIn loads.
+   Three scenes: boot title, inbox of rejections, hand-off to LinkedIn.
+   ================================================================ */
+#coldOpen[hidden] { display: none; }
+#coldOpen {
+  position: fixed;
+  inset: 0;
+  background: #07080d;
+  color: #d9dde7;
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow-y: auto;
+  padding: 24px;
+}
+#coldOpen * { box-sizing: border-box; }
+
+.co-scene { display: none; width: 100%; max-width: 640px; }
+.co-scene.active { display: block; animation: coFade 0.45s ease both; }
+@keyframes coFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .co-scene.active { animation: none; }
+  .co-line, .co-stat { animation: none !important; opacity: 1 !important; }
+}
+
+#coldSkipBtn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: 1px solid #2a2f3d;
+  color: #7d8595;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.15s, border-color 0.15s;
+}
+#coldSkipBtn:hover, #coldSkipBtn:focus-visible {
+  color: #d9dde7;
+  border-color: #4a5266;
+  outline: none;
+}
+
+/* ---- Scene 1: Boot / time-stamp ---- */
+.co-scene-boot { text-align: left; }
+.co-scene-boot .co-prompt {
+  font-family: 'JetBrains Mono', monospace;
+  color: #4a5266;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.co-scene-boot .co-cursor {
+  display: inline-block;
+  width: 9px;
+  height: 16px;
+  background: #ff7a45;
+  margin-left: 2px;
+  vertical-align: -2px;
+  animation: coCursor 1s steps(1) infinite;
+}
+@keyframes coCursor { 50% { opacity: 0; } }
+.co-line {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: clamp(20px, 3.5vw, 32px);
+  font-weight: 300;
+  line-height: 1.5;
+  color: #e8ebf2;
+  margin: 0 0 6px;
+  opacity: 0;
+  animation: coTypeLine 0.5s ease forwards;
+}
+.co-line.dim {
+  font-size: clamp(15px, 2.2vw, 19px);
+  color: #7d8595;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.co-line-1 { animation-delay: 0.4s; }
+.co-line-2 { animation-delay: 1.2s; }
+.co-line-3 { animation-delay: 2.4s; }
+@keyframes coTypeLine { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+#coldOpen .co-continue {
+  margin-top: 36px;
+  background: #ff7a45;
+  color: #0a0d14;
+  border: none;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  cursor: pointer;
+  opacity: 0;
+  animation: coTypeLine 0.4s ease 3.4s forwards;
+  min-height: 44px;
+}
+#coldOpen .co-continue:hover,
+#coldOpen .co-continue:focus-visible { background: #ff9466; outline: none; }
+
+/* ---- Scene 2: Inbox ---- */
+.co-mail-shell {
+  background: #10131c;
+  border: 1px solid #20242f;
+  border-radius: 8px;
+  padding: 22px 22px 18px;
+}
+.co-mail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #20242f;
+  margin-bottom: 4px;
+}
+.co-mail-logo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #e8ebf2;
+  letter-spacing: -0.01em;
+}
+.co-mail-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #4a5266;
+  letter-spacing: 0.04em;
+}
+.co-mail-row {
+  padding: 16px 4px 14px;
+  border-bottom: 1px solid #1a1e28;
+  cursor: default;
+}
+.co-mail-row:last-of-type { border-bottom: none; }
+.co-mail-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+.co-mail-sender {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ff7a45;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.co-mail-time {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: #4a5266;
+}
+.co-mail-subject {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #d9dde7;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+.co-mail-preview {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  color: #7d8595;
+  line-height: 1.55;
+  font-style: italic;
+}
+.co-mail-stats {
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: #0a0d14;
+  border: 1px solid #20242f;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #b1b6c2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.co-mail-stats .co-stat-num { color: #ff7a45; font-weight: 700; }
+.co-mail-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+/* ---- Scene 3: LinkedIn notification ping ---- */
+.co-scene-ping { text-align: center; padding-top: 18vh; }
+.co-ping-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: #10131c;
+  border: 1px solid #20242f;
+  border-radius: 8px;
+  padding: 14px 18px;
+  text-align: left;
+  margin: 0 auto;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.4);
+  animation: coPing 0.6s ease both;
+}
+@keyframes coPing { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
+.co-ping-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: #0a66c2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.co-ping-text { font-family: 'IBM Plex Sans', sans-serif; }
+.co-ping-title { font-size: 13px; color: #d9dde7; font-weight: 600; }
+.co-ping-sub { font-size: 12px; color: #7d8595; margin-top: 2px; }
+.co-ping-feed {
+  margin-top: 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #4a5266;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+.co-ping-feed div { opacity: 0; animation: coTypeLine 0.4s ease forwards; }
+.co-ping-feed div:nth-child(1) { animation-delay: 0.4s; }
+.co-ping-feed div:nth-child(2) { animation-delay: 0.9s; }
+.co-ping-feed div:nth-child(3) { animation-delay: 1.4s; }
 
 
 /* SOURCE: product/reskin/theme-catalog.css */
@@ -11292,7 +11538,91 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
 <!-- ============================================================
      PROLOGUE: LinkedIn -> Interview -> Offer Letter
      ============================================================ -->
-<div id="prologue">
+<!-- ============================================================
+     COLD OPEN — Pre-prologue cinematic intro
+     Establishes "you, a student, mid-internship hunt" before
+     the LinkedIn page loads. Three scenes; skippable.
+     ============================================================ -->
+<div id="coldOpen" hidden>
+  <button id="coldSkipBtn" type="button" onclick="ColdOpen.skip()">Skip intro &rarr;</button>
+
+  <!-- Scene 1: Boot / time-stamp -->
+  <div class="co-scene co-scene-boot" data-scene="boot">
+    <div class="co-prompt">~/applications<span class="co-cursor"></span></div>
+    <p class="co-line co-line-1">Wednesday, 2:14 PM.</p>
+    <p class="co-line co-line-2">Library, between classes.</p>
+    <p class="co-line co-line-3 dim">Two months into the summer internship hunt.</p>
+    <button class="co-continue" type="button" onclick="ColdOpen.goInbox()">Check inbox &rarr;</button>
+  </div>
+
+  <!-- Scene 2: Inbox of rejections -->
+  <div class="co-scene co-scene-inbox" data-scene="inbox">
+    <div class="co-mail-shell">
+      <div class="co-mail-header">
+        <div class="co-mail-logo">Mail</div>
+        <div class="co-mail-meta">Inbox &middot; 247 unread</div>
+      </div>
+
+      <div class="co-mail-row">
+        <div class="co-mail-row-top">
+          <div class="co-mail-sender">Atlas Robotics Talent</div>
+          <div class="co-mail-time">Today &middot; 9:14 AM</div>
+        </div>
+        <div class="co-mail-subject">Re: Summer 2026 Mechanical Intern &mdash; Application Update</div>
+        <div class="co-mail-preview">&ldquo;...we&rsquo;ve reviewed your application and decided to move forward with other candidates. Over 4,200 students applied for this role...&rdquo;</div>
+      </div>
+
+      <div class="co-mail-row">
+        <div class="co-mail-row-top">
+          <div class="co-mail-sender">Figure AI &middot; University Recruiting</div>
+          <div class="co-mail-time">Yesterday &middot; 4:02 PM</div>
+        </div>
+        <div class="co-mail-subject">Mechanical Engineering Intern, Summer 2026</div>
+        <div class="co-mail-preview">&ldquo;...your application has not been selected to advance. We encourage you to apply again next cycle...&rdquo;</div>
+      </div>
+
+      <div class="co-mail-row">
+        <div class="co-mail-row-top">
+          <div class="co-mail-sender">Apptronik Intern Program</div>
+          <div class="co-mail-time">Mon &middot; 11:48 AM</div>
+        </div>
+        <div class="co-mail-subject">Thank you for your interest in our 2026 Intern Program</div>
+        <div class="co-mail-preview">&ldquo;...unfortunately we&rsquo;re unable to move forward with your application at this time...&rdquo;</div>
+      </div>
+
+      <div class="co-mail-stats">
+        <span class="co-stat-num">43</span> applications sent &nbsp;&middot;&nbsp;
+        <span class="co-stat-num">2</span> screeners &nbsp;&middot;&nbsp;
+        <span class="co-stat-num">0</span> offers
+      </div>
+
+      <div class="co-mail-actions">
+        <button class="co-continue" type="button" style="animation: coTypeLine 0.4s ease 0.6s forwards;" onclick="ColdOpen.goPing()">Open LinkedIn &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scene 3: LinkedIn ping / hand-off -->
+  <div class="co-scene co-scene-ping" data-scene="ping">
+    <div class="co-ping-feed">
+      <div>&gt; Tesla Optimus hits 500 units/week on the Fremont line</div>
+      <div>&gt; Figure AI closes $1.5B Series C at $40B valuation</div>
+      <div>&gt; Apptronik opens 200 mech eng roles for 2026 ramp</div>
+    </div>
+    <div style="height: 32px;"></div>
+    <div class="co-ping-card">
+      <div class="co-ping-icon">in</div>
+      <div class="co-ping-text">
+        <div class="co-ping-title">Kinetic Robotics is hiring an Actuator Intern</div>
+        <div class="co-ping-sub">Promoted post &middot; just now</div>
+      </div>
+    </div>
+    <div style="height: 24px;"></div>
+    <button class="co-continue" type="button" style="animation: coTypeLine 0.4s ease 1.8s forwards;" onclick="ColdOpen.goLinkedIn()">View posting &rarr;</button>
+  </div>
+</div>
+
+<div id="prologue" hidden>
   <div class="linkedin-app">
     <div class="li-topbar">
       <div class="li-topbar-inner">
@@ -11318,7 +11648,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="li-profile-banner"></div>
           <div class="li-profile-avatar">AE</div>
           <div class="li-profile-name">You</div>
-          <div class="li-profile-headline">Aspiring engineer | Open to robotics work | Curious enough to click the weird posting</div>
+          <div class="li-profile-headline">3rd-year Mechanical Engineering &middot; Seeking summer internship &middot; Robotics &middot; Curious enough to click the weird posting</div>
           <div class="li-profile-stats">
             <div class="li-profile-stat"><span>Profile viewers</span><span>847</span></div>
             <div class="li-profile-stat"><span>Post impressions</span><span>0</span></div>
@@ -11345,14 +11675,14 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
                 Kinetic Robotics
                 <span class="li-promoted">Promoted</span>
               </div>
-              <div class="li-post-tagline">7 employees | San Francisco | 6-week contract</div>
+              <div class="li-post-tagline">7 employees | San Francisco | Summer Internship &middot; 6 weeks</div>
               <div class="li-post-time">3m | Public</div>
             </div>
             <button class="li-follow-btn" type="button">+ Follow</button>
           </div>
           <div class="li-post-body">
-            <strong>We're hiring.</strong><br><br>
-            We won the KR-7 humanoid platform contract. The elbow actuator does not exist yet. The demo is in six weeks.<br><br>
+            <strong>We're hiring a Mechanical Engineering Intern. Summer 2026.</strong><br><br>
+            We won the KR-7 humanoid platform contract. The elbow actuator does not exist yet. The demo is in six weeks. We need an intern who can own the design end-to-end.<br><br>
             Our robots assist in warehouse logistics, elder care, and disaster response. The joints have to work, people are depending on them.<br><br>
             <!-- Images per Aaron's note L2: foster interest by showing what
                  actuators look like in the real world. Atlas (DARPA public
@@ -11454,9 +11784,9 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
     </div>
 
     <div id="prologueOffer" class="offer-letter dm-window">
-      <div class="offer-headline" id="offerHeadline">Offer Extended</div>
-      <div class="offer-role">Junior Actuator Engineer</div>
-      <div class="offer-meta">Kinetic Robotics | 6-week contract | Reports to Dr. Chen</div>
+      <div class="offer-headline" id="offerHeadline">Internship Offer Extended</div>
+      <div class="offer-role">Mechanical Engineering Intern &middot; Actuator Design</div>
+      <div class="offer-meta">Kinetic Robotics | Summer 2026 | 6-week internship | Reports to Dr. Chen</div>
       <div class="offer-chen-note" id="offerChenNote"></div>
       <button class="offer-accept-btn" onclick="acceptOffer()">Enter the Lab &rarr;</button>
     </div>
@@ -13452,12 +13782,75 @@ function patchGoToStage() {
   console.log('[reskin] goToStage() patched — themes will auto-switch on stage transitions');
 }
 
+/* ================================================================
+   COLD OPEN CONTROLLER
+   Plays before the LinkedIn prologue on first visit. Three scenes;
+   skippable; state persists via localStorage so repeat visits land
+   straight on LinkedIn.
+   ================================================================ */
+const ColdOpen = {
+  STORAGE_KEY: 'ieee_cold_open_done_v1',
+
+  start() {
+    const root = document.getElementById('coldOpen');
+    const prologue = document.getElementById('prologue');
+    if (!root || !prologue) return;
+
+    // Skip on repeat visits + when ?skip=intro is present (dev).
+    const skipParam = new URLSearchParams(location.search).has('skip');
+    let alreadyDone = false;
+    try { alreadyDone = !!localStorage.getItem(this.STORAGE_KEY); } catch (e) { /* private mode */ }
+    if (alreadyDone || skipParam) {
+      this._handOff();
+      return;
+    }
+
+    prologue.hidden = true;
+    root.hidden = false;
+    this._showScene('boot');
+  },
+
+  goInbox()    { this._showScene('inbox'); },
+  goPing()     { this._showScene('ping'); },
+  goLinkedIn() { this._finish(); },
+  skip()       { this._finish(); },
+
+  _showScene(name) {
+    const root = document.getElementById('coldOpen');
+    if (!root) return;
+    root.querySelectorAll('.co-scene').forEach(s => {
+      s.classList.toggle('active', s.dataset.scene === name);
+    });
+    // Move focus to the scene's primary continue button so Enter advances.
+    const btn = root.querySelector('.co-scene.active .co-continue');
+    if (btn) setTimeout(() => btn.focus(), 100);
+  },
+
+  _finish() {
+    try { localStorage.setItem(this.STORAGE_KEY, '1'); } catch (e) {}
+    this._handOff();
+  },
+
+  _handOff() {
+    const root = document.getElementById('coldOpen');
+    const prologue = document.getElementById('prologue');
+    if (root) root.hidden = true;
+    if (prologue) prologue.hidden = false;
+    // Re-apply the LinkedIn theme now that prologue is visible.
+    if (typeof applyTheme === 'function') applyTheme(-1, true);
+  },
+};
+
 /**
  * Initialize the theme system.
+ * - Plays the cold-open first if it hasn't run yet
  * - Applies the prologue theme immediately
  * - Patches goToStage() after a tick to let the game script init
  */
 function initThemeSystem() {
+  // Cold-open gate (no-op on repeat visits)
+  try { ColdOpen.start(); } catch (e) { /* never block load */ }
+
   // Apply the currently visible shell instantly on first load.
   const prologue = document.getElementById('prologue');
   const activeStage = document.querySelector('.stage.active');
@@ -17425,7 +17818,7 @@ function skipStage(n) {
 // ============================================================
 // STAGE 0: Dr. Chen Intro Typewriter
 // ============================================================
-const CHEN_INTRO_TEXT = "Hey, you must be the new hire. I'm Chen, I run actuators here.\n\nShort version: we landed the KR-7 contract, the elbow joint needs a motor and gearbox, and you're designing it. You've probably seen the humanoid robot demos in the news. Tesla, Figure, Boston Dynamics. The joints in those machines? Someone had to design each one. That's what we do.\n\nOpen the brief, read the hard numbers, then we'll get to work.";
+const CHEN_INTRO_TEXT = "Welcome to day one of your internship. I'm Chen, I run actuators here.\n\nShort version: we landed the KR-7 contract, the elbow joint needs a motor and gearbox, and you're designing it. Yes, you. That's how this internship works — interns own real parts that ship. You've probably seen the humanoid robot demos in the news. Tesla, Figure, Boston Dynamics. The joints in those machines? Someone had to design each one. That's what we do.\n\nOpen the brief, read the hard numbers, then we'll get to work.";
 
 function typewriterEffect(text, container, speed, callback) {
   container.innerHTML = '';
