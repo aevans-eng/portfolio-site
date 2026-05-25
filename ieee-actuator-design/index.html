@@ -10219,6 +10219,146 @@ body.theme-slack .slack-compose {
   background: #222529;
 }
 
+/* ================================================================
+   STAGE 5 LIVE CHAT SCROLL REGION
+   Real-Slack model -- live chat lives inside a scrollable box so
+   it doesn't grow unbounded down the page. Pinned-feed (sim) on the
+   left stays sticky; chat on the right scrolls in its own window.
+   New messages auto-scroll to the bottom, UNLESS the reader has
+   scrolled up -- then a "new messages" pill appears so they can
+   catch up without losing their place.
+   ================================================================ */
+.s5-chat-block {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  margin: 4px 0 0;
+}
+.s5-chat-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px 8px;
+  font-size: 0.66rem;
+  color: rgba(214, 221, 234, 0.55);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.s5-chat-live-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  margin-right: 7px;
+  vertical-align: 1px;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.18);
+  animation: s5LiveDot 1.8s ease-in-out infinite;
+}
+@keyframes s5LiveDot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .s5-chat-live-dot { animation: none; }
+}
+.s5-chat-scroll-wrap {
+  position: relative;
+  min-height: 0;
+}
+.s5-chat-scroll {
+  max-height: 55vh;
+  min-height: 240px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 14px 14px 18px;
+  background: rgba(0, 0, 0, 0.20);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  scroll-behavior: smooth;
+  /* Prevent the parent page from scrolling when the chat hits its
+     scroll boundary -- so the chat scroll feels self-contained. */
+  overscroll-behavior: contain;
+}
+.s5-chat-scroll:focus-visible {
+  outline: 2px solid rgba(79, 195, 247, 0.55);
+  outline-offset: -2px;
+}
+.s5-chat-scroll::-webkit-scrollbar { width: 8px; }
+.s5-chat-scroll::-webkit-scrollbar-track { background: transparent; }
+.s5-chat-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+.s5-chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+/* Firefox */
+.s5-chat-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+}
+/* Empty state — when no messages yet */
+.s5-chat-scroll:empty::before {
+  content: "Waiting for the team to chime in. Start the shift and the room reacts in real time.";
+  display: block;
+  color: rgba(214, 221, 234, 0.35);
+  font-size: 0.82rem;
+  font-style: italic;
+  text-align: center;
+  padding: 32px 16px;
+  line-height: 1.5;
+}
+/* Live messages inside the scroll keep the existing slack-msg layout
+   but tighten the spacing so the box isn't visually loud. */
+.s5-chat-scroll .s5-chat-live {
+  margin: 0;
+  padding: 6px 0;
+}
+/* "New messages" pill — appears only when reader has scrolled up
+   and a new message lands below their viewport. */
+.s5-chat-newmsg-pill {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #1264a3;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  z-index: 3;
+}
+.s5-chat-newmsg-pill.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.s5-chat-newmsg-pill:hover { background: #1471c0; }
+.s5-chat-newmsg-pill:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+}
+@media (max-width: 900px) {
+  .s5-chat-scroll {
+    max-height: 50vh;
+    min-height: 220px;
+    padding: 12px 12px 14px;
+  }
+  .s5-chat-block-header { font-size: 0.62rem; padding: 0 4px 6px; }
+}
+
 body.theme-slack .slack-compose-input {
   display: flex;
   align-items: center;
@@ -13622,6 +13762,25 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
             </div>
           </details>
+        </div>
+
+        <!-- ============================================================
+             LIVE CHAT SCROLL REGION
+             Slack-style scrollable chat window. StageFiveChat.deliver
+             appends new .s5-chat-live messages inside #s5ChatScroll.
+             Auto-scrolls to the bottom on new messages UNLESS the
+             reader has scrolled up to read history -- in that case
+             the "new messages" pill appears.
+             ============================================================ -->
+        <div class="s5-chat-block">
+          <div class="s5-chat-block-header">
+            <span><span class="s5-chat-live-dot" aria-hidden="true"></span>Live channel chat</span>
+            <span id="s5ChatScrollCount" aria-live="polite">0 messages</span>
+          </div>
+          <div class="s5-chat-scroll-wrap">
+            <div class="s5-chat-scroll" id="s5ChatScroll" tabindex="0" role="log" aria-live="polite" aria-relevant="additions" aria-label="Live channel chat messages"></div>
+            <button class="s5-chat-newmsg-pill" id="s5ChatNewMsgPill" type="button" aria-label="Jump to newest messages">&darr; New messages</button>
+          </div>
         </div>
       </div>
 
@@ -22526,11 +22685,84 @@ const StageFiveChat = {
     this._midBeatFired = false;
     this.lastSpeakerKey = null;
     if (this._wallTimer) { clearTimeout(this._wallTimer); this._wallTimer = null; }
-    // Strip any prior dynamic messages from the stream (keep statics)
-    const list = document.getElementById('s5SlackMessages');
-    if (list) {
-      [...list.querySelectorAll('.s5-chat-live')].forEach(el => el.remove());
+    // Strip any prior live messages from the scroll region.
+    // Prefer the dedicated chat scroll container; fall back to the
+    // outer messages list for older builds that don't have it yet.
+    const scroll = document.getElementById('s5ChatScroll');
+    if (scroll) {
+      [...scroll.querySelectorAll('.s5-chat-live')].forEach(el => el.remove());
+    } else {
+      const list = document.getElementById('s5SlackMessages');
+      if (list) [...list.querySelectorAll('.s5-chat-live')].forEach(el => el.remove());
     }
+    this._updateChatCount();
+    const pill = document.getElementById('s5ChatNewMsgPill');
+    if (pill) pill.classList.remove('show');
+  },
+
+  // Helpers for the chat scroll region (live message log).
+  _chatHost() {
+    return document.getElementById('s5ChatScroll')
+        || document.getElementById('s5SlackMessages');
+  },
+  _isAtBottom(el) {
+    // 24px tolerance so "near the bottom" still counts as "at the bottom"
+    return el.scrollHeight - (el.scrollTop + el.clientHeight) <= 24;
+  },
+  _scrollToBottom(el, smooth) {
+    if (!el) return;
+    // Mark auto-scroll active for ~500ms (the animation window) so the
+    // scroll listener in _wireChatPill ignores fired events during the
+    // animation. Otherwise smooth-scroll generates many scroll events
+    // that get misread as "user fleeing the bottom" mid-animation.
+    this._autoScrolling = true;
+    if (this._autoScrollTimer) clearTimeout(this._autoScrollTimer);
+    this._autoScrollTimer = setTimeout(() => {
+      this._autoScrolling = false;
+      this._autoScrollTimer = null;
+    }, smooth ? 500 : 30);
+    try {
+      el.scrollTo({ top: el.scrollHeight, behavior: smooth ? 'smooth' : 'auto' });
+    } catch (e) {
+      el.scrollTop = el.scrollHeight;
+    }
+  },
+  _updateChatCount() {
+    const host = this._chatHost();
+    const countEl = document.getElementById('s5ChatScrollCount');
+    if (!host || !countEl) return;
+    const n = host.querySelectorAll('.s5-chat-live').length;
+    countEl.textContent = n + ' message' + (n === 1 ? '' : 's');
+  },
+  _wireChatPill() {
+    if (this._pillWired) return;
+    const scroll = document.getElementById('s5ChatScroll');
+    const pill = document.getElementById('s5ChatNewMsgPill');
+    if (!scroll || !pill) return;
+    this._pillWired = true;
+    // Track follow-bottom intent. Driven by user scroll, NOT by
+    // instantaneous scrollTop checks (which lie mid-animation).
+    // Defaults to true so the first burst of messages auto-scrolls.
+    this._followBottom = true;
+    this._suppressNextScroll = false;
+    pill.addEventListener('click', () => {
+      this._followBottom = true;
+      this._scrollToBottom(scroll, true);
+      pill.classList.remove('show');
+    });
+    scroll.addEventListener('scroll', () => {
+      // Programmatic smooth-scroll fires many events during the
+      // animation. _autoScrolling masks them so user-intent tracking
+      // doesn't flip-flop while the box is animating to bottom.
+      if (this._autoScrolling) return;
+      if (this._isAtBottom(scroll)) {
+        this._followBottom = true;
+        pill.classList.remove('show');
+      } else {
+        // User actively scrolled up.
+        this._followBottom = false;
+      }
+    }, { passive: true });
   },
 
   // Wall-clock drain. After the sim loop stops at shift-end, the queued
@@ -22598,10 +22830,14 @@ const StageFiveChat = {
     this.nextGap = this.minGap + Math.random() * (this.maxGap - this.minGap);
   },
 
-  // Append a slack message to the comment stream with a fade-in.
+  // Append a slack message to the live chat scroll region with a
+  // fade-in. Auto-scrolls if the reader is already at the bottom;
+  // otherwise raises the "new messages" pill so they can catch up
+  // without losing their scroll position.
   deliver(speakerKey, text) {
-    const list = document.getElementById('s5SlackMessages');
-    if (!list) return;
+    const host = this._chatHost();
+    if (!host) return;
+    this._wireChatPill();
     if (!this._recent) this._recent = [];
     this._recent.push(text);
     if (this._recent.length > 6) this._recent.shift();
@@ -22615,13 +22851,22 @@ const StageFiveChat = {
         <div class="slack-msg-text"></div>
       </div>`;
     msg.querySelector('.slack-msg-text').textContent = text;
-    list.appendChild(msg);
-    // Cap the live chat to the most-recent N messages so the page doesn't
-    // grow unbounded as the shift produces more commentary. Older lines
-    // fade out and get removed. The static intro + pinned-feed messages
-    // (not .s5-chat-live) are untouched.
-    const liveMax = 8;
-    const liveMsgs = list.querySelectorAll('.s5-chat-live');
+    // Follow-bottom intent: if the reader hasn't scrolled up, we
+    // keep them pinned to the latest message. The flag is updated by
+    // the scroll listener in _wireChatPill. Treat the first message
+    // as "at bottom" so it always shows. Use the flag (set on user
+    // scroll), NOT scrollTop -- scrollTop lies during animations.
+    const isScrollable = host.id === 's5ChatScroll';
+    const wasAtBottom = !isScrollable
+      || host.querySelectorAll('.s5-chat-live').length === 0
+      || (this._followBottom !== false);
+    host.appendChild(msg);
+    // Cap the live chat to the most-recent N messages so the box
+    // doesn't grow unbounded across a long shift. Older lines drop
+    // off the top. Statics (intro, summary etc.) live outside the
+    // scroll region and are untouched.
+    const liveMax = 24;
+    const liveMsgs = host.querySelectorAll('.s5-chat-live');
     if (liveMsgs.length > liveMax) {
       const toRemove = liveMsgs.length - liveMax;
       for (let i = 0; i < toRemove; i++) liveMsgs[i].remove();
@@ -22633,8 +22878,15 @@ const StageFiveChat = {
         { duration: 280, easing: 'cubic-bezier(0.22, 0.61, 0.36, 1)', fill: 'backwards' }
       );
     }
-    // auto-scroll the column if user is near bottom
-    msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    if (wasAtBottom) {
+      this._scrollToBottom(host, !reduce);
+      const pill = document.getElementById('s5ChatNewMsgPill');
+      if (pill) pill.classList.remove('show');
+    } else if (isScrollable) {
+      const pill = document.getElementById('s5ChatNewMsgPill');
+      if (pill) pill.classList.add('show');
+    }
+    this._updateChatCount();
   },
 
   // ============ Event hooks ============
