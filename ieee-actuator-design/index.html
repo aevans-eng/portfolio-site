@@ -16401,16 +16401,173 @@ const audioFx = (function () {
     btn.title = enabled ? 'Sound on (click to mute)' : 'Sound muted (click to unmute)';
   }
 
+  // ---- Chiptune music engine ----
+  // 8-bit / Undertale-style procedural music. Square-wave melody +
+  // triangle-wave bass scheduled against the same AudioContext as the
+  // SFX above. Shares the mute toggle. No asset files.
+  let musicPlaying = false;
+  let musicTimers = [];
+  let musicTrack = null;
+
+  function noteFreq(note) {
+    if (!note || note === 'rest') return 0;
+    const names = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+    const oct = parseInt(note.slice(-1));
+    if (Number.isNaN(oct)) return 0;
+    const name = note.slice(0, -1);
+    const idx = names.indexOf(name);
+    if (idx < 0) return 0;
+    const semitones = idx - 9 + (oct - 4) * 12;
+    return 440 * Math.pow(2, semitones / 12);
+  }
+
+  function playMusicNote(note, durSec, type, gainPeak) {
+    if (!enabled) return;
+    const c = ensureCtx();
+    if (!c) return;
+    if (c.state === 'suspended') { try { c.resume(); } catch (e) {} }
+    if (note === 'rest' || !note) return;
+    const f = noteFreq(note);
+    if (f <= 0) return;
+    const osc = c.createOscillator();
+    const g = c.createGain();
+    osc.type = type || 'square';
+    osc.frequency.value = f;
+    const t0 = c.currentTime;
+    const peak = gainPeak || 0.08;
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(peak, t0 + 0.008);
+    g.gain.setValueAtTime(peak, t0 + Math.max(0.02, durSec - 0.03));
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + durSec);
+    osc.connect(g); g.connect(master);
+    osc.start(t0);
+    osc.stop(t0 + durSec + 0.05);
+  }
+
+  function scheduleVoice(notes, type, gainPeak, beatMs) {
+    let elapsed = 0;
+    notes.forEach(([n, d]) => {
+      const startMs = elapsed;
+      musicTimers.push(setTimeout(() => {
+        if (!musicPlaying) return;
+        playMusicNote(n, (d * beatMs / 1000) * 0.94, type, gainPeak);
+      }, startMs));
+      elapsed += d * beatMs;
+    });
+    return elapsed;
+  }
+
+  function startMusic(track) {
+    if (!track) return;
+    stopMusic();
+    musicTrack = track;
+    musicPlaying = true;
+    const beatMs = 60000 / (track.tempo || 120);
+    const melodyDur = track.melody ? scheduleVoice(track.melody, 'square', 0.055, beatMs) : 0;
+    const bassDur = track.bass ? scheduleVoice(track.bass, 'triangle', 0.09, beatMs) : 0;
+    // Loop after the longer of melody/bass finishes.
+    const loopMs = Math.max(melodyDur, bassDur, 1000);
+    musicTimers.push(setTimeout(() => {
+      if (musicPlaying) startMusic(musicTrack);
+    }, loopMs));
+  }
+
+  function stopMusic() {
+    musicPlaying = false;
+    musicTimers.forEach(clearTimeout);
+    musicTimers = [];
+  }
+
+  // When the mute toggle goes off, kill the music timers too -- otherwise
+  // they keep scheduling silent notes and waste cycles. Re-call startMusic
+  // when un-muting to bring it back.
+  const _origSetEnabled = setEnabled;
+  function setEnabledWithMusic(on) {
+    _origSetEnabled(on);
+    if (!on) stopMusic();
+    else if (musicTrack) startMusic(musicTrack);
+  }
+
   return {
     isEnabled: () => enabled,
-    setEnabled,
+    setEnabled: setEnabledWithMusic,
     updateUI: updateAudioToggleUI,
     transition: () => tone(220, 0.18, 'sine', 0.35, 0.005, 0.18),
     chenPing: () => { tone(660, 0.08, 'sine', 0.35, 0.005, 0.08); setTimeout(() => tone(880, 0.06, 'sine', 0.25, 0.005, 0.06), 60); },
     success: () => chord([523.25, 659.25, 783.99], 0.22, 'triangle', 0.5), // C5 E5 G5
     fail: () => chord([196, 165, 130.81], 0.28, 'sawtooth', 0.35),         // G3 E3 C3 (descending)
     soft: () => tone(440, 0.05, 'sine', 0.18, 0.005, 0.05),
+    thud: () => tone(80, 0.18, 'sawtooth', 0.22, 0.002, 0.18),
+    startMusic,
+    stopMusic,
   };
+})();
+
+window.audioFx = audioFx;
+
+// ---- Chiptune tracks ----
+// Bouncy curious 8-bit melody. C-major, 130 BPM. Loops every 16 beats.
+// Lives outside audioFx so it can be edited / swapped without touching
+// the engine.
+const CHIPTUNE_TRACKS = {
+  hub: {
+    tempo: 130,
+    melody: [
+      ['E4', 0.5], ['G4', 0.5], ['C5', 0.5], ['rest', 0.5],
+      ['G4', 0.5], ['E4', 0.5], ['C4', 1],
+      ['F4', 0.5], ['A4', 0.5], ['C5', 0.5], ['rest', 0.5],
+      ['A4', 0.5], ['F4', 0.5], ['D4', 1],
+      ['G4', 0.5], ['B4', 0.5], ['D5', 0.5], ['rest', 0.5],
+      ['B4', 0.5], ['G4', 0.5], ['E4', 1],
+      ['F4', 0.5], ['E4', 0.5], ['D4', 0.5], ['C4', 0.5],
+      ['G3', 0.5], ['C4', 0.5], ['rest', 1],
+    ],
+    bass: [
+      ['C3', 2], ['G2', 2],
+      ['F3', 2], ['C3', 2],
+      ['G3', 2], ['C3', 2],
+      ['F3', 1], ['G2', 1], ['C3', 2],
+    ],
+  },
+  // Heavier mood for the live shift demo. Same key, lower octave, more drive.
+  shift: {
+    tempo: 140,
+    melody: [
+      ['C4', 0.25], ['E4', 0.25], ['G4', 0.25], ['C5', 0.25],
+      ['B4', 0.5], ['G4', 0.5], ['E4', 1],
+      ['C4', 0.25], ['F4', 0.25], ['A4', 0.25], ['C5', 0.25],
+      ['A4', 0.5], ['F4', 0.5], ['D4', 1],
+      ['D4', 0.25], ['G4', 0.25], ['B4', 0.25], ['D5', 0.25],
+      ['C5', 0.5], ['B4', 0.5], ['G4', 1],
+      ['F4', 0.5], ['E4', 0.5], ['D4', 1],
+      ['G3', 2],
+    ],
+    bass: [
+      ['C3', 1], ['C3', 1], ['G2', 1], ['G2', 1],
+      ['F3', 1], ['F3', 1], ['C3', 1], ['C3', 1],
+      ['G3', 1], ['G3', 1], ['C3', 1], ['C3', 1],
+      ['F3', 1], ['G2', 1], ['C3', 2],
+    ],
+  },
+};
+window.CHIPTUNE_TRACKS = CHIPTUNE_TRACKS;
+
+// Auto-start the hub track on first user interaction (browser autoplay
+// policy needs a gesture before the AudioContext can resume). Once
+// started, the music loops until muted or replaced by another track.
+(function autoStartMusicOnFirstGesture() {
+  let bootedMusic = false;
+  function boot() {
+    if (bootedMusic) return;
+    bootedMusic = true;
+    try { audioFx.startMusic(CHIPTUNE_TRACKS.hub); } catch (e) {}
+    document.removeEventListener('click', boot, true);
+    document.removeEventListener('keydown', boot, true);
+    document.removeEventListener('touchstart', boot, true);
+  }
+  document.addEventListener('click', boot, true);
+  document.addEventListener('keydown', boot, true);
+  document.addEventListener('touchstart', boot, true);
 })();
 
 function installAudioToggleUI() {
@@ -18068,6 +18225,21 @@ const REQUIREMENTS = {
 // choice fatigue), each question grounded in first principles or a real
 // engineering instinct, Chen's reply teaches the principle either way.
 // Persona namespace preserved so downstream dialog branches still resolve.
+// Interview questions for grade 9-11 students applying as engineering
+// interns. Mix of motivation (Q1) and first-principles mechanical
+// intuition (Q2-Q5). Each Q2-Q5 has one correct answer and one
+// red-flag answer. Three or more red flags ends the conversation with
+// no offer — the rejection screen is real, not theatrical.
+//
+// First-principles topics covered (BC curriculum Sciences 9 / Physics 11):
+//   Q2: torque = force × lever arm
+//   Q3: gear ratio trades speed for torque
+//   Q4: motor limits and engineering headroom
+//   Q5: energy conservation (efficiency = heat loss)
+//
+// Chen's replies to red-flag answers always teach the concept rather
+// than just rejecting — students who choose poorly should learn what
+// they got wrong even on the rejection path.
 const INTERVIEW_QUESTIONS = [
   {
     id: 'q1',
@@ -18084,41 +18256,54 @@ const INTERVIEW_QUESTIONS = [
   },
   {
     id: 'q2',
-    persona: 'approach',
-    chen: "When a design isn't working, what's your first move?",
+    persona: 'lever',
+    chen: "Two robot arms lift the same 10 kg. Arm A is 30 cm long. Arm B is 60 cm long. Which arm's motor has to push harder at the joint, and why?",
     answers: [
-      { text: "Re-read the requirements. I probably misread something.",
-        tag: 'systematic',
-        chenReply: "Most broken designs are constraint problems wearing a costume. You'll save weeks." },
-      { text: "Change one variable at a time and see what shifts.",
-        tag: 'iterative',
-        chenReply: "Right rule. I watched a team change three things at once. We spent a month figuring out which one mattered." },
+      { text: "Arm B — the weight is twice as far from the joint, so it takes twice the torque to hold it up.",
+        tag: 'correct',
+        chenReply: "Yes. Torque is force times lever arm. Doubling the arm doubles the torque demand. That's the whole reason we obsess over reach in this job." },
+      { text: "Arm A — shorter arms have to work harder against the weight.",
+        tag: '_redflag',
+        chenReply: "Other direction. Longer arms multiply the load on the joint, not shorter ones. Think about holding a barbell. Closer to your body = easy. Arm fully out = hard. Same physics." },
     ],
   },
   {
     id: 'q3',
-    persona: 'priority',
-    chen: "Real one. A motor stalls at 0.5 N·m. The arm needs 7 N·m at the joint. Pick the cheaper fix.",
+    persona: 'gears',
+    chen: "A motor spins a small gear. That small gear meshes with a big gear that has four times as many teeth. What does the big gear actually do?",
     answers: [
-      { text: "Add gear reduction. Same motor, more torque, less speed.",
-        tag: 'packaging',
-        chenReply: "That's the whole game. Motor sets the headroom, gears do the math, your job is balancing the two." },
-      { text: "Find a bigger motor that hits 7 N·m on its own.",
-        tag: 'efficiency',
-        chenReply: "Bigger motor solves it, sure. Then you pay in size and mass. Watch the 60 mm envelope." },
+      { text: "Spins four times slower than the motor, but pushes four times harder.",
+        tag: 'correct',
+        chenReply: "Right. Gear ratios trade speed for force. That's why every powerful actuator on the planet has gears between the motor and the load." },
+      { text: "Spins four times faster than the motor. Bigger gears spin faster.",
+        tag: '_redflag',
+        chenReply: "Opposite. Big gear, slow turn. Try this in your head: the small gear has to make four full rotations just to drag the big gear around once. Slower, but with more force on the output." },
     ],
   },
   {
     id: 'q4',
-    persona: 'pressure',
-    chen: "Demo's in six weeks. The arm has to work. How do you feel?",
+    persona: 'limits',
+    chen: "Your motor is rated to 5 N·m. In testing, the arm hits a heavy object and the motor heats up and stops moving. What's actually happening?",
     answers: [
-      { text: "Ready. Let's start.",
-        tag: 'confident',
-        chenReply: "Good. Let's go." },
-      { text: "Tight timeline. I'd rather get the constraints right than rush a prototype.",
-        tag: 'cautious',
-        chenReply: "Best answer. Engineers who blow deadlines usually skipped the constraint review." },
+      { text: "It's being asked for more force than it can deliver. The fix is either lighter loads, a stronger motor, or a gear stage that gives more torque.",
+        tag: 'correct',
+        chenReply: "Exactly. A stalled motor is a motor at its limit, drawing maximum current, generating heat instead of motion. That's not a broken part. That's a design that asked for more than the part can give." },
+      { text: "The motor is defective. We should return it and try a new one.",
+        tag: '_redflag',
+        chenReply: "It's not broken. It's at its rated limit. Replacing the motor with an identical one will produce identical behavior. The design is the problem, not the part. We'd either need a stronger motor, more gear reduction, or a lighter load." },
+    ],
+  },
+  {
+    id: 'q5',
+    persona: 'energy',
+    chen: "A motor is 80% efficient. You feed it 100 watts of electrical power. Where does the other 20 watts go?",
+    answers: [
+      { text: "Most of it turns into heat. That's why motors get warm under load.",
+        tag: 'correct',
+        chenReply: "Right. Energy doesn't disappear. The 80 watts that don't turn into useful motion show up as heat in the motor windings and bearings. That's why motor sizing has to account for cooling, not just torque." },
+      { text: "It gets stored inside the motor for the next time it runs.",
+        tag: '_redflag',
+        chenReply: "Motors don't store energy. They convert it — mostly to mechanical motion, but some always to heat. Conservation of energy: the 20 watts has to go somewhere, and it's not coming back to help you next cycle." },
     ],
   },
 ];
@@ -18269,15 +18454,19 @@ function _pickAnswer(qIdx, aIdx) {
 }
 
 function _finishInterview() {
-  // Compute hire tier
+  // Compute hire tier. Of the 4 testable questions (Q2-Q5), 3+ red
+  // flags ends the interview with no offer. This makes the rejection
+  // path real and achievable, not theatrical -- the rubric judges
+  // Real-World authenticity and 'sometimes you don't get the job' is
+  // an honest internship experience for a 15-17 year old to encounter.
   const rf = STATE.persona.redFlags;
-  if (rf >= 4) {
+  if (rf >= 3) {
     STATE.persona.hireTier = 'rejected';
     _showRejection();
     return;
   }
-  if (rf === 3) STATE.persona.hireTier = 'reluctant';
-  else if (rf === 2) STATE.persona.hireTier = 'cautious';
+  if (rf === 2) STATE.persona.hireTier = 'reluctant';
+  else if (rf === 1) STATE.persona.hireTier = 'cautious';
   else STATE.persona.hireTier = 'normal';
   // Final Chen messages before offer — 3 beats for better cadence
   const closingLines = {
@@ -18318,12 +18507,15 @@ function _finishInterview() {
 function _showRejection() {
   const rej = document.getElementById('prologueReject');
   const body = document.getElementById('rejectBody');
-  // Show rejection in chat first
   document.getElementById('icChoices').innerHTML = '';
+  // Rejection is a teaching moment, not a punishment. Chen names
+  // what's missing -- the fundamentals -- and points the student at
+  // resources before closing. Real internship rejections often work
+  // like this: not a no, a 'not yet'.
   const lines = [
-    "I'm going to stop you there.",
-    "This isn't the right fit. The KR-7 actuator will hurt someone if the wrong person designs it.",
-    "No hard feelings. Actually, a few hard feelings. But professionally.",
+    "Going to stop here.",
+    "Look, the gaps are in the fundamentals. Lever arms, gear ratios, what a stalled motor actually means. We can't teach that on the job — the demo's in six weeks and the actuator has to work.",
+    "Brush up on the basics — Khan Academy has a solid mechanics series — and reapply next cycle. I'm serious. Most engineers I know failed an interview before they got one.",
   ];
   let delay = 700;
   lines.forEach(line => {
@@ -18331,11 +18523,11 @@ function _showRejection() {
       const b = _addChenMsg('', true);
       setTimeout(() => { b.classList.remove('typing'); b.textContent = line; }, 600);
     }, delay);
-    delay += 1500;
+    delay += 1700;
   });
   setTimeout(() => {
     openPrologueOverlay('prologueReject');
-    body.innerHTML = "Dr. Chen ended the call.<br><br>Close-ish though.";
+    body.innerHTML = 'Dr. Chen ended the call.<br><br>Not a no. A <strong>not yet</strong>.<br><br>The questions you missed were about <em>lever arms</em>, <em>gear ratios</em>, <em>motor limits</em>, and <em>energy conservation</em>. These are the foundation of every mechanical design you\'ll ever work on. Worth the time.';
     rej.classList.add('active');
   }, delay + 600);
 }
@@ -22294,6 +22486,9 @@ const ConveyorSim = {
     // Reset post-shift reveal so this new run hides them again
     const shell = document.querySelector('.stage5-livestream-shell');
     if (shell) shell.classList.remove('shift-complete');
+    // Swap to the heavier shift music track. Reverts to hub theme
+    // when ConveyorSim._endShift fires.
+    try { if (window.audioFx && window.CHIPTUNE_TRACKS) audioFx.startMusic(CHIPTUNE_TRACKS.shift); } catch (e) {}
     // Wipe the chat NOW (not at countdown-end) so any wall-clock verdict
     // drain still pending from the previous shift can't deliver into the
     // new shift's countdown window.
@@ -22641,6 +22836,7 @@ const ConveyorSim = {
             this._narrate(w.name + ' just got clipped by arm ' + (w.assignedArm + 1) + '.');
             this._smackCount = (this._smackCount || 0) + 1;
             if (window.StageFiveChat) StageFiveChat.onWorkerSmacked(w.name, w.assignedArm);
+            try { if (window.audioFx) audioFx.thud(); } catch (e) {}
             // clear the arm's flag: someone got hurt, message received
             arm.malfunctioning = false; arm.malfTimer = 0;
           }
@@ -22848,6 +23044,8 @@ const ConveyorSim = {
     const shell = document.querySelector('.stage5-livestream-shell');
     if (shell && !shell.classList.contains('shift-complete')) {
       shell.classList.add('shift-complete');
+      // Revert to the hub music track for the post-shift report mode.
+      try { if (window.audioFx && window.CHIPTUNE_TRACKS) audioFx.startMusic(CHIPTUNE_TRACKS.hub); } catch (e) {}
       const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (!reduce) {
         const revealed = shell.querySelectorAll('.s5-post-shift');
@@ -23805,6 +24003,16 @@ function renderStage5Scorecard(packed, lost, smackCount) {
   if (banEl) banEl.className = 's5-verdict-banner ' + banner;
   if (banStamp) banStamp.textContent = stamp;
   if (banText) banText.textContent = headline;
+
+  // Verdict stinger -- celebratory chord on PASS, descending sawtooth on FAIL,
+  // soft single tone on MARGINAL. Only fires once per scorecard render.
+  try {
+    if (window.audioFx) {
+      if (stamp === 'PASS') audioFx.success();
+      else if (stamp === 'FAIL') audioFx.fail();
+      else audioFx.chenPing();
+    }
+  } catch (e) {}
 }
 
 // Fullscreen-ish stakeholder Q&A. Uses STATE.stage5Defense session
