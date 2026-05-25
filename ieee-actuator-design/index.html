@@ -3774,9 +3774,13 @@
   .ai-arm { position: absolute; left: 24px; bottom: 16px; width: 6px; height: 0; transform-origin: bottom center; }
   .ai-shoulder { position: absolute; left: -4px; bottom: -4px; width: 14px; height: 14px; border-radius: 50%; background: #b388ff; }
   .ai-upper { position: absolute; left: 0; bottom: 0; width: 6px; height: 60px; background: linear-gradient(to top, #b388ff, #7c4dff); border-radius: 3px; transform-origin: bottom center; transform: rotate(-30deg); }
-  .ai-elbow { position: absolute; left: -2px; top: -56px; width: 10px; height: 10px; border-radius: 50%; background: #b388ff; }
-  .ai-forearm { position: absolute; left: 0; top: -54px; width: 6px; height: 50px; background: linear-gradient(to top, #b388ff, #7c4dff); border-radius: 3px; transform-origin: top center; transform: rotate(20deg); }
-  .ai-gripper { position: absolute; left: -3px; bottom: -6px; width: 12px; height: 6px; background: #b388ff; border-radius: 1px; }
+  /* Elbow + forearm + gripper nest INSIDE .ai-upper now so they
+     inherit upper's rotation. Positions are relative to upper:
+     elbow sits at the top of upper, forearm extends further up from
+     the elbow, gripper hangs off the forearm tip. */
+  .ai-elbow { position: absolute; left: -2px; top: -2px; width: 10px; height: 10px; border-radius: 50%; background: #b388ff; }
+  .ai-forearm { position: absolute; left: 0; top: -48px; width: 6px; height: 50px; background: linear-gradient(to top, #b388ff, #7c4dff); border-radius: 3px; transform-origin: bottom center; transform: rotate(20deg); }
+  .ai-gripper { position: absolute; left: -3px; top: -6px; width: 12px; height: 6px; background: #b388ff; border-radius: 1px; }
   .ai-target { position: absolute; right: 24px; bottom: 16px; width: 14px; height: 14px; border: 2px dashed #b388ff; border-radius: 2px; opacity: 0.7; }
   .ai-train-caption { font-size: 0.7rem; color: var(--text-dim); text-align: center; }
   .ai-train-meta { display: flex; flex-direction: column; gap: 8px; padding: 6px 0; }
@@ -4260,10 +4264,43 @@
   .ops-toast.warn .ops-label { color: rgba(255,167,38,0.95); }
   .ops-toast.danger { border-left-color: rgba(239,83,80,0.85); }
   .ops-toast.danger .ops-label { color: rgba(239,83,80,0.95); }
+
+  /* Chen toasts: visually distinct from system ops. Avatar circle + warmer
+     accent border + sentence-case "Dr. Chen" label so the student can tell
+     instantly whether this is a person speaking or a system message. */
+  .ops-toast-chen {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border-left-color: rgba(255, 122, 69, 0.85);
+    border-color: rgba(255, 122, 69, 0.22);
+    background: rgba(28, 22, 18, 0.96);
+  }
+  .ops-toast-chen .ops-avatar {
+    flex-shrink: 0;
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1264a3, #2d8cdb);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 12px; letter-spacing: 0.04em;
+  }
+  .ops-toast-chen .ops-body { flex: 1; min-width: 0; }
+  .ops-toast-chen .ops-label {
+    display: block;
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+    color: rgba(255, 180, 120, 0.95);
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-transform: none;
+  }
+
   @media (max-width: 720px) {
     .ops-host { right: 10px; left: 10px; max-width: none; top: 76px; }
     .ops-toast { padding: 12px 14px; font-size: 0.88rem; }
     .ops-toast .ops-label { font-size: 0.64rem; }
+    .ops-toast-chen .ops-avatar { width: 30px; height: 30px; font-size: 11px; }
   }
 
   /* ============================================================
@@ -5631,17 +5668,20 @@ body.theme-catalog .s2-catalog .mc-insight-why { display: block !important; marg
 /* Locked-teaser cards (the "complete a Stage 3 test to unlock the rest"
    placeholders) cut entirely — three motors, three cards, no chrome. */
 body.theme-catalog .s2-catalog .motor-card.locked-teaser { display: none !important; }
-/* Trade-off comparator above the cards — three bars per axis. */
+/* Trade-off comparator above the cards. Distinct dark slate so the
+   white bar text isn't invisible against the catalog's white page bg
+   (Aaron flagged 'white on white text' here). */
 body.theme-catalog .s2-catalog .s2-tradeoff {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: #1a1f2a;
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px;
   padding: 14px 16px;
   margin: 0 0 16px;
+  color: #e6eaf3;
 }
 body.theme-catalog .s2-catalog .s2-to-title {
   font-size: 0.72rem;
-  color: #6a7a8c;
+  color: #aeb9c9;
   text-transform: uppercase;
   letter-spacing: 0.7px;
   margin-bottom: 10px;
@@ -5684,9 +5724,78 @@ body.theme-catalog .s2-catalog .s2-to-bar-text {
   color: rgba(255,255,255,0.92);
   white-space: nowrap;
 }
+
+/* Legend row + selected-state highlights for the comparison chart.
+   Aaron wanted picking a motor card to highlight the matching column
+   so the relationship between card and chart is unambiguous. */
+body.theme-catalog .s2-catalog .s2-to-legend {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  margin-bottom: 8px;
+  gap: 14px;
+}
+body.theme-catalog .s2-catalog .s2-to-legend::before { content: ''; }
+body.theme-catalog .s2-catalog .s2-to-legend {
+  /* Use a sub-grid so chip columns align with the bar columns below. */
+  grid-template-columns: 110px 1fr;
+}
+body.theme-catalog .s2-catalog .s2-to-legend > .s2-to-legend-chip {
+  grid-column: 2;
+}
+body.theme-catalog .s2-catalog .s2-to-legend {
+  grid-template-columns: 110px repeat(3, 1fr);
+  gap: 6px;
+  align-items: center;
+}
+body.theme-catalog .s2-catalog .s2-to-legend > .s2-to-legend-chip:first-child {
+  grid-column: 2;
+}
+body.theme-catalog .s2-catalog .s2-to-legend-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.15s ease;
+  cursor: default;
+}
+body.theme-catalog .s2-catalog .s2-to-legend-chip.selected {
+  background: color-mix(in srgb, var(--motor-color) 22%, rgba(255,255,255,0.04));
+  border-color: var(--motor-color);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--motor-color) 25%, transparent);
+}
+body.theme-catalog .s2-catalog .s2-to-legend-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--motor-color);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--motor-color) 35%, transparent);
+}
+body.theme-catalog .s2-catalog .s2-to-legend-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+/* Selected bar across all axes pops with the motor's accent color. */
+body.theme-catalog .s2-catalog .s2-to-bar.selected {
+  outline: 2px solid var(--motor-color);
+  outline-offset: 1px;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--motor-color) 18%, transparent);
+}
+body.theme-catalog .s2-catalog .s2-to-bar.selected .s2-to-bar-fill {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--motor-color) 85%, transparent) 0%, color-mix(in srgb, var(--motor-color) 55%, transparent) 100%);
+}
+
 @media (max-width: 720px) {
   body.theme-catalog .s2-catalog .s2-to-grid { grid-template-columns: 1fr; gap: 4px 0; }
   body.theme-catalog .s2-catalog .s2-to-label { font-size: 0.7rem; margin-top: 6px; }
+  body.theme-catalog .s2-catalog .s2-to-legend { grid-template-columns: repeat(3, 1fr); }
+  body.theme-catalog .s2-catalog .s2-to-legend > .s2-to-legend-chip:first-child { grid-column: auto; }
 }
 
 /* Sidebar */
@@ -5790,6 +5899,26 @@ body.theme-catalog .motor-card {
   cursor: pointer;
   transition: all 0.15s;
   position: relative;
+}
+/* Stylised product image at the top of each card. Replaces the
+   image-less catalog look Aaron flagged as unintuitive. */
+body.theme-catalog .mc-photo {
+  background: #f6f7fa;
+  border: 1px solid #e8eaef;
+  border-radius: 6px;
+  margin: -2px 0 10px;
+  padding: 10px;
+  display: flex; align-items: center; justify-content: center;
+}
+body.theme-catalog .mc-photo svg {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  display: block;
+}
+body.theme-catalog .motor-card.selected .mc-photo {
+  background: color-mix(in srgb, var(--motor-color, #ff6600) 6%, #fff);
+  border-color: var(--motor-color, #ff6600);
 }
 body.theme-catalog .motor-card:hover {
   border-color: #ff6600;
@@ -9703,6 +9832,12 @@ body.theme-slack .stage5-livestream-shell .slack-messages > .stage5-pinned-feed 
    redundant with the live chat that ran during the shift, so they stay
    hidden. */
 body.theme-slack .stage5-livestream-shell .s5-post-shift { display: none; }
+/* The three reviewer voice cards stay hidden even on shift-complete.
+   Their content now lives in the live chat (StageFiveChat.deliver in
+   the post-shift render) instead of as separate cards. */
+body.theme-slack .stage5-livestream-shell.shift-complete #s5VoiceMechanicalMsg,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5VoiceControlsMsg,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5VoiceClientMsg { display: none !important; }
 body.theme-slack .stage5-livestream-shell.shift-complete #s5PollMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5BotReviewMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5TeamRoomMsg,
@@ -12619,7 +12754,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
       </div>
       <div id="s1TorqueBar" style="border-radius:8px;padding:10px 14px;margin-bottom:12px;">
         <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;">
-          <span style="font-size:0.8rem;color:var(--text-dim);">Joint twist needed at this angle (torque)</span>
+          <span style="font-size:0.8rem;color:var(--text-dim);">Joint torque needed at this angle</span>
           <span style="font-size:1rem;font-weight:700;color:var(--accent);" id="s1LiveTorque">0.00 Nm</span>
         </div>
         <div class="bar-track"><div class="bar-fill green" id="s1TorqueFill" style="width:0%;transition:width 0.15s;"></div></div>
@@ -12677,10 +12812,10 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
     <div id="s1ResultsHost" style="display:none;"></div>
 
     <div class="calc-section" id="s1CalcSection" style="display:none;">
-      <h2>Step 2: Turn the Load Into Joint Twist (Torque)</h2>
+      <h2>Step 2: Turn the Load Into Joint Torque</h2>
       <div class="formula-display">T = F&#8321; &times; d&#8321; + F&#8322; &times; d&#8322;</div>
       <p style="color: var(--text-dim); font-size: 0.8rem; margin-bottom: 16px;">
-        First convert weight into push force. Then multiply by distance from the joint to get twist. That final torque number becomes the target for everything downstream.
+        First convert weight into push force. Then multiply by distance from the joint to get torque. That final torque number becomes the target for everything downstream.
       </p>
 
       <div id="s1Step_force" style="opacity:1;">
@@ -12700,7 +12835,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
       </div>
 
       <div id="s1Step_torque" style="opacity:0.3;pointer-events:none;">
-        <div style="font-size:0.78rem;color:var(--accent);margin-bottom:8px;margin-top:14px;font-weight:600;">Twist At The Joint (torque, T = F &times; d)</div>
+        <div style="font-size:0.78rem;color:var(--accent);margin-bottom:8px;margin-top:14px;font-weight:600;">Torque At The Joint (T = F &times; d)</div>
         <div class="calc-row">
           <label>Payload torque (T&#8321;):</label>
           <span style="color: var(--text-dim);">F&#8321; &times; 0.300 m =</span>
@@ -12733,7 +12868,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
         <thead><tr><th>Requirement</th><th>Value</th><th>Source</th></tr></thead>
         <tbody>
           <tr>
-            <td>Joint twist needed (minimum torque)</td>
+            <td>Minimum torque needed</td>
             <td class="val pending" id="reqTorqueVal">&mdash;</td>
             <td style="color: var(--text-dim); font-size: 0.8rem;">Calculated from payload + forearm loads</td>
           </tr>
@@ -13016,7 +13151,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
       <div class="panel">
         <h2>What Must Be True</h2>
         <div class="design-brief">
-          <div class="brief-row"><span>Joint twist out (torque)</span><span class="brief-val" id="s3ReqTorque">&ge; 7.1 Nm</span></div>
+          <div class="brief-row"><span>Joint torque out</span><span class="brief-val" id="s3ReqTorque">&ge; 7.1 Nm</span></div>
           <div class="brief-row"><span>Joint speed out</span><span class="brief-val">&ge; 60 deg/s</span></div>
           <div class="brief-row"><span>Outer diameter</span><span class="brief-val">&le; 60 mm</span></div>
           <div class="brief-row"><span>Total Mass</span><span class="brief-val">&le; 350 g</span></div>
@@ -13094,9 +13229,21 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
           <div class="s3-axis-hint" id="s3StagesHint" data-tone="hold">Stage guidance will appear here once the live geometry readout updates.</div>
         </div>
-        <div class="slider-group">
-          <div class="slider-header"><label id="s3ModuleLabel">Tooth size (module)</label><span class="value" id="moduleVal" aria-live="polite">1.0 mm</span></div>
-          <input type="range" id="moduleSlider" min="0.3" max="2.5" value="1.0" step="0.1" aria-label="Tooth size in millimeters (gear module)" aria-describedby="s3GeometrySupport">
+        <!-- Module slider was kept hidden but functional so downstream
+             code still finds the input. Per Aaron: 'we still don't really
+             have a tradeoff for reducing module, so we might as well always
+             have it at the minimum.' The slider didn't produce a meaningful
+             downstream cost when shrunk, so the choice was effectively no
+             choice. We default to 0.5 mm (smallest practical for a humanoid
+             joint at this torque range) and surface the value as a static
+             readout below the ratio + stages sliders. -->
+        <div class="s3-module-static" style="margin: 6px 0 10px; padding: 8px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; font-size: 0.78rem; display: flex; justify-content: space-between; align-items: baseline; gap: 12px;">
+          <span style="color: var(--text-dim);">Tooth size (module)</span>
+          <span style="color: var(--text-bright); font-family: 'JetBrains Mono', monospace; font-weight: 600;" id="moduleStaticVal">0.5 mm <span style="color: var(--text-dim); font-weight: 400; font-size: 0.92em;">— auto, smallest valid</span></span>
+        </div>
+        <div class="slider-group" id="moduleSliderGroup" style="display:none;">
+          <div class="slider-header"><label id="s3ModuleLabel">Tooth size (module)</label><span class="value" id="moduleVal" aria-live="polite">0.5 mm</span></div>
+          <input type="range" id="moduleSlider" min="0.3" max="2.5" value="0.5" step="0.1" aria-label="Tooth size in millimeters (gear module)" aria-describedby="s3GeometrySupport">
           <div class="slider-ticks"><span>0.3</span><span>1.0</span><span>1.5</span><span>2.0</span><span>2.5</span></div>
           <div class="s3-target-rail" id="s3ModuleRail" aria-hidden="true">
             <span class="s3-target-track"></span>
@@ -13105,12 +13252,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <span class="s3-target-marker best"></span>
           </div>
           <div class="s3-axis-hint" id="s3ModuleHint" data-tone="hold">Module guidance will appear here once the live geometry readout updates.</div>
-          <!-- Always-visible trade-off chip for the module slider. Aaron's
-               note: when reducing module the tooth-load cost wasn't being
-               surfaced. This chip names both directions inline so the
-               consequence is visible regardless of where the student is
-               on the slider. -->
-          <div class="s3-module-tradeoff" id="s3ModuleTradeoff">
+          <div class="s3-module-tradeoff" id="s3ModuleTradeoff" hidden>
             <span class="s3-mtt-arrow">&larr;</span>
             <span><strong>Smaller</strong>: tighter package. Each tooth carries less load — risk of breakage at high torque.</span>
             <span class="s3-mtt-pipe">·</span>
@@ -13124,7 +13266,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="s3-knob-map-body">
             <div class="s3-knob-map-row" data-knob="ratio">
               <div class="s3-knob-map-name">Ratio<span class="s3-knob-map-step">Step 2</span></div>
-              <div class="s3-knob-map-effect"><span class="s3-knob-map-arrow up">&uarr;</span> More joint twist <span class="sep">&middot;</span> output gets slower <span class="sep">&middot;</span> envelope grows <span class="sep">&middot;</span> heavier <span class="sep">&middot;</span> a touch less efficient</div>
+              <div class="s3-knob-map-effect"><span class="s3-knob-map-arrow up">&uarr;</span> More torque <span class="sep">&middot;</span> output gets slower <span class="sep">&middot;</span> envelope grows <span class="sep">&middot;</span> heavier <span class="sep">&middot;</span> a touch less efficient</div>
               <div class="s3-knob-map-effect"><span class="s3-knob-map-arrow down">&darr;</span> Faster output <span class="sep">&middot;</span> smaller package <span class="sep">&middot;</span> lighter <span class="sep">&middot;</span> may miss the torque target</div>
             </div>
             <div class="s3-knob-map-row" data-knob="stages">
@@ -13233,7 +13375,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <div class="formula-citation">Sources: Shigley, <em>Mechanical Engineering Design</em> Ch. 13 (gear geometry, efficiency); Norton, <em>Machine Design</em> Ch. 12; standard reflected-inertia identity for rotating systems.</div>
           </div>
         </details>
-        <div class="spec-bar" id="barTorque" role="group" aria-label="Output torque vs. target"><div class="spec-bar-header"><span class="sblabel">Joint twist out</span><span class="actual green" id="valTorque" aria-live="polite">&mdash;</span></div><div class="bar-track"><div class="bar-fill green" id="fillTorque" style="width:50%"></div><div class="bar-target" id="targetTorque"></div></div><div class="target-label" id="s3TorqueTarget">Target: &ge; 7.1 Nm</div><div class="physics-callout" id="calloutTorque"></div></div>
+        <div class="spec-bar" id="barTorque" role="group" aria-label="Output torque vs. target"><div class="spec-bar-header"><span class="sblabel">Joint torque out</span><span class="actual green" id="valTorque" aria-live="polite">&mdash;</span></div><div class="bar-track"><div class="bar-fill green" id="fillTorque" style="width:50%"></div><div class="bar-target" id="targetTorque"></div></div><div class="target-label" id="s3TorqueTarget">Target: &ge; 7.1 Nm</div><div class="physics-callout" id="calloutTorque"></div></div>
         <div class="spec-bar" id="barSpeed" role="group" aria-label="Output speed vs. target"><div class="spec-bar-header"><span class="sblabel">Joint speed out</span><span class="actual green" id="valSpeed" aria-live="polite">&mdash;</span></div><div class="bar-track"><div class="bar-fill green" id="fillSpeed" style="width:50%"></div><div class="bar-target" id="targetSpeed"></div></div><div class="target-label">Target: &ge; 60 deg/s</div><div class="physics-callout" id="calloutSpeed"></div></div>
         <div class="spec-bar" id="barSize" role="group" aria-label="Outer diameter vs. target"><div class="spec-bar-header"><span class="sblabel">Outer diameter</span><span class="actual green" id="valSize" aria-live="polite">&mdash;</span></div><div class="bar-track"><div class="bar-fill green" id="fillSize" style="width:50%"></div><div class="bar-target" id="targetSize"></div></div><div class="target-label">Target: &le; 60 mm</div><div class="physics-callout" id="calloutSize"></div></div>
         <div class="spec-bar" id="barMass" role="group" aria-label="Total mass vs. target"><div class="spec-bar-header"><span class="sblabel">Total Mass</span><span class="actual green" id="valMass" aria-live="polite">&mdash;</span></div><div class="bar-track"><div class="bar-fill green" id="fillMass" style="width:50%"></div><div class="bar-target" id="targetMass"></div></div><div class="target-label">Target: &le; 350 g</div><div class="physics-callout" id="calloutMass"></div></div>
@@ -13277,7 +13419,12 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
         </div>
         <div class="chen-panel-body" id="s3ChenText"></div>
       </div>
-      <div class="s3-continue" style="display:flex;gap:8px;align-items:center;">
+      <!-- Stage chrome (Back / Skip) separated from the primary CTA above.
+           Aaron flagged the bottom-right cluster as visually confused;
+           pushing chrome to its own row with a top border + dim styling
+           makes the hierarchy obvious: the primary action lives in the
+           Step 4 panel, navigation lives down here. -->
+      <div class="s3-continue" style="display:flex;gap:8px;align-items:center;justify-content:flex-end;margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.08);opacity:0.78;">
         <button class="btn btn-back" onclick="goToStage(2)" style="flex:0 0 auto;">&larr; Back</button>
         <button class="btn skip-btn" onclick="skipStage(3)" style="flex:0 0 auto;">Skip &raquo;</button>
       </div>
@@ -13368,9 +13515,9 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="pid-group">
             <div class="slider-header">
               <label><span class="tooltip-term" data-real="Proportional gain (Kp)">Response Speed</span></label>
-              <span class="pid-val" id="pVal" aria-live="polite">5.0</span>
+              <span class="pid-val" id="pVal" aria-live="polite">4.0</span>
             </div>
-            <input type="range" id="pSlider" min="0.5" max="20" value="5" step="0.5" aria-label="Response speed (proportional gain Kp), the gas pedal">
+            <input type="range" id="pSlider" min="0.5" max="20" value="4" step="0.5" aria-label="Response speed (proportional gain Kp), the gas pedal">
             <div style="font-size:0.7rem;color:var(--text-dim);margin-top:4px;">The <strong>gas pedal</strong> — pushes harder when far from target</div>
             <div class="pid-inline-hint" id="pHint" style="display:none;font-size:0.75rem;color:var(--accent);margin-top:4px;padding:6px 8px;background:rgba(79,195,247,0.06);border-radius:6px;line-height:1.5;"></div>
           </div>
@@ -13378,9 +13525,9 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <div class="pid-lock-label">Run with Kp first</div>
             <div class="slider-header">
               <label><span class="tooltip-term" data-real="Derivative gain (Kd)">Damping</span></label>
-              <span class="pid-val" id="dVal" aria-live="polite">1.0</span>
+              <span class="pid-val" id="dVal" aria-live="polite">1.5</span>
             </div>
-            <input type="range" id="dSlider" min="0" max="10" value="0" step="0.2" aria-label="Damping (derivative gain Kd), the brakes">
+            <input type="range" id="dSlider" min="0" max="10" value="1.5" step="0.2" aria-label="Damping (derivative gain Kd), the brakes">
             <div style="font-size:0.7rem;color:var(--text-dim);margin-top:4px;">The <strong>brakes</strong> — resists overshoot</div>
             <div class="pid-inline-hint" id="dHint" style="display:none;font-size:0.75rem;color:var(--accent);margin-top:4px;padding:6px 8px;background:rgba(79,195,247,0.06);border-radius:6px;line-height:1.5;"></div>
           </div>
@@ -13388,16 +13535,54 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <div class="pid-lock-label">Unlock Damping first</div>
             <div class="slider-header">
               <label><span class="tooltip-term" data-real="Integral gain (Ki)">Precision</span></label>
-              <span class="pid-val" id="iVal" aria-live="polite">0.5</span>
+              <span class="pid-val" id="iVal" aria-live="polite">0.3</span>
             </div>
-            <input type="range" id="iSlider" min="0" max="5" value="0" step="0.1" aria-label="Precision (integral gain Ki), the memory">
+            <input type="range" id="iSlider" min="0" max="5" value="0.3" step="0.1" aria-label="Precision (integral gain Ki), the memory">
             <div style="font-size:0.7rem;color:var(--text-dim);margin-top:4px;">The <strong>memory</strong>. Closes the "almost there" gap.</div>
             <div class="pid-inline-hint" id="iHint" style="display:none;font-size:0.75rem;color:var(--accent);margin-top:4px;padding:6px 8px;background:rgba(79,195,247,0.06);border-radius:6px;line-height:1.5;"></div>
           </div>
         </div>
-        <div style="display:flex;gap:12px;margin-top:16px;">
-          <button class="btn btn-secondary" onclick="runPIDSim('manual')">Re-run Simulation</button>
-          <button class="btn btn-primary" onclick="openSandbox();" id="openSandboxBtn">Warehouse Console &darr;</button>
+        <!-- The sim auto-reruns on every slider change (debounced via
+             onPIDSliderChange), so a manual rerun button was redundant.
+             The Warehouse Console is the meaningful action -- promoted
+             to full-width primary with a kicker explaining what it does. -->
+        <div style="margin-top:18px;display:flex;flex-direction:column;gap:6px;">
+          <div style="font-size:0.74rem;color:var(--text-dim);line-height:1.5;">When your tuning feels right, run it in the warehouse &rarr;</div>
+          <button class="btn btn-primary" onclick="openSandbox();" id="openSandboxBtn" style="font-size:0.92rem;padding:14px 18px;font-weight:600;letter-spacing:0.02em;">Open Warehouse Console &darr;</button>
+        </div>
+      </div>
+
+      <!-- Gravity panel. The arm has weight; gravity is the constant
+           force the PID has to push against to hold a horizontal pose.
+           Surfacing this makes Ki feel motivated instead of arbitrary. -->
+      <div class="panel" id="pidGravityPanel">
+        <h2>Payload &amp; Gravity</h2>
+        <p style="font-size:0.78rem;color:var(--text-dim);margin-bottom:14px;line-height:1.6;">
+          The arm has weight. Gravity pulls it down. Your controller has to push back hard enough to hold the target pose, otherwise the arm <em>sags</em> below it. Bigger payload = more sag.
+        </p>
+        <div class="pid-group" id="pidGroupPayload">
+          <div class="slider-header">
+            <label>Payload mass</label>
+            <span class="pid-val" id="payloadVal" aria-live="polite">2.0 kg</span>
+          </div>
+          <input type="range" id="payloadSlider" min="0.2" max="3.0" value="2.0" step="0.1" aria-label="Payload mass in kilograms — affects how hard gravity fights your controller">
+          <div style="font-size:0.7rem;color:var(--text-dim);margin-top:4px;">Set what the arm is carrying. Empty gripper, light parcel, heavy crate.</div>
+        </div>
+
+        <div class="gravity-readout" id="gravityReadout" style="margin-top:14px;padding:12px 14px;background:rgba(255,180,80,0.08);border:1px solid rgba(255,180,80,0.25);border-radius:6px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;">
+            <span style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.06em;">Gravity load at horizontal</span>
+            <span style="font-size:1.0rem;font-weight:700;color:#ffb851;font-family:'JetBrains Mono',monospace;" id="gravityLoadVal">8.24 N&middot;m</span>
+          </div>
+          <div style="font-size:0.72rem;color:var(--text-dim);margin-top:6px;line-height:1.5;" id="gravityLoadCtx">This is the torque your controller has to supply <em>continuously</em> to hold the arm out horizontally. If your motor + gear stage can't deliver this, the arm sags.</div>
+        </div>
+
+        <div style="margin-top:14px;display:flex;align-items:flex-start;gap:12px;padding:10px 12px;background:rgba(126,180,247,0.06);border:1px solid rgba(126,180,247,0.18);border-radius:6px;cursor:pointer;" id="gravCompRow">
+          <input type="checkbox" id="gravCompToggle" checked style="margin-top:3px;width:18px;height:18px;cursor:pointer;" aria-describedby="gravCompDesc">
+          <div style="flex:1;">
+            <label for="gravCompToggle" style="font-size:0.86rem;font-weight:600;color:var(--text);cursor:pointer;">Gravity feed-forward</label>
+            <div id="gravCompDesc" style="font-size:0.72rem;color:var(--text-dim);margin-top:4px;line-height:1.5;">Add the gravity torque directly to the motor command so the PID only has to handle deviations. Real robots (Optimus, Atlas) compute this every step. Try toggling it on and see what changes.</div>
+          </div>
         </div>
       </div>
 
@@ -13666,13 +13851,15 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="s5-results-grid" id="s5ResultsGrid"></div>
         </div>
 
-        <!-- Fullscreen-ish Stakeholder Q&A. Spans both columns post-shift,
-             one big question at a time, scannable. -->
+        <!-- Defense Q&A. The student answers questions from the team about
+             their design choices. It's an activity they DO, not feedback they
+             receive -- rename from "Stakeholder review" reflects that. -->
         <div class="s5-stake-panel s5-post-shift" id="s5StakeholderPanel">
           <div class="s5-stake-header">
-            <div class="s5-stake-kicker">Stakeholder review</div>
+            <div class="s5-stake-kicker">Defend your design</div>
             <div class="s5-stake-progress" id="s5StakeProgress">Question 1 of 3</div>
           </div>
+          <div class="s5-stake-intro" style="font-size:0.86rem;color:#aab8c6;line-height:1.55;margin-bottom:14px;padding:0 2px;">The team has questions about the choices you made. Answer them and watch the room's confidence in your design build or fall.</div>
           <div class="s5-stake-body" id="s5StakeBody">
             <div class="s5-stake-seat" id="s5StakeSeat">Engineering Lead</div>
             <div class="s5-stake-prompt" id="s5StakePrompt">Loading...</div>
@@ -14057,12 +14244,19 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
                 <div class="ai-train-viz" aria-hidden="true">
                   <div class="ai-arm-stage">
                     <div class="ai-floor"></div>
+                    <!-- Nested kinematics: forearm + gripper live INSIDE
+                         upper so the upper's rotation transform carries
+                         the forearm along. Previous flat sibling structure
+                         left the forearm stuck in place while the upper
+                         swung, producing a disjointed animation Aaron
+                         flagged as broken. -->
                     <div class="ai-arm" id="aiTrainArm">
                       <div class="ai-shoulder"></div>
-                      <div class="ai-upper"></div>
-                      <div class="ai-elbow"></div>
-                      <div class="ai-forearm">
-                        <div class="ai-gripper"></div>
+                      <div class="ai-upper">
+                        <div class="ai-elbow"></div>
+                        <div class="ai-forearm">
+                          <div class="ai-gripper"></div>
+                        </div>
                       </div>
                     </div>
                     <div class="ai-target" id="aiTrainTarget"></div>
@@ -14229,9 +14423,12 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <!-- #s5StakeholderPanel + #s5DefenseMsg move here in commit 2 -->
           </div>
 
-          <div class="s5-report-section" id="s5ReportReviewers">
+          <!-- Reviewer Voices section: hidden because reviewer messages
+               are now delivered into the live chat (F4) instead of as
+               separate cards. The header without content read as a stray
+               heading above an empty box. -->
+          <div class="s5-report-section" id="s5ReportReviewers" style="display:none;">
             <h2 class="s5-report-section-header">Reviewer Voices <span class="s5-section-sub">Specialist take</span></h2>
-            <!-- 3 reviewer msgs move here in commit 2 -->
           </div>
 
           <div class="s5-report-section" id="s5ReportSummary">
@@ -16115,7 +16312,7 @@ const STATE = {
   gearType: 'spur',
   gearRatio: 10,
   numStages: 1,
-  gearModule: 1.0,
+  gearModule: 0.5,
   s3RatioAccepted: false,
   s3GeomAccepted: false,
   s3WorkbenchStep: 1,
@@ -16825,7 +17022,7 @@ const CASE_STUDIES = [
       Motor: 'Brushless DC, hollow shaft',
       Control: 'IMU + PID at 4 kHz',
     },
-    twist: 'No gears. Backlash kills cinematic smoothness, so engineers trade torque for a direct-drive motor with a high-resolution encoder.',
+    tradeoff: 'No gears. Backlash kills cinematic smoothness, so engineers trade torque for a direct-drive motor with a high-resolution encoder.',
   },
   {
     key: 'prosthetic',
@@ -16840,7 +17037,7 @@ const CASE_STUDIES = [
       Motor: 'Coreless DC, ~30 g',
       Constraint: 'Battery life + biocompatibility',
     },
-    twist: 'Mass and battery life dominate the brief. A 2 kg arm fatigues the wearer; a noisy gear train draws attention. Same physics, harder constraints.',
+    tradeoff: 'Mass and battery life dominate the brief. A 2 kg arm fatigues the wearer; a noisy gear train draws attention. Same physics, harder constraints.',
   },
   {
     key: 'humanoid',
@@ -16856,7 +17053,7 @@ const CASE_STUDIES = [
       Motor: 'Quasi-Direct-Drive (QDD) BLDC',
       Control: 'Torque-mode current loop + impedance',
     },
-    twist: 'This is the design you just ran. Real humanoid joints add backdrivability for safety: the actuator must yield when a person pushes back.',
+    tradeoff: 'This is the design you just ran. Real humanoid joints add backdrivability for safety: the actuator must yield when a person pushes back.',
   },
   {
     key: 'ev',
@@ -16871,7 +17068,7 @@ const CASE_STUDIES = [
       Motor: 'Permanent-magnet synchronous (PMSM)',
       Control: 'Field-oriented + regen braking',
     },
-    twist: 'Same loop, two orders of magnitude up. Thermal management and rotor losses become the dominant constraints; gear teeth shift from spur to helical for noise.',
+    tradeoff: 'Same loop, two orders of magnitude up. Thermal management and rotor losses become the dominant constraints; gear teeth shift from spur to helical for noise.',
   },
 ];
 
@@ -16920,7 +17117,7 @@ function renderCaseStudyPanel() {
         ${photoHtml}
         <div class="s5-cs-anchor">${escapeHtml(c.anchor)}</div>
         <div class="s5-cs-spec">${specRows}</div>
-        <div style="font-size:0.74rem; color:var(--text-dim); line-height:1.45; margin-top:4px;">${escapeHtml(c.twist)}</div>
+        <div style="font-size:0.74rem; color:var(--text-dim); line-height:1.45; margin-top:4px;">${escapeHtml(c.tradeoff)}</div>
         ${isClosest ? '<span class="s5-cs-flag" aria-label="Closest match to your design">Closest to your design</span>' : ''}
       </div>
     `;
@@ -17126,11 +17323,23 @@ function pushOpsToast(text, opts = {}) {
   if (now - lastAt < cooldownMs) return;
   STATE._opsToastSeen[key] = now;
 
-  while (host.children.length >= 3) host.removeChild(host.firstChild);
+  // Aaron flagged ops-feed spam — three popups stacked at once with mixed
+  // Chen / system labels and no clear distinction. Cap visible toasts at
+  // TWO, oldest evicted on overflow. This is the canonical limit; callers
+  // do not get to override.
+  while (host.children.length >= 2) host.removeChild(host.firstChild);
 
+  // Chen messages get a visual treatment distinct from system ops:
+  // an "SC" avatar circle, accent-colored left rail, and a tighter
+  // label. The reader can identify the speaker at a glance.
+  const isChen = (opts.label || '').toUpperCase().includes('CHEN');
   const el = document.createElement('div');
-  el.className = 'ops-toast ' + (opts.tone || 'info');
-  el.innerHTML = `<span class="ops-label">${opts.label || 'OPS FEED'}</span>${escapeHtml(t)}`;
+  el.className = 'ops-toast ' + (opts.tone || 'info') + (isChen ? ' ops-toast-chen' : '');
+  if (isChen) {
+    el.innerHTML = `<span class="ops-avatar" aria-hidden="true">SC</span><div class="ops-body"><span class="ops-label">Dr. Chen</span>${escapeHtml(t)}</div>`;
+  } else {
+    el.innerHTML = `<span class="ops-label">${opts.label || 'OPS FEED'}</span>${escapeHtml(t)}`;
+  }
   host.appendChild(el);
 
   // Audio: subtle ping when Chen / OPS messages arrive (skip alarms — fail toasts get their own cue elsewhere).
@@ -17737,7 +17946,7 @@ function getStage5RoutePlan() {
 
 function getStage3CheckDefinitions(act) {
   return [
-    { key: 'torque', name: 'Joint Twist', actual: act.outputTorque_Nm, target: REQUIREMENTS.torque_Nm, unit: 'Nm', pass: act.outputTorque_Nm >= REQUIREMENTS.torque_Nm, higherIsBetter: true, digits: 1 },
+    { key: 'torque', name: 'Joint Torque', actual: act.outputTorque_Nm, target: REQUIREMENTS.torque_Nm, unit: 'Nm', pass: act.outputTorque_Nm >= REQUIREMENTS.torque_Nm, higherIsBetter: true, digits: 1 },
     { key: 'speed', name: 'Joint Speed', actual: act.outputSpeed_dps, target: REQUIREMENTS.speed_dps, unit: 'deg/s', pass: act.outputSpeed_dps >= REQUIREMENTS.speed_dps, higherIsBetter: true, digits: 0 },
     { key: 'diameter', name: 'Diameter', actual: act.envelopeDiam_mm, target: REQUIREMENTS.diameter_mm, unit: 'mm', pass: act.envelopeDiam_mm <= REQUIREMENTS.diameter_mm, higherIsBetter: false, digits: 1 },
     { key: 'mass', name: 'Mass', actual: act.totalMass_g, target: REQUIREMENTS.mass_g, unit: 'g', pass: act.totalMass_g <= REQUIREMENTS.mass_g, higherIsBetter: false, digits: 0 },
@@ -17910,7 +18119,7 @@ function getStage3FamilyConfig(train, motor, act) {
     focus: 'Keep the ratio honest before you add stages or tooth size.',
     step2Title: 'Step 2: Set Your Gear Reduction',
     ratioLabel: 'Gear reduction (ratio)',
-    ratioSupport: 'More reduction means more joint twist and less joint speed. Find a believable band here before you clean up size and efficiency.',
+    ratioSupport: 'More reduction means more torque and less speed. Find a believable band here before you clean up size and efficiency.',
     ratioTip: '<strong>Why this knob matters:</strong> Spur rewards disciplined ratio splitting. Find the lowest ratio that clears torque, then stop before diameter balloons.',
     step3Title: 'Step 3: Tune the Geometry',
     stagesLabel: 'Layers of gearing (stages)',
@@ -19056,9 +19265,13 @@ function updateArmDiagram(angleDeg) {
   const torqueState = computeS1TorqueAtAngle(angleDeg);
   const totalT = torqueState.totalTorque;
 
-  // Update live torque display
+  // Update live torque display. Scale the bar against the maximum
+  // possible torque at this geometry (peak at 0°, arm fully horizontal,
+  // cos(0) = 1), so the bar reads 100% at the worst case instead of
+  // capping at an arbitrary ceiling that left trailing empty space.
+  const peakTorque = computeS1TorqueAtAngle(0).totalTorque; // ~7.06 Nm with current masses
   document.getElementById('s1LiveTorque').textContent = totalT.toFixed(2) + ' Nm';
-  document.getElementById('s1TorqueFill').style.width = Math.min(100, (totalT / 7.5) * 100) + '%';
+  document.getElementById('s1TorqueFill').style.width = Math.min(100, (totalT / peakTorque) * 100) + '%';
 
   // Update torque arc size
   const arcSize = Math.min(25, totalT * 3.5);
@@ -19705,9 +19918,26 @@ function updateStage2MotorList() {
 }
 
 function onEnterStage0() {
-  // If splash already hidden (re-entry from Back to Brief), nothing to do
+  // Belt-and-suspenders: explicitly hide the brief whenever Stage 0 is
+  // entered cold. Aaron observed the brief leaking through while Chen
+  // was still talking; this guarantees the only way to see the brief
+  // is via the explicit "Open Design Brief →" button that showBrief()
+  // is wired to. Safe to call repeatedly.
+  const briefEl = document.getElementById('briefSection');
+  if (briefEl) briefEl.style.display = 'none';
+  // If splash already hidden (re-entry from Back to Brief), keep
+  // current chenIntro / briefSection state -- don't replay the
+  // typewriter, but DO let the user re-open the brief via the button.
   const splash = document.getElementById('companySplash');
-  if (!splash || splash.style.display === 'none') return;
+  if (!splash || splash.style.display === 'none') {
+    // On re-entry, the most useful default is to show the brief
+    // (the user already saw Chen's intro). Show it now so the page
+    // isn't blank.
+    if (briefEl) briefEl.style.display = 'block';
+    const chenIntroEl = document.getElementById('chenIntro');
+    if (chenIntroEl) chenIntroEl.style.display = 'none';
+    return;
+  }
 
   // Cinematic sequence: splash → fade → Chen intro → typewriter.
   // Trimmed per "prologue too long" feedback: splash hold 2.8s → 1.3s,
@@ -19825,6 +20055,66 @@ function onEnterStage2() {
 // Motors 0 (Maxon), 2 (RI50), 3 (AK60-6) shown initially. 1 (Faulhaber), 4 (iPower) unlock after first test.
 const STARTER_MOTORS = new Set([0, 2, 3]);
 
+// Stylised SVG illustrations per motor type. We don't have real product
+// photos, so distinct geometric icons stand in -- color-coded with the
+// motor's accent so the legend chip / chart column / card all read as
+// the same object. Keeps the catalog feeling like a real shopping screen
+// without taking on image licensing.
+function getMotorPhotoSvg(motor) {
+  const c = motor.color || '#888';
+  const type = (motor.type || '').toLowerCase();
+  if (type.includes('frameless')) {
+    // Ring core (no housing)
+    return '<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+      '<rect width="120" height="80" fill="rgba(255,255,255,0.04)" rx="6"/>' +
+      '<circle cx="60" cy="40" r="28" fill="none" stroke="' + c + '" stroke-width="6" opacity="0.85"/>' +
+      '<circle cx="60" cy="40" r="14" fill="none" stroke="' + c + '" stroke-width="3" opacity="0.6"/>' +
+      '<circle cx="60" cy="40" r="3" fill="' + c + '"/>' +
+      '<text x="60" y="74" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.45)" font-family="JetBrains Mono, monospace">FRAMELESS</text>' +
+      '</svg>';
+  }
+  if (type.includes('integrated')) {
+    // Bulk cylinder with face plate
+    return '<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+      '<rect width="120" height="80" fill="rgba(255,255,255,0.04)" rx="6"/>' +
+      '<rect x="22" y="14" width="76" height="50" rx="6" fill="' + c + '" opacity="0.18" stroke="' + c + '" stroke-width="2"/>' +
+      '<circle cx="60" cy="39" r="18" fill="' + c + '" opacity="0.5"/>' +
+      '<circle cx="60" cy="39" r="6" fill="rgba(0,0,0,0.6)"/>' +
+      '<rect x="38" y="58" width="44" height="3" fill="' + c + '" opacity="0.5"/>' +
+      '</svg>';
+  }
+  if (type.includes('gimbal')) {
+    // Flat pancake ring
+    return '<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+      '<rect width="120" height="80" fill="rgba(255,255,255,0.04)" rx="6"/>' +
+      '<ellipse cx="60" cy="40" rx="34" ry="14" fill="none" stroke="' + c + '" stroke-width="3"/>' +
+      '<ellipse cx="60" cy="40" rx="34" ry="14" fill="' + c + '" opacity="0.18"/>' +
+      '<ellipse cx="60" cy="40" rx="16" ry="6" fill="' + c + '" opacity="0.55"/>' +
+      '<circle cx="60" cy="40" r="2" fill="rgba(0,0,0,0.6)"/>' +
+      '</svg>';
+  }
+  if (type.includes('precision') || (motor.specs && motor.specs.outerDiameter_mm <= 28)) {
+    // Small slim cylinder
+    return '<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+      '<rect width="120" height="80" fill="rgba(255,255,255,0.04)" rx="6"/>' +
+      '<rect x="44" y="18" width="32" height="44" rx="4" fill="' + c + '" opacity="0.2" stroke="' + c + '" stroke-width="2"/>' +
+      '<circle cx="60" cy="40" r="10" fill="' + c + '" opacity="0.6"/>' +
+      '<circle cx="60" cy="40" r="3" fill="rgba(0,0,0,0.5)"/>' +
+      '<line x1="44" y1="26" x2="76" y2="26" stroke="' + c + '" stroke-width="1.5" opacity="0.6"/>' +
+      '<line x1="44" y1="54" x2="76" y2="54" stroke="' + c + '" stroke-width="1.5" opacity="0.6"/>' +
+      '</svg>';
+  }
+  // Default: housed BLDC cylinder
+  return '<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+    '<rect width="120" height="80" fill="rgba(255,255,255,0.04)" rx="6"/>' +
+    '<rect x="32" y="14" width="56" height="52" rx="5" fill="' + c + '" opacity="0.2" stroke="' + c + '" stroke-width="2"/>' +
+    '<circle cx="60" cy="40" r="16" fill="' + c + '" opacity="0.55"/>' +
+    '<circle cx="60" cy="40" r="5" fill="rgba(0,0,0,0.6)"/>' +
+    '<line x1="32" y1="22" x2="88" y2="22" stroke="' + c + '" stroke-width="1.5" opacity="0.7"/>' +
+    '<line x1="32" y1="58" x2="88" y2="58" stroke="' + c + '" stroke-width="1.5" opacity="0.7"/>' +
+    '</svg>';
+}
+
 function renderMotorCards() {
   const container = document.getElementById('motorCards');
   container.innerHTML = '';
@@ -19844,6 +20134,7 @@ function renderMotorCards() {
     const card = document.createElement('div');
     const isPinned = s2Pinned.has(idx);
     card.className = 'motor-card' + (idx === STATE.selectedMotorIdx ? ' selected' : '') + (isPinned ? ' pinned' : '') + (idx === recommendedIdx ? ' recommended' : '');
+    card.style.setProperty('--motor-color', m.color || '#ff6600');
     card.onclick = () => selectMotor(idx);
 
     // Determine verdict
@@ -19869,6 +20160,9 @@ function renderMotorCards() {
     const massLeftLabel = assessment.fitsMass ? assessment.massLeft.toFixed(0) + 'g left' : 'Over budget';
 
     card.innerHTML = `
+      <div class="mc-photo" style="--motor-color:${m.color || '#888'};">
+        ${getMotorPhotoSvg(m)}
+      </div>
       <div class="mc-top-row">
         <div class="mc-name">${m.manufacturer} ${m.model}</div>
         <div class="mc-verdict ${verdictClass}">${verdictText}</div>
@@ -19944,6 +20238,7 @@ function renderStage2Tradeoff(visibleOrder) {
   if (!host) return;
   if (!visibleOrder || !visibleOrder.length) { host.innerHTML = ''; return; }
   const motors = visibleOrder.map(i => MOTORS[i]);
+  const motorIdxList = visibleOrder.slice(); // parallel array of original indices
   // Axes the student actually decides on
   const axes = [
     { key: 'stallTorque_Nm', label: 'Push force',  fmt: v => v.toFixed(2) + ' Nm', spec: REQUIREMENTS.torque_Nm, scale: 'higher' },
@@ -19951,9 +20246,24 @@ function renderStage2Tradeoff(visibleOrder) {
     { key: 'outerDiameter_mm', label: 'Size',      fmt: v => v.toFixed(0) + ' mm', spec: REQUIREMENTS.diameter_mm, scale: 'lower' },
     { key: 'mass_g',           label: 'Weight',    fmt: v => v.toFixed(0) + ' g',  spec: REQUIREMENTS.mass_g,      scale: 'lower' },
   ];
-  // Find max across visible motors per axis so each row normalises locally
-  const html = ['<div class="s2-to-title">How they compare</div>'];
-  html.push('<div class="s2-to-grid">');
+  // Header strip shows one chip per motor so the link between a card
+  // below and a column in this chart is unambiguous when the student
+  // picks one.
+  const html = [
+    '<div class="s2-to-title">How they compare</div>',
+    '<div class="s2-to-legend">',
+    ...motors.map((m, j) => {
+      const idx = motorIdxList[j];
+      const isSelected = idx === STATE.selectedMotorIdx;
+      const initials = (m.manufacturer || '').split(' ').map(w => w[0]).slice(0, 1).join('') + (m.model || '').replace(/[^A-Za-z0-9].*/, '').substring(0, 2);
+      return '<div class="s2-to-legend-chip' + (isSelected ? ' selected' : '') + '" data-motor-idx="' + idx + '" style="--motor-color:' + (m.color || '#888') + ';">' +
+        '<span class="s2-to-legend-dot"></span>' +
+        '<span class="s2-to-legend-name">' + escapeHtml(m.manufacturer + ' ' + m.model.split('(')[0].trim()) + '</span>' +
+        '</div>';
+    }),
+    '</div>',
+    '<div class="s2-to-grid">',
+  ];
   axes.forEach(ax => {
     const vals = motors.map(m => m.specs[ax.key]);
     const maxV = Math.max(...vals);
@@ -19963,7 +20273,11 @@ function renderStage2Tradeoff(visibleOrder) {
       const v = m.specs[ax.key];
       const widthPct = maxV > 0 ? Math.max(8, (v / maxV) * 100) : 0;
       const over = (ax.spec != null) && (ax.scale === 'higher' ? v < ax.spec : v > ax.spec);
-      html.push('<div class="s2-to-bar' + (over ? ' over' : '') + '" title="' + m.manufacturer + ' ' + m.model + '">');
+      const idx = motorIdxList[j];
+      const isSelected = idx === STATE.selectedMotorIdx;
+      // data-motor-idx lets selectMotor() flip the highlight cheaply by
+      // toggling a class on these bars instead of re-rendering.
+      html.push('<div class="s2-to-bar' + (over ? ' over' : '') + (isSelected ? ' selected' : '') + '" data-motor-idx="' + idx + '" style="--motor-color:' + (m.color || '#888') + ';" title="' + escapeHtml(m.manufacturer + ' ' + m.model) + '">');
       html.push('<div class="s2-to-bar-fill" style="width:' + widthPct.toFixed(1) + '%"></div>');
       html.push('<div class="s2-to-bar-text">' + ax.fmt(v) + '</div>');
       html.push('</div>');
@@ -19972,6 +20286,18 @@ function renderStage2Tradeoff(visibleOrder) {
   });
   html.push('</div>');
   host.innerHTML = html.join('');
+}
+
+// Re-highlight the comparison chart without rebuilding the whole DOM.
+// Called from selectMotor() so picking a card glows its column.
+function highlightStage2TradeoffSelection() {
+  const host = document.getElementById('s2TradeoffChart');
+  if (!host) return;
+  const selectedIdx = STATE.selectedMotorIdx;
+  host.querySelectorAll('[data-motor-idx]').forEach(el => {
+    const idx = parseInt(el.dataset.motorIdx, 10);
+    el.classList.toggle('selected', idx === selectedIdx);
+  });
 }
 
 function renderCurveToggles() {
@@ -20100,6 +20426,9 @@ function selectMotor(idx) {
   const s = assessment.specs;
   hideStage2Hint();
   renderMotorCards();
+  // Highlight the matching column in the comparison chart so the
+  // student sees their pick reflected in the trade-off bars.
+  try { highlightStage2TradeoffSelection(); } catch (e) {}
   document.getElementById('selPlaceholder').style.display = 'none';
   document.getElementById('selContent').style.display = 'block';
   document.getElementById('selCard').classList.add('has-selection');
@@ -20506,7 +20835,7 @@ function onEnterStage3() {
   const s = m.specs;
   document.getElementById('s3MotorInfo').innerHTML =
     `<div style="color:var(--text-bright);font-weight:600;margin-bottom:4px;">${m.manufacturer} ${m.model}</div>
-     Max twist: <span class="mval">${s.stallTorque_Nm} Nm</span><br>
+     Max torque: <span class="mval">${s.stallTorque_Nm} Nm</span><br>
      Free-run speed: <span class="mval">${s.noLoadSpeed_rpm.toLocaleString()} rpm</span><br>
      Motor mass: <span class="mval">${s.mass_g} g</span><br>
      Motor diameter: <span class="mval">${s.outerDiameter_mm} mm</span>`;
@@ -22171,6 +22500,9 @@ function onEnterStage4() {
   showStageTransition(4);
   document.getElementById('pidControls').style.display = 'none';
   document.getElementById('s4ChenVerdict').style.display = 'none';
+  // Refresh the gravity readout now that we know the actuator's torque
+  // ceiling — lets us tell the student whether they have margin or not.
+  try { if (typeof updateGravityReadout === 'function') updateGravityReadout(); } catch (e) {}
   const canvas = document.getElementById('armCanvas');
   setupHiDPICanvas(canvas);
 
@@ -22268,32 +22600,52 @@ function onEnterStage4() {
 function simulateArm(Kp, Kd, Ki, duration, dt) {
   const act = STATE.lastActuator;
   const train = STATE.lastTrain;
-  // Reflected inertia: gearbox mass contributes to arm inertia
-  const armMass = 2.0 + 0.8; // payload + forearm
-  const armLength = 0.3; // m
+  // Payload + forearm mass. Payload is now student-tunable via the
+  // Stage 4 payload slider; forearm is fixed at 0.8 kg.
+  const payloadKg = (typeof STATE.s4PayloadKg === 'number') ? STATE.s4PayloadKg : 2.0;
+  const forearmKg = 0.8;
+  const armMass = payloadKg + forearmKg;
+  const armLength = 0.3; // m, joint to centre of mass at the wrist
+  const cgFrac = 0.5;    // payload acts at midpoint (rough)
   const J = armMass * armLength * armLength + (act.gearboxMass_g / 1000) * 0.01; // simplified
   const b = 0.05 + (train.totalWeight_g / 1000) * 0.1; // damping from friction
   const maxTorque = act.outputTorque_Nm;
   const maxSpeed = act.outputSpeed_dps * Math.PI / 180; // rad/s
+  const gravComp = !!STATE.s4GravComp;
 
   const targetAngle = Math.PI / 2; // 90 deg — horizontal
   let theta = 0, omega = 0, integral = 0;
+  let prevError = 0;
   const history = [];
   const steps = Math.floor(duration / dt);
 
   for (let i = 0; i <= steps; i++) {
     const error = targetAngle - theta;
+    // Anti-windup on error reversal: when the controller overshoots
+    // and the error sign flips, bleed the integral so the accumulated
+    // wind-up doesn't keep pushing in the now-wrong direction. This
+    // fixes the dramatic down-stroke overshoot Aaron flagged: without
+    // it, the integral built up positive (pushing toward horizontal)
+    // and kept driving the arm even after it passed the target.
+    if (i > 0 && Math.sign(error) !== Math.sign(prevError) && prevError !== 0) {
+      integral *= 0.5;
+    }
     integral += error * dt;
-    integral = Math.max(-10, Math.min(10, integral)); // anti-windup
+    integral = Math.max(-10, Math.min(10, integral)); // anti-windup clamp
+    prevError = error;
     const deriv = -omega;
     let tau = Kp * error + Kd * deriv + Ki * integral;
+    // Gravity feed-forward: if the toggle is on, add the gravity torque
+    // directly to the motor command so PID only handles deviations. This
+    // is how Optimus / Atlas / industrial robot arms actually work.
+    const gravityTorque = armMass * 9.81 * armLength * cgFrac * Math.sin(theta);
+    if (gravComp) tau += gravityTorque;
     // Limit to actuator capability
     tau = Math.max(-maxTorque, Math.min(maxTorque, tau));
     // Speed limit: if omega exceeds max, can't add more torque in that direction
     if (Math.abs(omega) > maxSpeed) tau = Math.sign(-omega) * Math.abs(tau) * 0.1;
 
-    const gravity = armMass * 9.81 * armLength * Math.sin(theta) * 0.5; // CG at half length
-    const alpha = (tau - gravity - b * omega) / J;
+    const alpha = (tau - gravityTorque - b * omega) / J;
     omega += alpha * dt;
     theta += omega * dt;
     // Soft boundary damping — bounce back gently instead of slamming
@@ -22672,11 +23024,27 @@ const ConveyorSim = {
         }
       }
 
-      // PID + plant
+      // PID + plant. Anti-windup on error reversal matches the Stage 4
+      // simulateArm + sandbox so warehouse outcomes line up with tuning.
       const err = arm.target - arm.theta;
+      if (Math.sign(err) !== Math.sign(arm._prevErr || 0) && (arm._prevErr || 0) !== 0) {
+        arm.integral *= 0.5;
+      }
       arm.integral = Math.max(-3, Math.min(3, arm.integral + err * dt));
+      arm._prevErr = err;
       const deriv = -arm.omega;
-      const tauCmd = this.Kp * err + this.Kd * deriv + this.Ki * arm.integral;
+      let tauCmd = this.Kp * err + this.Kd * deriv + this.Ki * arm.integral;
+      // Gravity feed-forward propagates from the Stage 4 toggle. When on,
+      // the controller cancels the gravity restoring torque so the PID
+      // only handles deviations. Matches simulateArm + sandbox.
+      if (STATE.s4GravComp) {
+        const heldMassFF = arm.holding ? arm.holding.mass : 0;
+        const totalMassFF = this.armMass + heldMassFF;
+        // gravityTorque sign in this sim is -m*g*L/2*sin(theta);
+        // feed-forward is its negative -- i.e. push in the direction that
+        // overcomes the restoring pull.
+        tauCmd += totalMassFF * 9.81 * this.armLength * 0.5 * Math.sin(arm.theta);
+      }
 
       const speedFrac = Math.min(1, Math.abs(arm.omega) / Math.max(0.001, this.maxOmega));
       const maxAvail = Math.max(0.05 * this.maxTorque, this.maxTorque * (1 - 0.92 * speedFrac)) * this.efficiency;
@@ -24882,6 +25250,17 @@ function runPIDSim(mode = 'manual') {
     STATE.storyMoments.s4FirstStable = true;
     const line = chenLine('s4-first-stable', 'First stable response. Everything from here is refinement.');
     pushOpsToast(line, { label: 'CHEN', tone: 'success', key: 'chen_s4_stable', cooldownMs: 10000, ttlMs: 4500 });
+    // Reward the clean tune by auto-opening the warehouse sandbox so the
+    // student gets to see their work in the real task. Once-per-session.
+    if (!STATE.storyMoments.s4SandboxAutoOpened) {
+      STATE.storyMoments.s4SandboxAutoOpened = true;
+      setTimeout(() => {
+        const sandboxEl = document.getElementById('sandboxPanel');
+        if (sandboxEl && getComputedStyle(sandboxEl).display === 'none') {
+          try { openSandbox({ scroll: true }); } catch (e) {}
+        }
+      }, 1200);
+    }
   }
   // Ki windup detection: Ki > 0.3 and settle time > 3
   if (STATE.pidKi > 0.3 && _r.settleTime > 3 && _r.overshoot < 10 && !STATE.storyMoments.s4KiWindup) {
@@ -25033,6 +25412,63 @@ document.getElementById('iSlider').addEventListener('input', e => {
   onPIDSliderChange();
 });
 
+// ---- Gravity panel wiring ----
+// Payload mass + gravity feed-forward. Both rerun the sim so the
+// student sees the consequence of each setting.
+STATE.s4PayloadKg = 2.0;
+// Gravity feed-forward on by default. Real robots (Optimus, Atlas) do
+// this; out-of-box student tune actually works. Toggle off to see why
+// feed-forward exists -- the integral has to take over and Ki has to
+// be cranked. That contrast is the lesson.
+STATE.s4GravComp = true;
+// Helper text below the toggle changes copy to match the default-on state.
+const _gravCompDescEl = document.getElementById('gravCompDesc');
+if (_gravCompDescEl) {
+  _gravCompDescEl.innerHTML = 'On by default -- the controller compensates for the constant gravity load so the PID only handles deviations. Toggle off to see what happens when you have to fight gravity with just Kp / Kd / Ki.';
+}
+
+function updateGravityReadout() {
+  const m = (STATE.s4PayloadKg || 2.0) + 0.8; // payload + forearm
+  const armLength = 0.3;
+  const cgFrac = 0.5;
+  const tauMax = m * 9.81 * armLength * cgFrac; // N·m at horizontal
+  const valEl = document.getElementById('gravityLoadVal');
+  if (valEl) valEl.textContent = tauMax.toFixed(2) + ' N·m';
+  const ctxEl = document.getElementById('gravityLoadCtx');
+  const motor = (STATE.lastActuator && STATE.lastActuator.outputTorque_Nm) || 0;
+  if (ctxEl) {
+    if (motor && tauMax > motor) {
+      ctxEl.innerHTML = 'Your actuator delivers <strong>' + motor.toFixed(2) + ' N·m</strong> peak. The arm needs <strong>' + tauMax.toFixed(2) + ' N·m</strong> just to <em>hold</em> the load. It will sag. Either lighter payload, more gear reduction, or a stronger motor.';
+    } else if (motor) {
+      ctxEl.innerHTML = 'Your actuator delivers <strong>' + motor.toFixed(2) + ' N·m</strong> peak. Margin above gravity: <strong>' + (motor - tauMax).toFixed(2) + ' N·m</strong>. That margin is what PID uses to accelerate and recover.';
+    } else {
+      ctxEl.textContent = 'This is the torque your controller has to supply continuously to hold the arm out horizontally.';
+    }
+  }
+}
+
+const payloadSlider = document.getElementById('payloadSlider');
+if (payloadSlider) {
+  payloadSlider.addEventListener('input', e => {
+    STATE.s4PayloadKg = parseFloat(e.target.value);
+    document.getElementById('payloadVal').textContent = STATE.s4PayloadKg.toFixed(1) + ' kg';
+    updateGravityReadout();
+    onPIDSliderChange();
+  });
+}
+const gravCompToggle = document.getElementById('gravCompToggle');
+if (gravCompToggle) {
+  gravCompToggle.addEventListener('change', e => {
+    STATE.s4GravComp = !!e.target.checked;
+    onPIDSliderChange();
+    // Subtle audio confirm on toggle, since the visible change is in the sim graph.
+    try { if (window.audioFx) audioFx.soft(); } catch (e) {}
+  });
+}
+// Initial readout populated as soon as Stage 4 opens (actuator may not
+// be set yet, in which case it gracefully shows the generic text).
+updateGravityReadout();
+
 // ============================================================
 // STAGE 4B: Physics Sandbox — Click-to-move + Warehouse Demo
 // ============================================================
@@ -25114,18 +25550,24 @@ function resetSandbox() {
 
   const act = STATE.lastActuator;
   const train = STATE.lastTrain;
-  const armMass = 2.0 + 0.8;
+  // Pull payload from the same Stage 4 slider that drives simulateArm
+  // so the sandbox and the step-response sim agree on the plant.
+  const payloadKg = (typeof STATE.s4PayloadKg === 'number') ? STATE.s4PayloadKg : 2.0;
+  const armMass = payloadKg + 0.8;
   const armLength = 0.3;
 
   sandboxState = {
     theta: 45 * Math.PI / 180, // current angle (rad)
     omega: 0,           // angular velocity
     integral: 0,        // PID integral
+    prevError: 0,
     targetAngle: 45 * Math.PI / 180, // target (rad)
     J: armMass * armLength * armLength + (act.gearboxMass_g / 1000) * 0.01,
     b: 0.05 + (train.totalWeight_g / 1000) * 0.1,
     maxTorque: act.outputTorque_Nm,
     maxSpeed: act.outputSpeed_dps * Math.PI / 180,
+    armMass,
+    armLength,
     holdingBox: false,
     boxDropped: false,
     boxPos: null,        // {x, y} if dropped
@@ -25217,13 +25659,22 @@ function sandboxFrame(time) {
   const substeps = 4;
   for (let n = 0; n < substeps; n++) {
     const error = s.targetAngle - s.theta;
+    // Anti-windup on error reversal -- matches simulateArm behavior.
+    if (Math.sign(error) !== Math.sign(s.prevError) && s.prevError !== 0) {
+      s.integral *= 0.5;
+    }
     s.integral += error * dt;
     s.integral = Math.max(-10, Math.min(10, s.integral));
+    s.prevError = error;
+    // Same gravity model as simulateArm. Uses current payload from the
+    // Stage 4 slider so the sandbox behaves like the step-response sim.
+    const gravityTorque = (s.armMass || 2.8) * 9.81 * (s.armLength || 0.3) * 0.5 * Math.sin(s.theta);
     let tau = STATE.pidKp * error + STATE.pidKd * (-s.omega) + STATE.pidKi * s.integral;
+    // Gravity feed-forward when the Stage 4 toggle is on.
+    if (STATE.s4GravComp) tau += gravityTorque;
     tau = Math.max(-s.maxTorque, Math.min(s.maxTorque, tau));
     if (Math.abs(s.omega) > s.maxSpeed) tau = Math.sign(-s.omega) * Math.abs(tau) * 0.1;
-    const gravity = 2.8 * 9.81 * 0.3 * Math.sin(s.theta) * 0.5;
-    const alpha = (tau - gravity - s.b * s.omega) / s.J;
+    const alpha = (tau - gravityTorque - s.b * s.omega) / s.J;
     s.omega += alpha * dt;
     s.theta += s.omega * dt;
     // Soft boundary damping instead of hard clamp — prevents slamming
@@ -27341,9 +27792,29 @@ const tableau = getStage5TableauData(meta, act, train, motor, simVerdict, failCo
   }
   if (verdictFocusEl) verdictFocusEl.textContent = verdictPresentation.focus;
   if (verdictPressureEl) verdictPressureEl.textContent = verdictPresentation.pressure;
+  // Reviewer voice messages used to appear as their own three cards
+  // post-shift, which read as a duplicate chat. Aaron's punch list:
+  // "I don't know what the reviewer voice section is for." Fold them
+  // into the live chat history instead -- one channel, one source.
+  // The voice card text is still written (for fallback rendering if
+  // the chat is offline / hidden) but the cards themselves are kept
+  // hidden via a CSS rule so they don't compete with the chat.
   if (voiceMechanicalEl) voiceMechanicalEl.textContent = roomVoices.mechanical;
   if (voiceControlsEl) voiceControlsEl.textContent = roomVoices.controls;
   if (voiceClientEl) voiceClientEl.textContent = roomVoices.client;
+  // Push the same lines into the live chat so they read as continuation
+  // of the conversation, not a separate report section. Wrapped so a
+  // missing StageFiveChat or partial DOM doesn't kill the post-shift
+  // render. Dedup keys prevent re-delivery if the post-shift hand-off
+  // fires more than once.
+  try {
+    if (window.StageFiveChat && roomVoices) {
+      const seen = STATE._postShiftVoiceDelivered || (STATE._postShiftVoiceDelivered = {});
+      if (roomVoices.mechanical && !seen.mech) { seen.mech = true; StageFiveChat.deliver('JL', roomVoices.mechanical); }
+      if (roomVoices.controls && !seen.ctrl) { seen.ctrl = true; StageFiveChat.deliver('AT', roomVoices.controls); }
+      if (roomVoices.client && !seen.client) { seen.client = true; StageFiveChat.deliver('PK', roomVoices.client); }
+    }
+  } catch (e) {}
   if (slackMechanicalTextEl) slackMechanicalTextEl.textContent = roomVoices.mechanical;
   if (slackControlsTextEl) slackControlsTextEl.textContent = roomVoices.controls;
   if (slackClientTextEl) slackClientTextEl.textContent = roomVoices.client;
