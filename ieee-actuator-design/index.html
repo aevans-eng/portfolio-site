@@ -10208,8 +10208,14 @@ body.theme-slack .slack-attachment .req-check {
 }
 
 body.theme-slack .slack-compose {
-  position: sticky;
-  bottom: 0;
+  /* Was: position: sticky; bottom: 0. Sticky combined with
+     .slack-main { height: 100vh } meant the compose anchored to the
+     viewport bottom for the first ~one-screen of scroll, then released
+     mid-page. While anchored, the chat scrolled UNDER it -- the last
+     few messages were hidden behind the buttons. Static placement
+     puts the compose at the natural end of the page (where the
+     Back / Print / Iterate buttons live for post-shift use anyway). */
+  position: static;
   background: #222529;
 }
 
