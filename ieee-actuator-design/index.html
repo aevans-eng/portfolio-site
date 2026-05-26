@@ -4129,76 +4129,218 @@
      Skip button lets them dismiss all future intros for the session. */
   .stage-trans-backdrop {
     position: fixed; inset: 0;
-    background: rgba(8, 12, 18, 0.78);
+    background: rgba(8, 12, 18, 0.85);
     display: flex; align-items: center; justify-content: center;
     z-index: 1100;
     padding: 24px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
+    overflow-y: auto;
   }
   .stage-trans-backdrop[hidden] { display: none; }
   .stage-trans-panel {
     width: 100%;
-    max-width: 540px;
-    background: linear-gradient(180deg, #1d2630 0%, #161d26 100%);
-    border: 1px solid rgba(79,195,247,0.22);
-    border-radius: 14px;
-    padding: 26px 28px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    max-width: 780px;
+    background: linear-gradient(180deg, #1c2530 0%, #141b24 100%);
+    border: 1px solid rgba(255, 122, 69, 0.22);
+    border-radius: 16px;
+    padding: 22px 26px 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+    color: #d6dde8;
+    display: flex; flex-direction: column; gap: 18px;
+    animation: stPanelEnter 0.45s cubic-bezier(0.22, 0.61, 0.36, 1) backwards;
+  }
+  @keyframes stPanelEnter {
+    from { opacity: 0; transform: translateY(14px) scale(0.985); }
+    to { opacity: 1; transform: none; }
+  }
+
+  /* === Title card === */
+  .stage-trans-card {
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 14px;
   }
   .stage-trans-kicker {
-    font-size: 0.7rem;
-    color: #4fc3f7;
-    letter-spacing: 1.4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    color: rgba(255, 122, 69, 0.95);
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
+    opacity: 0;
+    animation: stKickerIn 0.45s ease 0.10s forwards;
   }
-  .stage-trans-head {
+  .stage-trans-title {
+    font-size: 1.7rem;
+    color: #f1f4fa;
+    margin: 0;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    opacity: 0;
+    transform: translateY(8px);
+    animation: stTitleIn 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) 0.20s forwards;
+  }
+  @keyframes stKickerIn { to { opacity: 1; } }
+  @keyframes stTitleIn { to { opacity: 1; transform: none; } }
+
+  /* === Two-zone middle === */
+  .stage-trans-zones {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 14px;
+  }
+  .stage-trans-zone {
+    background: rgba(0, 0, 0, 0.20);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex; flex-direction: column; gap: 8px;
+    min-height: 200px;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  .stage-trans-diagram {
+    animation: stZoneIn 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) 0.50s forwards;
+  }
+  .stage-trans-vignette {
+    animation: stZoneIn 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) 0.65s forwards;
+  }
+  @keyframes stZoneIn { to { opacity: 1; transform: none; } }
+  .stage-trans-zone-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    color: rgba(214, 221, 232, 0.5);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .stage-trans-diagram-svg,
+  .stage-trans-vignette-svg {
+    flex: 1;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .stage-trans-diagram-svg svg,
+  .stage-trans-vignette-svg svg {
+    width: 100%;
+    height: auto;
+    max-height: 160px;
+    display: block;
+  }
+  /* Diagram piece highlight pulse for the newly-added stage's component. */
+  .st-new-piece {
+    animation: stNewPiece 1.6s ease-in-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes stNewPiece {
+    0%, 100% { filter: drop-shadow(0 0 0 rgba(255, 122, 69, 0)); }
+    50% { filter: drop-shadow(0 0 10px rgba(255, 122, 69, 0.65)); }
+  }
+
+  /* === Comic strip === */
+  .stage-trans-comic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .st-comic-cell {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    padding: 12px 12px 10px;
+    display: flex; flex-direction: column; gap: 8px;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  .st-comic-cell:nth-child(1) { animation: stCellIn 0.4s ease 0.95s forwards; }
+  .st-comic-cell:nth-child(2) { animation: stCellIn 0.4s ease 1.05s forwards; }
+  .st-comic-cell:nth-child(3) { animation: stCellIn 0.4s ease 1.15s forwards; }
+  @keyframes stCellIn { to { opacity: 1; transform: none; } }
+  .st-comic-icon {
+    flex: 0 0 auto;
+    height: 56px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255, 122, 69, 0.06);
+    border-radius: 6px;
+  }
+  .st-comic-icon svg { width: 100%; max-width: 80px; height: auto; max-height: 48px; display: block; }
+  .st-comic-caption {
+    font-size: 0.78rem;
+    color: #d6dde8;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  /* === Chen footer + actions === */
+  .stage-trans-foot {
+    display: flex; gap: 16px; align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 14px;
+    flex-wrap: wrap;
+  }
+  .stage-trans-chen {
     display: flex; align-items: center; gap: 12px;
-    margin-bottom: 18px;
+    flex: 1; min-width: 0;
   }
   .stage-trans-avatar {
-    width: 42px; height: 42px;
+    width: 38px; height: 38px;
     border-radius: 50%;
     background: linear-gradient(135deg, #1264a3, #2d8cdb);
     color: #fff;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
+    box-shadow: 0 0 0 3px rgba(18, 100, 163, 0.15);
   }
-  .stage-trans-name { font-size: 0.95rem; color: #e9eef5; font-weight: 600; }
-  .stage-trans-role { font-size: 0.74rem; color: #8a99ab; }
-  .stage-trans-title {
-    font-size: 1.6rem;
+  .stage-trans-chen-text { min-width: 0; flex: 1; }
+  .stage-trans-chen-name {
+    font-size: 0.74rem;
+    color: rgba(214, 221, 232, 0.7);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .stage-trans-chen-line {
+    font-size: 0.92rem;
     color: #e9eef5;
-    margin: 0 0 14px;
-    line-height: 1.2;
+    line-height: 1.45;
+    font-style: italic;
   }
-  .stage-trans-body {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #c8d3e0;
-    margin-bottom: 22px;
-  }
-  .stage-trans-body p { margin: 0 0 10px; }
-  .stage-trans-body p:last-child { margin-bottom: 0; }
   .stage-trans-actions {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    flex-wrap: wrap;
+    display: flex; gap: 10px; align-items: center;
+    flex-shrink: 0;
   }
   .stage-trans-skip {
     background: transparent;
     color: #8a99ab;
     font-size: 0.82rem;
     padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
-  .stage-trans-skip:hover { color: #c8d3e0; }
+  .stage-trans-skip:hover { color: #c8d3e0; border-color: rgba(255, 255, 255, 0.18); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stage-trans-panel,
+    .stage-trans-kicker,
+    .stage-trans-title,
+    .stage-trans-zone,
+    .st-comic-cell { animation: none !important; opacity: 1 !important; transform: none !important; }
+    .st-new-piece { animation: none !important; }
+  }
+
   @media (max-width: 720px) {
-    .stage-trans-panel { padding: 20px; max-width: 100%; }
+    .stage-trans-panel { padding: 18px; max-width: 100%; gap: 14px; }
     .stage-trans-title { font-size: 1.3rem; }
-    .stage-trans-body { font-size: 0.9rem; }
-    .stage-trans-actions { flex-direction: column-reverse; align-items: stretch; gap: 8px; }
-    .stage-trans-actions .btn { width: 100%; }
+    .stage-trans-zones { grid-template-columns: 1fr; }
+    .stage-trans-zone { min-height: 140px; }
+    .stage-trans-comic { grid-template-columns: 1fr; gap: 8px; }
+    .st-comic-cell { flex-direction: row; align-items: center; padding: 10px 12px; }
+    .st-comic-icon { height: 44px; width: 56px; }
+    .st-comic-caption { text-align: left; }
+    .stage-trans-foot { flex-direction: column; align-items: stretch; gap: 12px; }
+    .stage-trans-actions { width: 100%; }
+    .stage-trans-actions .btn { flex: 1; }
   }
 
   .codex-overlay-backdrop {
@@ -4272,42 +4414,87 @@
   .ops-toast.danger { border-left-color: rgba(239,83,80,0.85); }
   .ops-toast.danger .ops-label { color: rgba(239,83,80,0.95); }
 
-  /* Chen toasts: visually distinct from system ops. Avatar circle + warmer
-     accent border + sentence-case "Dr. Chen" label so the student can tell
-     instantly whether this is a person speaking or a system message. */
-  .ops-toast-chen {
+  /* === UNIFIED POPUP (revamp 2026-05-25) ===
+     One format for every speaker: avatar + name + text. Color rail
+     pulls from the speaker's accent palette (set inline via
+     --toast-accent). No more dual Chen / OPS-FEED format. */
+  .ops-toast.ops-toast-unified {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    border-left-color: rgba(255, 122, 69, 0.85);
-    border-color: rgba(255, 122, 69, 0.22);
-    background: rgba(28, 22, 18, 0.96);
+    gap: 14px;
+    padding: 16px 18px 16px 20px;
+    border-left: 5px solid var(--toast-accent, rgba(79,195,247,0.85));
+    border-color: color-mix(in srgb, var(--toast-accent, #4fc3f7) 25%, rgba(255,255,255,0.08));
+    background: rgba(20, 24, 32, 0.96);
+    border-radius: 14px;
+    box-shadow:
+      0 20px 50px rgba(0, 0, 0, 0.55),
+      0 0 0 1px color-mix(in srgb, var(--toast-accent, #4fc3f7) 14%, transparent);
+    min-height: 64px;
+    opacity: 0;
+    transform: translateY(18px) scale(0.95);
+    transition: opacity 0.32s ease, transform 0.42s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
-  .ops-toast-chen .ops-avatar {
+  .ops-toast.ops-toast-unified.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  .ops-toast.ops-toast-unified .ops-avatar {
     flex-shrink: 0;
-    width: 34px; height: 34px;
+    width: 40px; height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #1264a3, #2d8cdb);
-    color: #fff;
     display: flex; align-items: center; justify-content: center;
-    font-weight: 700; font-size: 12px; letter-spacing: 0.04em;
-  }
-  .ops-toast-chen .ops-body { flex: 1; min-width: 0; }
-  .ops-toast-chen .ops-label {
-    display: block;
-    font-size: 0.66rem;
-    letter-spacing: 0.06em;
-    color: rgba(255, 180, 120, 0.95);
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
-    margin-bottom: 4px;
-    text-transform: none;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--toast-accent, #4fc3f7) 22%, transparent);
+    animation: opsAvatarGlow 1.6s ease-out;
+  }
+  @keyframes opsAvatarGlow {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--toast-accent, #4fc3f7) 60%, transparent); }
+    60% { box-shadow: 0 0 0 8px color-mix(in srgb, var(--toast-accent, #4fc3f7) 0%, transparent); }
+    100% { box-shadow: 0 0 0 3px color-mix(in srgb, var(--toast-accent, #4fc3f7) 22%, transparent); }
+  }
+  .ops-toast.ops-toast-unified .ops-body {
+    flex: 1;
+    min-width: 0;
+    display: flex; flex-direction: column; gap: 3px;
+  }
+  .ops-toast.ops-toast-unified .ops-speaker {
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: color-mix(in srgb, var(--toast-accent, #4fc3f7) 60%, #e6e9ef);
+    letter-spacing: 0.01em;
+  }
+  .ops-toast.ops-toast-unified .ops-text {
+    font-size: 0.94rem;
+    color: #e6e9ef;
+    line-height: 1.45;
+  }
+  /* Tone tints — subtle, secondary to the speaker color. */
+  .ops-toast.ops-toast-unified.warn {
+    border-left-color: rgba(255, 167, 38, 0.85);
+  }
+  .ops-toast.ops-toast-unified.danger {
+    border-left-color: rgba(239, 83, 80, 0.85);
+  }
+  .ops-toast.ops-toast-unified.success {
+    border-left-color: rgba(102, 187, 106, 0.85);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ops-toast.ops-toast-unified .ops-avatar { animation: none; }
+    .ops-toast.ops-toast-unified { transition: opacity 0.2s ease; transform: none !important; }
   }
 
   @media (max-width: 720px) {
     .ops-host { right: 10px; left: 10px; max-width: none; top: 76px; }
     .ops-toast { padding: 12px 14px; font-size: 0.88rem; }
     .ops-toast .ops-label { font-size: 0.64rem; }
-    .ops-toast-chen .ops-avatar { width: 30px; height: 30px; font-size: 11px; }
+    .ops-toast.ops-toast-unified { padding: 14px 14px 14px 16px; gap: 12px; min-height: 60px; }
+    .ops-toast.ops-toast-unified .ops-avatar { width: 36px; height: 36px; font-size: 12px; }
+    .ops-toast.ops-toast-unified .ops-speaker { font-size: 0.7rem; }
+    .ops-toast.ops-toast-unified .ops-text { font-size: 0.88rem; }
   }
 
   /* ============================================================
@@ -14501,20 +14688,41 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
      just finished to the work they're about to do. Skipped automatically
      on second visit (tracked in STATE._transShown). -->
 <div class="stage-trans-backdrop" id="stageTransBackdrop" role="dialog" aria-modal="true" aria-labelledby="stageTransTitle" hidden>
-  <div class="stage-trans-panel">
-    <div class="stage-trans-kicker" id="stageTransKicker">UP NEXT</div>
-    <div class="stage-trans-head">
-      <div class="stage-trans-avatar">SC</div>
-      <div>
-        <div class="stage-trans-name">Dr. Sarah Chen</div>
-        <div class="stage-trans-role">Senior Actuator Engineer</div>
+  <div class="stage-trans-panel" id="stageTransPanel">
+    <!-- Cinematic title card -->
+    <div class="stage-trans-card">
+      <div class="stage-trans-kicker" id="stageTransKicker">UP NEXT</div>
+      <h2 class="stage-trans-title" id="stageTransTitle">Stage</h2>
+    </div>
+
+    <!-- Two-zone middle: assembly diagram + character vignette -->
+    <div class="stage-trans-zones">
+      <div class="stage-trans-zone stage-trans-diagram" id="stageTransDiagram" aria-hidden="true">
+        <div class="stage-trans-zone-label">Building toward the joint</div>
+        <div class="stage-trans-diagram-svg" id="stageTransDiagramSvg"></div>
+      </div>
+      <div class="stage-trans-zone stage-trans-vignette" id="stageTransVignette" aria-hidden="true">
+        <div class="stage-trans-zone-label" id="stageTransVignetteLabel">On the team</div>
+        <div class="stage-trans-vignette-svg" id="stageTransVignetteSvg"></div>
       </div>
     </div>
-    <h2 class="stage-trans-title" id="stageTransTitle">Stage</h2>
-    <div class="stage-trans-body" id="stageTransBody"></div>
-    <div class="stage-trans-actions">
-      <button class="btn btn-secondary stage-trans-skip" id="stageTransSkip">Skip intros</button>
-      <button class="btn btn-primary" id="stageTransContinue">Continue &rarr;</button>
+
+    <!-- Comic strip - 3 cells with captions -->
+    <div class="stage-trans-comic" id="stageTransComic" aria-hidden="true"></div>
+
+    <!-- Chen-voiced one-liner + actions -->
+    <div class="stage-trans-foot">
+      <div class="stage-trans-chen">
+        <div class="stage-trans-avatar">SC</div>
+        <div class="stage-trans-chen-text">
+          <div class="stage-trans-chen-name">Dr. Sarah Chen</div>
+          <div class="stage-trans-chen-line" id="stageTransChenLine">...</div>
+        </div>
+      </div>
+      <div class="stage-trans-actions">
+        <button class="btn btn-secondary stage-trans-skip" id="stageTransSkip">Skip intros</button>
+        <button class="btn btn-primary" id="stageTransContinue">Continue &rarr;</button>
+      </div>
     </div>
   </div>
 </div>
@@ -17565,12 +17773,49 @@ function escapeHtml(str) {
   ));
 }
 
+// Single source of truth for every popup speaker. Matches the chat
+// avatarClass + gradient system so toasts and chat messages read as
+// the same character. RB (ReviewBot) is the carrier for system / ops
+// messages that previously used the generic 'OPS FEED' pill.
+const TOAST_SPEAKERS = {
+  SC: { name: 'Dr. Chen',     initials: 'SC', avatarBg: 'linear-gradient(135deg, #1264a3, #2d8cdb)', accent: '#2d8cdb', avatarColor: '#fff' },
+  JL: { name: 'Jamie Liu',    initials: 'JL', avatarBg: 'linear-gradient(135deg, #7c3aed, #a855f7)', accent: '#a855f7', avatarColor: '#fff' },
+  AT: { name: 'Alex Torres',  initials: 'AT', avatarBg: 'linear-gradient(135deg, #0ea5e9, #38bdf8)', accent: '#38bdf8', avatarColor: '#fff' },
+  PK: { name: 'Priya Kapoor', initials: 'PK', avatarBg: 'linear-gradient(135deg, #ecb22e, #f0c75e)', accent: '#f0c75e', avatarColor: '#333' },
+  RB: { name: 'ReviewBot',    initials: 'RB', avatarBg: '#2bac76',                                  accent: '#2bac76', avatarColor: '#fff' },
+};
+
+// Resolve a speaker key from either opts.speaker (new API) or
+// opts.label (legacy). Default = SC (Chen). Anything unrecognised
+// also falls back to SC so legacy callers don't break.
+function resolveToastSpeaker(opts) {
+  if (opts.speaker && TOAST_SPEAKERS[opts.speaker]) return opts.speaker;
+  const label = (opts.label || '').toUpperCase().trim();
+  if (label.includes('CHEN')) return 'SC';
+  if (label.includes('JAMIE') || label.includes('MECH')) return 'JL';
+  if (label.includes('ALEX') || label.includes('CONTROL')) return 'AT';
+  if (label.includes('PRIYA') || label.includes('SYSTEM') || label.includes('HR')) return 'PK';
+  if (label.includes('BOT') || label.includes('OPS') || label.includes('FEED')) return 'RB';
+  // Default Chen — the unified format means generic 'info' tone reads
+  // as Chen narrating; ops messages get an explicit speaker='RB' from
+  // their callers if they want to read as system.
+  return 'SC';
+}
+
+// Unified popup system. Single visible at a time, queue overflow.
+// Aaron's complaints addressed:
+//   - 'don't feel impactful': bigger, more dramatic entrance
+//   - 'overwhelming, multiple at the same time': cap of 1 visible
+//   - 'confusing why we have two different types': single format,
+//     speaker-coded via avatar + accent color
 function pushOpsToast(text, opts = {}) {
   const host = document.getElementById('opsToastHost');
   if (!host) return;
   const t = (text || '').toString().trim();
   if (!t) return;
 
+  // Dedup with cooldown — unchanged behavior, just keyed against the
+  // unified store.
   const now = Date.now();
   const key = (opts.key || t).toString();
   const cooldownMs = Number.isFinite(opts.cooldownMs) ? opts.cooldownMs : 9000;
@@ -17578,37 +17823,62 @@ function pushOpsToast(text, opts = {}) {
   if (now - lastAt < cooldownMs) return;
   STATE._opsToastSeen[key] = now;
 
-  // Aaron flagged ops-feed spam — three popups stacked at once with mixed
-  // Chen / system labels and no clear distinction. Cap visible toasts at
-  // TWO, oldest evicted on overflow. This is the canonical limit; callers
-  // do not get to override.
-  while (host.children.length >= 2) host.removeChild(host.firstChild);
+  const speakerKey = resolveToastSpeaker(opts);
+  const ttlMs = Number.isFinite(opts.ttlMs) ? opts.ttlMs : 10000;
+  const priority = Number.isFinite(opts.priority) ? opts.priority : 0;
 
-  // Chen messages get a visual treatment distinct from system ops:
-  // an "SC" avatar circle, accent-colored left rail, and a tighter
-  // label. The reader can identify the speaker at a glance.
-  const isChen = (opts.label || '').toUpperCase().includes('CHEN');
-  const el = document.createElement('div');
-  el.className = 'ops-toast ' + (opts.tone || 'info') + (isChen ? ' ops-toast-chen' : '');
-  if (isChen) {
-    el.innerHTML = `<span class="ops-avatar" aria-hidden="true">SC</span><div class="ops-body"><span class="ops-label">Dr. Chen</span>${escapeHtml(t)}</div>`;
+  const item = { text: t, speakerKey, ttlMs, priority, tone: opts.tone || 'info' };
+
+  // Queue model: if no toast is currently visible, show immediately.
+  // Otherwise stash in a priority-sorted queue and drain when the
+  // current one fades.
+  if (!STATE._toastVisible) {
+    _showToastItem(item);
   } else {
-    el.innerHTML = `<span class="ops-label">${opts.label || 'OPS FEED'}</span>${escapeHtml(t)}`;
+    STATE._toastQueue = STATE._toastQueue || [];
+    STATE._toastQueue.push(item);
+    // Higher priority first; FIFO within priority.
+    STATE._toastQueue.sort((a, b) => b.priority - a.priority);
   }
-  host.appendChild(el);
+}
 
-  // Audio: subtle ping when Chen / OPS messages arrive (skip alarms — fail toasts get their own cue elsewhere).
+function _showToastItem(item) {
+  const host = document.getElementById('opsToastHost');
+  if (!host) return;
+  const speaker = TOAST_SPEAKERS[item.speakerKey] || TOAST_SPEAKERS.SC;
+  const el = document.createElement('div');
+  el.className = 'ops-toast ops-toast-unified ' + (item.tone || 'info');
+  el.style.setProperty('--toast-accent', speaker.accent);
+  el.innerHTML =
+    '<span class="ops-avatar" aria-hidden="true" style="background:' + speaker.avatarBg + ';color:' + speaker.avatarColor + ';">' + speaker.initials + '</span>' +
+    '<div class="ops-body">' +
+      '<span class="ops-speaker">' + escapeHtml(speaker.name) + '</span>' +
+      '<span class="ops-text">' + escapeHtml(item.text) + '</span>' +
+    '</div>';
+  host.appendChild(el);
+  STATE._toastVisible = el;
+
+  // Soft audio ping — same chenPing for everyone since the visual is
+  // already telling us who it is.
   try { audioFx.chenPing(); } catch (e) {}
 
+  // Trigger CSS entrance animation
   requestAnimationFrame(() => el.classList.add('show'));
 
-  // Hold time bumped from 6.2s -> 8.5s so a 15-year-old reading at a normal
-  // pace finishes the line before it fades. Callers can override via opts.ttlMs.
-  const ttlMs = Number.isFinite(opts.ttlMs) ? opts.ttlMs : 8500;
+  // Fade out + remove + drain queue
   setTimeout(() => {
     el.classList.remove('show');
-    setTimeout(() => { try { el.remove(); } catch (_) {} }, 320);
-  }, ttlMs);
+    setTimeout(() => {
+      try { el.remove(); } catch (_) {}
+      STATE._toastVisible = null;
+      // Pump the next queued item (if any) on a short delay so it
+      // doesn't slam into the prior fade.
+      const next = (STATE._toastQueue || []).shift();
+      if (next) {
+        setTimeout(() => _showToastItem(next), 120);
+      }
+    }, 340);
+  }, item.ttlMs);
 }
 
 const CODEX_SCENARIOS = {
@@ -20233,38 +20503,205 @@ function onEnterStage0() {
 // default; "Skip intros" makes the rest of the session quiet too.
 // Reads STATE._transShown and STATE._transSkipAll.
 // ============================================================
+// New richer data shape. Each transition carries:
+//   - title: cinematic title card text
+//   - character: which speaker's vignette to show ('SC' / 'JL' / 'AT' / 'PK')
+//   - vignetteScene: which workstation backdrop to draw (whiteboard /
+//     workbench / terminal / boardroom)
+//   - diagramStage: which assembly step the joint diagram is at (0..5)
+//   - comicCells: 3 cells, each an icon key + caption
+//   - chenLine: the single italicised Chen one-liner at the foot
 const STAGE_TRANSITIONS = {
   2: {
     title: 'Pick a motor that fits the joint.',
-    body: [
-      "You know the torque target. Now you need a motor that can produce it once gears are in the loop.",
-      "Three real motors. Each one wins on a different axis (push force, spin speed, size, or weight) and loses on another. There is no single right answer. The trade-off chart at the top shows where each motor sits.",
-      "This choice matters: on a humanoid robot like Optimus or Figure 02, the actuators drive roughly half the bill of materials. Every motor pick scales 40+ times across one robot, and millions of times across a fleet.",
+    character: 'JL',
+    vignetteScene: 'workbench',
+    diagramStage: 2,
+    comicCells: [
+      { icon: 'spec',    caption: 'You have a torque target.' },
+      { icon: 'catalog', caption: 'Three real motors. Three trade-offs.' },
+      { icon: 'choice',  caption: 'Pick the one that fits.' },
     ],
+    chenLine: 'Motor choice locks the rest of the design. Pick wrong and no gearbox saves you.',
   },
   3: {
     title: 'Design the gearbox.',
-    body: [
-      "Motor picked. It doesn't quite have the torque you need at the right speed. That's what the gearbox is for.",
-      "You'll trade ratio against package size, mass, and efficiency. Multi-stage if you want to keep things small. Single-stage if you want simplicity.",
-      "When the housing won't fit, the visualizer will tell you.",
+    character: 'JL',
+    vignetteScene: 'whiteboard',
+    diagramStage: 3,
+    comicCells: [
+      { icon: 'motor', caption: 'Motor gives you ~1 N·m.' },
+      { icon: 'gear',  caption: 'Joint needs 7 N·m.' },
+      { icon: 'bridge', caption: 'Gears bridge the gap.' },
     ],
+    chenLine: 'Trade ratio against size, mass, and efficiency. Multi-stage if you need it small.',
   },
   4: {
     title: 'Tune the controller.',
-    body: [
-      "Mechanical design is done. Now the controller. The motor doesn't know where to stop on its own; you have to tell it how to push, how to brake, and how to hold.",
-      "Three gains: Kp (push toward target), Kd (damp the swing), Ki (chase the last bit of error). Try one at a time. Watch settle time and overshoot.",
-      "Whatever you commit here drives the live demo in Stage 5.",
+    character: 'AT',
+    vignetteScene: 'terminal',
+    diagramStage: 4,
+    comicCells: [
+      { icon: 'target', caption: 'Send the arm to a target.' },
+      { icon: 'curve',  caption: 'Three gains shape the response.' },
+      { icon: 'graph',  caption: 'Watch settle time + overshoot.' },
     ],
+    chenLine: 'Kp pushes, Kd brakes, Ki closes the gap. Tune one at a time.',
   },
   5: {
     title: 'Run the line. Defend the design.',
-    body: [
-      "Your design is locked. Time to see it run on a real-physics production line. Same motor, same gears, same PID gains driving the arms.",
-      "The team is watching in the channel. A scorecard prints PASS or FAIL for every Stage 1 spec when the shift ends.",
-      "Then the room asks you to defend specific choices. Pick the answer you'd actually use.",
+    character: 'PK',
+    vignetteScene: 'boardroom',
+    diagramStage: 5,
+    comicCells: [
+      { icon: 'belt',     caption: 'Your design runs the conveyor.' },
+      { icon: 'scorecard', caption: 'A scorecard checks every spec.' },
+      { icon: 'qa',       caption: 'Then the room asks why.' },
     ],
+    chenLine: 'Same motor, same gears, same PID. Real physics decides.',
+  },
+};
+
+// Inline SVG library for transition visuals.
+//
+// All SVGs use viewBox so they scale to the container. Color tokens
+// match the existing accent palette (orange #ff7a45 / slate #1a1f2a /
+// dim grey) so the transitions feel like part of the same product.
+const TRANS_SVG = {
+  // Assembly diagram. The joint builds up across stages:
+  //   2 → motor highlighted
+  //   3 → motor + gears
+  //   4 → motor + gears + controller box (wires pulse)
+  //   5 → full assembly with arm on conveyor
+  // Returns an SVG string with the .st-new-piece class applied to the
+  // most-recently-added component.
+  diagram(stage) {
+    const orange = '#ff7a45';
+    const slate = '#2a2f3a';
+    const dim = 'rgba(255,255,255,0.18)';
+    const text = '#7d8595';
+    // Component visibility flags
+    const m = stage >= 2;          // motor
+    const g = stage >= 3;          // gears
+    const c = stage >= 4;          // controller
+    const a = stage >= 5;          // arm + conveyor
+    const newAt = (s) => stage === s ? ' class="st-new-piece"' : '';
+    return '<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" aria-label="Joint assembly diagram">' +
+      // baseline guide
+      '<line x1="0" y1="155" x2="320" y2="155" stroke="' + dim + '" stroke-width="1" stroke-dasharray="3 3"/>' +
+      // Motor (left side cylinder)
+      (m ? '<g' + newAt(2) + ' transform="translate(40,80)"><rect x="0" y="0" width="60" height="48" rx="6" fill="' + slate + '" stroke="' + orange + '" stroke-width="2"/><circle cx="30" cy="24" r="14" fill="' + orange + '" opacity="0.45"/><circle cx="30" cy="24" r="5" fill="rgba(0,0,0,0.6)"/><text x="30" y="64" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">MOTOR</text></g>'
+        : '<g transform="translate(40,80)" opacity="0.25"><rect x="0" y="0" width="60" height="48" rx="6" fill="none" stroke="' + dim + '" stroke-width="1.5" stroke-dasharray="4 3"/></g>') +
+      // Gears (middle)
+      (g ? '<g' + newAt(3) + ' transform="translate(130,82)"><circle cx="18" cy="22" r="18" fill="none" stroke="' + orange + '" stroke-width="2"/><circle cx="18" cy="22" r="6" fill="' + orange + '" opacity="0.5"/><circle cx="50" cy="32" r="22" fill="none" stroke="' + orange + '" stroke-width="2"/><circle cx="50" cy="32" r="6" fill="' + orange + '" opacity="0.5"/><text x="34" y="74" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">GEARS</text></g>'
+        : '<g transform="translate(130,82)" opacity="0.25"><circle cx="34" cy="28" r="20" fill="none" stroke="' + dim + '" stroke-width="1.5" stroke-dasharray="4 3"/></g>') +
+      // Controller (top right)
+      (c ? '<g' + newAt(4) + ' transform="translate(220,30)"><rect x="0" y="0" width="60" height="38" rx="4" fill="' + slate + '" stroke="' + orange + '" stroke-width="2"/><rect x="6" y="8" width="48" height="6" rx="1" fill="' + orange + '" opacity="0.6"/><rect x="6" y="18" width="32" height="4" rx="1" fill="' + orange + '" opacity="0.4"/><rect x="6" y="26" width="40" height="4" rx="1" fill="' + orange + '" opacity="0.4"/><line x1="30" y1="38" x2="30" y2="80" stroke="' + orange + '" stroke-width="1.5" stroke-dasharray="3 3"/><text x="30" y="-4" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">CTRL</text></g>'
+        : '<g transform="translate(220,30)" opacity="0.25"><rect x="0" y="0" width="60" height="38" rx="4" fill="none" stroke="' + dim + '" stroke-width="1.5" stroke-dasharray="4 3"/></g>') +
+      // Arm + conveyor (Stage 5: the full assembly mounted)
+      (a ? '<g' + newAt(5) + ' transform="translate(180,118)"><rect x="0" y="34" width="120" height="14" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.5"/><line x1="6" y1="48" x2="116" y2="48" stroke="' + orange + '" stroke-width="1" stroke-dasharray="6 4" opacity="0.6"/><rect x="58" y="6" width="14" height="32" fill="' + orange + '" opacity="0.7"/><text x="60" y="68" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">CONVEYOR</text></g>'
+        : '') +
+      '</svg>';
+  },
+
+  // Character vignettes — a workstation scene with an avatar circle.
+  // Avatar uses the existing SC / JL / AT / PK color treatment.
+  vignette(character, scene) {
+    const palettes = {
+      SC: { c1: '#1264a3', c2: '#2d8cdb', text: 'SC', label: 'Dr. Chen' },
+      JL: { c1: '#a64d4d', c2: '#d97070', text: 'JL', label: 'Jamie · Mech' },
+      AT: { c1: '#3f8a4a', c2: '#5fb568', text: 'AT', label: 'Alex · Controls' },
+      PK: { c1: '#7a4d9a', c2: '#a06fc8', text: 'PK', label: 'Priya · Systems' },
+    };
+    const p = palettes[character] || palettes.SC;
+    const orange = '#ff7a45';
+    const dim = 'rgba(255,255,255,0.15)';
+    const slate = '#2a2f3a';
+    const muted = '#7d8595';
+    // Scene props per workstation
+    let scenePropsSvg = '';
+    if (scene === 'workbench') {
+      // Workbench with motor catalog open
+      scenePropsSvg =
+        '<rect x="0" y="110" width="200" height="6" fill="' + slate + '"/>' +
+        '<rect x="14" y="62" width="76" height="48" rx="3" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/>' +
+        '<rect x="20" y="68" width="64" height="6" fill="' + orange + '" opacity="0.5"/>' +
+        '<rect x="20" y="78" width="40" height="3" fill="' + dim + '"/>' +
+        '<rect x="20" y="85" width="50" height="3" fill="' + dim + '"/>' +
+        '<rect x="20" y="92" width="32" height="3" fill="' + dim + '"/>' +
+        '<rect x="20" y="99" width="44" height="3" fill="' + dim + '"/>' +
+        '<text x="100" y="135" font-size="8" fill="' + muted + '" font-family="JetBrains Mono, monospace">workbench</text>';
+    } else if (scene === 'whiteboard') {
+      // Whiteboard with gear sketches
+      scenePropsSvg =
+        '<rect x="10" y="20" width="100" height="80" rx="2" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/>' +
+        '<circle cx="35" cy="50" r="14" fill="none" stroke="' + orange + '" stroke-width="1.5"/>' +
+        '<circle cx="35" cy="50" r="4" fill="' + orange + '" opacity="0.5"/>' +
+        '<circle cx="78" cy="62" r="18" fill="none" stroke="' + orange + '" stroke-width="1.5"/>' +
+        '<circle cx="78" cy="62" r="5" fill="' + orange + '" opacity="0.5"/>' +
+        '<text x="20" y="92" font-size="8" fill="' + muted + '">ratio = 4:1</text>' +
+        '<text x="100" y="135" font-size="8" fill="' + muted + '" font-family="JetBrains Mono, monospace">whiteboard</text>';
+    } else if (scene === 'terminal') {
+      // Monitor with a step-response plot
+      scenePropsSvg =
+        '<rect x="10" y="18" width="110" height="70" rx="3" fill="#0a0d14" stroke="' + dim + '" stroke-width="1"/>' +
+        '<rect x="14" y="22" width="102" height="62" fill="#070b12"/>' +
+        '<line x1="20" y1="78" x2="112" y2="78" stroke="' + dim + '" stroke-width="0.5"/>' +
+        '<line x1="20" y1="40" x2="112" y2="40" stroke="' + dim + '" stroke-width="0.5" stroke-dasharray="2 2"/>' +
+        '<path d="M 20 78 L 26 78 L 32 35 L 42 50 L 56 42 L 78 41 L 110 41" fill="none" stroke="' + orange + '" stroke-width="1.5"/>' +
+        '<rect x="20" y="92" width="100" height="3" fill="' + slate + '"/>' +
+        '<text x="100" y="135" font-size="8" fill="' + muted + '" font-family="JetBrains Mono, monospace">terminal</text>';
+    } else if (scene === 'boardroom') {
+      // Conference table with team
+      scenePropsSvg =
+        '<ellipse cx="100" cy="80" rx="78" ry="24" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/>' +
+        '<circle cx="40" cy="64" r="9" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/>' +
+        '<circle cx="80" cy="58" r="9" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/>' +
+        '<circle cx="120" cy="58" r="9" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/>' +
+        '<circle cx="160" cy="64" r="9" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/>' +
+        '<text x="100" y="135" font-size="8" fill="' + muted + '" font-family="JetBrains Mono, monospace">review room</text>';
+    }
+    // Avatar circle (pinned bottom-right) + scene props
+    return '<svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" aria-label="Character vignette">' +
+      scenePropsSvg +
+      // Avatar
+      '<g transform="translate(140,80)">' +
+      '<defs><linearGradient id="avg-' + character + '" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="' + p.c1 + '"/><stop offset="100%" stop-color="' + p.c2 + '"/></linearGradient></defs>' +
+      '<circle cx="22" cy="22" r="22" fill="url(#avg-' + character + ')"/>' +
+      '<text x="22" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="IBM Plex Sans, sans-serif">' + p.text + '</text>' +
+      '</g>' +
+      // Speaker label
+      '<rect x="124" y="34" width="64" height="16" rx="3" fill="rgba(0,0,0,0.4)"/>' +
+      '<text x="156" y="45" text-anchor="middle" font-size="8" fill="#d6dde8" font-family="IBM Plex Sans, sans-serif" font-weight="600">' + p.label + '</text>' +
+      '</svg>';
+  },
+
+  // Comic-cell icons. Single SVG per icon, returns string.
+  // Same iconography as the assembly diagram so the visual language stays
+  // consistent (motor cylinder, gear circle, arm rectangle, etc.).
+  comicIcon(key) {
+    const orange = '#ff7a45';
+    const dim = '#7d8595';
+    const slate = 'rgba(255,255,255,0.07)';
+    const svgs = {
+      // Stage 2 icons
+      spec: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="44" rx="3" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><rect x="12" y="14" width="32" height="3" fill="' + orange + '"/><rect x="12" y="22" width="48" height="2" fill="' + dim + '"/><rect x="12" y="28" width="40" height="2" fill="' + dim + '"/><rect x="12" y="34" width="44" height="2" fill="' + dim + '"/><text x="58" y="18" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">7 N·m</text></svg>',
+      catalog: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="14" width="22" height="28" rx="2" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><rect x="28" y="14" width="22" height="28" rx="2" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.5"/><rect x="54" y="14" width="22" height="28" rx="2" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><circle cx="13" cy="28" r="5" fill="' + dim + '" opacity="0.5"/><circle cx="39" cy="28" r="5" fill="' + orange + '" opacity="0.7"/><circle cx="65" cy="28" r="5" fill="' + dim + '" opacity="0.5"/></svg>',
+      choice: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="12" width="40" height="32" rx="3" fill="' + slate + '" stroke="' + orange + '" stroke-width="2"/><circle cx="40" cy="28" r="9" fill="' + orange + '" opacity="0.6"/><circle cx="40" cy="28" r="3" fill="rgba(0,0,0,0.6)"/><path d="M 12 40 L 18 40 L 18 36 L 22 36 L 22 32 L 26 32 L 26 28 L 32 28" fill="none" stroke="' + orange + '" stroke-width="1.5"/></svg>',
+      // Stage 3 icons
+      motor: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="14" width="36" height="28" rx="4" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.5"/><circle cx="32" cy="28" r="9" fill="' + orange + '" opacity="0.5"/><circle cx="32" cy="28" r="3" fill="rgba(0,0,0,0.6)"/><text x="64" y="32" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">1 N·m</text></svg>',
+      gear: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="28" r="10" fill="none" stroke="' + orange + '" stroke-width="2"/><circle cx="20" cy="28" r="4" fill="' + orange + '" opacity="0.5"/><circle cx="48" cy="32" r="16" fill="none" stroke="' + orange + '" stroke-width="2"/><circle cx="48" cy="32" r="5" fill="' + orange + '" opacity="0.5"/><text x="64" y="14" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">4:1</text></svg>',
+      bridge: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><text x="6" y="16" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">in</text><text x="64" y="16" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">out</text><rect x="4" y="20" width="20" height="22" rx="2" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><path d="M 24 28 L 56 28 M 50 23 L 56 28 L 50 33" fill="none" stroke="' + orange + '" stroke-width="2"/><rect x="56" y="20" width="20" height="22" rx="2" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.5"/><text x="14" y="35" font-size="8" fill="' + orange + '" text-anchor="middle" font-family="JetBrains Mono, monospace">1</text><text x="66" y="35" font-size="8" fill="' + orange + '" text-anchor="middle" font-family="JetBrains Mono, monospace">7</text></svg>',
+      // Stage 4 icons
+      target: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="28" r="18" fill="none" stroke="' + dim + '" stroke-width="1"/><circle cx="40" cy="28" r="12" fill="none" stroke="' + dim + '" stroke-width="1"/><circle cx="40" cy="28" r="6" fill="' + orange + '" opacity="0.6"/><path d="M 8 28 L 30 28 M 24 24 L 30 28 L 24 32" fill="none" stroke="' + orange + '" stroke-width="2"/></svg>',
+      curve: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><line x1="6" y1="48" x2="74" y2="48" stroke="' + dim + '" stroke-width="1"/><line x1="6" y1="14" x2="74" y2="14" stroke="' + dim + '" stroke-width="0.5" stroke-dasharray="2 2"/><path d="M 6 48 L 14 48 L 22 14 L 32 22 L 44 16 L 60 16 L 74 16" fill="none" stroke="' + orange + '" stroke-width="2"/></svg>',
+      graph: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="44" rx="2" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><text x="12" y="18" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">SETTLE</text><text x="48" y="18" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">0.83s</text><text x="12" y="32" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">O.SHOOT</text><text x="48" y="32" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">2.7°</text><text x="12" y="46" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">SS ERR</text><text x="48" y="46" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">1.1°</text></svg>',
+      // Stage 5 icons
+      belt: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="32" width="72" height="10" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><line x1="8" y1="37" x2="72" y2="37" stroke="' + orange + '" stroke-width="1" stroke-dasharray="6 4"/><rect x="16" y="22" width="10" height="10" fill="' + orange + '" opacity="0.6"/><rect x="36" y="22" width="10" height="10" fill="' + orange + '" opacity="0.6"/><rect x="56" y="22" width="10" height="10" fill="' + orange + '" opacity="0.6"/></svg>',
+      scorecard: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="44" rx="3" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><text x="12" y="18" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">TORQUE</text><text x="64" y="18" font-size="8" fill="#4ade80" font-family="JetBrains Mono, monospace" font-weight="700" text-anchor="end">✓</text><text x="12" y="30" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">SPEED</text><text x="64" y="30" font-size="8" fill="#4ade80" font-family="JetBrains Mono, monospace" font-weight="700" text-anchor="end">✓</text><text x="12" y="42" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">MASS</text><text x="64" y="42" font-size="8" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-weight="700" text-anchor="end">⚠</text></svg>',
+      qa: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="8" width="46" height="22" rx="6" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><text x="28" y="22" text-anchor="middle" font-size="9" fill="' + dim + '" font-family="IBM Plex Sans, sans-serif">Why this motor?</text><polygon points="14,30 18,30 14,36" fill="' + slate + '"/><rect x="28" y="32" width="46" height="18" rx="6" fill="rgba(255,122,69,0.18)" stroke="' + orange + '" stroke-width="1.5"/><text x="50" y="44" text-anchor="middle" font-size="9" fill="#f1f4fa" font-family="IBM Plex Sans, sans-serif">because...</text></svg>',
+    };
+    return svgs[key] || '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="44" rx="3" fill="' + slate + '" stroke="' + dim + '"/></svg>';
   },
 };
 
@@ -20276,13 +20713,34 @@ function showStageTransition(stage) {
   STATE._transShown[stage] = true;
   const t = STAGE_TRANSITIONS[stage];
   const titleEl = document.getElementById('stageTransTitle');
-  const bodyEl = document.getElementById('stageTransBody');
   const kickerEl = document.getElementById('stageTransKicker');
   const backdrop = document.getElementById('stageTransBackdrop');
-  if (!titleEl || !bodyEl || !backdrop) return;
+  const diagramEl = document.getElementById('stageTransDiagramSvg');
+  const vignetteEl = document.getElementById('stageTransVignetteSvg');
+  const vignetteLabelEl = document.getElementById('stageTransVignetteLabel');
+  const comicEl = document.getElementById('stageTransComic');
+  const chenLineEl = document.getElementById('stageTransChenLine');
+  const chenAvatarEl = document.querySelector('#stageTransPanel .stage-trans-avatar');
+  if (!titleEl || !backdrop) return;
   kickerEl.textContent = 'Stage ' + stage + ' of 5';
   titleEl.textContent = t.title;
-  bodyEl.innerHTML = t.body.map(p => '<p>' + p + '</p>').join('');
+  if (diagramEl) diagramEl.innerHTML = TRANS_SVG.diagram(t.diagramStage || stage);
+  if (vignetteEl) vignetteEl.innerHTML = TRANS_SVG.vignette(t.character || 'SC', t.vignetteScene || 'workbench');
+  if (vignetteLabelEl) {
+    const labels = { SC: 'Chen at her desk', JL: 'Jamie on mech', AT: 'Alex on controls', PK: 'Priya in the room' };
+    vignetteLabelEl.textContent = labels[t.character || 'SC'] || 'On the team';
+  }
+  if (comicEl && t.comicCells) {
+    comicEl.innerHTML = t.comicCells.map(cell =>
+      '<div class="st-comic-cell">' +
+        '<div class="st-comic-icon">' + TRANS_SVG.comicIcon(cell.icon) + '</div>' +
+        '<div class="st-comic-caption">' + escapeHtml(cell.caption) + '</div>' +
+      '</div>'
+    ).join('');
+  }
+  if (chenLineEl) chenLineEl.textContent = t.chenLine || '';
+  // The footer-avatar stays SC (Chen always signs off the transition).
+  if (chenAvatarEl) chenAvatarEl.textContent = 'SC';
   backdrop.hidden = false;
   // Focus the primary action so Enter dismisses
   setTimeout(() => document.getElementById('stageTransContinue')?.focus(), 50);
@@ -21553,10 +22011,10 @@ function updateS3() {
 
   // Non-blocking ambience: call out comically-extreme states, but never spam.
   if (physicalChecksVisible && act.envelopeDiam_mm > REQUIREMENTS.diameter_mm * 2) {
-    pushOpsToast('Packaging: gearbox exceeds housing. The arm team is holding a tape measure and making eye contact.', { tone: 'warn', key: 's3_packaging', cooldownMs: 20000 });
+    pushOpsToast('Packaging: gearbox exceeds housing. The arm team is holding a tape measure and making eye contact.', { speaker: 'JL', tone: 'warn', key: 's3_packaging', cooldownMs: 20000 });
   }
   if (physicalChecksVisible && act.totalMass_g > REQUIREMENTS.mass_g * 3) {
-    pushOpsToast('Structural: joint mass is out of family. Please stop adding forklift accessories.', { tone: 'warn', key: 's3_mass', cooldownMs: 20000 });
+    pushOpsToast('Structural: joint mass is out of family. Please stop adding forklift accessories.', { speaker: 'JL', tone: 'warn', key: 's3_mass', cooldownMs: 20000 });
   }
   if (act.outputSpeed_dps < 10) {
     pushOpsToast('Schedule risk: motion is slow. The demo clock is not slow.', { tone: 'info', key: 's3_slow', cooldownMs: 20000 });
