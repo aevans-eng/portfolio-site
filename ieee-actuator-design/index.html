@@ -4052,6 +4052,13 @@
   @keyframes glowPulse { 0%, 100% { box-shadow: 0 0 20px rgba(79,195,247,0.0); } 50% { box-shadow: 0 0 20px rgba(79,195,247,0.15); } }
 
   /* Stage 0: Cinematic intro */
+  /* Brief stays hidden until the student clicks 'Open Design Brief →'.
+     showBrief() adds the 'brief-open' class to #stage0; until then the
+     brief is locked invisible regardless of what inline-styles or
+     downstream JS might try. Aaron's complaint: the brief was bleeding
+     through under Chen's intro on a fresh playthrough. */
+  #stage0:not(.brief-open) #briefSection { display: none !important; }
+
   .company-splash {
     text-align: center; padding: 60px 20px; opacity: 0;
     animation: fadeInSlow 1.5s ease forwards;
@@ -14761,10 +14768,15 @@ const ColdOpen = {
     const prologue = document.getElementById('prologue');
     if (!root || !prologue) return;
 
-    // Skip on repeat visits + when ?skip=intro is present (dev).
+    // Skip on repeat visits within the SAME browser tab session, plus
+    // when ?skip=intro is present (dev). sessionStorage instead of
+    // localStorage so Aaron + judges always see the cold-open on a
+    // fresh visit -- it's a one-time first-impression beat, not a
+    // tutorial to permanently mute. Sticking around inside one tab
+    // (reloading the same page during a playthrough) still skips it.
     const skipParam = new URLSearchParams(location.search).has('skip');
     let alreadyDone = false;
-    try { alreadyDone = !!localStorage.getItem(this.STORAGE_KEY); } catch (e) { /* private mode */ }
+    try { alreadyDone = !!sessionStorage.getItem(this.STORAGE_KEY); } catch (e) { /* private mode */ }
     if (alreadyDone || skipParam) {
       this._handOff();
       return;
@@ -14792,7 +14804,7 @@ const ColdOpen = {
   },
 
   _finish() {
-    try { localStorage.setItem(this.STORAGE_KEY, '1'); } catch (e) {}
+    try { sessionStorage.setItem(this.STORAGE_KEY, '1'); } catch (e) {}
     this._handOff();
   },
 
@@ -19148,6 +19160,10 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function showBrief() {
+  // Mark stage0 as brief-open so the CSS rule reveals #briefSection.
+  // This is the ONLY function that should flip this class.
+  const stage0El = document.getElementById('stage0');
+  if (stage0El) stage0El.classList.add('brief-open');
   document.getElementById('chenIntro').style.display = 'none';
   document.getElementById('briefSection').style.display = 'block';
   document.getElementById('briefSection').style.animation = 'fadeIn 0.4s ease';
@@ -19918,22 +19934,26 @@ function updateStage2MotorList() {
 }
 
 function onEnterStage0() {
-  // Belt-and-suspenders: explicitly hide the brief whenever Stage 0 is
-  // entered cold. Aaron observed the brief leaking through while Chen
-  // was still talking; this guarantees the only way to see the brief
-  // is via the explicit "Open Design Brief →" button that showBrief()
-  // is wired to. Safe to call repeatedly.
+  // Stage-level class controls whether the brief is visible. CSS rule
+  // below forces #briefSection display:none unless stage0 has the
+  // 'brief-open' class. This survives any rogue inline-style writes
+  // that might flip the brief visible during Chen's intro. The class
+  // is set by showBrief() (button click) and unset by this entry hook.
+  const stage0El = document.getElementById('stage0');
+  if (stage0El) stage0El.classList.remove('brief-open');
+  // Belt-and-suspenders: also clear the inline display so the CSS rule
+  // can win regardless of what was set before.
   const briefEl = document.getElementById('briefSection');
-  if (briefEl) briefEl.style.display = 'none';
+  if (briefEl) briefEl.style.display = '';
   // If splash already hidden (re-entry from Back to Brief), keep
   // current chenIntro / briefSection state -- don't replay the
   // typewriter, but DO let the user re-open the brief via the button.
   const splash = document.getElementById('companySplash');
   if (!splash || splash.style.display === 'none') {
     // On re-entry, the most useful default is to show the brief
-    // (the user already saw Chen's intro). Show it now so the page
-    // isn't blank.
-    if (briefEl) briefEl.style.display = 'block';
+    // (the user already saw Chen's intro). Mark stage0 brief-open so
+    // the CSS rule reveals it.
+    if (stage0El) stage0El.classList.add('brief-open');
     const chenIntroEl = document.getElementById('chenIntro');
     if (chenIntroEl) chenIntroEl.style.display = 'none';
     return;
