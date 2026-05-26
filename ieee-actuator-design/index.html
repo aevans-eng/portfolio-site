@@ -14785,6 +14785,7 @@ const ColdOpen = {
     prologue.hidden = true;
     root.hidden = false;
     this._showScene('boot');
+    try { if (window.MusicDirector) MusicDirector.setSection('coldOpen'); } catch (e) {}
   },
 
   goInbox()    { this._showScene('inbox'); },
@@ -14815,6 +14816,7 @@ const ColdOpen = {
     if (prologue) prologue.hidden = false;
     // Re-apply the LinkedIn theme now that prologue is visible.
     if (typeof applyTheme === 'function') applyTheme(-1, true);
+    try { if (window.MusicDirector) MusicDirector.setSection('linkedin'); } catch (e) {}
   },
 };
 
@@ -16548,6 +16550,10 @@ const audioFx = (function () {
   const STORAGE_KEY = 'rad_audio_enabled_v1';
   let ctx = null;
   let master = null;
+  // Music gets its own gain node downstream of master so we can
+  // cross-fade tracks (ramp musicGain down, swap timers, ramp back up)
+  // without muting SFX. SFX still connects directly to master.
+  let musicGain = null;
   let enabled = false;
   let bootedAtLeastOnce = false;
   try {
@@ -16564,6 +16570,9 @@ const audioFx = (function () {
       master = ctx.createGain();
       master.gain.value = enabled ? 0.18 : 0;
       master.connect(ctx.destination);
+      musicGain = ctx.createGain();
+      musicGain.gain.value = 1;
+      musicGain.connect(master);
       bootedAtLeastOnce = true;
     } catch (e) { ctx = null; }
     return ctx;
@@ -16617,6 +16626,7 @@ const audioFx = (function () {
   let musicPlaying = false;
   let musicTimers = [];
   let musicTrack = null;
+  let musicSwapTimer = null;
 
   function noteFreq(note) {
     if (!note || note === 'rest') return 0;
@@ -16648,18 +16658,20 @@ const audioFx = (function () {
     g.gain.exponentialRampToValueAtTime(peak, t0 + 0.008);
     g.gain.setValueAtTime(peak, t0 + Math.max(0.02, durSec - 0.03));
     g.gain.exponentialRampToValueAtTime(0.0001, t0 + durSec);
-    osc.connect(g); g.connect(master);
+    // Music notes route through musicGain so we can cross-fade tracks
+    // independently of SFX (which connects to master directly).
+    osc.connect(g); g.connect(musicGain || master);
     osc.start(t0);
     osc.stop(t0 + durSec + 0.05);
   }
 
-  function scheduleVoice(notes, type, gainPeak, beatMs) {
+  function scheduleVoice(notes, wave, peak, beatMs) {
     let elapsed = 0;
     notes.forEach(([n, d]) => {
       const startMs = elapsed;
       musicTimers.push(setTimeout(() => {
         if (!musicPlaying) return;
-        playMusicNote(n, (d * beatMs / 1000) * 0.94, type, gainPeak);
+        playMusicNote(n, (d * beatMs / 1000) * 0.94, wave, peak);
       }, startMs));
       elapsed += d * beatMs;
     });
@@ -16668,16 +16680,47 @@ const audioFx = (function () {
 
   function startMusic(track) {
     if (!track) return;
+    const c = ensureCtx();
+    // If we're already playing this exact track object, do nothing.
+    if (musicTrack === track && musicPlaying) return;
+    // Cross-fade: ramp musicGain down to silence, swap track at the
+    // bottom of the fade, ramp back up. ~400ms total transition. No
+    // abrupt cuts mid-note.
+    const fadeOutMs = (musicPlaying && c && musicGain) ? 220 : 0;
+    if (fadeOutMs && musicGain) {
+      try {
+        musicGain.gain.cancelScheduledValues(c.currentTime);
+        musicGain.gain.setValueAtTime(musicGain.gain.value, c.currentTime);
+        musicGain.gain.linearRampToValueAtTime(0.0001, c.currentTime + fadeOutMs / 1000);
+      } catch (e) {}
+    }
+    if (musicSwapTimer) { clearTimeout(musicSwapTimer); musicSwapTimer = null; }
+    musicSwapTimer = setTimeout(() => {
+      _startMusicNow(track);
+      if (musicGain && c) {
+        try {
+          musicGain.gain.cancelScheduledValues(c.currentTime);
+          musicGain.gain.setValueAtTime(0.0001, c.currentTime);
+          musicGain.gain.linearRampToValueAtTime(1, c.currentTime + 0.220);
+        } catch (e) {}
+      }
+    }, fadeOutMs);
+  }
+
+  // Internal — schedules a track's voices immediately. Used by both
+  // the cross-fade swap and the loop callback.
+  function _startMusicNow(track) {
     stopMusic();
     musicTrack = track;
     musicPlaying = true;
     const beatMs = 60000 / (track.tempo || 120);
-    const melodyDur = track.melody ? scheduleVoice(track.melody, 'square', 0.055, beatMs) : 0;
-    const bassDur = track.bass ? scheduleVoice(track.bass, 'triangle', 0.09, beatMs) : 0;
-    // Loop after the longer of melody/bass finishes.
-    const loopMs = Math.max(melodyDur, bassDur, 1000);
+    const melodyDur = track.melody ? scheduleVoice(track.melody, track.melodyWave || 'square', track.melodyPeak || 0.055, beatMs) : 0;
+    const bassDur = track.bass ? scheduleVoice(track.bass, track.bassWave || 'triangle', track.bassPeak || 0.09, beatMs) : 0;
+    const harmDur = track.harmony ? scheduleVoice(track.harmony, track.harmonyWave || 'sine', track.harmonyPeak || 0.04, beatMs) : 0;
+    // Loop after the longest voice finishes.
+    const loopMs = Math.max(melodyDur, bassDur, harmDur, 1000);
     musicTimers.push(setTimeout(() => {
-      if (musicPlaying) startMusic(musicTrack);
+      if (musicPlaying && musicTrack === track) _startMusicNow(track);
     }, loopMs));
   }
 
@@ -16685,16 +16728,31 @@ const audioFx = (function () {
     musicPlaying = false;
     musicTimers.forEach(clearTimeout);
     musicTimers = [];
+    if (musicSwapTimer) { clearTimeout(musicSwapTimer); musicSwapTimer = null; }
+    musicTrack = null;
   }
 
   // When the mute toggle goes off, kill the music timers too -- otherwise
-  // they keep scheduling silent notes and waste cycles. Re-call startMusic
-  // when un-muting to bring it back.
+  // they keep scheduling silent notes and waste cycles. On un-mute we
+  // ask MusicDirector for the section that *should* be playing now (not
+  // whatever was playing last) so the right track resumes if the user
+  // muted on Stage 0 and unmuted on Stage 5.
   const _origSetEnabled = setEnabled;
   function setEnabledWithMusic(on) {
     _origSetEnabled(on);
-    if (!on) stopMusic();
-    else if (musicTrack) startMusic(musicTrack);
+    if (!on) {
+      stopMusic();
+    } else {
+      try {
+        if (window.MusicDirector) {
+          const section = MusicDirector.currentSection || MusicDirector.detect();
+          MusicDirector.currentSection = null; // force setSection to actually switch
+          MusicDirector.setSection(section);
+          return;
+        }
+      } catch (e) {}
+      if (musicTrack) startMusic(musicTrack);
+    }
   }
 
   return {
@@ -16715,61 +16773,246 @@ const audioFx = (function () {
 window.audioFx = audioFx;
 
 // ---- Chiptune tracks ----
-// Bouncy curious 8-bit melody. C-major, 130 BPM. Loops every 16 beats.
-// Lives outside audioFx so it can be edited / swapped without touching
-// the engine.
+// Six tracks, one per context. Aaron picked these from
+// product/music-sampler.html on 2026-05-25:
+//   coldOpen → Lo-fi Bedroom (chill heart)
+//   linkedin → Minimal Click + extra variation
+//   work     → Workshop Hum + extra activity
+//   shift    → new lowkey shift (energy without aggression)
+//   pass     → Bright Acoustic Loop (warm)
+//   fail     → Sparse Strings (cinematic minimum)
+//
+// The "tad more" variants take the sampler base and add a sparing
+// extra voice/note layer so the track feels less repetitive over a
+// minutes-long play without losing the original mood.
 const CHIPTUNE_TRACKS = {
-  hub: {
-    tempo: 130,
+  coldOpen: {
+    // Lo-fi Bedroom (chill heart) — lifted from sampler co3.
+    tempo: 76,
     melody: [
-      ['E4', 0.5], ['G4', 0.5], ['C5', 0.5], ['rest', 0.5],
-      ['G4', 0.5], ['E4', 0.5], ['C4', 1],
-      ['F4', 0.5], ['A4', 0.5], ['C5', 0.5], ['rest', 0.5],
-      ['A4', 0.5], ['F4', 0.5], ['D4', 1],
-      ['G4', 0.5], ['B4', 0.5], ['D5', 0.5], ['rest', 0.5],
-      ['B4', 0.5], ['G4', 0.5], ['E4', 1],
-      ['F4', 0.5], ['E4', 0.5], ['D4', 0.5], ['C4', 0.5],
-      ['G3', 0.5], ['C4', 0.5], ['rest', 1],
+      ['rest',0.5],['G4',0.5],['A4',0.5],['C5',1],['rest',0.5],['B4',1],
+      ['rest',0.5],['G4',0.5],['F4',1],['rest',0.5],['E4',1.5],
+      ['rest',0.5],['G4',0.5],['A4',0.5],['B4',1],['rest',0.5],['C5',1],
+      ['B4',0.5],['A4',0.5],['G4',1.5],['rest',1.5],
+      ['rest',0.5],['A4',0.5],['B4',0.5],['D5',1],['rest',0.5],['C5',1],
+      ['rest',0.5],['A4',0.5],['G4',1],['rest',0.5],['F4',1.5],
+      ['E4',1],['D4',1],['C4',2],
+      ['rest',4],
     ],
+    melodyWave: 'triangle',
+    melodyPeak: 0.09,
     bass: [
-      ['C3', 2], ['G2', 2],
-      ['F3', 2], ['C3', 2],
-      ['G3', 2], ['C3', 2],
-      ['F3', 1], ['G2', 1], ['C3', 2],
+      ['C2',1],['rest',1],['G2',1],['rest',1],
+      ['F2',1],['rest',1],['G2',1],['rest',1],
+      ['C2',1],['rest',1],['G2',1],['rest',1],
+      ['F2',1],['rest',1],['A2',1],['rest',1],
     ],
+    bassWave: 'triangle',
+    bassPeak: 0.13,
   },
-  // Heavier mood for the live shift demo. Same key, lower octave, more drive.
-  shift: {
-    tempo: 140,
+  linkedin: {
+    // Minimal Click + a tad more variation. Original was extreme
+    // sparse (single chime + low pulse). Added a second-bar melodic
+    // motif so the track has a couple of micro-events per loop
+    // without losing the "almost no music" mood.
+    tempo: 100,
     melody: [
-      ['C4', 0.25], ['E4', 0.25], ['G4', 0.25], ['C5', 0.25],
-      ['B4', 0.5], ['G4', 0.5], ['E4', 1],
-      ['C4', 0.25], ['F4', 0.25], ['A4', 0.25], ['C5', 0.25],
-      ['A4', 0.5], ['F4', 0.5], ['D4', 1],
-      ['D4', 0.25], ['G4', 0.25], ['B4', 0.25], ['D5', 0.25],
-      ['C5', 0.5], ['B4', 0.5], ['G4', 1],
-      ['F4', 0.5], ['E4', 0.5], ['D4', 1],
-      ['G3', 2],
+      ['E5',0.25],['rest',3.75],
+      ['G5',0.25],['rest',3.75],
+      ['C5',0.25],['rest',1.75],['G5',0.25],['rest',0.25],['E5',0.25],['rest',1.25],
+      ['G5',0.25],['rest',3.75],
+      ['rest',1],['B4',0.25],['rest',0.75],['D5',0.25],['rest',1.75],
+      ['F5',0.25],['rest',1.75],['E5',0.25],['rest',1.75],
+      ['rest',4],
+      ['G5',0.25],['rest',1.75],['E5',0.25],['rest',1.75],
     ],
+    melodyWave: 'sine',
+    melodyPeak: 0.10,
     bass: [
-      ['C3', 1], ['C3', 1], ['G2', 1], ['G2', 1],
-      ['F3', 1], ['F3', 1], ['C3', 1], ['C3', 1],
-      ['G3', 1], ['G3', 1], ['C3', 1], ['C3', 1],
-      ['F3', 1], ['G2', 1], ['C3', 2],
+      ['C2',0.5],['rest',1.5],['G2',0.5],['rest',1.5],
+      ['F2',0.5],['rest',1.5],['G2',0.5],['rest',1.5],
+      ['C2',0.5],['rest',1.5],['G2',0.5],['rest',1.5],
+      ['F2',0.5],['rest',1.5],['C2',0.5],['rest',1.5],
+      ['C2',0.5],['rest',1.5],['G2',0.5],['rest',1.5],
+      ['F2',0.5],['rest',1.5],['A2',0.5],['rest',1.5],
+      ['C2',0.5],['rest',1.5],['G2',0.5],['rest',1.5],
+      ['C2',0.5],['rest',1.5],['F2',0.5],['rest',1.5],
     ],
+    bassWave: 'triangle',
+    bassPeak: 0.08,
+  },
+  work: {
+    // Workshop Hum + a tad more. Original was very sparse industrial
+    // (slow bass thumps + occasional metal pings). Added a thin third
+    // voice with quiet sustained sines so the room feels lived-in
+    // without becoming busy.
+    tempo: 70,
+    melody: [
+      ['rest',4],
+      ['G5',0.25],['rest',1.75],['B5',0.25],['rest',1.75],
+      ['rest',4],
+      ['E5',0.25],['rest',1.75],['G5',0.25],['rest',1.75],
+      ['rest',4],
+      ['C5',0.25],['rest',1.75],['E5',0.25],['rest',1.75],
+      ['rest',2],['F5',0.25],['rest',1.75],
+      ['G5',0.25],['rest',3.75],
+    ],
+    melodyWave: 'sine',
+    melodyPeak: 0.06,
+    bass: [
+      ['C2',2],['rest',2],
+      ['C2',2],['rest',2],
+      ['F2',2],['rest',2],
+      ['G2',2],['rest',2],
+      ['C2',2],['rest',2],
+      ['C2',2],['rest',2],
+      ['F2',2],['rest',2],
+      ['G2',2],['rest',2],
+    ],
+    bassWave: 'triangle',
+    bassPeak: 0.14,
+    harmony: [
+      ['C4',8],['F4',8],
+      ['G4',8],['F4',8],
+      ['C4',8],['F4',8],
+      ['G4',8],['C4',8],
+    ],
+    harmonyWave: 'sine',
+    harmonyPeak: 0.025,
+  },
+  shift: {
+    // New track — Aaron asked for "something more lowkey but works
+    // well" for the live demo. Sustained arpeggios over a soft bass
+    // pulse. Drives the shift visually without screaming.
+    tempo: 96,
+    melody: [
+      ['C5',0.5],['E5',0.5],['G5',0.5],['E5',0.5],
+      ['D5',0.5],['F5',0.5],['A5',0.5],['F5',0.5],
+      ['C5',0.5],['E5',0.5],['G5',0.5],['E5',0.5],
+      ['B4',0.5],['D5',0.5],['F5',0.5],['D5',0.5],
+      ['A4',0.5],['C5',0.5],['E5',0.5],['C5',0.5],
+      ['G4',0.5],['B4',0.5],['D5',0.5],['B4',0.5],
+      ['F4',0.5],['A4',0.5],['C5',0.5],['A4',0.5],
+      ['G4',1],['C5',1],
+    ],
+    melodyWave: 'sine',
+    melodyPeak: 0.06,
+    bass: [
+      ['C3',1],['rest',1],['G2',1],['rest',1],
+      ['F3',1],['rest',1],['C3',1],['rest',1],
+      ['A2',1],['rest',1],['G2',1],['rest',1],
+      ['F2',1],['rest',1],['C3',1],['rest',1],
+    ],
+    bassWave: 'triangle',
+    bassPeak: 0.09,
+    harmony: [
+      ['C4',2],['G3',2],
+      ['F4',2],['C4',2],
+      ['A3',2],['G3',2],
+      ['F4',2],['C4',2],
+    ],
+    harmonyWave: 'sine',
+    harmonyPeak: 0.04,
+  },
+  pass: {
+    // Bright Acoustic Loop (warm) — lifted from sampler pa4.
+    tempo: 100,
+    melody: [
+      ['G4',0.5],['C5',0.5],['E5',1],['D5',0.5],['C5',0.5],
+      ['B4',0.5],['C5',0.5],['D5',1],['rest',1],
+      ['A4',0.5],['D5',0.5],['F5',1],['E5',0.5],['D5',0.5],
+      ['C5',0.5],['D5',0.5],['E5',1],['rest',1],
+      ['G4',0.5],['C5',0.5],['E5',0.5],['G5',0.5],
+      ['F5',0.5],['E5',0.5],['D5',1],
+      ['C5',1],['B4',1],['C5',2],
+      ['rest',4],
+    ],
+    melodyWave: 'triangle',
+    melodyPeak: 0.08,
+    bass: [
+      ['C3',1],['G2',1],['A2',1],['F2',1],
+      ['C3',1],['G2',1],['A2',1],['F2',1],
+      ['C3',1],['G2',1],['F2',1],['G2',1],
+      ['C3',2],['rest',2],
+    ],
+    bassWave: 'triangle',
+    bassPeak: 0.11,
+  },
+  fail: {
+    // Sparse Strings (cinematic minimum) — lifted from sampler fa5.
+    tempo: 50,
+    melody: [
+      ['E4',4],['D4',4],
+      ['C4',4],['B3',4],
+      ['A3',4],['G3',4],
+      ['F3',4],['E3',4],
+    ],
+    melodyWave: 'sine',
+    melodyPeak: 0.09,
+    bass: [
+      ['A1',8],['F1',8],['C2',8],['G1',8],
+    ],
+    bassWave: 'sine',
+    bassPeak: 0.05,
   },
 };
 window.CHIPTUNE_TRACKS = CHIPTUNE_TRACKS;
 
-// Auto-start the hub track on first user interaction (browser autoplay
-// policy needs a gesture before the AudioContext can resume). Once
-// started, the music loops until muted or replaced by another track.
+// ============================================================
+// MUSIC DIRECTOR
+// Section-aware playback. Detects which part of the product is
+// active (cold-open / linkedin / work / shift / pass / fail) and
+// cross-fades between tracks when the section changes. Lifecycle
+// hooks elsewhere call MusicDirector.setSection() with the new id.
+// ============================================================
+const MusicDirector = {
+  currentSection: null,
+  setSection(name) {
+    if (this.currentSection === name) return;
+    this.currentSection = name;
+    const track = CHIPTUNE_TRACKS[name];
+    if (!track) return;
+    try { if (window.audioFx) audioFx.startMusic(track); } catch (e) {}
+  },
+  // Read the DOM to figure out what section we *should* be in right
+  // now. Used on first user gesture (when the AudioContext finally
+  // gets to resume) to start the right track instead of always 'work'.
+  detect() {
+    try {
+      const cold = document.getElementById('coldOpen');
+      if (cold && !cold.hidden) return 'coldOpen';
+      const prologue = document.getElementById('prologue');
+      if (prologue && !prologue.hidden && !prologue.classList.contains('hidden')) return 'linkedin';
+      const dmOverlay = document.getElementById('prologueDmOverlay');
+      if (dmOverlay && dmOverlay.classList.contains('visible')) return 'linkedin';
+      const shell = document.querySelector('.stage5-livestream-shell');
+      if (shell && shell.classList.contains('shift-complete')) {
+        // PASS or FAIL banner determines which.
+        const banner = document.getElementById('s5VerdictBanner');
+        if (banner && banner.classList.contains('verdict-pass')) return 'pass';
+        if (banner && (banner.classList.contains('verdict-fail') || banner.classList.contains('verdict-marginal'))) return 'fail';
+      }
+      if (window.ConveyorSim && ConveyorSim.running) return 'shift';
+      // Default = work (any stage 0-5 pre-shift)
+      return 'work';
+    } catch (e) { return 'work'; }
+  },
+};
+window.MusicDirector = MusicDirector;
+
+// Auto-start the right section's track on first user interaction.
+// Browser autoplay policy needs a gesture before the AudioContext can
+// resume. After this fires, MusicDirector.setSection() handles all
+// subsequent track changes.
 (function autoStartMusicOnFirstGesture() {
   let bootedMusic = false;
   function boot() {
     if (bootedMusic) return;
     bootedMusic = true;
-    try { audioFx.startMusic(CHIPTUNE_TRACKS.hub); } catch (e) {}
+    try {
+      const initial = MusicDirector.detect();
+      MusicDirector.setSection(initial);
+    } catch (e) {}
     document.removeEventListener('click', boot, true);
     document.removeEventListener('keydown', boot, true);
     document.removeEventListener('touchstart', boot, true);
@@ -18977,6 +19220,10 @@ function goToStage(n) {
   if (n === 4) onEnterStage4();
   if (n === 5) onEnterStage5();
   reskinRefreshAfterStageChange();
+  // Music director: switch to 'work' baseline on any stage entry
+  // 0-5. ConveyorSim.start swaps to 'shift' once the demo runs,
+  // and renderStage5Scorecard swaps to 'pass' / 'fail' at the end.
+  try { if (window.MusicDirector && n >= 0 && n <= 5) MusicDirector.setSection('work'); } catch (e) {}
 }
 
 function skipStage(n) {
@@ -22858,9 +23105,10 @@ const ConveyorSim = {
     // Reset post-shift reveal so this new run hides them again
     const shell = document.querySelector('.stage5-livestream-shell');
     if (shell) shell.classList.remove('shift-complete');
-    // Swap to the heavier shift music track. Reverts to hub theme
-    // when ConveyorSim._endShift fires.
-    try { if (window.audioFx && window.CHIPTUNE_TRACKS) audioFx.startMusic(CHIPTUNE_TRACKS.shift); } catch (e) {}
+    // Swap to the shift music. Music director handles the cross-fade
+    // and the PASS/FAIL transition is set later when the scorecard
+    // renders.
+    try { if (window.MusicDirector) MusicDirector.setSection('shift'); } catch (e) {}
     // Wipe the chat NOW (not at countdown-end) so any wall-clock verdict
     // drain still pending from the previous shift can't deliver into the
     // new shift's countdown window.
@@ -23432,8 +23680,8 @@ const ConveyorSim = {
     const shell = document.querySelector('.stage5-livestream-shell');
     if (shell && !shell.classList.contains('shift-complete')) {
       shell.classList.add('shift-complete');
-      // Revert to the hub music track for the post-shift report mode.
-      try { if (window.audioFx && window.CHIPTUNE_TRACKS) audioFx.startMusic(CHIPTUNE_TRACKS.hub); } catch (e) {}
+      // Music swap to PASS / FAIL track happens in renderStage5Scorecard
+      // once the verdict stamp is computed.
       const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (!reduce) {
         const revealed = shell.querySelectorAll('.s5-post-shift');
@@ -24399,6 +24647,14 @@ function renderStage5Scorecard(packed, lost, smackCount) {
       if (stamp === 'PASS') audioFx.success();
       else if (stamp === 'FAIL') audioFx.fail();
       else audioFx.chenPing();
+    }
+  } catch (e) {}
+  // Music director: cross-fade to the matching post-shift track.
+  // MARGINAL routes to the 'fail' track (sparse strings) since both
+  // are subdued / reflective.
+  try {
+    if (window.MusicDirector) {
+      MusicDirector.setSection(stamp === 'PASS' ? 'pass' : 'fail');
     }
   } catch (e) {}
 }
