@@ -10307,16 +10307,18 @@ body.theme-slack .stage5-livestream-shell.shift-complete .slack-channel-header {
   display: none;
 }
 
-/* Belt-and-suspenders: make sure the chat block (above the verdict
-   in flow) can never paint over the sticky verdict during scroll.
-   The verdict creates its own stacking context (position:sticky) at
-   z-index:5; explicitly setting the chat block to z-index:1 keeps
-   the painting order unambiguous even if the chat scroll region
-   develops its own stacking context. */
+/* Make sure the chat block (above the verdict in flow) can never paint
+   over the sticky verdict during scroll. Plain position:relative +
+   z-index:1 participates in the parent stacking context normally so
+   the verdict's higher z-index wins on paint.
+
+   NOTE: do NOT use `isolation: isolate` here. It creates a fresh
+   stacking context that traps later siblings (the verdict inside
+   #s5PostShift) under the chat block's boundary -- exactly the
+   clipping bug Aaron re-reported on 2026-05-25. */
 body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block {
   position: relative;
   z-index: 1;
-  isolation: isolate;
 }
 
 /* ---- Verdict banner ---- */
@@ -14245,8 +14247,8 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
               <div class="stage5-quick-actions">
                 <button class="btn btn-primary" id="s5QuickCompareBtn" onclick="revealS5Section('s5CompareSection')">Open Comparison Board &rarr;</button>
                 <button class="btn btn-secondary" onclick="revealS5Section('s5SpecSection')">Open Design Brief &rarr;</button>
-                <button class="btn btn-primary" id="s5QuickIterateBtn" onclick="codexIterateNext()">Iterate Next Bottleneck</button>
-                <button class="btn btn-secondary" id="s5QuickAltBtn" onclick="codexIterateAlternate()">Revise Hardware</button>
+                <button class="btn btn-primary" id="s5QuickIterateBtn" onclick="codexIterateNext()">Fix the worst spec &rarr;</button>
+                <button class="btn btn-secondary" id="s5QuickAltBtn" onclick="codexIterateAlternate()">Swap Motor &rarr;</button>
               </div>
             </div>
           </div>
@@ -14602,8 +14604,8 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
 
           <div class="s5-report-actions" id="s5ReportActions">
-            <button class="btn btn-primary" id="s5ReportIterateBtn" onclick="codexIterateNext()">Iterate Next Bottleneck</button>
-            <button class="btn btn-secondary" id="s5ReportReviseBtn" onclick="codexIterateAlternate()">Revise Hardware</button>
+            <button class="btn btn-primary" id="s5ReportIterateBtn" onclick="codexIterateNext()">Fix the worst spec &rarr;</button>
+            <button class="btn btn-secondary" id="s5ReportReviseBtn" onclick="codexIterateAlternate()">Swap Motor &rarr;</button>
             <button class="btn btn-secondary" id="s5ReportCompareBtn" onclick="revealS5Section('s5CompareSection')">Open Comparison Board</button>
           </div>
 
@@ -14667,8 +14669,8 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="s5-review-action-cluster">
             <button class="btn btn-back" onclick="goToStage(4)">&larr; Back</button>
             <button class="btn btn-secondary" onclick="window.print()">Print Brief</button>
-            <button class="btn btn-primary" id="s5IteratePrimaryBtn" onclick="codexIterateNext()">Iterate Next Bottleneck</button>
-            <button class="btn btn-secondary" id="s5IterateAltBtn" onclick="codexIterateAlternate()">Revise Hardware</button>
+            <button class="btn btn-primary" id="s5IteratePrimaryBtn" onclick="codexIterateNext()">Fix the worst spec &rarr;</button>
+            <button class="btn btn-secondary" id="s5IterateAltBtn" onclick="codexIterateAlternate()">Swap Motor &rarr;</button>
           </div>
         </div>
       </div>
@@ -18903,11 +18905,37 @@ function codexIterateNext() {
   goToStage(plan.primary.stage);
 }
 
+// Always routes to Stage 2 — the 'restart the hardware story' button.
+// Previously called getStage5RoutePlan and might land on Stages 2 or 3
+// depending on what failed worst, making it indistinguishable from
+// codexIterateNext. The new explicit intent: this button is for when
+// the student wants to swap the MOTOR, not tweak gains. Stage 2 is the
+// canonical upstream entry point for that.
 function codexIterateAlternate() {
-  const plan = getStage5RoutePlan();
-  if (!plan.alt) return;
-  pushOpsToast(`Alternate route: Stage ${plan.alt.stage}. ${plan.alt.why}`, { tone: 'info', key: 'iterate_alt', cooldownMs: 1200, ttlMs: 4200 });
-  goToStage(plan.alt.stage);
+  pushOpsToast('Pick a different motor. Stage 2 lets you swap the hardware story end-to-end.', { tone: 'info', key: 'revise_hardware', cooldownMs: 1200, ttlMs: 4200 });
+  goToStage(2);
+}
+
+// Render the dynamic button label for the "iterate next bottleneck" CTA
+// so the student knows which stage they're about to land on. Called by
+// renderStage5Scorecard after the verdict + route plan are computed.
+function updateIterateButtonLabels() {
+  try {
+    const plan = getStage5RoutePlan();
+    if (!plan || !plan.primary) return;
+    const stageNames = { 2: 'Motor', 3: 'Gears', 4: 'Tuning' };
+    const primaryStageName = stageNames[plan.primary.stage] || ('Stage ' + plan.primary.stage);
+    const primaryLabel = `Fix ${primaryStageName} →`;
+    // Apply to every instance of the iterate button on the page.
+    ['s5QuickIterateBtn', 's5IteratePrimaryBtn', 's5ReportIterateBtn'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) btn.textContent = primaryLabel;
+    });
+    ['s5QuickAltBtn', 's5IterateAltBtn', 's5ReportReviseBtn'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) btn.textContent = 'Swap Motor →';
+    });
+  } catch (e) {}
 }
 
 function recordCommit(kind) {
@@ -25164,6 +25192,12 @@ function renderStage5Scorecard(packed, lost, smackCount) {
   if (banStamp) banStamp.textContent = stamp;
   if (banText) banText.textContent = headline;
 
+  // Refresh the iterate-button labels with the specific stage the
+  // primary route is about to send the student to ('Fix Tuning →',
+  // 'Fix Gears →', etc.) so the two action buttons read as distinct
+  // actions instead of identical labels.
+  try { updateIterateButtonLabels(); } catch (e) {}
+
   // Verdict stinger -- celebratory chord on PASS, descending sawtooth on FAIL,
   // soft single tone on MARGINAL. Only fires once per scorecard render.
   try {
@@ -28295,6 +28329,26 @@ function renderStage5Comparison(act, train, motor) {
 function onEnterStage5() {
   if (!STATE.lastActuator) return;
   showStageTransition(5);
+  // Reset shift-complete state on every Stage 5 entry. Without this,
+  // a student who clicked 'Revise Hardware' / 'Iterate' to leave
+  // Stage 5 and then came back would see the previous shift's
+  // post-shift report as if it had just finished. ConveyorSim.start
+  // also resets the same things, but only fires when the student
+  // clicks Start -- not on stage re-entry.
+  try {
+    const shell = document.querySelector('.stage5-livestream-shell');
+    if (shell) shell.classList.remove('shift-complete');
+    const banner = document.getElementById('s5VerdictBanner');
+    if (banner) banner.className = 's5-verdict-banner verdict-pending';
+    // Reset the once-per-shift dedup so reviewer voices can redeliver
+    // through the chat next time renderStage5Scorecard runs.
+    if (STATE._postShiftVoiceDelivered) STATE._postShiftVoiceDelivered = {};
+    // Re-enable the Start button if a prior shift left it disabled.
+    const startBtn = document.getElementById('s5ConvStart');
+    if (startBtn) { startBtn.disabled = false; startBtn.textContent = 'Start shift'; }
+    const retune = document.getElementById('s5ConvRetune');
+    if (retune) retune.style.display = 'none';
+  } catch (e) { /* non-critical */ }
   clearStage5LiveReviewSequence();
   // Tag every message in the comment stream EXCEPT the Chen intro and the
   // pinned prototype feed as post-shift. They reveal after _endShift fires.
