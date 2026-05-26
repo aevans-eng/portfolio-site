@@ -17049,6 +17049,54 @@ const CHIPTUNE_TRACKS = {
     bassWave: 'triangle',
     bassPeak: 0.08,
   },
+  interview: {
+    // Office Bounce + a tad more drive. A-minor square-wave bounce
+    // with nervous energy. Plays during the Chen Q&A specifically —
+    // the LinkedIn browse stays on the calmer 'linkedin' track, this
+    // kicks in when the interview chat opens. Aaron: 'different song
+    // during interview? more intense?'
+    tempo: 116,
+    melody: [
+      ['A4',0.5],['C5',0.5],['E5',0.5],['C5',0.5],
+      ['A4',1],['B4',0.5],['A4',0.5],
+      ['G4',0.5],['A4',0.5],['B4',0.5],['G4',0.5],
+      ['E4',1],['rest',1],
+      ['A4',0.5],['C5',0.5],['E5',0.5],['G5',0.5],
+      ['F5',0.5],['E5',0.5],['D5',0.5],['C5',0.5],
+      ['B4',0.5],['C5',0.5],['D5',0.5],['B4',0.5],
+      ['A4',2],
+      ['F4',0.5],['G4',0.5],['A4',0.5],['B4',0.5],
+      ['C5',1],['B4',0.5],['A4',0.5],
+      ['G4',0.5],['A4',0.5],['B4',0.5],['G4',0.5],
+      ['E4',1],['rest',1],
+    ],
+    melodyWave: 'square',
+    melodyPeak: 0.055,
+    bass: [
+      ['A2',0.5],['rest',0.5],['A2',0.5],['rest',0.5],
+      ['F2',0.5],['rest',0.5],['F2',0.5],['rest',0.5],
+      ['G2',0.5],['rest',0.5],['G2',0.5],['rest',0.5],
+      ['E2',0.5],['rest',0.5],['E2',0.5],['rest',0.5],
+      ['A2',0.5],['rest',0.5],['A2',0.5],['rest',0.5],
+      ['F2',0.5],['rest',0.5],['F2',0.5],['rest',0.5],
+      ['D2',0.5],['rest',0.5],['G2',0.5],['rest',0.5],
+      ['A2',0.5],['rest',0.5],['A2',0.5],['rest',0.5],
+      ['F2',0.5],['rest',0.5],['F2',0.5],['rest',0.5],
+      ['G2',0.5],['rest',0.5],['G2',0.5],['rest',0.5],
+      ['E2',0.5],['rest',0.5],['E2',0.5],['rest',0.5],
+      ['A2',0.5],['rest',0.5],['A2',0.5],['rest',0.5],
+    ],
+    bassWave: 'triangle',
+    bassPeak: 0.10,
+    // Sustained low-octave drone fattens the bottom end so the bounce
+    // reads as 'pressure' not just 'plinky.'
+    harmony: [
+      ['A2',8],['F2',8],
+      ['G2',8],['E2',4],['A2',4],
+    ],
+    harmonyWave: 'sawtooth',
+    harmonyPeak: 0.035,
+  },
   work: {
     // Workshop Hum + a tad more. Original was very sparse industrial
     // (slow bass thumps + occasional metal pings). Added a thin third
@@ -17189,10 +17237,18 @@ const MusicDirector = {
     try {
       const cold = document.getElementById('coldOpen');
       if (cold && !cold.hidden) return 'coldOpen';
+      // Check the DM overlay FIRST -- when the interview chat is open,
+      // both the underlying LinkedIn prologue AND the DM overlay are
+      // visible. The overlay is the active modal; the chat-active class
+      // tells us whether to use the tenser 'interview' track.
+      const dmOverlay = document.getElementById('prologueDmOverlay');
+      if (dmOverlay && dmOverlay.classList.contains('visible')) {
+        const chat = document.getElementById('prologueChat');
+        if (chat && chat.classList.contains('active')) return 'interview';
+        return 'linkedin';
+      }
       const prologue = document.getElementById('prologue');
       if (prologue && !prologue.hidden && !prologue.classList.contains('hidden')) return 'linkedin';
-      const dmOverlay = document.getElementById('prologueDmOverlay');
-      if (dmOverlay && dmOverlay.classList.contains('visible')) return 'linkedin';
       const shell = document.querySelector('.stage5-livestream-shell');
       if (shell && shell.classList.contains('shift-complete')) {
         // PASS or FAIL banner determines which.
@@ -19091,6 +19147,16 @@ function openPrologueOverlay(activeId) {
     if (el) el.classList.toggle('active', id === activeId);
   });
   dismissLinkedInToast();
+  // Music: the interview itself gets a tenser track than the
+  // LinkedIn browse. Offer + rejection screens are the resolution
+  // beats -- revert to the calmer linkedin track so the verdict
+  // moment lands cleanly without competing music.
+  try {
+    if (window.MusicDirector) {
+      if (activeId === 'prologueChat') MusicDirector.setSection('interview');
+      else if (activeId === 'prologueOffer' || activeId === 'prologueReject') MusicDirector.setSection('linkedin');
+    }
+  } catch (e) {}
 }
 
 function closePrologueOverlay() {
