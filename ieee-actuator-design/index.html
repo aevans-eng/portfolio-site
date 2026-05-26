@@ -13721,9 +13721,9 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <div class="pid-lock-label">Run with Kp first</div>
             <div class="slider-header">
               <label><span class="tooltip-term" data-real="Derivative gain (Kd)">Damping</span></label>
-              <span class="pid-val" id="dVal" aria-live="polite">1.5</span>
+              <span class="pid-val" id="dVal" aria-live="polite">0.5</span>
             </div>
-            <input type="range" id="dSlider" min="0" max="10" value="1.5" step="0.2" aria-label="Damping (derivative gain Kd), the brakes">
+            <input type="range" id="dSlider" min="0" max="10" value="0.5" step="0.2" aria-label="Damping (derivative gain Kd), the brakes">
             <div style="font-size:0.7rem;color:var(--text-dim);margin-top:4px;">The <strong>brakes</strong> — resists overshoot</div>
             <div class="pid-inline-hint" id="dHint" style="display:none;font-size:0.75rem;color:var(--accent);margin-top:4px;padding:6px 8px;background:rgba(79,195,247,0.06);border-radius:6px;line-height:1.5;"></div>
           </div>
@@ -13731,9 +13731,9 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <div class="pid-lock-label">Unlock Damping first</div>
             <div class="slider-header">
               <label><span class="tooltip-term" data-real="Integral gain (Ki)">Precision</span></label>
-              <span class="pid-val" id="iVal" aria-live="polite">0.3</span>
+              <span class="pid-val" id="iVal" aria-live="polite">0.0</span>
             </div>
-            <input type="range" id="iSlider" min="0" max="5" value="0.3" step="0.1" aria-label="Precision (integral gain Ki), the memory">
+            <input type="range" id="iSlider" min="0" max="5" value="0" step="0.1" aria-label="Precision (integral gain Ki), the memory">
             <div style="font-size:0.7rem;color:var(--text-dim);margin-top:4px;">The <strong>memory</strong>. Closes the "almost there" gap.</div>
             <div class="pid-inline-hint" id="iHint" style="display:none;font-size:0.75rem;color:var(--accent);margin-top:4px;padding:6px 8px;background:rgba(79,195,247,0.06);border-radius:6px;line-height:1.5;"></div>
           </div>
@@ -23513,8 +23513,8 @@ const ConveyorSim = {
   // design under test, not a sibling arm that covered.
   shiftDuration: 30.0,
   conveyorSpeed: 0.14,
-  spawnInterval: 1.7,     // longer gap matches 2 arms vs prior 3
-  loadMass: 0.50,         // kg per box (heavier → motor saturation hurts more)
+  spawnInterval: 1.5,     // 2026-05-25: tightened from 1.7 (Aaron: too easy to pass)
+  loadMass: 0.65,         // 2026-05-25: heavier from 0.50 → stresses motor saturation
   numArms: 2,
   stationXs: [0.32, 0.68],
   // Convention: theta = 0 means arm hanging STRAIGHT DOWN from the overhead
@@ -24200,11 +24200,24 @@ const ConveyorSim = {
       a.flash = 0;
     });
     const total = this.packed + this.lost;
+    const smacks = this._smackCount || 0;
+    // 2026-05-25 — tightened (Aaron: shift was too easy to pass).
+    // Throughput bands raised: PASS now needs >=9 packed (was 6).
+    // Safety incorporated: any worker smack drops the tier by one
+    // (a shift that packs lots but hurts workers isn't shippable).
     let tier, line;
-    if (this.packed >= 9) { tier = 'GREEN'; line = `Shift cleared. ${this.packed} of ${total} packed. Production-ready.`; }
-    else if (this.packed >= 6) { tier = 'PASS'; line = `${this.packed} of ${total} packed. Ship-ready with some variability.`; }
-    else if (this.packed >= 3) { tier = 'MARGINAL'; line = `Marginal. ${this.packed} of ${total}. Your design is leaving boxes on the floor.`; }
-    else { tier = 'FAIL'; line = `Line failed. ${this.packed} of ${total}. The team is calling for a redesign.`; }
+    if (this.packed >= 12 && smacks === 0 && this.lost <= 2) {
+      tier = 'GREEN'; line = `Shift cleared. ${this.packed} of ${total} packed. Production-ready.`;
+    } else if (this.packed >= 9 && smacks === 0 && this.lost <= 4) {
+      tier = 'PASS'; line = `${this.packed} of ${total} packed. Ship-ready with some variability.`;
+    } else if (this.packed >= 6 || (this.packed >= 9 && smacks > 0)) {
+      tier = 'MARGINAL';
+      line = smacks > 0
+        ? `${this.packed} packed but ${smacks} worker incident${smacks === 1 ? '' : 's'}. Throughput is there; safety isn't.`
+        : `Marginal. ${this.packed} of ${total}. Your design is leaving boxes on the floor.`;
+    } else {
+      tier = 'FAIL'; line = `Line failed. ${this.packed} of ${total}. The team is calling for a redesign.`;
+    }
     this._narrate(line);
     const status = document.getElementById('s5ConvStatus');
     if (status) status.textContent = tier;
@@ -25134,13 +25147,14 @@ function renderStage5Scorecard(packed, lost, smackCount) {
       pass: actual >= target,
     });
   }
-  // Throughput from the demo
+  // Throughput from the demo. 2026-05-25 — tightened (PASS at 85%, was 80%;
+  // warn floor at 65%, was 55%).
   rows.push({
     label: 'Demo throughput',
-    target: '≥ 80% packed',
+    target: '≥ 85% packed',
     actual: packed + ' / ' + total + ' (' + (packRate * 100).toFixed(0) + '%)',
-    pass: packRate >= 0.80,
-    warn: packRate >= 0.55 && packRate < 0.80,
+    pass: packRate >= 0.85,
+    warn: packRate >= 0.65 && packRate < 0.85,
   });
   // Safety from the demo
   rows.push({
@@ -26127,9 +26141,12 @@ function updatePIDMetrics(result) {
     : val < warn
       ? { color: 'var(--yellow)', glyph: '\u26A0', word: 'MARGINAL' }
       : { color: 'var(--red)', glyph: '\u2717', word: 'FAIL' };
-  const sT = tier(result.settleTime, 1.5, 3);
-  const oT = tier(result.overshoot, 10, 30);
-  const eT = tier(result.steadyError, 3, 10);
+  // 2026-05-25 — tightened (Aaron: control tuning was 'oddly easy').
+  // PASS: settle <1.5s, overshoot <8°, error <2.5°. MARGINAL bands
+  // slightly tighter too so 'meh' tuning doesn't read as fine.
+  const sT = tier(result.settleTime, 1.5, 2.5);
+  const oT = tier(result.overshoot, 8, 20);
+  const eT = tier(result.steadyError, 2.5, 6);
   setEl.innerHTML = '<span aria-hidden="true">' + sT.glyph + '</span> ' + result.settleTime.toFixed(2) + 's <span class="metric-status">(' + sT.word + ')</span>';
   setEl.style.color = sT.color;
   setEl.setAttribute('aria-label', 'Settle time ' + result.settleTime.toFixed(2) + ' seconds, ' + sT.word.toLowerCase());
@@ -26149,16 +26166,18 @@ function showControlVerdict(result) {
   const st = result.settleTime, ov = result.overshoot, se = result.steadyError;
   const pack = getStage4ScenarioPack();
   // Audio cue: success chord on clean tune, fail thud on visibly bad runs.
+  // 2026-05-25 — bands tightened (Aaron: control tuning felt too easy).
+  // PASS now requires overshoot < 8 (was 10) and steady error < 2.5 (was 3).
   try {
-    if (st < 1.5 && ov < 10 && se < 3) audioFx.success();
+    if (st < 1.5 && ov < 8 && se < 2.5) audioFx.success();
     else if (ov > 40 || st > 3.5 || se > 12) audioFx.fail();
   } catch (e) {}
 
-  // Excellent tuning
-  if (st < 1.0 && ov < 5 && se < 2) {
+  // Excellent tuning -- tighter than before (was st<1.0 / ov<5 / se<2).
+  if (st < 0.8 && ov < 3 && se < 1.5) {
     const personaExcel = chenLine('s4-verdict-excellent', '');
     txt.textContent = personaExcel || pack.verdictExcellent;
-  } else if (st < 1.5 && ov < 10 && se < 3) {
+  } else if (st < 1.5 && ov < 8 && se < 2.5) {
     const personaPass = chenLine('s4-verdict-pass', '');
     txt.textContent = personaPass || pack.verdictGood;
   }
