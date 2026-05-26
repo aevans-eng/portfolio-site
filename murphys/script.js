@@ -17,29 +17,10 @@ if (menuButton && nav) {
   });
 }
 
-const dialog = document.querySelector(".photo-dialog");
-const dialogImage = dialog?.querySelector("img");
-const dialogTitle = dialog?.querySelector("h2");
-const closeButton = dialog?.querySelector(".dialog-close");
+document.querySelectorAll(".comparison-slider input").forEach((input) => {
+  const slider = input.closest(".comparison-slider");
 
-document.querySelectorAll(".gallery-item").forEach((button) => {
-  button.addEventListener("click", () => {
-    const image = button.querySelector("img");
-    if (!dialog || !dialogImage || !dialogTitle || !image) {
-      return;
-    }
-
-    dialogTitle.textContent = button.dataset.title || "Recent job photo";
-    dialogImage.src = image.src;
-    dialogImage.alt = image.alt;
-    dialog.showModal();
+  input.addEventListener("input", () => {
+    slider?.style.setProperty("--position", `${input.value}%`);
   });
-});
-
-closeButton?.addEventListener("click", () => dialog?.close());
-
-dialog?.addEventListener("click", (event) => {
-  if (event.target === dialog) {
-    dialog.close();
-  }
 });

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Murphy's Tree Service provides professional tree removal, pruning, hazard assessment, storm cleanup, hedge trimming, lot clearing, and emergency tree work."
+      content="Murphy's Tree Service provides professional tree removal, pruning, hazard assessment, storm cleanup, hedge trimming, and emergency tree work."
     />
     <title>Murphy's Tree Service | Professional Arborist Services</title>
     <link rel="preload" as="image" href="assets/hero-img.webp" />
@@ -101,13 +101,6 @@
             </div>
           </article>
           <article class="service-card">
-            <img src="assets/service-lot.webp" alt="Machine clearing brush from a wooded lot" />
-            <div>
-              <h3>Lot Clearing</h3>
-              <p>Brush, small-tree, and view-clearing work for building sites and property maintenance.</p>
-            </div>
-          </article>
-          <article class="service-card">
             <img src="assets/service-emergency.webp" alt="Arborist working from a bucket lift" />
             <div>
               <h3>Emergency Tree Work</h3>
@@ -119,23 +112,52 @@
 
       <section id="gallery" class="section gallery-section" aria-labelledby="gallery-title">
         <div class="section-heading">
-          <h2 id="gallery-title">Real Jobs. Real Results.</h2>
-          <p>Recent tree work, cleanup, and property care from Murphy's Tree Service.</p>
+          <h2 id="gallery-title">Before and After Photos</h2>
+          <p>Drag each slider to compare the job site before and after the work.</p>
         </div>
 
-        <div class="gallery-grid" aria-label="Recent job photos">
-          <button class="gallery-item" type="button" data-title="Residential cedar reduction">
-            <img src="assets/gallery-before-after-01.webp" alt="Before and after tree work beside a home" />
-            <span>Residential Cedar Reduction</span>
-          </button>
-          <button class="gallery-item" type="button" data-title="Lot clearing and cleanup">
-            <img src="assets/gallery-before-after-02.webp" alt="Before and after lot clearing work" />
-            <span>Lot Clearing and Cleanup</span>
-          </button>
-          <button class="gallery-item" type="button" data-title="Canopy pruning">
-            <img src="assets/gallery-before-after-03.webp" alt="Before and after canopy pruning on a large tree" />
-            <span>Canopy Pruning</span>
-          </button>
+        <div class="comparison-grid" aria-label="Before and after job photo sliders">
+          <article class="comparison-card">
+            <div class="comparison-slider" style="--position: 50%">
+              <img class="comparison-image" src="assets/before-after-01-before.webp" alt="Before tree work beside a home" />
+              <div class="comparison-after">
+                <img class="comparison-image" src="assets/before-after-01-after.webp" alt="After tree work beside a home" />
+              </div>
+              <span class="comparison-label comparison-label-before">Before</span>
+              <span class="comparison-label comparison-label-after">After</span>
+              <input type="range" min="0" max="100" value="50" aria-label="Compare residential tree work before and after" />
+              <span class="comparison-handle" aria-hidden="true"></span>
+            </div>
+            <h3>Residential Tree Work</h3>
+          </article>
+
+          <article class="comparison-card">
+            <div class="comparison-slider" style="--position: 50%">
+              <img class="comparison-image" src="assets/before-after-02-before.webp" alt="Before property cleanup work" />
+              <div class="comparison-after">
+                <img class="comparison-image" src="assets/before-after-02-after.webp" alt="After property cleanup work" />
+              </div>
+              <span class="comparison-label comparison-label-before">Before</span>
+              <span class="comparison-label comparison-label-after">After</span>
+              <input type="range" min="0" max="100" value="50" aria-label="Compare property cleanup before and after" />
+              <span class="comparison-handle" aria-hidden="true"></span>
+            </div>
+            <h3>Property Cleanup</h3>
+          </article>
+
+          <article class="comparison-card">
+            <div class="comparison-slider" style="--position: 50%">
+              <img class="comparison-image" src="assets/before-after-03-before.webp" alt="Before canopy pruning work" />
+              <div class="comparison-after">
+                <img class="comparison-image" src="assets/before-after-03-after.webp" alt="After canopy pruning work" />
+              </div>
+              <span class="comparison-label comparison-label-before">Before</span>
+              <span class="comparison-label comparison-label-after">After</span>
+              <input type="range" min="0" max="100" value="50" aria-label="Compare canopy pruning before and after" />
+              <span class="comparison-handle" aria-hidden="true"></span>
+            </div>
+            <h3>Canopy Pruning</h3>
+          </article>
         </div>
       </section>
 
@@ -205,12 +227,6 @@
       </nav>
       <p>&copy; 2026 Murphy's Tree Service. All rights reserved.</p>
     </footer>
-
-    <dialog class="photo-dialog" aria-labelledby="dialog-title">
-      <button type="button" class="dialog-close" aria-label="Close photo preview">Close</button>
-      <h2 id="dialog-title"></h2>
-      <img alt="" />
-    </dialog>
 
     <script src="script.js"></script>
   </body>
