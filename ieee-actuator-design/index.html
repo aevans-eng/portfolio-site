@@ -15,6 +15,8 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  [hidden] { display: none !important; }
+
   :root {
     --bg: #0f1117;
     --panel: #181b24;
@@ -329,9 +331,9 @@
     background: var(--panel);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 32px;
-    max-width: 480px; width: 100%;
-    text-align: center;
+    padding: 28px;
+    max-width: 560px; width: 100%;
+    text-align: left;
     display: none;
   }
   .offer-letter.active { display: block; }
@@ -339,6 +341,46 @@
   .offer-headline { font-size: 1.3rem; font-weight: 700; color: #3fb950; margin-bottom: 6px; }
   .offer-role { font-size: 0.95rem; color: var(--text-bright); margin-bottom: 4px; }
   .offer-meta { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 16px; }
+  .offer-doc-top {
+    display: flex; justify-content: space-between; gap: 18px;
+    padding-bottom: 14px; margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .offer-doc-brand { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+  .offer-doc-id { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-dim); text-align: right; }
+  .offer-doc-body {
+    background: var(--panel-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .offer-doc-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 12px;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.82rem;
+  }
+  .offer-doc-row:last-child { border-bottom: 0; }
+  .offer-doc-label { color: var(--text-dim); }
+  .offer-doc-value { color: var(--text-bright); font-weight: 600; }
+  .offer-signature {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: end;
+    margin: 18px 0 18px;
+  }
+  .offer-signature-line {
+    border-bottom: 1px solid var(--text-dim);
+    padding: 10px 0 5px;
+    color: var(--text-bright);
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 34px;
+  }
+  .offer-signature-label { font-size: 0.68rem; color: var(--text-dim); margin-top: 4px; }
   .offer-chen-note {
     background: var(--panel-alt);
     border-left: 3px solid var(--accent);
@@ -427,6 +469,27 @@
   .btn-secondary { background: var(--panel-alt); color: var(--text); border: 1px solid var(--border); }
   .btn-secondary:hover { border-color: var(--accent); }
   .btn-secondary.active { border-color: rgba(79,195,247,0.85); box-shadow: 0 0 0 2px rgba(79,195,247,0.16) inset; }
+
+  /* Stacked button label + subtitle. Used by updateIterateButtonLabels
+     to surface the top-priority failed/marginal spec under the iterate
+     action so the student sees what they're going back to fix without
+     reading the ReviewBot panel separately. */
+  .btn.btn-stacked { display: inline-flex; flex-direction: column; align-items: stretch; padding-top: 8px; padding-bottom: 8px; line-height: 1.2; }
+  .btn.btn-stacked .btn-label { display: block; font-weight: 700; }
+  .btn.btn-stacked .btn-subtitle {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 400;
+    opacity: 0.82;
+    margin-top: 3px;
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  @media (max-width: 480px) {
+    .btn.btn-stacked .btn-subtitle { display: none; }
+  }
 
   .btn-row { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: flex-end; margin-top: 24px; gap: 12px; }
   .btn-row > * { max-width: 100%; }
@@ -2333,6 +2396,129 @@
   color: var(--text);
   line-height: 1.55;
 }
+
+/* ============================================================
+   Scenario gate - flat 3-line layout
+   Replaces the .scenario-gate-grid card cluster when inside a
+   .scenario-gate-line-list. Same .scenario-gate-card class so the
+   populator at ~28891 still sets tone (good/warn/fail) via
+   className rewrite. display:contents on .scenario-gate-card-top
+   flattens the label+status into the parent grid.
+   ============================================================ */
+.scenario-gate-line-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.scenario-gate-line-list .scenario-gate-card {
+  display: grid;
+  grid-template-columns: 150px 70px 1fr;
+  column-gap: 16px;
+  row-gap: 2px;
+  align-items: baseline;
+  padding: 9px 12px;
+  border-radius: 8px;
+}
+.scenario-gate-line-list .scenario-gate-card-top {
+  display: contents;
+}
+.scenario-gate-line-list .scenario-gate-card-label {
+  display: none;
+}
+.scenario-gate-line-list .scenario-gate-card-title {
+  grid-column: 1;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin: 0;
+}
+.scenario-gate-line-list .scenario-gate-card-status {
+  grid-column: 2;
+  text-align: right;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.scenario-gate-line-list .scenario-gate-card-body {
+  grid-column: 3;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .scenario-gate-line-list .scenario-gate-card {
+    grid-template-columns: 1fr auto;
+    row-gap: 4px;
+  }
+  .scenario-gate-line-list .scenario-gate-card-title { grid-column: 1; }
+  .scenario-gate-line-list .scenario-gate-card-status { grid-column: 2; }
+  .scenario-gate-line-list .scenario-gate-card-body { grid-column: 1 / -1; }
+}
+
+/* ============================================================
+   Room status card - sibling element rendered into #s5ReportSummary
+   alongside the compact Chen #s5SummaryMsg. Reuses .review-room-board
+   styling internally.
+   ============================================================ */
+.s5-room-status-card {
+  margin-top: 12px;
+}
+
+/* ============================================================
+   "Where this design lives" - single consolidated real-world
+   anchor that replaces the trio of #s5ClosingPanel + #s5CareerPanel
+   + #s5CaseStudyPanel. Tab strip toggles between Real industries
+   and Career paths. Built at mount time by mountWhereThisLives().
+   ============================================================ */
+.s5-where-this-lives {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.s5-where-narrative {
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.s5-where-narrative #s5ClosingPanel { display: block !important; margin: 0; }
+.s5-where-narrative .chen-panel { background: transparent; border: 0; padding: 0; margin: 0; }
+.s5-where-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 0;
+}
+.s5-where-tab {
+  background: transparent;
+  border: 0;
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.s5-where-tab:hover { color: var(--text); }
+.s5-where-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.s5-where-tabpanel {
+  padding: 4px 0 0;
+}
+.s5-where-tabpanel[hidden] { display: none; }
+.s5-where-tabpanel #s5CareerPanel,
+.s5-where-tabpanel #s5CaseStudyPanel { display: block !important; margin: 0; }
+.s5-where-tabpanel .panel { margin: 0; }
 .iterate-route-panel {
   margin-top: 16px;
   padding: 14px 16px;
@@ -3912,7 +4098,7 @@
     padding: 8px 14px; font-size: 0.72rem; color: var(--accent); cursor: pointer;
     font-weight: 600; letter-spacing: 0.03em; list-style: none;
   }
-  .simplification-note summary::before { content: '\u24D8  '; }
+  .simplification-note summary::before { content: 'i  '; }
   .simplification-note[open] summary { border-bottom: 1px solid rgba(79,195,247,0.1); }
   .simplification-body {
     padding: 10px 14px; font-size: 0.76rem; color: var(--text-dim); line-height: 1.6;
@@ -4057,7 +4243,12 @@
      brief is locked invisible regardless of what inline-styles or
      downstream JS might try. Aaron's complaint: the brief was bleeding
      through under Chen's intro on a fresh playthrough. */
-  #stage0:not(.brief-open) #briefSection { display: none !important; }
+  #stage0:not(.brief-open) #briefSection,
+  #briefSection:not([data-open="true"]) { display: none !important; }
+  #stage0:not(.brief-open) .s0-brief-screen { display: none !important; }
+  #stage0.brief-open #companySplash,
+  #stage0.brief-open #chenIntro,
+  #stage0.brief-open .slack-system-msg { display: none !important; }
 
   .company-splash {
     text-align: center; padding: 60px 20px; opacity: 0;
@@ -4341,6 +4532,165 @@
     .stage-trans-foot { flex-direction: column; align-items: stretch; gap: 12px; }
     .stage-trans-actions { width: 100%; }
     .stage-trans-actions .btn { flex: 1; }
+  }
+
+  /* ============================================================
+     Stage 4 — control loop block diagram + Quick Start card
+     + math card + metric info badges. All teaching surfaces
+     live in #pidControls; this block holds their styling.
+     ============================================================ */
+  .s4-loop-card {
+    padding: 14px 16px 8px;
+    margin-bottom: 14px;
+    border: 1px solid rgba(255,122,69,0.22);
+    border-radius: 10px;
+    background:
+      radial-gradient(circle at top right, rgba(255,122,69,0.06), transparent 50%),
+      linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0.01));
+  }
+  .s4-loop-card-kicker {
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+  .s4-loop-svg-wrap { width: 100%; }
+  .s4-loop-svg-wrap svg { width: 100%; height: auto; max-height: 130px; display: block; }
+  .s4-loop-block rect {
+    transition: fill 0.25s ease, stroke 0.25s ease, filter 0.25s ease;
+  }
+  .s4-loop-block.active rect {
+    fill: rgba(255,122,69,0.22);
+    stroke: #ff7a45;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 6px rgba(255,122,69,0.55));
+  }
+  @keyframes s4LoopPulse {
+    0%   { fill: rgba(255,122,69,0.22); filter: drop-shadow(0 0 8px rgba(255,122,69,0.7)); }
+    100% { fill: #2a2f3a; filter: none; }
+  }
+  .s4-loop-block.entry-pulse rect {
+    animation: s4LoopPulse 600ms ease-out;
+  }
+
+  /* Quick Start card — first-visit teaching scaffold, dismissible. */
+  .s4-quick-start {
+    margin-bottom: 14px;
+    padding: 12px 14px;
+    border: 1px solid rgba(126,180,247,0.28);
+    border-left-width: 3px;
+    border-left-color: #4fc3f7;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(79,195,247,0.07), rgba(79,195,247,0.02));
+    position: relative;
+  }
+  .s4-quick-start-kicker {
+    font-size: 0.64rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #4fc3f7;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .s4-quick-start-list {
+    margin: 4px 0 8px 18px;
+    padding: 0;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: var(--text);
+  }
+  .s4-quick-start-list li { margin-bottom: 2px; }
+  .s4-quick-start-dismiss {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.14);
+    color: var(--text-dim);
+    font: inherit;
+    font-size: 0.74rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .s4-quick-start-dismiss:hover { color: var(--text); border-color: rgba(255,255,255,0.32); }
+
+  /* Math card — was a <details> behind a Show the math click;
+     promoted to visible-by-default so the equation maps to the
+     sliders without the student having to look for it. */
+  .s4-math-card {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.025);
+  }
+  .s4-math-card-kicker {
+    font-size: 0.64rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--text-dim);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .s4-math-eqn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.88rem;
+    color: #e9eef5;
+    background: rgba(0,0,0,0.25);
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    overflow-x: auto;
+  }
+  .s4-math-glossary {
+    font-size: 0.76rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+  .s4-math-glossary code {
+    font-family: 'JetBrains Mono', monospace;
+    color: #ffb479;
+    background: transparent;
+    padding: 0 2px;
+  }
+
+  /* Metric info badge + click-toggle definition */
+  .s4-metric-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    color: var(--text-dim);
+    font-size: 0.62rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-style: italic;
+    transition: background 0.15s ease, color 0.15s ease;
+    user-select: none;
+    border: 0;
+  }
+  .s4-metric-info:hover { background: rgba(255,122,69,0.20); color: #ffb479; }
+  .s4-metric-info[aria-expanded="true"] { background: #ff7a45; color: #000; }
+  .s4-metric-def {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+    margin-top: 6px;
+    padding: 6px 8px;
+    background: rgba(255,255,255,0.04);
+    border-left: 2px solid #ff7a45;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* Print-safe: hide Quick Start in print; show the math + loop. */
+  @media print {
+    .s4-quick-start { display: none !important; }
+    .s4-loop-card, .s4-math-card { break-inside: avoid; }
   }
 
   .codex-overlay-backdrop {
@@ -5078,8 +5428,8 @@ body.theme-linkedin .offer-letter {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
-  padding: 32px;
-  max-width: 480px;
+  padding: 28px;
+  max-width: 560px;
   margin: 0 auto;
 }
 body.theme-linkedin .offer-headline {
@@ -5092,6 +5442,26 @@ body.theme-linkedin .offer-role {
 }
 body.theme-linkedin .offer-meta {
   color: #666;
+}
+body.theme-linkedin .offer-doc-top {
+  border-bottom-color: #d9d9d9;
+}
+body.theme-linkedin .offer-doc-brand,
+body.theme-linkedin .offer-doc-id,
+body.theme-linkedin .offer-doc-label,
+body.theme-linkedin .offer-signature-label {
+  color: #666;
+}
+body.theme-linkedin .offer-doc-body {
+  background: #fafafa;
+  border-color: #d9d9d9;
+}
+body.theme-linkedin .offer-doc-row {
+  border-bottom-color: #e8e8e8;
+}
+body.theme-linkedin .offer-doc-value,
+body.theme-linkedin .offer-signature-line {
+  color: #191919;
 }
 body.theme-linkedin .offer-chen-note {
   background: #f4f2ee;
@@ -5406,18 +5776,76 @@ body.theme-linkedin .chen-text {
 .co-ping-text { font-family: 'IBM Plex Sans', sans-serif; }
 .co-ping-title { font-size: 13px; color: #d9dde7; font-weight: 600; }
 .co-ping-sub { font-size: 12px; color: #7d8595; margin-top: 2px; }
-.co-ping-feed {
-  margin-top: 24px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  color: #4a5266;
-  line-height: 2;
-  letter-spacing: 0.02em;
+.co-news-stack {
+  margin: 0 auto;
+  max-width: 560px;
+  display: grid;
+  gap: 10px;
+  text-align: left;
 }
-.co-ping-feed div { opacity: 0; animation: coTypeLine 0.4s ease forwards; }
-.co-ping-feed div:nth-child(1) { animation-delay: 0.4s; }
-.co-ping-feed div:nth-child(2) { animation-delay: 0.9s; }
-.co-ping-feed div:nth-child(3) { animation-delay: 1.4s; }
+.co-news-card {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 12px;
+  align-items: center;
+  min-height: 76px;
+  padding: 10px 12px;
+  border: 1px solid #20242f;
+  border-radius: 10px;
+  background: #10131c;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.28);
+  opacity: 0;
+  animation: coTypeLine 0.4s ease forwards;
+}
+.co-news-card:nth-child(1) { animation-delay: 0.25s; }
+.co-news-card:nth-child(2) { animation-delay: 0.75s; }
+.co-news-card:nth-child(3) { animation-delay: 1.15s; }
+.co-news-thumb {
+  width: 74px;
+  height: 56px;
+  border-radius: 6px;
+  border: 1px solid #2a2f3d;
+  background: #0a0d14;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff7a45;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.co-news-thumb img {
+  width: 74px;
+  height: 56px;
+  object-fit: cover;
+  display: block;
+}
+.co-news-thumb .co-news-optimus {
+  width: 74px;
+  height: 56px;
+  transform: rotate(90deg) scale(1.34);
+}
+.co-news-source {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: #ff7a45;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.co-news-title {
+  color: #e8ebf2;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.co-news-meta {
+  color: #7d8595;
+  font-size: 12px;
+  margin-top: 4px;
+}
 
 
 /* SOURCE: product/reskin/theme-catalog.css */
@@ -5873,12 +6301,28 @@ body.theme-catalog .s2-catalog .s2-tradeoff {
   margin: 0 0 16px;
   color: #e6eaf3;
 }
+body.theme-catalog .s2-catalog .s2-to-details summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.86rem;
+  list-style-position: inside;
+}
+body.theme-catalog .s2-catalog .s2-to-summary-note {
+  color: #aeb9c9;
+  font-size: 0.66rem;
+  font-weight: 500;
+}
 body.theme-catalog .s2-catalog .s2-to-title {
   font-size: 0.72rem;
   color: #aeb9c9;
   text-transform: uppercase;
   letter-spacing: 0.7px;
-  margin-bottom: 10px;
+  margin: 12px 0 10px;
 }
 body.theme-catalog .s2-catalog .s2-to-grid {
   display: grid;
@@ -6081,9 +6525,9 @@ body.theme-catalog .catalog-req-badge .req-label { color: #aaa; }
 
 /* Motor product cards — mockup faithful */
 body.theme-catalog .motor-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
 }
 body.theme-catalog .motor-card {
   background: #fff;
@@ -6093,6 +6537,10 @@ body.theme-catalog .motor-card {
   cursor: pointer;
   transition: all 0.15s;
   position: relative;
+}
+body.theme-catalog .motor-card {
+  display: flex;
+  flex-direction: column;
 }
 /* Stylised product image at the top of each card. Replaces the
    image-less catalog look Aaron flagged as unintuitive. */
@@ -6165,7 +6613,7 @@ body.theme-catalog .mc-desc {
 /* Spec grid — color-coded pass/warn/fail */
 body.theme-catalog .mc-spec-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 6px;
   margin-bottom: 10px;
 }
@@ -6270,6 +6718,32 @@ body.theme-catalog .catalog-selection-panel {
   border-radius: 6px;
   padding: 14px;
   margin-top: 12px;
+}
+body.theme-catalog .justify-choice-list {
+  display: grid;
+  gap: 8px;
+}
+body.theme-catalog .justify-choice-btn {
+  width: 100%;
+  border: 1px solid #d5d9d9;
+  background: #fff;
+  color: #0f1111;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+body.theme-catalog .justify-choice-btn:hover {
+  border-color: #f08804;
+  background: #fff8f1;
+}
+body.theme-catalog .justify-choice-btn.selected {
+  border-color: #f08804;
+  background: #fff2df;
+  box-shadow: inset 3px 0 0 #ff6600;
 }
 
 /* Chen Slack notification popup — looks like a real desktop Slack notification */
@@ -8942,6 +9416,53 @@ body.theme-linkedin .li-logo {
   font-size: 0.84rem;
 }
 
+.li-post-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 14px 0 16px;
+}
+
+.li-post-images figure {
+  margin: 0;
+}
+
+.li-post-image-frame {
+  height: 180px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.li-post-image-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.li-post-image-frame .li-image-rotate-optimus {
+  width: 180px;
+  height: 135px;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  transform: rotate(90deg);
+}
+
+.li-post-images figcaption {
+  font-size: 0.66rem;
+  color: #666;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
 .li-post-tags {
   display: flex;
   flex-wrap: wrap;
@@ -10032,17 +10553,23 @@ body.theme-slack .stage5-livestream-shell .s5-post-shift { display: none; }
 body.theme-slack .stage5-livestream-shell.shift-complete #s5VoiceMechanicalMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5VoiceControlsMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5VoiceClientMsg { display: none !important; }
-body.theme-slack .stage5-livestream-shell.shift-complete #s5PollMsg,
-body.theme-slack .stage5-livestream-shell.shift-complete #s5BotReviewMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5TeamRoomMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5SummaryMsg,
-body.theme-slack .stage5-livestream-shell.shift-complete #s5RequirementsMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5MechanicalReviewerMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5ControlsReviewerMsg,
 body.theme-slack .stage5-livestream-shell.shift-complete #s5ClientReviewerMsg { display: flex !important; }
+/* s5RequirementsMsg intentionally NOT in the show list — cut
+   2026-05-27 as a duplicate of the demo results scorecard. */
 body.theme-slack .stage5-livestream-shell.shift-complete #s5ResultsCard,
-body.theme-slack .stage5-livestream-shell.shift-complete #s5StakeholderPanel,
-body.theme-slack .stage5-livestream-shell.shift-complete #s5ContinueToCompare { display: block !important; }
+body.theme-slack .stage5-livestream-shell.shift-complete #s5RoomStatusCard,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5ScenarioGatePanel,
+body.theme-slack .stage5-livestream-shell.shift-complete #s5StakeholderPanel { display: block !important; }
+/* Note: the Group Z CSS-hide bandages (s5PollMsg, s5BotReviewMsg,
+   s5IterateRoutePanel, s5ContinueToCompare, s5AiTrainingPanel) were
+   dropped after the post-shift restructure. Those elements are no
+   longer re-parented into the report by Stage5ReportLayout.MOVES, so
+   they stay in the chat feed wrapped in .s5-post-shift (the default
+   `display: none` from line above) and never get revealed. */
 /* Span the full width of the 2-column grid */
 body.theme-slack .stage5-livestream-shell .s5-results-card,
 body.theme-slack .stage5-livestream-shell .s5-stake-panel { grid-column: 1 / -1; }
@@ -10246,15 +10773,53 @@ body.theme-slack .stage5-livestream-shell.shift-complete .slack-messages > * {
    summary card so the verdict + report take focal point. The canvas
    still renders the final frame; user can still see what just ran
    without it dominating the page. */
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed {
+  cursor: zoom-in;
+  position: relative;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed::after {
+  content: "▼ Expand feed";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.65);
+  color: rgba(214, 221, 234, 0.85);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 2;
+  text-transform: uppercase;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete.feed-expanded .stage5-pinned-feed {
+  cursor: zoom-out;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete.feed-expanded .stage5-pinned-feed::after {
+  content: "▲ Collapse feed";
+}
 body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .slack-video-embed {
   max-height: 240px;
   overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed canvas {
   max-height: 180px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  transition: max-height 0.3s ease;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete.feed-expanded .stage5-pinned-feed .slack-video-embed {
+  max-height: 70vh;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete.feed-expanded .stage5-pinned-feed canvas {
+  max-height: 60vh;
+}
+body.theme-slack .stage5-livestream-shell.shift-complete.feed-expanded .stage5-pinned-feed .conveyor-controls,
+body.theme-slack .stage5-livestream-shell.shift-complete.feed-expanded .stage5-pinned-feed .stage5-tableau,
+body.theme-slack .stage5-livestream-shell.shift-complete.feed-expanded .stage5-pinned-feed .stage5-tableau-status-grid {
+  display: block;
 }
 body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .conveyor-controls,
 body.theme-slack .stage5-livestream-shell.shift-complete .stage5-pinned-feed .stage5-tableau,
@@ -10308,24 +10873,33 @@ body.theme-slack .stage5-livestream-shell.shift-complete .slack-channel-header {
 }
 
 /* Make sure the chat block (above the verdict in flow) can never paint
-   over the sticky verdict during scroll. Plain position:relative +
-   z-index:1 participates in the parent stacking context normally so
-   the verdict's higher z-index wins on paint.
-
-   NOTE: do NOT use `isolation: isolate` here. It creates a fresh
-   stacking context that traps later siblings (the verdict inside
-   #s5PostShift) under the chat block's boundary -- exactly the
-   clipping bug Aaron re-reported on 2026-05-25. */
+   over the sticky verdict during scroll.
+   2026-05-27 — third recurrence of this bug. Both prior fixes
+   (isolation: isolate, then position: relative + z-index: 1) tried to
+   manage the chat block's stacking participation. Each attempt
+   either trapped the verdict OR didn't reliably win on paint.
+   This time: take the chat block OUT of stacking entirely on
+   shift-complete (position: static, z-index: auto, isolation: auto).
+   Verdict still wins because it's a later sibling with its own
+   sticky-created stacking context at z-index: 50 (raised from 5
+   defensively). DOM order + sticky's stacking context = verdict on
+   top, no chat interference. */
 body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block {
-  position: relative;
-  z-index: 1;
+  position: static;
+  z-index: auto;
+  isolation: auto;
 }
 
 /* ---- Verdict banner ---- */
 .s5-verdict-banner {
   position: sticky;
   top: 0;
-  z-index: 5;
+  /* z-index raised from 5 → 50 on 2026-05-27 (third recurrence of
+     the chat-clips-verdict bug). With the chat block now position:
+     static (no stacking context), z-index: 5 should win on paint
+     order alone; 50 is a defensive buffer against any future
+     ancestor that creates a stacking context. */
+  z-index: 50;
   background: linear-gradient(180deg, #1a1d24 0%, #14171c 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
@@ -10383,6 +10957,22 @@ body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block {
   flex: 1 1 200px;
   min-height: 44px;
 }
+/* Post-pass forward action: when the shift result is PASS,
+   the Defend button (hidden by default) is shown as the primary
+   CTA. The iterate / swap buttons demote to secondary visually
+   (their button class is also swapped to btn-secondary by JS).
+   On PASS the action bar reads forward-looking instead of as
+   failure recovery. */
+.s5-report-actions.shift-passed .s5-action-defend {
+  flex: 2 1 260px;
+  box-shadow: 0 8px 28px rgba(126, 231, 135, 0.28);
+}
+.s5-report-actions.shift-passed .s5-action-defend::before {
+  content: "✓ Pass · ";
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  opacity: 0.85;
+}
 
 /* ---- Report sections ---- */
 .s5-report-section {
@@ -10392,20 +10982,19 @@ body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block {
 }
 .s5-report-section:first-of-type { border-top: none; padding-top: 8px; }
 .s5-report-section-header {
-  position: sticky;
-  top: 88px; /* sit below the verdict banner (~70px) */
-  z-index: 3;
   background: linear-gradient(180deg, rgba(20, 23, 28, 0.96) 0%, rgba(20, 23, 28, 0.88) 100%);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  padding: 10px 0 12px;
-  margin: 0 0 16px;
+  padding: 12px 14px;
+  margin: 0;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   color: rgba(214, 221, 234, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -10424,6 +11013,18 @@ body.theme-slack .stage5-livestream-shell.shift-complete .s5-chat-block {
 .s5-report-section .slack-msg-avatar { display: none; }
 .s5-report-section .slack-msg-content { padding: 0; }
 .s5-report-section .slack-msg-header { margin-bottom: 8px; }
+
+#s5ReportCompare > #s5CompareSection,
+#s5ReportSpec > #s5SpecSection,
+#s5ReportCareer > #s5WhereThisLives {
+  margin-top: 0;
+}
+#s5ReportCompare > #s5CompareSection > .panel,
+#s5ReportSpec > #s5SpecSection > .slack-msg:first-child .slack-attachment,
+#s5ReportCareer > #s5WhereThisLives {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
 /* Collapsible "Deeper insights" section */
 #s5ReportDeeper > details {
@@ -11510,15 +12111,15 @@ body.theme-catalog #stage2 .motor-card {
 }
 
 body.theme-catalog #stage2 .motor-cards {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
 body.theme-catalog #stage2 .motor-card {
-  display: grid;
-  grid-template-columns: minmax(0, 2.1fr) minmax(260px, 1fr) minmax(250px, 1fr);
-  gap: 18px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: stretch;
   border-left-width: 4px;
   border-radius: 10px;
 }
@@ -11577,6 +12178,10 @@ body.theme-catalog #stage2 #s2CurvePanel {
 }
 
 @media (max-width: 980px) {
+  body.theme-catalog .motor-cards {
+    grid-template-columns: 1fr;
+  }
+
   body.theme-catalog #stage2 .motor-card,
   body.theme-catalog #stage2 .motor-card.locked-teaser {
     grid-template-columns: 1fr;
@@ -11659,22 +12264,27 @@ body.theme-catalog #stage2 .btn {
   border-radius: 999px;
 }
 
-/* Snapshot terminal adaptation: Stage 4 gets a true CRT shell with green phosphor. */
+/* Stage 4 terminal theme — paled 2026-05-27 per Aaron's note that
+   the green/black combo was hard on the eyes. Page background went
+   from near-pure-black (#000a00) to a softer dark green-grey
+   (#0e1810); accent green moved from neon (rgba 32,192,64) to a
+   warmer paler tone (rgba 80,200,110). Theme intent preserved
+   (still reads as a terminal/CRT), readability improved. */
 body.theme-terminal #stage4 {
   padding: 20px 18px 40px;
-  background: radial-gradient(circle at top, rgba(32, 192, 64, 0.06), transparent 28%), #000a00;
+  background: radial-gradient(circle at top, rgba(80, 200, 110, 0.05), transparent 28%), #0e1810;
 }
 
 body.theme-terminal #stage4 .terminal-shell {
   max-width: 1080px;
   margin: 0 auto;
-  border: 1px solid #0d2a10;
+  border: 1px solid #1d3a20;
   border-radius: 22px;
-  background: linear-gradient(180deg, rgba(0, 18, 0, 0.96), rgba(0, 8, 0, 0.98));
+  background: linear-gradient(180deg, rgba(14, 28, 16, 0.96), rgba(10, 22, 12, 0.98));
   box-shadow:
-    0 16px 40px rgba(0, 0, 0, 0.42),
-    inset 0 0 0 1px rgba(32, 192, 64, 0.08),
-    inset 0 0 90px rgba(32, 192, 64, 0.04);
+    0 16px 40px rgba(0, 0, 0, 0.38),
+    inset 0 0 0 1px rgba(80, 200, 110, 0.08),
+    inset 0 0 90px rgba(80, 200, 110, 0.035);
   overflow: hidden;
 }
 
@@ -11683,17 +12293,17 @@ body.theme-terminal #stage4 .terminal-prompt {
   align-items: center;
   gap: 10px;
   padding: 10px 18px;
-  border-bottom: 1px solid #0d2a10;
-  background: rgba(32, 192, 64, 0.03);
+  border-bottom: 1px solid #1d3a20;
+  background: rgba(80, 200, 110, 0.025);
   font-size: 0.76rem;
 }
 
 body.theme-terminal #stage4 .terminal-prompt .path {
-  color: #158028;
+  color: #5fa86a;
 }
 
 body.theme-terminal #stage4 .terminal-prompt .cmd {
-  color: #20c040;
+  color: #7ec588;
 }
 
 body.theme-terminal #stage4 .terminal-screen {
@@ -11701,9 +12311,9 @@ body.theme-terminal #stage4 .terminal-screen {
   max-width: none;
   padding: 18px 22px 26px;
   background:
-    radial-gradient(circle at center, rgba(32, 192, 64, 0.04), transparent 60%),
-    repeating-linear-gradient(180deg, rgba(32, 192, 64, 0.02) 0 2px, transparent 2px 4px),
-    #000800;
+    radial-gradient(circle at center, rgba(80, 200, 110, 0.03), transparent 60%),
+    repeating-linear-gradient(180deg, rgba(80, 200, 110, 0.015) 0 2px, transparent 2px 4px),
+    #0a160c;
 }
 
 body.theme-terminal #stage4 .terminal-screen::before {
@@ -11791,15 +12401,15 @@ body.theme-terminal #stage4 #sandboxPanel {
 
 body.theme-terminal #stage4 #armCanvas,
 body.theme-terminal #stage4 #sandboxCanvas {
-  border: 1px solid #0d2a10;
+  border: 1px solid #1d3a20;
   border-radius: 0;
-  background: #000a00;
+  background: #131e15;
 }
 
 body.theme-terminal #stage4 #simStatus,
 body.theme-terminal #stage4 #sandboxStatus,
 body.theme-terminal #stage4 #demoScore {
-  color: #158028;
+  color: #5fa86a;
   font-family: 'Courier New', monospace;
 }
 
@@ -11947,6 +12557,34 @@ body.theme-terminal #stage4 .terminal-warehouse-chip.warn {
 
 body.theme-terminal #stage4 .terminal-warehouse-chip.good {
   color: #55d465;
+}
+
+body.theme-terminal #stage4 #sandboxPanel > p {
+  color: #00cc00 !important;
+  font-family: 'Courier New', monospace;
+}
+
+body.theme-terminal #stage4 #sandboxCanvas {
+  background:
+    radial-gradient(circle at center, rgba(32, 192, 64, 0.05), transparent 58%),
+    repeating-linear-gradient(180deg, rgba(32, 192, 64, 0.02) 0 2px, transparent 2px 4px),
+    #000a00 !important;
+  border-radius: 0 !important;
+}
+
+body.theme-terminal #stage4 #sandboxStatus {
+  border: 1px solid #0d2a10;
+  border-radius: 0 !important;
+  background: rgba(0, 0, 0, 0.84) !important;
+  color: #20c040 !important;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+body.theme-terminal #stage4 #sandboxPanel > div:last-of-type {
+  border-top: 1px solid #0d2a10;
+  padding-top: 12px;
 }
 
 body.theme-terminal #stage4 .terminal-pid-group input[type="range"] {
@@ -12482,10 +13120,33 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
 
   <!-- Scene 3: LinkedIn ping / hand-off -->
   <div class="co-scene co-scene-ping" data-scene="ping">
-    <div class="co-ping-feed">
-      <div>&gt; Tesla Optimus hits 500 units/week on the Fremont line</div>
-      <div>&gt; Figure AI closes $1.5B Series C at $40B valuation</div>
-      <div>&gt; Apptronik opens 200 mech eng roles for 2026 ramp</div>
+    <div class="co-news-stack" aria-label="Robotics news headlines">
+      <article class="co-news-card">
+        <div class="co-news-thumb">
+          <img class="co-news-optimus" src="img/tesla-optimus-2023.jpg" alt="Tesla Optimus humanoid robot">
+        </div>
+        <div>
+          <div class="co-news-source">Robotics Business Wire</div>
+          <div class="co-news-title">Tesla Optimus production ramp turns actuator hiring into a bottleneck</div>
+          <div class="co-news-meta">Humanoid robotics &middot; 8 min ago</div>
+        </div>
+      </article>
+      <article class="co-news-card">
+        <div class="co-news-thumb">FIG</div>
+        <div>
+          <div class="co-news-source">Tech Markets</div>
+          <div class="co-news-title">Figure AI raises new funding as humanoid teams compete for mechanical talent</div>
+          <div class="co-news-meta">Funding &middot; 21 min ago</div>
+        </div>
+      </article>
+      <article class="co-news-card">
+        <div class="co-news-thumb">ME</div>
+        <div>
+          <div class="co-news-source">Engineering Jobs</div>
+          <div class="co-news-title">Actuator design roles climb as robots move from demo videos to factories</div>
+          <div class="co-news-meta">Careers &middot; just now</div>
+        </div>
+      </article>
     </div>
     <div style="height: 32px;"></div>
     <div class="co-ping-card">
@@ -12566,14 +13227,18 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
                  actuators look like in the real world. Atlas (DARPA public
                  domain) + Tesla Optimus (CC BY-SA). Captions tie them to
                  the actuator-design topic. -->
-            <div class="li-post-images" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 16px;">
-              <figure style="margin:0;">
-                <img src="img/atlas-hydraulic-2013.jpg" alt="Boston Dynamics Atlas robot" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:6px;border:1px solid #e0e0e0;">
-                <figcaption style="font-size:0.66rem;color:#666;margin-top:4px;line-height:1.3;">Atlas (Boston Dynamics). Every joint is an actuator. Image: DARPA / public domain.</figcaption>
+            <div class="li-post-images">
+              <figure>
+                <div class="li-post-image-frame">
+                  <img src="img/atlas-hydraulic-2013.jpg" alt="Boston Dynamics Atlas robot" loading="lazy">
+                </div>
+                <figcaption>Atlas (Boston Dynamics). Every joint is an actuator. Image: DARPA / public domain.</figcaption>
               </figure>
-              <figure style="margin:0;">
-                <img src="img/tesla-optimus-2023.jpg" alt="Tesla Optimus humanoid" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:6px;border:1px solid #e0e0e0;">
-                <figcaption style="font-size:0.66rem;color:#666;margin-top:4px;line-height:1.3;">Tesla Optimus. Fully electric, dozens of joints. Image: Premeditated, CC BY-SA 4.0.</figcaption>
+              <figure>
+                <div class="li-post-image-frame">
+                  <img class="li-image-rotate-optimus" src="img/tesla-optimus-2023.jpg" alt="Tesla Optimus humanoid" loading="lazy">
+                </div>
+                <figcaption>Tesla Optimus. Fully electric, dozens of joints. Image: Premeditated, CC BY-SA 4.0.</figcaption>
               </figure>
             </div>
             Requirements: compact, precise, reliable. Not one of those things is optional.<br><br>
@@ -12662,11 +13327,29 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
     </div>
 
     <div id="prologueOffer" class="offer-letter dm-window">
-      <div class="offer-headline" id="offerHeadline">Internship Offer Extended</div>
+      <div class="offer-doc-top">
+        <div>
+          <div class="offer-doc-brand">Kinetic Robotics</div>
+          <div class="offer-headline" id="offerHeadline">Internship Offer Letter</div>
+        </div>
+        <div class="offer-doc-id">KR-HR-2026-ELBOW<br>Issued today</div>
+      </div>
       <div class="offer-role">Mechanical Engineering Intern &middot; Actuator Design</div>
-      <div class="offer-meta">Kinetic Robotics | Summer 2026 | 6-week internship | Reports to Dr. Chen</div>
+      <div class="offer-meta">Summer 2026 | 6-week internship | Reports to Dr. Sarah Chen</div>
+      <div class="offer-doc-body" aria-label="Offer terms">
+        <div class="offer-doc-row"><span class="offer-doc-label">Assignment</span><span class="offer-doc-value">KR-7 elbow actuator concept</span></div>
+        <div class="offer-doc-row"><span class="offer-doc-label">First task</span><span class="offer-doc-value">Turn the design brief into motor and gearbox requirements</span></div>
+        <div class="offer-doc-row"><span class="offer-doc-label">Review gate</span><span class="offer-doc-value">Prototype simulation and stakeholder design review</span></div>
+      </div>
       <div class="offer-chen-note" id="offerChenNote"></div>
-      <button class="offer-accept-btn" onclick="acceptOffer()">Enter the Lab &rarr;</button>
+      <div class="offer-signature">
+        <div>
+          <div class="offer-signature-line">Applicant signature</div>
+          <div class="offer-signature-label">Click below to sign and accept the assignment.</div>
+        </div>
+        <div class="offer-doc-id">Status: pending</div>
+      </div>
+      <button class="offer-accept-btn" onclick="acceptOffer()">Sign Offer &amp; Enter the Lab &rarr;</button>
     </div>
 
     <div id="prologueReject" class="rejection-screen dm-window">
@@ -12733,7 +13416,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
     </div>
 
     <!-- Design Brief (hidden until Dr. Chen finishes) -->
-    <div id="briefSection" style="display:none;">
+    <div id="briefSection" class="s0-brief-screen" style="display:none;">
       <!-- ReviewBot kickoff message removed per usability notes - the brief
            header below already does this job, and the bot post added no
            clarity and read as AI filler. -->
@@ -12762,12 +13445,12 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
       <span id="s0RunPreview3Label"></span><span id="s0RunPreview3Title"></span><span id="s0RunPreview3Body"></span>
     </div>
 
-      <div class="panel" style="border-left: 3px solid var(--accent);">
+      <div class="panel s0-brief-screen" style="border-left: 3px solid var(--accent);">
         <h2 style="margin-bottom:10px;">Why this matters</h2>
         <figure class="s0-hero-figure">
           <img src="img/atlas-hydraulic-2013.jpg" alt="Boston Dynamics Atlas humanoid robot, 2013 hydraulic version. Boston Dynamics retired hydraulic in 2024 and replaced this with a fully electric Atlas using planetary roller-screw actuators." loading="lazy">
           <figcaption>
-            <strong>Atlas</strong> &mdash; Boston Dynamics, 2013 to 2023. This version used hydraulic joints (oil under pressure). In 2024 they replaced it with a <strong>fully electric Atlas</strong>. The new joints use small motors and special gears called planetary roller screws. That switch &mdash; from hydraulics to electric joints &mdash; is the exact design problem you are about to work on. On a humanoid robot like Atlas, Optimus, or Figure 02, the actuators drive roughly half the bill of materials. Forty-plus joints per robot, all built around the same trade-off you are about to make.
+            <strong>Atlas</strong> &mdash; Boston Dynamics, 2013 to 2023. This version used hydraulic joints (oil under pressure). In 2024 they replaced it with a <strong>fully electric Atlas</strong>. The new joints use small motors and special gears called planetary roller screws. That switch from hydraulics to electric joints is the exact design problem you are about to work on. On a humanoid robot like Atlas, Optimus, or Figure 02, the actuators drive roughly half the bill of materials. Forty-plus joints per robot, all built around the same trade-off you are about to make.
             <span class="s0-hero-credit">Image: DARPA, public domain (via Wikimedia Commons).</span>
           </figcaption>
         </figure>
@@ -12804,7 +13487,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
            learning goals" clause is satisfied for any student or judge who
            opens Stage 0. Collapsible via the chevron if a returning student
            wants it out of the way. -->
-      <details class="panel s0-learning-goals" open style="border-left: 3px solid #66bb6a;">
+      <details class="panel s0-learning-goals s0-brief-screen" open style="border-left: 3px solid #66bb6a;">
         <summary style="cursor:pointer;list-style:none;font-size:0.74rem;font-weight:700;color:#81c784;text-transform:uppercase;letter-spacing:0.08em;">What you&rsquo;ll do, what you&rsquo;ll learn &nbsp;<span style="color:var(--text-dim);font-weight:400;text-transform:none;letter-spacing:0;">(ages 15&ndash;17, ~45 min)</span></summary>
         <div class="s0-lg-grid" style="margin-top:12px;">
           <div class="s0-lg-col">
@@ -12835,7 +13518,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
            panel holds payload, arm length, CG, mass data the student needs
            in Stage 1 to compute torque. Default collapsed; the label now
            names what it is. -->
-      <div class="panel" id="fullBriefPanel" style="cursor:pointer;" onclick="this.querySelector('.brief-expand').style.display=this.querySelector('.brief-expand').style.display==='none'?'block':'none'; this.querySelector('.expand-hint').textContent=this.querySelector('.brief-expand').style.display==='none'?'Click to expand':'Click to collapse';">
+      <div class="panel s0-brief-screen" id="fullBriefPanel" style="cursor:pointer;" onclick="this.querySelector('.brief-expand').style.display=this.querySelector('.brief-expand').style.display==='none'?'block':'none'; this.querySelector('.expand-hint').textContent=this.querySelector('.brief-expand').style.display==='none'?'Click to expand':'Click to collapse';">
         <div style="display:flex;justify-content:space-between;align-items:center;">
           <h2 style="margin-bottom:0;">Inputs for Stage 1 (payload, arm geometry)</h2>
           <span class="expand-hint" style="font-size:0.72rem;color:var(--accent);">Click to expand</span>
@@ -12862,10 +13545,10 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
               <tr><td>Ingress protection</td><td>IP54 minimum</td><td class="chen-note dim">Other team's problem</td></tr>
             </tbody>
           </table>
-          <p style="font-size:0.82rem;color:var(--text-dim);margin-top:12px;">The controller and power electronics are handled by a separate team. Focus on the mechanical design — motor selection and gear train.</p>
+          <p style="font-size:0.82rem;color:var(--text-dim);margin-top:12px;">The controller and power electronics are handled by a separate team. Focus on the mechanical design: motor selection and gear train.</p>
         </div>
       </div>
-      <div class="slack-msg opening-slack-chen-quote">
+      <div class="slack-msg opening-slack-chen-quote s0-brief-screen">
         <div class="slack-msg-avatar chen">SC</div>
         <div class="slack-msg-content">
           <div class="slack-msg-header">
@@ -12875,7 +13558,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="slack-msg-text">The best actuator is the one that meets all the specs with the least complexity.</div>
         </div>
       </div>
-      <div class="btn-row">
+      <div class="btn-row s0-brief-screen">
         <button class="btn btn-primary" onclick="s0AcceptMission(this);" id="s0MissionAcceptBtn">Begin Requirements Analysis &rarr;</button>
       </div>
     </div>
@@ -13252,8 +13935,9 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <span id="s2ChenText"></span>
           </div>
           <div class="justify-area" style="margin-top:10px;">
-            <label style="font-size:0.72rem;color:#555;display:block;margin-bottom:4px;">Why this motor? One or two sentences.</label>
-            <textarea class="justify-input" id="justifyInput" placeholder='e.g. "It has the highest push force relative to its size, which means I need less gear reduction..."' disabled style="width:100%;padding:8px;font-size:0.78rem;border:1px solid #ddd;border-radius:4px;min-height:60px;resize:vertical;font-family:inherit;"></textarea>
+            <label style="font-size:0.72rem;color:#555;display:block;margin-bottom:6px;">Pick the reason you would defend in review.</label>
+            <div class="justify-choice-list" id="s2JustifyChoices" aria-live="polite"></div>
+            <input type="hidden" class="justify-input" id="justifyInput" value="">
           </div>
         </div>
 
@@ -13300,7 +13984,6 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
     <span class="stage-label">Stage 3</span>
     <h1 style="font-size:1.2rem;font-weight:700;color:var(--text-bright);">Gear Train Design</h1>
   </div>
-  <div class="objective-line" id="s3ObjectiveLine" style="max-width:1400px;margin:0 auto 10px;padding:0 4px;"><strong>Objective:</strong> Build a gearbox that passes the ship checks.</div>
   <span class="learn-line" style="max-width:1400px;margin:0 auto 4px;padding:0 4px;display:none;">Engineering skill: Iterative design under multiple simultaneous constraints</span>
   <div id="s3HintChip" class="hint-chip" style="max-width:1400px;margin:0 auto 10px;display:none;">
     <span class="hint-label">HINT</span>
@@ -13371,8 +14054,6 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
           <div class="physics-callout visible" id="gearTypeHint" style="margin-top:6px;">Simple external gear mesh — one pinion drives one larger gear per stage.</div>
           <div class="stage3-family-card" id="s3FamilyCard">
-            <div class="stage3-family-kicker" id="s3FamilyKicker">Builder Mode</div>
-            <div class="stage3-family-title" id="s3FamilyTitle">Spur Stack</div>
             <div class="stage3-family-lead" id="s3FamilyLead">Spur is the readable baseline: simple to reason about, but quick to get bulky when you chase ratio the lazy way.</div>
             <div class="stage3-family-grid">
               <div class="stage3-family-box">
@@ -13404,7 +14085,6 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="slider-ticks"><span>2:1</span><span>30:1</span><span>60:1</span><span>90:1</span><span>120:1</span></div>
         </div>
         <p class="stage3-slider-note" id="s3RatioSupport">More reduction gives more torque and less speed.</p>
-        <div class="s3-control-tip" id="s3RatioTip"><strong>Ratio trade:</strong> more torque, less speed.</div>
         <button class="btn btn-secondary" id="s3Step2Btn" onclick="acceptS3Step2()" style="width:100%;">Lock In Ratio &rarr; Step 3</button>
       </div>
 
@@ -13501,7 +14181,6 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             </div>
           </div>
         </div>
-        <div class="s3-control-tip" id="s3GeometryTip"><strong>Geometry trade:</strong> stages, tooth size, mass, and losses move together.</div>
         <button class="btn btn-secondary" id="s3Step3Btn" onclick="acceptS3Step3()" style="width:100%;">Geometry Set &rarr; Review</button>
       </div>
 
@@ -13652,8 +14331,14 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
       <span class="stage-label">Stage 4</span>
       <h1>Control Tuning</h1>
     </div>
-    <div class="objective-line"><strong>Objective:</strong> Watch one live pass, then tune until a single warehouse handoff feels calm, controlled, and repeatable.</div>
-    <span class="learn-line">Engineering skill: Understanding feedback control — speed, stability, and precision are at odds</span>
+    <!-- Stage 4 objective + learn-line cut 2026-05-27 per Aaron:
+         the "Objective / Engineering skill / Dr. Chen comment"
+         cluster was overweight. The Chen panel below already gives
+         the student what to do next; the Objective and Engineering
+         skill lines were redundant overhead. Restorable by removing
+         the wrapping comment + the hidden attribute. -->
+    <div class="objective-line" hidden><strong>Objective:</strong> Watch one live pass, then tune until a single warehouse handoff feels calm, controlled, and repeatable.</div>
+    <span class="learn-line" hidden>Engineering skill: Understanding feedback control — speed, stability, and precision are at odds</span>
     <div class="chen-panel" style="margin-bottom:16px;">
       <div class="chen-panel-header">
         <div class="chen-panel-avatar">SC</div>
@@ -13702,6 +14387,29 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
     </div>
 
     <div id="pidControls" style="display:none;">
+      <!-- Control loop block diagram. Visualizes where Kp / Kd / Ki
+           live in the system so the sliders aren't a black box. SVG
+           is rendered by TRANS_SVG.controlLoop() on Stage 4 entry. -->
+      <div class="s4-loop-card" id="s4LoopCard">
+        <div class="s4-loop-card-kicker">The control loop</div>
+        <div class="s4-loop-svg-wrap" id="s4LoopSvgWrap"></div>
+      </div>
+
+      <!-- First-visit Quick Start card. Hidden after dismiss OR
+           after two sim runs (whichever comes first). Tracked via
+           STATE._s4QuickStartDismissed. -->
+      <div class="s4-quick-start" id="s4QuickStart">
+        <div class="s4-quick-start-kicker">Quick start — first time tuning?</div>
+        <ol class="s4-quick-start-list">
+          <li>Hit <strong>Run</strong> to see what the default tune does.</li>
+          <li>Drag <strong>Kp</strong> up if the arm is too slow. Down if it overshoots.</li>
+          <li>Add <strong>Kd</strong> to smooth out overshoot.</li>
+          <li>Add <strong>Ki</strong> if the arm parks short of the target.</li>
+          <li>Keep tuning until all three metrics turn green.</li>
+        </ol>
+        <button type="button" class="s4-quick-start-dismiss" id="s4QuickStartDismiss">Got it — dismiss</button>
+      </div>
+
       <div class="panel">
         <h2>Tune the Controller</h2>
         <p style="font-size:0.8rem;color:var(--text-dim);margin-bottom:12px;line-height:1.6;">
@@ -13740,11 +14448,26 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
         </div>
         <!-- The sim auto-reruns on every slider change (debounced via
              onPIDSliderChange), so a manual rerun button was redundant.
-             The Warehouse Console is the meaningful action -- promoted
+             The warehouse simulation is the meaningful action -- promoted
              to full-width primary with a kicker explaining what it does. -->
         <div style="margin-top:18px;display:flex;flex-direction:column;gap:6px;">
           <div style="font-size:0.74rem;color:var(--text-dim);line-height:1.5;">When your tuning feels right, run it in the warehouse &rarr;</div>
-          <button class="btn btn-primary" onclick="openSandbox();" id="openSandboxBtn" style="font-size:0.92rem;padding:14px 18px;font-weight:600;letter-spacing:0.02em;">Open Warehouse Console &darr;</button>
+          <button class="btn btn-primary" onclick="openSandbox();" id="openSandboxBtn" style="font-size:0.92rem;padding:14px 18px;font-weight:600;letter-spacing:0.02em;">Open Warehouse Simulation &darr;</button>
+        </div>
+
+        <!-- Plain-language math card — visible by default so the
+             slider-to-equation mapping is obvious from the start.
+             The deeper formula-toggle (citations, dynamics, metric
+             definitions in formal notation) lives below for students
+             who want the full treatment. -->
+        <div class="s4-math-card" id="s4MathCard">
+          <div class="s4-math-card-kicker">The math behind the knobs</div>
+          <div class="s4-math-eqn">command = Kp &middot; error &nbsp;+&nbsp; Kd &middot; (rate of error) &nbsp;+&nbsp; Ki &middot; (sum of error)</div>
+          <div class="s4-math-glossary">
+            <div><code>error</code> = target angle &minus; current angle</div>
+            <div><code>rate of error</code> = how fast that gap is changing</div>
+            <div><code>sum of error</code> = error added up over the whole move</div>
+          </div>
         </div>
       </div>
 
@@ -13785,9 +14508,24 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
       <div class="panel" id="pidMetrics">
         <h2>What The Motion Says</h2>
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;font-size:0.85rem;">
-          <div><span style="color:var(--text-dim);">Stop time <span class="tooltip-term" data-real="Formal term: settle time">(settle time)</span></span><br><strong id="metricSettle" aria-live="polite" style="font-size:1.1rem;">—</strong></div>
-          <div><span style="color:var(--text-dim);">Swing past target <span class="tooltip-term" data-real="Formal term: overshoot">(overshoot)</span></span><br><strong id="metricOvershoot" aria-live="polite" style="font-size:1.1rem;">—</strong></div>
-          <div><span style="color:var(--text-dim);">Final miss <span class="tooltip-term" data-real="Formal term: steady-state error">(steady error)</span></span><br><strong id="metricError" aria-live="polite" style="font-size:1.1rem;">—</strong></div>
+          <div>
+            <span style="color:var(--text-dim);">Stop time <span class="tooltip-term" data-real="Formal term: settle time">(settle time)</span></span>
+            <button type="button" class="s4-metric-info" data-metric="settle" aria-expanded="false" aria-label="What is settle time?" title="What is settle time?">i</button>
+            <br><strong id="metricSettle" aria-live="polite" style="font-size:1.1rem;">&mdash;</strong>
+            <div class="s4-metric-def" id="s4MetricDefSettle" hidden>How long after Run until the arm holds within 1&deg; of target.</div>
+          </div>
+          <div>
+            <span style="color:var(--text-dim);">Swing past target <span class="tooltip-term" data-real="Formal term: overshoot">(overshoot)</span></span>
+            <button type="button" class="s4-metric-info" data-metric="overshoot" aria-expanded="false" aria-label="What is overshoot?" title="What is overshoot?">i</button>
+            <br><strong id="metricOvershoot" aria-live="polite" style="font-size:1.1rem;">&mdash;</strong>
+            <div class="s4-metric-def" id="s4MetricDefOvershoot" hidden>How far past target the arm swings before coming back.</div>
+          </div>
+          <div>
+            <span style="color:var(--text-dim);">Final miss <span class="tooltip-term" data-real="Formal term: steady-state error">(steady error)</span></span>
+            <button type="button" class="s4-metric-info" data-metric="error" aria-expanded="false" aria-label="What is steady error?" title="What is steady error?">i</button>
+            <br><strong id="metricError" aria-live="polite" style="font-size:1.1rem;">&mdash;</strong>
+            <div class="s4-metric-def" id="s4MetricDefError" hidden>How far short of target the arm parks once it stops moving.</div>
+          </div>
         </div>
       </div>
 
@@ -13835,12 +14573,12 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
       <div class="panel" id="sandboxPanel" style="display:none;">
         <div class="terminal-warehouse-head">
           <div>
-            <div class="terminal-warehouse-kicker" id="s4ScenarioConsoleKicker">Warehouse Console</div>
-            <h2 id="s4ScenarioConsoleTitle">Move one crate from infeed to shelf</h2>
+            <div class="terminal-warehouse-kicker" id="s4ScenarioConsoleKicker">Warehouse Simulation</div>
+            <h2 id="s4ScenarioConsoleTitle">Run one crate handoff</h2>
           </div>
-          <div class="terminal-warehouse-readout" id="s4WarehouseReadout">QUEUE ONLINE | awaiting first pick</div>
+          <div class="terminal-warehouse-readout" id="s4WarehouseReadout">READY | awaiting first pickup</div>
         </div>
-        <p style="font-size:0.85rem;color:var(--text);margin-bottom:10px;line-height:1.5;" id="s4ScenarioConsoleCopy"><strong>Task:</strong> Click the highlighted crate to pick it up. Once the gripper closes, click the highlighted shelf slot to place it. The next crate only rolls in after the last handoff finishes.</p>
+        <p style="font-size:0.85rem;color:var(--text);margin-bottom:10px;line-height:1.5;" id="s4ScenarioConsoleCopy">Run a crate handoff and watch whether the tuning stays controlled under load.</p>
         <div class="terminal-warehouse-banner">
           <div class="terminal-warehouse-chip" id="s4WarehouseStep">STEP 1 | CLICK CRATE</div>
           <div class="terminal-warehouse-chip" id="s4WarehouseGrip">GRIPPER | OPEN</div>
@@ -14030,7 +14768,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
               </div>
               <div class="slack-video-viewers">
                 <span id="s5SlackViewerMeta">8 watching</span>
-                <span id="s5SlackHardwareMeta">Waiting for hardware summary</span>
+                <span id="s5SlackHardwareMeta"></span>
               </div>
             </div>
           </div>
@@ -14096,92 +14834,106 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
         </div>
 
+        <!-- Chen one-liner for the executive summary slot. The big board
+             that used to live inside this message is now its own
+             #s5RoomStatusCard below, and the scenario gate is its own
+             top-level #s5ScenarioGatePanel. Both get re-parented into
+             their report sections by Stage5ReportLayout.MOVES. The five
+             exec-chip values (s5BestCall, s5BiggestRisk, s5ClientReaction,
+             s5ComparePayoff, s5NextMove) stay as hidden orphans so the
+             populator at ~28770 doesn't need null-guards. -->
         <div class="slack-msg stage5-live-seq s5-post-shift" id="s5SummaryMsg">
           <div class="slack-msg-avatar chen">SC</div>
           <div class="slack-msg-content">
             <div class="slack-msg-header"><span class="slack-msg-name">Dr. Sarah Chen</span><span class="slack-msg-time">now</span></div>
-            <div class="slack-msg-text">Here is the room read before we get lost in the spreadsheet.</div>
-            <div class="slack-attachment" id="s5SlackSummaryAttachment">
-              <div class="review-room-board">
-                <div class="review-room-kicker">Review Room Status</div>
-                <div class="review-verdict-strip">
-                  <div class="review-verdict-badge" id="s5VerdictBadge">Verdict pending</div>
-                  <div class="review-verdict-chip"><span class="review-verdict-chip-label">Room Focus</span><span class="review-verdict-chip-value" id="s5VerdictFocus">Pending review.</span></div>
-                  <div class="review-verdict-chip"><span class="review-verdict-chip-label">Pressure Source</span><span class="review-verdict-chip-value" id="s5VerdictPressure">Pending review.</span></div>
-                </div>
-                <div class="review-room-headline" id="s5OutcomeHeadline">Review pending.</div>
-                <div class="review-room-sub" id="s5OutcomeSub">The room is waiting for the requirement check and the story of how this design got here.</div>
-                <div class="review-room-meta">
-                  <div class="review-room-meta-chip"><span class="review-room-meta-label">Scenario</span><span class="review-room-meta-value" id="s5ScenarioTag">Pending review.</span></div>
-                  <div class="review-room-meta-chip"><span class="review-room-meta-label">Room Mode</span><span class="review-room-meta-value" id="s5RoomMode">Pending review.</span></div>
-                  <div class="review-room-meta-chip"><span class="review-room-meta-label">Control Read</span><span class="review-room-meta-value" id="s5ControlRead">Pending review.</span></div>
-                  <div class="review-room-meta-chip"><span class="review-room-meta-label">Chen Read</span><span class="review-room-meta-value" id="s5ChenRead">Pending review.</span></div>
-                  <div class="review-room-meta-chip"><span class="review-room-meta-label">Hardware Loops</span><span class="review-room-meta-value" id="s5IterationCount">Pending review.</span></div>
-                </div>
-                <div class="review-room-grid">
-                  <div class="review-room-card"><div class="review-room-card-label">Run Personality</div><div class="review-room-card-value" id="s5RunPersonality">Pending review.</div></div>
-                  <div class="review-room-card"><div class="review-room-card-label">Prototype Call</div><div class="review-room-card-value" id="s5PrototypeCall">Pending review.</div></div>
-                  <div class="review-room-card"><div class="review-room-card-label">Room Pressure</div><div class="review-room-card-value" id="s5RoomPressure">Pending review.</div></div>
-                  <div class="review-room-card"><div class="review-room-card-label">Client Ask</div><div class="review-room-card-value" id="s5ClientAsk">Pending review.</div></div>
-                </div>
-                <div class="review-room-meta">
-                  <div class="review-room-meta-chip"><span class="review-room-meta-label">Comparison Mode</span><span class="review-room-meta-value" id="s5CompareModeChip">Pending review.</span></div>
-                  <div class="review-room-meta-chip"><span class="review-room-meta-label">Comparison Baseline</span><span class="review-room-meta-value" id="s5CompareBaselineChip">Pending review.</span></div>
-                </div>
-              </div>
-              <div class="exec-summary" id="s5ExecSummary">
-                <strong>Executive summary:</strong> <span id="s5ExecSummaryText">Review pending.</span>
-                <div class="exec-summary-grid">
-                  <div class="exec-chip"><div class="exec-chip-label"><span class="exec-chip-step">1</span>Strongest Call</div><div class="exec-chip-value" id="s5BestCall">Pending review.</div></div>
-                  <div class="exec-chip"><div class="exec-chip-label"><span class="exec-chip-step">2</span>Biggest Risk</div><div class="exec-chip-value" id="s5BiggestRisk">Pending review.</div></div>
-                  <div class="exec-chip"><div class="exec-chip-label"><span class="exec-chip-step">3</span>Client Reaction</div><div class="exec-chip-value" id="s5ClientReaction">Pending review.</div></div>
-                  <div class="exec-chip"><div class="exec-chip-label"><span class="exec-chip-step">4</span>Comparison Payoff</div><div class="exec-chip-value" id="s5ComparePayoff">Pending review.</div></div>
-                  <div class="exec-chip"><div class="exec-chip-label"><span class="exec-chip-step">5</span>Next Route</div><div class="exec-chip-value" id="s5NextMove">Pending review.</div></div>
-                </div>
-              </div>
-              <div class="scenario-gate-panel warn" id="s5ScenarioGatePanel">
-                <div class="scenario-gate-head">
-                  <div>
-                    <div class="scenario-gate-kicker">Deployment Gate | Scenario Fit</div>
-                    <div class="scenario-gate-title" id="s5ScenarioGateTitle">Pending review.</div>
-                    <div class="scenario-gate-copy" id="s5ScenarioGateCopy">Pending review.</div>
-                  </div>
-                  <div class="scenario-gate-badge warn" id="s5ScenarioGateBadge">Pending</div>
-                </div>
-                <div class="scenario-gate-grid">
-                  <div class="scenario-gate-card warn" id="s5ScenarioPillar1Card">
-                    <div class="scenario-gate-card-top">
-                      <div class="scenario-gate-card-label" id="s5ScenarioPillar1Label">Pillar 1</div>
-                      <div class="scenario-gate-card-status" id="s5ScenarioPillar1Status">Pending</div>
-                    </div>
-                    <div class="scenario-gate-card-title" id="s5ScenarioPillar1Title">Pending review.</div>
-                    <div class="scenario-gate-card-body" id="s5ScenarioPillar1Body">Pending review.</div>
-                  </div>
-                  <div class="scenario-gate-card warn" id="s5ScenarioPillar2Card">
-                    <div class="scenario-gate-card-top">
-                      <div class="scenario-gate-card-label" id="s5ScenarioPillar2Label">Pillar 2</div>
-                      <div class="scenario-gate-card-status" id="s5ScenarioPillar2Status">Pending</div>
-                    </div>
-                    <div class="scenario-gate-card-title" id="s5ScenarioPillar2Title">Pending review.</div>
-                    <div class="scenario-gate-card-body" id="s5ScenarioPillar2Body">Pending review.</div>
-                  </div>
-                  <div class="scenario-gate-card warn" id="s5ScenarioPillar3Card">
-                    <div class="scenario-gate-card-top">
-                      <div class="scenario-gate-card-label" id="s5ScenarioPillar3Label">Pillar 3</div>
-                      <div class="scenario-gate-card-status" id="s5ScenarioPillar3Status">Pending</div>
-                    </div>
-                    <div class="scenario-gate-card-title" id="s5ScenarioPillar3Title">Pending review.</div>
-                    <div class="scenario-gate-card-body" id="s5ScenarioPillar3Body">Pending review.</div>
-                  </div>
-                </div>
-                <div class="scenario-gate-contrast">
-                  <div class="scenario-gate-contrast-title" id="s5ScenarioContrastTitle">Other room check</div>
-                  <div class="scenario-gate-contrast-body" id="s5ScenarioContrastBody">Pending review.</div>
-                </div>
-              </div>
-              <div class="overall-grade" id="overallGrade"><div class="grade-label" id="gradeLabel"></div><div class="grade-sub" id="gradeSub"></div></div>
-              <div class="client-voice" id="s5ClientVoice"><span class="client-voice-label">Client Voice</span><span id="s5ClientVoiceText">We need predictable motion, not a lucky demo.</span></div>
+            <div class="slack-msg-text"><span id="s5ExecSummaryText">Review pending.</span></div>
+            <span style="display:none" id="s5BestCall"></span>
+            <span style="display:none" id="s5BiggestRisk"></span>
+            <span style="display:none" id="s5ClientReaction"></span>
+            <span style="display:none" id="s5ComparePayoff"></span>
+            <span style="display:none" id="s5NextMove"></span>
+          </div>
+        </div>
+
+        <!-- Room status board. Was nested deep inside #s5SummaryMsg; now
+             a sibling element so it can be re-parented into
+             #s5ReportSummary independently. Slimmed: dropped the second
+             meta row (Comparison Mode/Baseline) and the redundant
+             Room Mode / Control Read / Chen Read chips. Hidden IDs are
+             kept so the populator and comparison renderer still write
+             without erroring. -->
+        <div class="s5-room-status-card s5-post-shift" id="s5RoomStatusCard">
+          <div class="review-room-board">
+            <div class="review-room-kicker">Review Room Status</div>
+            <div class="review-verdict-strip">
+              <div class="review-verdict-badge" id="s5VerdictBadge">Verdict pending</div>
+              <div class="review-verdict-chip"><span class="review-verdict-chip-label">Room Focus</span><span class="review-verdict-chip-value" id="s5VerdictFocus">Pending review.</span></div>
+              <div class="review-verdict-chip"><span class="review-verdict-chip-label">Pressure Source</span><span class="review-verdict-chip-value" id="s5VerdictPressure">Pending review.</span></div>
             </div>
+            <div class="review-room-headline" id="s5OutcomeHeadline">Review pending.</div>
+            <div class="review-room-sub" id="s5OutcomeSub">The room is waiting for the requirement check and the story of how this design got here.</div>
+            <div class="review-room-meta">
+              <div class="review-room-meta-chip"><span class="review-room-meta-label">Scenario</span><span class="review-room-meta-value" id="s5ScenarioTag">Pending review.</span></div>
+              <div class="review-room-meta-chip"><span class="review-room-meta-label">Hardware Loops</span><span class="review-room-meta-value" id="s5IterationCount">Pending review.</span></div>
+            </div>
+            <div class="review-room-grid">
+              <div class="review-room-card"><div class="review-room-card-label">Run Personality</div><div class="review-room-card-value" id="s5RunPersonality">Pending review.</div></div>
+              <div class="review-room-card"><div class="review-room-card-label">Prototype Call</div><div class="review-room-card-value" id="s5PrototypeCall">Pending review.</div></div>
+              <div class="review-room-card"><div class="review-room-card-label">Room Pressure</div><div class="review-room-card-value" id="s5RoomPressure">Pending review.</div></div>
+              <div class="review-room-card"><div class="review-room-card-label">Client Ask</div><div class="review-room-card-value" id="s5ClientAsk">Pending review.</div></div>
+            </div>
+            <span style="display:none" id="s5RoomMode"></span>
+            <span style="display:none" id="s5ControlRead"></span>
+            <span style="display:none" id="s5ChenRead"></span>
+            <span style="display:none" id="s5CompareModeChip"></span>
+            <span style="display:none" id="s5CompareBaselineChip"></span>
+          </div>
+          <div class="overall-grade" id="overallGrade"><div class="grade-label" id="gradeLabel"></div><div class="grade-sub" id="gradeSub"></div></div>
+          <div class="client-voice" id="s5ClientVoice"><span class="client-voice-label">Client Voice</span><span id="s5ClientVoiceText">We need predictable motion, not a lucky demo.</span></div>
+        </div>
+
+        <!-- Scenario gate. Flattened from the 3-card grid into a 3-line
+             list. The .scenario-gate-line-list CSS overrides the card
+             grid styling without touching the populator's class writes
+             at ~28891 (which still sets .scenario-gate-card tone). -->
+        <div class="scenario-gate-panel warn s5-post-shift" id="s5ScenarioGatePanel">
+          <div class="scenario-gate-head">
+            <div>
+              <div class="scenario-gate-kicker">Deployment Gate | Scenario Fit</div>
+              <div class="scenario-gate-title" id="s5ScenarioGateTitle">Pending review.</div>
+              <div class="scenario-gate-copy" id="s5ScenarioGateCopy">Pending review.</div>
+            </div>
+            <div class="scenario-gate-badge warn" id="s5ScenarioGateBadge">Pending</div>
+          </div>
+          <ul class="scenario-gate-line-list">
+            <li class="scenario-gate-card warn" id="s5ScenarioPillar1Card">
+              <div class="scenario-gate-card-top">
+                <span class="scenario-gate-card-label" id="s5ScenarioPillar1Label">Pillar 1</span>
+                <span class="scenario-gate-card-status" id="s5ScenarioPillar1Status">Pending</span>
+              </div>
+              <div class="scenario-gate-card-title" id="s5ScenarioPillar1Title">Pending review.</div>
+              <div class="scenario-gate-card-body" id="s5ScenarioPillar1Body">Pending review.</div>
+            </li>
+            <li class="scenario-gate-card warn" id="s5ScenarioPillar2Card">
+              <div class="scenario-gate-card-top">
+                <span class="scenario-gate-card-label" id="s5ScenarioPillar2Label">Pillar 2</span>
+                <span class="scenario-gate-card-status" id="s5ScenarioPillar2Status">Pending</span>
+              </div>
+              <div class="scenario-gate-card-title" id="s5ScenarioPillar2Title">Pending review.</div>
+              <div class="scenario-gate-card-body" id="s5ScenarioPillar2Body">Pending review.</div>
+            </li>
+            <li class="scenario-gate-card warn" id="s5ScenarioPillar3Card">
+              <div class="scenario-gate-card-top">
+                <span class="scenario-gate-card-label" id="s5ScenarioPillar3Label">Pillar 3</span>
+                <span class="scenario-gate-card-status" id="s5ScenarioPillar3Status">Pending</span>
+              </div>
+              <div class="scenario-gate-card-title" id="s5ScenarioPillar3Title">Pending review.</div>
+              <div class="scenario-gate-card-body" id="s5ScenarioPillar3Body">Pending review.</div>
+            </li>
+          </ul>
+          <div class="scenario-gate-contrast">
+            <div class="scenario-gate-contrast-title" id="s5ScenarioContrastTitle">Other room check</div>
+            <div class="scenario-gate-contrast-body" id="s5ScenarioContrastBody">Pending review.</div>
           </div>
         </div>
 
@@ -14247,7 +14999,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
               <div class="stage5-quick-actions">
                 <button class="btn btn-primary" id="s5QuickCompareBtn" onclick="revealS5Section('s5CompareSection')">Open Comparison Board &rarr;</button>
                 <button class="btn btn-secondary" onclick="revealS5Section('s5SpecSection')">Open Design Brief &rarr;</button>
-                <button class="btn btn-primary" id="s5QuickIterateBtn" onclick="codexIterateNext()">Fix the worst spec &rarr;</button>
+                <button class="btn btn-primary" id="s5QuickIterateBtn" onclick="codexIterateNext()">Adjust the weakest spec &rarr;</button>
                 <button class="btn btn-secondary" id="s5QuickAltBtn" onclick="codexIterateAlternate()">Swap Motor &rarr;</button>
               </div>
             </div>
@@ -14421,15 +15173,12 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             </div>
           </div>
 
-          <!-- Sim-to-Real: AI training preview (Phase 3 differentiator)
-               Wrapped in a "Want to go deeper?" disclosure to keep the
-               default Stage 5 view clean. -->
-          <details class="s5-deeper-disclosure">
-            <summary>
-              Sim-to-Real preview &mdash; how AI behaves on your hardware
-              <span class="s5-dd-sub">Conceptual visualization. Click to expand.</span>
-            </summary>
-            <div class="s5-deeper-disclosure-body">
+          <!-- Sim-to-Real preview. Stays hidden by default
+               (style="display:none") and is no longer reparented into
+               the report by Stage5ReportLayout.MOVES (out of MVP per
+               Aaron's earlier call). The element is kept in the DOM so
+               renderAiTrainingPreview() doesn't error and so the panel
+               can be restored later by adding the entry back to MOVES. -->
           <div id="s5AiTrainingPanel" style="display:none;">
             <div class="panel ai-training-panel" style="margin-top:16px; border-left: 3px solid #b388ff;">
               <div style="font-size:0.82rem; font-weight:700; color:#b388ff; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">Sim-to-Real Preview &middot; AI on Your Hardware</div>
@@ -14487,8 +15236,6 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
               </details>
             </div>
           </div>
-            </div>
-          </details>
 
           <!-- Career connection + What You Learned -->
           <div id="s5CareerPanel" style="display:none;">
@@ -14528,14 +15275,8 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
 
           <!-- Where This Design Lives — case study cards mapping the
                6-stage workflow to four real industries. Real-world 25%.
-               Wrapped in a "Want to go deeper?" disclosure to keep the
-               default Stage 5 view clean. -->
-          <details class="s5-deeper-disclosure">
-            <summary>
-              Where this design lives &mdash; 4 real industries
-              <span class="s5-dd-sub">Camera gimbal, prosthetic, humanoid joint, EV drive. Click to expand.</span>
-            </summary>
-            <div class="s5-deeper-disclosure-body">
+               Reparented into the "Real industries" tab inside the
+               #s5WhereThisLives wrapper by mountWhereThisLives(). -->
           <div id="s5CaseStudyPanel" style="display:none;">
             <div class="panel s5-case-study-panel">
               <div class="s5-cs-header">Where This Design Lives</div>
@@ -14546,8 +15287,6 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
               <div class="s5-cs-footer" id="s5CaseStudyFooter"></div>
             </div>
           </div>
-            </div>
-          </details>
         </div>
 
         <!-- ============================================================
@@ -14569,7 +15308,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
                    #s5IntroPinned receives the dynamic motor+ratio summary from JS (line ~26632). -->
               <div class="s5-chat-pinned-card">
                 <div class="s5-chat-pinned-eyebrow">&#128204; Pinned by Dr. Sarah Chen</div>
-                <div id="s5IntroPinned">Chen's about to run your design through the review room. Press <strong>Start shift</strong> when ready &mdash; the room is gathered.</div>
+                <div id="s5IntroPinned">Chen's about to run your design through the review room. Press <strong>Start shift</strong> when ready. The room is gathered.</div>
               </div>
               <!-- Empty state. Hidden by CSS as soon as any .s5-chat-live arrives. -->
               <div class="s5-chat-empty-state">
@@ -14604,7 +15343,13 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           </div>
 
           <div class="s5-report-actions" id="s5ReportActions">
-            <button class="btn btn-primary" id="s5ReportIterateBtn" onclick="codexIterateNext()">Fix the worst spec &rarr;</button>
+            <!-- Forward action on PASS. Aaron's "it says pass, but
+                 then now what?" — when verdict reads PASS, this
+                 button promotes to primary; the iterate/swap buttons
+                 demote to secondary. Toggled via .shift-passed on the
+                 actions container by renderStage5Scorecard. -->
+            <button class="btn btn-primary s5-action-defend" id="s5DefendBtn" hidden onclick="document.getElementById('s5StakeholderPanel') && document.getElementById('s5StakeholderPanel').scrollIntoView({behavior:'smooth',block:'start'})">Defend your design &rarr;</button>
+            <button class="btn btn-primary" id="s5ReportIterateBtn" onclick="codexIterateNext()">Adjust the weakest spec &rarr;</button>
             <button class="btn btn-secondary" id="s5ReportReviseBtn" onclick="codexIterateAlternate()">Swap Motor &rarr;</button>
             <button class="btn btn-secondary" id="s5ReportCompareBtn" onclick="revealS5Section('s5CompareSection')">Open Comparison Board</button>
           </div>
@@ -14652,7 +15397,14 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
             <!-- #s5CareerPanel + #s5CaseStudyPanel move here in commit 2 -->
           </div>
 
-          <div class="s5-report-section" id="s5ReportDeeper">
+          <!-- Deeper insights section was originally a collapsible for
+               PollMsg / BotReviewMsg / notebook / impact / iteration
+               route. Per Group Z audit (2026-05-27), all of those
+               items were dropped from the reveal map, leaving the
+               disclosure empty. Hiding the section entirely. To
+               restore: drop the `display:none` + re-add MOVES
+               entries with `deeper: true`. -->
+          <div class="s5-report-section" id="s5ReportDeeper" style="display:none;">
             <details>
               <summary>Deeper insights &mdash; poll, PIP, debrief notebook, impact analysis</summary>
               <div class="s5-deeper-body">
@@ -14669,7 +15421,7 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
           <div class="s5-review-action-cluster">
             <button class="btn btn-back" onclick="goToStage(4)">&larr; Back</button>
             <button class="btn btn-secondary" onclick="window.print()">Print Brief</button>
-            <button class="btn btn-primary" id="s5IteratePrimaryBtn" onclick="codexIterateNext()">Fix the worst spec &rarr;</button>
+            <button class="btn btn-primary" id="s5IteratePrimaryBtn" onclick="codexIterateNext()">Adjust the weakest spec &rarr;</button>
             <button class="btn btn-secondary" id="s5IterateAltBtn" onclick="codexIterateAlternate()">Swap Motor &rarr;</button>
           </div>
         </div>
@@ -14700,7 +15452,11 @@ body.theme-slack #s5SlackRouteAttachment .iterate-route-panel {
     <!-- Two-zone middle: assembly diagram + character vignette -->
     <div class="stage-trans-zones">
       <div class="stage-trans-zone stage-trans-diagram" id="stageTransDiagram" aria-hidden="true">
-        <div class="stage-trans-zone-label">Building toward the joint</div>
+        <!-- Label is set dynamically by showStageTransition() so Stage
+             5 reads "The build so far" instead of "Building toward the
+             joint" — by Stage 5 the build is done and the framing was
+             wrong. Default text covers Stages 2-4. -->
+        <div class="stage-trans-zone-label" id="stageTransDiagramLabel">Building toward the joint</div>
         <div class="stage-trans-diagram-svg" id="stageTransDiagramSvg"></div>
       </div>
       <div class="stage-trans-zone stage-trans-vignette" id="stageTransVignette" aria-hidden="true">
@@ -14871,7 +15627,12 @@ const Stage5ReportLayout = {
     { from: 's5ScenarioGatePanel',   to: 's5ReportScenario' },
     // Scorecard
     { from: 's5ResultsCard',         to: 's5ReportScorecard' },
-    { from: 's5RequirementsMsg',     to: 's5ReportScorecard' },
+    // s5RequirementsMsg ('Hardware and control scorecards are below…')
+    // intentionally dropped 2026-05-27 per rule 1: it duplicates the
+    // demo results vs spec scorecard above. Aaron's walkthrough
+    // flagged the duplicate. The msg stays in the chat feed wrapped
+    // in .s5-post-shift (default display:none) so #s5ReqCheck +
+    // #commentBody populators don't error.
     // Q&A
     { from: 's5StakeholderPanel',    to: 's5ReportQA' },
     { from: 's5DefenseMsg',          to: 's5ReportQA' },
@@ -14883,21 +15644,25 @@ const Stage5ReportLayout = {
     // Comparison + spec
     { from: 's5CompareSection',      to: 's5ReportCompare' },
     { from: 's5SpecSection',         to: 's5ReportSpec' },
-    // Career + case studies (closing beat)
+    // "Where this design lives" — Chen closing narrative gets parented
+    // to s5ReportCareer (above the tab strip); CaseStudy + Career get
+    // parented into their respective tab panels by mountWhereThisLives()
+    // immediately after this MOVES list runs.
+    { from: 's5RoomStatusCard',      to: 's5ReportSummary' },
     { from: 's5ClosingPanel',        to: 's5ReportCareer' },
     { from: 's5CareerPanel',         to: 's5ReportCareer' },
     { from: 's5CaseStudyPanel',      to: 's5ReportCareer' },
-    { from: 's5AiTrainingPanel',     to: 's5ReportCareer' },
-    // "Deeper insights" collapsible -- post-shift debrief panels
-    { from: 's5PollMsg',             to: 's5ReportDeeper', deeper: true },
-    { from: 's5BotReviewMsg',        to: 's5ReportDeeper', deeper: true },
-    { from: 's5IterateRoutePanel',   to: 's5ReportDeeper', deeper: true },
-    { from: 's5ContinueToCompare',   to: 's5ReportDeeper', deeper: true },
+    // NOTE: s5AiTrainingPanel + s5PollMsg + s5BotReviewMsg +
+    // s5IterateRoutePanel + s5ContinueToCompare intentionally dropped
+    // from MOVES per the post-shift audit. They stay in the chat feed
+    // wrapped in .s5-post-shift (display:none default) and never get
+    // revealed in the report. To restore any, add the entry back here.
   ],
 
   apply() {
     if (this._applied) return;
     this.MOVES.forEach(m => this._moveOne(m));
+    this.mountWhereThisLives();
     this._applied = true;
     // Several legacy containers (#s5CompareSection, #s5SpecSection,
     // #s5ClosingPanel, etc.) ship with inline `style="display:none"`
@@ -14905,9 +15670,50 @@ const Stage5ReportLayout = {
     // inside always-visible sections, so clear the inline override.
     // Sections still get scroll-into-view from the action-bar buttons.
     ['s5CompareSection', 's5SpecSection', 's5ClosingPanel',
-     's5CareerPanel', 's5CaseStudyPanel', 's5AiTrainingPanel'].forEach(id => {
+     's5CareerPanel', 's5CaseStudyPanel'].forEach(id => {
       const el = document.getElementById(id);
       if (el && el.style.display === 'none') el.style.display = '';
+    });
+  },
+
+  // "Where this design lives" — wraps the closing narrative + a
+  // two-tab strip (Real industries / Career paths) around the
+  // existing #s5ClosingPanel, #s5CaseStudyPanel, and #s5CareerPanel.
+  // Replaces three independent fade-in reveals with a single
+  // consolidated section.
+  mountWhereThisLives() {
+    const reportCareer = document.getElementById('s5ReportCareer');
+    if (!reportCareer) return;
+    if (document.getElementById('s5WhereThisLives')) return;
+
+    const closing = document.getElementById('s5ClosingPanel');
+    const career = document.getElementById('s5CareerPanel');
+    const caseStudy = document.getElementById('s5CaseStudyPanel');
+    if (!closing || !career || !caseStudy) return;
+
+    const wrap = document.createElement('div');
+    wrap.id = 's5WhereThisLives';
+    wrap.className = 's5-where-this-lives';
+    wrap.innerHTML =
+      '<div class="s5-where-narrative" id="s5WhereNarrative"></div>' +
+      '<div class="s5-where-tabs" role="tablist">' +
+        '<button class="s5-where-tab active" data-tab="industries" role="tab" aria-selected="true" id="s5WhereTabBtnIndustries" type="button" onclick="setWhereTab(\'industries\')">Real industries</button>' +
+        '<button class="s5-where-tab" data-tab="careers" role="tab" aria-selected="false" id="s5WhereTabBtnCareers" type="button" onclick="setWhereTab(\'careers\')">Career paths</button>' +
+      '</div>' +
+      '<div class="s5-where-tabpanel" id="s5WhereTabIndustries" role="tabpanel" aria-labelledby="s5WhereTabBtnIndustries"></div>' +
+      '<div class="s5-where-tabpanel" id="s5WhereTabCareers" role="tabpanel" aria-labelledby="s5WhereTabBtnCareers" hidden></div>';
+    reportCareer.appendChild(wrap);
+
+    const narrative = wrap.querySelector('#s5WhereNarrative');
+    const tabInd = wrap.querySelector('#s5WhereTabIndustries');
+    const tabCar = wrap.querySelector('#s5WhereTabCareers');
+    narrative.appendChild(closing);
+    tabInd.appendChild(caseStudy);
+    tabCar.appendChild(career);
+    // Clear inline display:none on the three children so they render
+    // inside the new container.
+    [closing, caseStudy, career].forEach(el => {
+      if (el.style.display === 'none') el.style.display = '';
     });
   },
 
@@ -14935,6 +15741,24 @@ const Stage5ReportLayout = {
   },
 };
 window.Stage5ReportLayout = Stage5ReportLayout;
+
+// Tab switcher for the "Where this design lives" section. Toggles
+// hidden + active state between Real industries and Career paths.
+function setWhereTab(name) {
+  const tabInd = document.getElementById('s5WhereTabIndustries');
+  const tabCar = document.getElementById('s5WhereTabCareers');
+  const btnInd = document.getElementById('s5WhereTabBtnIndustries');
+  const btnCar = document.getElementById('s5WhereTabBtnCareers');
+  if (!tabInd || !tabCar || !btnInd || !btnCar) return;
+  const showCareers = name === 'careers';
+  tabInd.hidden = showCareers;
+  tabCar.hidden = !showCareers;
+  btnInd.classList.toggle('active', !showCareers);
+  btnCar.classList.toggle('active', showCareers);
+  btnInd.setAttribute('aria-selected', String(!showCareers));
+  btnCar.setAttribute('aria-selected', String(showCareers));
+}
+window.setWhereTab = setWhereTab;
 document.addEventListener('DOMContentLoaded', () => {
   // Defer one tick so any inline script that mutates #stage5 markup
   // finishes first. Safer than racing.
@@ -14959,6 +15783,21 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         chatHeader.click();
       }
+    });
+  }
+  // Wire the live prototype feed expand/collapse on shift-complete.
+  // Clicking the shrunken pinned feed toggles .feed-expanded on the
+  // shell, restoring the full sim view (+ conveyor controls, tableau,
+  // etc.) Aaron flagged the shrunken feed as having no way to expand.
+  const pinnedFeed = document.querySelector('#stage5 .stage5-pinned-feed');
+  if (pinnedFeed) {
+    pinnedFeed.addEventListener('click', (e) => {
+      const shell = document.querySelector('.stage5-livestream-shell');
+      if (!shell || !shell.classList.contains('shift-complete')) return;
+      // Don't toggle if the click was on an inner control (button, link).
+      // Only the canvas / wrapper itself counts as a feed-tap.
+      if (e.target.closest('button, a, input, select, [role="button"]')) return;
+      shell.classList.toggle('feed-expanded');
     });
   }
 });
@@ -15514,9 +16353,6 @@ function ensureSnapshotFactorioChrome() {
   const topBar = stage.querySelector('.top-bar');
   if (topBar) topBar.classList.add('factorio-top-bar');
 
-  const objective = document.getElementById('s3ObjectiveLine');
-  if (objective) objective.classList.add('factorio-objective-line');
-
   const hintChip = document.getElementById('s3HintChip');
   if (hintChip) hintChip.classList.add('factorio-hint-chip');
 
@@ -15600,6 +16436,14 @@ function refreshSnapshotFactorioIndicators() {
           : 'fail';
   }
 
+  // 2026-05-27: the constantly-updating slider hint comments only
+  // fire diagnostic guidance now. The "all clean" branches that
+  // told the student things were going well were the noise Aaron
+  // flagged ("ratio is landing cleanly. Hold this band…"). Removed
+  // — clearing the textContent when everything passes lets the
+  // hint slot stay quiet so Chen's voice in the panel above
+  // stands out. Diagnostic guidance still fires when there's a
+  // real problem the student needs to know about.
   const ratioSupport = document.getElementById('s3RatioSupport');
   if (ratioSupport && live) {
     const ratioDeltaPct = ((live.train.totalRatio - Number(live.state.gearRatio || 10)) / Number(live.state.gearRatio || 10)) * 100;
@@ -15610,7 +16454,7 @@ function refreshSnapshotFactorioIndicators() {
     } else if (live.actuator.outputSpeed_dps < REQUIREMENTS.speed_dps) {
       ratioSupport.textContent = 'The gearbox is getting too slow. Pull the ratio down until speed recovers, then use geometry to protect torque.';
     } else {
-      ratioSupport.textContent = 'Ratio is landing cleanly. Hold this band and use the geometry step to trade diameter, mass, and efficiency like a real packaging problem.';
+      ratioSupport.textContent = '';
     }
   }
 
@@ -15619,7 +16463,7 @@ function refreshSnapshotFactorioIndicators() {
     if (live.actuator.envelopeDiam_mm > REQUIREMENTS.diameter_mm) {
       const stages = Number(STATE.numStages || 1);
       if (stages < 3 && live.actuator.envelopeDiam_mm > REQUIREMENTS.diameter_mm * 1.3) {
-        geometrySupport.textContent = `That output gear is huge because a single ${live.train.totalRatio.toFixed(0)}:1 stage forces one gear to do all the reduction. Try splitting it across ${stages + 1}+ stages — each stage carries part of the ratio, so no single gear has to be giant.`;
+        geometrySupport.textContent = `That output gear is huge because a single ${live.train.totalRatio.toFixed(0)}:1 stage forces one gear to do all the reduction. Try splitting it across ${stages + 1}+ stages so no single gear has to be giant.`;
       } else {
         geometrySupport.textContent = 'Too wide. Smaller module or more stages will shrink the diameter envelope fastest.';
       }
@@ -15628,7 +16472,7 @@ function refreshSnapshotFactorioIndicators() {
     } else if (live.actuator.efficiency_pct < REQUIREMENTS.efficiency_pct) {
       geometrySupport.textContent = 'Losses are the blocker. Fewer stages or a gentler ratio split will recover efficiency.';
     } else {
-      geometrySupport.textContent = 'Geometry is in the target band. Preserve the diameter margin and trim any leftover mass without breaking efficiency.';
+      geometrySupport.textContent = '';
     }
   }
 }
@@ -15739,10 +16583,14 @@ function updateStage5SlackChrome(meta, motor, train) {
   const viewerMeta = document.getElementById('s5SlackViewerMeta');
   const hardwareMeta = document.getElementById('s5SlackHardwareMeta');
   if (viewerMeta) viewerMeta.textContent = `${meta.label} review live`;
-  if (hardwareMeta && motor && train) {
-    const motorName = `${motor.manufacturer} ${motor.model.split('(')[0].trim()}`.trim();
-    hardwareMeta.textContent = `${train.gearType} | ${train.totalRatio.toFixed(1)}:1 | ${motorName}`;
-  }
+  // Hardware summary intentionally NOT rendered into the bottom-right
+  // strip — motor + gearbox + ratio already appear in the pinned chat
+  // card (#s5IntroPinned), and the motor card on the page header
+  // shows the motor name visually. Aaron flagged the bottom-right
+  // duplicate on 2026-05-27 as bloat per rule 1 (no duplicate info on
+  // the same screen). Clear the slot so it doesn't display stale
+  // placeholder text either.
+  if (hardwareMeta) hardwareMeta.textContent = '';
 }
 
 function renderStage5SlackPoll(failCount, marginalCount, simVerdict, meta) {
@@ -16526,6 +17374,96 @@ function chenLine(moment, fallback = '') {
   return d.default !== undefined ? (d.default || fallback) : fallback;
 }
 
+// Specialist voice lines — Jamie Liu (mechanical) on motor + gear
+// decisions in stages 2 and 3, Alex Torres (controls) on PID tuning
+// in stage 4. Both reappear as reviewer voices in Stage 5 where the
+// prior on-stage presence pays off. Stable personalities, no persona
+// branching. Each key holds 2-4 variants; specialistLine() picks
+// one at random so a returning student doesn't see the same line.
+const JL_LINES = {
+  'motor.maxon': [
+    'Maxon. Smooth bearings, low cog. You bought yourself headroom.',
+    'Premium pick. The ratio burden just dropped.',
+    'Maxon EC-i. The gearbox can breathe now.',
+  ],
+  'motor.faulhaber': [
+    'Faulhaber. Sensible. Mass and efficiency both work out.',
+    'Balanced choice. Cheap to live with for twelve months.',
+    'Solid middle. Now show me what you do with the ratio.',
+  ],
+  'motor.cheap': [
+    'Cost win. The gearbox is about to pay for it though.',
+    'Smart cost play. Find a planetary stack that hides the ratio.',
+    'Cheap motor, expensive gearbox. Pick your poison.',
+  ],
+  'motor.swap': [
+    'Switching it up. The ratio math just changed.',
+    'New motor, new problem. Different one, same loop.',
+  ],
+  'gear.spur': [
+    'Spur. Cheap, loud, honest. Plan for noise budget.',
+    'Spur stack. Two or three stages and you are fine.',
+  ],
+  'gear.planetary': [
+    'Planetary. Compact. Watch the bearing load on the carriers.',
+    'Planetary keeps the package small. Ring tolerance will bite if you forget it.',
+  ],
+  'gear.harmonic': [
+    'Harmonic. Premium choice. Now I want to see the backlash spec.',
+    'Harmonic. Smooth and zero-backlash on paper. Expensive in real life.',
+  ],
+  'gear.commit.pass': [
+    'Locked. Now go make it move.',
+    'Hardware reads clean. Pass it to controls.',
+    'Good package. Send it.',
+  ],
+  'gear.commit.fail': [
+    'Numbers will not survive the bench. Try again.',
+    'Packaging is wrong. Pull a stage out or shrink the module.',
+    'Not yet. The torque math is calling your bluff.',
+  ],
+};
+const AT_LINES = {
+  'pid.kp_up': [
+    'Kp is the spring. More push, more overshoot.',
+    'Kp up. Watch it ring.',
+  ],
+  'pid.kd_up': [
+    'Kd is the brake. Damping helps the moment it lands.',
+    'Damping up. The motion should look calmer.',
+  ],
+  'pid.ki_up': [
+    'Ki closes the gap but watch the wind-up.',
+    'Integral on. Steady error should die.',
+  ],
+  'sim.ringing': [
+    'The arm is ringing. More damping or less push.',
+    'Ringing. Drop Kp or bring Kd up.',
+    'Bouncing past the target. Kd needs more weight.',
+  ],
+  'sim.slow': [
+    'Lazy. The arm is taking the scenic route.',
+    'Slow settle. Either lift Kp or accept the lag.',
+  ],
+  'sim.clean': [
+    'Clean motion. The room will trust this.',
+    'Boring in the best way. Ship it.',
+    'Settles fast and stays put. That is the look.',
+  ],
+  'sim.improving': [
+    'Better. Not done.',
+    'Closer. One more tune.',
+    'Heading the right way.',
+  ],
+};
+function specialistLine(speaker, key, fallback = '') {
+  const bank = speaker === 'JL' ? JL_LINES : speaker === 'AT' ? AT_LINES : null;
+  if (!bank) return fallback;
+  const lines = bank[key];
+  if (!lines || lines.length === 0) return fallback;
+  return lines[Math.floor(Math.random() * lines.length)];
+}
+
 const STATE = {
   // Stage 1 output
   requiredTorque_Nm: 7.063,
@@ -16594,6 +17532,7 @@ const STATE = {
     hireTier:   'normal', // 'normal' | 'cautious' | 'reluctant' | 'rejected'
   },
   prologueComplete: false,
+  _s0BriefOpened: false,
 };
 
 // ============================================================
@@ -16611,7 +17550,7 @@ const PROGRESS_FIELDS = [
   'pidKp', 'pidKd', 'pidKi', 'pidRunCount', 'pidUnlocked',
   'scenarioId', 'scenarioChosen', 'unlocks', 'unlocksShown',
   'persona', 'designIteration', 'reachedStage5',
-  '_s0RevealPlayed', 'prologueComplete'
+  '_s0RevealPlayed', '_s0BriefOpened', 'prologueComplete'
 ];
 
 function saveProgress() {
@@ -17970,23 +18909,7 @@ const CODEX_SCENARIOS = {
         body: 'A good warehouse actuator sounds routine in review.'
       }
     ],
-    stage4Deck: [
-      {
-        label: 'Motion read',
-        title: 'One handoff should look calm under load.',
-        body: 'Overshoot under load makes the next handoff harder to trust.'
-      },
-      {
-        label: 'Throughput read',
-        title: 'Safe is not enough if the cycle feels sluggish.',
-        body: 'Safe motion still has to move at a useful pace.'
-      },
-      {
-        label: 'Uptime read',
-        title: 'The hardware should look boring, not strained.',
-        body: 'Bulk and shake both point to future service calls.'
-      }
-    ],
+    stage4Deck: [],
     runPreview: [
       {
         label: 'Stage 1',
@@ -18283,7 +19206,7 @@ function getStage4ScenarioPack() {
       objective: '<strong>Objective:</strong> Watch one live pass, then tune until a single demo take looks calm, intentional, and camera-ready.',
       learnLine: 'Engineering skill: Feedback control changes how the same hardware is perceived in the real world.',
       focusTitle: 'This room is judging the replay clip.',
-      focusCopy: 'Same actuator, different stress test. The move has to look deliberate.',
+      focusCopy: 'Tune one repeatable handoff that survives the live demo.',
       focusChip: 'Demo pressure',
       openButton: 'Demo Replay Console ↓',
       consoleKicker: 'Demo Replay Console',
@@ -18346,14 +19269,14 @@ function getStage4ScenarioPack() {
   return {
     objective: '<strong>Objective:</strong> Watch one live pass, then tune until a single warehouse handoff feels calm, controlled, and repeatable.',
     learnLine: 'Engineering skill: feedback control trades speed, stability, and precision.',
-    focusTitle: 'This room is judging shift confidence.',
-    focusCopy: 'Same actuator, different stress test. The move has to look calm enough for the next handoff.',
-    focusChip: 'Warehouse pressure',
-    openButton: 'Warehouse Console ↓',
-    consoleKicker: 'Warehouse Console',
-    consoleTitle: 'Move one crate from infeed to shelf',
-    consoleCopy: '<strong>Task:</strong> Click the highlighted crate to pick it up. Once the gripper closes, click the highlighted shelf slot to place it. The next crate only rolls in after the last handoff finishes.',
-    consoleReadoutIdle: 'QUEUE ONLINE | awaiting first pick',
+    focusTitle: 'Warehouse simulation',
+    focusCopy: 'Tune one repeatable crate handoff under load.',
+    focusChip: 'Live test',
+    openButton: 'Warehouse Simulation ↓',
+    consoleKicker: 'Warehouse Simulation',
+    consoleTitle: 'Run one crate handoff',
+    consoleCopy: 'Run a crate handoff and watch whether the tuning stays controlled under load.',
+    consoleReadoutIdle: 'READY | awaiting first pickup',
     consoleReadoutReload: 'INFEED ONLINE | crate rolling into pickup lane',
     consoleReadoutHolding: 'HANDOFF LIVE | place current crate on the shelf',
     consoleReadoutAuto: 'AUTOMATED REPLAY ACTIVE',
@@ -18439,13 +19362,20 @@ function applyStage4ScenarioCopy() {
   const stepEl = document.getElementById('s4WarehouseStep');
   const queueEl = document.getElementById('s4WarehouseQueue');
   const gripEl = document.getElementById('s4WarehouseGrip');
+  const pillarCards = pillarLabels.map(el => el ? el.closest('.scenario-focus-card') : null);
+  const focusGrid = document.querySelector('#stage4 .scenario-focus-grid');
 
   if (objectiveEl) objectiveEl.innerHTML = pack.objective;
   if (learnEl) learnEl.textContent = pack.learnLine;
   if (focusTitleEl) focusTitleEl.textContent = pack.focusTitle;
   if (focusCopyEl) focusCopyEl.textContent = pack.focusCopy;
   if (focusChipEl) focusChipEl.textContent = pack.focusChip;
-  (meta.stage4Deck || []).slice(0, 3).forEach((card, idx) => {
+  const stageCards = (meta.stage4Deck || []).slice(0, 3);
+  if (focusGrid) focusGrid.style.display = stageCards.length ? '' : 'none';
+  pillarCards.forEach((cardEl, idx) => {
+    const card = stageCards[idx];
+    if (cardEl) cardEl.style.display = card ? '' : 'none';
+    if (!card) return;
     if (pillarLabels[idx]) pillarLabels[idx].textContent = card.label;
     if (pillarTitles[idx]) pillarTitles[idx].textContent = card.title;
     if (pillarBodies[idx]) pillarBodies[idx].textContent = card.body;
@@ -18560,6 +19490,7 @@ function updateStage3SpecReveal() {
 
   const note = document.getElementById('s3InspectionNote');
   if (!note) return;
+  note.style.display = '';
   if (!STATE.gearType) {
     note.innerHTML = '<strong>Architecture station:</strong> pick a gearbox family before the live checks start.';
   } else if (!STATE.s3RatioAccepted) {
@@ -18567,7 +19498,8 @@ function updateStage3SpecReveal() {
   } else if (!STATE.s3GeomAccepted) {
     note.innerHTML = '<strong>Geometry station:</strong> packaging, mass, and efficiency are live now. Stages and tooth size are the tools that fix those new checks.';
   } else {
-    note.innerHTML = '<strong>Commit review:</strong> all five ship checks are visible. Freeze the tradeoff you want to defend.';
+    note.textContent = '';
+    note.style.display = 'none';
   }
 }
 
@@ -18690,8 +19622,6 @@ function getStage3FamilyConfig(train, motor, act) {
   const hasTorqueFail = failKeys.includes('torque');
 
   const base = {
-    kicker: 'Builder Mode',
-    title: 'Spur Stack',
     lead: 'Spur is the readable baseline: simple to reason about, but quick to get bulky when you chase ratio the lazy way.',
     strengthLabel: 'Best At',
     strengthCopy: 'Simple, visible ratio building and low conceptual overhead.',
@@ -18703,18 +19633,15 @@ function getStage3FamilyConfig(train, motor, act) {
     step2Title: 'Step 2: Set Your Gear Reduction',
     ratioLabel: 'Gear reduction (ratio)',
     ratioSupport: 'More reduction means more torque and less speed. Find a believable band here before you clean up size and efficiency.',
-    ratioTip: '<strong>Why this knob matters:</strong> Spur rewards disciplined ratio splitting. Find the lowest ratio that clears torque, then stop before diameter balloons.',
     step3Title: 'Step 3: Tune the Geometry',
     stagesLabel: 'Layers of gearing (stages)',
     moduleLabel: 'Tooth size (module)',
     geometrySupport: 'More stages can make the diameter easier to fit, but they add parts, mass, and losses. Bigger teeth are tougher, but they also eat space fast.',
-    geometryTip: '<strong>Why these knobs matter:</strong> Stage count is your packaging rescue. Module is your toughness-versus-bulk trade.',
   };
 
   if (type === 'planetary') {
     return {
       ...base,
-      title: 'Planetary Package Fight',
       lead: 'Planetary keeps input and output on the same axis, so Stage 3 becomes a compactness game instead of a giant side-by-side gear problem.',
       strengthCopy: 'Coaxial packaging and high ratio in a small diameter.',
       riskCopy: hasMassFail ? 'You solved diameter, but the carrier, planets, and ring are now piling on mass.' : 'Complexity and stacked hardware mass creep up fast if you brute-force stages.',
@@ -18722,17 +19649,14 @@ function getStage3FamilyConfig(train, motor, act) {
       focus: hasMassFail ? 'Packaging is under better control. The family fight has shifted to weight and hardware overhead.' : 'Exploit coaxial packaging, but do not let planetary become a heavy hidden shortcut.',
       ratioLabel: 'Carrier ratio target',
       ratioSupport: 'Planetary is your compact ratio tool. Use it when you need reduction without a huge visible diameter penalty.',
-      ratioTip: '<strong>Why this knob matters:</strong> Planetary ratios must snap to valid sun / planet / ring tooth sets. Treat the slider as a target, not a promise.',
       stagesLabel: 'Planet stacks',
       geometrySupport: 'Extra planetary stages help diameter but stack axially and add carrier/ring mass. Module still controls ring size and tooth strength.',
-      geometryTip: '<strong>Why these knobs matter:</strong> Each extra planetary stage buys compact diameter by spending mass and depth. Watch those bars as a pair.',
     };
   }
 
   if (type === 'harmonic') {
     return {
       ...base,
-      title: 'Harmonic Precision Bet',
       lead: 'Harmonic gives you extreme ratio and zero-backlash energy fast, so Stage 3 becomes a question of whether the efficiency and realism bill is worth paying.',
       strengthCopy: 'Huge reduction in one stage with a precision-first story.',
       riskCopy: hasEffFail ? 'Efficiency is now the real price of the harmonic choice, not a random red bar.' : 'You can hide a lot of ratio here, but the room will scrutinize efficiency and compliance.',
@@ -18741,31 +19665,26 @@ function getStage3FamilyConfig(train, motor, act) {
       step2Title: 'Step 2: Pick the Precision Ratio',
       ratioLabel: 'Flex-spline ratio',
       ratioSupport: 'Harmonic lives in higher ratio territory. Use as little reduction as you can get away with, because every extra step here is a real efficiency tax.',
-      ratioTip: '<strong>Why this knob matters:</strong> Harmonic is where you trade brute-force stage count for a compact high-ratio precision bet. Efficiency is the bill.',
       stagesLabel: 'Wave stages',
       moduleLabel: 'Spline pitch (family-set)',
       geometrySupport: 'Harmonic usually wants one stage. Extra stages are rare and expensive. Tooth size is effectively locked by the flex spline family, so focus on whether the architecture is worth it.',
-      geometryTip: '<strong>Why these knobs matter:</strong> Stage count is almost the whole geometry story here. If one harmonic stage cannot tell a believable story, piling on more will usually make it worse.',
     };
   }
 
   if (type === 'cycloidal') {
     return {
       ...base,
-      title: 'Cycloidal Shock-Tolerance Path',
       lead: 'Cycloidal changes the Stage 3 question from “can I fit the ratio?” to “is the ruggedness payoff worth the eccentric hardware weirdness?”',
       strengthCopy: 'Rugged high-ratio reduction with better efficiency than harmonic.',
-      riskCopy: hasSizeFail || hasMassFail ? 'Cycloidal is surviving the ratio fight, but the eccentric hardware is now getting bulky.' : 'The oddball geometry can earn respect, but only if the bulk stays honest.',
+      riskCopy: hasSizeFail || hasMassFail ? 'Cycloidal is surviving the ratio fight, but the eccentric hardware is now getting bulky.' : 'Cycloidal geometry can earn respect. Only works if the package stays compact enough to defend.',
       searchCopy: 'Use cycloidal when you want high ratio without harmonic efficiency pain. Then keep an eye on bulk and whether the weirdness is actually buying something.',
       focus: hasSizeFail || hasMassFail ? 'The ruggedness story is fine. The current problem is whether the eccentric hardware still belongs in this elbow.' : 'Cycloidal should read like deliberate ruggedness, not novelty for novelty’s sake.',
       step2Title: 'Step 2: Set the Eccentric Ratio',
       ratioLabel: 'Lobe-to-pin ratio',
       ratioSupport: 'Cycloidal snaps to valid lobe and pin counts. Treat the slider as a family target, then check the actual ratio the mechanism can really build.',
-      ratioTip: '<strong>Why this knob matters:</strong> Cycloidal gives you high ratio through eccentric geometry instead of giant spur diameters. The trade is oddball hardware, not free simplicity.',
       stagesLabel: 'Disc stages',
       moduleLabel: 'Pin pitch (family-set)',
       geometrySupport: 'Cycloidal usually lives in one or two stages. “Tooth size” is really pin/disc scale here, so the main fight is whether the rugged geometry stays compact enough.',
-      geometryTip: '<strong>Why these knobs matter:</strong> Cycloidal wants you to manage bulk honestly. If you add stages, it should be because one disc cannot carry the story cleanly.',
     };
   }
 
@@ -18782,8 +19701,6 @@ function getStage3FamilyConfig(train, motor, act) {
 function renderStage3FamilyPanel(train, motor, act) {
   const config = getStage3FamilyConfig(train, motor, act);
   const mappings = [
-    ['s3FamilyKicker', config.kicker],
-    ['s3FamilyTitle', config.title],
     ['s3FamilyLead', config.lead],
     ['s3FamilyStrengthLabel', config.strengthLabel],
     ['s3FamilyStrengthCopy', config.strengthCopy],
@@ -18805,10 +19722,6 @@ function renderStage3FamilyPanel(train, motor, act) {
   });
   const focusEl = document.getElementById('s3FamilyFocus');
   if (focusEl) focusEl.innerHTML = `<strong>Current family move:</strong> ${config.focus}`;
-  const ratioTipEl = document.getElementById('s3RatioTip');
-  if (ratioTipEl) ratioTipEl.innerHTML = config.ratioTip;
-  const geometryTipEl = document.getElementById('s3GeometryTip');
-  if (geometryTipEl) geometryTipEl.innerHTML = config.geometryTip;
 }
 
 function renderStage3Checklist(checks) {
@@ -18919,17 +19832,34 @@ function codexIterateAlternate() {
 // Render the dynamic button label for the "iterate next bottleneck" CTA
 // so the student knows which stage they're about to land on. Called by
 // renderStage5Scorecard after the verdict + route plan are computed.
-function updateIterateButtonLabels() {
+// Optional `subtitle` (e.g. "Output torque missed") goes on a second
+// line under the primary iterate button — surfaces the ReviewBot
+// top-priority issue at the action point. Falls back to plain text
+// when no subtitle is provided.
+function updateIterateButtonLabels(subtitle) {
   try {
     const plan = getStage5RoutePlan();
     if (!plan || !plan.primary) return;
     const stageNames = { 2: 'Motor', 3: 'Gears', 4: 'Tuning' };
     const primaryStageName = stageNames[plan.primary.stage] || ('Stage ' + plan.primary.stage);
-    const primaryLabel = `Fix ${primaryStageName} →`;
+    const primaryLabel = `Adjust ${primaryStageName} →`;
+    const escSub = subtitle
+      ? String(subtitle).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      : '';
+    const primaryHtml = subtitle
+      ? `<span class="btn-label">${primaryLabel}</span><span class="btn-subtitle">${escSub}</span>`
+      : primaryLabel;
     // Apply to every instance of the iterate button on the page.
     ['s5QuickIterateBtn', 's5IteratePrimaryBtn', 's5ReportIterateBtn'].forEach(id => {
       const btn = document.getElementById(id);
-      if (btn) btn.textContent = primaryLabel;
+      if (!btn) return;
+      if (subtitle) {
+        btn.classList.add('btn-stacked');
+        btn.innerHTML = primaryHtml;
+      } else {
+        btn.classList.remove('btn-stacked');
+        btn.textContent = primaryLabel;
+      }
     });
     ['s5QuickAltBtn', 's5IterateAltBtn', 's5ReportReviseBtn'].forEach(id => {
       const btn = document.getElementById(id);
@@ -18971,16 +19901,32 @@ function commitStage3AndGoToStage4() {
   recordCommit('stage3_commit');
   // Unlock after an owned attempt (discovery-first). The unlock moment is shown on return to Stage 3.
   if (!STATE.unlocks.planetary) STATE.unlocks.planetary = true;
-  // Unlock advanced motors after first test (more options on revisit)
+  // Stage 2 stays a fixed three-option shortlist. Aaron's notes called out
+  // the obviously unusable options as clutter, so iteration should not
+  // unlock more catalog items.
   if (!STATE.unlocks.advancedMotors) {
     STATE.unlocks.advancedMotors = true;
-    // Add newly visible motors to curve set
-    MOTORS.forEach((_,i) => { if (!STARTER_MOTORS.has(i)) s2VisibleCurves.add(i); });
   }
   // Unlock advanced gear types after 2nd commit (discovery through iteration)
   const s3Commits = STATE.commitHistory.filter(c => c.kind === 'stage3_commit').length;
   if (s3Commits >= 2 && !STATE.unlocks.harmonic) { STATE.unlocks.harmonic = true; STATE.unlocks.cycloidal = true; }
   hideStage3Hint();
+
+  // Jamie's commit beat — fires before the stage transition so the
+  // student sees the hardware lead's verdict on what they're handing
+  // off. Pass/fail mirrors the same #summaryStatus check the Chen
+  // commit-line uses at updateS3.
+  try {
+    const isPass = document.getElementById('summaryStatus') && document.getElementById('summaryStatus').classList.contains('pass');
+    const jl = specialistLine('JL', isPass ? 'gear.commit.pass' : 'gear.commit.fail');
+    if (jl && typeof pushOpsToast === 'function') {
+      pushOpsToast(jl, {
+        speaker: 'JL', tone: isPass ? 'success' : 'warn',
+        key: 's3_jamie_commit', cooldownMs: 0, ttlMs: 4500,
+      });
+    }
+  } catch (e) { /* non-critical */ }
+
   goToStage(4);
 }
 
@@ -19064,12 +20010,15 @@ const INTERVIEW_QUESTIONS = [
     persona: 'motivation',
     chen: "Quick check before I waste your time. Why robots? Most people your level chase software.",
     answers: [
-      { text: "Software can hide bad assumptions. Hardware can't.",
+      // Q1 rewrite 2026-05-27 per Aaron: drop the cliché 'software
+      // can hide assumptions' framing; pick two real reasons. Each
+      // answer maps to a distinct persona tag downstream stories use.
+      { text: "It's one of the only fields where mechanical, electrical, software, and AI all have to work in the same room. Hard to be bored.",
         tag: 'methodical',
-        chenReply: "Fair. Steel and aluminum don't care about your opinions. I find that comforting." },
-      { text: "I want to build physical things, not just the code that talks to them.",
+        chenReply: "Cross-disciplinary is the right read. The people who hate it want one discipline to win. The good ones lean into the friction." },
+      { text: "It's the fastest-growing engineering field right now. Tesla, Figure, Boston Dynamics, Agility, Apptronik. Money and roles are real.",
         tag: 'challenger',
-        chenReply: "Then you'll have fun. Physics fights back, which the software people get to argue around. We don't." },
+        chenReply: "Honest answer. The field is hiring because the work is hard, not because the press is good. Pick it because it's interesting, not because it's expanding. Both can be true." },
     ],
   },
   {
@@ -19090,12 +20039,16 @@ const INTERVIEW_QUESTIONS = [
     persona: 'gears',
     chen: "A motor spins a small gear. That small gear meshes with a big gear that has four times as many teeth. What does the big gear actually do?",
     answers: [
+      // 2026-05-27: Aaron's accuracy note — gear ratios trade speed
+      // for TORQUE, not force. The student-facing answer still says
+      // 'pushes harder' (intuitive for grade 9) but Chen's reply
+      // uses the correct physics term so the student picks it up.
       { text: "Spins four times slower than the motor, but pushes four times harder.",
         tag: 'correct',
-        chenReply: "Right. Gear ratios trade speed for force. That's why every powerful actuator on the planet has gears between the motor and the load." },
+        chenReply: "Right. Gear ratios trade speed for torque. The torque at the output is four times the motor's, but the output shaft only spins a quarter as fast. That's the whole reason every powerful actuator has gears between motor and load." },
       { text: "Spins four times faster than the motor. Bigger gears spin faster.",
         tag: '_redflag',
-        chenReply: "Opposite. Big gear, slow turn. Try this in your head: the small gear has to make four full rotations just to drag the big gear around once. Slower, but with more force on the output." },
+        chenReply: "Opposite. Big gear, slow turn. The small gear has to make four full rotations just to drag the big gear around once. Slower at the output, but with four times the torque." },
     ],
   },
   {
@@ -19103,12 +20056,18 @@ const INTERVIEW_QUESTIONS = [
     persona: 'limits',
     chen: "Your motor is rated to 5 N·m. In testing, the arm hits a heavy object and the motor heats up and stops moving. What's actually happening?",
     answers: [
-      { text: "It's being asked for more force than it can deliver. The fix is either lighter loads, a stronger motor, or a gear stage that gives more torque.",
+      // 2026-05-27: Aaron asked for harder distractors on the torque
+      // rating question. Old red flag was 'motor is defective' —
+      // obviously wrong. New red flag is a plausible misconception:
+      // attributing stall heat to a speed problem rather than a
+      // torque-at-rating problem. Forces the student to actually
+      // reason about what 'rated torque' means.
+      { text: "It's being asked for more torque than it can deliver. The fix is either lighter loads, a stronger motor, or a gear stage that multiplies the torque.",
         tag: 'correct',
-        chenReply: "Exactly. A stalled motor is a motor at its limit, drawing maximum current, generating heat instead of motion. That's not a broken part. That's a design that asked for more than the part can give." },
-      { text: "The motor is defective. We should return it and try a new one.",
+        chenReply: "Exactly. A stalled motor is a motor at its torque limit, drawing maximum current, generating heat instead of motion. Not a broken part. A design that asked for more than the part can give." },
+      { text: "The motor is too slow for the cycle. A faster motor would clear the heavy object before it can heat up.",
         tag: '_redflag',
-        chenReply: "It's not broken. It's at its rated limit. Replacing the motor with an identical one will produce identical behavior. The design is the problem, not the part. We'd either need a stronger motor, more gear reduction, or a lighter load." },
+        chenReply: "Heat isn't a speed problem here. The arm stopped moving, which means the motor is at zero RPM and pushing as hard as it can. 'Rated to 5 N·m' is the ceiling. A faster motor with the same torque rating would stall at the exact same load. You need more torque, not more speed." },
     ],
   },
   {
@@ -19116,12 +20075,19 @@ const INTERVIEW_QUESTIONS = [
     persona: 'energy',
     chen: "A motor is 80% efficient. You feed it 100 watts of electrical power. Where does the other 20 watts go?",
     answers: [
+      // 2026-05-27: harder distractor for the efficiency question.
+      // Old red flag was 'stored in the motor for next time' which
+      // breaks energy conservation in a fifth-grade-obvious way.
+      // New red flag: regenerative braking — a real concept that
+      // does NOT explain the 20W loss in steady-state operation.
+      // The student has to know that regen only matters during
+      // deceleration, not while a motor is just running.
       { text: "Most of it turns into heat. That's why motors get warm under load.",
         tag: 'correct',
-        chenReply: "Right. Energy doesn't disappear. The 80 watts that don't turn into useful motion show up as heat in the motor windings and bearings. That's why motor sizing has to account for cooling, not just torque." },
-      { text: "It gets stored inside the motor for the next time it runs.",
+        chenReply: "Right. Energy doesn't disappear. The 80 watts that don't turn into useful motion show up as heat in the motor windings and bearings. Motor sizing has to account for cooling, not just torque." },
+      { text: "The motor recaptures it as regenerative braking and feeds it back to the power supply.",
         tag: '_redflag',
-        chenReply: "Motors don't store energy. They convert it — mostly to mechanical motion, but some always to heat. Conservation of energy: the 20 watts has to go somewhere, and it's not coming back to help you next cycle." },
+        chenReply: "Regen is a real thing, but it only happens when the motor is decelerating a load — the motor acts as a generator during the slowdown. While the motor is just running at steady state, the 20% is gone. It's heat in the windings and friction in the bearings. Conservation of energy still applies — the energy has to go somewhere, and most of the time, somewhere is the air around the motor." },
     ],
   },
 ];
@@ -19129,31 +20095,38 @@ const INTERVIEW_QUESTIONS = [
 let _interviewQIdx = 0;
 let _pendingChenReply = null;
 let _prologueApplyStarted = false;
+let _prologueChatOpened = false;
 
 function startInterview() {
   if (_prologueApplyStarted) {
-    openPrologueOverlay('prologueChat');
+    openInterviewChat();
     return;
   }
   _prologueApplyStarted = true;
   const btn = document.getElementById('prologueApplyBtn');
   if (btn) {
-    btn.textContent = 'Application Submitted';
-    btn.disabled = true;
+    btn.textContent = 'Open chat with Dr. Chen \u2192';
+    btn.disabled = false;
+    btn.setAttribute('aria-label', 'Open chat with Dr. Chen');
   }
   showLinkedInToast();
-  setTimeout(() => {
-    openPrologueOverlay('prologueChat');
-    const chat = document.getElementById('prologueChat');
-    chat.classList.add('active');
-    const msgs = document.getElementById('icMessages');
+}
+
+function openInterviewChat() {
+  openPrologueOverlay('prologueChat');
+  const chat = document.getElementById('prologueChat');
+  if (chat) chat.classList.add('active');
+  if (_prologueChatOpened) return;
+  _prologueChatOpened = true;
+  const msgs = document.getElementById('icMessages');
+  if (msgs) {
     msgs.innerHTML = '';
-    _addChenMsg("Got your application. Quick chat before I decide - five minutes, then I'm back to fighting with a harmonic drive. Fair?");
-    setTimeout(() => {
-      _interviewQIdx = 0;
-      _showQuestion(0);
-    }, 900);
-  }, 1800);
+  }
+  _addChenMsg("Got your application. Quick chat before I decide - five minutes, then I'm back to fighting with a harmonic drive. Fair?");
+  setTimeout(() => {
+    _interviewQIdx = 0;
+    _showQuestion(0);
+  }, 900);
 }
 
 function showLinkedInToast() {
@@ -19390,6 +20363,10 @@ function _showOffer() {
 function acceptOffer() {
   // Button press feedback before transition (Aaron note C5).
   const btn = document.querySelector('#prologueOffer .offer-accept-btn');
+  const sig = document.querySelector('#prologueOffer .offer-signature-line');
+  const status = document.querySelector('#prologueOffer .offer-signature .offer-doc-id');
+  if (sig) sig.textContent = 'Signed - Junior Engineer';
+  if (status) status.textContent = 'Status: accepted';
   const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const doTransition = () => {
     STATE.prologueComplete = true;
@@ -19600,8 +20577,8 @@ function skipStage(n) {
     document.getElementById('reqTorqueVal').classList.add('filled');
   }
   if (n >= 2) {
-    STATE.selectedMotorIdx = 2; // CubeMars RI50 — decent default
-    STATE.justification = 'Best torque-to-size ratio for the envelope.';
+    STATE.selectedMotorIdx = 1; // Faulhaber 2264 - compact balanced default
+    STATE.justification = 'Faulhaber is the compact middle-ground choice: it leaves packaging room while keeping the gearbox burden defendable.';
   }
   if (n >= 3) {
     STATE.gearRatio = 10; STATE.numStages = 2; STATE.gearModule = 0.8;
@@ -19653,7 +20630,7 @@ window.addEventListener('DOMContentLoaded', () => {
   if (toast) {
     toast.addEventListener('click', (event) => {
       if (event.target && event.target.classList && event.target.classList.contains('li-toast-close')) return;
-      openPrologueOverlay('prologueChat');
+      openInterviewChat();
     });
   }
   reskinRefreshAfterStageChange();
@@ -19775,9 +20752,13 @@ function showBrief() {
   // This is the ONLY function that should flip this class.
   const stage0El = document.getElementById('stage0');
   if (stage0El) stage0El.classList.add('brief-open');
+  STATE._s0BriefOpened = true;
+  document.getElementById('briefSection').dataset.open = 'true';
   document.getElementById('chenIntro').style.display = 'none';
   document.getElementById('briefSection').style.display = 'block';
   document.getElementById('briefSection').style.animation = 'fadeIn 0.4s ease';
+  const messages = document.querySelector('#stage0 .opening-slack-messages');
+  if (messages) messages.scrollTop = 0;
   // Scenario picker was a single-button forced choice; the panel was removed
   // and the scenario is auto-applied here. Investor variant remains cut.
   if (typeof setScenario === 'function' && !STATE.scenarioChosen) {
@@ -20141,8 +21122,13 @@ document.querySelectorAll('.calc-input').forEach(el => {
 // STAGE 2: Motor Selection
 // ============================================================
 let s2SortCol = null, s2SortAsc = true;
-let s2VisibleCurves = new Set([0, 2, 3]); // Match STARTER_MOTORS initially
-let s2SortedOrder = MOTORS.map((_,i) => i);
+// Fixed shortlist for the student-facing catalog: Maxon, Faulhaber, RI50.
+// The AK60-6 and iPower records stay in the data table for historical saves
+// and dev inspection, but they are no longer shown as choices.
+const STAGE2_MOTOR_OPTIONS = [0, 1, 2];
+const STAGE2_MOTOR_SET = new Set(STAGE2_MOTOR_OPTIONS);
+let s2VisibleCurves = new Set(STAGE2_MOTOR_OPTIONS);
+let s2SortedOrder = STAGE2_MOTOR_OPTIONS.slice();
 let s2ControlsInit = false;
 let s2SortMode = 'closest';
 let s2PinnedOrder = [];
@@ -20376,8 +21362,59 @@ function getStage2SelectionConsequences(assessment) {
   ];
 }
 
+function getStage2JustificationOptions(assessment) {
+  const m = assessment.motor;
+  if (m.id === 'maxon-ec-i-40') {
+    return [
+      'Maxon is the premium high-speed choice. I am trading cost for efficiency and a motor that can handle a clean industrial duty cycle.',
+      'The 40 mm diameter leaves useful packaging margin, even though Stage 3 has to create a high gear ratio.',
+      'I want the controller to start with a proven industrial motor, then use the gearbox to multiply torque instead of forcing a bulky motor into the joint.'
+    ];
+  }
+  if (m.id === 'faulhaber-2264-bp4') {
+    return [
+      'Faulhaber is the compact middle ground. It leaves the most room for gears and housing while keeping the reduction target defendable.',
+      'The mass margin matters here. I am accepting a higher ratio so Stage 3 has enough package room to solve it cleanly.',
+      'This is the smallest plausible motor, so I am betting on gearbox design instead of starting with a motor that crowds the envelope.'
+    ];
+  }
+  if (m.id === 'cubemars-ri50') {
+    return [
+      'RI50 gives the strongest motor torque of the shortlist, so Stage 3 does not have to chase an extreme ratio.',
+      'I am accepting tight diameter margin because the lower gear ratio should make the gearbox and controller easier to defend.',
+      'This is the balanced robotics-joint bet: more torque up front, less rescue work later, but packaging has to stay disciplined.'
+    ];
+  }
+  return [
+    'This motor gives the cleanest tradeoff for the current requirements.',
+    'This choice leaves the downstream gearbox work manageable.',
+    'This is the option I can defend most clearly in review.'
+  ];
+}
+
+function renderStage2JustificationChoices(assessment) {
+  const host = document.getElementById('s2JustifyChoices');
+  const input = document.getElementById('justifyInput');
+  if (!host || !input) return;
+  input.value = '';
+  host.innerHTML = getStage2JustificationOptions(assessment).map((text, i) => `
+    <button class="justify-choice-btn" type="button" data-justify-index="${i}">
+      ${escapeHtml(text)}
+    </button>
+  `).join('');
+  host.querySelectorAll('.justify-choice-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      host.querySelectorAll('.justify-choice-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      input.value = btn.textContent.trim();
+      STATE.justification = input.value;
+      checkS2Continue();
+    });
+  });
+}
+
 function updateStage2DecisionBoard(visibleOrder) {
-  const order = (visibleOrder && visibleOrder.length ? visibleOrder : MOTORS.map((_, i) => i));
+  const order = (visibleOrder && visibleOrder.length ? visibleOrder : STAGE2_MOTOR_OPTIONS.slice());
   const bestIdx = order[0];
   const best = bestIdx !== undefined ? getStage2MotorAssessment(bestIdx) : null;
   const selected = STATE.selectedMotorIdx !== null ? getStage2MotorAssessment(STATE.selectedMotorIdx) : null;
@@ -20420,7 +21457,7 @@ function stage2MotorPassesFilters(m, idx) {
 }
 
 function recomputeStage2Order() {
-  const indices = MOTORS.map((_, i) => i).filter(i => stage2MotorPassesFilters(MOTORS[i], i));
+  const indices = STAGE2_MOTOR_OPTIONS.filter(i => stage2MotorPassesFilters(MOTORS[i], i));
   const key = (i) => {
     const a = getStage2MotorAssessment(i);
     const s = a.specs;
@@ -20539,8 +21576,7 @@ function updateStage2MotorList() {
   renderCurveToggles();
   drawTSChart();
   updateStage2CompareTray();
-  const showAll = STATE.unlocks.advancedMotors;
-  const visibleOrder = (s2SortedOrder && s2SortedOrder.length ? s2SortedOrder : MOTORS.map((_, i) => i)).filter(idx => showAll || STARTER_MOTORS.has(idx));
+  const visibleOrder = s2SortedOrder && s2SortedOrder.length ? s2SortedOrder : STAGE2_MOTOR_OPTIONS.slice();
   updateStage2DecisionBoard(visibleOrder);
 }
 
@@ -20555,18 +21591,20 @@ function onEnterStage0() {
   // Belt-and-suspenders: also clear the inline display so the CSS rule
   // can win regardless of what was set before.
   const briefEl = document.getElementById('briefSection');
-  if (briefEl) briefEl.style.display = '';
-  // If splash already hidden (re-entry from Back to Brief), keep
-  // current chenIntro / briefSection state -- don't replay the
-  // typewriter, but DO let the user re-open the brief via the button.
+  if (briefEl) {
+    briefEl.style.display = '';
+    briefEl.removeAttribute('data-open');
+  }
+  // If the splash is already hidden, don't replay the intro. Only reveal
+  // the brief automatically when the student has opened it before.
   const splash = document.getElementById('companySplash');
   if (!splash || splash.style.display === 'none') {
-    // On re-entry, the most useful default is to show the brief
-    // (the user already saw Chen's intro). Mark stage0 brief-open so
-    // the CSS rule reveals it.
-    if (stage0El) stage0El.classList.add('brief-open');
-    const chenIntroEl = document.getElementById('chenIntro');
-    if (chenIntroEl) chenIntroEl.style.display = 'none';
+    if (STATE._s0BriefOpened) {
+      if (stage0El) stage0El.classList.add('brief-open');
+      if (briefEl) briefEl.dataset.open = 'true';
+      const chenIntroEl = document.getElementById('chenIntro');
+      if (chenIntroEl) chenIntroEl.style.display = 'none';
+    }
     return;
   }
 
@@ -20626,7 +21664,7 @@ const STAGE_TRANSITIONS = {
     comicCells: [
       { icon: 'motor', caption: 'Motor gives you ~1 N·m.' },
       { icon: 'gear',  caption: 'Joint needs 7 N·m.' },
-      { icon: 'bridge', caption: 'Gears bridge the gap.' },
+      { icon: 'bridge', caption: 'Gears turn 1 N·m into 7.' },
     ],
     chenLine: 'Trade ratio against size, mass, and efficiency. Multi-stage if you need it small.',
   },
@@ -20637,7 +21675,7 @@ const STAGE_TRANSITIONS = {
     diagramStage: 4,
     comicCells: [
       { icon: 'target', caption: 'Send the arm to a target.' },
-      { icon: 'curve',  caption: 'Three gains shape the response.' },
+      { icon: 'curve',  caption: 'Step response: overshoot, then settle.' },
       { icon: 'graph',  caption: 'Watch settle time + overshoot.' },
     ],
     chenLine: 'Kp pushes, Kd brakes, Ki closes the gap. Tune one at a time.',
@@ -20652,7 +21690,7 @@ const STAGE_TRANSITIONS = {
       { icon: 'scorecard', caption: 'A scorecard checks every spec.' },
       { icon: 'qa',       caption: 'Then the room asks why.' },
     ],
-    chenLine: 'Same motor, same gears, same PID. Real physics decides.',
+    chenLine: 'Your hardware and tune meet the conveyor. Watch what holds.',
   },
 };
 
@@ -20662,6 +21700,37 @@ const STAGE_TRANSITIONS = {
 // match the existing accent palette (orange #ff7a45 / slate #1a1f2a /
 // dim grey) so the transitions feel like part of the same product.
 const TRANS_SVG = {
+  // Build a toothed-gear SVG fragment. `teeth` rectangles jut outward
+  // from a pitch circle of radius `pitchR`. Modulus stays consistent
+  // across paired gears (same arc length per tooth), so callers should
+  // pass tooth counts proportional to their pitch radii — otherwise
+  // the teeth look like they belong to different gear sets.
+  _gear(cx, cy, pitchR, teeth, color, opts) {
+    opts = opts || {};
+    const phase = opts.phase || 0;
+    const opacity = opts.opacity != null ? opts.opacity : 1;
+    const strokeW = opts.strokeW || 1.6;
+    const shaftR = opts.shaftR != null ? opts.shaftR : Math.max(2, pitchR * 0.28);
+    const toothH = opts.toothH != null ? opts.toothH : Math.max(1.6, pitchR * 0.20);
+    // Tooth width covers ~55% of the angular slot so adjacent teeth
+    // leave a clear gap a meshing gear's tooth can sit in.
+    const toothW = (2 * Math.PI * pitchR / teeth) * 0.55;
+    let teethSvg = '';
+    for (let i = 0; i < teeth; i++) {
+      const angle = (360 / teeth) * i + phase;
+      teethSvg += '<rect x="' + (-toothW / 2).toFixed(2) +
+        '" y="' + (-pitchR - toothH).toFixed(2) +
+        '" width="' + toothW.toFixed(2) +
+        '" height="' + (toothH + 1).toFixed(2) +
+        '" rx="0.4" fill="' + color + '" opacity="' + opacity + '" transform="rotate(' + angle.toFixed(1) + ' 0 0)"/>';
+    }
+    return '<g transform="translate(' + cx + ',' + cy + ')">' +
+      teethSvg +
+      '<circle cx="0" cy="0" r="' + pitchR + '" fill="none" stroke="' + color + '" stroke-width="' + strokeW + '" opacity="' + opacity + '"/>' +
+      '<circle cx="0" cy="0" r="' + shaftR + '" fill="' + color + '" opacity="' + (opacity * 0.55) + '"/>' +
+      '</g>';
+  },
+
   // Assembly diagram. The joint builds up across stages:
   //   2 → motor highlighted
   //   3 → motor + gears
@@ -20686,14 +21755,48 @@ const TRANS_SVG = {
       // Motor (left side cylinder)
       (m ? '<g' + newAt(2) + ' transform="translate(40,80)"><rect x="0" y="0" width="60" height="48" rx="6" fill="' + slate + '" stroke="' + orange + '" stroke-width="2"/><circle cx="30" cy="24" r="14" fill="' + orange + '" opacity="0.45"/><circle cx="30" cy="24" r="5" fill="rgba(0,0,0,0.6)"/><text x="30" y="64" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">MOTOR</text></g>'
         : '<g transform="translate(40,80)" opacity="0.25"><rect x="0" y="0" width="60" height="48" rx="6" fill="none" stroke="' + dim + '" stroke-width="1.5" stroke-dasharray="4 3"/></g>') +
-      // Gears (middle)
-      (g ? '<g' + newAt(3) + ' transform="translate(130,82)"><circle cx="18" cy="22" r="18" fill="none" stroke="' + orange + '" stroke-width="2"/><circle cx="18" cy="22" r="6" fill="' + orange + '" opacity="0.5"/><circle cx="50" cy="32" r="22" fill="none" stroke="' + orange + '" stroke-width="2"/><circle cx="50" cy="32" r="6" fill="' + orange + '" opacity="0.5"/><text x="34" y="74" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">GEARS</text></g>'
-        : '<g transform="translate(130,82)" opacity="0.25"><circle cx="34" cy="28" r="20" fill="none" stroke="' + dim + '" stroke-width="1.5" stroke-dasharray="4 3"/></g>') +
+      // Gears (middle) — pinion + larger gear, drawn with actual teeth
+      // and placed so the pitch circles touch (center distance = r_a +
+      // r_b). Same module (matching arc length per tooth) so they
+      // read as a real meshing pair.
+      //
+      // Phase math for proper mesh:
+      //  - Gear 1 (12 teeth, period 30°, phase 0): tooth at 90° (its
+      //    right side, the mesh direction).
+      //  - Gear 2 must have a GAP at 270° (its left side, the mesh
+      //    direction) so gear 1's tooth fits in. Gap centers on gear 2
+      //    (18 teeth, period 20°) sit at phase + 10° + n·20°. Setting
+      //    that = 270 with n=13 gives phase = 0. So phase=0 makes the
+      //    teeth interlock; phase=10 (previous value) placed a tooth
+      //    directly opposing gear 1's tooth = tooth-on-tooth collision
+      //    Aaron reported as "pitch circles overlapping."
+      (g ? '<g' + newAt(3) + ' transform="translate(130,82)">' +
+        TRANS_SVG._gear(12, 22, 12, 12, orange, { strokeW: 1.8 }) +
+        TRANS_SVG._gear(42, 22, 18, 18, orange, { strokeW: 1.8, phase: 0 }) +
+        '<text x="30" y="60" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">GEARS</text>' +
+      '</g>'
+        : '<g transform="translate(130,82)" opacity="0.25">' +
+          TRANS_SVG._gear(30, 22, 16, 16, dim, { strokeW: 1.2, opacity: 0.6 }) +
+        '</g>') +
       // Controller (top right)
       (c ? '<g' + newAt(4) + ' transform="translate(220,30)"><rect x="0" y="0" width="60" height="38" rx="4" fill="' + slate + '" stroke="' + orange + '" stroke-width="2"/><rect x="6" y="8" width="48" height="6" rx="1" fill="' + orange + '" opacity="0.6"/><rect x="6" y="18" width="32" height="4" rx="1" fill="' + orange + '" opacity="0.4"/><rect x="6" y="26" width="40" height="4" rx="1" fill="' + orange + '" opacity="0.4"/><line x1="30" y1="38" x2="30" y2="80" stroke="' + orange + '" stroke-width="1.5" stroke-dasharray="3 3"/><text x="30" y="-4" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">CTRL</text></g>'
         : '<g transform="translate(220,30)" opacity="0.25"><rect x="0" y="0" width="60" height="38" rx="4" fill="none" stroke="' + dim + '" stroke-width="1.5" stroke-dasharray="4 3"/></g>') +
-      // Arm + conveyor (Stage 5: the full assembly mounted)
-      (a ? '<g' + newAt(5) + ' transform="translate(180,118)"><rect x="0" y="34" width="120" height="14" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.5"/><line x1="6" y1="48" x2="116" y2="48" stroke="' + orange + '" stroke-width="1" stroke-dasharray="6 4" opacity="0.6"/><rect x="58" y="6" width="14" height="32" fill="' + orange + '" opacity="0.7"/><text x="60" y="68" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">CONVEYOR</text></g>'
+      // Conveyor (Stage 5). Aaron flagged the arm silhouette under
+      // CTRL as unreadable at schematic scale — earlier attempts as
+      // a bar, an L-shape, and a 2-segment arm all read as something
+      // else. The motor + gears + CTRL above ARE the actuator the
+      // student designed, so the arm is conceptually upstream and
+      // doesn't need to be drawn separately here. Just show the
+      // conveyor with parcels on it.
+      (a ? '<g' + newAt(5) + ' transform="translate(180,118)">' +
+        '<rect x="0" y="34" width="120" height="14" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.5"/>' +
+        '<line x1="6" y1="48" x2="116" y2="48" stroke="' + orange + '" stroke-width="1" stroke-dasharray="6 4" opacity="0.6"/>' +
+        // Three parcels on the belt
+        '<rect x="20" y="26" width="10" height="8" rx="1" fill="' + orange + '" opacity="0.9"/>' +
+        '<rect x="56" y="26" width="10" height="8" rx="1" fill="' + orange + '" opacity="0.9"/>' +
+        '<rect x="92" y="26" width="10" height="8" rx="1" fill="' + orange + '" opacity="0.9"/>' +
+        '<text x="60" y="68" text-anchor="middle" font-size="9" fill="' + text + '" font-family="JetBrains Mono, monospace">CONVEYOR</text>' +
+      '</g>'
         : '') +
       '</svg>';
   },
@@ -20726,14 +21829,19 @@ const TRANS_SVG = {
         '<rect x="20" y="99" width="44" height="3" fill="' + dim + '"/>' +
         '<text x="100" y="135" font-size="8" fill="' + muted + '" font-family="JetBrains Mono, monospace">workbench</text>';
     } else if (scene === 'whiteboard') {
-      // Whiteboard with gear sketches
+      // Whiteboard with gear sketches. Previous version was two plain
+      // circles at (35,50)/(78,62) with radii 14/18 — center distance
+      // ≈ 44.6 vs sum of radii 32, so the pitch circles floated 12+
+      // units apart. Aaron flagged this as "not even touching."
+      // Replaced with proper TRANS_SVG._gear() pair: center distance
+      // = r_a + r_b exactly (Global rule 15), and phase set so gear 1
+      // tooth at 90° meets gear 2 gap at 270° (clean mesh, no tooth
+      // collision).
       scenePropsSvg =
         '<rect x="10" y="20" width="100" height="80" rx="2" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/>' +
-        '<circle cx="35" cy="50" r="14" fill="none" stroke="' + orange + '" stroke-width="1.5"/>' +
-        '<circle cx="35" cy="50" r="4" fill="' + orange + '" opacity="0.5"/>' +
-        '<circle cx="78" cy="62" r="18" fill="none" stroke="' + orange + '" stroke-width="1.5"/>' +
-        '<circle cx="78" cy="62" r="5" fill="' + orange + '" opacity="0.5"/>' +
-        '<text x="20" y="92" font-size="8" fill="' + muted + '">ratio = 4:1</text>' +
+        TRANS_SVG._gear(35, 56, 12, 12, orange, { strokeW: 1.5 }) +
+        TRANS_SVG._gear(65, 56, 18, 18, orange, { strokeW: 1.5, phase: 0 }) +
+        '<text x="20" y="92" font-size="8" fill="' + muted + '">ratio = 18:12 = 1.5:1</text>' +
         '<text x="100" y="135" font-size="8" fill="' + muted + '" font-family="JetBrains Mono, monospace">whiteboard</text>';
     } else if (scene === 'terminal') {
       // Monitor with a step-response plot
@@ -20784,18 +21892,141 @@ const TRANS_SVG = {
       choice: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="12" width="40" height="32" rx="3" fill="' + slate + '" stroke="' + orange + '" stroke-width="2"/><circle cx="40" cy="28" r="9" fill="' + orange + '" opacity="0.6"/><circle cx="40" cy="28" r="3" fill="rgba(0,0,0,0.6)"/><path d="M 12 40 L 18 40 L 18 36 L 22 36 L 22 32 L 26 32 L 26 28 L 32 28" fill="none" stroke="' + orange + '" stroke-width="1.5"/></svg>',
       // Stage 3 icons
       motor: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="14" width="36" height="28" rx="4" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.5"/><circle cx="32" cy="28" r="9" fill="' + orange + '" opacity="0.5"/><circle cx="32" cy="28" r="3" fill="rgba(0,0,0,0.6)"/><text x="64" y="32" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">1 N·m</text></svg>',
-      gear: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="28" r="10" fill="none" stroke="' + orange + '" stroke-width="2"/><circle cx="20" cy="28" r="4" fill="' + orange + '" opacity="0.5"/><circle cx="48" cy="32" r="16" fill="none" stroke="' + orange + '" stroke-width="2"/><circle cx="48" cy="32" r="5" fill="' + orange + '" opacity="0.5"/><text x="64" y="14" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">4:1</text></svg>',
+      gear: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg">' +
+        // 10 teeth (period 36°) at phase 0: tooth centers at 0,36,72,108,...
+        // — at 90° (mesh direction) the gear is at a GAP (between 72°
+        // and 108°). So gear 2 needs a TOOTH at 270° for clean mesh.
+        // Gear 2 (15 teeth, period 24°): tooth at 270° means phase = 6
+        // (since 6 + 11·24 = 270). Previous phase=12 placed the tooth
+        // ~6° off, producing a visible tooth-tip collision.
+        TRANS_SVG._gear(14, 28, 8, 10, orange, { strokeW: 1.4 }) +
+        TRANS_SVG._gear(34, 28, 12, 15, orange, { strokeW: 1.4, phase: 6 }) +
+        '<text x="62" y="20" font-size="8" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">4:1</text>' +
+      '</svg>',
       bridge: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><text x="6" y="16" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">in</text><text x="64" y="16" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">out</text><rect x="4" y="20" width="20" height="22" rx="2" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><path d="M 24 28 L 56 28 M 50 23 L 56 28 L 50 33" fill="none" stroke="' + orange + '" stroke-width="2"/><rect x="56" y="20" width="20" height="22" rx="2" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.5"/><text x="14" y="35" font-size="8" fill="' + orange + '" text-anchor="middle" font-family="JetBrains Mono, monospace">1</text><text x="66" y="35" font-size="8" fill="' + orange + '" text-anchor="middle" font-family="JetBrains Mono, monospace">7</text></svg>',
       // Stage 4 icons
       target: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="28" r="18" fill="none" stroke="' + dim + '" stroke-width="1"/><circle cx="40" cy="28" r="12" fill="none" stroke="' + dim + '" stroke-width="1"/><circle cx="40" cy="28" r="6" fill="' + orange + '" opacity="0.6"/><path d="M 8 28 L 30 28 M 24 24 L 30 28 L 24 32" fill="none" stroke="' + orange + '" stroke-width="2"/></svg>',
       curve: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><line x1="6" y1="48" x2="74" y2="48" stroke="' + dim + '" stroke-width="1"/><line x1="6" y1="14" x2="74" y2="14" stroke="' + dim + '" stroke-width="0.5" stroke-dasharray="2 2"/><path d="M 6 48 L 14 48 L 22 14 L 32 22 L 44 16 L 60 16 L 74 16" fill="none" stroke="' + orange + '" stroke-width="2"/></svg>',
       graph: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="44" rx="2" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><text x="12" y="18" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">SETTLE</text><text x="48" y="18" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">0.83s</text><text x="12" y="32" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">O.SHOOT</text><text x="48" y="32" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">2.7°</text><text x="12" y="46" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">SS ERR</text><text x="48" y="46" font-size="7" fill="' + orange + '" font-family="JetBrains Mono, monospace" font-weight="700">1.1°</text></svg>',
       // Stage 5 icons
-      belt: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="32" width="72" height="10" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><line x1="8" y1="37" x2="72" y2="37" stroke="' + orange + '" stroke-width="1" stroke-dasharray="6 4"/><rect x="16" y="22" width="10" height="10" fill="' + orange + '" opacity="0.6"/><rect x="36" y="22" width="10" height="10" fill="' + orange + '" opacity="0.6"/><rect x="56" y="22" width="10" height="10" fill="' + orange + '" opacity="0.6"/></svg>',
+      belt:
+        // Side-profile conveyor. Two pulleys drawn as spoked wheels
+        // (cross-hair on each), belt as two tangent lines spanning
+        // them, three parcels sitting on the top surface, motion
+        // arrow above, frame legs to a floor line. The spokes are
+        // what make the pulleys read as pulleys instead of dots.
+        '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg">' +
+          // Direction arrow
+          '<path d="M 30 10 L 52 10 M 47 7 L 52 10 L 47 13" fill="none" stroke="' + dim + '" stroke-width="1.5" stroke-linecap="round"/>' +
+          // Boxes (bottom at y=27, the belt top edge)
+          '<rect x="20" y="19" width="9" height="8" rx="1" fill="' + orange + '" opacity="0.95"/>' +
+          '<rect x="36" y="19" width="9" height="8" rx="1" fill="' + orange + '" opacity="0.95"/>' +
+          '<rect x="52" y="19" width="9" height="8" rx="1" fill="' + orange + '" opacity="0.95"/>' +
+          // Belt — top + bottom lines tangent to the pulleys
+          '<line x1="14" y1="27" x2="66" y2="27" stroke="' + orange + '" stroke-width="2.2"/>' +
+          '<line x1="14" y1="41" x2="66" y2="41" stroke="' + orange + '" stroke-width="2.2"/>' +
+          // Left pulley: outline + cross-spoke + hub
+          '<circle cx="14" cy="34" r="7" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.4"/>' +
+          '<line x1="14" y1="27" x2="14" y2="41" stroke="' + dim + '" stroke-width="0.7"/>' +
+          '<line x1="7" y1="34" x2="21" y2="34" stroke="' + dim + '" stroke-width="0.7"/>' +
+          '<circle cx="14" cy="34" r="1.8" fill="' + orange + '"/>' +
+          // Right pulley
+          '<circle cx="66" cy="34" r="7" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.4"/>' +
+          '<line x1="66" y1="27" x2="66" y2="41" stroke="' + dim + '" stroke-width="0.7"/>' +
+          '<line x1="59" y1="34" x2="73" y2="34" stroke="' + dim + '" stroke-width="0.7"/>' +
+          '<circle cx="66" cy="34" r="1.8" fill="' + orange + '"/>' +
+          // Stand legs + floor
+          '<line x1="14" y1="41" x2="14" y2="50" stroke="' + dim + '" stroke-width="0.8"/>' +
+          '<line x1="66" y1="41" x2="66" y2="50" stroke="' + dim + '" stroke-width="0.8"/>' +
+          '<line x1="4" y1="50" x2="76" y2="50" stroke="' + dim + '" stroke-width="0.8"/>' +
+        '</svg>',
       scorecard: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="44" rx="3" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><text x="12" y="18" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">TORQUE</text><text x="64" y="18" font-size="8" fill="#4ade80" font-family="JetBrains Mono, monospace" font-weight="700" text-anchor="end">✓</text><text x="12" y="30" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">SPEED</text><text x="64" y="30" font-size="8" fill="#4ade80" font-family="JetBrains Mono, monospace" font-weight="700" text-anchor="end">✓</text><text x="12" y="42" font-size="7" fill="' + dim + '" font-family="JetBrains Mono, monospace">MASS</text><text x="64" y="42" font-size="8" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-weight="700" text-anchor="end">⚠</text></svg>',
       qa: '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="8" width="46" height="22" rx="6" fill="' + slate + '" stroke="' + dim + '" stroke-width="1"/><text x="28" y="22" text-anchor="middle" font-size="9" fill="' + dim + '" font-family="IBM Plex Sans, sans-serif">Why this motor?</text><polygon points="14,30 18,30 14,36" fill="' + slate + '"/><rect x="28" y="32" width="46" height="18" rx="6" fill="rgba(255,122,69,0.18)" stroke="' + orange + '" stroke-width="1.5"/><text x="50" y="44" text-anchor="middle" font-size="9" fill="#f1f4fa" font-family="IBM Plex Sans, sans-serif">because...</text></svg>',
     };
     return svgs[key] || '<svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="44" rx="3" fill="' + slate + '" stroke="' + dim + '"/></svg>';
+  },
+
+  // Control-loop block diagram for Stage 4. Five blocks across the
+  // forward path (Target → Compare → PID → Motor+Gears → Arm) plus
+  // an Encoder block on the feedback path back to Compare. Each
+  // block carries an ID so JS can pulse them in sequence on stage
+  // entry and highlight the PID block whenever the student drags a
+  // gain slider. Plain-language labels — Σ shown as a small glyph
+  // inside Compare, not as the main label, so the diagram reads at
+  // 15-year-old level without engineering shorthand.
+  controlLoop() {
+    const orange = '#ff7a45';
+    const slate = '#2a2f3a';
+    const dim = 'rgba(255,255,255,0.22)';
+    const text = '#aab8c6';
+    const txtBright = '#e9eef5';
+    // Block geometry. viewBox 360 wide x 130 tall lets the boxes
+    // sit on a forward row at y≈30 and the encoder return-path block
+    // at y≈82, with arrows + the feedback loop drawn between them.
+    const blocks = [
+      { id: 's4LoopTarget',  x:  8, y: 28, w: 56, h: 30, label: 'Target',          sub: 'angle' },
+      { id: 's4LoopCompare', x: 76, y: 28, w: 40, h: 30, label: 'Compare',         sub: 'Σ' },
+      { id: 's4LoopPID',     x: 130, y: 24, w: 80, h: 38, label: 'Controller',     sub: 'Kp · Ki · Kd' },
+      { id: 's4LoopPlant',   x: 224, y: 28, w: 72, h: 30, label: 'Motor + Gears',  sub: '' },
+      { id: 's4LoopArm',     x: 308, y: 28, w: 44, h: 30, label: 'Arm',            sub: 'moves' },
+      { id: 's4LoopEncoder', x: 158, y: 84, w: 80, h: 26, label: 'Encoder',        sub: 'reads angle' },
+    ];
+    let blocksSvg = '';
+    blocks.forEach(b => {
+      const isPid = b.id === 's4LoopPID';
+      const subTxt = b.sub
+        ? '<text x="' + (b.x + b.w / 2) + '" y="' + (b.y + b.h / 2 + 8) +
+            '" text-anchor="middle" font-size="' + (isPid ? 9 : 8) +
+            '" fill="' + (isPid ? orange : text) +
+            '" font-family="JetBrains Mono, monospace"' +
+            (isPid ? ' font-weight="700"' : '') + '>' + b.sub + '</text>'
+        : '';
+      blocksSvg +=
+        '<g id="' + b.id + '" class="s4-loop-block">' +
+          '<rect x="' + b.x + '" y="' + b.y + '" width="' + b.w + '" height="' + b.h +
+            '" rx="4" fill="' + slate + '" stroke="' + orange + '" stroke-width="1.4"/>' +
+          '<text x="' + (b.x + b.w / 2) + '" y="' + (b.y + (b.sub ? b.h / 2 - 2 : b.h / 2 + 4)) +
+            '" text-anchor="middle" font-size="9" fill="' + txtBright +
+            '" font-family="IBM Plex Sans, sans-serif" font-weight="600">' + b.label + '</text>' +
+          subTxt +
+        '</g>';
+    });
+    // Forward arrows: each connects rectangle a → rectangle b on the same row
+    const forwardArrows = [
+      { x1: 64, x2: 76, y: 43 },   // Target → Compare
+      { x1: 116, x2: 130, y: 43 }, // Compare → PID
+      { x1: 210, x2: 224, y: 43 }, // PID → Plant
+      { x1: 296, x2: 308, y: 43 }, // Plant → Arm
+    ];
+    let arrowsSvg = '';
+    forwardArrows.forEach(a => {
+      arrowsSvg +=
+        '<line x1="' + a.x1 + '" y1="' + a.y + '" x2="' + (a.x2 - 4) + '" y2="' + a.y +
+          '" stroke="' + orange + '" stroke-width="1.4"/>' +
+        '<path d="M ' + (a.x2 - 5) + ' ' + (a.y - 3) +
+          ' L ' + a.x2 + ' ' + a.y +
+          ' L ' + (a.x2 - 5) + ' ' + (a.y + 3) + '" fill="' + orange + '"/>';
+    });
+    // Feedback loop: from Arm's bottom-center, down + left to Encoder's right edge,
+    // then left out of Encoder + up + right back to Compare's bottom-center.
+    // Two arrow paths so the direction of flow is obvious.
+    const feedbackSvg =
+      // Arm → Encoder (down + left into Encoder right side)
+      '<path d="M 330 58 L 330 96 L 244 96" fill="none" stroke="' + dim + '" stroke-width="1.2"/>' +
+      '<path d="M 248 92 L 244 96 L 248 100" fill="none" stroke="' + dim + '" stroke-width="1.2"/>' +
+      // Encoder → Compare (left out of Encoder, up to Compare's bottom-center)
+      '<path d="M 158 96 L 96 96 L 96 58" fill="none" stroke="' + dim + '" stroke-width="1.2"/>' +
+      '<path d="M 93 62 L 96 58 L 99 62" fill="none" stroke="' + dim + '" stroke-width="1.2"/>';
+    // Caption (so the diagram self-explains in print + first read)
+    const caption =
+      '<text x="180" y="124" text-anchor="middle" font-size="9" fill="' + text +
+        '" font-family="JetBrains Mono, monospace">' +
+        'control loop — target in, arm angle out, encoder closes the loop' +
+      '</text>';
+    return '<svg viewBox="0 0 360 130" xmlns="http://www.w3.org/2000/svg" ' +
+      'role="img" aria-label="Stage 4 control loop. Target angle enters a Compare block, which feeds the PID Controller. The controller drives the motor and gears, which move the arm. An encoder reads the arm angle and feeds it back to Compare.">' +
+      blocksSvg + arrowsSvg + feedbackSvg + caption +
+      '</svg>';
   },
 };
 
@@ -20823,6 +22054,13 @@ function showStageTransition(stage) {
   if (vignetteLabelEl) {
     const labels = { SC: 'Chen at her desk', JL: 'Jamie on mech', AT: 'Alex on controls', PK: 'Priya in the room' };
     vignetteLabelEl.textContent = labels[t.character || 'SC'] || 'On the team';
+  }
+  // Diagram label is stage-aware: Stage 5 shows the FINISHED build,
+  // not progress toward one. Aaron flagged the "Building toward the
+  // joint" framing as wrong by Stage 5.
+  const diagramLabelEl = document.getElementById('stageTransDiagramLabel');
+  if (diagramLabelEl) {
+    diagramLabelEl.textContent = stage >= 5 ? 'The build so far' : 'Building toward the joint';
   }
   if (comicEl && t.comicCells) {
     comicEl.innerHTML = t.comicCells.map(cell =>
@@ -20857,6 +22095,10 @@ function showStageTransition(stage) {
 
 function onEnterStage2() {
   showStageTransition(2);
+  if (STATE.selectedMotorIdx !== null && !STAGE2_MOTOR_SET.has(STATE.selectedMotorIdx)) {
+    STATE.selectedMotorIdx = null;
+    STATE.justification = '';
+  }
   const t = STATE.requiredTorque_Nm;
   document.getElementById('s2ReqTorque').textContent = '\u2265 ' + t.toFixed(1) + ' Nm';
   // Dynamic Chen intro based on torque result
@@ -20871,8 +22113,9 @@ function onEnterStage2() {
   scheduleStage2NoSelectionHint();
 }
 
-// Motors 0 (Maxon), 2 (RI50), 3 (AK60-6) shown initially. 1 (Faulhaber), 4 (iPower) unlock after first test.
-const STARTER_MOTORS = new Set([0, 2, 3]);
+// Back-compat alias for older helper code. Student-facing Stage 2 uses the
+// fixed STAGE2_MOTOR_OPTIONS shortlist above.
+const STARTER_MOTORS = STAGE2_MOTOR_SET;
 
 // Stylised SVG illustrations per motor type. We don't have real product
 // photos, so distinct geometric icons stand in -- color-coded with the
@@ -20937,9 +22180,8 @@ function getMotorPhotoSvg(motor) {
 function renderMotorCards() {
   const container = document.getElementById('motorCards');
   container.innerHTML = '';
-  const order = s2SortedOrder && s2SortedOrder.length ? s2SortedOrder : MOTORS.map((_, i) => i);
-  const showAll = STATE.unlocks.advancedMotors;
-  const visibleOrder = order.filter(idx => showAll || STARTER_MOTORS.has(idx));
+  const order = s2SortedOrder && s2SortedOrder.length ? s2SortedOrder : STAGE2_MOTOR_OPTIONS.slice();
+  const visibleOrder = order.filter(idx => STAGE2_MOTOR_SET.has(idx));
   const recommendedIdx = visibleOrder.length ? visibleOrder[0] : null;
 
   // Update motor count display
@@ -21069,7 +22311,9 @@ function renderStage2Tradeoff(visibleOrder) {
   // below and a column in this chart is unambiguous when the student
   // picks one.
   const html = [
-    '<div class="s2-to-title">How they compare</div>',
+    '<details class="s2-to-details" open>',
+    '<summary><span>How they compare</span><span class="s2-to-summary-note">columns match the motor cards below</span></summary>',
+    '<div class="s2-to-title">Specs with units</div>',
     '<div class="s2-to-legend">',
     ...motors.map((m, j) => {
       const idx = motorIdxList[j];
@@ -21104,6 +22348,7 @@ function renderStage2Tradeoff(visibleOrder) {
     html.push('</div>');
   });
   html.push('</div>');
+  html.push('</details>');
   host.innerHTML = html.join('');
 }
 
@@ -21124,9 +22369,8 @@ function renderCurveToggles() {
   const panel = document.getElementById('s2CurvePanel');
   if (!c || (panel && getComputedStyle(panel).display === 'none')) return;
   c.innerHTML = '';
-  const showAll = STATE.unlocks.advancedMotors;
-  MOTORS.forEach((m,i) => {
-    if (!showAll && !STARTER_MOTORS.has(i)) return;
+  STAGE2_MOTOR_OPTIONS.forEach((i) => {
+    const m = MOTORS[i];
     const d = document.createElement('div');
     d.className = 'curve-toggle' + (s2VisibleCurves.has(i) ? ' active' : '');
     d.innerHTML = `<span class="dot" style="background:${m.color}"></span>${m.manufacturer} ${m.model.split('(')[0].trim()}`;
@@ -21147,7 +22391,11 @@ function drawTSChart() {
   if (panel && getComputedStyle(panel).display === 'none') return;
   tsCtx.clearRect(0, 0, TW, TH);
   let maxSpeed = 0, maxTorque = 0;
-  for (const m of MOTORS) { maxSpeed = Math.max(maxSpeed, m.specs.noLoadSpeed_rpm); maxTorque = Math.max(maxTorque, m.specs.stallTorque_Nm); }
+  for (const i of STAGE2_MOTOR_OPTIONS) {
+    const m = MOTORS[i];
+    maxSpeed = Math.max(maxSpeed, m.specs.noLoadSpeed_rpm);
+    maxTorque = Math.max(maxTorque, m.specs.stallTorque_Nm);
+  }
   maxSpeed = Math.ceil(maxSpeed * 1.1 / 5000) * 5000;
   maxTorque = Math.ceil(maxTorque * 1.15 * 10) / 10;
 
@@ -21192,7 +22440,7 @@ function drawTSChart() {
   }
 
   // Curves — draw unselected first, then selected on top
-  const drawOrder = MOTORS.map((_,i) => i).sort((a,b) => (a === STATE.selectedMotorIdx ? 1 : 0) - (b === STATE.selectedMotorIdx ? 1 : 0));
+  const drawOrder = STAGE2_MOTOR_OPTIONS.slice().sort((a,b) => (a === STATE.selectedMotorIdx ? 1 : 0) - (b === STATE.selectedMotorIdx ? 1 : 0));
   for (const i of drawOrder) {
     if (!s2VisibleCurves.has(i)) continue;
     const m = MOTORS[i], s = m.specs, isSel = (i === STATE.selectedMotorIdx);
@@ -21327,8 +22575,7 @@ function selectMotor(idx) {
     }
   }
 
-  document.getElementById('justifyInput').disabled = false;
-  document.getElementById('justifyInput').placeholder = 'Try: "' + m.manufacturer + ' ' + m.model.split('(')[0].trim() + ' is my best start for the ' + getScenarioMeta().label.toLowerCase() + ' because..."';
+  renderStage2JustificationChoices(assessment);
   const fb = document.getElementById('justifyFeedback');
   if (fb) fb.style.display = 'none';
   checkS2Continue();
@@ -21358,6 +22605,31 @@ function selectMotor(idx) {
       }
     }
     if (typeof audioFx !== 'undefined' && audioFx.chenPing) audioFx.chenPing();
+  } catch (e) { /* non-critical */ }
+
+  // Jamie chimes in on the motor pick. Speaker-coded toast (cap-1
+  // priority queue handles overlap with Chen's DOM popup). Cooldown
+  // 6s so rapid swaps don't spam; single key so the queue replaces
+  // the previous Jamie comment rather than stacking them.
+  try {
+    const isSwap = STATE._lastJamieMotorIdx !== undefined && STATE._lastJamieMotorIdx !== idx;
+    STATE._lastJamieMotorIdx = idx;
+    const mfr = (m.manufacturer || '').toLowerCase();
+    let motorKey = 'motor.cheap';
+    if (mfr.includes('maxon')) motorKey = 'motor.maxon';
+    else if (mfr.includes('faulhaber')) motorKey = 'motor.faulhaber';
+    // After the first swap of the run, occasionally use the generic
+    // swap line instead of the motor-specific one so it doesn't feel
+    // like Jamie has only one line per motor.
+    if (isSwap && Math.random() < 0.35) motorKey = 'motor.swap';
+    const line = specialistLine('JL', motorKey);
+    if (line && typeof pushOpsToast === 'function') {
+      // Delay 1200ms so Chen's DOM popup lands first, then Jamie reacts.
+      setTimeout(() => pushOpsToast(line, {
+        speaker: 'JL', tone: 'info', key: 's2_jamie_motor',
+        cooldownMs: 6000, ttlMs: 4500,
+      }), 1200);
+    }
   } catch (e) { /* non-critical */ }
 }
 
@@ -22456,13 +23728,6 @@ function applyStage3UnlockUI() {
   );
   if (hLocked && (STATE.gearType === 'harmonic' || STATE.gearType === 'cycloidal')) STATE.gearType = 'spur';
 
-  const obj = document.getElementById('s3ObjectiveLine');
-  if (obj) {
-    obj.innerHTML = pLocked
-      ? '<strong>Objective:</strong> Meet all five ship checks, then commit to test. More gear types unlock as you iterate.'
-      : '<strong>Objective:</strong> Meet all five ship checks, then commit to test.';
-  }
-
   const hasCommittedStage3 = STATE.commitHistory.some(c => c.kind === 'stage3_commit');
   if (STATE.unlocks.planetary && hasCommittedStage3 && !STATE.unlocksShown.planetary) {
     STATE.unlocksShown.planetary = true;
@@ -22551,6 +23816,25 @@ function selectStage3GearType(type) {
   const typeKey = 's3-type-' + STATE.gearType;
   const typeLine = chenLine(typeKey, '');
   if (typeLine) showS3ChenNotif(typeLine);
+
+  // Jamie chimes in on the gear-type pick. Only fires for the three
+  // primary types (spur / planetary / harmonic); cycloidal is a
+  // secondary unlock and stays silent for now. Cooldown 8s so a
+  // student bouncing between types doesn't get hammered.
+  try {
+    const jamieTypeKey = 'gear.' + STATE.gearType;
+    if (JL_LINES[jamieTypeKey]) {
+      const jl = specialistLine('JL', jamieTypeKey);
+      if (jl && typeof pushOpsToast === 'function') {
+        // Delay 900ms after Chen's notif so the two don't fire on top
+        // of each other.
+        setTimeout(() => pushOpsToast(jl, {
+          speaker: 'JL', tone: 'info', key: 's3_jamie_geartype',
+          cooldownMs: 8000, ttlMs: 4500,
+        }), 900);
+      }
+    }
+  } catch (e) { /* non-critical */ }
 
   const stagesSlider = document.getElementById('stagesSlider');
   const ratioSlider = document.getElementById('ratioSlider');
@@ -23319,6 +24603,19 @@ function onEnterStage4() {
   showStageTransition(4);
   document.getElementById('pidControls').style.display = 'none';
   document.getElementById('s4ChenVerdict').style.display = 'none';
+  // Reset per-entry one-shot flags so Alex's gain hints fire once
+  // each visit to Stage 4. Without this, a student who comes back
+  // for a second tuning pass never hears Alex coach again.
+  STATE._alexHintShown = { kp: false, kd: false, ki: false };
+  // Reset the warehouse-sim auto-open one-shot so it can fire on
+  // Ki touch this visit too.
+  STATE._s4SandboxAutoOpened = false;
+  clearTimeout(STATE._s4SandboxAutoOpenTimer);
+  // Pedagogy pass: render the control loop diagram, walk the entry
+  // pulse, mount Quick Start visibility, and wire the metric info
+  // badges. Idempotent — Stage4Teaching guards against double-init.
+  // Reset _pulseDone so the entry pulse re-fires on every visit.
+  try { Stage4Teaching._pulseDone = false; Stage4Teaching.init(); } catch (e) {}
   // Refresh the gravity readout now that we know the actuator's torque
   // ceiling — lets us tell the student whether they have margin or not.
   try { if (typeof updateGravityReadout === 'function') updateGravityReadout(); } catch (e) {}
@@ -23338,7 +24635,7 @@ function onEnterStage4() {
   const storyDetails = stageCount > 1
     ? `a ${stageCount}-stage ${gearTypeWord} gearbox at ${STATE.lastTrain.totalRatio.toFixed(0)}:1`
     : `a single-stage ${gearTypeWord} setup at ${STATE.lastTrain.totalRatio.toFixed(0)}:1`;
-  const s4DefaultIntroText = `${motor.manufacturer} ${motor.model.split('(')[0].trim()} driving ${storyDetails}. Hardware is locked. ${pack.focusCopy}`;
+  const s4DefaultIntroText = `Hardware is locked — ${motor.manufacturer} ${motor.model.split('(')[0].trim()} driving ${storyDetails}. Now we teach the controller how to use it. Three gains. One motion. One target. ${pack.focusCopy}`;
   const s4PersonaLine = chenLine('s4-intro', '');
   document.getElementById('s4ChenIntro').textContent = s4PersonaLine || s4DefaultIntroText;
 
@@ -25092,7 +26389,13 @@ function renderStage5Scorecard(packed, lost, smackCount) {
   const packRate = packed / Math.max(1, total);
 
   const rows = [];
-  // Torque
+  // Each row gets a margin_pct so margin-aware downstream copy can
+  // call the tightness (Aaron 2026-05-27: comments shouldn't say
+  // "looks good" generically when a margin is thin). Convention:
+  // positive = clearance, negative = miss. For "≥ target" specs the
+  // margin is (actual - target) / target; for "≤ target" specs it
+  // flips sign.
+  // Torque (≥)
   {
     const target = REQUIREMENTS.torque_Nm;
     const actual = act.outputTorque_Nm || 0;
@@ -25101,9 +26404,10 @@ function renderStage5Scorecard(packed, lost, smackCount) {
       target: '≥ ' + target.toFixed(2) + ' N·m',
       actual: actual.toFixed(2) + ' N·m',
       pass: actual >= target,
+      margin_pct: target > 0 ? ((actual - target) / target) * 100 : 0,
     });
   }
-  // Speed
+  // Speed (≥)
   {
     const target = REQUIREMENTS.speed_dps;
     const actual = act.outputSpeed_dps || 0;
@@ -25112,9 +26416,10 @@ function renderStage5Scorecard(packed, lost, smackCount) {
       target: '≥ ' + target + '°/s',
       actual: actual.toFixed(0) + '°/s',
       pass: actual >= target,
+      margin_pct: target > 0 ? ((actual - target) / target) * 100 : 0,
     });
   }
-  // Envelope
+  // Envelope (≤)
   {
     const target = REQUIREMENTS.diameter_mm;
     const actual = act.envelopeDiam_mm || 0;
@@ -25123,9 +26428,10 @@ function renderStage5Scorecard(packed, lost, smackCount) {
       target: '≤ ' + target + ' mm',
       actual: actual.toFixed(1) + ' mm',
       pass: actual <= target,
+      margin_pct: target > 0 ? ((target - actual) / target) * 100 : 0,
     });
   }
-  // Mass
+  // Mass (≤)
   {
     const target = REQUIREMENTS.mass_g;
     const actual = act.totalMass_g || 0;
@@ -25134,9 +26440,10 @@ function renderStage5Scorecard(packed, lost, smackCount) {
       target: '≤ ' + target + ' g',
       actual: actual.toFixed(0) + ' g',
       pass: actual <= target,
+      margin_pct: target > 0 ? ((target - actual) / target) * 100 : 0,
     });
   }
-  // Efficiency
+  // Efficiency (≥)
   {
     const target = REQUIREMENTS.efficiency_pct;
     const actual = act.efficiency_pct || 0;
@@ -25145,6 +26452,7 @@ function renderStage5Scorecard(packed, lost, smackCount) {
       target: '≥ ' + target + '%',
       actual: actual.toFixed(1) + '%',
       pass: actual >= target,
+      margin_pct: target > 0 ? ((actual - target) / target) * 100 : 0,
     });
   }
   // Throughput from the demo. 2026-05-25 — tightened (PASS at 85%, was 80%;
@@ -25182,7 +26490,23 @@ function renderStage5Scorecard(packed, lost, smackCount) {
     verdictEl.className = 's5-results-verdict pass';
     stamp = 'PASS';
     banner = 'verdict-pass';
-    headline = 'All ' + rows.length + ' requirements met. Design is ready to hand off.';
+    // Margin-aware enrichment (rule 4: comments must match the
+    // scenario, not generic "looks good"). Find the tightest pass
+    // and call it out — sharp specs name where the design has the
+    // least headroom even on a clean pass.
+    let tightest = null;
+    for (const r of rows) {
+      if (typeof r.margin_pct === 'number') {
+        if (!tightest || r.margin_pct < tightest.margin_pct) tightest = r;
+      }
+    }
+    if (tightest && tightest.margin_pct < 10) {
+      headline = 'All ' + rows.length + ' requirements met. Tightest margin: ' + tightest.label.toLowerCase() + ' at +' + tightest.margin_pct.toFixed(0) + '%. The design holds but does not have a lot of room.';
+    } else if (tightest && tightest.margin_pct < 25) {
+      headline = 'All ' + rows.length + ' requirements met with comfortable margin (tightest: ' + tightest.label.toLowerCase() + ' at +' + tightest.margin_pct.toFixed(0) + '%). Ready to hand off.';
+    } else {
+      headline = 'All ' + rows.length + ' requirements met with strong margin. Design is ready to hand off.';
+    }
   } else if (failCount === 0) {
     verdictEl.textContent = warnCount + ' marginal';
     verdictEl.className = 's5-results-verdict warn';
@@ -25207,10 +26531,40 @@ function renderStage5Scorecard(packed, lost, smackCount) {
   if (banText) banText.textContent = headline;
 
   // Refresh the iterate-button labels with the specific stage the
-  // primary route is about to send the student to ('Fix Tuning →',
-  // 'Fix Gears →', etc.) so the two action buttons read as distinct
-  // actions instead of identical labels.
-  try { updateIterateButtonLabels(); } catch (e) {}
+  // primary route is about to send the student to ('Adjust Tuning →',
+  // 'Adjust Gears →', etc.) plus a subtitle naming the top failed or
+  // marginal spec, so the action point also carries the ReviewBot's
+  // top-priority finding.
+  let iterSubtitle = '';
+  const firstFail = rows.find(r => !r.pass && !r.warn);
+  const firstWarn = rows.find(r => r.warn);
+  if (firstFail) iterSubtitle = `${firstFail.label} missed`;
+  else if (firstWarn) iterSubtitle = `${firstWarn.label} is thin`;
+  try { updateIterateButtonLabels(iterSubtitle); } catch (e) {}
+
+  // Post-pass "now what" UX: on PASS, promote the Defend button to
+  // primary and demote the iterate/swap buttons to secondary. On
+  // MARGINAL or FAIL, keep the iterate-focused layout. Aaron's
+  // raw note: "it says pass, but then now what?"
+  try {
+    const actions = document.getElementById('s5ReportActions');
+    const defendBtn = document.getElementById('s5DefendBtn');
+    const iterateBtn = document.getElementById('s5ReportIterateBtn');
+    if (actions && defendBtn && iterateBtn) {
+      if (stamp === 'PASS') {
+        actions.classList.add('shift-passed');
+        defendBtn.hidden = false;
+        // On pass, the iterate button stops being the primary action.
+        iterateBtn.classList.remove('btn-primary');
+        iterateBtn.classList.add('btn-secondary');
+      } else {
+        actions.classList.remove('shift-passed');
+        defendBtn.hidden = true;
+        iterateBtn.classList.remove('btn-secondary');
+        iterateBtn.classList.add('btn-primary');
+      }
+    }
+  } catch (e) { /* non-critical */ }
 
   // Verdict stinger -- celebratory chord on PASS, descending sawtooth on FAIL,
   // soft single tone on MARGINAL. Only fires once per scorecard render.
@@ -25304,9 +26658,11 @@ function drawArmSim(history, canvas) {
   const prevHist = STATE.prevSimResults && STATE.prevSimResults.history;
   const isTerminal = document.body.classList.contains('theme-terminal');
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // Terminal theme: fill canvas background
+  // Terminal theme: fill canvas background. Paled 2026-05-27 from
+  // near-black #0a100a to a softer dark green-grey #131e15 so the
+  // trace doesn't read as harsh-on-black.
   if (isTerminal) {
-    ctx.fillStyle = '#0a100a';
+    ctx.fillStyle = '#131e15';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
   }
 
@@ -25315,11 +26671,13 @@ function drawArmSim(history, canvas) {
   const armLen = 160;
   const targetAngle = -Math.PI/2; // up from joint (canvas coords)
 
-  // Theme-aware color palette
+  // Theme-aware color palette. Terminal-theme tokens paled 2026-05-27
+  // to match the Stage 4 readability pass (rgba 32,192,64 → 80,200,110
+  // and friends; dim/label/grid lightened correspondingly).
   const C = isTerminal ? {
-    target: 'rgba(32,192,64,', accent: 'rgba(85,212,101,', warn: 'rgba(200,160,40,',
-    err: 'rgba(200,80,60,', trace: 'rgba(32,192,64,', dim: '#158028', label: '#20c040',
-    grid: 'rgba(32,192,64,0.1)', font: 'monospace'
+    target: 'rgba(110,205,135,', accent: 'rgba(150,220,170,', warn: 'rgba(220,180,80,',
+    err: 'rgba(220,100,90,', trace: 'rgba(110,205,135,', dim: '#5fa86a', label: '#7ec588',
+    grid: 'rgba(110,205,135,0.08)', font: 'monospace'
   } : {
     target: 'rgba(102,187,106,', accent: 'rgba(79,195,247,', warn: 'rgba(255,167,38,',
     err: 'rgba(239,83,80,', trace: 'rgba(79,195,247,', dim: '#888', label: '#888',
@@ -26081,6 +27439,8 @@ function runPIDSim(mode = 'manual') {
   const result = simulateArm(STATE.pidKp, STATE.pidKd, STATE.pidKi, 4, 0.005);
   STATE.simResults = result;
   STATE.pidRunCount++;
+  // Quick Start auto-hides after 2 sim runs.
+  try { Stage4Teaching.bumpSimCount(); } catch (e) {}
   const canvas = document.getElementById('armCanvas');
   document.getElementById('simStatus').textContent = mode === 'auto'
     ? `AUTO-RERUN | knob change detected | Kp ${STATE.pidKp.toFixed(1)} Kd ${STATE.pidKd.toFixed(1)} Ki ${STATE.pidKi.toFixed(1)}`
@@ -26219,6 +27579,28 @@ function showControlVerdict(result) {
   else {
     txt.textContent = "Decent. Not perfect, but workable. This is the part where real engineers grind for polish. See if you can get all three metrics green.";
   }
+
+  // Alex chimes in after Chen's verdict with a controls read on
+  // the same metrics. 1800ms delay so the on-page Chen text is
+  // already visible when Alex's toast appears. Cap-1 queue stops
+  // any pile-up.
+  try {
+    let alexKey;
+    if (ov > 12) alexKey = 'sim.ringing';
+    else if (st > 2.2) alexKey = 'sim.slow';
+    else if (ov < 6 && st < 1.5 && se < 2.5) alexKey = 'sim.clean';
+    else alexKey = 'sim.improving';
+    const at = specialistLine('AT', alexKey);
+    if (at && typeof pushOpsToast === 'function') {
+      const tone = alexKey === 'sim.clean' ? 'success'
+                 : alexKey === 'sim.ringing' ? 'warn'
+                 : 'info';
+      setTimeout(() => pushOpsToast(at, {
+        speaker: 'AT', tone, key: 's4_alex_verdict',
+        cooldownMs: 5000, ttlMs: 5000,
+      }), 1800);
+    }
+  } catch (e) { /* non-critical */ }
 }
 
 // PID slider listeners — live update with debounced sim rerun
@@ -26231,6 +27613,128 @@ function onPIDSliderChange() {
     }
   }, 250);
 }
+// ================================================================
+// Stage 4 teaching surfaces: control-loop diagram + Quick Start
+// + metric info badges. Single init runs on every Stage 4 entry
+// (idempotent) so the SVG renders, the entry pulse fires once per
+// session, and click handlers are wired without duplicating.
+// ================================================================
+const Stage4Teaching = {
+  init() {
+    this._renderLoop();
+    this._wireQuickStart();
+    this._wireMetricInfoBadges();
+    this._runEntryPulse();
+    this._updateQuickStartVisibility();
+  },
+
+  _renderLoop() {
+    const host = document.getElementById('s4LoopSvgWrap');
+    if (!host) return;
+    if (typeof TRANS_SVG === 'undefined' || typeof TRANS_SVG.controlLoop !== 'function') return;
+    // Only re-render if empty — avoids replacing nodes the entry
+    // pulse is currently animating.
+    if (!host.firstElementChild) host.innerHTML = TRANS_SVG.controlLoop();
+  },
+
+  // Pulse each block in turn so the student sees the loop's flow
+  // direction (Target → Compare → PID → Plant → Arm → Encoder →
+  // back to Compare). Runs once per Stage 4 visit.
+  _runEntryPulse() {
+    if (this._pulseDone) return;
+    this._pulseDone = true;
+    const order = ['s4LoopTarget', 's4LoopCompare', 's4LoopPID', 's4LoopPlant', 's4LoopArm', 's4LoopEncoder', 's4LoopCompare'];
+    const step = 400;
+    order.forEach((id, idx) => {
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.add('entry-pulse');
+        setTimeout(() => el.classList.remove('entry-pulse'), 620);
+      }, 350 + idx * step);
+    });
+  },
+
+  // Slider-drag highlight: pulses the PID block whenever a gain
+  // slider is moved. Hold for 600ms after the last input so quick
+  // scrubs read as continuous highlight, not flicker.
+  pulsePidBlock() {
+    const el = document.getElementById('s4LoopPID');
+    if (!el) return;
+    el.classList.add('active');
+    clearTimeout(this._pidHoldTimer);
+    this._pidHoldTimer = setTimeout(() => el.classList.remove('active'), 700);
+  },
+
+  _wireQuickStart() {
+    const dismiss = document.getElementById('s4QuickStartDismiss');
+    if (dismiss && !dismiss._wired) {
+      dismiss._wired = true;
+      dismiss.addEventListener('click', () => {
+        STATE._s4QuickStartDismissed = true;
+        this._updateQuickStartVisibility();
+      });
+    }
+  },
+
+  _updateQuickStartVisibility() {
+    const card = document.getElementById('s4QuickStart');
+    if (!card) return;
+    const dismissed = STATE._s4QuickStartDismissed === true;
+    const runsHit = (STATE._s4SimRunCount || 0) >= 2;
+    card.style.display = (dismissed || runsHit) ? 'none' : '';
+  },
+
+  // Each sim run counts toward the Quick Start auto-hide cap.
+  // Called from runPIDSim after a successful sim run.
+  bumpSimCount() {
+    STATE._s4SimRunCount = (STATE._s4SimRunCount || 0) + 1;
+    this._updateQuickStartVisibility();
+  },
+
+  _wireMetricInfoBadges() {
+    const badges = document.querySelectorAll('.s4-metric-info');
+    badges.forEach(btn => {
+      if (btn._wired) return;
+      btn._wired = true;
+      btn.addEventListener('click', () => {
+        const metric = btn.dataset.metric;
+        const def = document.getElementById('s4MetricDef' + metric.charAt(0).toUpperCase() + metric.slice(1));
+        if (!def) return;
+        const open = def.hasAttribute('hidden') ? false : true;
+        if (open) {
+          def.setAttribute('hidden', '');
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          def.removeAttribute('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  },
+};
+window.Stage4Teaching = Stage4Teaching;
+
+// One-shot Alex coaching toast. Fires once per gain per Stage 4
+// entry — `STATE._alexHintShown` is reset by onEnterStage4. Keeps
+// rapid scrubbing from spamming the toast queue. Quiet after the
+// first touch on a given gain.
+function maybeFireAlexHint(gain) {
+  try {
+    if (!STATE._alexHintShown) STATE._alexHintShown = {};
+    if (STATE._alexHintShown[gain]) return;
+    STATE._alexHintShown[gain] = true;
+    const key = 'pid.' + gain + '_up';
+    const at = specialistLine('AT', key);
+    if (at && typeof pushOpsToast === 'function') {
+      pushOpsToast(at, {
+        speaker: 'AT', tone: 'info',
+        key: 's4_alex_' + gain, cooldownMs: 10000, ttlMs: 4500,
+      });
+    }
+  } catch (e) { /* non-critical */ }
+}
+
 document.getElementById('pSlider').addEventListener('input', e => {
   STATE.pidKp = parseFloat(e.target.value);
   document.getElementById('pVal').textContent = STATE.pidKp.toFixed(1);
@@ -26241,6 +27745,8 @@ document.getElementById('pSlider').addEventListener('input', e => {
   else h.textContent = '';
   h.style.display = h.textContent ? 'block' : 'none';
   onPIDSliderChange();
+  maybeFireAlexHint('kp');
+  try { Stage4Teaching.pulsePidBlock(); } catch (e) {}
 });
 document.getElementById('dSlider').addEventListener('input', e => {
   STATE.pidKd = parseFloat(e.target.value);
@@ -26252,6 +27758,8 @@ document.getElementById('dSlider').addEventListener('input', e => {
   else h.textContent = '';
   h.style.display = h.textContent ? 'block' : 'none';
   onPIDSliderChange();
+  maybeFireAlexHint('kd');
+  try { Stage4Teaching.pulsePidBlock(); } catch (e) {}
 });
 document.getElementById('iSlider').addEventListener('input', e => {
   STATE.pidKi = parseFloat(e.target.value);
@@ -26263,6 +27771,32 @@ document.getElementById('iSlider').addEventListener('input', e => {
   else h.textContent = '';
   h.style.display = h.textContent ? 'block' : 'none';
   onPIDSliderChange();
+  maybeFireAlexHint('ki');
+  try { Stage4Teaching.pulsePidBlock(); } catch (e) {}
+  // Auto-open warehouse simulation once the student has touched
+  // Ki (the last gain in the tune progression). Aaron asked for
+  // this so the student doesn't have to hunt for the next button
+  // after the last knob settles. One-shot per Stage 4 visit; the
+  // manual button stays available either way. Settle delay (1.4s
+  // after last input) so the open doesn't fire mid-drag.
+  try {
+    if (!STATE._s4SandboxAutoOpened) {
+      clearTimeout(STATE._s4SandboxAutoOpenTimer);
+      STATE._s4SandboxAutoOpenTimer = setTimeout(() => {
+        if (STATE._s4SandboxAutoOpened) return;
+        const sandboxOpen = document.getElementById('sandbox');
+        // Don't re-open if it's already visible.
+        if (sandboxOpen && getComputedStyle(sandboxOpen).display !== 'none') {
+          STATE._s4SandboxAutoOpened = true;
+          return;
+        }
+        if (typeof openSandbox === 'function' && document.getElementById('pidControls').style.display !== 'none') {
+          STATE._s4SandboxAutoOpened = true;
+          openSandbox({ scroll: true });
+        }
+      }, 1400);
+    }
+  } catch (e) { /* non-critical */ }
 });
 
 // ---- Gravity panel wiring ----
@@ -27197,9 +28731,9 @@ function getStage5RoomVoices(meta, act, train, motor, failItems, marginalItems, 
       ? 'Mass is over budget. Structure and bearings have to forgive too much.'
       : train.totalRatio > 70
         ? 'Ratio works on paper. Manufacturing will ask where the slop goes.'
-        : 'Layout is readable. Question is whether it stays honest in tolerances.';
+        : 'Layout reads clean. The gearbox is doing its job without drama.';
   const controls = routePlan.primary.stage === 4
-    ? 'Hardware is fine. Motion quality is where the room is tense.'
+    ? 'Hardware checks out. The arm motion is the part still asking for work.'
     : simVerdict && simVerdict.overshoot > 20
       ? 'Control story is loud. Whole build looks unfinished on the bench.'
       : simVerdict && simVerdict.settleTime < 1.5 && simVerdict.overshoot < 10
@@ -29061,15 +30595,12 @@ const compareSummary = renderStage5Comparison(act, train, motor);
       }, DEV_MODE ? 350 : 2800);
     }
 
-    // Sim-to-Real AI training preview — appears between closing narrative and career panel
-    try { renderAiTrainingPreview(); } catch (e) {}
-    const aiPanel = document.getElementById('s5AiTrainingPanel');
-    if (aiPanel) {
-      setTimeout(() => {
-        aiPanel.style.display = 'block';
-        aiPanel.style.animation = 'fadeIn 0.6s ease';
-      }, DEV_MODE ? 250 : 2200);
-    }
+    // Sim-to-Real AI training preview intentionally NOT revealed in the
+    // post-shift report (per the audit). The element stays in the chat
+    // feed with style="display:none" and renderAiTrainingPreview() is
+    // skipped so the offscreen markup doesn't burn CPU on the arm
+    // animation. To restore: also add s5AiTrainingPanel back to
+    // Stage5ReportLayout.MOVES.
 
     // Codex: postmortem at the end of the run, only if control performance is clearly off.
     const r = STATE.simResults;
