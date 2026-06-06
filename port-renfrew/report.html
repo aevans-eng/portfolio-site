@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The full data report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0f0d;--ink:#e9e3d5;--muted:#9aa79a;--ember:#e06a26;--ember2:#f0a874;--sage:#7fa168;--line:rgba(233,227,213,.14);
+--serif:"Newsreader",Georgia,serif;--display:"Fraunces",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:44px 22px 90px}
+.topnav{font-family:var(--mono);font-size:12px;letter-spacing:.04em;margin-bottom:34px;color:var(--muted)}
+.topnav a{color:var(--ember);text-decoration:none}
+h1,h2,h3{font-family:var(--display);line-height:1.14;letter-spacing:-.01em}
+h1{font-size:clamp(30px,5vw,46px);font-weight:900;margin:0 0 22px}
+h2{font-size:clamp(21px,3.4vw,29px);font-weight:600;margin:42px 0 12px;color:#f3ecdd}
+h3{font-size:19px;margin:26px 0 8px}
+p{margin:0 0 16px}
+a{color:var(--ember2)}
+code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:18px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:rgba(255,255,255,.04);font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+blockquote{border-left:3px solid var(--ember);margin:16px 0;padding:4px 0 4px 16px;color:#d9d3c6}
+hr{border:0;border-top:1px solid var(--line);margin:30px 0}
+ul,ol{padding-left:22px;margin:0 0 16px}
+li{margin:5px 0}
+strong{color:#f5efe2}
+em{color:#e9e3d5}
+</style></head><body><div class="wrap">
+<div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
+<h1>What Can The Public Actually See? Port Renfrew Forestry, Old Forest, Fish, Fire, And Missing Records</h1>
+<p>Date prepared: 2026-06-02</p>
+<h2>Plain-Language Executive Summary</h2>
+<p>Official government data already shows a large recorded logging footprint around Port Renfrew, San Juan, Gordon, Fairy, Walbran, and Harris. It shows where old forest still stands, where roads cross water, and where fish-passage records exist. That is enough to ask serious questions.</p>
+<p>What the public still cannot see is the record behind each decision: the site plan, the stream and riparian rules, the road and culvert records, the fuel hazard work, the sale economics, and the reason a given old stand was kept or cut. Without those records, the public cannot tell whether harvest near water, fish, recreation, and old forest creates net public value.</p>
+<p>This report does not claim anyone broke the law, and it does not claim logging caused any specific fish decline or fire. It makes one point: the public data shows enough to ask, but not enough to judge. That gap is the accountability problem.</p>
+<h2>Why This Matters</h2>
+<p>Before old-growth or high-risk forest is logged near water, fish, recreation, and remaining high-age forest, the public is being asked to accept a decision it cannot check. Timber revenue is visible. The costs and liabilities the public may inherit are not: roads, culverts, sediment, fish habitat, fuel treatment, wildfire exposure, recreation loss, carbon, restoration, monitoring, and enforcement.</p>
+<p>Full-cost accounting means showing the revenue beside those costs before approval or sale. Right now the public can see the harvest but not the ledger. That is why the missing records matter, and why they are the right thing to ask for first.</p>
+<h2>The Public Can See / The Public Cannot See</h2>
+<p>The public can see:</p>
+<ul>
+<li>Recorded harvest history as consolidated cutblock polygons, with year and area.</li>
+<li>VRI forest-age screening, including where young/regrowth and 250+ high-age stands are.</li>
+<li>Official old-growth priority mapping (TAP old forests, big trees, ancient forest, priority deferrals) and legal OGMAs.</li>
+<li>Official named watershed boundaries.</li>
+<li>Forest road tenure lines and stream lines, enough for GIS crossing estimates.</li>
+<li>PSCIS fish-passage assessment points and fish-obstacle records in several watersheds.</li>
+<li>BCTS sales schedules, including rows labelled Old Growth.</li>
+</ul>
+<p>The public cannot see:</p>
+<ul>
+<li>The site plan for a specific block such as SJsj5P8.</li>
+<li>Official stream classification and riparian prescriptions for a block.</li>
+<li>Road and culvert maintenance or deactivation records.</li>
+<li>Fuel hazard assessments and slash abatement records for local blocks.</li>
+<li>Sale economics and appraisal assumptions behind a sale.</li>
+<li>The retention rationale for keeping or cutting a given old/high-age stand.</li>
+<li>Sale package assumptions and purchaser/sale result for reviewed old-growth-labelled rows.</li>
+<li>Property-specific inspection and complaint records on private managed forest land.</li>
+<li>Official watershed-scale cumulative-effects accounting.</li>
+</ul>
+<p>(Source: <code>data/public-data-audit/can-public-tell.csv</code> and <code>public-data-scorecard.csv</code>.)</p>
+<h2>Strongest Findings So Far</h2>
+<ol>
+<li>Official data alone shows about 32,800 ha of recorded consolidated-cutblock area across the broad study area (2,312 cutblock polygons). The full footprint may be larger because the layer can miss private-land and older harvest.</li>
+<li>Recorded harvest is recent and ongoing. The 2010s are the largest recorded decade with about 10,905 ha; the 2020s already show about 5,958 ha while the decade is incomplete.</li>
+<li>Old forest and harvest sit close together. In San Juan River alone, screening shows about 5,697.4 ha of TAP old forest and 3,320.0 ha of legal OGMA, beside about 11,421.8 ha of recorded cutblock overlap.</li>
+<li>Road-stream crossing pressure is high. GIS estimates give about 622 road-stream intersections in San Juan River and 459 in Gordon River. These are estimates, not field-confirmed culvert counts.</li>
+<li>The MOF bridges/major-culverts public layer returned 0 features in the study area. That is a public-data visibility gap, not evidence that no culverts exist. It strengthens the question of where the local crossing records are held.</li>
+<li>BCTS old-growth-labelled sales are visible as schedule rows (about 420.8 ha and 317,335 m3 in 9 reviewed Strait of Georgia rows), but the rationale, full-cost accounting, and site-level risk records behind them are not.</li>
+</ol>
+<h2>What This Does Not Prove</h2>
+<ul>
+<li>It does not prove anyone broke the law. No illegality is claimed.</li>
+<li>It does not prove logging caused salmon decline. Escapement is shaped by ocean survival, fishing, climate, hatcheries, survey effort, and other land uses.</li>
+<li>It does not prove logging caused any specific wildfire or made a specific block unsafe.</li>
+<li>It does not prove any specific old-growth polygon was logged.</li>
+<li>The road and stream counts are GIS intersections, not field-confirmed culvert or bridge counts.</li>
+<li>The recorded harvest footprint is a floor, not a ceiling. The real footprint may be larger.</li>
+</ul>
+<p>The honest claim is narrower and still strong: the public can see enough to ask for records, and cannot see enough to judge net public value.</p>
+<h2>What Public Data Shows</h2>
+<p>The current historical-change package found:</p>
+<ul>
+<li>2,312 consolidated cutblock polygons.</li>
+<li>1,074 RESULTS opening records.</li>
+<li>13,636 VRI forest-vegetation polygons.</li>
+<li>No capped tiles in the consolidated cutblock, RESULTS, or VRI pulls after tiled reruns.</li>
+<li>About 32,800 ha of recorded consolidated-cutblock area in the broad Port Renfrew / San Juan / Gordon / Fairy / Walbran / Harris AOI.</li>
+</ul>
+<p>The largest recorded harvest decade in the current pull is the 2010s, with 830 cutblock polygons and about 10,905 ha. The 2020s already show 527 polygons and about 5,958 ha, even though the decade is incomplete.</p>
+<p>This is not all logging. Consolidated Cutblocks can miss private land, older harvest, recent activity, or records held elsewhere. The careful claim is stronger anyway: official data alone shows a major recorded harvest footprint, and the full footprint may be larger.</p>
+<h2>Where The Public Can See Forest-Age Signals</h2>
+<p>VRI screening shows large young/regrowth areas in several working zones:</p>
+<table>
+<thead>
+<tr>
+<th>Working zone</th>
+<th style="text-align: right;">Young/regrowth ha</th>
+<th style="text-align: right;">250+ high-age ha</th>
+<th style="text-align: right;">140+ share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>San Juan River / Pacific Marine Rd</td>
+<td style="text-align: right;">10,475.4</td>
+<td style="text-align: right;">6,339.6</td>
+<td style="text-align: right;">29.2%</td>
+</tr>
+<tr>
+<td>Gordon River</td>
+<td style="text-align: right;">11,847.2</td>
+<td style="text-align: right;">4,801.1</td>
+<td style="text-align: right;">23.1%</td>
+</tr>
+<tr>
+<td>Fairy Creek</td>
+<td style="text-align: right;">5,989.7</td>
+<td style="text-align: right;">3,120.0</td>
+<td style="text-align: right;">20.8%</td>
+</tr>
+<tr>
+<td>Walbran / Central Walbran</td>
+<td style="text-align: right;">16,844.0</td>
+<td style="text-align: right;">5,805.3</td>
+<td style="text-align: right;">21.3%</td>
+</tr>
+<tr>
+<td>Harris / Lens Creek</td>
+<td style="text-align: right;">3,027.2</td>
+<td style="text-align: right;">2,394.4</td>
+<td style="text-align: right;">9.9%</td>
+</tr>
+</tbody>
+</table>
+<p>These are screening classes based on VRI <code>PROJ_AGE_1</code>, not legal old-growth determinations. The next upgrade is to compare VRI against old-growth TAP layers, old-growth deferrals, OGMAs, official watershed boundaries, and tenure layers.</p>
+<h2>Roads, Water, And Fish</h2>
+<p>The current road/water/fish signal is strong enough for targeted records questions, not strong enough for causal claims.</p>
+<table>
+<thead>
+<tr>
+<th>Official watershed</th>
+<th style="text-align: right;">Forest road km</th>
+<th style="text-align: right;">Stream km</th>
+<th style="text-align: right;">Estimated road-stream intersections</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>San Juan River</td>
+<td style="text-align: right;">1,211.3</td>
+<td style="text-align: right;">1,396.1</td>
+<td style="text-align: right;">622</td>
+</tr>
+<tr>
+<td>Gordon River</td>
+<td style="text-align: right;">721.3</td>
+<td style="text-align: right;">735.8</td>
+<td style="text-align: right;">459</td>
+</tr>
+<tr>
+<td>Harris Creek</td>
+<td style="text-align: right;">432.1</td>
+<td style="text-align: right;">365.3</td>
+<td style="text-align: right;">277</td>
+</tr>
+<tr>
+<td>Caycuse River</td>
+<td style="text-align: right;">301.3</td>
+<td style="text-align: right;">257.0</td>
+<td style="text-align: right;">234</td>
+</tr>
+<tr>
+<td>Walbran Creek</td>
+<td style="text-align: right;">224.3</td>
+<td style="text-align: right;">125.2</td>
+<td style="text-align: right;">155</td>
+</tr>
+</tbody>
+</table>
+<p>These counts use the uncapped tiled road and stream layers. They are still GIS intersections, not field-confirmed culvert counts. They justify specific records requests: road crossings, culverts, sediment control, bridge records, maintenance records, deactivation records, and fish-passage planning records.</p>
+<h2>Fire And Fuel</h2>
+<p>Public guidance confirms fuel hazard assessment and abatement are real forestry obligations. Forest Practices Board findings also show this has been a systemic weak point in B.C. forestry practice.</p>
+<p>That does not prove a local block is unsafe. It does mean the public should be able to see block-level fuel hazard assessments, slash-treatment records, abatement records, burn/chip records, and inspection records for harvest near recreation corridors, old forest, water, and communities.</p>
+<p>Right now, those local records are not visible in the public package.</p>
+<h2>BCTS Old-Growth Sales</h2>
+<p>The public BCTS schedule scan found:</p>
+<ul>
+<li>9 reviewed Strait of Georgia rows marked <code>Old Growth</code>.</li>
+<li>About 420.8 ha and 317,335 m3 in those reviewed rows.</li>
+<li>13 automated old-growth text contexts across scanned BCTS business-area schedules, pending manual row review.</li>
+</ul>
+<p>The schedule label is public. The decision rationale is not. The public schedule does not show full-cost accounting, site-level risk records, old-growth retention rationale, fuel treatment records, sale package assumptions, or the public-value test used before offering the timber.</p>
+<h2>Private Managed Forest Gap</h2>
+<p>Managed Forest Council reporting shows private managed forest land is a major timber source, especially on the coast. The report also gives program-level inspection and compliance numbers.</p>
+<p>That does not answer the local question. It does not show Mosaic/TimberWest property-specific inspections, complaints, road records, watershed impacts, or local harvest decisions around Port Renfrew.</p>
+<p>This is a transparency gap, not proof of wrongdoing.</p>
+<h2>The Public-Data Scorecard</h2>
+<p>The audit package now includes:</p>
+<ul>
+<li><code>data/public-data-audit/source-register.csv</code></li>
+<li><code>data/public-data-audit/public-data-scorecard.csv</code></li>
+<li><code>data/public-data-audit/can-public-tell.csv</code></li>
+<li><code>data/public-data-audit/old-growth-overlap-by-watershed.csv</code></li>
+<li><code>data/public-data-audit/watershed-harvest-stand-age-summary.csv</code></li>
+<li><code>data/public-data-audit/road-stream-crossing-density-official-watersheds.csv</code></li>
+<li><code>data/public-data-audit/bcts-sale-record-visibility.csv</code></li>
+<li><code>notes/port-renfrew-public-data-audit-methods.md</code></li>
+<li><code>maps/port-renfrew-public-data-audit-map.html</code></li>
+</ul>
+<p>The scorecard separates what is known from what is missing. This matters because the next argument should not be "trust me, logging is bad." It should be:</p>
+<blockquote>
+<p>The public cannot evaluate net public value unless these records are disclosed before approval or sale.</p>
+</blockquote>
+<h2>Public Layer Completion</h2>
+<p>The next public-data pass downloaded the missing audit layers with tiled queries. No downloaded layer in this pass was capped:</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th style="text-align: right;">Features</th>
+<th>Cap status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TAP ancient forest</td>
+<td style="text-align: right;">203</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>TAP priority deferral</td>
+<td style="text-align: right;">730</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>TAP old forests</td>
+<td style="text-align: right;">2,356</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>TAP big trees</td>
+<td style="text-align: right;">1,078</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>Legal OGMAs</td>
+<td style="text-align: right;">183</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>Freshwater Atlas named watersheds</td>
+<td style="text-align: right;">99</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>Freshwater Atlas streams</td>
+<td style="text-align: right;">8,112</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>Forest road segment tenure</td>
+<td style="text-align: right;">1,793</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>Recreation sites</td>
+<td style="text-align: right;">5</td>
+<td>uncapped</td>
+</tr>
+<tr>
+<td>MOF bridges and major culverts public layer</td>
+<td style="text-align: right;">0</td>
+<td>uncapped</td>
+</tr>
+</tbody>
+</table>
+<p>The zero bridge/major-culvert result should not be read as "no culverts exist." It means that public layer did not return records in this AOI. That strengthens the record-request question: where are the local culvert, bridge, inspection, and maintenance records held?</p>
+<h2>Official Watershed Results</h2>
+<p>The audit now uses Freshwater Atlas named watershed polygons instead of only the earlier working-zone boxes. The selected watersheds are Caycuse River, Fairy Creek, Gordon River, Harris Creek, Lens Creek, Renfrew Creek, San Juan River, Sombrio River, and Walbran Creek.</p>
+<p>Selected old-growth/protection overlaps:</p>
+<table>
+<thead>
+<tr>
+<th>Watershed</th>
+<th style="text-align: right;">TAP old forests ha</th>
+<th style="text-align: right;">TAP big trees ha</th>
+<th style="text-align: right;">TAP priority deferral ha</th>
+<th style="text-align: right;">Legal OGMA ha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>San Juan River</td>
+<td style="text-align: right;">5,697.4</td>
+<td style="text-align: right;">4,824.4</td>
+<td style="text-align: right;">2,296.5</td>
+<td style="text-align: right;">3,320.0</td>
+</tr>
+<tr>
+<td>Gordon River</td>
+<td style="text-align: right;">3,512.5</td>
+<td style="text-align: right;">2,978.5</td>
+<td style="text-align: right;">1,515.2</td>
+<td style="text-align: right;">2,500.8</td>
+</tr>
+<tr>
+<td>Walbran Creek</td>
+<td style="text-align: right;">1,903.8</td>
+<td style="text-align: right;">5,230.7</td>
+<td style="text-align: right;">1,600.0</td>
+<td style="text-align: right;">721.9</td>
+</tr>
+<tr>
+<td>Fairy Creek</td>
+<td style="text-align: right;">565.7</td>
+<td style="text-align: right;">564.2</td>
+<td style="text-align: right;">414.5</td>
+<td style="text-align: right;">661.2</td>
+</tr>
+<tr>
+<td>Renfrew Creek</td>
+<td style="text-align: right;">1,096.3</td>
+<td style="text-align: right;">1,071.9</td>
+<td style="text-align: right;">767.7</td>
+<td style="text-align: right;">908.5</td>
+</tr>
+</tbody>
+</table>
+<p>Selected harvest and stand-age signals:</p>
+<table>
+<thead>
+<tr>
+<th>Watershed</th>
+<th style="text-align: right;">Recorded cutblock overlap ha</th>
+<th style="text-align: right;">Cutblock share</th>
+<th style="text-align: right;">VRI young/regrowth ha</th>
+<th style="text-align: right;">VRI 250+ high-age ha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>San Juan River</td>
+<td style="text-align: right;">11,421.8</td>
+<td style="text-align: right;">17.1%</td>
+<td style="text-align: right;">13,260.6</td>
+<td style="text-align: right;">6,136.9</td>
+</tr>
+<tr>
+<td>Gordon River</td>
+<td style="text-align: right;">6,746.5</td>
+<td style="text-align: right;">21.9%</td>
+<td style="text-align: right;">12,416.8</td>
+<td style="text-align: right;">3,672.6</td>
+</tr>
+<tr>
+<td>Harris Creek</td>
+<td style="text-align: right;">3,973.3</td>
+<td style="text-align: right;">27.4%</td>
+<td style="text-align: right;">5,042.8</td>
+<td style="text-align: right;">2,000.2</td>
+</tr>
+<tr>
+<td>Renfrew Creek</td>
+<td style="text-align: right;">1,228.7</td>
+<td style="text-align: right;">24.3%</td>
+<td style="text-align: right;">2,154.2</td>
+<td style="text-align: right;">1,208.0</td>
+</tr>
+<tr>
+<td>Walbran Creek</td>
+<td style="text-align: right;">1,572.5</td>
+<td style="text-align: right;">12.2%</td>
+<td style="text-align: right;">2,328.8</td>
+<td style="text-align: right;">1,860.1</td>
+</tr>
+</tbody>
+</table>
+<p>Selected road/water signals:</p>
+<table>
+<thead>
+<tr>
+<th>Watershed</th>
+<th style="text-align: right;">Forest road km</th>
+<th style="text-align: right;">Stream km</th>
+<th style="text-align: right;">Estimated road-stream intersections</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>San Juan River</td>
+<td style="text-align: right;">1,211.3</td>
+<td style="text-align: right;">1,396.1</td>
+<td style="text-align: right;">622</td>
+</tr>
+<tr>
+<td>Gordon River</td>
+<td style="text-align: right;">721.3</td>
+<td style="text-align: right;">735.8</td>
+<td style="text-align: right;">459</td>
+</tr>
+<tr>
+<td>Harris Creek</td>
+<td style="text-align: right;">432.1</td>
+<td style="text-align: right;">365.3</td>
+<td style="text-align: right;">277</td>
+</tr>
+<tr>
+<td>Caycuse River</td>
+<td style="text-align: right;">301.3</td>
+<td style="text-align: right;">257.0</td>
+<td style="text-align: right;">234</td>
+</tr>
+<tr>
+<td>Walbran Creek</td>
+<td style="text-align: right;">224.3</td>
+<td style="text-align: right;">125.2</td>
+<td style="text-align: right;">155</td>
+</tr>
+</tbody>
+</table>
+<p>These road-stream counts are GIS estimates, not field-confirmed culvert counts. They are strong enough to justify specific records requests for road crossings, sediment control, deactivation, inspection, and fish-passage planning.</p>
+<h2>Best Next Actions</h2>
+<p>The audit layers are now built. The next steps are about turning the gaps into disclosure, not gathering more screening data.</p>
+<ol>
+<li>File narrow FOI requests from <code>can-public-tell.csv</code>. Each "missing record" row with <code>foi_target = Yes</code> is already a targeted request. Start with the SJsj5P8 site plan, riparian prescriptions, road/culvert records, and fuel hazard records (rows CPT-001 through CPT-006).</li>
+<li>Review BCTS sale results and BC Bid package availability for the reviewed old-growth-labelled TSL rows. The schedule label is public; the rationale and ledger are not. This is the CPT-008 gap.</li>
+<li>Publish the map, scorecard, and one-page explainer together so a journalist, MLA staffer, or resident can see the same point in one read: public data shows enough to ask, not enough to judge.</li>
+<li>Do a visual QA pass of the map around Port Renfrew, San Juan River Rec Site, Pacific Marine Road, Fairy Creek, Gordon River, and Walbran before wider sharing.</li>
+<li>Treat each FOI response, fee estimate, delay, redaction, no-records answer, or disclosure as the next public accountability artifact. A refusal or a "no records" answer is itself a finding.</li>
+</ol>
+<h2>Core Ask</h2>
+<p>Before public old-growth or high-risk harvest proceeds near water, fish, recreation, and high-age forest, the Province should disclose full-cost accounting and site-level risk records.</p>
+<p>That means timber revenue should be shown beside the costs and liabilities the public may inherit: roads, culverts, sediment, fish habitat, fuel treatment, wildfire exposure, recreation displacement, carbon, restoration, monitoring, and enforcement.</p>
+</div></body></html>
