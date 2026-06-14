@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>/* Reset zoom on mobile navigation */!function(){var v=document.querySelector('meta[name=viewport]');if(v){v.content='width=device-width,initial-scale=1,maximum-scale=1';setTimeout(function(){v.content='width=device-width,initial-scale=1,maximum-scale=5'},100)}}()</script>
-<title>QDD Gearbox Actuator — Aaron Evans | Mechanical Engineering Project</title>
+<title>Planetary Gearbox for a Robotic Actuator — Aaron Evans</title>
 <meta name="description" content="I designed a 5:1 planetary gearbox from scratch for a quasi-direct-drive actuator. 3D-printed on a Bambu P1S, currently in testing. By Aaron Evans, UVic mech eng.">
 <link rel="canonical" href="https://aaronevans.ca/qdd-gearbox/">
-<meta property="og:title" content="QDD Gearbox Actuator — Aaron Evans">
-<meta property="og:description" content="5:1 planetary gearbox I designed from scratch for a QDD actuator. 3D-printed, backdrivable, 0 degrees backlash so far.">
+<meta property="og:title" content="Planetary Gearbox for a Robotic Actuator — Aaron Evans">
+<meta property="og:description" content="5:1 planetary gearbox I designed from scratch for a quasi-direct-drive actuator. 3D-printed, backdrivable, 0 degrees backlash so far.">
 <meta property="og:image" content="https://aaronevans.ca/qdd-gearbox/images/rev01-with-motor-housing.jpg">
 <meta property="og:url" content="https://aaronevans.ca/qdd-gearbox/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Aaron Evans">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="QDD Gearbox Actuator — Aaron Evans">
-<meta name="twitter:description" content="5:1 planetary gearbox I designed from scratch for a QDD actuator. 3D-printed, backdrivable, 0 degrees backlash so far.">
+<meta name="twitter:title" content="Planetary Gearbox for a Robotic Actuator — Aaron Evans">
+<meta name="twitter:description" content="5:1 planetary gearbox I designed from scratch for a quasi-direct-drive actuator. 3D-printed, backdrivable, 0 degrees backlash so far.">
 <meta name="twitter:image" content="https://aaronevans.ca/qdd-gearbox/images/rev01-with-motor-housing.jpg">
 <link rel="icon" type="image/png" href="../assets/favicon-32.png">
 <link rel="stylesheet" href="../assets/styles.css">
@@ -23,7 +23,7 @@
 {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
-  "name": "QDD Gearbox Actuator",
+  "name": "Planetary Gearbox for a Robotic Actuator",
   "author": {
     "@type": "Person",
     "name": "Aaron Evans",
@@ -431,8 +431,8 @@
     <!-- ===== SIDEBAR ===== -->
 <aside class="sidebar">
   <div class="sidebar-phase"><span class="pulse-dot"></span> REV 01 — RUNNING TESTS</div>
-  <h1 class="sidebar-title">QDD Gearbox Actuator</h1>
-  <div class="sidebar-subtitle">3D-printed planetary gearbox for backdrivable robotic actuators</div>
+  <h1 class="sidebar-title">Planetary Gearbox</h1>
+  <div class="sidebar-subtitle">3D-printed and backdrivable, built for a robotic actuator</div>
 
       <ul class="sidebar-nav">
         <li><a href="#overview"><span class="nav-num">01</span> Overview</a></li>
@@ -470,13 +470,13 @@
           </div>
         </div>
 
-        <a class="img-link" href="images/rev01-with-motor-housing.jpg"><img class="content-img" src="images/rev01-with-motor-housing.jpg" alt="QDD Gearbox Rev 01 mated to integrated motor housing" style="object-fit: cover; max-height: 500px;"></a>
+        <a class="img-link" href="images/rev01-with-motor-housing.jpg"><img class="content-img" src="images/rev01-with-motor-housing.jpg" alt="Rev 01 planetary gearbox mated to integrated motor housing" style="object-fit: cover; max-height: 500px;"></a>
         <div class="img-caption">Rev 01 gearbox mated to the integrated motor housing</div>
 
         <div class="content-body">
-          <p>This started as a hackathon day in January 2026 with <a href="https://www.russlib.ca/" target="_blank" rel="noopener noreferrer">Russell Bilinski</a>. We'd been looking at <a href="https://cadenkraft.com/ironless-cycloidal-planetary-actuator/" target="_blank" rel="noopener noreferrer">Caden Kraft's actuator work</a> and wanted to learn more about how QDD gearboxes actually work by building one. Russell had a D6374 motor, an ODrive controller, bearings, and an encoder, so we started from there.</p>
+          <p>This started as a hackathon day in January 2026 with <a href="https://www.russlib.ca/" target="_blank" rel="noopener noreferrer">Russell Bilinski</a>. We'd been looking at <a href="https://cadenkraft.com/ironless-cycloidal-planetary-actuator/" target="_blank" rel="noopener noreferrer">Caden Kraft's actuator work</a> and wanted to build a backdrivable actuator ourselves, mostly to learn how the gearbox side works. Russell had a D6374 motor, an ODrive controller, bearings, and an encoder, so we started from there.</p>
 
-          <p>A QDD uses a low-ratio gearbox to get torque multiplication without the reflected inertia penalty of a high-ratio reduction. Keeping the ratio low helps preserve backdrivability and makes impedance control more practical, which is why low backlash and low friction mattered throughout this design. For this project, we went with a 5:1 planetary layout and a 3D-printed prototype on a Bambu P1S.</p>
+          <p>What I designed is the gearbox, a 5:1 planetary reduction between the motor and the output shaft, 3D-printed on a Bambu P1S. The design targets are the interesting part: low ratio, low backlash, low friction, and a backdrivable output. A low ratio multiplies torque without the reflected inertia of a high-ratio gearbox, so the output stays backdrivable and force and impedance control stay practical. Actuators built around a low-ratio reduction like this are called quasi-direct-drive.</p>
         </div>
 
         <div class="callout">
@@ -521,7 +521,7 @@
         </div>
 
         <div class="content-body">
-          <p>We scored the major design choices with a weighted matrix on the original hackathon day before any CAD started. Gear type, ratio, and bearing type were all decided this way.</p>
+          <p>We scored the major design choices with a weighted matrix on the original hackathon day. Gear type, ratio, and bearing type were all decided this way.</p>
         </div>
 
         <h3 class="content-h3">Gear Type</h3>
@@ -552,7 +552,7 @@
 
         <h3 class="content-h3">Ratio</h3>
         <div class="content-body">
-          <p>5:1 scored highest at 4.83/5. Lower ratios are more backdrivable but give up torque multiplication; higher ratios add friction and reduce transparency. 5:1 was the sweet spot.</p>
+          <p>5:1 scored highest at 4.83/5, just ahead of 4:1. Lower ratios are more backdrivable but give up torque; higher ratios add friction and reduce transparency. 5:1 was the best compromise for this build.</p>
         </div>
         <div class="bar-chart content-bar-chart">
           <div class="bar-row"><span class="bar-label">5:1</span><div class="bar-track"><div class="bar-fill winner-bar" data-width="97"><span class="bar-val">4.83</span></div></div></div>
@@ -951,7 +951,7 @@
 
         <h3 class="content-h3">Fixture Evolution</h3>
 
-        <a class="img-link" href="images/early-test-setup-2x4s.jpg"><img class="content-img" loading="lazy" src="images/early-test-setup-2x4s.jpg" alt="Early QDD test setup on 2x4s and clamps"></a>
+        <a class="img-link" href="images/early-test-setup-2x4s.jpg"><img class="content-img" loading="lazy" src="images/early-test-setup-2x4s.jpg" alt="Early dyno test setup on 2x4s and clamps"></a>
         <div class="img-caption">Early dyno setup with the gearbox clamped directly and the structure built up from 2x4s</div>
 
         <div class="content-body">
