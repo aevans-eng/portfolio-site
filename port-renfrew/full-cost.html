@@ -9,7 +9,7 @@
 :root{--bg:#0c0f0d;--ink:#e9e3d5;--muted:#9aa79a;--ember:#e06a26;--ember2:#f0a874;--sage:#7fa168;--line:rgba(233,227,213,.14);
 --serif:"Newsreader",Georgia,serif;--display:"Fraunces",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
 .wrap{max-width:760px;margin:0 auto;padding:44px 22px 90px}
 .topnav{font-family:var(--mono);font-size:12px;letter-spacing:.04em;margin-bottom:34px;color:var(--muted)}
 .topnav a{color:var(--ember);text-decoration:none}
@@ -18,8 +18,10 @@ h1{font-size:clamp(30px,5vw,46px);font-weight:900;margin:0 0 22px}
 h2{font-size:clamp(21px,3.4vw,29px);font-weight:600;margin:42px 0 12px;color:#f3ecdd}
 h3{font-size:19px;margin:26px 0 8px}
 p{margin:0 0 16px}
-a{color:var(--ember2)}
-code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px}
+a{color:var(--ember2);overflow-wrap:anywhere}
+code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:18px 0;overflow-x:auto}
+pre code{background:none;padding:0;font-size:13px;white-space:pre}
 table{border-collapse:collapse;width:100%;font-size:14.5px;margin:18px 0;display:block;overflow-x:auto}
 th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
 th{background:rgba(255,255,255,.04);font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
@@ -29,6 +31,7 @@ ul,ol{padding-left:22px;margin:0 0 16px}
 li{margin:5px 0}
 strong{color:#f5efe2}
 em{color:#e9e3d5}
+@media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}}
 </style></head><body><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
 <h1>The Full Cost: What Old-Growth Logging Near Port Renfrew Is Really Worth</h1>
@@ -45,8 +48,9 @@ horizon at a 3 percent discount rate. Its result:</p>
 as usual. That is carbon worth about +$46M and tourism and recreation worth about +$11M,
 against a timber-supply loss of about -$16M. [Fact: ESSA Port Renfrew valuation, 2021.]</p>
 </blockquote>
-<p>In plain terms, a credible study already found that keeping this old growth standing is
-worth more to the public than logging it, once carbon and tourism are counted. The case
+<p>In plain terms, a credible study (ESSA 2021) already found that keeping the old growth in
+its Port Renfrew study area standing is worth more to the public than logging it, once
+carbon and tourism are counted. The case
 for full-cost accounting is not hypothetical here. It has been measured.</p>
 <h2>How little the public is paid</h2>
 <p>Public stumpage, the price the public charges for its timber, averaged about CA$6.55 per
@@ -67,6 +71,15 @@ price (CA$80 per tonne CO2 in 2024, rising to CA$170 by 2030), as a screening fi
 <p>These apply a policy carbon price to screening tonnage. They show order of magnitude, not
 a market transaction. They are large because the carbon stock in coastal old growth is
 large.</p>
+<h2>What the public got versus what it gave up</h2>
+<p>Set the two side by side for the old growth already cut since 2010. Coastal old growth
+carries roughly 1,000 to 1,800 cubic metres of timber per hectare, so the 518 hectares cut
+held very roughly 0.5 to 0.9 million cubic metres. At about $6.55 per cubic metre average
+public stumpage, the public's direct cash take was on the order of <strong>$3 to $6 million</strong>.
+The carbon released from that same cutting is valued at roughly <strong>$30 to $274 million</strong>.
+Even at the most conservative ends, the carbon cost is several times the cash the public
+collected, before counting water, fish, roads, recreation, or wildfire. [Screening
+estimate; ESSA stumpage, published coastal volume ranges, our carbon screening.]</p>
 <h2>The categories still left out</h2>
 <p>ESSA itself was clear about what it did not count. Each of these is a cost of logging, so
 counting it would widen the gap against old-growth harvest, not narrow it.</p>
@@ -112,7 +125,7 @@ counting it would widen the gap against old-growth harvest, not narrow it.</p>
 <tr>
 <td>Wildfire and fuel/slash management</td>
 <td>Not counted</td>
-<td>Real obligation, not in the ledger</td>
+<td>Real obligation (B.C. spent ~$1.1B on fire in 2023), not in the ledger</td>
 </tr>
 <tr>
 <td>Monitoring, enforcement, administration</td>
@@ -147,10 +160,24 @@ better public deal. The categories still missing would only strengthen that.</p>
 </ul>
 <h2>Sources</h2>
 <ul>
+<li>ESSA 2021 Port Renfrew old-growth valuation:
+  <a href="https://www.essa.com/what-is-the-economic-value-of-old-growth-forests-if-they-are-kept-standing/">https://www.essa.com/what-is-the-economic-value-of-old-growth-forests-if-they-are-kept-standing/</a>
+  (local: <code>data/essa-economics-summary.json</code>).</li>
+<li>Federal carbon price ($80/t in 2024 rising to $170/t by 2030):
+  <a href="https://www.canada.ca/en/environment-climate-change/services/climate-change/pricing-pollution-how-it-will-work.html">https://www.canada.ca/en/environment-climate-change/services/climate-change/pricing-pollution-how-it-will-work.html</a></li>
+<li>Coastal old-growth volume (1,000-1,800 m3/ha) and carbon density (500-1,300 tC/ha): see
+  <code>forest-succession-and-recovery.md</code> Sources and <code>data/source-register-analysis.csv</code>.</li>
+<li>BC wildfire suppression cost (~$1.1B in 2023):
+  <a href="https://www.cbc.ca/news/canada/british-columbia/bc-wildfires-aug-13-2024-1.7293428">https://www.cbc.ca/news/canada/british-columbia/bc-wildfires-aug-13-2024-1.7293428</a></li>
+<li>Every figure and its wording: <code>notes/canonical-figures.md</code>. Carbon and net-public-value
+  tables: <code>data/succession/carbon-screening-estimate.csv</code>, <code>data/full-cost/net-public-value.csv</code>.</li>
+</ul>
+<h2>Sources</h2>
+<ul>
 <li>ESSA Technologies, Economic Valuation of Old Growth Forests on Vancouver Island,
-  Port Renfrew Pilot (2021): https://www.essa.com/what-is-the-economic-value-of-old-growth-forests-if-they-are-kept-standing/</li>
+  Port Renfrew Pilot (2021): <a href="https://www.essa.com/what-is-the-economic-value-of-old-growth-forests-if-they-are-kept-standing/">https://www.essa.com/what-is-the-economic-value-of-old-growth-forests-if-they-are-kept-standing/</a></li>
 <li>Government of Canada federal carbon pollution pricing:
-  https://www.canada.ca/en/environment-climate-change/services/climate-change/pricing-pollution-how-it-will-work.html</li>
+  <a href="https://www.canada.ca/en/environment-climate-change/services/climate-change/pricing-pollution-how-it-will-work.html">https://www.canada.ca/en/environment-climate-change/services/climate-change/pricing-pollution-how-it-will-work.html</a></li>
 <li>Carbon tonnage: <code>data/succession/carbon-screening-estimate.csv</code> and
   <code>forest-succession-and-recovery.md</code>.</li>
 <li>Model table: <code>data/full-cost/net-public-value.csv</code>. Policy ask:

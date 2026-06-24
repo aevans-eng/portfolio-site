@@ -9,7 +9,7 @@
 :root{--bg:#0c0f0d;--ink:#e9e3d5;--muted:#9aa79a;--ember:#e06a26;--ember2:#f0a874;--sage:#7fa168;--line:rgba(233,227,213,.14);
 --serif:"Newsreader",Georgia,serif;--display:"Fraunces",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
 .wrap{max-width:760px;margin:0 auto;padding:44px 22px 90px}
 .topnav{font-family:var(--mono);font-size:12px;letter-spacing:.04em;margin-bottom:34px;color:var(--muted)}
 .topnav a{color:var(--ember);text-decoration:none}
@@ -18,8 +18,10 @@ h1{font-size:clamp(30px,5vw,46px);font-weight:900;margin:0 0 22px}
 h2{font-size:clamp(21px,3.4vw,29px);font-weight:600;margin:42px 0 12px;color:#f3ecdd}
 h3{font-size:19px;margin:26px 0 8px}
 p{margin:0 0 16px}
-a{color:var(--ember2)}
-code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px}
+a{color:var(--ember2);overflow-wrap:anywhere}
+code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:18px 0;overflow-x:auto}
+pre code{background:none;padding:0;font-size:13px;white-space:pre}
 table{border-collapse:collapse;width:100%;font-size:14.5px;margin:18px 0;display:block;overflow-x:auto}
 th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
 th{background:rgba(255,255,255,.04);font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
@@ -29,6 +31,7 @@ ul,ol{padding-left:22px;margin:0 0 16px}
 li{margin:5px 0}
 strong{color:#f5efe2}
 em{color:#e9e3d5}
+@media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}}
 </style></head><body><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
 <h1>Replanted Is Not Restored: Forest Succession Around Port Renfrew</h1>
@@ -80,10 +83,13 @@ single-layered, and closed-canopy until it is thinned or cut.</p>
 <ul>
 <li><strong>Wildlife habitat.</strong> The marbled murrelet, a seabird listed as Threatened under the
   federal Species at Risk Act, nests inland on the large mossy branches of old
-  coniferous trees and almost nowhere else. British Columbia has lost an estimated 33 to
-  49 percent of its suitable murrelet nesting habitat to industrial logging in roughly
-  the past half century. [Established science: BC Government, Marbled Murrelet; COSEWIC
-  status report.] Young plantations do not have the large mossy branches murrelets need.</li>
+  coniferous trees and almost nowhere else. COSEWIC and federal recovery planning estimate
+  the species has lost more than 20 percent of its nesting habitat over three generations.
+  Separately, an estimated 35 to 53 percent of British Columbia's coastal old-growth
+  forest, much of it murrelet nesting habitat, had been lost to logging and development by
+  the late 1990s. [Established science: BC Government, Marbled Murrelet; COSEWIC status
+  report; federal Marbled Murrelet recovery strategy.] Young plantations do not have the
+  large mossy branches murrelets need.</li>
 <li><strong>Lumber quality.</strong> Slow-grown old-growth wood is tight-grained and largely clear of
   knots, which is why it is sought for specialty products. Faster-grown plantation wood
   harvested young contains more juvenile wood and grows under conditions that change the
@@ -96,11 +102,22 @@ single-layered, and closed-canopy until it is thinned or cut.</p>
   riparian areas science; see <code>how-forestry-affects-fish-habitat.md</code>.] Young replanted
   stands take decades to provide them again.</li>
 <li><strong>Fire behaviour.</strong> Young dense stands and post-harvest slash change fuel structure
-  and exposure. The Forest Practices Board's 2025 investigation found forestry in
-  wildland-urban interface areas is not reaching its potential to reduce wildfire risk.
-  [Established science: FPB, Help or Hinder; see
-  <code>slash-second-growth-wildfire-risk-explainer.md</code>.] Whether a given local stand is more
-  or less flammable depends on many factors and is a local-data gap.</li>
+  and exposure. In several well-studied forest systems, young plantations and clearcut
+  edges have burned at higher severity than older forest: an Oregon State analysis of the
+  2013 Douglas Complex Fire found industrial plantations burned more severely than older
+  public forest, and other peer-reviewed work links homogeneous young stands and logging
+  slash to elevated fire severity for a decade or more after harvest. [Established science:
+  Zald and Dunn 2018, Oregon State; see <code>slash-second-growth-wildfire-risk-explainer.md</code>.]
+  The Forest Practices Board's 2025 investigation found forestry in wildland-urban
+  interface areas is not reaching its potential to reduce wildfire risk. [FPB, Help or
+  Hinder.] These findings come mostly from drier systems; the Port Renfrew coast is wet
+  temperate rainforest that historically burned rarely, but climate change is extending
+  fire weather to the coast, and even Mosaic, the largest private Island manager, called
+  the Island's 2026 fire season elevated-risk. Whether a given local stand is more or less
+  flammable depends on many factors and is a local-data gap. The point is not that any
+  block will burn; it is that converting old forest to short-rotation plantations creates
+  decades of altered fuel, and the public pays to suppress fire while these records stay
+  out of view.</li>
 </ul>
 <h2>What the local data shows</h2>
 <p>These come from official records already downloaded for the study area (San Juan,
@@ -116,9 +133,11 @@ replaced with even-aged plantations.</p>
 <p><strong>Almost nothing logged has had time to recover.</strong> Across the recorded harvested
 footprint of about 32,764 hectares, 99.5 percent is regrowth less than 60 years old.
 Coastal old growth is defined at about 250 years. None of the logged area is close. A
-stand clearcut today would not be old forest again until about the year 2275, roughly
-eight human generations from now. No one alive today, or their grandchildren, will see it
-return.</p>
+chronosequence study in B.C.'s Coastal Western Hemlock zone found that even at 80 to 100
+years, second growth is only about 41 to 55 percent structurally similar to old growth.
+[Established science: chronosequence study, see Sources.] A stand clearcut today would not
+be old forest again until about the year 2275, roughly eight human generations from now. No
+one alive today, or their grandchildren, will see it return.</p>
 <p><strong>Old growth is still being cut while younger forest is available.</strong> Recorded harvest
 from 2010 onward overlaps about 518 hectares of mapped old growth (TAP old-forest,
 ancient-forest, and priority-deferral layers combined; 887 hectares across all recorded
@@ -145,9 +164,10 @@ wildlife that depend on it.</p>
 <h2>Carbon at stake (screening estimate)</h2>
 <p>Coastal old growth holds more carbon per hectare than almost any other forest type.
 Published ranges for productive coastal sites run from roughly 500 to 1,300 tonnes of
-carbon per hectare, and logging releases an estimated 40 to 65 percent of ecosystem
-carbon even after counting wood products. [Established science, published ranges; precise
-local values are a deep-research item, see
+carbon per hectare, and logging old growth releases an estimated 40 to 65 percent of
+ecosystem carbon even after counting wood products. [Established science: Harmon, Ferrell
+and Franklin 1990, Science 247:699-702; coastal carbon-density ranges per the Sources
+below. Precise per-stand local values are a deep-research item, see
 <code>research/deep-research/07-carbon-oldgrowth-vs-secondgrowth.md</code>.]</p>
 <p>Applying those ranges to the local hectares is a screening estimate, not a measurement:</p>
 <ul>
@@ -158,6 +178,16 @@ local values are a deep-research item, see
 </ul>
 <p>These are wide screening ranges meant to show the order of magnitude of the climate
 stake, not a precise figure. See <code>data/succession/carbon-screening-estimate.csv</code>.</p>
+<p>What the public received for that carbon is small by comparison. Coastal old growth
+carries very high timber volume, on the order of 1,000 to 1,800 cubic metres per hectare
+(second growth is roughly a third of that). [Established science: industry and CBC/AFA
+figures.] The roughly 518 hectares of old growth cut since 2010 therefore held very
+roughly 0.5 to 0.9 million cubic metres of timber. At the area's average public stumpage
+of about $6.55 per cubic metre (ESSA 2021), the public's direct cash take from that timber
+was on the order of $3 to $6 million. The carbon released from the same cutting is valued
+at roughly $30 to $274 million at the federal carbon price (screening). Even at the most
+conservative ends, the carbon cost is several times the public's cash return. [Screening
+estimate; combines our carbon screening with ESSA stumpage and published volume ranges.]</p>
 <h2>What this does not prove</h2>
 <ul>
 <li>It does not prove any specific harvest was illegal or that any rule was broken.</li>
@@ -209,14 +239,48 @@ quality.</p>
 <h2>Sources</h2>
 <ul>
 <li>BC Government, Old growth definitions and values:
-  https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests/old-growth-values</li>
+  <a href="https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests/old-growth-values">https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/old-growth-forests/old-growth-values</a></li>
 <li>BC Government, Marbled Murrelet:
-  https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/species-ecosystems-at-risk/implementation/conservation-projects-partnerships/marbled-murrelet</li>
+  <a href="https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/species-ecosystems-at-risk/implementation/conservation-projects-partnerships/marbled-murrelet">https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/species-ecosystems-at-risk/implementation/conservation-projects-partnerships/marbled-murrelet</a></li>
 <li>COSEWIC status report, Marbled Murrelet:
-  https://www.sararegistry.gc.ca/virtual_sara/files/cosewic/sr_guillemot_marbre_marbled_murrelet_1012_e.pdf</li>
+  <a href="https://www.sararegistry.gc.ca/virtual_sara/files/cosewic/sr_guillemot_marbre_marbled_murrelet_1012_e.pdf">https://www.sararegistry.gc.ca/virtual_sara/files/cosewic/sr_guillemot_marbre_marbled_murrelet_1012_e.pdf</a></li>
 <li>Forest Practices Board, Help or Hinder? Aligning forestry with wildfire risk
-  reduction: https://www.bcfpb.ca/release-publications/releases/help-or-hinder/</li>
+  reduction: <a href="https://www.bcfpb.ca/release-publications/releases/help-or-hinder/">https://www.bcfpb.ca/release-publications/releases/help-or-hinder/</a></li>
+<li>Federal Marbled Murrelet recovery strategy:
+  <a href="https://www.canada.ca/en/environment-climate-change/services/species-risk-public-registry/recovery-strategies/marbled-murrelet-2014-proposed.html">https://www.canada.ca/en/environment-climate-change/services/species-risk-public-registry/recovery-strategies/marbled-murrelet-2014-proposed.html</a></li>
+<li>Coastal old-growth carbon density (productive coastal sites store on the order of
+  500-1,300 tonnes C/ha; among the most carbon-dense forests outside the tropics):
+  <a href="https://phys.org/news/2021-06-temperate-old-growth-rainforest-key-sustainable.html">https://phys.org/news/2021-06-temperate-old-growth-rainforest-key-sustainable.html</a> ;
+  BC Coastal Old-Growth Dynamics project:
+  <a href="https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/ecosystems/ecosystem-and-landscape-ecology-research-and-classification/coastal-old-growth-dynamics-ogd-project">https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/ecosystems/ecosystem-and-landscape-ecology-research-and-classification/coastal-old-growth-dynamics-ogd-project</a></li>
+<li>Carbon released when old growth is logged (about 40 to 65 percent of ecosystem carbon,
+  even after wood products): Harmon, Ferrell and Franklin 1990, Science 247(4943):699-702,
+  <a href="https://doi.org/10.1126/science.247.4943.699">https://doi.org/10.1126/science.247.4943.699</a></li>
+<li>Coastal old-growth timber volume (about 1,000-1,800 m3/ha; second growth about a third):
+  <a href="https://www.cbc.ca/news/canada/british-columbia/old-growth-trees-british-columbia-1.6045289">https://www.cbc.ca/news/canada/british-columbia/old-growth-trees-british-columbia-1.6045289</a> ;
+  Ancient Forest Alliance FAQ (advocacy):
+  <a href="https://ancientforestalliance.org/ancient-forests/common-questions-answers-bc-old-growth-forests/">https://ancientforestalliance.org/ancient-forests/common-questions-answers-bc-old-growth-forests/</a></li>
+<li>Plantation and slash fire severity: Zald, H.S.J. &amp; Dunn, C.J. 2018, Ecological
+  Applications 28(4): 1068-1080: <a href="https://doi.org/10.1002/eap.1710">https://doi.org/10.1002/eap.1710</a></li>
+<li>BC wildfire suppression cost (about $1.1B in 2023):
+  <a href="https://www.cbc.ca/news/canada/british-columbia/bc-wildfires-aug-13-2024-1.7293428">https://www.cbc.ca/news/canada/british-columbia/bc-wildfires-aug-13-2024-1.7293428</a></li>
+<li>ESSA 2021 Port Renfrew old-growth valuation:
+  <a href="https://www.essa.com/what-is-the-economic-value-of-old-growth-forests-if-they-are-kept-standing/">https://www.essa.com/what-is-the-economic-value-of-old-growth-forests-if-they-are-kept-standing/</a></li>
 <li>BC riparian areas science (see <code>data/source-inventory.md</code>).</li>
+<li>Full source register for these claims: <code>data/source-register-analysis.csv</code>. Canonical
+  figures: <code>notes/canonical-figures.md</code>.</li>
+<li>Old-growth structural recovery time (second growth at 80-100 yr is only 41-55% similar to
+  old growth): chronosequence study, Coastal Western Hemlock zone,
+  <a href="https://cdnsciencepub.com/doi/10.1139/x11-079">https://cdnsciencepub.com/doi/10.1139/x11-079</a></li>
+<li>Riparian old growth and salmon habitat (large wood, shade): WDFW riparian science; Helfield
+  and Naiman 2001, Ecology 82(9):2403-2409.</li>
+<li>Old-forest-dependent species (northern goshawk, marbled murrelet, and others): BC
+  Government Northern Goshawk:
+  <a href="https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/species-ecosystems-at-risk/implementation/conservation-projects-partnerships/northern-goshawk">https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/species-ecosystems-at-risk/implementation/conservation-projects-partnerships/northern-goshawk</a></li>
+<li>Timber-supply falldown (second growth yields less; southern Vancouver Island AAC cut ~5.5%):
+  <a href="https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/timber-supply-review-and-allowable-annual-cut">https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/timber-supply-review-and-allowable-annual-cut</a></li>
+<li>Deeper research syntheses with citations: <code>research/deep-research/</code> (notes 01, 02, 03, 05,
+  06, 07, 08).</li>
 <li>Local analysis: <code>scripts/build_succession_analysis.py</code>, <code>data/succession/</code>.</li>
 </ul>
 </div></body></html>

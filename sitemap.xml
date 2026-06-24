@@ -27,7 +27,27 @@
   </url>
   <url>
     <loc>https://aaronevans.ca/port-renfrew/</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aaronevans.ca/port-renfrew/story.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aaronevans.ca/port-renfrew/report.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aaronevans.ca/port-renfrew/one-pager.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aaronevans.ca/port-renfrew/sources.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>

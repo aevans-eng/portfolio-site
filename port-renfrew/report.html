@@ -9,7 +9,7 @@
 :root{--bg:#0c0f0d;--ink:#e9e3d5;--muted:#9aa79a;--ember:#e06a26;--ember2:#f0a874;--sage:#7fa168;--line:rgba(233,227,213,.14);
 --serif:"Newsreader",Georgia,serif;--display:"Fraunces",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
 .wrap{max-width:760px;margin:0 auto;padding:44px 22px 90px}
 .topnav{font-family:var(--mono);font-size:12px;letter-spacing:.04em;margin-bottom:34px;color:var(--muted)}
 .topnav a{color:var(--ember);text-decoration:none}
@@ -18,8 +18,10 @@ h1{font-size:clamp(30px,5vw,46px);font-weight:900;margin:0 0 22px}
 h2{font-size:clamp(21px,3.4vw,29px);font-weight:600;margin:42px 0 12px;color:#f3ecdd}
 h3{font-size:19px;margin:26px 0 8px}
 p{margin:0 0 16px}
-a{color:var(--ember2)}
-code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px}
+a{color:var(--ember2);overflow-wrap:anywhere}
+code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:18px 0;overflow-x:auto}
+pre code{background:none;padding:0;font-size:13px;white-space:pre}
 table{border-collapse:collapse;width:100%;font-size:14.5px;margin:18px 0;display:block;overflow-x:auto}
 th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
 th{background:rgba(255,255,255,.04);font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
@@ -29,6 +31,7 @@ ul,ol{padding-left:22px;margin:0 0 16px}
 li{margin:5px 0}
 strong{color:#f5efe2}
 em{color:#e9e3d5}
+@media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}}
 </style></head><body><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
 <h1>What Can The Public Actually See? Port Renfrew Forestry, Old Forest, Fish, Fire, And Missing Records</h1>
@@ -72,6 +75,7 @@ em{color:#e9e3d5}
 <li>Road-stream crossing pressure is high. GIS estimates give about 622 road-stream intersections in San Juan River and 459 in Gordon River. These are estimates, not field-confirmed culvert counts.</li>
 <li>The MOF bridges/major-culverts public layer returned 0 features in the study area. That is a public-data visibility gap, not evidence that no culverts exist. It strengthens the question of where the local crossing records are held.</li>
 <li>BCTS old-growth-labelled sales are visible as schedule rows (about 420.8 ha and 317,335 m3 in 9 reviewed Strait of Georgia rows), but the rationale, full-cost accounting, and site-level risk records behind them are not.</li>
+<li>Recorded harvest overlaps the province's own old-growth priority-deferral areas by about 138 ha. About 30 ha of that was harvested after the Old Growth Technical Advisory Panel recommended those areas for deferral on November 2, 2021, across nine RESULTS openings, several in areas the province flagged as ancient old growth older than 400 years (concentrated around Walbran Creek, Caycuse River, and the Loss landscape unit). Deferral is a recommendation, not a law. Public RESULTS data shows most of these openings are held by First Nations tenure-holders; this is a question about the province's deferral process and records, not about First Nations choices, since the province recommended deferral, required First Nations consensus, and has not funded the alternative. The missing piece is any public record of why each block was approved. This is the local, named detail behind a March 2026 letter to the Premier from all five members of the province's own Technical Advisory Panel, which warned that deferral areas are being logged and that BC Timber Sales is becoming the primary harvester in deferral zones. (Source: <code>data/public-data-audit/harvest-in-deferral-blocks.csv</code>; Victoria News, 2026-03-20.)</li>
 </ol>
 <h2>What This Does Not Prove</h2>
 <ul>
@@ -83,6 +87,17 @@ em{color:#e9e3d5}
 <li>The recorded harvest footprint is a floor, not a ceiling. The real footprint may be larger.</li>
 </ul>
 <p>The honest claim is narrower and still strong: the public can see enough to ask for records, and cannot see enough to judge net public value.</p>
+<h3>Where This Could Be Wrong</h3>
+<p>This package is built from official data and screening analysis. A forester or ecologist may catch things a desk review cannot, so the weak points are worth stating plainly:</p>
+<ul>
+<li>Deferral recommendation is not a legal deferral. Areas in the Technical Advisory Panel layer were recommended for deferral; many were never formally deferred, and formal deferral required First Nations agreement. Harvest in those areas after November 2021 is harvest after a recommendation, not a breach.</li>
+<li>Some of the named deferral-overlap blocks may have had First Nations agreement, or been approved before November 2021, in ways the public layers do not show.</li>
+<li>Our nine-watershed area is not identical to ESSA's study area, which is the portion of the Arrowsmith-South Island TSA within 35 km of Port Renfrew. The ESSA dollar figures describe that study area, not our exact area.</li>
+<li>The carbon, volume, and stumpage figures are screening estimates with wide ranges. They show order of magnitude, not measured local accounts. The 40-65% carbon release fraction is a published figure for old-growth conversion (Harmon et al. 1990, Science), applied here to local hectares; the residual uncertainty is in the per-stand values, not the fraction.</li>
+<li>Private managed forest land runs under a different regime than Crown land and BCTS, so the disclosure argument is strongest for public timber.</li>
+<li>We can confirm the data is accurate. We cannot confirm from a desk that our interpretation matches how forestry works on the ground. That is why expert review should come before public use.</li>
+</ul>
+<p>Full method and caveats: <code>notes/port-renfrew-public-data-audit-methods.md</code>.</p>
 <h2>What Public Data Shows</h2>
 <p>The current historical-change package found:</p>
 <ul>
@@ -138,7 +153,7 @@ em{color:#e9e3d5}
 </tr>
 </tbody>
 </table>
-<p>These are screening classes based on VRI <code>PROJ_AGE_1</code>, not legal old-growth determinations. The next upgrade is to compare VRI against old-growth TAP layers, old-growth deferrals, OGMAs, official watershed boundaries, and tenure layers.</p>
+<p>These are screening classes based on VRI <code>PROJ_AGE_1</code>, not legal old-growth determinations. They use the earlier rectangular working-zone boxes. The Official Watershed Results section below redoes this on Freshwater Atlas watershed polygons, so its per-area numbers differ from and supersede this table; for example, San Juan young/regrowth is about 10,475 ha by working zone and about 13,261 ha by official watershed because the boundaries are drawn differently.</p>
 <h2>Roads, Water, And Fish</h2>
 <p>The current road/water/fish signal is strong enough for targeted records questions, not strong enough for causal claims.</p>
 <table>
@@ -186,7 +201,7 @@ em{color:#e9e3d5}
 <p>These counts use the uncapped tiled road and stream layers. They are still GIS intersections, not field-confirmed culvert counts. They justify specific records requests: road crossings, culverts, sediment control, bridge records, maintenance records, deactivation records, and fish-passage planning records.</p>
 <h2>Fire And Fuel</h2>
 <p>Public guidance confirms fuel hazard assessment and abatement are real forestry obligations. Forest Practices Board findings also show this has been a systemic weak point in B.C. forestry practice.</p>
-<p>That does not prove a local block is unsafe. It does mean the public should be able to see block-level fuel hazard assessments, slash-treatment records, abatement records, burn/chip records, and inspection records for harvest near recreation corridors, old forest, water, and communities.</p>
+<p>The public should be able to see block-level fuel hazard assessments, slash-treatment records, abatement records, burn/chip records, and inspection records for harvest near recreation corridors, old forest, water, and communities.</p>
 <p>Right now, those local records are not visible in the public package.</p>
 <h2>BCTS Old-Growth Sales</h2>
 <p>The public BCTS schedule scan found:</p>
@@ -196,16 +211,27 @@ em{color:#e9e3d5}
 <li>13 automated old-growth text contexts across scanned BCTS business-area schedules, pending manual row review.</li>
 </ul>
 <p>The schedule label is public. The decision rationale is not. The public schedule does not show full-cost accounting, site-level risk records, old-growth retention rationale, fuel treatment records, sale package assumptions, or the public-value test used before offering the timber.</p>
+<h2>The Economic Stakes</h2>
+<p>The records gap is also an economics gap. A 2021 economic valuation by ESSA Technologies found that protecting the old growth in its Port Renfrew study area produced about $97 million in net public benefit over 100 years, against about $56.4 million under business as usual, an improvement of about $40 million once carbon, recreation, and tourism were counted. That study deliberately left out wildfire suppression, slash and fuel hazard, road and culvert liabilities, drinking water, and most fish values, so the gap it found is conservative.</p>
+<p>Two screening estimates put scale on what is missing from the public ledger. The carbon released from the old growth cut since 2010 is worth roughly $30 to $274 million at the federal carbon price, while the public's direct stumpage take from that same timber was on the order of $3 to $6 million. Separately, B.C. spent about $1.1 billion on wildfire management in 2023, a public cost that never appears beside a timber sale. None of these are precise local accounts. They show that when public costs are counted, the public case for protecting old growth is strong, and that the full ledger is exactly what the public cannot see before a block is approved or sold. Detail and sources are in <code>full-cost-accounting-model.md</code> and <code>forest-succession-and-recovery.md</code>.</p>
+<h2>Who Profits, And What The Government Has Known</h2>
+<p>The records gap sits on top of a structural conflict, stated as a question rather than an accusation. The public owns the timber but captures a small cash share (average stumpage about $6.55/m3), while BC Timber Sales, a government agency, earns revenue from selling Crown old growth that it also regulates and was advised by its own panel to defer; the largest private timberlands are owned by public-sector pension funds. A long-running U.S. trade finding argues B.C. undercharges for its Crown timber, which B.C. disputes.</p>
+<p>And the government has known for a long time. Its own 2020 Old Growth Strategic Review made 14 recommendations it promised to enact within three years, and independent reviews report none are fully implemented five years on. In March 2026 its own expert panel told the Premier that deferral areas are being logged. This is not a claim of corruption; it is a documented conflict of interest and accountability failure, and a further reason the full ledger and the site records should be open. Detail is in <code>forestry-economics-and-corporate-accountability.md</code> and <code>what-the-government-has-known.md</code>.</p>
+<p>For why this reaches ordinary residents, through wildfire risk and water security, see <code>why-this-matters-to-you.md</code>.</p>
 <h2>Private Managed Forest Gap</h2>
 <p>Managed Forest Council reporting shows private managed forest land is a major timber source, especially on the coast. The report also gives program-level inspection and compliance numbers.</p>
 <p>That does not answer the local question. It does not show Mosaic/TimberWest property-specific inspections, complaints, road records, watershed impacts, or local harvest decisions around Port Renfrew.</p>
-<p>This is a transparency gap, not proof of wrongdoing.</p>
+<p>This is a transparency gap.</p>
 <h2>The Public-Data Scorecard</h2>
 <p>The audit package now includes:</p>
 <ul>
-<li><code>data/public-data-audit/source-register.csv</code></li>
+<li><code>data/public-data-audit/source-register.csv</code> (provenance for the GIS audit layers)</li>
+<li><code>data/source-register-analysis.csv</code> (provenance for the economic, carbon, fire, species, and financial claims)</li>
+<li><code>notes/canonical-figures.md</code> (one source of truth for every load-bearing number)</li>
 <li><code>data/public-data-audit/public-data-scorecard.csv</code></li>
 <li><code>data/public-data-audit/can-public-tell.csv</code></li>
+<li><code>data/public-data-audit/harvest-in-deferral-blocks.csv</code> (named blocks harvested inside priority-deferral areas)</li>
+<li><code>data/public-data-audit/records-gap-register.csv</code> (every recent high-risk block, with flags and missing records) and <code>records-gap-foi-pack.md</code> (a ready-to-file FOI request per Tier 1 block)</li>
 <li><code>data/public-data-audit/old-growth-overlap-by-watershed.csv</code></li>
 <li><code>data/public-data-audit/watershed-harvest-stand-age-summary.csv</code></li>
 <li><code>data/public-data-audit/road-stream-crossing-density-official-watersheds.csv</code></li>
@@ -428,7 +454,7 @@ em{color:#e9e3d5}
 <h2>Best Next Actions</h2>
 <p>The audit layers are now built. The next steps are about turning the gaps into disclosure, not gathering more screening data.</p>
 <ol>
-<li>File narrow FOI requests from <code>can-public-tell.csv</code>. Each "missing record" row with <code>foi_target = Yes</code> is already a targeted request. Start with the SJsj5P8 site plan, riparian prescriptions, road/culvert records, and fuel hazard records (rows CPT-001 through CPT-006).</li>
+<li>File narrow FOI requests from the per-block records-gap register. <code>data/public-data-audit/records-gap-register.csv</code> screens every recent cutblock (harvest 2015 or later) against old growth, deferrals, OGMAs, streams, recreation, and fish records, and <code>records-gap-foi-pack.md</code> contains a ready-to-file request for each of the 143 Tier 1 blocks (the ones overlapping old growth, a deferral, or an OGMA, or close to a fish or recreation record). The category-level FOI targets in <code>can-public-tell.csv</code> (rows CPT-001 through CPT-006: the SJsj5P8 site plan, riparian prescriptions, road/culvert records, and fuel hazard records) remain the cleanest first send.</li>
 <li>Review BCTS sale results and BC Bid package availability for the reviewed old-growth-labelled TSL rows. The schedule label is public; the rationale and ledger are not. This is the CPT-008 gap.</li>
 <li>Publish the map, scorecard, and one-page explainer together so a journalist, MLA staffer, or resident can see the same point in one read: public data shows enough to ask, not enough to judge.</li>
 <li>Do a visual QA pass of the map around Port Renfrew, San Juan River Rec Site, Pacific Marine Road, Fairy Creek, Gordon River, and Walbran before wider sharing.</li>

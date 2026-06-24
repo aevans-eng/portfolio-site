@@ -9,7 +9,7 @@
 :root{--bg:#0c0f0d;--ink:#e9e3d5;--muted:#9aa79a;--ember:#e06a26;--ember2:#f0a874;--sage:#7fa168;--line:rgba(233,227,213,.14);
 --serif:"Newsreader",Georgia,serif;--display:"Fraunces",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
 .wrap{max-width:760px;margin:0 auto;padding:44px 22px 90px}
 .topnav{font-family:var(--mono);font-size:12px;letter-spacing:.04em;margin-bottom:34px;color:var(--muted)}
 .topnav a{color:var(--ember);text-decoration:none}
@@ -18,8 +18,10 @@ h1{font-size:clamp(30px,5vw,46px);font-weight:900;margin:0 0 22px}
 h2{font-size:clamp(21px,3.4vw,29px);font-weight:600;margin:42px 0 12px;color:#f3ecdd}
 h3{font-size:19px;margin:26px 0 8px}
 p{margin:0 0 16px}
-a{color:var(--ember2)}
-code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px}
+a{color:var(--ember2);overflow-wrap:anywhere}
+code{font-family:var(--mono);font-size:.82em;background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:18px 0;overflow-x:auto}
+pre code{background:none;padding:0;font-size:13px;white-space:pre}
 table{border-collapse:collapse;width:100%;font-size:14.5px;margin:18px 0;display:block;overflow-x:auto}
 th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
 th{background:rgba(255,255,255,.04);font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
@@ -29,6 +31,7 @@ ul,ol{padding-left:22px;margin:0 0 16px}
 li{margin:5px 0}
 strong{color:#f5efe2}
 em{color:#e9e3d5}
+@media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}}
 </style></head><body><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
 <h1>Who Profits, Who Pays: Forestry Finances And Public Value</h1>
@@ -52,7 +55,7 @@ local anchor is Western Forest Products, which operates on the coast and Vancouv
 <p>In fiscal 2024 most of the sawmill operators lost money, while the harvest and, in one
 case, the dividends continued:</p>
 <ul>
-<li>Western Forest Products: sales about CA$1.06 billion, a net loss of about CA$30.4
+<li>Western Forest Products: sales about CA$1.06 billion, a net loss of about CA$34.5
   million. Its dividend has been suspended since November 2023.</li>
 <li>Canfor: revenue about CA$5.25 billion, a net loss of about CA$669 million.</li>
 <li>West Fraser Timber: sales about US$6.17 billion, a net loss of about US$5 million, and
@@ -101,10 +104,26 @@ the public costs the logging may create, because the cost ledger is not disclose
 <li>For pension-owned land, does the public, as both the cost-bearer and the pension
   beneficiary, come out ahead or behind once all costs are counted?</li>
 </ul>
+<h2>Does the public undercharge for its own timber?</h2>
+<p>The public's direct cash take is small: ESSA's multi-species average stumpage is about
+$6.55 per cubic metre against log values of $68 to $212 per cubic metre. Whether that price
+is fair is contested at the international level. In the long-running softwood lumber dispute,
+the U.S. Department of Commerce has formally found that B.C. sets Crown stumpage below market
+value and treats it as a subsidy passed to producers; the current preliminary combined duty
+is about 24.8 percent. Canada and B.C. reject that finding and argue the rate tracks the
+Vancouver log market quarterly and is fair value. [Fact, attributed: U.S. Commerce
+determinations; Government of B.C. softwood factsheet. We take no side on the trade dispute.]</p>
+<p>The point for full-cost accounting is narrow and does not require picking a side: a serious
+outside party has argued for decades that the public undercharges for its own timber, and the
+public cannot check that against the appraisal records because those records are not open.</p>
 <h2>Governance and conflict structures (risk, not accusation)</h2>
 <p>These are structural features that warrant disclosure, framed with the evidence ladder
 in <code>notes/data-coverage-and-deeper-research-plan.md</code>:</p>
 <ul>
+<li><strong>Public seller and regulator.</strong> BC Timber Sales is a government agency that auctions Crown
+  old growth, so the province earns revenue from the same old-growth harvest it also regulates
+  and was advised by its own panel to defer. That dual role is a structural conflict worth
+  naming, not an accusation.</li>
 <li><strong>Professional reliance.</strong> Much of B.C. forestry runs on company-retained
   professionals signing off on their own operations. This is a known governance concern,
   not proof of any specific failure.</li>
@@ -131,12 +150,14 @@ public. That unanswerability is the finding.</p>
 <h2>Sources</h2>
 <ul>
 <li>Western Forest Products FY2024 results:
-  https://www.globenewswire.com/news-release/2025/02/13/3026363/0/en/Western-Announces-Fourth-Quarter-and-Fiscal-2024-Results.html</li>
+  <a href="https://www.globenewswire.com/news-release/2025/02/13/3026363/0/en/Western-Announces-Fourth-Quarter-and-Fiscal-2024-Results.html">https://www.globenewswire.com/news-release/2025/02/13/3026363/0/en/Western-Announces-Fourth-Quarter-and-Fiscal-2024-Results.html</a></li>
 <li>Western Forest Products 2024 Annual Report:
-  https://www.westernforest.com/wp-content/uploads/2025/03/Annual-Report-2024.pdf</li>
+  <a href="https://www.westernforest.com/wp-content/uploads/2025/03/Annual-Report-2024.pdf">https://www.westernforest.com/wp-content/uploads/2025/03/Annual-Report-2024.pdf</a></li>
 <li>PSP Investments, TimberWest and Island Timberlands affiliation under Mosaic:
-  https://www.investpsp.com/en/news/canadian-institutional-investment-managers-enter-an-agreement-to-affiliate-timberwest-forest-corporation-and-island-timberlands-limited-partnership/</li>
-<li>Mosaic Forest Management: https://www.mosaicforests.com/</li>
+  <a href="https://www.investpsp.com/en/news/canadian-institutional-investment-managers-enter-an-agreement-to-affiliate-timberwest-forest-corporation-and-island-timberlands-limited-partnership/">https://www.investpsp.com/en/news/canadian-institutional-investment-managers-enter-an-agreement-to-affiliate-timberwest-forest-corporation-and-island-timberlands-limited-partnership/</a></li>
+<li>Mosaic Forest Management: <a href="https://www.mosaicforests.com/">https://www.mosaicforests.com/</a></li>
+<li>Softwood lumber dispute (U.S. finds BC stumpage below market; BC disputes):
+  Government of B.C. softwood factsheet <a href="https://news.gov.bc.ca/factsheets/softwood-lumber-dispute">https://news.gov.bc.ca/factsheets/softwood-lumber-dispute</a></li>
 <li>Related local work: <code>policy-brief-full-cost-accounting.md</code>,
   <code>notes/mosaic-compliance-research-module.md</code>, <code>data/truth-ledger/</code>.</li>
 </ul>
