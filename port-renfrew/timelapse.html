@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Logging timelapse - Port Renfrew</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&family=Spectral:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  *{box-sizing:border-box} html,body,#map{height:100%;margin:0}
+  body{font-family:"Public Sans",system-ui,sans-serif}
+  .bar{position:absolute;z-index:1000;left:50%;transform:translateX(-50%);bottom:18px;width:min(680px,calc(100vw - 24px));
+    background:rgba(12,14,12,.92);color:#f0ece0;border:1px solid rgba(255,255,255,.12);border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,.4);padding:14px 16px}
+  .top{display:flex;align-items:center;gap:14px}
+  .play{flex:0 0 auto;width:46px;height:46px;border-radius:50%;border:none;background:#ea580c;color:#160b04;font-size:17px;cursor:pointer}
+  .readout{flex:1 1 auto;min-width:0}
+  .yr{font-family:"Spectral",Georgia,serif;font-size:30px;font-weight:600;line-height:1}
+  .ha{font-size:12.5px;color:#cdc8ba;margin-top:3px}
+  .ha b{color:#fb923c}
+  input[type=range]{width:100%;margin:12px 0 2px;accent-color:#ea580c}
+  .cap{font-size:12px;color:#cdc8ba;margin-top:4px;min-height:16px}
+  .title{position:absolute;z-index:1000;top:14px;left:14px;background:rgba(12,14,12,.9);color:#f0ece0;
+    border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:11px 14px;max-width:300px}
+  .title h1{font-family:"Spectral",Georgia,serif;font-size:18px;margin:0 0 4px}
+  .title p{font-size:12px;color:#cdc8ba;margin:0;line-height:1.45}
+  .title a{color:#fb923c}
+</style></head><body>
+<div id="map"></div>
+<div class="title"><h1>Watch the forest go</h1><p>Recorded logging around Port Renfrew, year by year, then what is proposed next. <a href="map.html">Full map &rarr;</a></p></div>
+<div class="bar">
+  <div class="top">
+    <button class="play" id="play" aria-label="Play">&#9654;</button>
+    <div class="readout"><div class="yr" id="yr">--</div><div class="ha">about <b id="ha">0</b> ha logged so far</div></div>
+  </div>
+  <input type="range" id="slider" min="0" max="0" value="0">
+  <div class="cap" id="cap">Loading...</div>
+</div>
+<script>
+  var map = L.map('map',{preferCanvas:true}).setView([48.64,-124.28],10);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+  var cutLayer = L.layerGroup().addTo(map);
+  var byYear={}, years=[], idx=0, total=0, playing=false, timer=null, proposedShown=false, proposedLayer=null;
+  var playBtn=document.getElementById('play'), yrEl=document.getElementById('yr'), haEl=document.getElementById('ha'),
+      slider=document.getElementById('slider'), cap=document.getElementById('cap');
+  function fmtHa(n){ return Math.round(n).toLocaleString(); }
+  fetch('map-data/cutblocks.json').then(function(r){return r.json();}).then(function(fc){
+    fc.features.forEach(function(f){
+      var y=parseInt((f.properties||{}).HARVEST_START_YEAR_CALENDAR,10);
+      if(!y||y<1950) return;
+      (byYear[y]=byYear[y]||[]).push(f);
+    });
+    years=Object.keys(byYear).map(Number).sort(function(a,b){return a-b;});
+    slider.max=years.length-1; slider.value=0; yrEl.textContent=years[0];
+    cap.textContent='Press play to watch '+years[0]+' to '+years[years.length-1]+'.';
+  });
+  function addYear(i){
+    var feats=byYear[years[i]];
+    cutLayer.addLayer(L.geoJSON({type:'FeatureCollection',features:feats},{style:{color:'#7c2d12',weight:0.4,fillColor:'#ea580c',fillOpacity:0.6},interactive:false}));
+    feats.forEach(function(f){ total += Number((f.properties||{}).AREA_HA)||0; });
+  }
+  function setTo(target){
+    if(target<idx){ cutLayer.clearLayers(); idx=0; total=0; }
+    while(idx<=target && idx<years.length){ addYear(idx); idx++; }
+    yrEl.textContent=years[Math.min(target,years.length-1)]; haEl.textContent=fmtHa(total); slider.value=target;
+  }
+  function showProposed(){
+    if(proposedShown) return; proposedShown=true;
+    fetch('map-data/proposed-logging.json').then(function(r){return r.json();}).then(function(fc){
+      proposedLayer=L.geoJSON(fc,{style:{color:'#7f1d1d',weight:1.5,fillColor:'#dc2626',fillOpacity:0.55},interactive:false}).addTo(map);
+      cap.innerHTML='And in red: what is proposed or approved to be logged next. <a href="comment-assistant.html" style="color:#fb923c">Comment &rarr;</a>';
+    });
+  }
+  function play(){
+    playing=true; playBtn.innerHTML='&#10073;&#10073;';
+    timer=setInterval(function(){ if(idx>=years.length){ stop(); showProposed(); return; } setTo(idx); }, 200);
+  }
+  function stop(){ playing=false; playBtn.innerHTML='&#9654;'; if(timer) clearInterval(timer); }
+  playBtn.addEventListener('click',function(){
+    if(playing){ stop(); }
+    else { if(idx>=years.length){ cutLayer.clearLayers(); if(proposedLayer){ map.removeLayer(proposedLayer); proposedLayer=null; } idx=0; total=0; proposedShown=false; } play(); }
+  });
+  slider.addEventListener('input',function(){ stop(); setTo(parseInt(slider.value,10)); });
+</script>
+</body></html>
