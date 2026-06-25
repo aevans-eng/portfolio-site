@@ -122,7 +122,7 @@
         </ol>
       </details>
       <div class="caution"><span aria-hidden="true">&#9888;</span><span><b>An overlap is a reason to ask for records, not proof of harm.</b> It means the public should be able to see the site plan, streamside rules, crossing and culvert records, fire-fuel records, sale economics, and old-growth rationale before logging.</span></div>
-      <h2 class="sec">Layers <span class="sec-tools"><button class="btn" id="resetLayers" type="button">Reset</button><button class="btn" id="resetView" type="button">Recenter</button></span></h2>
+      <h2 class="sec">Layers <span class="sec-tools"><button class="btn" id="nearMe" type="button">Near me</button><button class="btn" id="resetLayers" type="button">Reset</button><button class="btn" id="resetView" type="button">Recenter</button></span></h2>
       <div id="toggles"></div>
       <p class="foot">Sources: BC government open data (recorded cutblocks, Forest Operations Map proposed cutblocks, forest inventory, old-growth mapping, OGMA, Freshwater Atlas streams, road tenure, recreation, fish-passage assessments) on an <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> basemap. Numbers in brackets show how many features are loaded. Harvest shown is recorded Crown harvest; logging on private managed forest land, common around Port Renfrew, is reported far less publicly and may not appear. Turn on the Private land layer to see where the public data goes dark.</p>
     </div>
@@ -309,6 +309,22 @@
       });
     });
     document.getElementById('resetView').addEventListener('click', function(){ map.setView(HOME.center, HOME.zoom); });
+    // Near me: center on the visitor so they can see logging near their own spot
+    var youMarker = null;
+    document.getElementById('nearMe').addEventListener('click', function(){
+      var btn = this;
+      if(!navigator.geolocation){ btn.textContent = 'No location'; return; }
+      btn.textContent = 'Locating...';
+      navigator.geolocation.getCurrentPosition(function(pos){
+        var ll = [pos.coords.latitude, pos.coords.longitude];
+        if(youMarker) map.removeLayer(youMarker);
+        youMarker = L.circleMarker(ll, {radius:8, color:'#1d4ed8', weight:2, fillColor:'#3b82f6', fillOpacity:0.9})
+          .addTo(map).bindPopup('You are here').openPopup();
+        map.setView(ll, 13);
+        btn.textContent = 'Near me';
+      }, function(){ btn.textContent = 'Location off'; setTimeout(function(){ btn.textContent='Near me'; }, 2500); },
+      {enableHighAccuracy:true, timeout:8000});
+    });
 
     const panel = document.getElementById('panel');
     const ptoggle = document.getElementById('ptoggle');
