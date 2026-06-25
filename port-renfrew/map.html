@@ -19,6 +19,16 @@
     html,body,#map{height:100%;margin:0}
     body{font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink)}
     .leaflet-container{font-family:"Public Sans",system-ui,sans-serif}
+    .search{position:absolute;z-index:1100;top:14px;left:50%;transform:translateX(-50%);display:flex;
+      width:min(330px,calc(100vw - 28px));box-shadow:var(--shadow);border-radius:9px;overflow:hidden;border:1px solid var(--line-strong)}
+    .search input{flex:1 1 auto;min-width:0;border:none;padding:10px 12px;font:inherit;font-size:13px;background:var(--paper-2);color:var(--ink)}
+    .search input:focus{outline:2px solid var(--accent);outline-offset:-2px}
+    .search button{flex:0 0 auto;border:none;background:var(--accent);color:#fff;padding:0 16px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+    .search-msg{position:absolute;z-index:1100;top:54px;left:50%;transform:translateX(-50%);width:min(330px,calc(100vw - 28px));
+      font-size:12px;line-height:1.4;color:#fff;background:rgba(20,20,18,.88);border-radius:7px;padding:7px 11px;display:none}
+    .search-msg.show{display:block}
+    .search-msg b{color:#fb923c}
+    @media (max-width:640px){.search{top:10px}.search-msg{top:50px}}
     .panel{position:absolute;z-index:1000;top:14px;left:14px;width:380px;max-width:calc(100vw - 28px);
       max-height:calc(100% - 28px);display:flex;flex-direction:column;background:var(--paper);
       border:1px solid var(--line-strong);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
@@ -92,6 +102,11 @@
 </head>
 <body>
   <div id="map"></div>
+  <div class="search">
+    <input id="placeSearch" type="search" placeholder="Search a place: lake, river, town..." aria-label="Search a place" />
+    <button id="searchBtn" type="button">Go</button>
+  </div>
+  <div class="search-msg" id="searchMsg"></div>
   <div class="panel" id="panel">
     <div class="panel__header" id="phead">
       <div class="panel__titles">
@@ -332,7 +347,7 @@
         else { r.box.checked=false; hideLayer(def, r.row); }
       });
     });
-    document.getElementById('resetView').addEventListener('click', function(){ map.setView(HOME.center, HOME.zoom); });
+    document.getElementById('resetView').addEventListener('click', function(){ map.invalidateSize(); map.setView(HOME.center, HOME.zoom); });
     // Near me: center on the visitor so they can see logging near their own spot
     var youMarker = null;
     document.getElementById('nearMe').addEventListener('click', function(){
@@ -344,11 +359,38 @@
         if(youMarker) map.removeLayer(youMarker);
         youMarker = L.circleMarker(ll, {radius:8, color:'#1d4ed8', weight:2, fillColor:'#3b82f6', fillOpacity:0.9})
           .addTo(map).bindPopup('You are here').openPopup();
-        map.setView(ll, 13);
+        map.invalidateSize(); map.setView(ll, 13);
         btn.textContent = 'Near me';
       }, function(){ btn.textContent = 'Location off'; setTimeout(function(){ btn.textContent='Near me'; }, 2500); },
       {enableHighAccuracy:true, timeout:8000});
     });
+
+    // place search: geocode a place (biased to the area), fly there, count proposed blocks near it
+    var searchMarker = null;
+    function searchMsg(t){ var m=document.getElementById('searchMsg'); if(!t){ m.classList.remove('show'); return; } m.innerHTML=t; m.classList.add('show'); }
+    function nearProposed(latlng, meters){
+      if(!active['proposed-logging']) return null;
+      var pt=L.latLng(latlng), n=0;
+      active['proposed-logging'].eachLayer(function(l){ if(l.getBounds){ var c=l.getBounds().getCenter(); if(pt.distanceTo(c)<=meters) n++; } });
+      return n;
+    }
+    function doSearch(){
+      var q=(document.getElementById('placeSearch').value||'').trim(); if(!q) return;
+      searchMsg('Searching...');
+      var url='https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=ca&viewbox=-125.3,48.95,-123.7,48.25&q='+encodeURIComponent(q);
+      fetch(url).then(function(r){return r.json();}).then(function(res){
+        if(!res || !res.length){ searchMsg('No place found. Try a town, river, or lake name.'); return; }
+        var lat=parseFloat(res[0].lat), lon=parseFloat(res[0].lon);
+        if(searchMarker) map.removeLayer(searchMarker);
+        searchMarker=L.circleMarker([lat,lon],{radius:8,color:'#1d4ed8',weight:2,fillColor:'#3b82f6',fillOpacity:0.9}).addTo(map).bindPopup(esc(String(res[0].display_name||'').split(',').slice(0,2).join(', ')));
+        map.invalidateSize(); map.setView([lat,lon],13);
+        var near=nearProposed([lat,lon],3000);
+        var name=esc(String(res[0].display_name||'').split(',').slice(0,2).join(', '));
+        searchMsg(name + (near!=null ? (' &middot; <b>'+near+'</b> proposed block'+(near===1?'':'s')+' within ~3 km') : ''));
+      }).catch(function(){ searchMsg('Search is unavailable right now.'); });
+    }
+    document.getElementById('searchBtn').addEventListener('click', doSearch);
+    document.getElementById('placeSearch').addEventListener('keydown', function(e){ if(e.key==='Enter') doSearch(); });
 
     const panel = document.getElementById('panel');
     const ptoggle = document.getElementById('ptoggle');
