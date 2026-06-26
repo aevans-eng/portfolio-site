@@ -159,30 +159,33 @@
     const HOME = {center: [49.22, -124.95], zoom: 11};
     const AREA_NAME = "Alberni Valley";
 
-    const map = L.map('map', {preferCanvas:true}).setView(HOME.center, HOME.zoom);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:18, attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
-    L.control.scale({imperial:true, metric:true, position:'bottomleft'}).addTo(map);
-
-    // deep links: ?ws=<watershed-slug> zooms to a watershed; ?at=lat,lng[,zoom] centers on a point
-    // (used by the cross-area "find your place" search on the hub).
+    // deep links, applied as the initial view so there is no timing race with map setup:
+    //   ?ws=<watershed-slug> centers on a watershed; ?at=lat,lng[,zoom] centers on a point
+    //   (used by the cross-area "find your place" search on the hub).
     const wsViews = {"nahmint-river":[[49.04483,-125.30277],[49.25771,-124.88393]],"franklin-river":[[48.99801,-124.81768],[49.14646,-124.62156]],"china-creek":[[49.10456,-124.79905],[49.23264,-124.57579]],"coleman-creek":[[48.95065,-124.8662],[49.05851,-124.68318]],"cameron-river":[[49.1108,-124.69232],[49.29333,-124.42832]],"sproat-river":[[49.19941,-125.55366],[49.3633,-124.88019]],"somass-river":[[49.18199,-125.61267],[49.55531,-124.65979]],"taylor-river":[[49.24802,-125.55366],[49.3633,-125.20909]],"stamp-river":[[49.29347,-125.61267],[49.55531,-124.84215]],"ash-river":[[49.35126,-125.49281],[49.55531,-124.95045]],"robertson-creek":[[49.30517,-125.00913],[49.33789,-124.97026]]};
-    (function(){
+    function initialView(){
       try {
         var qs = new URLSearchParams(location.search);
         var ws = qs.get('ws');
         if(ws && wsViews[ws]){
-          setTimeout(function(){ map.invalidateSize(); map.fitBounds(wsViews[ws], {padding:[24,24], maxZoom:13}); }, 80);
+          var bb=wsViews[ws], clat=(bb[0][0]+bb[1][0])/2, clng=(bb[0][1]+bb[1][1])/2;
+          var span=Math.max(bb[1][0]-bb[0][0], bb[1][1]-bb[0][1]);
+          var z = span>0.28?10 : (span>0.14?11 : (span>0.07?12 : 13));
+          return {center:[clat,clng], zoom:z};
         }
         var at = qs.get('at');
         if(at){
           var p = at.split(',').map(Number);
-          if(p.length>=2 && isFinite(p[0]) && isFinite(p[1])){
-            var z = (p.length>=3 && isFinite(p[2])) ? p[2] : 13;
-            setTimeout(function(){ map.invalidateSize(); map.setView([p[0],p[1]], z); }, 80);
-          }
+          if(p.length>=2 && isFinite(p[0]) && isFinite(p[1]))
+            return {center:[p[0],p[1]], zoom:(p.length>=3 && isFinite(p[2]))?p[2]:13};
         }
       } catch(e){}
-    })();
+      return {center:HOME.center, zoom:HOME.zoom};
+    }
+    const _iv = initialView();
+    const map = L.map('map', {preferCanvas:true}).setView(_iv.center, _iv.zoom);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:18, attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+    L.control.scale({imperial:true, metric:true, position:'bottomleft'}).addTo(map);
 
     function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
     function fmt(field, val){
