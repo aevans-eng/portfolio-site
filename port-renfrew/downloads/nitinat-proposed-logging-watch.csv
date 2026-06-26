@@ -1,0 +1,128 @@
+block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_date,planned_area_ha,watershed,oldgrowth_overlap_ha,ancient_overlap_ha,deferral_overlap_ha,ogma_overlap_ha,nearest_rec_m,nearest_fish_m,why_matters,priority_score
+852406,3173,Open for comment,2026-05-27,2026-06-26,yes,2026-07-15,0.0,South Island area,0.0,0.0,0.0,0.0,24191,182,near a fish record,8.0
+852403,3173,Open for comment,2026-05-27,2026-06-26,yes,2026-07-15,17.8,South Island area,0.0,0.0,0.0,0.0,22357,34,near a fish record,8.0
+854201,3173,Open for comment,2026-05-27,2026-06-26,yes,2026-07-15,1.0,South Island area,0.0,0.0,0.0,0.0,22068,20,near a fish record,8.0
+852404,3173,Open for comment,2026-05-27,2026-06-26,yes,2026-07-15,12.9,South Island area,0.0,0.0,0.0,0.0,22996,37,near a fish record,8.0
+854203,3173,Open for comment,2026-05-27,2026-06-26,yes,2026-07-15,9.0,South Island area,0.0,0.0,0.0,0.0,20857,404,,0.0
+961214,3238,Open for comment,2026-06-24,2026-07-24,yes,2026-08-15,7.5,South Island area,0.0,0.0,0.0,0.0,16717,1244,,0.0
+671424,1883,Comment closed,2024-10-09,2024-11-09,no,2024-12-01,42.5,South Island area,42.05,0.0,16.97,0.17,17692,1805,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,97.3
+671424,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,42.5,South Island area,42.05,0.0,16.97,0.17,17692,1805,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,97.3
+673413-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,22.4,Cheewhat River,14.35,0.0,13.39,0.0,13657,1171,overlaps mapped old growth; in a priority-deferral area,48.3
+874111,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,10.6,Nitinat River,10.06,0.0,9.64,0.0,2584,98,overlaps mapped old growth; in a priority-deferral area; near a fish record,42.4
+673227,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,4.5,South Island area,4.51,4.47,4.47,0.0,16369,957,overlaps ancient old growth (over 400 yr); in a priority-deferral area,29.1
+673211-DT1,2336,Comment closed,2025-05-14,2025-06-13,no,2025-10-01,13.4,Cheewhat River,11.52,0.0,0.0,0.0,14356,137,overlaps mapped old growth; near a fish record,25.3
+4632,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,7.0,South Island area,6.52,0.0,6.51,0.0,26912,654,overlaps mapped old growth; in a priority-deferral area,22.8
+673227A,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,3.3,South Island area,3.21,3.21,3.21,0.0,16379,1024,overlaps ancient old growth (over 400 yr); in a priority-deferral area,20.9
+864324,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,13.3,South Island area,5.92,0.0,5.92,0.0,10258,1516,overlaps mapped old growth; in a priority-deferral area,20.7
+671306,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,3.2,South Island area,3.17,3.16,3.16,0.0,17414,1548,overlaps ancient old growth (over 400 yr); in a priority-deferral area,20.6
+671308,1613,Comment closed,2024-06-21,2024-07-21,no,2024-05-31,3.4,South Island area,3.33,2.87,2.87,0.0,17861,2300,overlaps ancient old growth (over 400 yr); in a priority-deferral area,19.3
+673409-DT,1601,Comment closed,2024-06-21,2024-07-21,no,2024-08-01,12.6,Cheewhat River,10.94,0.0,0.0,0.0,13248,411,overlaps mapped old growth,16.4
+671417A,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,3.2,South Island area,3.16,2.15,2.15,0.0,18418,2580,overlaps ancient old growth (over 400 yr); in a priority-deferral area,15.5
+673234,1613,Comment closed,2024-06-21,2024-07-21,no,2024-05-31,10.2,Cheewhat River,9.89,0.0,0.0,0.0,15195,655,overlaps mapped old growth,14.8
+874112,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,9.3,Nitinat River,1.63,0.0,1.63,0.0,2994,96,overlaps mapped old growth; in a priority-deferral area; near a fish record,13.7
+864321,1353,Comment closed,2024-05-01,2024-05-31,no,2024-08-01,3.9,South Island area,3.87,0.0,3.87,0.0,12181,329,overlaps mapped old growth; in a priority-deferral area,13.5
+863223,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,12.6,South Island area,6.41,0.0,1.43,0.0,16443,779,overlaps mapped old growth; in a priority-deferral area,12.5
+6245A,2205,Comment closed,2025-02-26,2025-03-28,no,2025-04-01,8.4,Nitinat River,0.82,0.0,0.71,0.0,13653,124,overlaps mapped old growth; in a priority-deferral area; near a fish record,10.7
+6245A,2175,Comment closed,2025-02-05,2025-03-07,no,2025-04-01,8.4,Nitinat River,0.82,0.0,0.71,0.0,13653,124,overlaps mapped old growth; in a priority-deferral area; near a fish record,10.7
+962110,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,6.1,South Island area,0.65,0.0,0.64,0.0,11305,31,overlaps mapped old growth; in a priority-deferral area; near a fish record,10.3
+7104,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,6.4,South Island area,6.4,0.0,0.0,0.31,21103,1281,overlaps mapped old growth; overlaps a protected old-growth area,10.1
+864320,1353,Comment closed,2024-05-01,2024-05-31,no,2024-08-01,0.5,South Island area,0.45,0.09,0.45,0.0,12323,231,overlaps ancient old growth (over 400 yr); in a priority-deferral area; near a fish record,9.8
+671409-DT,2336,Comment closed,2025-05-14,2025-06-13,no,2025-10-01,8.7,South Island area,6.23,0.0,0.0,0.0,17815,1343,overlaps mapped old growth,9.3
+4611A,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,6.3,South Island area,5.21,0.0,0.64,0.0,25829,812,overlaps mapped old growth; in a priority-deferral area,9.1
+7104,2663,Comment closed,2025-10-24,2025-11-23,no,2026-04-01,5.5,South Island area,5.54,0.0,0.0,0.51,21099,1288,overlaps mapped old growth; overlaps a protected old-growth area,9.1
+4638,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,2.8,South Island area,2.57,0.0,2.56,0.0,26060,1493,overlaps mapped old growth; in a priority-deferral area,9.0
+4609,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,6.4,South Island area,5.92,0.0,0.0,0.0,25319,783,overlaps mapped old growth,8.9
+673211-DT1,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,0.9,Cheewhat River,0.58,0.0,0.0,0.0,15505,291,overlaps mapped old growth; near a fish record,8.9
+673211-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,3.1,Cheewhat River,0.37,0.0,0.0,0.0,14509,237,overlaps mapped old growth; near a fish record,8.6
+874114,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,13.0,Nitinat River,0.0,0.0,0.0,0.33,3587,96,overlaps a protected old-growth area; near a fish record,8.5
+861421,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,5.4,South Island area,5.45,0.0,0.0,0.0,14330,1483,overlaps mapped old growth,8.2
+861421C,1353,Comment closed,2024-05-01,2024-05-31,no,2024-08-01,5.5,South Island area,5.46,0.0,0.0,0.0,14330,1483,overlaps mapped old growth,8.2
+C077C4DN,2857,Comment closed,2026-03-02,2026-04-02,no,2029-04-01,62.6,Nitinat River,0.0,0.0,0.0,0.0,9075,14,near a fish record,8.0
+5131,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,38.5,Nitinat River,0.0,0.0,0.0,0.0,15851,74,near a fish record,8.0
+852413,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,5.2,South Island area,0.0,0.0,0.0,0.0,22011,0,near a fish record,8.0
+852414,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,16.9,South Island area,0.0,0.0,0.0,0.0,21822,31,near a fish record,8.0
+852236,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,31.9,South Island area,0.0,0.0,0.0,0.0,22414,268,near a fish record,8.0
+852229,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,31.6,South Island area,0.0,0.0,0.0,0.0,22985,88,near a fish record,8.0
+852229,1611,Comment closed,2024-06-26,2024-07-26,no,2024-09-01,31.6,South Island area,0.0,0.0,0.0,0.0,22985,88,near a fish record,8.0
+863228,1611,Comment closed,2024-06-26,2024-07-26,no,2024-09-01,7.9,South Island area,0.0,0.0,0.0,0.0,13699,25,near a fish record,8.0
+863228,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,7.9,South Island area,0.0,0.0,0.0,0.0,13699,25,near a fish record,8.0
+862302,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,10.6,South Island area,0.0,0.0,0.0,0.0,12811,82,near a fish record,8.0
+862302,1611,Comment closed,2024-06-26,2024-07-26,no,2024-09-01,10.6,South Island area,0.0,0.0,0.0,0.0,12811,82,near a fish record,8.0
+5850,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,19.5,Nitinat River,0.0,0.0,0.0,0.0,8958,218,near a fish record,8.0
+5800,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,20.3,Nitinat River,0.0,0.0,0.0,0.0,10329,134,near a fish record,8.0
+5810,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,22.0,Nitinat River,0.0,0.0,0.0,0.0,10628,35,near a fish record,8.0
+5571,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,4.5,Nitinat River,0.0,0.0,0.0,0.0,11365,171,near a fish record,8.0
+961116,1611,Comment closed,2024-06-26,2024-07-26,no,2024-09-01,5.7,South Island area,0.0,0.0,0.0,0.0,19927,184,near a fish record,8.0
+884113C,1773,Comment closed,2024-08-19,2024-09-19,no,2024-10-01,7.3,South Island area,0.0,0.0,0.0,0.0,16287,130,near a fish record,8.0
+884113A,1773,Comment closed,2024-08-19,2024-09-19,no,2024-10-01,2.5,South Island area,0.0,0.0,0.0,0.0,16906,238,near a fish record,8.0
+884113,1773,Comment closed,2024-08-19,2024-09-19,no,2024-10-01,9.1,South Island area,0.0,0.0,0.0,0.0,16905,116,near a fish record,8.0
+4629,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,8.7,South Island area,2.13,0.0,2.13,0.0,26264,399,overlaps mapped old growth; in a priority-deferral area,7.5
+864323,1353,Comment closed,2024-05-01,2024-05-31,no,2024-08-01,1.9,South Island area,1.87,0.0,1.87,0.0,11956,632,overlaps mapped old growth; in a priority-deferral area,6.5
+7116,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,6.7,South Island area,4.17,0.0,0.0,0.0,20627,614,overlaps mapped old growth,6.3
+7116,2663,Comment closed,2025-10-24,2025-11-23,no,2026-04-01,6.2,South Island area,3.76,0.0,0.0,0.0,20659,615,overlaps mapped old growth,5.6
+673233,1613,Comment closed,2024-06-21,2024-07-21,no,2024-05-31,3.6,Cheewhat River,2.97,0.0,0.0,0.0,14495,1442,overlaps mapped old growth,4.5
+4615,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,1.1,South Island area,1.06,0.0,1.06,0.0,26016,628,overlaps mapped old growth; in a priority-deferral area,3.7
+863412,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,14.3,South Island area,1.02,0.0,0.9,0.0,15748,329,overlaps mapped old growth; in a priority-deferral area,3.3
+852235,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,2.1,South Island area,2.0,0.0,0.0,0.0,24405,1924,overlaps mapped old growth,3.0
+671417A,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,0.5,South Island area,0.46,0.44,0.44,0.0,18465,2497,overlaps ancient old growth (over 400 yr); in a priority-deferral area,2.9
+861421H,1353,Comment closed,2024-05-01,2024-05-31,no,2024-08-01,1.9,South Island area,1.94,0.0,0.0,0.0,14536,1329,overlaps mapped old growth,2.9
+671409-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,1.2,South Island area,0.58,0.0,0.56,0.0,17317,2235,overlaps mapped old growth; in a priority-deferral area,2.0
+671411-DT,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,1.9,South Island area,1.35,0.0,0.0,0.0,17072,2227,overlaps mapped old growth,2.0
+864324H,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,0.9,South Island area,0.94,0.09,0.09,0.0,11024,1565,overlaps ancient old growth (over 400 yr); in a priority-deferral area,1.9
+671413-DT,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,1.2,South Island area,1.03,0.0,0.0,0.0,17007,2090,overlaps mapped old growth,1.5
+671403-DT,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,1.4,South Island area,1.02,0.0,0.0,0.0,17886,2490,overlaps mapped old growth,1.5
+673220-DT,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,0.9,South Island area,0.55,0.0,0.0,0.0,16090,742,overlaps mapped old growth,0.8
+673212-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,4.0,Cheewhat River,0.56,0.0,0.0,0.0,14789,1818,overlaps mapped old growth,0.8
+863411,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,3.6,South Island area,0.52,0.0,0.0,0.0,16558,313,overlaps mapped old growth,0.8
+671413-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,2.6,South Island area,0.0,0.0,0.0,0.38,16694,1445,overlaps a protected old-growth area,0.6
+673213-DT,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,0.7,South Island area,0.33,0.0,0.0,0.0,16188,1993,overlaps mapped old growth,0.5
+673407-DT1,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,0.7,Cheewhat River,0.32,0.0,0.0,0.0,13817,595,overlaps mapped old growth,0.5
+884113B,1773,Comment closed,2024-08-19,2024-09-19,no,2024-10-01,15.8,South Island area,0.1,0.0,0.0,0.0,16930,448,overlaps mapped old growth,0.2
+671403-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,0.8,South Island area,0.07,0.0,0.0,0.0,17813,2260,overlaps mapped old growth,0.1
+4611,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,0.9,South Island area,0.0,0.0,0.0,0.0,25753,1502,,0.0
+6715-DT,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,0.2,South Island area,0.0,0.0,0.0,0.0,16830,1032,,0.0
+6701-DT,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,0.1,South Island area,0.0,0.0,0.0,0.0,17353,1285,,0.0
+673222-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,2.6,Cheewhat River,0.0,0.0,0.0,0.0,14240,775,,0.0
+673214-DT,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,0.2,South Island area,0.0,0.0,0.0,0.0,16629,1513,,0.0
+671409-DT,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,0.7,South Island area,0.0,0.0,0.0,0.0,18262,1603,,0.0
+673213-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,1.2,South Island area,0.0,0.0,0.0,0.0,16085,1900,,0.0
+671413-DT,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,0.3,South Island area,0.0,0.0,0.0,0.0,17086,2055,,0.0
+673214-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,4.8,South Island area,0.0,0.0,0.0,0.0,16144,1442,,0.0
+673214-DT,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2.2,South Island area,0.0,0.0,0.0,0.0,16155,1461,,0.0
+673236,1613,Comment closed,2024-06-21,2024-07-21,no,2024-05-31,3.1,Cheewhat River,0.0,0.0,0.0,0.0,15720,661,,0.0
+673235-DT,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,3.8,Cheewhat River,0.0,0.0,0.0,0.0,15612,1304,,0.0
+671412-DT,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,0.2,South Island area,0.0,0.0,0.0,0.0,17712,2199,,0.0
+7318,2416,Comment closed,2025-06-19,2025-07-19,no,2025-09-01,13.7,South Island area,0.0,0.0,0.0,0.0,17653,751,,0.0
+5149,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,10.0,Nitinat River,0.0,0.0,0.0,0.0,13929,324,,0.0
+852234,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,4.4,South Island area,0.0,0.0,0.0,0.0,23844,889,,0.0
+852412,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,3.7,South Island area,0.0,0.0,0.0,0.0,20513,499,,0.0
+852412,1611,Comment closed,2024-06-26,2024-07-26,no,2024-09-01,2.7,South Island area,0.0,0.0,0.0,0.0,20278,729,,0.0
+861102,1353,Comment closed,2024-05-01,2024-05-31,no,2024-08-01,5.3,South Island area,0.0,0.0,0.0,0.0,19126,800,,0.0
+863227,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,1.7,South Island area,0.0,0.0,0.0,0.0,15407,643,,0.0
+863227,1611,Comment closed,2024-06-26,2024-07-26,no,2024-09-01,1.7,South Island area,0.0,0.0,0.0,0.0,15407,643,,0.0
+5579,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,7.5,Nitinat River,0.0,0.0,0.0,0.0,11078,719,,0.0
+5577,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,16.6,Nitinat River,0.0,0.0,0.0,0.0,10956,734,,0.0
+5557,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,20.7,Nitinat River,0.0,0.0,0.0,0.0,11485,695,,0.0
+5747,2247,Comment closed,2025-04-02,2025-05-02,no,2025-05-31,14.1,South Island area,0.0,0.0,0.0,0.0,16543,1644,,0.0
+5743A,2205,Comment closed,2025-02-26,2025-03-28,no,2025-04-01,15.9,South Island area,0.0,0.0,0.0,0.0,17428,635,,0.0
+5743A,2175,Comment closed,2025-02-05,2025-03-07,no,2025-04-01,15.9,South Island area,0.0,0.0,0.0,0.0,17428,635,,0.0
+5732A,2205,Comment closed,2025-02-26,2025-03-28,no,2025-04-01,5.6,South Island area,0.0,0.0,0.0,0.0,16883,861,,0.0
+5732A,2175,Comment closed,2025-02-05,2025-03-07,no,2025-04-01,5.6,South Island area,0.0,0.0,0.0,0.0,16883,861,,0.0
+5572,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,8.1,Nitinat River,0.0,0.0,0.0,0.0,11414,742,,0.0
+5563-1,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,0.7,Nitinat River,0.0,0.0,0.0,0.0,12747,977,,0.0
+5563-2,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,24.8,Nitinat River,0.0,0.0,0.0,0.0,12983,1311,,0.0
+5717A,2247,Comment closed,2025-04-02,2025-05-02,no,2025-05-31,33.9,Nitinat River,0.0,0.0,0.0,0.0,13941,1243,,0.0
+5642,2416,Comment closed,2025-06-19,2025-07-19,no,2025-12-01,1.7,Nitinat River,0.0,0.0,0.0,0.0,13540,301,,0.0
+5733,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,28.1,Nitinat River,0.0,0.0,0.0,0.0,14115,1343,,0.0
+972128H,2336,Comment closed,2025-05-14,2025-06-13,no,2025-10-01,0.5,Nitinat River,0.0,0.0,0.0,0.0,5745,3098,,0.0
+874118,2336,Comment closed,2025-05-14,2025-06-13,no,2025-10-01,5.1,Nitinat River,0.0,0.0,0.0,0.0,4072,309,,0.0
+6041,2247,Comment closed,2025-04-02,2025-05-02,no,2025-05-31,24.5,Nitinat River,0.0,0.0,0.0,0.0,11696,870,,0.0
+6246B,2895,Comment closed,2026-01-21,2026-02-21,no,2026-03-21,5.6,Nitinat River,0.0,0.0,0.0,0.0,14986,1002,,0.0
+884120,1773,Comment closed,2024-08-19,2024-09-19,no,2024-10-01,2.3,South Island area,0.0,0.0,0.0,0.0,17566,491,,0.0
+884113D,1879,Comment closed,2024-10-09,2024-11-09,no,2024-12-01,5.5,South Island area,0.0,0.0,0.0,0.0,16588,661,,0.0
+884115A,1773,Comment closed,2024-08-19,2024-09-19,no,2024-10-01,7.1,South Island area,0.0,0.0,0.0,0.0,16768,646,,0.0
+884115,1773,Comment closed,2024-08-19,2024-09-19,no,2024-10-01,4.0,South Island area,0.0,0.0,0.0,0.0,16996,736,,0.0
+6246,2895,Comment closed,2026-01-21,2026-02-21,no,2026-03-21,6.4,Nitinat River,0.0,0.0,0.0,0.0,15305,895,,0.0
+6246A,2895,Comment closed,2026-01-21,2026-02-21,no,2026-03-21,4.1,Nitinat River,0.0,0.0,0.0,0.0,15421,1018,,0.0
+6248A,2205,Comment closed,2025-02-26,2025-03-28,no,2025-04-01,6.9,Nitinat River,0.0,0.0,0.0,0.0,15891,1274,,0.0
+6248A,2175,Comment closed,2025-02-05,2025-03-07,no,2025-04-01,6.9,Nitinat River,0.0,0.0,0.0,0.0,15891,1274,,0.0
