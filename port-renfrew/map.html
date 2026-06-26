@@ -163,14 +163,23 @@
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:18, attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
     L.control.scale({imperial:true, metric:true, position:'bottomleft'}).addTo(map);
 
-    // deep link: map.html?ws=<watershed-slug> zooms to that watershed
+    // deep links: ?ws=<watershed-slug> zooms to a watershed; ?at=lat,lng[,zoom] centers on a point
+    // (used by the cross-area "find your place" search on the hub).
     const wsViews = {"sombrio-river":[[48.50004,-124.30189],[48.55299,-124.2113]],"san-juan-river":[[48.52063,-124.41381],[48.7641,-123.90967]],"gordon-river":[[48.57381,-124.5269],[48.87533,-124.22613]],"fairy-creek":[[48.58052,-124.37288],[48.64608,-124.33256]],"renfrew-creek":[[48.58052,-124.37288],[48.6674,-124.26609]],"harris-creek":[[48.58211,-124.37572],[48.75757,-124.17018]],"lens-creek":[[48.58641,-124.25879],[48.7641,-124.06964]],"walbran-creek":[[48.57949,-124.67175],[48.75512,-124.46551]],"caycuse-river":[[48.70811,-124.68288],[48.86626,-124.40668]]};
     (function(){
       try {
-        var ws = new URLSearchParams(location.search).get('ws');
+        var qs = new URLSearchParams(location.search);
+        var ws = qs.get('ws');
         if(ws && wsViews[ws]){
-          // defer so the map container has its final size before fitting
           setTimeout(function(){ map.invalidateSize(); map.fitBounds(wsViews[ws], {padding:[24,24], maxZoom:13}); }, 80);
+        }
+        var at = qs.get('at');
+        if(at){
+          var p = at.split(',').map(Number);
+          if(p.length>=2 && isFinite(p[0]) && isFinite(p[1])){
+            var z = (p.length>=3 && isFinite(p[2])) ? p[2] : 13;
+            setTimeout(function(){ map.invalidateSize(); map.setView([p[0],p[1]], z); }, 80);
+          }
         }
       } catch(e){}
     })();

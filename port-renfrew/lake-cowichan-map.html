@@ -163,14 +163,23 @@
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:18, attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
     L.control.scale({imperial:true, metric:true, position:'bottomleft'}).addTo(map);
 
-    // deep link: map.html?ws=<watershed-slug> zooms to that watershed
+    // deep links: ?ws=<watershed-slug> zooms to a watershed; ?at=lat,lng[,zoom] centers on a point
+    // (used by the cross-area "find your place" search on the hub).
     const wsViews = {"robertson-river":[[48.68423,-124.2363],[48.82175,-124.00794]],"cowichan-river":[[48.58803,-124.51674],[49.02615,-123.58323]],"east-robertson-river":[[48.73768,-124.11074],[48.78871,-124.00794]],"bear-creek":[[48.71877,-124.02991],[48.77842,-123.92968]],"nixon-creek":[[48.82456,-124.51681],[48.90114,-124.37152]],"sutton-creek":[[48.77764,-124.31],[48.84638,-124.18256]],"meade-creek":[[48.83014,-124.18457],[48.91567,-124.04296]],"shaw-creek":[[48.91706,-124.49635],[49.02615,-124.33511]]};
     (function(){
       try {
-        var ws = new URLSearchParams(location.search).get('ws');
+        var qs = new URLSearchParams(location.search);
+        var ws = qs.get('ws');
         if(ws && wsViews[ws]){
-          // defer so the map container has its final size before fitting
           setTimeout(function(){ map.invalidateSize(); map.fitBounds(wsViews[ws], {padding:[24,24], maxZoom:13}); }, 80);
+        }
+        var at = qs.get('at');
+        if(at){
+          var p = at.split(',').map(Number);
+          if(p.length>=2 && isFinite(p[0]) && isFinite(p[1])){
+            var z = (p.length>=3 && isFinite(p[2])) ? p[2] : 13;
+            setTimeout(function(){ map.invalidateSize(); map.setView([p[0],p[1]], z); }, 80);
+          }
         }
       } catch(e){}
     })();

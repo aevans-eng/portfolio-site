@@ -163,14 +163,23 @@
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:18, attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
     L.control.scale({imperial:true, metric:true, position:'bottomleft'}).addTo(map);
 
-    // deep link: map.html?ws=<watershed-slug> zooms to that watershed
+    // deep links: ?ws=<watershed-slug> zooms to a watershed; ?at=lat,lng[,zoom] centers on a point
+    // (used by the cross-area "find your place" search on the hub).
     const wsViews = {"carmanah-creek":[[48.60405,-124.72924],[48.77108,-124.61129]],"walbran-creek":[[48.57949,-124.67175],[48.75512,-124.46551]],"klanawa-river":[[48.69747,-125.04865],[48.90455,-124.69681]],"nitinat-river":[[48.66729,-124.87743],[49.15387,-124.40668]],"cheewhat-river":[[48.64972,-124.81159],[48.70445,-124.71008]],"doobah-creek":[[48.68169,-124.77003],[48.74267,-124.66127]],"hobiton-creek":[[48.73614,-124.87743],[48.83319,-124.70334]],"east-klanawa-river":[[48.7645,-124.86626],[48.87162,-124.69681]],"little-nitinat-river":[[48.85429,-124.74954],[49.00646,-124.60325]]};
     (function(){
       try {
-        var ws = new URLSearchParams(location.search).get('ws');
+        var qs = new URLSearchParams(location.search);
+        var ws = qs.get('ws');
         if(ws && wsViews[ws]){
-          // defer so the map container has its final size before fitting
           setTimeout(function(){ map.invalidateSize(); map.fitBounds(wsViews[ws], {padding:[24,24], maxZoom:13}); }, 80);
+        }
+        var at = qs.get('at');
+        if(at){
+          var p = at.split(',').map(Number);
+          if(p.length>=2 && isFinite(p[0]) && isFinite(p[1])){
+            var z = (p.length>=3 && isFinite(p[2])) ? p[2] : 13;
+            setTimeout(function(){ map.invalidateSize(); map.setView([p[0],p[1]], z); }, 80);
+          }
         }
       } catch(e){}
     })();
