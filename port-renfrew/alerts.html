@@ -49,6 +49,17 @@ em{color:#e9e3d5}
 .skip:focus{left:0}
 a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--ember2);outline-offset:2px}
 @media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}.mapbtn{display:block;text-align:center}}
+@media print{
+  body{background:#fff;color:#111;font-size:10.5pt}
+  .topnav,.skip,.mapbtn,.finder,.finder-geo,.finder-res,.bf,.bf-count,.alert-sub,.alert-btn,.alert-link{display:none!important}
+  .wrap{max-width:none;padding:0}
+  a{color:#111;text-decoration:none}
+  h1{font-size:18pt;margin:0 0 8pt}h2{font-size:13pt;color:#111}
+  table{font-size:8.5pt;display:table}th{background:#eee;color:#111}
+  th,td{border:1px solid #bbb}
+  strong,em,b{color:#111}
+  tr{page-break-inside:avoid}
+}
 </style><link rel="alternate" type="application/rss+xml" title="Forest comment alerts" href="alerts.xml">
 </head><body><a class="skip" href="#main">Skip to content</a><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
