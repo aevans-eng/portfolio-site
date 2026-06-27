@@ -45,9 +45,13 @@ strong{color:#f5efe2}
 em{color:#e9e3d5}
 .mapbtn{display:inline-block;margin:2px 0 24px;padding:11px 18px;background:var(--ember);color:#160b04;text-decoration:none;border-radius:6px;font-family:var(--mono);font-size:13px;font-weight:500}
 .mapbtn:hover{background:var(--ember2)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ember);color:#160b04;padding:9px 15px;z-index:200;border-radius:0 0 6px 0;font-family:var(--mono);font-size:13px}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--ember2);outline-offset:2px}
 @media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}.mapbtn{display:block;text-align:center}}
-</style></head><body><div class="wrap">
+</style></head><body><a class="skip" href="#main">Skip to content</a><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
+<main id="main">
 <h1>Follow one cutblock</h1>
 <p>Most of this project is about patterns across a whole region. This page does the opposite. It
 follows a single block all the way through, so the abstract question, "can the public see the
@@ -107,4 +111,4 @@ Distances are from projected geometry. The official stream class, fish-bearing s
 prescriptions can only come from BC Timber Sales records or field work. The point is not that
 this block is unlawful or harmful. It is that the public is asked to accept a decision it
 cannot fully check.</p>
-</div></body></html>
+</main></div></body></html>

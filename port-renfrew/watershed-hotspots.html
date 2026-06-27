@@ -45,9 +45,13 @@ strong{color:#f5efe2}
 em{color:#e9e3d5}
 .mapbtn{display:inline-block;margin:2px 0 24px;padding:11px 18px;background:var(--ember);color:#160b04;text-decoration:none;border-radius:6px;font-family:var(--mono);font-size:13px;font-weight:500}
 .mapbtn:hover{background:var(--ember2)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ember);color:#160b04;padding:9px 15px;z-index:200;border-radius:0 0 6px 0;font-family:var(--mono);font-size:13px}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--ember2);outline-offset:2px}
 @media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}.mapbtn{display:block;text-align:center}}
-</style></head><body><div class="wrap">
+</style></head><body><a class="skip" href="#main">Skip to content</a><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
+<main id="main">
 <h1>Logging hotspots by watershed</h1>
 <p>The watersheds where the most logging is proposed right now. Each links to the blocks in that watershed and the map. Port Renfrew's watersheds have their own detailed cards on the <a href="watersheds.html">watersheds page</a>.</p>
 <style>.dl-list{list-style:none;padding:0;margin:0 0 14px}.dl-list li{margin:5px 0;font-size:16px}.dl-meta{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-left:6px}.mapbtn-row{margin:0 0 6px}</style><h2>Lake Cowichan</h2>
@@ -56,4 +60,4 @@ em{color:#e9e3d5}
 <ul class="dl-list"><li><a href="nitinat-watershed-nitinat-river.html">Nitinat River</a> <span class="dl-meta">29 blocks</span></li><li><a href="nitinat-watershed-cheewhat-river.html">Cheewhat River</a> <span class="dl-meta">12 blocks</span></li></ul>
 <h2>Alberni Valley</h2>
 <ul class="dl-list"><li><a href="alberni-watershed-nahmint-river.html">Nahmint River</a> <span class="dl-meta">32 blocks</span></li><li><a href="alberni-watershed-sproat-river.html">Sproat River</a> <span class="dl-meta">29 blocks</span></li><li><a href="alberni-watershed-somass-river.html">Somass River</a> <span class="dl-meta">5 blocks</span></li></ul>
-</div></body></html>
+</main></div></body></html>

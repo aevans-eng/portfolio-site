@@ -45,9 +45,13 @@ strong{color:#f5efe2}
 em{color:#e9e3d5}
 .mapbtn{display:inline-block;margin:2px 0 24px;padding:11px 18px;background:var(--ember);color:#160b04;text-decoration:none;border-radius:6px;font-family:var(--mono);font-size:13px;font-weight:500}
 .mapbtn:hover{background:var(--ember2)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ember);color:#160b04;padding:9px 15px;z-index:200;border-radius:0 0 6px 0;font-family:var(--mono);font-size:13px}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--ember2);outline-offset:2px}
 @media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}.mapbtn{display:block;text-align:center}}
-</style></head><body><div class="wrap">
+</style></head><body><a class="skip" href="#main">Skip to content</a><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
+<main id="main">
 <h1>Get the data</h1>
 <p>Everything on this site is built from the BC government's open data. The tables and map layers below are the processed versions, free for anyone to download and reuse: journalists, researchers, community groups, or anyone checking the work. The CSVs are the per-block screening tables; the GeoJSON files are the map layers.</p>
 <p>Please attribute the original data to the Province of British Columbia (Open Government Licence - British Columbia) and link back here for the processing. Every figure traces to its official source on the <a href="sources.html">sources page</a>.</p>
@@ -59,4 +63,4 @@ em{color:#e9e3d5}
 <ul class="dl-list"><li><a href="downloads/nitinat-proposed-logging-watch.csv">Proposed-logging watch</a> <span class="dl-meta">CSV, 18 KB</span></li><li><a href="downloads/nitinat-records-gap-register.csv">Records-gap register</a> <span class="dl-meta">CSV, 117 KB</span></li><li><a href="map-data-nitinat/cutblocks.json">Recorded cutblocks</a> <span class="dl-meta">GeoJSON</span></li><li><a href="map-data-nitinat/proposed-logging.json">Proposed logging</a> <span class="dl-meta">GeoJSON</span></li><li><a href="map-data-nitinat/records-gap.json">Records-gap blocks</a> <span class="dl-meta">GeoJSON</span></li><li><a href="map-data-nitinat/tap-old.json">Mapped old growth</a> <span class="dl-meta">GeoJSON</span></li><li><a href="map-data-nitinat/tap-ancient.json">Ancient forest</a> <span class="dl-meta">GeoJSON</span></li></ul>
 <h2>Alberni Valley</h2>
 <ul class="dl-list"><li><a href="downloads/alberni-proposed-logging-watch.csv">Proposed-logging watch</a> <span class="dl-meta">CSV, 21 KB</span></li><li><a href="downloads/alberni-records-gap-register.csv">Records-gap register</a> <span class="dl-meta">CSV, 132 KB</span></li><li><a href="map-data-alberni/cutblocks.json">Recorded cutblocks</a> <span class="dl-meta">GeoJSON</span></li><li><a href="map-data-alberni/proposed-logging.json">Proposed logging</a> <span class="dl-meta">GeoJSON</span></li><li><a href="map-data-alberni/records-gap.json">Records-gap blocks</a> <span class="dl-meta">GeoJSON</span></li><li><a href="map-data-alberni/tap-old.json">Mapped old growth</a> <span class="dl-meta">GeoJSON</span></li><li><a href="map-data-alberni/tap-ancient.json">Ancient forest</a> <span class="dl-meta">GeoJSON</span></li></ul>
-</div></body></html>
+</main></div></body></html>

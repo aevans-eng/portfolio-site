@@ -45,9 +45,13 @@ strong{color:#f5efe2}
 em{color:#e9e3d5}
 .mapbtn{display:inline-block;margin:2px 0 24px;padding:11px 18px;background:var(--ember);color:#160b04;text-decoration:none;border-radius:6px;font-family:var(--mono);font-size:13px;font-weight:500}
 .mapbtn:hover{background:var(--ember2)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ember);color:#160b04;padding:9px 15px;z-index:200;border-radius:0 0 6px 0;font-family:var(--mono);font-size:13px}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--ember2);outline-offset:2px}
 @media (max-width:600px){body{font-size:17px}.wrap{padding:30px 18px 72px}h2{margin-top:34px}table{font-size:13.5px}.mapbtn{display:block;text-align:center}}
-</style></head><body><div class="wrap">
+</style></head><body><a class="skip" href="#main">Skip to content</a><div class="wrap">
 <div class="topnav"><a href="index.html">&larr; Port Renfrew forest accountability</a></div>
+<main id="main">
 <h1>Fish and the Forest</h1>
 <p>These streams hold salmon. For each one, here is what the public record shows about the fish, and about the logging happening above them.</p>
 <p><strong>This does not claim logging caused any salmon decline.</strong> Escapement is shaped by ocean survival, fishing, climate, hatcheries, and survey effort, and counting methods have changed over the decades. The point is narrower and still fair: before more forest above these fish is logged, the public should be able to see the full record. The salmon counts are recorded escapement from DFO's NuSEDS database; treat the trend as a signal, not a precise census.</p>
@@ -89,4 +93,4 @@ em{color:#e9e3d5}
 </ul>
 <hr />
 <p>Sources: salmon escapement from DFO NuSEDS (<code>data/nuseds/port-renfrew-nuseds-timeseries-summary.csv</code>); logging, crossings, and proposed blocks from the project's official-data layers. Built by <code>scripts/build_fish_and_forest.py</code>.</p>
-</div></body></html>
+</main></div></body></html>
