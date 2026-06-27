@@ -1,18 +1,18 @@
 block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_date,create_date,planned_area_ha,watershed,oldgrowth_overlap_ha,ancient_overlap_ha,deferral_overlap_ha,ogma_overlap_ha,nearest_rec_m,nearest_fish_m,why_matters,priority_score
-WCH41,2927,Comment closed,2026-02-12,2026-03-14,no,2026-04-15,2026-03-16,10.8,South Island area,0.0,0.0,0.0,0.0,,129,near a fish record,8.0
-WCH42,2927,Comment closed,2026-02-12,2026-03-14,no,2026-04-15,2026-03-16,19.6,South Island area,0.0,0.0,0.0,0.0,,75,near a fish record,8.0
-WCH44,2927,Comment closed,2026-02-12,2026-03-14,no,2026-04-15,2026-03-16,14.3,South Island area,0.0,0.0,0.0,0.0,,7,near a fish record,8.0
-WCH43,2927,Comment closed,2026-02-12,2026-03-14,no,2026-04-15,2026-03-16,6.8,South Island area,0.0,0.0,0.0,0.0,,22,near a fish record,8.0
-SJsj5P4,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,6.4,South Island area,0.0,0.0,0.0,0.0,,53,near a fish record,8.0
-WCH36,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,44.4,South Island area,0.0,0.0,0.0,0.0,,799,,0.0
-WCH30,1875,Comment closed,2024-10-10,2024-11-10,no,2024-12-01,2024-10-02,10.8,South Island area,0.0,0.0,0.0,0.0,,2067,,0.0
-WCH35,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,22.4,South Island area,0.0,0.0,0.0,0.0,,990,,0.0
-WCH31,1875,Comment closed,2024-10-10,2024-11-10,no,2024-12-01,2024-10-02,12.4,South Island area,0.0,0.0,0.0,0.0,,1868,,0.0
+WCH41,2927,Comment closed,2026-02-12,2026-03-14,no,2026-04-15,2026-03-16,10.8,Sooke area,0.0,0.0,0.0,0.0,,129,near a fish record,8.0
+WCH42,2927,Comment closed,2026-02-12,2026-03-14,no,2026-04-15,2026-03-16,19.6,Sooke area,0.0,0.0,0.0,0.0,,75,near a fish record,8.0
+WCH44,2927,Comment closed,2026-02-12,2026-03-14,no,2026-04-15,2026-03-16,14.3,Sooke area,0.0,0.0,0.0,0.0,,7,near a fish record,8.0
+WCH43,2927,Comment closed,2026-02-12,2026-03-14,no,2026-04-15,2026-03-16,6.8,Sooke area,0.0,0.0,0.0,0.0,,22,near a fish record,8.0
+SJsj5P4,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,6.4,Sooke area,0.0,0.0,0.0,0.0,,53,near a fish record,8.0
+WCH36,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,44.4,Sooke area,0.0,0.0,0.0,0.0,,799,,0.0
+WCH30,1875,Comment closed,2024-10-10,2024-11-10,no,2024-12-01,2024-10-02,10.8,Sooke area,0.0,0.0,0.0,0.0,,2067,,0.0
+WCH35,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,22.4,Sooke area,0.0,0.0,0.0,0.0,,990,,0.0
+WCH31,1875,Comment closed,2024-10-10,2024-11-10,no,2024-12-01,2024-10-02,12.4,Sooke area,0.0,0.0,0.0,0.0,,1868,,0.0
 JRW32,1367,Comment closed,2024-04-11,2024-05-11,no,2024-07-01,2024-04-05,32.2,Jordan River,0.0,0.0,0.0,0.0,,1724,,0.0
 JRW30,1367,Comment closed,2024-04-11,2024-05-11,no,2024-07-01,2024-04-05,16.1,Jordan River,0.0,0.0,0.0,0.0,,1523,,0.0
-JRE26,3079,Comment closed,2026-04-10,2026-05-10,no,2026-06-01,2026-05-10,36.7,South Island area,0.0,0.0,0.0,0.0,,1939,,0.0
-JRE19A,3079,Comment closed,2026-04-10,2026-05-10,no,2026-06-01,2026-05-10,5.6,South Island area,0.0,0.0,0.0,0.0,,1300,,0.0
+JRE26,3079,Comment closed,2026-04-10,2026-05-10,no,2026-06-01,2026-05-10,36.7,Sooke area,0.0,0.0,0.0,0.0,,1939,,0.0
+JRE19A,3079,Comment closed,2026-04-10,2026-05-10,no,2026-06-01,2026-05-10,5.6,Sooke area,0.0,0.0,0.0,0.0,,1300,,0.0
 JRE25,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,18.4,Jordan River,0.0,0.0,0.0,0.0,,856,,0.0
-SJsj5GS,2295,Comment closed,2025-05-21,2025-06-21,no,2027-07-07,2025-06-25,10.8,South Island area,0.0,0.0,0.0,0.0,,2205,,0.0
-SJsj5GQ,2295,Comment closed,2025-05-21,2025-06-21,no,2027-07-07,2025-06-25,17.8,South Island area,0.0,0.0,0.0,0.0,,1023,,0.0
-SJsj5GN,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,8.5,South Island area,0.0,0.0,0.0,0.0,,755,,0.0
+SJsj5GS,2295,Comment closed,2025-05-21,2025-06-21,no,2027-07-07,2025-06-25,10.8,Sooke area,0.0,0.0,0.0,0.0,,2205,,0.0
+SJsj5GQ,2295,Comment closed,2025-05-21,2025-06-21,no,2027-07-07,2025-06-25,17.8,Sooke area,0.0,0.0,0.0,0.0,,1023,,0.0
+SJsj5GN,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,8.5,Sooke area,0.0,0.0,0.0,0.0,,755,,0.0

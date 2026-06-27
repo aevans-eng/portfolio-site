@@ -1,0 +1,275 @@
+block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_date,create_date,planned_area_ha,watershed,oldgrowth_overlap_ha,ancient_overlap_ha,deferral_overlap_ha,ogma_overlap_ha,nearest_rec_m,nearest_fish_m,why_matters,priority_score
+ELK058,2002,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,57.9,Campbell River area,55.23,30.33,30.33,0.11,3035,2894,overlaps ancient old growth (over 400 yr); in a priority-deferral area; overlaps a protected old-growth area,234.7
+ELK057,2002,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,30.1,Campbell River area,26.05,0.0,0.0,0.0,3984,2319,overlaps mapped old growth,39.1
+BLK001H,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,27.8,Campbell River area,19.13,1.46,1.46,0.0,2696,2235,overlaps ancient old growth (over 400 yr); in a priority-deferral area,36.0
+BLK251,1997,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,24.5,Campbell River area,3.97,0.0,3.97,0.0,397,298,overlaps mapped old growth; in a priority-deferral area; near a fish record; near a recreation site,26.9
+ELK056,2002,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,16.5,Campbell River area,14.92,0.0,0.0,0.0,3092,1701,overlaps mapped old growth,22.4
+ELK27,2002,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,13.5,Campbell River area,13.52,0.0,0.0,0.0,4284,1373,overlaps mapped old growth,20.3
+BLK004,2378,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-06-06,18.5,Campbell River area,12.43,0.0,0.51,0.0,3722,893,overlaps mapped old growth; in a priority-deferral area,19.7
+K003C49J,2881,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-09,40.9,Campbell River,0.82,0.82,0.82,0.0,142,165,overlaps ancient old growth (over 400 yr); in a priority-deferral area; near a fish record; near a recreation site,18.3
+BLK001,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,14.9,Campbell River area,12.09,0.0,0.0,0.0,3063,1058,overlaps mapped old growth,18.1
+ELK183,2749,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-21,47.8,Campbell River area,2.47,0.0,2.26,0.39,1711,0,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area; near a fish record,16.8
+ELK183,1998,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,47.8,Campbell River area,2.47,0.0,2.26,0.39,1711,0,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area; near a fish record,16.8
+BLK004H,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,10.0,Campbell River area,9.85,0.0,0.0,0.0,1733,1803,overlaps mapped old growth,14.8
+STOW234,2502,Comment closed,2025-08-20,2025-09-19,no,2025-11-15,2025-12-04,26.8,Salmon River,9.53,0.0,0.0,0.0,14549,2260,overlaps mapped old growth,14.3
+SAso32A,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,85.6,Mohun Creek,0.0,0.0,0.0,0.0,178,39,near a fish record; near a recreation site,13.0
+SAno5D6,1223,Comment closed,2024-04-03,2024-05-03,no,2024-05-06,2024-05-07,24.7,Campbell River area,0.0,0.0,0.0,0.0,373,110,near a fish record; near a recreation site,13.0
+SAno23S,1223,Comment closed,2024-04-03,2024-05-03,no,2027-01-15,2024-05-07,5.3,Campbell River area,0.0,0.0,0.0,0.0,241,83,near a fish record; near a recreation site,13.0
+SAno5P1,1223,Comment closed,2024-04-03,2024-05-03,no,2026-08-31,2024-05-07,12.4,Campbell River area,0.0,0.0,0.0,0.0,118,241,near a fish record; near a recreation site,13.0
+SAno5QH,1223,Comment closed,2024-04-03,2024-05-03,no,2028-06-13,2024-05-07,16.9,Campbell River area,0.0,0.0,0.0,0.0,341,195,near a fish record; near a recreation site,13.0
+SAno50H,1223,Comment closed,2024-04-03,2024-05-03,no,2025-02-03,2024-05-07,41.4,Mohun Creek,0.0,0.0,0.0,0.0,310,94,near a fish record; near a recreation site,13.0
+BLK132,2380,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-06-06,30.6,Campbell River area,0.0,0.0,2.25,0.1,6327,75,in a priority-deferral area; overlaps a protected old-growth area; near a fish record,12.7
+BLK252,1446,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,31.5,Campbell River area,1.26,0.0,1.24,0.0,506,90,overlaps mapped old growth; in a priority-deferral area; near a fish record,12.4
+BLK252,1997,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,44.5,Campbell River area,1.26,0.0,1.24,0.0,506,90,overlaps mapped old growth; in a priority-deferral area; near a fish record,12.4
+BLK006H,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,12.0,Campbell River area,8.22,0.0,0.0,0.0,3605,2037,overlaps mapped old growth,12.3
+BLK005H,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,8.1,Campbell River area,8.08,0.0,0.0,0.0,1587,1599,overlaps mapped old growth,12.1
+SAno5F7,1223,Comment closed,2024-04-03,2024-05-03,no,2027-09-15,2024-05-07,57.2,Mohun Creek,0.0,0.0,1.47,0.0,2216,120,in a priority-deferral area; near a fish record,10.9
+SAsw5LU,2131,Comment closed,2025-03-13,2025-04-13,no,2028-04-01,2025-04-16,78.9,Campbell River,0.0,0.0,1.2,0.0,1544,34,in a priority-deferral area; near a fish record,10.4
+K002C4HJ,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,65.8,Salmon River,2.53,0.0,2.43,0.0,4612,1376,overlaps mapped old growth; in a priority-deferral area,8.7
+BLK131,2380,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-06-06,39.9,Campbell River area,0.33,0.0,0.0,0.0,3775,0,overlaps mapped old growth; near a fish record,8.5
+BLK163B,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,4.1,Campbell River area,0.14,0.0,0.0,0.0,5489,199,overlaps mapped old growth; near a fish record,8.2
+BLK008H,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,5.4,Campbell River area,5.38,0.0,0.0,0.0,3856,306,overlaps mapped old growth,8.1
+BLK163I,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,7.8,Campbell River area,0.08,0.0,0.0,0.0,6648,255,overlaps mapped old growth; near a fish record,8.1
+SAY018,3007,Comment closed,2026-03-18,2026-04-17,no,2026-04-15,2026-03-12,70.0,Campbell River,0.0,0.0,0.0,0.0,2203,261,near a fish record,8.0
+SAsw5R7,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,18.3,Salmon River,0.0,0.0,0.0,0.0,5344,7,near a fish record,8.0
+SAsw47Q,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,36.0,Campbell River,0.0,0.0,0.0,0.0,1146,1,near a fish record,8.0
+K002C245,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,32.2,Campbell River,0.0,0.0,0.0,0.0,2400,93,near a fish record,8.0
+SAso5MJ,2131,Comment closed,2025-03-13,2025-04-13,no,2029-04-01,2025-04-16,16.7,Campbell River,0.0,0.0,0.0,0.0,650,78,near a fish record,8.0
+SAsw5NS,2131,Comment closed,2025-03-13,2025-04-13,no,2028-04-01,2025-04-16,17.9,Campbell River,0.0,0.0,0.0,0.0,1056,0,near a fish record,8.0
+SAso5N6,1223,Comment closed,2024-04-03,2024-05-03,no,2027-04-01,2024-05-07,32.8,Mohun Creek,0.0,0.0,0.0,0.0,844,210,near a fish record,8.0
+K003C4HB,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,12.4,Campbell River,0.0,0.0,0.0,0.0,1267,96,near a fish record,8.0
+SAso5QX,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,23.6,Mohun Creek,0.0,0.0,0.0,0.0,2160,223,near a fish record,8.0
+SAso5J6,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,6.4,Mohun Creek,0.0,0.0,0.0,0.0,6538,63,near a fish record,8.0
+SAso5JE,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,17.3,Mohun Creek,0.0,0.0,0.0,0.0,6734,268,near a fish record,8.0
+SAsw5L8,1223,Comment closed,2024-04-03,2024-05-03,no,2027-04-01,2024-05-07,38.1,Salmon River,0.0,0.0,0.0,0.0,4709,13,near a fish record,8.0
+SAsw5R5,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,54.7,Salmon River,0.0,0.0,0.0,0.0,5961,284,near a fish record,8.0
+K013C4GE,2881,Comment closed,2026-03-02,2026-04-02,no,2027-04-01,2026-04-09,13.6,Mohun Creek,0.0,0.0,0.0,0.0,2844,186,near a fish record,8.0
+SAno5F1,1223,Comment closed,2024-04-03,2024-05-03,no,2027-09-15,2024-05-07,22.1,Mohun Creek,0.0,0.0,0.0,0.0,1728,73,near a fish record,8.0
+K013C4LW,2881,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-09,29.1,Mohun Creek,0.0,0.0,0.0,0.0,921,242,near a fish record,8.0
+K013C3XW,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,34.0,Mohun Creek,0.0,0.0,0.0,0.0,2163,196,near a fish record,8.0
+SAno514,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,21.7,Mohun Creek,0.0,0.0,0.0,0.0,1412,178,near a fish record,8.0
+SAno51B,2131,Comment closed,2025-03-13,2025-04-13,no,2028-04-01,2025-04-16,8.0,Mohun Creek,0.0,0.0,0.0,0.0,2297,75,near a fish record,8.0
+SAno5RB,2131,Comment closed,2025-03-13,2025-04-13,no,2029-04-01,2025-04-16,18.7,Mohun Creek,0.0,0.0,0.0,0.0,6169,270,near a fish record,8.0
+SAY001,2355,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-09,16.4,Mohun Creek,0.0,0.0,0.0,0.0,6483,56,near a fish record,8.0
+SAno5RA,2131,Comment closed,2025-03-13,2025-04-13,no,2027-04-01,2025-04-16,30.9,Mohun Creek,0.0,0.0,0.0,0.0,6483,66,near a fish record,8.0
+SAso5JN,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,10.0,Mohun Creek,0.0,0.0,0.0,0.0,6434,197,near a fish record,8.0
+SAso4SQ,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,4.8,Mohun Creek,0.0,0.0,0.0,0.0,7356,155,near a fish record,8.0
+SAno4ZW,1223,Comment closed,2024-04-03,2024-05-03,no,2028-05-08,2024-05-07,35.8,Campbell River area,0.0,0.0,0.0,0.0,873,34,near a fish record,8.0
+SAps5J2,1223,Comment closed,2024-04-03,2024-05-03,no,2027-04-01,2024-05-07,53.2,Campbell River area,0.0,0.0,0.0,0.0,1460,167,near a fish record,8.0
+SAno4ZP,1223,Comment closed,2024-04-03,2024-05-03,no,2024-05-06,2024-05-07,35.1,Campbell River area,0.0,0.0,0.0,0.0,604,54,near a fish record,8.0
+SAps4SW,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,41.0,Campbell River area,0.0,0.0,0.0,0.0,1247,21,near a fish record,8.0
+SAps5CZ,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,21.8,Campbell River area,0.0,0.0,0.0,0.0,986,59,near a fish record,8.0
+SAno5DE,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,9.4,Campbell River area,0.0,0.0,0.0,0.0,1744,271,near a fish record,8.0
+SAno5DL,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,35.8,Campbell River area,0.0,0.0,0.0,0.0,1483,71,near a fish record,8.0
+K022C4KK,2881,Comment closed,2026-03-02,2026-04-02,no,2027-04-01,2026-04-09,21.1,Campbell River area,0.0,0.0,0.0,0.0,3345,44,near a fish record,8.0
+K013C4GP,1223,Comment closed,2024-04-03,2024-05-03,no,2026-05-11,2024-05-07,4.0,Campbell River area,0.0,0.0,0.0,0.0,1175,89,near a fish record,8.0
+SAY003,2354,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-11,13.5,Campbell River area,0.0,0.0,0.0,0.0,925,86,near a fish record,8.0
+SAno50A,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,20.0,Mohun Creek,0.0,0.0,0.0,0.0,838,15,near a fish record,8.0
+K013C4GN,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,10.0,Campbell River area,0.0,0.0,0.0,0.0,1474,58,near a fish record,8.0
+SAY002,2354,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-11,23.9,Campbell River area,0.0,0.0,0.0,0.0,1257,0,near a fish record,8.0
+SAdc5QF,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,9.9,Menzies Creek,0.0,0.0,0.0,0.0,4493,23,near a fish record,8.0
+SAY004,2355,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-09,12.9,Menzies Creek,0.0,0.0,0.0,0.0,1973,171,near a fish record,8.0
+12-111,2736,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,4.2,Campbell River area,0.0,0.0,0.0,0.0,11685,76,near a fish record,8.0
+PYE-7,3095,Comment closed,2026-04-29,2026-05-29,no,2026-05-31,2026-04-15,37.5,Campbell River area,0.0,0.0,0.0,0.0,575,195,near a fish record,8.0
+PYE-7C,3095,Comment closed,2026-04-29,2026-05-29,no,2026-05-31,2026-06-04,7.2,Campbell River area,0.0,0.0,0.0,0.0,581,195,near a fish record,8.0
+ELK302,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,11.4,Campbell River area,0.0,0.0,0.0,0.0,2730,83,near a fish record,8.0
+12-309,1235,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-07-05,1.6,Campbell River area,0.0,0.0,0.0,0.0,12994,280,near a fish record,8.0
+12-307,1235,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-07-05,4.2,Campbell River area,0.0,0.0,0.0,0.0,12592,52,near a fish record,8.0
+BLK163A,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,1.3,Campbell River area,0.0,0.0,0.0,0.0,5837,29,near a fish record,8.0
+BLK224A1,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,14.2,Campbell River area,0.0,0.0,0.0,0.0,4368,77,near a fish record,8.0
+BLK225,3008,Comment closed,2026-03-18,2026-04-17,no,2026-04-15,2026-03-12,6.6,Campbell River area,0.0,0.0,0.0,0.0,3949,41,near a fish record,8.0
+BLK163J,1446,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,4.1,Campbell River area,0.0,0.0,0.0,0.0,6657,218,near a fish record,8.0
+BLK250,1446,Comment closed,2024-04-25,2024-05-25,no,2027-01-01,2024-08-27,10.7,Campbell River area,0.0,0.0,0.0,0.0,1486,0,near a fish record,8.0
+12-918,2847,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,3.0,Campbell River area,0.0,0.0,0.0,0.0,11413,292,near a fish record,8.0
+BLK210B,1441,Comment closed,2024-04-25,2024-05-25,no,2024-09-01,2024-08-27,15.3,Campbell River area,1.3,0.0,2.64,0.0,1561,1239,overlaps mapped old growth; in a priority-deferral area,7.2
+BLK203,1446,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,13.4,Campbell River area,1.55,0.0,1.55,0.0,3585,1446,overlaps mapped old growth; in a priority-deferral area,5.4
+BLK251,1446,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,29.0,Campbell River area,1.47,0.0,1.46,0.0,1011,759,overlaps mapped old growth; in a priority-deferral area,5.1
+SAno503,1223,Comment closed,2024-04-03,2024-05-03,no,2025-02-03,2024-05-07,26.5,Campbell River area,0.0,0.0,0.0,0.0,412,316,near a recreation site,5.0
+ELK190,1998,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,36.8,Campbell River area,0.0,0.0,0.0,0.0,329,1051,near a recreation site,5.0
+ELK190,2348,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-10-29,36.8,Campbell River area,0.0,0.0,0.0,0.0,329,1051,near a recreation site,5.0
+ELK190,2749,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-21,22.1,Campbell River area,0.0,0.0,0.0,0.0,477,1094,near a recreation site,5.0
+ELK170,2349,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-06-27,1.6,Campbell River area,0.0,0.0,1.52,0.0,2946,4350,in a priority-deferral area,3.0
+BLK002,2378,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-11-13,10.4,Campbell River area,1.48,0.0,0.0,0.0,3356,1343,overlaps mapped old growth,2.2
+BLK001,2378,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-11-13,19.3,Campbell River area,1.43,0.0,0.0,0.0,3282,890,overlaps mapped old growth,2.1
+BLK003,2378,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-06-06,27.8,Campbell River area,0.95,0.0,0.0,0.0,3166,1264,overlaps mapped old growth,1.4
+BLK277,2751,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-21,16.2,Campbell River area,0.58,0.0,0.0,0.0,5796,925,overlaps mapped old growth,0.9
+BLK277,1999,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,16.2,Campbell River area,0.58,0.0,0.0,0.0,5796,925,overlaps mapped old growth,0.9
+ELK204,2000,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,9.9,Campbell River area,0.17,0.0,0.17,0.0,2498,1389,overlaps mapped old growth; in a priority-deferral area,0.6
+SAsw5PW,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,27.1,Salmon River,0.0,0.0,0.0,0.13,6485,895,overlaps a protected old-growth area,0.2
+BLK003H,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,6.0,Campbell River area,0.16,0.0,0.0,0.0,1978,2062,overlaps mapped old growth,0.2
+K034C13W,2203,Comment closed,2025-03-13,2025-04-13,no,2027-04-01,2025-04-16,53.7,Campbell River area,0.0,0.0,0.05,0.0,8259,2739,in a priority-deferral area,0.1
+K002C4KE,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,55.1,Salmon River,0.0,0.0,0.0,0.0,3976,1293,,0.0
+SAY019,3006,Comment closed,2026-03-18,2026-04-17,no,2026-04-15,2026-03-12,35.5,Campbell River,0.0,0.0,0.0,0.0,1248,767,,0.0
+SAY016,2747,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-03-10,21.5,Campbell River,0.0,0.0,0.0,0.0,1839,1129,,0.0
+QF758,1533,Comment closed,2024-05-22,2024-06-21,no,2024-05-22,2024-06-24,18.6,Campbell River,0.0,0.0,0.0,0.0,5197,1463,,0.0
+QF630,1533,Comment closed,2024-05-22,2024-06-21,no,2024-05-22,2024-06-24,5.3,Campbell River,0.0,0.0,0.0,0.0,4620,2151,,0.0
+QF658,1533,Comment closed,2024-05-22,2024-06-21,no,2024-05-22,2024-06-24,20.9,Campbell River,0.0,0.0,0.0,0.0,2958,755,,0.0
+QF642,1533,Comment closed,2024-05-22,2024-06-21,no,2024-05-22,2024-06-24,4.3,Campbell River,0.0,0.0,0.0,0.0,4197,1805,,0.0
+QF670,1682,Comment closed,2024-08-07,2024-09-06,no,2024-08-06,2024-09-11,12.8,Campbell River,0.0,0.0,0.0,0.0,3493,1192,,0.0
+QF678,1533,Comment closed,2024-05-22,2024-06-21,no,2024-05-22,2024-06-24,11.4,Campbell River,0.0,0.0,0.0,0.0,3740,499,,0.0
+SAsw5Q0,2131,Comment closed,2025-03-13,2025-04-13,no,2029-04-01,2025-04-16,36.8,Salmon River,0.0,0.0,0.0,0.0,4609,582,,0.0
+SAsw5Q1,2131,Comment closed,2025-03-13,2025-04-13,no,2029-04-01,2025-04-16,55.7,Salmon River,0.0,0.0,0.0,0.0,5210,981,,0.0
+SAsw5Q2,2131,Comment closed,2025-03-13,2025-04-13,no,2029-04-01,2025-04-16,31.8,Salmon River,0.0,0.0,0.0,0.0,4547,410,,0.0
+SAsw5R6,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,65.6,Salmon River,0.0,0.0,0.0,0.0,5404,562,,0.0
+K002C246,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,44.0,Campbell River,0.0,0.0,0.0,0.0,1869,740,,0.0
+SAY017,3006,Comment closed,2026-03-18,2026-04-17,no,2026-04-15,2026-03-12,11.0,Campbell River,0.0,0.0,0.0,0.0,814,597,,0.0
+K003C31G,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,55.9,Campbell River,0.0,0.0,0.0,0.0,713,586,,0.0
+SAso5M9,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,73.1,Campbell River,0.0,0.0,0.0,0.0,746,628,,0.0
+SAso5M2,2881,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-09,41.3,Campbell River,0.0,0.0,0.0,0.0,848,444,,0.0
+SAso5M2,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,43.8,Mohun Creek,0.0,0.0,0.0,0.0,883,521,,0.0
+SAso5GZ,2131,Comment closed,2025-03-13,2025-04-13,no,2027-04-01,2025-04-16,42.1,Mohun Creek,0.0,0.0,0.0,0.0,970,396,,0.0
+SAso5MW,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,28.4,Mohun Creek,0.0,0.0,0.0,0.0,1674,420,,0.0
+SAso32A,2131,Comment closed,2025-03-13,2025-04-13,no,2025-04-01,2025-04-16,6.8,Campbell River,0.0,0.0,0.0,0.0,1275,726,,0.0
+SAso5NH,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,40.6,Mohun Creek,0.0,0.0,0.0,0.0,2273,663,,0.0
+S26,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,6.4,Mohun Creek,0.0,0.0,0.0,0.0,5820,832,,0.0
+SAso5BP,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,36.7,Mohun Creek,0.0,0.0,0.0,0.0,4373,482,,0.0
+SAso5JW,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,10.5,Mohun Creek,0.0,0.0,0.0,0.0,5104,341,,0.0
+SAso5J5,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,4.3,Mohun Creek,0.0,0.0,0.0,0.0,6922,495,,0.0
+SAsw5HP,1223,Comment closed,2024-04-03,2024-05-03,no,2025-04-01,2024-05-07,100.2,Salmon River,0.0,0.0,0.0,0.0,7574,591,,0.0
+SAsw5KS,1223,Comment closed,2024-04-03,2024-05-03,no,2027-04-01,2024-05-07,39.6,Salmon River,0.0,0.0,0.0,0.0,9148,621,,0.0
+SAsw5KZ,1223,Comment closed,2024-04-03,2024-05-03,no,2027-04-01,2024-05-07,14.3,Salmon River,0.0,0.0,0.0,0.0,8432,702,,0.0
+SAsw5LK,2881,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-09,12.5,Salmon River,0.0,0.0,0.0,0.0,4114,635,,0.0
+SAsw5LK,1223,Comment closed,2024-04-03,2024-05-03,no,2027-04-01,2024-05-07,11.6,Salmon River,0.0,0.0,0.0,0.0,4203,714,,0.0
+SAsw5PX,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,52.6,Salmon River,0.0,0.0,0.0,0.0,7010,930,,0.0
+SAsw5PY,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,47.5,Salmon River,0.0,0.0,0.0,0.0,7097,865,,0.0
+SAno5R8,2131,Comment closed,2025-03-13,2025-04-13,no,2029-04-01,2025-04-16,13.2,Mohun Creek,0.0,0.0,0.0,0.0,3204,715,,0.0
+SAno5S4,2131,Comment closed,2025-03-13,2025-04-13,no,2029-04-01,2025-04-16,9.9,Campbell River,0.0,0.0,0.0,0.0,2916,752,,0.0
+SAno5S5,2131,Comment closed,2025-03-13,2025-04-13,no,2025-04-01,2025-04-16,11.8,Campbell River,0.0,0.0,0.0,0.0,2769,648,,0.0
+K013C4LX,2881,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-09,15.4,Mohun Creek,0.0,0.0,0.0,0.0,2437,548,,0.0
+K013C317,2131,Comment closed,2025-03-13,2025-04-13,no,2025-04-01,2025-04-16,19.6,Campbell River,0.0,0.0,0.0,0.0,1132,860,,0.0
+K013C4GA,1223,Comment closed,2024-04-03,2024-05-03,no,2025-02-03,2024-05-07,26.2,Mohun Creek,0.0,0.0,0.0,0.0,2465,1149,,0.0
+SAso5TM,2881,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-09,26.3,Mohun Creek,0.0,0.0,0.0,0.0,2296,1001,,0.0
+SAso5QW,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,14.1,Mohun Creek,0.0,0.0,0.0,0.0,2966,633,,0.0
+SAso5PV,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,16.6,Mohun Creek,0.0,0.0,0.0,0.0,795,714,,0.0
+SAso5PU,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,24.8,Mohun Creek,0.0,0.0,0.0,0.0,1354,1121,,0.0
+K013C4GB,1223,Comment closed,2024-04-03,2024-05-03,no,2025-02-03,2024-05-07,3.7,Mohun Creek,0.0,0.0,0.0,0.0,3400,1023,,0.0
+SAno5R9,2131,Comment closed,2025-03-13,2025-04-13,no,2029-04-01,2025-04-16,24.6,Mohun Creek,0.0,0.0,0.0,0.0,3409,617,,0.0
+K003C4HC,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,26.3,Mohun Creek,0.0,0.0,0.0,0.0,4634,693,,0.0
+12-304,2182,Comment closed,2025-02-12,2025-03-14,no,2025-02-12,2025-04-01,3.2,Campbell River area,0.0,0.0,0.0,0.0,11050,1786,,0.0
+12-N9_P4,1235,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-07-05,0.5,Campbell River area,0.0,0.0,0.0,0.0,13674,1237,,0.0
+12-81AB,2066,Comment closed,2024-12-18,2025-01-17,no,2024-12-17,2025-01-28,3.6,Campbell River area,0.0,0.0,0.0,0.0,14404,2040,,0.0
+12-116,2280,Comment closed,2025-04-16,2025-05-16,no,2025-04-14,2025-05-23,3.4,Campbell River area,0.0,0.0,0.0,0.0,15915,489,,0.0
+12-75,2067,Comment closed,2024-12-18,2025-01-17,no,2024-12-17,2025-01-28,1.6,Campbell River area,0.0,0.0,0.0,0.0,15497,1052,,0.0
+K012C4LV,2131,Comment closed,2025-03-13,2025-04-13,no,2025-11-02,2025-04-16,10.5,Campbell River area,0.0,0.0,0.0,0.0,869,785,,0.0
+K012C4LV,1223,Comment closed,2024-04-03,2024-05-03,no,2027-01-15,2024-05-07,5.5,Campbell River area,0.0,0.0,0.0,0.0,1027,383,,0.0
+SAno5KP,1223,Comment closed,2024-04-03,2024-05-03,no,2027-05-10,2024-05-07,30.6,Mohun Creek,0.0,0.0,0.0,0.0,1080,898,,0.0
+K013C4GM,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,42.7,Mohun Creek,0.0,0.0,0.0,0.0,846,816,,0.0
+SAdc50Q,1223,Comment closed,2024-04-03,2024-05-03,no,2026-09-15,2024-05-07,27.1,Campbell River area,0.0,0.0,0.0,0.0,4898,1263,,0.0
+ELK137C,2377,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-07-11,5.3,Campbell River area,0.0,0.0,0.0,0.0,4919,1880,,0.0
+ELK137A,2377,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-07-11,8.6,Campbell River area,0.0,0.0,0.0,0.0,4833,1919,,0.0
+ELK137B,2377,Comment closed,2025-06-11,2025-07-11,no,2025-07-15,2025-07-11,8.0,Campbell River area,0.0,0.0,0.0,0.0,5025,2217,,0.0
+ELK053C,2351,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,3.7,Campbell River area,0.0,0.0,0.0,0.0,6848,4244,,0.0
+ELK057,2351,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,1.6,Campbell River area,0.0,0.0,0.0,0.0,6752,4465,,0.0
+ELK051,2351,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,9.1,Campbell River area,0.0,0.0,0.0,0.0,5872,4840,,0.0
+ELK051,2003,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,12.7,Campbell River area,0.0,0.0,0.0,0.0,5905,4864,,0.0
+ELK053A,2351,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,6.1,Campbell River area,0.0,0.0,0.0,0.0,6751,4411,,0.0
+SAdc5J0,2131,Comment closed,2025-03-13,2025-04-13,no,2026-04-01,2025-04-16,18.4,Menzies Creek,0.0,0.0,0.0,0.0,4677,325,,0.0
+ELK053,2003,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,48.0,Campbell River area,0.0,0.0,0.0,0.0,6726,3578,,0.0
+ELK053B,2351,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,8.5,Campbell River area,0.0,0.0,0.0,0.0,6905,4051,,0.0
+12-150,2281,Comment closed,2025-04-16,2025-05-16,no,2025-04-14,2025-05-23,3.8,Campbell River area,0.0,0.0,0.0,0.0,12121,331,,0.0
+12-153,2740,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2026-04-23,3.6,Campbell River area,0.0,0.0,0.0,0.0,12313,2315,,0.0
+12-154,2741,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2026-04-24,0.9,Campbell River area,0.0,0.0,0.0,0.0,12625,2111,,0.0
+12-521,2400,Comment closed,2025-06-18,2025-07-18,no,2025-06-17,2025-07-25,4.8,Campbell River area,0.0,0.0,0.0,0.0,11470,1087,,0.0
+12-152,2739,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,3.8,Campbell River area,0.0,0.0,0.0,0.0,9315,3307,,0.0
+12-145,1235,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-07-05,1.4,Campbell River area,0.0,0.0,0.0,0.0,11727,336,,0.0
+12-44F,2843,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2026-05-12,1.0,Campbell River area,0.0,0.0,0.0,0.0,13317,557,,0.0
+12-031,2397,Comment closed,2025-06-18,2025-07-18,no,2025-06-17,2025-07-25,4.2,Campbell River area,0.0,0.0,0.0,0.0,14965,2343,,0.0
+12-033,2398,Comment closed,2025-06-18,2025-07-18,no,2025-06-17,2025-07-25,4.7,Campbell River area,0.0,0.0,0.0,0.0,14524,2129,,0.0
+12-137,2399,Comment closed,2025-06-18,2025-07-18,no,2025-06-17,2025-07-25,2.2,Campbell River area,0.0,0.0,0.0,0.0,13871,618,,0.0
+12-148,2737,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,4.6,Campbell River area,0.0,0.0,0.0,0.0,15995,1663,,0.0
+12-148,2844,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,5.1,Campbell River area,0.0,0.0,0.0,0.0,15995,1663,,0.0
+12-106,2845,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,1.8,Campbell River area,0.0,0.0,0.0,0.0,17006,564,,0.0
+12-106A,2846,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,2.3,Campbell River area,0.0,0.0,0.0,0.0,16767,690,,0.0
+SApy5HS,1223,Comment closed,2024-04-03,2024-05-03,no,2028-05-15,2024-05-07,58.2,Campbell River area,0.0,0.0,0.0,0.0,1615,1183,,0.0
+SApy5HY,1223,Comment closed,2024-04-03,2024-05-03,no,2028-05-15,2024-05-07,39.3,Campbell River area,0.0,0.0,0.0,0.0,2892,1179,,0.0
+PYE-7A,3095,Comment closed,2026-04-29,2026-05-29,no,2026-05-31,2026-06-04,11.6,Campbell River area,0.0,0.0,0.0,0.0,682,559,,0.0
+PYE-7B,3095,Comment closed,2026-04-29,2026-05-29,no,2026-05-31,2026-06-04,6.7,Campbell River area,0.0,0.0,0.0,0.0,605,527,,0.0
+PYE-8,3097,Comment closed,2026-04-22,2026-05-22,no,2026-05-31,2026-04-15,25.2,Campbell River area,0.0,0.0,0.0,0.0,1189,827,,0.0
+ELK192,2749,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-21,32.6,Campbell River area,0.0,0.0,0.0,0.0,1743,466,,0.0
+ELK192,2348,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-10-29,35.9,Campbell River area,0.0,0.0,0.0,0.0,1772,412,,0.0
+ELK191,2749,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-21,30.1,Campbell River area,0.0,0.0,0.0,0.0,824,1037,,0.0
+ELK191,2348,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-10-29,46.8,Campbell River area,0.0,0.0,0.0,0.0,814,981,,0.0
+ELK191,1998,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,46.8,Campbell River area,0.0,0.0,0.0,0.0,814,981,,0.0
+ELK400,1446,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,18.4,Campbell River area,0.0,0.0,0.0,0.0,2069,1480,,0.0
+ELK303,1446,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,8.9,Campbell River area,0.0,0.0,0.0,0.0,1773,1360,,0.0
+ELK303,2348,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-10-29,8.8,Campbell River area,0.0,0.0,0.0,0.0,1773,1360,,0.0
+ELK181,2001,Comment closed,2024-11-27,2024-12-31,no,2025-01-01,2025-04-16,9.4,Campbell River area,0.0,0.0,0.0,0.0,1864,4048,,0.0
+ELK180B,1446,Comment closed,2024-04-25,2024-05-25,no,2026-01-01,2024-08-27,3.1,Campbell River area,0.0,0.0,0.0,0.0,1866,4052,,0.0
+ELK180B (1),1446,Comment closed,2024-04-25,2024-05-25,no,2026-01-01,2024-08-27,2.0,Campbell River area,0.0,0.0,0.0,0.0,2227,4175,,0.0
+ELK171,2349,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-06-27,3.2,Campbell River area,0.0,0.0,0.0,0.0,3397,4522,,0.0
+ELK185,2001,Comment closed,2024-11-27,2024-12-31,no,2025-01-01,2025-04-16,6.4,Campbell River area,0.0,0.0,0.0,0.0,853,2288,,0.0
+ELK182,2001,Comment closed,2024-11-27,2024-12-31,no,2025-01-01,2025-04-16,4.9,Campbell River area,0.0,0.0,0.0,0.0,961,2958,,0.0
+ELK050,2003,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,15.1,Campbell River area,0.0,0.0,0.0,0.0,5159,3064,,0.0
+ELK075,2001,Comment closed,2024-11-27,2024-12-31,no,2025-01-01,2025-04-16,28.2,Campbell River area,0.0,0.0,0.0,0.0,2439,774,,0.0
+ELK180A,1446,Comment closed,2024-04-25,2024-05-25,no,2026-01-01,2024-08-27,17.2,Campbell River area,0.0,0.0,0.0,0.0,1351,3135,,0.0
+ELK184F,2350,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-08-19,3.4,Campbell River area,0.0,0.0,0.0,0.0,4339,4154,,0.0
+ELK184E,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,9.8,Campbell River area,0.0,0.0,0.0,0.0,4356,4174,,0.0
+ELK184E,2350,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-08-19,7.9,Campbell River area,0.0,0.0,0.0,0.0,4503,4361,,0.0
+ELK173,2349,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-06-27,2.9,Campbell River area,0.0,0.0,0.0,0.0,3425,3919,,0.0
+ELK174,2349,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-06-27,3.9,Campbell River area,0.0,0.0,0.0,0.0,3953,4342,,0.0
+ELK175,2350,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-08-19,4.0,Campbell River area,0.0,0.0,0.0,0.0,4843,4835,,0.0
+ELK172,2349,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-06-27,0.6,Campbell River area,0.0,0.0,0.0,0.0,3243,4068,,0.0
+ELK051A,2351,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,2.0,Campbell River area,0.0,0.0,0.0,0.0,5926,5104,,0.0
+12-818,2962,Comment closed,2026-03-04,2026-04-04,no,2026-03-03,2026-03-03,7.8,Campbell River area,0.0,0.0,0.0,0.0,8301,1664,,0.0
+12-826,2963,Comment closed,2026-03-04,2026-04-04,no,2026-03-03,2026-03-03,5.2,Campbell River area,0.0,0.0,0.0,0.0,9074,1068,,0.0
+12-48AJ,2738,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2026-02-18,1.5,Campbell River area,0.0,0.0,0.0,0.0,10048,769,,0.0
+12-651,1235,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-07-05,2.4,Campbell River area,0.0,0.0,0.0,0.0,11378,1038,,0.0
+12-311,2282,Comment closed,2025-04-16,2025-05-16,no,2025-04-14,2025-05-23,4.5,Campbell River area,0.0,0.0,0.0,0.0,11411,859,,0.0
+12-308,1235,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-07-05,3.1,Campbell River area,0.0,0.0,0.0,0.0,13004,403,,0.0
+12-312,2283,Comment closed,2025-04-16,2025-05-16,no,2025-04-14,2025-05-23,5.8,Campbell River area,0.0,0.0,0.0,0.0,12302,768,,0.0
+12-905,2567,Comment closed,2025-09-17,2025-10-17,no,2025-09-17,2025-10-31,10.9,Campbell River area,0.0,0.0,0.0,0.0,11129,475,,0.0
+12-919,2735,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,5.2,Campbell River area,0.0,0.0,0.0,0.0,12399,1213,,0.0
+12-920,2848,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,2.7,Campbell River area,0.0,0.0,0.0,0.0,12869,1925,,0.0
+BLK226C,1995,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2025-02-19,4.9,Campbell River area,0.0,0.0,0.0,0.0,10077,4374,,0.0
+BLK229,1447,Comment closed,2024-04-25,2024-05-25,no,2024-05-31,2024-11-22,6.4,Campbell River area,0.0,0.0,0.0,0.0,9229,3261,,0.0
+BLK229,2750,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-03-09,6.4,Campbell River area,0.0,0.0,0.0,0.0,9229,3261,,0.0
+BLK002H,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,6.4,Campbell River area,0.0,0.0,0.0,0.0,2289,2357,,0.0
+BLK007H,2353,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,4.4,Campbell River area,0.0,0.0,0.0,0.0,4281,1906,,0.0
+BLK120,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,2.4,Campbell River area,0.0,0.0,0.0,0.0,7698,886,,0.0
+BLK230_Series,1447,Comment closed,2024-04-25,2024-05-25,no,2024-05-31,2024-11-22,35.2,Campbell River area,0.0,0.0,0.0,0.0,8486,2256,,0.0
+BLK230,2750,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-03-09,35.2,Campbell River area,0.0,0.0,0.0,0.0,8486,2256,,0.0
+BLK230,3009,Comment closed,2026-03-18,2026-04-17,no,2026-04-15,2026-03-12,35.2,Campbell River area,0.0,0.0,0.0,0.0,8486,2256,,0.0
+BLK130,1999,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,4.2,Campbell River area,0.0,0.0,0.0,0.0,3636,589,,0.0
+BLK130,2347,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,4.5,Campbell River area,0.0,0.0,0.0,0.0,3579,491,,0.0
+BLKRB4,1441,Comment closed,2024-04-25,2024-05-25,no,2026-01-01,2024-08-27,4.2,Campbell River area,0.0,0.0,0.0,0.0,2377,682,,0.0
+BLKRB5,1441,Comment closed,2024-04-25,2024-05-25,no,2026-01-01,2024-08-27,9.7,Campbell River area,0.0,0.0,0.0,0.0,2106,608,,0.0
+BLK276,1999,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,16.9,Campbell River area,0.0,0.0,0.0,0.0,4633,708,,0.0
+ELK220,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,13.1,Campbell River area,0.0,0.0,0.0,0.0,1433,1755,,0.0
+ELK220,2352,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,17.7,Campbell River area,0.0,0.0,0.0,0.0,1433,1755,,0.0
+ELK222,1441,Comment closed,2024-04-25,2024-05-25,no,2025-01-01,2024-08-27,3.0,Campbell River area,0.0,0.0,0.0,0.0,1993,2097,,0.0
+ELK222,2352,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-05-26,12.4,Campbell River area,0.0,0.0,0.0,0.0,1993,2097,,0.0
+BLK201A,1997,Comment closed,2024-11-27,2024-12-27,no,2026-03-15,2026-03-09,22.5,Campbell River area,0.0,0.0,0.0,0.0,1178,784,,0.0
+BLK255,2748,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-20,6.8,Campbell River area,0.0,0.0,0.0,0.0,2044,1828,,0.0
+BLK210A,1446,Comment closed,2024-04-25,2024-05-25,no,2024-09-01,2024-08-27,0.0,Campbell River area,0.0,0.0,0.0,0.0,1085,765,,0.0
+BLK210C,1446,Comment closed,2024-04-25,2024-05-25,no,2024-09-01,2024-08-27,2.7,Campbell River area,0.0,0.0,0.0,0.0,2100,1887,,0.0
+BLK251,2347,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,31.4,Campbell River area,0.0,0.0,0.0,0.0,1008,846,,0.0
+BLK254B,2748,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-20,8.9,Campbell River area,0.0,0.0,0.0,0.0,1874,1778,,0.0
+BLK254A,2748,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-20,9.1,Campbell River area,0.0,0.0,0.0,0.0,1501,1311,,0.0
+BLK253B,2748,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-20,9.3,Campbell River area,0.0,0.0,0.0,0.0,1462,879,,0.0
+BLK253A,2748,Comment closed,2026-01-28,2026-02-27,no,2026-03-15,2026-01-20,5.6,Campbell River area,0.0,0.0,0.0,0.0,1644,1168,,0.0
+BLK218,2347,Comment closed,2025-05-28,2025-06-27,no,2025-07-15,2025-09-03,2.9,Campbell River area,0.0,0.0,0.0,0.0,1746,683,,0.0
+BLK219,1441,Comment closed,2024-04-25,2024-05-25,no,2026-01-01,2024-08-27,3.6,Campbell River area,0.0,0.0,0.0,0.0,1319,350,,0.0
+ELK225,2000,Comment closed,2024-11-27,2024-12-27,no,2025-01-01,2024-11-25,10.4,Campbell River area,0.0,0.0,0.0,0.0,3268,2654,,0.0
+11-415,2964,Comment closed,2026-03-04,2026-04-04,no,2026-03-03,2026-06-10,0.7,Campbell River area,0.0,0.0,0.0,0.0,5719,1993,,0.0
+11-415,2838,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,4.1,Campbell River area,0.0,0.0,0.0,0.0,6032,2259,,0.0
+K034C3RC,2203,Comment closed,2025-03-13,2025-04-13,no,2027-04-01,2025-04-16,63.7,Campbell River area,0.0,0.0,0.0,0.0,8076,2059,,0.0
+11-437,2727,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2026-05-12,2.2,Campbell River area,0.0,0.0,0.0,0.0,6065,2416,,0.0
+11-436,2726,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2026-02-17,7.9,Campbell River area,0.0,0.0,0.0,0.0,6856,3169,,0.0
+11-409,2836,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2026-06-12,3.9,Campbell River area,0.0,0.0,0.0,0.0,8638,2450,,0.0
+11-416,2965,Comment closed,2026-03-04,2026-04-04,no,2026-03-03,2026-06-12,5.1,Campbell River area,0.0,0.0,0.0,0.0,9418,2239,,0.0
+11-413,2837,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,2.1,Campbell River area,0.0,0.0,0.0,0.0,11777,387,,0.0
+11-68A,2835,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,4.1,Campbell River area,0.0,0.0,0.0,0.0,11998,724,,0.0
+11-445,2839,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,2.8,Campbell River area,0.0,0.0,0.0,0.0,11701,951,,0.0
+11-439,2725,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2026-02-09,1.1,Campbell River area,0.0,0.0,0.0,0.0,5174,1972,,0.0
+11-411,2724,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2026-02-09,8.8,Campbell River area,0.0,0.0,0.0,0.0,5470,1971,,0.0
+11-444,2834,Comment closed,2025-12-17,2026-01-16,no,2025-12-17,2025-12-16,0.9,Campbell River area,0.0,0.0,0.0,0.0,5843,2676,,0.0
+12-921,2568,Comment closed,2025-09-17,2025-10-17,no,2025-09-17,2025-10-31,2.6,Campbell River area,0.0,0.0,0.0,0.0,10474,491,,0.0
+12-922,2569,Comment closed,2025-09-17,2025-10-17,no,2025-09-17,2025-10-31,4.5,Campbell River area,0.0,0.0,0.0,0.0,10778,348,,0.0
+12-926,2570,Comment closed,2025-09-17,2025-10-17,no,2025-09-17,2025-10-31,4.9,Campbell River area,0.0,0.0,0.0,0.0,12700,1374,,0.0
+12-917,2733,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,3.4,Campbell River area,0.0,0.0,0.0,0.0,12632,1041,,0.0
+12-956,2734,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,2.1,Campbell River area,0.0,0.0,0.0,0.0,12920,1192,,0.0
+12-940,2731,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,1.2,Campbell River area,0.0,0.0,0.0,0.0,13882,2026,,0.0
+12-940P,2732,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,1.2,Campbell River area,0.0,0.0,0.0,0.0,13901,2029,,0.0
+12-902,2728,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,2.2,Campbell River area,0.0,0.0,0.0,0.0,13903,2168,,0.0
+12-923P,2730,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,2.4,Campbell River area,0.0,0.0,0.0,0.0,14079,2209,,0.0
+12-924,2729,Comment closed,2025-11-19,2025-12-19,no,2025-11-19,2025-11-18,1.4,Campbell River area,0.0,0.0,0.0,0.0,14438,2717,,0.0
