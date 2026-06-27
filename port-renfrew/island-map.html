@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vancouver Island logging overview</title>
+<meta name="description" content="Every block proposed for logging across the areas this project covers on Vancouver Island, on one map.">
+<link rel="canonical" href="https://aaronevans.ca/port-renfrew/island-map.html">
+<meta property="og:title" content="Vancouver Island logging overview">
+<meta property="og:description" content="Every proposed-logging block across the covered areas, on one map.">
+<meta property="og:image" content="https://aaronevans.ca/port-renfrew/images/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  *{box-sizing:border-box} html,body,#map{height:100%;margin:0}
+  body{font-family:"Public Sans",system-ui,sans-serif}
+  .ov-card{position:absolute;z-index:1000;top:12px;left:12px;max-width:min(340px,calc(100vw - 24px));
+    background:rgba(12,14,12,.93);color:#f0ece0;border:1px solid rgba(255,255,255,.14);border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,.4);padding:14px 16px}
+  .ov-card h1{font-family:"Spectral",Georgia,serif;font-size:18px;margin:0 0 6px}
+  .ov-card p{font-size:12.5px;color:#cdc8ba;margin:0 0 8px;line-height:1.5}
+  .ov-card a{color:#fb923c}
+  .ov-legend{font-size:11.5px;color:#cdc8ba;display:flex;gap:14px;flex-wrap:wrap}
+  .ov-legend span{display:inline-flex;align-items:center;gap:5px}
+  .ov-sw{width:12px;height:12px;border-radius:2px;display:inline-block}
+  .leaflet-popup-content{font-family:"Public Sans",system-ui,sans-serif;font-size:13px}
+  .leaflet-popup-content b{font-family:"Spectral",Georgia,serif}
+  .leaflet-popup-content a{color:#b45309;font-weight:600}
+</style></head><body>
+<div id="map"></div>
+<div class="ov-card">
+  <h1>Logging across Vancouver Island</h1>
+  <p>763 blocks proposed or approved for logging across the seven areas this project covers. Tap an area to open its full map.</p>
+  <div class="ov-legend"><span><i class="ov-sw" style="background:#f59e0b"></i> open for comment</span>
+  <span><i class="ov-sw" style="background:#dc2626"></i> approved or closed</span></div>
+</div>
+<script>
+var AREAS=[{"name":"Port Renfrew","map":"map.html","lat":48.64,"lng":-124.28,"zoom":10,"proposed":88,"data":"map-data/proposed-logging.json"},{"name":"Lake Cowichan","map":"lake-cowichan-map.html","lat":48.83,"lng":-124.07,"zoom":11,"proposed":37,"data":"map-data-lake-cowichan/proposed-logging.json"},{"name":"Nitinat","map":"nitinat-map.html","lat":48.73,"lng":-124.78,"zoom":11,"proposed":127,"data":"map-data-nitinat/proposed-logging.json"},{"name":"Alberni Valley","map":"alberni-map.html","lat":49.22,"lng":-124.95,"zoom":11,"proposed":149,"data":"map-data-alberni/proposed-logging.json"},{"name":"Sooke","map":"sooke-map.html","lat":48.45,"lng":-123.86,"zoom":11,"proposed":17,"data":"map-data-sooke/proposed-logging.json"},{"name":"Campbell River","map":"campbell-river-map.html","lat":50.12,"lng":-125.52,"zoom":10,"proposed":274,"data":"map-data-campbell-river/proposed-logging.json"},{"name":"Gold River","map":"gold-river-map.html","lat":49.78,"lng":-126.1,"zoom":11,"proposed":71,"data":"map-data-gold-river/proposed-logging.json"}];
+var map=L.map('map').setView([49.7,-125.6],7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+function blockStyle(f){var s=(f.properties&&f.properties.fom_status)||'';
+  if(/^Open for comment/.test(s)) return {color:'#fbbf24',weight:1.5,fillColor:'#f59e0b',fillOpacity:0.6};
+  return {color:'#7f1d1d',weight:1,fillColor:'#dc2626',fillOpacity:0.45};}
+AREAS.forEach(function(a){
+  if(a.lat==null) return;
+  var m=L.marker([a.lat,a.lng]).addTo(map);
+  m.bindPopup('<b>'+a.name+'</b><br>'+a.proposed+' blocks proposed<br><a href="'+a.map+'">Open '+a.name+' map &rarr;</a>');
+  fetch(a.data).then(function(r){return r.ok?r.json():null;}).then(function(fc){
+    if(!fc) return;
+    L.geoJSON(fc,{style:blockStyle,onEachFeature:function(f,l){
+      var p=f.properties||{};l.bindPopup('<b>'+(p.block_name||'Block')+'</b><br>'+(p.fom_status||'')+'<br><a href="'+a.map+'">Open '+a.name+' map &rarr;</a>');
+    }}).addTo(map);
+  }).catch(function(){});
+});
+</script>
+</body></html>
