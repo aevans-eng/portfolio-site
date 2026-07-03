@@ -172,19 +172,58 @@ export function checkScope(f) {
 
 // ------------------------------------------------------------ Part I tax
 export function computeTax(taxable, prov, start, end, taxCap = 0, aaii = 0) {
-  if (taxable <= 0) return { federal: 0, provincial: 0 };
-  let fedLimit = FEDERAL.limit;
   const pr = provincialRatesForYear(prov, start, end);
+  if (taxable <= 0)
+    return { federal: 0, provincial: 0, detail: [], rates: pr, fedLimit: FEDERAL.limit, provLimit: pr.limit };
+  let fedLimit = FEDERAL.limit;
   let provLimit = pr.limit;
   if (taxCap > 0 || aaii > 0) {
     fedLimit = groundLimit(fedLimit, taxCap, aaii, true);
     provLimit = groundLimit(provLimit, taxCap, aaii, !PASSIVE_GRIND_NON_PARALLEL.has(prov));
   }
+  const pct = (x) => (x * 100).toFixed(x * 100 % 1 ? 3 : 0).replace(/\.?0+$/, "") + "%";
+  const detail = [];
   const fedLow = Math.min(taxable, fedLimit);
-  const federal = halfUp(fedLow * FEDERAL.sbdRate + Math.max(0, taxable - fedLimit) * FEDERAL.generalRate);
+  const fedHigh = Math.max(0, taxable - fedLimit);
+  detail.push([`Federal small-business rate ${pct(FEDERAL.sbdRate)} × ${fmt(fedLow)}`, halfUp(fedLow * FEDERAL.sbdRate)]);
+  if (fedHigh) detail.push([`Federal general rate ${pct(FEDERAL.generalRate)} × ${fmt(fedHigh)}`, halfUp(fedHigh * FEDERAL.generalRate)]);
+  const federal = halfUp(fedLow * FEDERAL.sbdRate + fedHigh * FEDERAL.generalRate);
   const provLow = Math.min(taxable, provLimit);
-  const provincial = halfUp(provLow * pr.small + Math.max(0, taxable - provLimit) * pr.general);
-  return { federal, provincial };
+  const provHigh = Math.max(0, taxable - provLimit);
+  detail.push([`${prov} lower rate ${pct(pr.small)} × ${fmt(provLow)}`, halfUp(provLow * pr.small)]);
+  if (provHigh) detail.push([`${prov} higher rate ${pct(pr.general)} × ${fmt(provHigh)}`, halfUp(provHigh * pr.general)]);
+  const provincial = halfUp(provLow * pr.small + provHigh * pr.general);
+  return { federal, provincial, detail, rates: pr, fedLimit, provLimit };
+}
+
+// --------------------------------------------------------- GIFI deliverable
+export const GIFI_LABELS = {
+  1001: "Cash", 1120: "Inventories", 1740: "Machinery & equipment (UCC)",
+  2599: "Total assets", 2780: "Due to shareholder(s)/director(s)",
+  3500: "Common shares", 3640: "Total liabilities and shareholder equity",
+  3849: "Retained earnings/deficit — end",
+  8299: "Total revenue", 8518: "Cost of sales", 8519: "Gross profit",
+  8523: "Meals & entertainment", 8670: "Amortization",
+  8764: "Government fees", 8860: "Professional fees",
+  9060: "Salaries & wages", 9130: "Supplies", 9150: "Computer expenses",
+  9270: "Other expenses", 9273: "Selling expenses — marketplace fees",
+  9367: "Total operating expenses", 9999: "Net income/loss after taxes",
+};
+
+export function gifiCsv(r) {
+  // The filing deliverable: every GIFI line as code,label,amount — the values
+  // to key into (or check against) any CRA-certified T2 software.
+  const rows = [["GIFI code", "Description", "Amount (CAD, whole dollars)"]];
+  const push = (code) => {
+    if (r.gifi[code] !== undefined)
+      rows.push([code, GIFI_LABELS[code] || `GIFI ${code}`, r.gifi[code]]);
+  };
+  // income statement (S125), then expense detail, then balance sheet (S100)
+  [8299, 8518, 8519].forEach(push);
+  for (const e of r.expenseLines || [])
+    rows.push([e.gifi, GIFI_LABELS[e.gifi] || e.label, halfUp(e.amount / 100)]);
+  [9367, 9999, 1001, 1120, 1740, 2599, 2780, 3500, 3849, 3640].forEach(push);
+  return rows.map((cols) => cols.map((c) => `"${String(c).replace(/"/g, '""')}"`).join(",")).join("\r\n");
 }
 
 // ----------------------------------------------------------- full return
@@ -231,7 +270,7 @@ export function computeReturn(corp, fin) {
   }
 
   // Part I tax (with grinds)
-  const { federal, provincial } = computeTax(
+  const { federal, provincial, detail: taxDetail } = computeTax(
     taxable, corp.province, corp.tyStart, corp.tyEnd,
     fin.taxableCapital || 0, fin.aaii || 0);
   if ((fin.taxableCapital || 0) > 0 || (fin.aaii || 0) > 0)
@@ -249,6 +288,7 @@ export function computeReturn(corp, fin) {
     8299: roundDollar(fin.revenue), 8518: roundDollar(cogs),
     8519: roundDollar(grossProfit), 9367: roundDollar(opex),
     9999: roundDollar(netIncome),
+    1001: roundDollar(fin.cash),
     1120: roundDollar(fin.closingInv), 1740: roundDollar(closingUcc),
     2599: roundDollar(totalAssets), 3500: roundDollar(fin.shareCapital),
     3849: roundDollar(retainedEnd),
@@ -260,7 +300,8 @@ export function computeReturn(corp, fin) {
     corp, netIncome, netIncomeForTax: nift, taxable,
     nonCapitalLoss: lossCarry, federal, provincial, total: federal + provincial,
     dueToShareholder, totalAssets, retainedEnd,
-    schedule8: s8, schedule1: s1, gifi: g, notes,
+    schedule8: s8, schedule1: s1, gifi: g, notes, taxDetail,
+    expenseLines: opexList,
     balances: g[2599] === g[3640],
   };
 }

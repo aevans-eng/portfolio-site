@@ -4,7 +4,7 @@
  */
 import {
   computeReturn, computeTax, computeSchedule8, computeSchedule1,
-  applyLosses, groundLimit, checkScope, halfUp,
+  applyLosses, groundLimit, checkScope, halfUp, gifiCsv,
 } from "./engine.js";
 
 let pass = 0, fail = 0;
@@ -165,6 +165,21 @@ eq("passive grind", groundLimit(500000_00, 0, 100000_00), 250000_00);
   });
   eq("meals books income", m.netIncome, 48000_00);
   eq("meals income for tax", m.netIncomeForTax, 49000_00);
+}
+
+// ---- GIFI CSV deliverable
+{
+  const r = computeReturn(corp(), {
+    revenue: 50000_00, openingInv: 0, purchases: 0, closingInv: 0,
+    expenses: [{ gifi: 9060, label: "Salaries & wages", amount: 10000_00 }],
+    cash: 40000_00, shareCapital: 100_00,
+  });
+  const csv = gifiCsv(r);
+  const lines = csv.split("\r\n");
+  eq("csv has header", lines[0].includes("GIFI code"), true);
+  eq("csv includes revenue line", csv.includes('"8299"') && csv.includes('"50000"'), true);
+  eq("csv includes wages detail", csv.includes('"9060"') && csv.includes('"10000"'), true);
+  eq("csv includes balance-sheet total", csv.includes('"3640"'), true);
 }
 
 // ---- scope guard
