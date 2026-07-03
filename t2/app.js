@@ -164,7 +164,9 @@ function el(tag, cls, text) {
 function ledgerRow(tbody, label, amountCents, opts = {}) {
   const tr = el("tr", (opts.total ? "total" : "") + (opts.sub ? " subline" : ""));
   const td0 = el("td");
-  if (opts.gifi) td0.appendChild(el("span", "gifi-tag", String(opts.gifi)));
+  if (opts.line) td0.appendChild(el("span", "line-tag", `L${opts.line}`));
+  else if (opts.gifi) td0.appendChild(el("span", "gifi-tag", String(opts.gifi)));
+  else td0.appendChild(el("span", "gifi-tag", ""));
   td0.appendChild(document.createTextNode(label));
   tr.appendChild(td0);
   tr.appendChild(el("td", "amt" + (amountCents < 0 ? " neg" : ""), fmt(amountCents)));
@@ -205,14 +207,15 @@ form.addEventListener("submit", (e) => {
   const sheet = el("div", "paper-sheet");
 
   if (scope.length) {
-    const stamp = el("div", "stamp declined");
-    stamp.append(el("div", "big", "RETURNED"), el("div", "small", "cannot prepare"));
-    sheet.appendChild(stamp);
-    sheet.appendChild(el("h3", "", "We can't do this return correctly yet"));
-    sheet.appendChild(el("div", "meta", "Rather than guess, here's exactly why:"));
+    sheet.appendChild(el("h3", "", "Return not prepared"));
+    const v = el("div", "verdict declined");
+    v.appendChild(el("strong", "", "This return requires schedules T2 Prep does not support yet."));
+    sheet.appendChild(v);
     const ul = el("ul", "declined-list");
     for (const r of scope) ul.appendChild(el("li", "", r));
     sheet.appendChild(ul);
+    sheet.appendChild(el("p", "meta",
+      "Use CRA-certified software or a professional for this return. Nothing was computed."));
     result.appendChild(sheet);
     sheet.scrollIntoView({ behavior: "smooth", block: "start" });
     return;
@@ -262,20 +265,26 @@ form.addEventListener("submit", (e) => {
     taxableCapital: vals.taxable_capital, aaii: vals.aaii,
   });
 
-  /* stamp */
-  const owes = r.total > 0;
-  const stamp = el("div", "stamp" + (owes ? " owing" : ""));
-  stamp.append(
-    el("div", "big", owes ? fmt(r.total) : "$0 OWING"),
-    el("div", "small", owes ? "estimated tax payable" : "loss / nil year — still must file"),
-  );
-  sheet.appendChild(stamp);
-
   sheet.appendChild(el("h3", "", r.corp.legalName));
   sheet.appendChild(el("div", "meta",
-    `${corp.tyStart} → ${corp.tyEnd} · ${corp.province}` +
-    (corp.bn ? ` · BN ${corp.bn}RC0001` : "") +
+    `Tax year ${corp.tyStart} to ${corp.tyEnd} (L060–L061) · ${corp.province} (L750)` +
+    (corp.bn ? ` · BN ${corp.bn}RC0001 (L001)` : "") +
     ` · prepared ${new Date().toISOString().slice(0, 10)}`));
+
+  /* verdict */
+  const owes = r.total > 0;
+  const v = el("div", "verdict" + (owes ? " owing" : ""));
+  if (owes) {
+    v.appendChild(el("strong", "", `Balance owing (line 785): ${fmt(r.total)}`));
+    v.appendChild(el("div", "", "Estimated Part I federal and provincial tax payable."));
+  } else {
+    v.appendChild(el("strong", "", "Total tax payable: $0.00"));
+    v.appendChild(el("div", "",
+      r.nonCapitalLoss > 0
+        ? `Loss year — ${fmt(r.nonCapitalLoss)} non-capital loss to carry forward. A return must still be filed.`
+        : "Nil year — a return must still be filed."));
+  }
+  sheet.appendChild(v);
 
   /* income statement, with per-line GIFI detail */
   const [t1, b1] = table("Income statement · Schedule 125 · GIFI");
@@ -307,15 +316,18 @@ form.addEventListener("submit", (e) => {
     ledgerRow(bs1, "Net income (loss) per books", r.netIncome);
     for (const [label, amt] of r.schedule1.additions) ledgerRow(bs1, `Add: ${label}`, amt, { sub: true });
     for (const [label, amt] of r.schedule1.deductions) ledgerRow(bs1, `Deduct: ${label}`, -amt, { sub: true });
-    ledgerRow(bs1, "Net income for tax purposes", r.netIncomeForTax, { total: true });
+    ledgerRow(bs1, "Net income for tax purposes", r.netIncomeForTax, { total: true, line: 300 });
     sheet.appendChild(ts1);
   }
 
-  /* tax computation with the actual rate math */
-  const [t2, b2] = table("Tax computation · Part I");
-  ledgerRow(b2, "Taxable income", r.taxable);
+  /* tax computation with the actual rate math and T2 jacket lines */
+  const [t2, b2] = table("Tax computation · T2 jacket");
+  ledgerRow(b2, "Net income for tax purposes", r.netIncomeForTax, { line: 300 });
+  ledgerRow(b2, "Taxable income", r.taxable, { line: 360 });
   for (const [label, amt] of r.taxDetail) ledgerRow(b2, label, amt, { sub: true });
-  ledgerRow(b2, "Total tax payable", r.total, { total: true });
+  ledgerRow(b2, "Part I tax payable (federal)", r.federal, { line: 700 });
+  ledgerRow(b2, "Provincial tax payable", r.provincial);
+  ledgerRow(b2, "Total tax payable", r.total, { total: true, line: 770 });
   if (r.nonCapitalLoss > 0)
     ledgerRow(b2, "Non-capital loss carryforward (Schedule 4)", r.nonCapitalLoss);
   sheet.appendChild(t2);

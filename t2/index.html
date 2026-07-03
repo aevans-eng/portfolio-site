@@ -4,27 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>The Ledger — a T2 practice sheet for small corporations</title>
-<meta name="description" content="Compute your small corporation's T2 return summary in plain English — entirely in your browser. A working prototype.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<title>T2 Prep — corporate tax preparation for small CCPCs</title>
+<meta name="description" content="Prepare your small corporation's T2 return summary with real CRA line numbers and GIFI codes — computed entirely on your device.">
 <link rel="stylesheet" href="t2.css">
 </head>
 <body>
 <div class="sheet-wrap">
 
   <header class="masthead">
-    <span class="form-no">Practice sheet · not a CRA form</span>
-    <h1>Your corporation's taxes,<br><em>without the gouge.</em></h1>
-    <p class="sub">A plain-English T2 practice sheet for owner-run Canadian corporations.
-       Enter your year below — it computes the whole return summary, balanced to the cent,
-       <strong>entirely in your browser.</strong> Nothing you type ever leaves this device.</p>
+    <span class="form-no">T2 Prep · working paper generator</span>
+    <h1>T2 corporate return preparation <em>for small CCPCs</em></h1>
+    <p class="sub">Enter the corporation's year below. It computes the return summary with CRA
+       line numbers and GIFI codes — Schedule 8 CCA, Schedule 1 adjustments, loss carryforwards,
+       and provincial tax for every CRA-administered jurisdiction. All computation happens on
+       this device; nothing is uploaded or stored on a server.</p>
     <div class="badges">
-      <span class="badge">Runs 100% client-side</span>
-      <span class="badge">All CRA-administered provinces</span>
-      <span class="badge">CCA · losses · dividends paid</span>
-      <span class="badge warn">Prototype — not CRA-certified</span>
+      <span class="badge">Computed on-device</span>
+      <span class="badge">CRA line numbers + GIFI codes</span>
+      <span class="badge">2024–2026 published rates</span>
+      <span class="badge warn">Preparation only — not yet CRA-certified for e-filing</span>
     </div>
   </header>
 
@@ -156,7 +154,7 @@
     </section>
 
     <div class="actions">
-      <button type="submit" class="compute">Post the books →</button>
+      <button type="submit" class="compute">Compute return</button>
       <p class="foot">Computed on this device. Nothing is uploaded or sent — ever.</p>
       <p class="foot save-line"><span id="save_note">Drafts autosave to this device as you type.</span>
         <button type="button" id="clear_draft" class="linkish">Clear draft</button></p>
