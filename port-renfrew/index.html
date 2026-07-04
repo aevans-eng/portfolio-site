@@ -100,11 +100,28 @@
 <div class="pr-stat"><div class="pr-stat-num">+$40M</div><div class="pr-stat-label">ESSA found protection beats logging, for the public</div></div>
 <div class="pr-stat"><div class="pr-stat-num">250 yr</div><div class="pr-stat-label">for old-growth structure to return; second growth is cut at 60</div></div>
   </div>
-  <p class="pr-asof">Comment windows and counts are current as of 2026-06-27; they change weekly. Confirm any deadline on its FOM project.</p>
+  <p class="pr-asof" data-asof="2026-07-03">Comment windows and counts are current as of 2026-07-03; they change weekly. Confirm any deadline on its FOM project.</p><script>
+(function(){
+  var el=document.querySelector('[data-asof]');
+  if(!el) return;
+  function check(){
+    var d=new Date(el.getAttribute('data-asof')+'T00:00:00');
+    var days=(Date.now()-d.getTime())/864e5;
+    var old=document.getElementById('stale-note'); if(old) old.remove();
+    if(days>10){
+      var p=document.createElement('p'); p.id='stale-note'; p.setAttribute('role','status');
+      p.style.cssText='font-family:ui-monospace,monospace;font-size:12.5px;line-height:1.6;border:1px solid rgba(180,83,9,.5);border-radius:6px;padding:10px 14px;margin:14px 2px;color:inherit;max-width:70ch';
+      p.textContent='Data on this page was last refreshed '+el.getAttribute('data-asof')+' and is more than 10 days old. Comment deadlines may have changed; the deadline on each FOM project page is the one that counts.';
+      el.parentNode.insertBefore(p, el);
+    }
+  }
+  check(); window.staleCheck=check;
+})();
+</script>
 
   <p class="pr-section">Start here</p>
   <div class="pr-cards">
-<a class="pr-card" href="alerts.html"><h3>Open for comment right now</h3><p>9 blocks open right now, soonest closes 2026-07-03.</p></a>
+<a class="pr-card" href="alerts.html"><h3>Open for comment right now</h3><p>10 blocks open right now, soonest closes 2026-07-03.</p></a>
 <a class="pr-card" href="island-map.html"><h3>The whole-Island map</h3><p>Every proposed-logging block across all areas, on one map.</p></a>
 <a class="pr-card" href="proposed-logging-watch.html"><h3>What's proposed next</h3><p>Coming blocks, ranked by what they threaten.</p></a>
   </div>

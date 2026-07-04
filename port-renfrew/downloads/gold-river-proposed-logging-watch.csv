@@ -19,6 +19,7 @@ E090C4N7,2131,Comment closed,2025-03-13,2025-04-13,no,2027-04-01,2025-04-16,18.1
 E070C49B,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,39.7,Gold River area,15.08,0.0,0.0,0.0,8874,3603,overlaps mapped old growth,22.6
 F081C4NA,2881,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-09,3.2,Gold River,3.24,3.16,3.16,0.0,13086,351,overlaps ancient old growth (over 400 yr); in a priority-deferral area,20.7
 HB-1A,2123,Comment closed,2025-01-29,2025-02-28,no,2025-04-01,2025-03-03,2.9,Gold River,2.91,2.91,2.91,0.0,15676,1211,overlaps ancient old growth (over 400 yr); in a priority-deferral area,18.9
+BC-1,1289,Comment closed,2024-04-04,2024-05-04,no,2024-04-15,2024-05-27,8.4,Gold River area,5.26,0.0,5.26,0.0,8686,3538,overlaps mapped old growth; in a priority-deferral area,18.4
 E070C4J1,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,12.3,Gold River area,11.6,0.0,0.0,0.0,16151,738,overlaps mapped old growth,17.4
 E100C4EL,1223,Comment closed,2024-04-03,2024-05-03,no,2028-04-01,2024-05-07,2.0,Gold River,1.93,0.0,1.93,0.0,11858,0,overlaps mapped old growth; in a priority-deferral area; near a fish record,14.8
 VNse415,1424,Comment closed,2024-05-15,2024-06-14,no,2024-11-06,2024-06-18,9.4,Gold River area,9.19,0.0,0.0,0.0,18122,2295,overlaps mapped old growth,13.8
@@ -27,6 +28,7 @@ E070C4C2,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,20.6
 BC-3,1289,Comment closed,2024-04-04,2024-05-04,no,2024-04-15,2024-05-27,4.3,Gold River area,3.62,0.0,3.62,0.0,8457,2995,overlaps mapped old growth; in a priority-deferral area,12.7
 F051C4QK,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,8.3,Burman River,8.32,0.0,0.0,0.0,18226,860,overlaps mapped old growth,12.5
 E070C4C6,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,7.7,Gold River area,7.55,0.0,0.0,0.0,16128,1901,overlaps mapped old growth,11.3
+E070C4C5,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,10.2,Gold River area,7.27,0.0,0.0,0.0,16255,1088,overlaps mapped old growth,10.9
 MU006H,1599,Comment closed,2024-06-19,2024-07-19,no,2024-06-15,2024-06-11,0.7,Gold River,0.7,0.0,0.7,0.0,6986,92,overlaps mapped old growth; in a priority-deferral area; near a fish record,10.4
 BUja4XR,2131,Comment closed,2025-03-13,2025-04-13,no,2026-04-01,2025-04-16,6.7,Gold River area,6.64,0.0,0.0,0.0,18150,1915,overlaps mapped old growth,10.0
 BUja4XP,2881,Comment closed,2026-03-02,2026-04-02,no,2030-04-01,2026-04-09,6.0,Gold River area,5.83,0.0,0.0,0.0,14812,1264,overlaps mapped old growth,8.7
@@ -38,7 +40,6 @@ MU009,1290,Comment closed,2024-04-04,2024-05-04,no,2024-04-15,2024-05-27,4.0,Gol
 BUbc5KR,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,27.1,Gold River area,5.24,0.0,0.0,0.0,9386,2863,overlaps mapped old growth,7.9
 BC-5,1289,Comment closed,2024-04-04,2024-05-04,no,2024-04-15,2024-05-27,4.5,Gold River area,4.43,0.0,0.63,0.0,9115,3894,overlaps mapped old growth; in a priority-deferral area,7.9
 BUja4XK,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,4.7,Gold River area,4.33,0.0,0.0,0.0,16699,698,overlaps mapped old growth,6.5
-E070C4C5,1223,Comment closed,2024-04-03,2024-05-03,no,2024-04-01,2024-05-07,4.1,Gold River area,4.08,0.0,0.0,0.0,17079,1165,overlaps mapped old growth,6.1
 E060C4BU,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,46.5,Gold River area,3.88,0.0,0.0,0.0,18838,2592,overlaps mapped old growth,5.8
 BUja4XM,1223,Comment closed,2024-04-03,2024-05-03,no,2026-04-01,2024-05-07,4.4,Gold River area,3.63,0.0,0.0,0.0,18068,717,overlaps mapped old growth,5.4
 E070C4HV,1223,Comment closed,2024-04-03,2024-05-03,no,2024-10-01,2024-05-07,21.2,Burman River,3.53,0.0,0.0,0.0,13532,1438,overlaps mapped old growth,5.3
@@ -51,7 +52,6 @@ E060C4BU,2131,Comment closed,2025-03-13,2025-04-13,no,2026-04-01,2025-04-16,56.6
 E090C4N7,2881,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-09,2.6,Gold River,1.88,0.0,0.0,0.0,12130,1121,overlaps mapped old growth,2.8
 F081C4N9,2881,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-02-27,2.6,Gold River,1.88,0.0,0.0,0.0,12130,1121,overlaps mapped old growth,2.8
 BUja4XK,2131,Comment closed,2025-03-13,2025-04-13,no,2026-04-01,2025-04-16,1.4,Gold River area,1.29,0.0,0.0,0.0,17020,1194,overlaps mapped old growth,1.9
-BC-1,1289,Comment closed,2024-04-04,2024-05-04,no,2024-04-15,2024-05-27,1.0,Gold River area,0.49,0.0,0.49,0.0,8997,4170,overlaps mapped old growth; in a priority-deferral area,1.7
 MU011H,1599,Comment closed,2024-06-19,2024-07-19,no,2024-06-15,2024-06-11,1.5,Gold River,1.08,0.0,0.0,0.0,3580,836,overlaps mapped old growth,1.6
 CKsb425,1424,Comment closed,2024-05-15,2024-06-14,no,2024-06-15,2024-06-18,1.0,Gold River area,0.97,0.0,0.0,0.0,17508,2025,overlaps mapped old growth,1.5
 N89HL,1599,Comment closed,2024-06-19,2024-07-19,no,2024-06-15,2024-06-11,0.8,Gold River,0.82,0.0,0.0,0.0,7174,621,overlaps mapped old growth,1.2
