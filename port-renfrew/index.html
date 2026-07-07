@@ -117,11 +117,30 @@
   }
   check(); window.staleCheck=check;
 })();
+</script><script>
+(function(){
+  var anchor=document.querySelector('[data-asof]');
+  if(!anchor||!window.fetch||!window.localStorage) return;
+  fetch('open-blocks.json').then(function(r){return r.ok?r.json():null;}).then(function(list){
+    if(!list) return;
+    var ids=list.map(function(b){return b.f+'/'+b.b;});
+    var seen=null;
+    try{seen=JSON.parse(localStorage.getItem('pr-seen-open')||'null');}catch(e){}
+    localStorage.setItem('pr-seen-open',JSON.stringify(ids));
+    if(!seen||!seen.indexOf) return;
+    var fresh=ids.filter(function(i){return seen.indexOf(i)<0;});
+    if(!fresh.length) return;
+    var p=document.createElement('p'); p.id='new-since'; p.setAttribute('role','status');
+    p.style.cssText='font-family:ui-monospace,monospace;font-size:12.5px;line-height:1.6;border:1px solid rgba(74,103,65,.45);border-radius:6px;padding:10px 14px;margin:14px 2px;color:inherit;max-width:70ch';
+    p.innerHTML=fresh.length+' comment window'+(fresh.length>1?'s':'')+' opened since your last visit. <a href="alerts.html">See what is open now</a>.';
+    anchor.parentNode.insertBefore(p,anchor);
+  }).catch(function(){});
+})();
 </script>
 
   <p class="pr-section">Start here</p>
   <div class="pr-cards">
-<a class="pr-card" href="alerts.html"><h3>Open for comment right now</h3><p>10 blocks open right now, soonest closes 2026-07-03.</p></a>
+<a class="pr-card" href="alerts.html"><h3>Open for comment right now</h3><p>6 blocks open right now, soonest closes 2026-07-24.</p></a>
 <a class="pr-card" href="island-map.html"><h3>The whole-Island map</h3><p>Every proposed-logging block across all areas, on one map.</p></a>
 <a class="pr-card" href="proposed-logging-watch.html"><h3>What's proposed next</h3><p>Coming blocks, ranked by what they threaten.</p></a>
   </div>
