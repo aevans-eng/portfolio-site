@@ -98,6 +98,9 @@ canvas#map{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:blo
 .actions a:hover{border-color:var(--ember);color:var(--ember-soft);transform:translateY(-2px)}
 .actions a.primary{background:var(--ember);color:#160b04;border-color:var(--ember);font-weight:500}
 .actions a.primary:hover{background:var(--ember-soft);color:#160b04}
+.share-row{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin:20px 0 0}
+.share-row button{margin-left:10px;font-family:var(--mono);font-size:12px;background:transparent;color:var(--ember2);border:1px solid var(--line);border-radius:4px;padding:5px 11px;cursor:pointer}
+.share-row button:hover{border-color:var(--ember2)}
 .colophon{font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.8;margin-top:46px;border-top:1px solid var(--line);padding-top:20px;max-width:60ch}
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s}
 .reveal.in{opacity:1;transform:none}
@@ -222,6 +225,9 @@ canvas#map{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:blo
         <a href="alerts.html">What's open for comment now</a>
         <a href="report.html">Read the full data report</a>
       </div>
+      <p class="share-row">Know someone who should see this?
+        <button type="button" id="share-copy" data-post="You can see the forest. You can't see who decides to cut it, or why. 90 seconds on what BC's own public data shows: https://aaronevans.ca/port-renfrew/story.html">Copy a ready-made post</button>
+      </p>
       <p class="colophon">Built from official public datasets: BC Consolidated Cutblocks, the Old Growth Technical Advisory Panel priority layers, legal OGMAs, the Freshwater Atlas and BC Timber Sales schedules. An overlap is a reason to ask for the records, not proof that anything is wrong. Prepared 2026.</p>
     </div>
   </section>
@@ -415,6 +421,14 @@ const io=new IntersectionObserver((ents)=>{
   ents.forEach(e=>{ if(e.isIntersecting) activate(e.target); });
 },{rootMargin:'-40% 0px -40% 0px', threshold:0});
 document.querySelectorAll('[data-scene]').forEach(s=>io.observe(s));
+
+const shareBtn=document.getElementById('share-copy');
+if(shareBtn)shareBtn.addEventListener('click',()=>{
+  navigator.clipboard.writeText(shareBtn.getAttribute('data-post')).then(()=>{
+    const t=shareBtn.textContent; shareBtn.textContent='copied, paste it anywhere';
+    setTimeout(()=>{shareBtn.textContent=t;},2000);
+  });
+});
 
 // bootstrap (runs last, after every helper and DOM node is defined)
 sizeCanvas();
