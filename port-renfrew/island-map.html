@@ -50,13 +50,13 @@
 <div id="map"></div>
 <div class="ov-card">
   <h1>Logging across Vancouver Island</h1>
-  <p><b>764</b> blocks proposed or approved for logging across the seven areas this project covers. Tap an area to open its full map.</p>
+  <p><b>751</b> blocks proposed or approved for logging across the seven areas this project covers. Tap an area to open its full map.</p>
   <div class="ov-legend"><span><i class="ov-sw" style="background:rgba(245,158,11,.30);border-color:#fbbf24"></i> open for comment</span>
   <span><i class="ov-sw" style="background:rgba(220,38,38,.24);border-color:#f87171"></i> approved or closed</span></div>
   <div class="ov-hint">Circle size = blocks proposed in that area.</div>
 </div>
 <script>
-var AREAS=[{"name":"Port Renfrew","map":"map.html","lat":48.64,"lng":-124.28,"zoom":10,"proposed":88,"open":0,"data":"map-data/proposed-logging.json"},{"name":"Lake Cowichan","map":"lake-cowichan-map.html","lat":48.83,"lng":-124.07,"zoom":11,"proposed":37,"open":0,"data":"map-data-lake-cowichan/proposed-logging.json"},{"name":"Nitinat","map":"nitinat-map.html","lat":48.73,"lng":-124.78,"zoom":11,"proposed":127,"open":1,"data":"map-data-nitinat/proposed-logging.json"},{"name":"Alberni Valley","map":"alberni-map.html","lat":49.22,"lng":-124.95,"zoom":11,"proposed":150,"open":5,"data":"map-data-alberni/proposed-logging.json"},{"name":"Sooke","map":"sooke-map.html","lat":48.45,"lng":-123.86,"zoom":11,"proposed":17,"open":0,"data":"map-data-sooke/proposed-logging.json"},{"name":"Campbell River","map":"campbell-river-map.html","lat":50.12,"lng":-125.52,"zoom":10,"proposed":274,"open":0,"data":"map-data-campbell-river/proposed-logging.json"},{"name":"Gold River","map":"gold-river-map.html","lat":49.78,"lng":-126.1,"zoom":11,"proposed":71,"open":0,"data":"map-data-gold-river/proposed-logging.json"}];
+var AREAS=[{"name":"Port Renfrew","map":"map.html","lat":48.64,"lng":-124.28,"zoom":10,"proposed":88,"open":0,"data":"map-data/proposed-logging.json"},{"name":"Lake Cowichan","map":"lake-cowichan-map.html","lat":48.83,"lng":-124.07,"zoom":11,"proposed":37,"open":0,"data":"map-data-lake-cowichan/proposed-logging.json"},{"name":"Nitinat","map":"nitinat-map.html","lat":48.73,"lng":-124.78,"zoom":11,"proposed":127,"open":1,"data":"map-data-nitinat/proposed-logging.json"},{"name":"Alberni Valley","map":"alberni-map.html","lat":49.22,"lng":-124.95,"zoom":11,"proposed":150,"open":5,"data":"map-data-alberni/proposed-logging.json"},{"name":"Sooke","map":"sooke-map.html","lat":48.45,"lng":-123.86,"zoom":11,"proposed":17,"open":0,"data":"map-data-sooke/proposed-logging.json"},{"name":"Campbell River","map":"campbell-river-map.html","lat":50.12,"lng":-125.52,"zoom":10,"proposed":261,"open":0,"data":"map-data-campbell-river/proposed-logging.json"},{"name":"Gold River","map":"gold-river-map.html","lat":49.78,"lng":-126.1,"zoom":11,"proposed":71,"open":0,"data":"map-data-gold-river/proposed-logging.json"}];
 var map=L.map('map').setView([49.7,-125.6],7);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
   {maxZoom:19,subdomains:'abcd',attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(map);

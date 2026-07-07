@@ -1,8 +1,4 @@
 block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_date,create_date,planned_area_ha,watershed,oldgrowth_overlap_ha,ancient_overlap_ha,deferral_overlap_ha,ogma_overlap_ha,nearest_rec_m,nearest_fish_m,why_matters,priority_score
-ROA25-1,3188,Open for comment,2026-06-03,2026-07-03,yes,2026-10-15,2026-06-01,15.1,Alberni Valley area,0.0,0.0,0.0,0.0,10862,4967,,0.0
-F036001,3188,Open for comment,2026-06-03,2026-07-03,yes,2026-10-15,2026-06-01,26.1,Alberni Valley area,0.0,0.0,0.0,0.0,9739,3379,,0.0
-COO25-1,3188,Open for comment,2026-06-03,2026-07-03,yes,2026-10-15,2026-06-01,15.9,Alberni Valley area,0.0,0.0,0.0,0.0,13590,804,,0.0
-NIL25-1,3188,Open for comment,2026-06-03,2026-07-03,yes,2026-10-15,2026-06-01,3.0,Alberni Valley area,0.0,0.0,0.0,0.0,17792,381,,0.0
 171128,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-16,2026-06-17,1.6,Franklin River,0.0,0.0,0.0,0.0,4970,55,near a fish record,8.0
 171130,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-16,2026-06-17,4.9,Franklin River,0.0,0.0,0.0,0.0,8193,608,,0.0
 073322,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-15,2026-06-17,10.2,Franklin River,0.0,0.0,0.0,0.0,6765,539,,0.0
@@ -144,8 +140,12 @@ WR4,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,8.4,Alber
 WR3,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,9.3,Alberni Valley area,0.0,0.0,0.0,0.0,19047,1604,,0.0
 WR2,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,6.0,Alberni Valley area,0.0,0.0,0.0,0.0,19071,1373,,0.0
 WR1,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,7.5,Alberni Valley area,0.0,0.0,0.0,0.0,19099,990,,0.0
+ROA25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,15.1,Alberni Valley area,0.0,0.0,0.0,0.0,10862,4967,,0.0
 ROW5,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,2.2,Alberni Valley area,0.0,0.0,0.0,0.0,13102,2750,,0.0
+F036001,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,26.1,Alberni Valley area,0.0,0.0,0.0,0.0,9739,3379,,0.0
 ROW1,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,1.7,Alberni Valley area,0.0,0.0,0.0,0.0,15740,1458,,0.0
 ROW4,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,1.9,Alberni Valley area,0.0,0.0,0.0,0.0,14028,811,,0.0
 ROW3,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,7.2,Alberni Valley area,0.0,0.0,0.0,0.0,14418,805,,0.0
+COO25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,15.9,Alberni Valley area,0.0,0.0,0.0,0.0,13590,804,,0.0
 ROW2,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,5.2,Alberni Valley area,0.0,0.0,0.0,0.0,16619,633,,0.0
+NIL25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,3.0,Alberni Valley area,0.0,0.0,0.0,0.0,17792,381,,0.0
