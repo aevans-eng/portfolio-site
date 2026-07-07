@@ -136,11 +136,22 @@
     anchor.parentNode.insertBefore(p,anchor);
   }).catch(function(){});
 })();
+</script><script>
+(function(){
+  document.querySelectorAll('[data-closes]').forEach(function(el){
+    var d=new Date(el.getAttribute('data-closes')+'T23:59:59');
+    var days=Math.ceil((d-Date.now())/864e5);
+    if(isNaN(days)||days<0)return;
+    var t=days===0?'closes today':days===1?'1 day left':days+' days left';
+    var s=document.createElement('span'); s.textContent=' ('+t+')';
+    el.appendChild(s);
+  });
+})();
 </script>
 
   <p class="pr-section">Start here</p>
   <div class="pr-cards">
-<a class="pr-card" href="alerts.html"><h3>Open for comment right now</h3><p>6 blocks open right now, soonest closes 2026-07-24.</p></a>
+<a class="pr-card" href="alerts.html"><h3>Open for comment right now</h3><p>6 blocks open right now, soonest closes <span data-closes="2026-07-24">2026-07-24</span>.</p></a>
 <a class="pr-card" href="island-map.html"><h3>The whole-Island map</h3><p>Every proposed-logging block across all areas, on one map.</p></a>
 <a class="pr-card" href="proposed-logging-watch.html"><h3>What's proposed next</h3><p>Coming blocks, ranked by what they threaten.</p></a>
   </div>
