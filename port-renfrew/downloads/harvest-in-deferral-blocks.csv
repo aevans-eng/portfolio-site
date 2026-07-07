@@ -1,0 +1,45 @@
+opening_id,vccb_sysid,harvest_start_date,harvest_start_year,data_source,block_area_ha,overlap_ha,pct_block_in_deferral,deferral_flag,location,after_recommendation
+1769032,546986,2021-05-13,2021,RESULTS,17.5,16.4,93.8,big-treed old growth,Gordon River,False
+1770235,547695,2020-05-21,2020,RESULTS,16.7,9.06,54.1,big-treed old growth,San Juan River,False
+,75574,2020-01-01,2020,Satellite Imagery - Change Detection,9.0,7.67,85.5,big-treed old growth,Loss landscape unit,False
+1770515,547848,2021-07-08,2021,RESULTS,24.2,6.74,27.9,big-treed old growth,Caycuse River,False
+1768791,546898,2021-05-17,2021,RESULTS,30.0,6.64,22.1,big-treed old growth,Gordon River,False
+1754759,536373,2021-03-31,2021,RESULTS,6.6,6.4,96.9,big-treed old growth,Caycuse River,False
+1797384,583400,2023-07-04,2023,RESULTS,17.9,6.34,35.5,big-treed old growth,Walbran Creek,True
+1744357,528406,2020-05-14,2020,RESULTS,14.4,6.33,43.8,big-treed old growth,Gordon River,False
+1754768,536378,2021-03-31,2021,RESULTS,11.0,5.55,50.3,big-treed old growth,Caycuse River,False
+1771446,548701,2022-05-02,2022,RESULTS,18.8,5.21,27.7,ancient (>400 yr),Loss landscape unit,True
+1797420,583435,2023-07-19,2023,RESULTS,5.8,4.95,84.7,ancient (>400 yr); big-treed old growth,Walbran Creek,True
+1775273,559961,2022-04-04,2022,RESULTS,4.4,4.27,97.4,ancient (>400 yr),Loss landscape unit,True
+1754798,536388,2021-03-31,2021,RESULTS,7.6,3.62,47.4,big-treed old growth,Caycuse River,False
+1793213,579168,2023-07-06,2023,RESULTS,22.5,3.61,16.0,ancient (>400 yr); big-treed old growth,Loss landscape unit,True
+,24834,1966-01-01,1966,VRI,54.9,3.22,5.9,ancient (>400 yr); big-treed old growth,Gordon River,False
+1754759,536371,2021-03-31,2021,RESULTS,5.9,3.13,53.4,big-treed old growth,Caycuse River,False
+1725461,515070,2019-05-01,2019,RESULTS,8.8,2.96,33.7,big-treed old growth,Caycuse River,False
+1770235,547696,2020-05-21,2020,RESULTS,3.6,2.92,80.6,big-treed old growth,San Juan River,False
+1748775,532240,2020-10-06,2020,RESULTS,15.2,2.51,16.5,ancient (>400 yr); big-treed old growth,Caycuse River,False
+1798078,584125,2019-04-04,2019,RESULTS,14.6,2.38,16.3,ancient (>400 yr); big-treed old growth,Walbran Creek,False
+1878,177979,1968-01-01,1968,VRI,75.4,2.3,3.1,big-treed old growth,Gordon River,False
+,54241,1990-01-01,1990,VRI,4.9,1.87,38.4,ancient (>400 yr); big-treed old growth,Sombrio River,False
+1770535,547857,2021-12-02,2021,RESULTS,1.7,1.46,85.5,ancient (>400 yr); big-treed old growth,Caycuse River,True
+1775275,559964,2022-04-04,2022,RESULTS,1.5,1.43,96.3,big-treed old growth,Loss landscape unit,True
+,31223,1974-01-01,1974,VRI,82.3,1.35,1.6,big-treed old growth,Gordon River,False
+1797420,583434,2020-07-10,2020,RESULTS,1.4,1.32,94.7,ancient (>400 yr); big-treed old growth,Walbran Creek,False
+1760890,541401,2021-05-03,2021,RESULTS,24.3,1.31,5.4,ancient (>400 yr); big-treed old growth,Loss landscape unit,False
+1744357,528405,2020-05-14,2020,RESULTS,1.5,1.2,78.6,big-treed old growth,Gordon River,False
+1769011,546976,2021-05-13,2021,RESULTS,5.9,1.12,19.1,big-treed old growth,Gordon River,False
+,38216,1980-01-01,1980,VRI,105.6,0.91,0.9,ancient (>400 yr); big-treed old growth,Gordon River,False
+1748824,532283,2020-12-05,2020,RESULTS,7.9,0.82,10.4,big-treed old growth,Gordon River,False
+,59689,1993-01-01,1993,VRI,6.7,0.78,11.6,remnant old ecosystem,Gordon River,False
+1803020,589035,2025-01-13,2025,RESULTS,1.0,0.69,70.8,ancient (>400 yr); big-treed old growth,Walbran Creek,True
+1770535,547858,2021-12-02,2021,RESULTS,29.0,0.66,2.3,ancient (>400 yr); big-treed old growth,Caycuse River,True
+1793210,579163,2024-05-12,2024,RESULTS,2.0,0.64,32.6,ancient (>400 yr); big-treed old growth,Loss landscape unit,True
+,63852,1996-01-01,1996,VRI,27.6,0.63,2.3,ancient (>400 yr),Loss landscape unit,False
+,12591,,2016,Satellite Imagery - Change Detection,0.7,0.63,87.5,big-treed old growth,San Juan River,False
+1775275,559963,2022-04-04,2022,RESULTS,0.6,0.58,92.9,big-treed old growth,Loss landscape unit,True
+1744341,528399,2020-07-20,2020,RESULTS,41.8,0.55,1.3,big-treed old growth,Caycuse River,False
+,52255,1989-01-01,1989,VRI,1.9,0.45,23.4,ancient (>400 yr); big-treed old growth,Sombrio River,False
+,57840,1992-01-01,1992,VRI,36.5,0.38,1.0,big-treed old growth; remnant old ecosystem,Gordon River,False
+1775275,559962,2022-04-04,2022,RESULTS,0.3,0.33,100.0,big-treed old growth,Loss landscape unit,True
+,24835,1966-01-01,1966,VRI,2.3,0.28,12.1,big-treed old growth,Gordon River,False
+1100990,355408,2007-02-20,2007,RESULTS,4.2,0.27,6.4,ancient (>400 yr); big-treed old growth,Loss landscape unit,False
