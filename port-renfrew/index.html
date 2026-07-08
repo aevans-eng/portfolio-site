@@ -139,7 +139,7 @@
 </script><script>
 (function(){
   document.querySelectorAll('[data-closes]').forEach(function(el){
-    var d=new Date(el.getAttribute('data-closes')+'T23:59:59');
+    var d=new Date(el.getAttribute('data-closes')+'T00:00:00');
     var days=Math.ceil((d-Date.now())/864e5);
     if(isNaN(days)||days<0)return;
     var t=days===0?'closes today':days===1?'1 day left':days+' days left';
