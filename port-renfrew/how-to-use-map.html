@@ -76,12 +76,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <h2>5-Minute Walkthrough</h2>
 <p>If you only have five minutes, do this:</p>
 <ol>
-<li>Open <code>maps/port-renfrew-public-data-audit-map.html</code> in any web browser.</li>
+<li>Open the map.</li>
 <li>Read the panel on the left. It says what the map is and what it is not.</li>
-<li>Look at the map with only the default layers on: watersheds, recorded cutblocks, TAP priority areas, recreation sites, and landmarks.</li>
+<li>Look at the map with only the default layers on: watersheds, past logging shaded by age, the old growth flagged to pause logging, recreation sites, and landmarks.</li>
 <li>Find San Juan River and Gordon River. The landmark points help you orient.</li>
-<li>Turn on <code>Tiled Freshwater Atlas streams</code> and <code>Tiled forest road segment tenure</code>. Watch how often roads cross water near San Juan River.</li>
-<li>Turn on <code>VRI young/regrowth and 250+ high-age</code>. Red is young forest, green is 250+ high-age. See where old forest still remains and where young forest dominates.</li>
+<li>Under "Water and roads", turn on <code>Streams</code> and <code>Forest roads</code>. Watch how often roads cross water near San Juan River.</li>
+<li>Under "Old forest", turn on <code>Forest age: young vs very old</code>. Red is young forest, green is 250 and older. See where old forest still remains and where young forest dominates.</li>
 <li>Click one orange cutblock. The popup shows its recorded harvest year and area.</li>
 <li>Open <code>data/public-data-audit/watershed-harvest-stand-age-summary.csv</code> and find the San Juan River row. That number is the same harvest footprint you just saw on the map, counted in hectares.</li>
 </ol>
@@ -89,9 +89,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <h2>What To Click First</h2>
 <ul>
 <li>Leave the default layers on. They are the clearest.</li>
-<li>The first two layers worth adding are <code>streams</code> and <code>roads</code>. Together they show crossing pressure, which is where culvert, bridge, sediment, and fish-passage records should exist.</li>
-<li>After that, add <code>VRI young/regrowth and 250+ high-age</code> to compare old forest against harvest.</li>
-<li>Add the other TAP old-growth layers and OGMAs only when you want to compare government old-growth mapping against recorded harvest. They make the map busy.</li>
+<li>The first two layers worth adding are <code>Streams</code> and <code>Forest roads</code> (under "Water and roads").
+  Together they show crossing pressure, which is where culvert, bridge, sediment, and
+  fish-passage records should exist.</li>
+<li>After that, add <code>Forest age: young vs very old</code> to compare old forest against harvest.</li>
+<li>Add the other old-growth layers (<code>Ancient forest</code>, <code>Old forest</code>, <code>Big-tree old growth</code>,
+  <code>Protected old growth</code>) only when you want to compare government old-growth mapping against
+  recorded harvest. They make the map busy.</li>
 </ul>
 <h2>Worked Examples</h2>
 <h3>Example 1: Streams + roads at San Juan River</h3>
@@ -100,7 +104,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <p>What it suggests: there are likely many road-stream crossings here, and each crossing is a place where a culvert, bridge, sediment-control, or fish-passage record should exist. The watershed table estimates 622 road-stream intersections for San Juan River.</p>
 <p>What it does not mean: it does not prove any crossing is failing, that fish are blocked, or that sediment is entering the stream. It is a reason to ask for the crossing and maintenance records, not a finding of harm.</p>
 <h3>Example 2: Old forest vs harvest at Gordon River and Fairy Creek</h3>
-<p>Turn on TAP old forests, TAP big trees, and recorded cutblocks, then look at Gordon River and Fairy Creek.</p>
+<p>Turn on <code>Old forest</code> and <code>Big-tree old growth</code> (past logging is already on by default), then look at Gordon River and Fairy Creek.</p>
 <p>What you see: old-growth priority polygons sitting close to recorded harvest, with high-age VRI stands mixed through both watersheds.</p>
 <p>What it suggests: harvest decisions here are being made near mapped old forest, so the public should be able to see the old-growth retention rationale and the site plan before more is approved.</p>
 <p>What it does not mean: it does not prove any specific old-growth polygon was logged, or that any harvest was illegal. Overlap on a screening map is the start of a records question, not the answer.</p>
