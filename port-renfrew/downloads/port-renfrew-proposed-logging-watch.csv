@@ -1,89 +1,89 @@
-block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_date,create_date,planned_area_ha,watershed,watershed_card,oldgrowth_overlap_ha,ancient_overlap_ha,deferral_overlap_ha,ogma_overlap_ha,nearest_rec_m,nearest_fish_m,why_matters,priority_score
-SJlo5K7,1220,Comment closed,2024-04-03,2024-05-06,no,2029-01-18,2024-05-07,34.5,Minute Creek,Port Renfrew area,33.76,10.55,10.55,0.0,6341,2744,overlaps ancient old growth (over 400 yr); in a priority-deferral area,103.4
-C058C3HX,1220,Comment closed,2024-04-03,2024-05-06,no,2025-10-09,2024-05-07,29.5,Tom Baird Creek,Port Renfrew area,29.48,5.23,5.23,0.0,7681,9360,overlaps ancient old growth (over 400 yr); in a priority-deferral area,70.4
-C059C4NE,1220,Comment closed,2024-04-03,2024-05-06,no,2028-07-06,2024-05-07,31.6,Payzant Creek,San Juan River,28.93,0.0,0.0,0.0,4278,5007,overlaps mapped old growth,43.4
-SJlo5K4,1220,Comment closed,2024-04-03,2024-05-06,no,2029-01-18,2024-05-07,22.0,Minute Creek,Port Renfrew area,21.8,1.08,1.08,0.0,6817,2862,overlaps ancient old growth (over 400 yr); in a priority-deferral area,38.1
-OSJosj5BR,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,39.5,Harris Creek,Harris Creek,21.13,0.0,0.0,0.0,7825,4907,overlaps mapped old growth,31.7
-SJlo5KM,2295,Comment closed,2025-05-21,2025-06-21,no,2028-07-06,2025-06-25,24.5,Falls Creek,San Juan River,17.4,0.0,0.0,0.0,3730,4210,overlaps mapped old growth,26.1
-9609,1220,Comment closed,2024-04-03,2024-05-06,no,2028-04-01,2024-05-07,11.1,Bavis Creek,San Juan River,11.07,0.0,0.0,0.0,5723,292,overlaps mapped old growth; near a fish record,24.6
-SJsj594,1220,Comment closed,2024-04-03,2024-05-06,no,2028-05-04,2024-05-07,13.4,Red Creek,San Juan River,13.16,0.0,0.0,0.0,2638,575,overlaps mapped old growth,19.7
-SJlo5KM,1220,Comment closed,2024-04-03,2024-05-06,no,2028-07-06,2024-05-07,14.7,Falls Creek,San Juan River,9.82,0.0,0.0,0.0,3730,4209,overlaps mapped old growth,14.7
-SJsj5P8,2295,Comment closed,2025-05-21,2025-06-21,no,2026-07-03,2025-06-25,51.3,San Juan River,San Juan River,0.18,0.0,0.0,0.0,255,34,overlaps mapped old growth; near a fish record; near a recreation site,13.3
-SJsj5P8,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,51.2,San Juan River,San Juan River,0.18,0.0,0.0,0.0,254,35,overlaps mapped old growth; near a fish record; near a recreation site,13.3
-LCN39A,1448,Comment closed,2024-04-25,2024-05-25,no,2024-07-15,2024-08-16,4.1,Gain Creek,Port Renfrew area,3.26,0.0,0.0,0.0,7750,239,overlaps mapped old growth; near a fish record,12.9
-LCN39A,1571,Comment closed,2024-06-06,2024-07-06,no,2024-07-15,2024-07-24,3.8,Gain Creek,Port Renfrew area,3.25,0.0,0.0,0.0,7750,239,overlaps mapped old growth; near a fish record,12.9
-LCN24,1448,Comment closed,2024-04-25,2024-05-25,no,2024-07-15,2024-08-16,7.3,Gain Creek,Port Renfrew area,6.87,0.0,0.0,0.0,7942,702,overlaps mapped old growth,10.3
-7104,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,6.4,Gordon River,Gordon River,6.4,0.0,0.0,0.31,6288,12898,overlaps mapped old growth; overlaps a protected old-growth area,10.1
-C059C4KV,1220,Comment closed,2024-04-03,2024-05-06,no,2027-07-07,2024-05-07,12.4,Yauh Creek,Port Renfrew area,1.52,1.52,1.52,0.0,6763,7574,overlaps ancient old growth (over 400 yr); in a priority-deferral area,9.9
-7104,2663,Comment closed,2025-10-24,2025-11-23,no,2026-04-01,2026-04-21,5.5,Gordon River,Gordon River,5.54,0.0,0.0,0.51,6291,12910,overlaps mapped old growth; overlaps a protected old-growth area,9.1
-LCN28A,1571,Comment closed,2024-06-06,2024-07-06,no,2024-07-15,2024-07-24,12.2,Noyse Creek,Port Renfrew area,5.8,0.0,0.0,0.0,7745,1509,overlaps mapped old growth,8.7
-8011-2,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,6.6,Renfrew Creek,Renfrew Creek,2.41,0.0,2.4,0.0,5877,963,overlaps mapped old growth; in a priority-deferral area,8.4
-LCN28A,1448,Comment closed,2024-04-25,2024-05-25,no,2024-07-15,2024-08-16,11.6,Noyse Creek,Port Renfrew area,5.56,0.0,0.0,0.0,7745,1514,overlaps mapped old growth,8.3
-SJsj5P7,2295,Comment closed,2025-05-21,2025-06-21,no,2026-05-06,2025-06-25,12.1,Mosquito Creek,San Juan River,0.0,0.0,0.0,0.0,3896,0,near a fish record,8.0
-SJsj5P7,1220,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,11.4,Mosquito Creek,San Juan River,0.0,0.0,0.0,0.0,3883,8,near a fish record,8.0
-SJsj5P5,2295,Comment closed,2025-05-21,2025-06-21,no,2025-05-07,2025-06-25,45.6,San Juan River,San Juan River,0.0,0.0,0.0,0.0,3108,34,near a fish record,8.0
-SJsj5P5,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,45.8,San Juan River,San Juan River,0.0,0.0,0.0,0.0,3108,34,near a fish record,8.0
-9708,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,7.3,Harris Creek,Harris Creek,0.0,0.0,0.0,0.0,1656,88,near a fish record,8.0
-8249,2416,Comment closed,2025-06-19,2025-07-19,no,2025-09-01,2025-10-23,3.3,Harris Creek,Harris Creek,0.0,0.0,0.0,0.0,3031,108,near a fish record,8.0
-SJsj5P4,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,15.0,Garbage Creek,San Juan River,0.0,0.0,0.0,0.0,5605,9,near a fish record,8.0
-8171,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,5.5,Harris Creek,Harris Creek,0.0,0.0,0.0,0.0,1674,95,near a fish record,8.0
-C058C3HW,1220,Comment closed,2024-04-03,2024-05-06,no,2025-10-09,2024-05-07,4.5,Soule Creek,Port Renfrew area,4.46,0.0,0.0,0.0,6965,8434,overlaps mapped old growth,6.7
-8013,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,4.3,Renfrew Creek,Renfrew Creek,4.25,0.0,0.0,0.0,6031,1432,overlaps mapped old growth,6.4
-7116,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,6.7,Loup Creek,Gordon River,4.17,0.0,0.0,0.0,7015,12680,overlaps mapped old growth,6.3
-C058C4KU,1220,Comment closed,2024-04-03,2024-05-06,no,2025-10-09,2024-05-07,4.1,Soule Creek,Port Renfrew area,4.06,0.0,0.0,0.0,6662,8333,overlaps mapped old growth,6.1
-7116,2663,Comment closed,2025-10-24,2025-11-23,no,2026-04-01,2026-04-21,6.2,Loup Creek,Gordon River,3.76,0.0,0.0,0.0,7018,12681,overlaps mapped old growth,5.6
-8392,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,3.3,Hemmingsen Creek,Harris Creek,3.34,0.0,0.0,0.11,7742,2238,overlaps mapped old growth; overlaps a protected old-growth area,5.2
-7248,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,9.1,Braden Creek,Gordon River,1.25,0.0,1.25,0.0,4951,6830,overlaps mapped old growth; in a priority-deferral area,4.4
-7239A-2,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,11.1,Braden Creek,Gordon River,2.71,0.0,0.0,0.0,4320,8010,overlaps mapped old growth,4.1
-JE5,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,1.3,Loss Creek,Port Renfrew area,0.77,0.0,0.0,0.0,11257,5361,overlaps mapped old growth,1.2
-JE2,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,12.7,Jack Elliott Creek,Port Renfrew area,0.0,0.0,0.0,0.0,10706,5641,,0.0
-JE3,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,4.2,Jack Elliott Creek,Port Renfrew area,0.0,0.0,0.0,0.0,11063,5497,,0.0
-JE1,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,15.3,Jack Elliott Creek,Port Renfrew area,0.0,0.0,0.0,0.0,10556,5176,,0.0
-JE4,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,11.1,Loss Creek,Port Renfrew area,0.0,0.0,0.0,0.0,10943,5121,,0.0
-WCH36,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,44.4,McVicar Creek,Port Renfrew area,0.0,0.0,0.0,0.0,15988,9392,,0.0
-WCH30,1875,Comment closed,2024-10-10,2024-11-10,no,2024-12-01,2024-10-02,10.8,Bent Creek,Port Renfrew area,0.0,0.0,0.0,0.0,14792,7863,,0.0
-WCH35,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,22.4,Pat Philip Creek,Port Renfrew area,0.0,0.0,0.0,0.0,15620,8625,,0.0
-WCH31,1875,Comment closed,2024-10-10,2024-11-10,no,2024-12-01,2024-10-02,12.4,Circo Creek,Port Renfrew area,0.0,0.0,0.0,0.0,14997,8195,,0.0
-JRE25,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,18.4,Jordan River,Port Renfrew area,0.0,0.0,0.0,0.0,19940,14043,,0.0
-JRW32,1367,Comment closed,2024-04-11,2024-05-11,no,2024-07-01,2024-04-05,32.2,Sinn Fein Creek,Port Renfrew area,0.0,0.0,0.0,0.0,16527,10927,,0.0
-JRW30,1367,Comment closed,2024-04-11,2024-05-11,no,2024-07-01,2024-04-05,16.1,Uglow Creek,Port Renfrew area,0.0,0.0,0.0,0.0,15813,10281,,0.0
-SJsj5P6,2295,Comment closed,2025-05-21,2025-06-21,no,2026-05-06,2025-06-25,10.7,Mosquito Creek,San Juan River,0.0,0.0,0.0,0.0,5435,1078,,0.0
-SJsj5P6,1220,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,8.8,Mosquito Creek,San Juan River,0.0,0.0,0.0,0.0,5464,1105,,0.0
-SJsj5GS,2295,Comment closed,2025-05-21,2025-06-21,no,2027-07-07,2025-06-25,10.8,Blakeney Creek,San Juan River,0.0,0.0,0.0,0.0,7400,2205,,0.0
-SJsj5GQ,2295,Comment closed,2025-05-21,2025-06-21,no,2027-07-07,2025-06-25,17.8,Garbage Creek,San Juan River,0.0,0.0,0.0,0.0,6314,1023,,0.0
-SJsj5GN,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,8.5,Garbage Creek,San Juan River,0.0,0.0,0.0,0.0,6332,755,,0.0
-7017-1,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,14.7,Browns Creek,Gordon River,0.0,0.0,0.0,0.0,1498,8023,,0.0
-7017-2,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,3.7,Browns Creek,Gordon River,0.0,0.0,0.0,0.0,2374,7590,,0.0
-8011-1,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,0.6,Renfrew Creek,Renfrew Creek,0.0,0.0,0.0,0.0,5860,1570,,0.0
-9709,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,28.5,Harris Creek,Harris Creek,0.0,0.0,0.0,0.0,2086,339,,0.0
-9707,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,10.8,Harris Creek,Harris Creek,0.0,0.0,0.0,0.0,715,478,,0.0
-8272,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,15.0,Harris Creek,Harris Creek,0.0,0.0,0.0,0.0,1709,642,,0.0
-7522-1,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,20.0,Gordon River,Gordon River,0.0,0.0,0.0,0.0,8496,8458,,0.0
-7522-2,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,5.3,Gordon River,Gordon River,0.0,0.0,0.0,0.0,9179,8298,,0.0
-7700,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,38.1,Braden Creek,Gordon River,0.0,0.0,0.0,0.0,9696,6144,,0.0
-7239A-1,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,3.5,Braden Creek,Gordon River,0.0,0.0,0.0,0.0,4502,7664,,0.0
-8267,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,16.8,Hemmingsen Creek,Harris Creek,0.0,0.0,0.0,0.0,4067,812,,0.0
-8027,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,7.0,Renfrew Creek,Renfrew Creek,0.0,0.0,0.0,0.0,6224,2024,,0.0
-8173,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,25.8,Harris Creek,Harris Creek,0.0,0.0,0.0,0.0,1354,455,,0.0
-5149,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,10.0,Caycuse River,Caycuse River,0.0,0.0,0.0,0.0,14847,17255,,0.0
-7319,2416,Comment closed,2025-06-19,2025-07-19,no,2025-09-01,2025-10-23,5.3,Loup Creek,Gordon River,0.0,0.0,0.0,0.0,13735,12988,,0.0
-7318,2416,Comment closed,2025-06-19,2025-07-19,no,2025-09-01,2025-10-23,13.8,Loup Creek,Gordon River,0.0,0.0,0.0,0.0,15153,13693,,0.0
-MB26,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,9.2,Gordon River,Gordon River,0.0,0.0,0.0,0.0,13974,9515,,0.0
-MB28,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,9.4,Gordon River,Gordon River,0.0,0.0,0.0,0.0,14025,9300,,0.0
-MB21,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,9.4,Gordon River,Gordon River,0.0,0.0,0.0,0.0,14305,9468,,0.0
-7710,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,15.8,Hemmingsen Creek,Harris Creek,0.0,0.0,0.0,0.0,10326,6065,,0.0
-MB10A,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,8.8,Gordon River,Gordon River,0.0,0.0,0.0,0.0,13330,9076,,0.0
-MB12,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,7.5,Gordon River,Gordon River,0.0,0.0,0.0,0.0,12873,8673,,0.0
-MB08,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,9.6,Gordon River,Gordon River,0.0,0.0,0.0,0.0,11097,7104,,0.0
-MB14,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,15.2,Gordon River,Gordon River,0.0,0.0,0.0,0.0,11740,7727,,0.0
-MB05,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,10.1,Gordon River,Gordon River,0.0,0.0,0.0,0.0,12824,8839,,0.0
-5577,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,2025-10-22,16.6,Wilson Creek,Caycuse River,0.0,0.0,0.0,0.0,23286,23281,,0.0
-5572,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,2025-10-22,8.1,Wilson Creek,Caycuse River,0.0,0.0,0.0,0.0,22492,22282,,0.0
-5571,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,2025-10-22,4.5,Wilson Creek,Caycuse River,0.0,0.0,0.0,0.0,21865,21893,,0.0
-5563-1,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,0.7,Wilson Creek,Caycuse River,0.0,0.0,0.0,0.0,22897,22058,,0.0
-5563-2,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,24.8,Wilson Creek,Caycuse River,0.0,0.0,0.0,0.0,21985,20834,,0.0
-5642,2416,Comment closed,2025-06-19,2025-07-19,no,2025-12-01,2025-10-23,1.7,Caycuse River,Caycuse River,0.0,0.0,0.0,0.0,20934,20098,,0.0
-7341,1897,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,2024-10-09,9.7,Loup Creek,Gordon River,0.0,0.0,0.0,0.0,16834,13541,,0.0
-5131,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,38.5,Caycuse River,Caycuse River,0.0,0.0,0.0,0.0,18905,17045,,0.0
-7577-2,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,13.3,Gordon River,Gordon River,0.0,0.0,0.0,0.0,15266,11033,,0.0
-7577-1,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,7.9,Hauk Creek,Gordon River,0.0,0.0,0.0,0.0,15804,11485,,0.0
+block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_date,create_date,planned_area_ha,watershed,watershed_card,lat,lng,oldgrowth_overlap_ha,ancient_overlap_ha,deferral_overlap_ha,ogma_overlap_ha,nearest_rec_m,nearest_fish_m,why_matters,priority_score
+SJlo5K7,1220,Comment closed,2024-04-03,2024-05-06,no,2029-01-18,2024-05-07,34.5,Minute Creek,Port Renfrew area,48.537,-124.3031,33.76,10.55,10.55,0.0,6341,2744,overlaps ancient old growth (over 400 yr); in a priority-deferral area,103.4
+C058C3HX,1220,Comment closed,2024-04-03,2024-05-06,no,2025-10-09,2024-05-07,29.5,Tom Baird Creek,Port Renfrew area,48.5343,-124.4267,29.48,5.23,5.23,0.0,7681,9360,overlaps ancient old growth (over 400 yr); in a priority-deferral area,70.4
+C059C4NE,1220,Comment closed,2024-04-03,2024-05-06,no,2028-07-06,2024-05-07,31.6,Payzant Creek,San Juan River,48.548,-124.3716,28.93,0.0,0.0,0.0,4278,5007,overlaps mapped old growth,43.4
+SJlo5K4,1220,Comment closed,2024-04-03,2024-05-06,no,2029-01-18,2024-05-07,22.0,Minute Creek,Port Renfrew area,48.5361,-124.2925,21.8,1.08,1.08,0.0,6817,2862,overlaps ancient old growth (over 400 yr); in a priority-deferral area,38.1
+OSJosj5BR,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,39.5,Harris Creek,Harris Creek,48.7233,-124.2882,21.13,0.0,0.0,0.0,7825,4907,overlaps mapped old growth,31.7
+SJlo5KM,2295,Comment closed,2025-05-21,2025-06-21,no,2028-07-06,2025-06-25,24.5,Falls Creek,San Juan River,48.5499,-124.3623,17.4,0.0,0.0,0.0,3730,4210,overlaps mapped old growth,26.1
+9609,1220,Comment closed,2024-04-03,2024-05-06,no,2028-04-01,2024-05-07,11.1,Bavis Creek,San Juan River,48.5543,-124.2515,11.07,0.0,0.0,0.0,5723,292,overlaps mapped old growth; near a fish record,24.6
+SJsj594,1220,Comment closed,2024-04-03,2024-05-06,no,2028-05-04,2024-05-07,13.4,Red Creek,San Juan River,48.5689,-124.2139,13.16,0.0,0.0,0.0,2638,575,overlaps mapped old growth,19.7
+SJlo5KM,1220,Comment closed,2024-04-03,2024-05-06,no,2028-07-06,2024-05-07,14.7,Falls Creek,San Juan River,48.5494,-124.3622,9.82,0.0,0.0,0.0,3730,4209,overlaps mapped old growth,14.7
+SJsj5P8,2295,Comment closed,2025-05-21,2025-06-21,no,2026-07-03,2025-06-25,51.3,San Juan River,San Juan River,48.593,-124.1844,0.18,0.0,0.0,0.0,255,34,overlaps mapped old growth; near a fish record; near a recreation site,13.3
+SJsj5P8,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,51.2,San Juan River,San Juan River,48.593,-124.1844,0.18,0.0,0.0,0.0,254,35,overlaps mapped old growth; near a fish record; near a recreation site,13.3
+LCN39A,1448,Comment closed,2024-04-25,2024-05-25,no,2024-07-15,2024-08-16,4.1,Gain Creek,Port Renfrew area,48.5169,-124.1859,3.26,0.0,0.0,0.0,7750,239,overlaps mapped old growth; near a fish record,12.9
+LCN39A,1571,Comment closed,2024-06-06,2024-07-06,no,2024-07-15,2024-07-24,3.8,Gain Creek,Port Renfrew area,48.517,-124.1859,3.25,0.0,0.0,0.0,7750,239,overlaps mapped old growth; near a fish record,12.9
+LCN24,1448,Comment closed,2024-04-25,2024-05-25,no,2024-07-15,2024-08-16,7.3,Gain Creek,Port Renfrew area,48.5156,-124.2005,6.87,0.0,0.0,0.0,7942,702,overlaps mapped old growth,10.3
+7104,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,6.4,Gordon River,Gordon River,48.6691,-124.4758,6.4,0.0,0.0,0.31,6288,12898,overlaps mapped old growth; overlaps a protected old-growth area,10.1
+C059C4KV,1220,Comment closed,2024-04-03,2024-05-06,no,2027-07-07,2024-05-07,12.4,Yauh Creek,Port Renfrew area,48.5305,-124.3944,1.52,1.52,1.52,0.0,6763,7574,overlaps ancient old growth (over 400 yr); in a priority-deferral area,9.9
+7104,2663,Comment closed,2025-10-24,2025-11-23,no,2026-04-01,2026-04-21,5.5,Gordon River,Gordon River,48.6692,-124.4759,5.54,0.0,0.0,0.51,6291,12910,overlaps mapped old growth; overlaps a protected old-growth area,9.1
+LCN28A,1571,Comment closed,2024-06-06,2024-07-06,no,2024-07-15,2024-07-24,12.2,Noyse Creek,Port Renfrew area,48.5183,-124.2123,5.8,0.0,0.0,0.0,7745,1509,overlaps mapped old growth,8.7
+8011-2,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,6.6,Renfrew Creek,Renfrew Creek,48.6323,-124.305,2.41,0.0,2.4,0.0,5877,963,overlaps mapped old growth; in a priority-deferral area,8.4
+LCN28A,1448,Comment closed,2024-04-25,2024-05-25,no,2024-07-15,2024-08-16,11.6,Noyse Creek,Port Renfrew area,48.5184,-124.2124,5.56,0.0,0.0,0.0,7745,1514,overlaps mapped old growth,8.3
+SJsj5P7,2295,Comment closed,2025-05-21,2025-06-21,no,2026-05-06,2025-06-25,12.1,Mosquito Creek,San Juan River,48.5685,-124.304,0.0,0.0,0.0,0.0,3896,0,near a fish record,8.0
+SJsj5P7,1220,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,11.4,Mosquito Creek,San Juan River,48.5686,-124.3037,0.0,0.0,0.0,0.0,3883,8,near a fish record,8.0
+SJsj5P5,2295,Comment closed,2025-05-21,2025-06-21,no,2025-05-07,2025-06-25,45.6,San Juan River,San Juan River,48.5782,-124.2548,0.0,0.0,0.0,0.0,3108,34,near a fish record,8.0
+SJsj5P5,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,45.8,San Juan River,San Juan River,48.5782,-124.2548,0.0,0.0,0.0,0.0,3108,34,near a fish record,8.0
+9708,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,7.3,Harris Creek,Harris Creek,48.6046,-124.2482,0.0,0.0,0.0,0.0,1656,88,near a fish record,8.0
+8249,2416,Comment closed,2025-06-19,2025-07-19,no,2025-09-01,2025-10-23,3.3,Harris Creek,Harris Creek,48.6348,-124.2446,0.0,0.0,0.0,0.0,3031,108,near a fish record,8.0
+SJsj5P4,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,15.0,Garbage Creek,San Juan River,48.5781,-124.1099,0.0,0.0,0.0,0.0,5605,9,near a fish record,8.0
+8171,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,5.5,Harris Creek,Harris Creek,48.6763,-124.2259,0.0,0.0,0.0,0.0,1674,95,near a fish record,8.0
+C058C3HW,1220,Comment closed,2024-04-03,2024-05-06,no,2025-10-09,2024-05-07,4.5,Soule Creek,Port Renfrew area,48.5347,-124.4095,4.46,0.0,0.0,0.0,6965,8434,overlaps mapped old growth,6.7
+8013,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,4.3,Renfrew Creek,Renfrew Creek,48.6382,-124.3181,4.25,0.0,0.0,0.0,6031,1432,overlaps mapped old growth,6.4
+7116,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,6.7,Loup Creek,Gordon River,48.677,-124.473,4.17,0.0,0.0,0.0,7015,12680,overlaps mapped old growth,6.3
+C058C4KU,1220,Comment closed,2024-04-03,2024-05-06,no,2025-10-09,2024-05-07,4.1,Soule Creek,Port Renfrew area,48.5385,-124.4113,4.06,0.0,0.0,0.0,6662,8333,overlaps mapped old growth,6.1
+7116,2663,Comment closed,2025-10-24,2025-11-23,no,2026-04-01,2026-04-21,6.2,Loup Creek,Gordon River,48.677,-124.4727,3.76,0.0,0.0,0.0,7018,12681,overlaps mapped old growth,5.6
+8392,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,3.3,Hemmingsen Creek,Harris Creek,48.6793,-124.3278,3.34,0.0,0.0,0.11,7742,2238,overlaps mapped old growth; overlaps a protected old-growth area,5.2
+7248,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,9.1,Braden Creek,Gordon River,48.6539,-124.396,1.25,0.0,1.25,0.0,4951,6830,overlaps mapped old growth; in a priority-deferral area,4.4
+7239A-2,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,11.1,Braden Creek,Gordon River,48.6548,-124.4124,2.71,0.0,0.0,0.0,4320,8010,overlaps mapped old growth,4.1
+JE5,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,1.3,Loss Creek,Port Renfrew area,48.4965,-124.2547,0.77,0.0,0.0,0.0,11257,5361,overlaps mapped old growth,1.2
+JE2,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,12.7,Jack Elliott Creek,Port Renfrew area,48.5057,-124.2665,0.0,0.0,0.0,0.0,10706,5641,,0.0
+JE3,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,4.2,Jack Elliott Creek,Port Renfrew area,48.4996,-124.2602,0.0,0.0,0.0,0.0,11063,5497,,0.0
+JE1,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,15.3,Jack Elliott Creek,Port Renfrew area,48.5031,-124.2581,0.0,0.0,0.0,0.0,10556,5176,,0.0
+JE4,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,11.1,Loss Creek,Port Renfrew area,48.4985,-124.2568,0.0,0.0,0.0,0.0,10943,5121,,0.0
+WCH36,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,44.4,McVicar Creek,Port Renfrew area,48.4482,-124.1059,0.0,0.0,0.0,0.0,15988,9392,,0.0
+WCH30,1875,Comment closed,2024-10-10,2024-11-10,no,2024-12-01,2024-10-02,10.8,Bent Creek,Port Renfrew area,48.4575,-124.13,0.0,0.0,0.0,0.0,14792,7863,,0.0
+WCH35,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,22.4,Pat Philip Creek,Port Renfrew area,48.4507,-124.1231,0.0,0.0,0.0,0.0,15620,8625,,0.0
+WCH31,1875,Comment closed,2024-10-10,2024-11-10,no,2024-12-01,2024-10-02,12.4,Circo Creek,Port Renfrew area,48.4572,-124.1227,0.0,0.0,0.0,0.0,14997,8195,,0.0
+JRE25,1808,Comment closed,2024-09-13,2024-10-13,no,2024-10-15,2025-05-22,18.4,Jordan River,Port Renfrew area,48.4561,-123.9985,0.0,0.0,0.0,0.0,19940,14043,,0.0
+JRW32,1367,Comment closed,2024-04-11,2024-05-11,no,2024-07-01,2024-04-05,32.2,Sinn Fein Creek,Port Renfrew area,48.4643,-124.0538,0.0,0.0,0.0,0.0,16527,10927,,0.0
+JRW30,1367,Comment closed,2024-04-11,2024-05-11,no,2024-07-01,2024-04-05,16.1,Uglow Creek,Port Renfrew area,48.4676,-124.0639,0.0,0.0,0.0,0.0,15813,10281,,0.0
+SJsj5P6,2295,Comment closed,2025-05-21,2025-06-21,no,2026-05-06,2025-06-25,10.7,Mosquito Creek,San Juan River,48.5648,-124.2849,0.0,0.0,0.0,0.0,5435,1078,,0.0
+SJsj5P6,1220,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,8.8,Mosquito Creek,San Juan River,48.5647,-124.2849,0.0,0.0,0.0,0.0,5464,1105,,0.0
+SJsj5GS,2295,Comment closed,2025-05-21,2025-06-21,no,2027-07-07,2025-06-25,10.8,Blakeney Creek,San Juan River,48.5568,-124.095,0.0,0.0,0.0,0.0,7400,2205,,0.0
+SJsj5GQ,2295,Comment closed,2025-05-21,2025-06-21,no,2027-07-07,2025-06-25,17.8,Garbage Creek,San Juan River,48.5579,-124.1107,0.0,0.0,0.0,0.0,6314,1023,,0.0
+SJsj5GN,1220,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,8.5,Garbage Creek,San Juan River,48.5691,-124.1033,0.0,0.0,0.0,0.0,6332,755,,0.0
+7017-1,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,14.7,Browns Creek,Gordon River,48.6102,-124.4132,0.0,0.0,0.0,0.0,1498,8023,,0.0
+7017-2,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,3.7,Browns Creek,Gordon River,48.6066,-124.4062,0.0,0.0,0.0,0.0,2374,7590,,0.0
+8011-1,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,0.6,Renfrew Creek,Renfrew Creek,48.6329,-124.3124,0.0,0.0,0.0,0.0,5860,1570,,0.0
+9709,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,28.5,Harris Creek,Harris Creek,48.598,-124.2563,0.0,0.0,0.0,0.0,2086,339,,0.0
+9707,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,10.8,Harris Creek,Harris Creek,48.6052,-124.2352,0.0,0.0,0.0,0.0,715,478,,0.0
+8272,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,15.0,Harris Creek,Harris Creek,48.6228,-124.2184,0.0,0.0,0.0,0.0,1709,642,,0.0
+7522-1,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,20.0,Gordon River,Gordon River,48.6948,-124.4114,0.0,0.0,0.0,0.0,8496,8458,,0.0
+7522-2,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,5.3,Gordon River,Gordon River,48.6985,-124.406,0.0,0.0,0.0,0.0,9179,8298,,0.0
+7700,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,38.1,Braden Creek,Gordon River,48.6993,-124.3798,0.0,0.0,0.0,0.0,9696,6144,,0.0
+7239A-1,3124,Comment closed,2026-05-08,2026-06-08,no,2026-06-01,2026-04-30,3.5,Braden Creek,Gordon River,48.653,-124.4061,0.0,0.0,0.0,0.0,4502,7664,,0.0
+8267,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,16.8,Hemmingsen Creek,Harris Creek,48.6395,-124.2751,0.0,0.0,0.0,0.0,4067,812,,0.0
+8027,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,7.0,Renfrew Creek,Renfrew Creek,48.6434,-124.3308,0.0,0.0,0.0,0.0,6224,2024,,0.0
+8173,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,25.8,Harris Creek,Harris Creek,48.6734,-124.235,0.0,0.0,0.0,0.0,1354,455,,0.0
+5149,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,10.0,Caycuse River,Caycuse River,48.7436,-124.5111,0.0,0.0,0.0,0.0,14847,17255,,0.0
+7319,2416,Comment closed,2025-06-19,2025-07-19,no,2025-09-01,2025-10-23,5.3,Loup Creek,Gordon River,48.742,-124.4449,0.0,0.0,0.0,0.0,13735,12988,,0.0
+7318,2416,Comment closed,2025-06-19,2025-07-19,no,2025-09-01,2025-10-23,13.8,Loup Creek,Gordon River,48.7555,-124.4422,0.0,0.0,0.0,0.0,15153,13693,,0.0
+MB26,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,9.2,Gordon River,Gordon River,48.7404,-124.3854,0.0,0.0,0.0,0.0,13974,9515,,0.0
+MB28,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,9.4,Gordon River,Gordon River,48.7399,-124.3817,0.0,0.0,0.0,0.0,14025,9300,,0.0
+MB21,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,9.4,Gordon River,Gordon River,48.7455,-124.3745,0.0,0.0,0.0,0.0,14305,9468,,0.0
+7710,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,15.8,Hemmingsen Creek,Harris Creek,48.7033,-124.3733,0.0,0.0,0.0,0.0,10326,6065,,0.0
+MB10A,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,8.8,Gordon River,Gordon River,48.7523,-124.3453,0.0,0.0,0.0,0.0,13330,9076,,0.0
+MB12,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,7.5,Gordon River,Gordon River,48.7505,-124.3391,0.0,0.0,0.0,0.0,12873,8673,,0.0
+MB08,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,9.6,Gordon River,Gordon River,48.739,-124.3227,0.0,0.0,0.0,0.0,11097,7104,,0.0
+MB14,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,15.2,Gordon River,Gordon River,48.7447,-124.3267,0.0,0.0,0.0,0.0,11740,7727,,0.0
+MB05,2233,Comment closed,2025-03-28,2025-04-27,no,2025-04-30,2025-05-07,10.1,Gordon River,Gordon River,48.7542,-124.3342,0.0,0.0,0.0,0.0,12824,8839,,0.0
+5577,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,2025-10-22,16.6,Wilson Creek,Caycuse River,48.821,-124.528,0.0,0.0,0.0,0.0,23286,23281,,0.0
+5572,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,2025-10-22,8.1,Wilson Creek,Caycuse River,48.8135,-124.5211,0.0,0.0,0.0,0.0,22492,22282,,0.0
+5571,1891,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,2025-10-22,4.5,Wilson Creek,Caycuse River,48.8066,-124.5211,0.0,0.0,0.0,0.0,21865,21893,,0.0
+5563-1,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,0.7,Wilson Creek,Caycuse River,48.8185,-124.5056,0.0,0.0,0.0,0.0,22897,22058,,0.0
+5563-2,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,24.8,Wilson Creek,Caycuse River,48.8136,-124.4974,0.0,0.0,0.0,0.0,21985,20834,,0.0
+5642,2416,Comment closed,2025-06-19,2025-07-19,no,2025-12-01,2025-10-23,1.7,Caycuse River,Caycuse River,48.8026,-124.4934,0.0,0.0,0.0,0.0,20934,20098,,0.0
+7341,1897,Comment closed,2024-10-17,2024-11-17,no,2024-11-15,2024-10-09,9.7,Loup Creek,Gordon River,48.7699,-124.4196,0.0,0.0,0.0,0.0,16834,13541,,0.0
+5131,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,38.5,Caycuse River,Caycuse River,48.7915,-124.4592,0.0,0.0,0.0,0.0,18905,17045,,0.0
+7577-2,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,13.3,Gordon River,Gordon River,48.7681,-124.3588,0.0,0.0,0.0,0.0,15266,11033,,0.0
+7577-1,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,7.9,Hauk Creek,Gordon River,48.7707,-124.3652,0.0,0.0,0.0,0.0,15804,11485,,0.0
