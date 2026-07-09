@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://aaronevans.ca/sitemap.xml
+Sitemap: https://aaronevans.ca/port-renfrew/sitemap.xml
