@@ -20,13 +20,11 @@
         "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
         "radius": 9,
         "drive": "30m",
-        "hook": "A former construction landfill that turned into an unsanctioned, open-air museum of junk sculpture and graffiti, jutting into the Bay with a full view of the Golden Gate. Nobody planned it. It just grew there.",
+        "hook": "A construction landfill that turned into an unofficial sculpture park, out on a spit in the bay.",
         "tags": [
           "outsider-art",
           "coastal",
-          "dogs",
           "ruins",
-          "absurd",
           "free"
         ]
       }
@@ -50,14 +48,12 @@
         "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
         "radius": 9,
         "drive": "in SF",
-        "hook": "The one San Francisco neighborhood where you should have no plan. Just walk. It's the warmest, densest, most argued-over square mile in the city, and it rewards getting lost more than anywhere else in the Bay.",
+        "hook": "The one part of San Francisco to walk with no plan. It's the warmest, densest, most argued-over square mile in the city.",
         "tags": [
           "food",
           "murals",
           "walking",
-          "culture",
-          "nightlife",
-          "gentrification"
+          "culture"
         ]
       }
     },
@@ -80,13 +76,12 @@
         "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
         "radius": 9,
         "drive": "1h45m",
-        "hook": "A herd of elk on the narrowing tip of a peninsula, ocean on your left, bay on your right, and almost no one else out here. It's the closest thing the Bay Area has to a wildlife documentary you can walk into.",
+        "hook": "Elk on the tip of a peninsula, ocean on one side and Tomales Bay on the other, and usually no one else on the trail.",
         "tags": [
           "wildlife",
           "coastal",
           "hike",
-          "solitude",
-          "history"
+          "solitude"
         ]
       }
     }
