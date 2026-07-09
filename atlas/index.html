@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Wander Atlas — Bay Area + 3-hour radius</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f2e9d4; --paper-2:#ece0c4; --card:#f6efdd;
+    --ink:#2b2620; --muted:#7c6f56; --line:#d9c9a6;
+    --pine:#2f5c46; --rust:#b0562e;
+    --shadow:0 8px 30px rgba(60,45,20,.18);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; height:100%; }
+  body{ font-family:"Spectral",Georgia,serif; color:var(--ink); background:var(--paper);
+        -webkit-font-smoothing:antialiased; overflow:hidden; }
+  /* paper grain */
+  body::before{ content:""; position:fixed; inset:0; z-index:9999; pointer-events:none; opacity:.5;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='.045'/></svg>"); }
+
+  #app{ display:flex; height:100%; }
+
+  /* ---- field-guide panel ---- */
+  #panel{ position:relative; width:344px; flex:none; background:var(--paper-2);
+          border-right:1px solid var(--line); overflow-y:auto; z-index:1200;
+          box-shadow:2px 0 24px rgba(60,45,20,.08); }
+  .pad{ padding:22px 22px 40px; }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .compass{ width:42px; height:42px; flex:none; color:var(--pine); }
+  .wordmark{ font-family:"Fraunces",serif; font-weight:900; font-size:1.55rem; line-height:.98;
+             letter-spacing:-.01em; }
+  .wordmark small{ display:block; font-family:"IBM Plex Mono",monospace; font-weight:500;
+                   font-size:.6rem; letter-spacing:.22em; text-transform:uppercase;
+                   color:var(--rust); margin-top:5px; }
+  .blurb{ font-size:.92rem; line-height:1.5; color:var(--muted); margin:16px 0 6px;
+          border-left:2px solid var(--line); padding-left:12px; }
+
+  .search{ display:flex; gap:7px; margin:18px 0 6px; }
+  .search input{ flex:1; padding:9px 11px; border:1px solid var(--line); border-radius:2px;
+    background:var(--card); font-family:"IBM Plex Mono",monospace; font-size:.8rem; color:var(--ink); }
+  .search input:focus{ outline:none; border-color:var(--pine); }
+  .search button{ padding:0 14px; border:none; border-radius:2px; background:var(--pine); color:#f6efdd;
+    font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.1em; cursor:pointer;
+    text-transform:uppercase; }
+  .search button:hover{ background:#264a38; }
+
+  .lbl{ font-family:"IBM Plex Mono",monospace; font-size:.64rem; letter-spacing:.2em;
+        text-transform:uppercase; color:var(--muted); margin:26px 0 10px; display:flex; gap:8px; align-items:center; }
+  .lbl::after{ content:""; flex:1; height:1px; background:var(--line); }
+
+  .kf-row{ display:flex; align-items:center; gap:11px; padding:7px 8px; margin:2px -8px; cursor:pointer;
+    border-radius:3px; transition:background .15s; user-select:none; }
+  .kf-row:hover{ background:rgba(47,92,70,.07); }
+  .kf-row[data-empty="1"]{ opacity:.4; }
+  .kf-row input{ position:absolute; opacity:0; width:0; height:0; }
+  .kf-row .sw{ width:15px; height:15px; border-radius:50%; background:var(--sw); flex:none;
+    box-shadow:0 0 0 2px var(--card),0 0 0 3px var(--sw); transition:transform .15s; }
+  .kf-row input:not(:checked) ~ .sw{ background:transparent; box-shadow:0 0 0 2px var(--card),0 0 0 3px var(--line); }
+  .kf-row:hover .sw{ transform:scale(1.15); }
+  .kf-label{ font-size:.96rem; }
+  .kf-ct{ margin-left:auto; font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); }
+
+  .depth-val{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--rust); margin:2px 0 8px; }
+  input[type=range]{ -webkit-appearance:none; width:100%; height:2px; background:var(--line); }
+  input[type=range]::-webkit-slider-thumb{ -webkit-appearance:none; width:16px; height:16px; border-radius:50%;
+    background:var(--rust); border:2px solid var(--card); cursor:pointer; box-shadow:0 1px 3px rgba(0,0,0,.3); }
+
+  .note{ margin-top:28px; font-size:.78rem; line-height:1.55; color:var(--muted);
+    border-top:1px solid var(--line); padding-top:14px; }
+  .note b{ color:var(--ink); font-weight:600; }
+
+  #map{ flex:1; background:var(--paper); z-index:1; }
+  /* age the basemap into parchment */
+  .leaflet-tile-pane{ filter:sepia(.55) saturate(.62) brightness(1.05) contrast(.9) hue-rotate(-6deg); }
+  .leaflet-overlay-pane svg{ filter:drop-shadow(0 1px 1.5px rgba(45,35,20,.45)); }
+  .leaflet-container{ font-family:"Spectral",serif; background:var(--paper); }
+  .leaflet-control-attribution{ background:rgba(242,233,212,.8)!important; font-family:"IBM Plex Mono",monospace; font-size:9px!important; }
+  .leaflet-bar a{ background:var(--card); color:var(--ink); border-bottom-color:var(--line); }
+  .leaflet-bar a:hover{ background:var(--paper-2); }
+
+  /* popup as aged card */
+  .leaflet-popup-content-wrapper{ background:var(--card); border:1px solid var(--line); border-radius:4px;
+    box-shadow:var(--shadow); }
+  .leaflet-popup-tip{ background:var(--card); border:1px solid var(--line); }
+  .leaflet-popup-content{ margin:15px 17px 14px; width:250px!important; }
+  .pop-name{ font-family:"Fraunces",serif; font-weight:600; font-size:1.18rem; line-height:1.12; }
+  .pop-meta{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); margin:7px 0 8px; display:flex; gap:7px; flex-wrap:wrap; align-items:center; }
+  .pop-hook{ font-size:.92rem; line-height:1.45; margin:0 0 12px; }
+  .pop-link{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    text-decoration:none; font-weight:600; }
+  .pop-link::after{ content:" →"; }
+
+  /* mobile chrome (hidden on desktop) */
+  #fab, #titlechip, #backdrop{ display:none; }
+
+  @media(max-width:820px){
+    body{ overflow:hidden; }
+    #panel{ position:fixed; left:0; right:0; bottom:0; top:auto; width:100%; max-height:82vh;
+      border-right:none; border-top-left-radius:16px; border-top-right-radius:16px;
+      transform:translateY(102%); transition:transform .34s cubic-bezier(.4,0,.2,1);
+      box-shadow:0 -10px 40px rgba(50,35,15,.28); }
+    #panel.open{ transform:translateY(0); }
+    #panel::before{ content:""; position:absolute; top:8px; left:50%; transform:translateX(-50%);
+      width:42px; height:4px; border-radius:2px; background:var(--line); }
+    .pad{ padding:26px 20px 40px; }
+    #map{ height:100%; }
+    #backdrop{ display:block; position:fixed; inset:0; background:rgba(40,30,15,.35); z-index:1100;
+      opacity:0; pointer-events:none; transition:opacity .3s; }
+    #backdrop.show{ opacity:1; pointer-events:auto; }
+    #titlechip{ display:flex; align-items:center; gap:9px; position:fixed; top:12px; left:12px; z-index:1000;
+      background:rgba(246,239,221,.94); border:1px solid var(--line); border-radius:30px; padding:7px 15px 7px 9px;
+      box-shadow:var(--shadow); }
+    #titlechip .compass{ width:26px; height:26px; }
+    #titlechip span{ font-family:"Fraunces",serif; font-weight:900; font-size:1rem; }
+    #fab{ display:flex; align-items:center; gap:8px; position:fixed; right:14px; bottom:20px; z-index:1000;
+      background:var(--pine); color:var(--card); border:none; border-radius:30px; padding:13px 20px;
+      font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+      box-shadow:0 6px 20px rgba(30,50,38,.4); cursor:pointer; }
+  }
+
+  /* staggered load-in */
+  @keyframes rise{ from{ opacity:0; transform:translateY(14px);} to{ opacity:1; transform:none;} }
+  .reveal{ animation:rise .6s cubic-bezier(.2,.7,.2,1) backwards; }
+</style></head>
+<body>
+<div id="app">
+  <aside id="panel"><div class="pad">
+    <div class="brand reveal" style="animation-delay:.05s">
+      <svg class="compass" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5">
+        <circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/>
+        <path d="M50 6 L58 50 L50 94 L42 50 Z" fill="currentColor" stroke="none" opacity=".9"/>
+        <path d="M6 50 L50 42 L94 50 L50 58 Z" fill="currentColor" stroke="none" opacity=".4"/>
+      </svg>
+      <div class="wordmark">Wander<br>Atlas<small>Field Guide</small></div>
+    </div>
+    <p class="blurb reveal" style="animation-delay:.12s">San Francisco and everything you can reach in about a 3-hour drive: the coast from Mendocino down to Big Sur, the wine country, the Gold Country, Tahoe, Yosemite. The first fully-realized region of the atlas.</p>
+    <form class="search reveal" style="animation-delay:.18s" onsubmit="return doSearch(event)">
+      <input id="q" placeholder="jump to a place…" autocomplete="off">
+      <button type="submit">Go</button>
+    </form>
+    <div class="lbl reveal" style="animation-delay:.24s">Show on map</div>
+    <div class="reveal" style="animation-delay:.28s"><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="wander-zone" checked><span class="sw" style="--sw:#c17d3a"></span><span class="kf-label">Wander zone</span><span class="kf-ct">1</span></label><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="nature" checked><span class="sw" style="--sw:#437a52"></span><span class="kf-label">Nature</span><span class="kf-ct">1</span></label><label class="kf-row" data-empty="1"><input type="checkbox" class="kf" value="point" ><span class="sw" style="--sw:#4b6d8c"></span><span class="kf-label">Point</span><span class="kf-ct">0</span></label><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="oddity" checked><span class="sw" style="--sw:#8f5276"></span><span class="kf-label">Oddity</span><span class="kf-ct">1</span></label><label class="kf-row" data-empty="1"><input type="checkbox" class="kf" value="town" ><span class="sw" style="--sw:#3c7f7a"></span><span class="kf-label">Town</span><span class="kf-ct">0</span></label></div>
+    <div class="lbl reveal" style="animation-delay:.34s">Minimum depth</div>
+    <div class="reveal" style="animation-delay:.38s">
+      <div class="depth-val" id="depthVal">2+ · everything worth a stop</div>
+      <input id="depth" type="range" min="2" max="5" value="2" step="1" oninput="onDepth()">
+    </div>
+    <p class="note reveal" style="animation-delay:.44s">
+      Pins are <b>colored by kind</b> and <b>sized by depth</b> — bigger means a bigger payoff.
+      Tap a pin for the hook, then open its page for the whole story.<br><br>
+      3 places · built 2026-07-09
+    </p>
+  </div></aside>
+  <main id="map"></main>
+</div>
+
+<div id="titlechip">
+  <svg class="compass" viewBox="0 0 100 100" fill="none" stroke="var(--pine)" stroke-width="3">
+    <circle cx="50" cy="50" r="44"/><path d="M50 6 L58 50 L50 94 L42 50 Z" fill="var(--pine)" stroke="none"/>
+  </svg><span>Wander Atlas</span>
+</div>
+<button id="fab" onclick="openPanel(true)">☰ Filters</button>
+<div id="backdrop" onclick="openPanel(false)"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const PLACES = [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.3235, 37.8896]}, "properties": {"slug": "albany-bulb", "name": "The Albany Bulb", "kind": "oddity", "kindLabel": "Oddity", "color": "#8f5276", "depth": 4, "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb", "radius": 9, "drive": "30m", "hook": "A former construction landfill that turned into an unsanctioned, open-air museum of junk sculpture and graffiti, jutting into the Bay with a full view of the Golden Gate. Nobody planned it. It just grew there.", "tags": ["outsider-art", "coastal", "dogs", "ruins", "absurd", "free"]}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.4148, 37.7592]}, "properties": {"slug": "mission-district", "name": "The Mission", "kind": "wander-zone", "kindLabel": "Wander zone", "color": "#c17d3a", "depth": 4, "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb", "radius": 9, "drive": "in SF", "hook": "The one San Francisco neighborhood where you should have no plan. Just walk. It's the warmest, densest, most argued-over square mile in the city, and it rewards getting lost more than anywhere else in the Bay.", "tags": ["food", "murals", "walking", "culture", "nightlife", "gentrification"]}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.9526, 38.1917]}, "properties": {"slug": "tomales-point-tule-elk", "name": "Tomales Point & the Tule Elk Reserve", "kind": "nature", "kindLabel": "Nature", "color": "#437a52", "depth": 4, "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb", "radius": 9, "drive": "1h45m", "hook": "A herd of elk on the narrowing tip of a peninsula, ocean on your left, bay on your right, and almost no one else out here. It's the closest thing the Bay Area has to a wildlife documentary you can walk into.", "tags": ["wildlife", "coastal", "hike", "solitude", "history"]}}];
+const ZONES  = [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-122.4245, 37.7662], [-122.4082, 37.7648], [-122.4066, 37.7492], [-122.4238, 37.75], [-122.4245, 37.7662]]]}, "properties": {"slug": "mission-district", "name": "The Mission", "kind": "wander-zone", "color": "#c17d3a"}}];
+const DEPTH_LABEL = {2:"2+ · everything worth a stop",3:"3+ · worth a detour",4:"4+ · go out of your way",5:"5 · reorders your map"};
+
+const map = L.map('map',{zoomControl:true, attributionControl:true}).setView([37.9,-121.6], 7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {maxZoom:19, attribution:'© OpenStreetMap contributors'}).addTo(map);
+L.control.scale({imperial:true, metric:false, position:'bottomleft'}).addTo(map);
+
+// origin marker (downtown SF)
+L.circleMarker([37.7793,-122.4193],
+  {radius:5, color:'#2b2620', weight:2.5, fillColor:'#f6efdd', fillOpacity:1})
+  .addTo(map).bindTooltip('Start · Downtown San Francisco',{direction:'top'});
+
+function popupHtml(p){
+  return '<div class="pop-name">'+p.name+'</div>'+
+    '<div class="pop-meta"><span style="color:'+p.color+'">'+p.kindLabel+'</span>'+
+    '<span style="color:'+p.color+';letter-spacing:1px">'+p.dots+'</span>'+
+    (p.drive?'<span>· '+p.drive+' from SF</span>':'')+'</div>'+
+    '<div class="pop-hook">'+(p.hook||'')+'</div>'+
+    '<a class="pop-link" style="color:'+p.color+'" href="places/'+p.slug+'.html">Open full page</a>';
+}
+
+const zoneLayers = [];
+ZONES.forEach(f=>{
+  const layer = L.geoJSON(f,{style:{color:f.properties.color,weight:2,dashArray:'5 4',fillColor:f.properties.color,fillOpacity:.13}});
+  const p = PLACES.find(x=>x.properties.slug===f.properties.slug);
+  if(p) layer.bindPopup(popupHtml(p.properties));
+  zoneLayers.push({kind:f.properties.kind, layer});
+});
+
+const markers = [];
+PLACES.forEach(f=>{
+  const p = f.properties, c = f.geometry.coordinates;
+  const m = L.circleMarker([c[1],c[0]],
+    {radius:p.radius, color:'#f6efdd', weight:2, fillColor:p.color, fillOpacity:.95});
+  m.bindPopup(popupHtml(p));
+  m.on('mouseover',()=>{ m.setStyle({weight:3}); m.setRadius(p.radius+3); });
+  m.on('mouseout',()=>{ m.setStyle({weight:2}); m.setRadius(p.radius); });
+  markers.push({kind:p.kind, depth:p.depth, marker:m});
+});
+
+function activeKinds(){ return new Set([...document.querySelectorAll('.kf:checked')].map(c=>c.value)); }
+function render(){
+  const kinds = activeKinds(), minDepth = +document.getElementById('depth').value;
+  markers.forEach(o=>{ const on = kinds.has(o.kind)&&o.depth>=minDepth;
+    if(on&&!map.hasLayer(o.marker)) o.marker.addTo(map);
+    if(!on&&map.hasLayer(o.marker)) map.removeLayer(o.marker); });
+  zoneLayers.forEach(o=>{ const on = kinds.has(o.kind);
+    if(on&&!map.hasLayer(o.layer)) o.layer.addTo(map);
+    if(!on&&map.hasLayer(o.layer)) map.removeLayer(o.layer); });
+}
+function onDepth(){ document.getElementById('depthVal').textContent = DEPTH_LABEL[document.getElementById('depth').value]; render(); }
+document.querySelectorAll('.kf').forEach(c=>c.addEventListener('change',render));
+
+// mobile panel
+const panel=document.getElementById('panel'), backdrop=document.getElementById('backdrop');
+function openPanel(o){ panel.classList.toggle('open',o); backdrop.classList.toggle('show',o); }
+
+async function doSearch(e){
+  e.preventDefault();
+  const q=document.getElementById('q').value.trim(); if(!q) return false;
+  try{ const r=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q='+encodeURIComponent(q));
+    const d=await r.json();
+    if(d[0]){ map.setView([+d[0].lat,+d[0].lon],12); openPanel(false); } else alert('No match for "'+q+'"');
+  }catch(err){ alert('Search unavailable offline.'); }
+  return false;
+}
+
+render();
+setTimeout(()=>map.invalidateSize(),250);
+window.addEventListener('resize',()=>map.invalidateSize());
+</script>
+</body></html>

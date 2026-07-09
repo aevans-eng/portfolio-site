@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.4245,
+              37.7662
+            ],
+            [
+              -122.4082,
+              37.7648
+            ],
+            [
+              -122.4066,
+              37.7492
+            ],
+            [
+              -122.4238,
+              37.75
+            ],
+            [
+              -122.4245,
+              37.7662
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "slug": "mission-district",
+        "name": "The Mission",
+        "kind": "wander-zone",
+        "color": "#c17d3a"
+      }
+    }
+  ]
+}

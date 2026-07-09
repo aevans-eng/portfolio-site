@@ -1,0 +1,94 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3235,
+          37.8896
+        ]
+      },
+      "properties": {
+        "slug": "albany-bulb",
+        "name": "The Albany Bulb",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "30m",
+        "hook": "A former construction landfill that turned into an unsanctioned, open-air museum of junk sculpture and graffiti, jutting into the Bay with a full view of the Golden Gate. Nobody planned it. It just grew there.",
+        "tags": [
+          "outsider-art",
+          "coastal",
+          "dogs",
+          "ruins",
+          "absurd",
+          "free"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4148,
+          37.7592
+        ]
+      },
+      "properties": {
+        "slug": "mission-district",
+        "name": "The Mission",
+        "kind": "wander-zone",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "The one San Francisco neighborhood where you should have no plan. Just walk. It's the warmest, densest, most argued-over square mile in the city, and it rewards getting lost more than anywhere else in the Bay.",
+        "tags": [
+          "food",
+          "murals",
+          "walking",
+          "culture",
+          "nightlife",
+          "gentrification"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.9526,
+          38.1917
+        ]
+      },
+      "properties": {
+        "slug": "tomales-point-tule-elk",
+        "name": "Tomales Point & the Tule Elk Reserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h45m",
+        "hook": "A herd of elk on the narrowing tip of a peninsula, ocean on your left, bay on your right, and almost no one else out here. It's the closest thing the Bay Area has to a wildlife documentary you can walk into.",
+        "tags": [
+          "wildlife",
+          "coastal",
+          "hike",
+          "solitude",
+          "history"
+        ]
+      }
+    }
+  ]
+}
