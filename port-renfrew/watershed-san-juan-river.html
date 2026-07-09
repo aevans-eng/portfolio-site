@@ -66,7 +66,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <p><a href="watersheds.html">&larr; All watersheds</a></p>
 <h1>San Juan River</h1>
 <a class="mapbtn" href="map.html?ws=san-juan-river">Open San Juan River on the map &rarr;</a>
-<ul>
+<h2>Proposed for logging in this watershed (17)</h2><ul><li><b>C059C4NE</b> (31.6 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li><li><b>SJlo5KM</b> (24.5 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2295#details" target="_blank" rel="noopener">FOM 2295</a></li><li><b>9609</b> (11.1 ha, Comment closed) &middot; overlaps mapped old growth; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li><li><b>SJsj594</b> (13.4 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li><li><b>SJlo5KM</b> (14.7 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li><li><b>SJsj5P8</b> (51.3 ha, Comment closed) &middot; overlaps mapped old growth; near a fish record; near a recreation site &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2295#details" target="_blank" rel="noopener">FOM 2295</a></li><li><b>SJsj5P8</b> (51.2 ha, Comment closed) &middot; overlaps mapped old growth; near a fish record; near a recreation site &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li><li><b>SJsj5P7</b> (12.1 ha, Comment closed) &middot; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2295#details" target="_blank" rel="noopener">FOM 2295</a></li><li><b>SJsj5P7</b> (11.4 ha, Comment closed) &middot; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li><li><b>SJsj5P5</b> (45.6 ha, Comment closed) &middot; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2295#details" target="_blank" rel="noopener">FOM 2295</a></li><li><b>SJsj5P5</b> (45.8 ha, Comment closed) &middot; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li><li><b>SJsj5P4</b> (15.0 ha, Comment closed) &middot; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li></ul><p><a href="proposed-logging-watch.html">All proposed blocks, ranked &rarr;</a></p><script>
+(function(){
+  document.querySelectorAll('[data-closes]').forEach(function(el){
+    var d=new Date(el.getAttribute('data-closes')+'T00:00:00');
+    var days=Math.ceil((d-Date.now())/864e5);
+    if(isNaN(days)||days<0)return;
+    var t=days===0?'closes today':days===1?'1 day left':days+' days left';
+    var s=document.createElement('span'); s.textContent=' ('+t+')';
+    el.appendChild(s);
+  });
+})();
+</script><ul>
 <li>Watershed area: about 66,987 ha.</li>
 <li>Old growth still standing: about 6,137 ha of 250-plus-year forest (VRI), including about 5,697 ha mapped as old growth by the province's panel (TAP) and 3,320 ha of legal Old Growth Management Area.</li>
 <li>Old growth flagged for deferral: about 2,296 ha.</li>

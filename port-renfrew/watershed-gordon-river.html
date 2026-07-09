@@ -66,7 +66,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <p><a href="watersheds.html">&larr; All watersheds</a></p>
 <h1>Gordon River</h1>
 <a class="mapbtn" href="map.html?ws=gordon-river">Open Gordon River on the map &rarr;</a>
-<ul>
+<h2>Proposed for logging in this watershed (25)</h2><ul><li><b>7104</b> (6.4 ha, Comment closed) &middot; overlaps mapped old growth; overlaps a protected old-growth area &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3124#details" target="_blank" rel="noopener">FOM 3124</a></li><li><b>7104</b> (5.5 ha, Comment closed) &middot; overlaps mapped old growth; overlaps a protected old-growth area &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2663#details" target="_blank" rel="noopener">FOM 2663</a></li><li><b>7116</b> (6.7 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3124#details" target="_blank" rel="noopener">FOM 3124</a></li><li><b>7116</b> (6.2 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2663#details" target="_blank" rel="noopener">FOM 2663</a></li><li><b>7248</b> (9.1 ha, Comment closed) &middot; overlaps mapped old growth; in a priority-deferral area &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3124#details" target="_blank" rel="noopener">FOM 3124</a></li><li><b>7239A-2</b> (11.1 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3124#details" target="_blank" rel="noopener">FOM 3124</a></li><li><b>7017-1</b> (14.7 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>7017-2</b> (3.7 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>7522-1</b> (20.0 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>7522-2</b> (5.3 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>7700</b> (38.1 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>7239A-1</b> (3.5 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3124#details" target="_blank" rel="noopener">FOM 3124</a></li></ul><p><a href="proposed-logging-watch.html">All proposed blocks, ranked &rarr;</a></p><script>
+(function(){
+  document.querySelectorAll('[data-closes]').forEach(function(el){
+    var d=new Date(el.getAttribute('data-closes')+'T00:00:00');
+    var days=Math.ceil((d-Date.now())/864e5);
+    if(isNaN(days)||days<0)return;
+    var t=days===0?'closes today':days===1?'1 day left':days+' days left';
+    var s=document.createElement('span'); s.textContent=' ('+t+')';
+    el.appendChild(s);
+  });
+})();
+</script><ul>
 <li>Watershed area: about 30,830 ha.</li>
 <li>Old growth still standing: about 3,673 ha of 250-plus-year forest (VRI), including about 3,512 ha mapped as old growth by the province's panel (TAP) and 2,501 ha of legal Old Growth Management Area.</li>
 <li>Old growth flagged for deferral: about 1,515 ha.</li>

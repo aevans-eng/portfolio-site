@@ -66,7 +66,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <p><a href="watersheds.html">&larr; All watersheds</a></p>
 <h1>Caycuse River</h1>
 <a class="mapbtn" href="map.html?ws=caycuse-river">Open Caycuse River on the map &rarr;</a>
-<ul>
+<h2>Proposed for logging in this watershed (8)</h2><ul><li><b>5149</b> (10.0 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>5577</b> (16.6 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1891#details" target="_blank" rel="noopener">FOM 1891</a></li><li><b>5572</b> (8.1 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1891#details" target="_blank" rel="noopener">FOM 1891</a></li><li><b>5571</b> (4.5 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1891#details" target="_blank" rel="noopener">FOM 1891</a></li><li><b>5563-1</b> (0.7 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>5563-2</b> (24.8 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>5642</b> (1.7 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2416#details" target="_blank" rel="noopener">FOM 2416</a></li><li><b>5131</b> (38.5 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li></ul><p><a href="proposed-logging-watch.html">All proposed blocks, ranked &rarr;</a></p><script>
+(function(){
+  document.querySelectorAll('[data-closes]').forEach(function(el){
+    var d=new Date(el.getAttribute('data-closes')+'T00:00:00');
+    var days=Math.ceil((d-Date.now())/864e5);
+    if(isNaN(days)||days<0)return;
+    var t=days===0?'closes today':days===1?'1 day left':days+' days left';
+    var s=document.createElement('span'); s.textContent=' ('+t+')';
+    el.appendChild(s);
+  });
+})();
+</script><ul>
 <li>Watershed area: about 19,135 ha.</li>
 <li>Old growth still standing: about 1,394 ha of 250-plus-year forest (VRI), including about 1,503 ha mapped as old growth by the province's panel (TAP) and 949 ha of legal Old Growth Management Area.</li>
 <li>Old growth flagged for deferral: about 982 ha.</li>

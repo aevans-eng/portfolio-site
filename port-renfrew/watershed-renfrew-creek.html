@@ -66,7 +66,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <p><a href="watersheds.html">&larr; All watersheds</a></p>
 <h1>Renfrew Creek</h1>
 <a class="mapbtn" href="map.html?ws=renfrew-creek">Open Renfrew Creek on the map &rarr;</a>
-<ul>
+<h2>Proposed for logging in this watershed (4)</h2><ul><li><b>8011-2</b> (6.6 ha, Comment closed) &middot; overlaps mapped old growth; in a priority-deferral area &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>8013</b> (4.3 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>8011-1</b> (0.6 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>8027</b> (7.0 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li></ul><p><a href="proposed-logging-watch.html">All proposed blocks, ranked &rarr;</a></p><script>
+(function(){
+  document.querySelectorAll('[data-closes]').forEach(function(el){
+    var d=new Date(el.getAttribute('data-closes')+'T00:00:00');
+    var days=Math.ceil((d-Date.now())/864e5);
+    if(isNaN(days)||days<0)return;
+    var t=days===0?'closes today':days===1?'1 day left':days+' days left';
+    var s=document.createElement('span'); s.textContent=' ('+t+')';
+    el.appendChild(s);
+  });
+})();
+</script><ul>
 <li>Watershed area: about 5,052 ha.</li>
 <li>Old growth still standing: about 1,208 ha of 250-plus-year forest (VRI), including about 1,096 ha mapped as old growth by the province's panel (TAP) and 908 ha of legal Old Growth Management Area.</li>
 <li>Old growth flagged for deferral: about 768 ha.</li>

@@ -66,7 +66,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 <p><a href="watersheds.html">&larr; All watersheds</a></p>
 <h1>Harris Creek</h1>
 <a class="mapbtn" href="map.html?ws=harris-creek">Open Harris Creek on the map &rarr;</a>
-<ul>
+<h2>Proposed for logging in this watershed (11)</h2><ul><li><b>OSJosj5BR</b> (39.5 ha, Comment closed) &middot; overlaps mapped old growth &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=1220#details" target="_blank" rel="noopener">FOM 1220</a></li><li><b>9708</b> (7.3 ha, Comment closed) &middot; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>8249</b> (3.3 ha, Comment closed) &middot; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2416#details" target="_blank" rel="noopener">FOM 2416</a></li><li><b>8171</b> (5.5 ha, Comment closed) &middot; near a fish record &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>8392</b> (3.3 ha, Comment closed) &middot; overlaps mapped old growth; overlaps a protected old-growth area &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3124#details" target="_blank" rel="noopener">FOM 3124</a></li><li><b>9709</b> (28.5 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>9707</b> (10.8 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>8272</b> (15.0 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>8267</b> (16.8 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li><li><b>8173</b> (25.8 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=2887#details" target="_blank" rel="noopener">FOM 2887</a></li><li><b>7710</b> (15.8 ha, Comment closed) &middot; <a href="https://fom.nrs.gov.bc.ca/public/projects?id=3071#details" target="_blank" rel="noopener">FOM 3071</a></li></ul><p><a href="proposed-logging-watch.html">All proposed blocks, ranked &rarr;</a></p><script>
+(function(){
+  document.querySelectorAll('[data-closes]').forEach(function(el){
+    var d=new Date(el.getAttribute('data-closes')+'T00:00:00');
+    var days=Math.ceil((d-Date.now())/864e5);
+    if(isNaN(days)||days<0)return;
+    var t=days===0?'closes today':days===1?'1 day left':days+' days left';
+    var s=document.createElement('span'); s.textContent=' ('+t+')';
+    el.appendChild(s);
+  });
+})();
+</script><ul>
 <li>Watershed area: about 14,527 ha.</li>
 <li>Old growth still standing: about 2,000 ha of 250-plus-year forest (VRI), including about 1,850 ha mapped as old growth by the province's panel (TAP) and 1,025 ha of legal Old Growth Management Area.</li>
 <li>Old growth flagged for deferral: about 760 ha.</li>
