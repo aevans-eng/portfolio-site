@@ -1,151 +1,151 @@
-block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_date,create_date,planned_area_ha,watershed,oldgrowth_overlap_ha,ancient_overlap_ha,deferral_overlap_ha,ogma_overlap_ha,nearest_rec_m,nearest_fish_m,why_matters,priority_score
-171128,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-16,2026-06-17,1.6,Franklin River,0.0,0.0,0.0,0.0,4970,55,near a fish record,8.0
-171130,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-16,2026-06-17,4.9,Franklin River,0.0,0.0,0.0,0.0,8193,608,,0.0
-073322,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-15,2026-06-17,10.2,Franklin River,0.0,0.0,0.0,0.0,6765,539,,0.0
-171127,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-16,2026-06-17,35.1,Franklin River,0.0,0.0,0.0,0.0,4252,323,,0.0
-HAN012,3270,Open for comment,2026-07-01,2026-07-31,yes,2026-08-17,2026-06-24,18.0,Alberni Valley area,0.0,0.0,0.0,0.0,14889,4018,,0.0
-F025C3YL,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-02,2024-05-07,26.6,Nahmint River,24.24,0.0,23.88,5.63,7752,875,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,92.6
-F024C4RZ,1222,Comment closed,2024-04-03,2024-05-06,no,2027-07-08,2024-05-07,33.1,Nahmint River,24.9,0.0,24.74,0.3,4378,700,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,87.3
-F025C4LF,1222,Comment closed,2024-04-03,2024-05-06,no,2028-07-13,2024-05-07,32.8,Nahmint River,17.64,0.0,17.64,2.83,5509,545,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,66.0
-F024C3CE,1222,Comment closed,2024-04-03,2024-05-06,no,2028-07-13,2024-05-07,15.0,Nahmint River,14.84,0.0,13.77,1.09,7889,1197,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,51.4
-F016C4D2,2294,Comment closed,2025-05-21,2025-06-21,no,2029-07-05,2025-06-25,19.7,Alberni Valley area,15.8,0.0,10.9,0.0,7674,1336,overlaps mapped old growth; in a priority-deferral area,45.5
-F025C3CR,2294,Comment closed,2025-05-21,2025-06-21,no,2029-06-01,2025-06-25,11.9,Sproat River,11.88,0.0,11.88,0.0,6180,2081,overlaps mapped old growth; in a priority-deferral area,41.6
-ALna5U1,2856,Comment closed,2026-03-02,2026-04-02,no,2027-04-01,2026-04-13,15.0,Nahmint River,14.86,0.0,0.0,0.0,4357,235,overlaps mapped old growth; near a fish record,30.3
-ALsp3D0,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,8.7,Sproat River,8.6,0.0,8.6,0.0,6291,2377,overlaps mapped old growth; in a priority-deferral area,30.1
-F015C3YM,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-02,2024-05-07,34.4,Nahmint River,7.75,0.0,7.72,1.36,6696,1408,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,29.1
-ALna4YW,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,4.2,Nahmint River,4.22,4.15,4.15,0.0,4753,992,overlaps ancient old growth (over 400 yr); in a priority-deferral area,27.1
-ALsp4Y3,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,11.1,Sproat River,4.14,4.05,4.05,0.0,5098,1028,overlaps ancient old growth (over 400 yr); in a priority-deferral area,26.5
-TOlk2RU,1222,Comment closed,2024-04-03,2024-05-06,no,2026-04-01,2024-05-07,11.7,Alberni Valley area,11.54,0.0,0.18,0.0,18955,41,overlaps mapped old growth; in a priority-deferral area; near a fish record,25.7
-ALcu4W5,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,24.3,Alberni Valley area,0.0,0.0,12.53,0.0,517,456,in a priority-deferral area,25.1
-TOlk5PE,1222,Comment closed,2024-04-03,2024-05-06,no,2026-05-07,2024-05-07,11.5,Alberni Valley area,11.11,0.0,0.16,0.0,20277,195,overlaps mapped old growth; in a priority-deferral area; near a fish record,25.0
-ALcu577,2294,Comment closed,2025-05-21,2025-06-21,no,2029-07-05,2025-06-25,5.8,Alberni Valley area,5.8,1.26,5.69,0.0,7609,2132,overlaps ancient old growth (over 400 yr); in a priority-deferral area,23.9
-ALna4YP,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,7.5,Nahmint River,7.45,0.0,5.62,0.0,3818,1168,overlaps mapped old growth; in a priority-deferral area,22.4
-ALsp4YG,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-07,2024-05-07,13.4,Sproat River,3.36,3.36,3.36,0.0,5425,1064,overlaps ancient old growth (over 400 yr); in a priority-deferral area,21.8
-ALcu5U9,2856,Comment closed,2026-03-02,2026-04-02,no,2027-04-01,2026-04-13,33.1,Alberni Valley area,13.49,0.12,0.39,0.0,7190,1528,overlaps ancient old growth (over 400 yr); in a priority-deferral area,21.4
-ALsp4Y0,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,11.2,Nahmint River,10.94,0.0,0.0,0.0,4716,1277,overlaps mapped old growth,16.4
-ALsp59Y,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,4.3,Sproat River,3.98,0.0,3.65,0.0,1864,1453,overlaps mapped old growth; in a priority-deferral area,13.3
-F015C4CX,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,7.9,Alberni Valley area,7.89,0.0,0.0,0.0,3897,2995,overlaps mapped old growth,11.8
-EFF028,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,1.6,Alberni Valley area,1.05,0.0,1.05,0.0,14113,187,overlaps mapped old growth; in a priority-deferral area; near a fish record,11.7
-EFF021,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.1,Alberni Valley area,0.92,0.0,0.92,0.0,12544,149,overlaps mapped old growth; in a priority-deferral area; near a fish record,11.2
-EFF027,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,1.0,Alberni Valley area,0.82,0.0,0.82,0.0,12214,116,overlaps mapped old growth; in a priority-deferral area; near a fish record,10.9
-ALcu57Q,1222,Comment closed,2024-04-03,2024-05-06,no,2025-08-07,2024-05-07,34.5,Alberni Valley area,0.0,0.0,1.34,0.0,708,210,in a priority-deferral area; near a fish record,10.7
-F025C3YX,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,17.4,Nahmint River,1.43,0.0,0.0,0.0,1950,9,overlaps mapped old growth; near a fish record,10.1
-EFF023,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.7,Alberni Valley area,0.7,0.0,0.0,0.0,12138,275,overlaps mapped old growth; near a fish record,9.1
-ALna5T8,2294,Comment closed,2025-05-21,2025-06-21,no,2025-07-09,2025-06-25,8.5,Sproat River,1.77,1.29,1.29,0.0,2268,1227,overlaps ancient old growth (over 400 yr); in a priority-deferral area,9.1
-F025C4RY,1222,Comment closed,2024-04-03,2024-05-06,no,2027-07-07,2024-05-07,0.4,Nahmint River,0.37,0.0,0.0,0.0,4969,241,overlaps mapped old growth; near a fish record,8.6
-EFF013,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,5.5,Alberni Valley area,5.52,0.0,0.0,0.0,11580,1114,overlaps mapped old growth,8.3
-EFF010,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,2.9,Alberni Valley area,2.89,0.0,2.0,0.0,13343,2505,overlaps mapped old growth; in a priority-deferral area,8.3
-EFF012,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,2.3,Alberni Valley area,2.34,0.0,2.34,0.0,12105,2930,overlaps mapped old growth; in a priority-deferral area,8.2
-EFF029,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,4.9,Alberni Valley area,0.0,0.0,0.0,0.0,13818,80,near a fish record,8.0
-COUS17,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,24.8,Alberni Valley area,0.0,0.0,0.0,0.0,8505,152,near a fish record,8.0
-COUS 17,2856,Comment closed,2026-03-02,2026-04-02,no,2027-01-01,2026-02-26,24.8,Alberni Valley area,0.0,0.0,0.0,0.0,8505,152,near a fish record,8.0
-ALcu59J,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-03,2024-05-07,18.5,Alberni Valley area,0.0,0.0,0.0,0.0,8931,6,near a fish record,8.0
-COUS18,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,32.0,Alberni Valley area,0.0,0.0,0.0,0.0,6812,160,near a fish record,8.0
-F025C4CU,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,0.4,Nahmint River,0.0,0.0,0.0,0.0,3233,114,near a fish record,8.0
-ALsp5TX,2856,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-13,13.0,Sproat River,0.0,0.0,0.0,0.0,3568,55,near a fish record,8.0
-ALsp4XJ,1222,Comment closed,2024-04-03,2024-05-06,no,2026-01-15,2024-05-07,25.7,Sproat River,0.0,0.0,0.0,0.0,4816,203,near a fish record,8.0
-ALsp5SJ,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,41.3,Sproat River,0.0,0.0,0.0,0.0,4170,0,near a fish record,8.0
-ALsp5TZ,2856,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-13,20.7,Sproat River,0.0,0.0,0.0,0.0,3202,98,near a fish record,8.0
-ALty5G3,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,37.1,Taylor River,0.0,0.0,0.0,0.0,7340,212,near a fish record,8.0
-ALsp5AY,1222,Comment closed,2024-04-03,2024-05-06,no,2024-10-02,2024-05-07,7.8,Sproat River,0.0,0.0,0.0,0.0,3215,40,near a fish record,8.0
-F10,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,9.0,Sproat River,0.0,0.0,0.0,0.0,8435,268,near a fish record,8.0
-EFF017,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,4.8,Alberni Valley area,4.79,0.0,0.0,0.0,10580,2283,overlaps mapped old growth,7.2
-F015C3SH,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,30.7,Nahmint River,2.34,0.0,1.64,0.0,3678,2925,overlaps mapped old growth; in a priority-deferral area,6.8
-EFF015,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,4.3,Alberni Valley area,4.33,0.0,0.0,0.0,12232,1999,overlaps mapped old growth,6.5
-F015C4CW,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,9.6,Alberni Valley area,3.85,0.0,0.0,0.0,4120,2924,overlaps mapped old growth,5.8
-ALna5U3,2856,Comment closed,2026-03-02,2026-04-02,no,2027-04-01,2026-04-13,3.9,Nahmint River,3.82,0.0,0.0,0.0,5869,708,overlaps mapped old growth,5.7
-ALsp4XH,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,1.5,Sproat River,1.49,0.0,1.49,0.0,3810,1994,overlaps mapped old growth; in a priority-deferral area,5.2
-TOlk2RR,1222,Comment closed,2024-04-03,2024-05-06,no,2026-04-01,2024-05-07,3.1,Alberni Valley area,3.13,0.0,0.0,0.0,18683,307,overlaps mapped old growth,4.7
-EFF016,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,2.8,Alberni Valley area,2.8,0.0,0.0,0.0,10740,1841,overlaps mapped old growth,4.2
-TOlk5PC,1222,Comment closed,2024-04-03,2024-05-06,no,2026-05-07,2024-05-07,2.4,Alberni Valley area,2.43,0.0,0.0,0.0,17157,319,overlaps mapped old growth,3.6
-EFF007,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,2.0,Alberni Valley area,1.84,0.0,0.0,0.0,13855,1030,overlaps mapped old growth,2.8
-EFF003,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.8,Alberni Valley area,1.81,0.0,0.0,0.0,14097,1121,overlaps mapped old growth,2.7
-ALna5G0,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-02,2024-05-07,20.1,Alberni Valley area,0.0,0.0,0.0,1.83,8218,1158,overlaps a protected old-growth area,2.7
-EFF019,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.4,Alberni Valley area,0.39,0.39,0.39,0.0,12790,354,overlaps ancient old growth (over 400 yr); in a priority-deferral area,2.5
-HAN211H,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,1.7,Alberni Valley area,1.67,0.0,0.0,0.0,14670,3938,overlaps mapped old growth,2.5
-EFF024,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.6,Alberni Valley area,1.58,0.0,0.0,0.0,10839,1125,overlaps mapped old growth,2.4
-EFF014,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.6,Alberni Valley area,1.62,0.0,0.0,0.0,11901,306,overlaps mapped old growth,2.4
-EFF008,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.9,Alberni Valley area,1.48,0.0,0.0,0.0,13998,1032,overlaps mapped old growth,2.2
-EFF020,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.4,Alberni Valley area,1.4,0.0,0.0,0.0,12626,334,overlaps mapped old growth,2.1
-EFF011,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.4,Alberni Valley area,1.37,0.0,0.0,0.0,12417,2659,overlaps mapped old growth,2.1
-EFF025,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,1.3,Alberni Valley area,1.31,0.0,0.0,0.0,16242,2319,overlaps mapped old growth,2.0
-EFF004,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.8,Alberni Valley area,0.77,0.0,0.44,0.0,13375,1978,overlaps mapped old growth; in a priority-deferral area,2.0
-HAN163Sal,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,23.5,Nahmint River,1.1,0.0,0.0,0.0,12631,1639,overlaps mapped old growth,1.7
-EFF018,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.0,Alberni Valley area,1.04,0.0,0.0,0.0,13087,341,overlaps mapped old growth,1.6
-HAN215H,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,1.1,Alberni Valley area,1.08,0.0,0.0,0.0,15024,3848,overlaps mapped old growth,1.6
-F024C3CD,1222,Comment closed,2024-04-03,2024-05-06,no,2028-07-13,2024-05-07,1.0,Nahmint River,0.45,0.0,0.45,0.0,8177,1346,overlaps mapped old growth; in a priority-deferral area,1.6
-EFF026,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,0.6,Alberni Valley area,0.58,0.1,0.1,0.0,12808,772,overlaps ancient old growth (over 400 yr); in a priority-deferral area,1.4
-EFF006,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.1,Alberni Valley area,0.96,0.0,0.0,0.0,13771,1155,overlaps mapped old growth,1.4
-F006C3SQ,2294,Comment closed,2025-05-21,2025-06-21,no,2029-10-01,2025-06-25,0.9,Nahmint River,0.92,0.0,0.0,0.0,10696,853,overlaps mapped old growth,1.4
-F024C464,1222,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,28.5,Nahmint River,0.0,0.0,0.0,0.95,6038,1446,overlaps a protected old-growth area,1.4
-ALsp4Z4,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,0.9,Sproat River,0.85,0.0,0.0,0.0,4794,2223,overlaps mapped old growth,1.3
-F016C4D5,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,30.6,Nahmint River,0.0,0.0,0.0,0.82,8867,1038,overlaps a protected old-growth area,1.2
-TOlk5PA,1222,Comment closed,2024-04-03,2024-05-06,no,2026-05-07,2024-05-07,0.7,Alberni Valley area,0.72,0.0,0.0,0.0,19814,480,overlaps mapped old growth,1.1
-EFF030,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,0.8,Alberni Valley area,0.71,0.0,0.0,0.0,12139,845,overlaps mapped old growth,1.1
-ALna5P9,1222,Comment closed,2024-04-03,2024-05-06,no,2025-10-02,2024-05-07,1.4,Nahmint River,0.31,0.0,0.31,0.0,8103,454,overlaps mapped old growth; in a priority-deferral area,1.1
-HAN212H,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,0.7,Alberni Valley area,0.75,0.0,0.0,0.0,14455,4133,overlaps mapped old growth,1.1
-EFF009,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.7,Alberni Valley area,0.68,0.0,0.0,0.0,13012,2611,overlaps mapped old growth,1.0
-EFF002,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.7,Alberni Valley area,0.63,0.0,0.0,0.0,14581,901,overlaps mapped old growth,0.9
-EFF005,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.5,Alberni Valley area,0.48,0.0,0.0,0.0,13772,1793,overlaps mapped old growth,0.7
-EFF022,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.4,Alberni Valley area,0.38,0.0,0.0,0.0,12802,674,overlaps mapped old growth,0.6
-ALcu5FX,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-02,2024-05-07,20.7,Alberni Valley area,0.0,0.0,0.27,0.0,4641,797,in a priority-deferral area,0.5
-HAN314CSal,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,12.9,Alberni Valley area,0.2,0.0,0.0,0.0,12931,1656,overlaps mapped old growth,0.3
-F015C3C2,1222,Comment closed,2024-04-03,2024-05-06,no,2025-04-01,2024-05-07,41.9,Nahmint River,0.0,0.0,0.0,0.15,3471,2534,overlaps a protected old-growth area,0.2
-HAN314ASal,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,4.1,Alberni Valley area,0.05,0.0,0.0,0.0,13376,2109,overlaps mapped old growth,0.1
-F006C3SR,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,14.6,Nahmint River,0.0,0.0,0.0,0.0,10923,772,,0.0
-HAN314BSal,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,2.4,Alberni Valley area,0.0,0.0,0.0,0.0,13527,2313,,0.0
-ALcu5PD,1222,Comment closed,2024-04-03,2024-05-06,no,2026-10-08,2024-05-07,17.4,Alberni Valley area,0.0,0.0,0.0,0.0,4881,1100,,0.0
-ALcu5PD,2294,Comment closed,2025-05-21,2025-06-21,no,2025-07-09,2025-06-25,14.9,Alberni Valley area,0.0,0.0,0.0,0.0,4885,1096,,0.0
-ALcu5SD,2294,Comment closed,2025-05-21,2025-06-21,no,2029-01-10,2025-06-25,25.0,Alberni Valley area,0.0,0.0,0.0,0.0,4017,388,,0.0
-F015C4P9,2294,Comment closed,2025-05-21,2025-06-21,no,2027-04-07,2025-06-25,2.5,Nahmint River,0.0,0.0,0.0,0.0,2678,2081,,0.0
-F015C3T0,2294,Comment closed,2025-05-21,2025-06-21,no,2027-05-05,2025-06-25,2.8,Nahmint River,0.0,0.0,0.0,0.0,1432,943,,0.0
-ALna5TT,2856,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-13,13.6,Nahmint River,0.0,0.0,0.0,0.0,1443,1048,,0.0
-F015C3SJ,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,6.7,Nahmint River,0.0,0.0,0.0,0.0,3046,2319,,0.0
-ALna5SH,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,11.8,Nahmint River,0.0,0.0,0.0,0.0,2704,1813,,0.0
-ALna5SK,2294,Comment closed,2025-05-21,2025-06-21,no,2027-05-05,2025-06-25,4.3,Nahmint River,0.0,0.0,0.0,0.0,2442,559,,0.0
-ALna5SP,2294,Comment closed,2025-05-21,2025-06-21,no,2027-05-05,2025-06-25,3.7,Nahmint River,0.0,0.0,0.0,0.0,1459,1465,,0.0
-ALcu59L,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-03,2024-05-07,33.2,Alberni Valley area,0.0,0.0,0.0,0.0,8769,959,,0.0
-ALcu5SW,2294,Comment closed,2025-05-21,2025-06-21,no,2027-05-05,2025-06-25,17.9,Alberni Valley area,0.0,0.0,0.0,0.0,4989,1715,,0.0
-ALcu5KC,1222,Comment closed,2024-04-03,2024-05-06,no,2025-10-02,2024-05-07,23.0,Alberni Valley area,0.0,0.0,0.0,0.0,6128,2709,,0.0
-ALcu5UB,2856,Comment closed,2026-03-02,2026-04-02,no,2029-04-01,2026-04-13,20.8,Alberni Valley area,0.0,0.0,0.0,0.0,1463,755,,0.0
-ALcu5K9,1222,Comment closed,2024-04-03,2024-05-06,no,2025-08-07,2024-05-07,8.7,Alberni Valley area,0.0,0.0,0.0,0.0,1533,1422,,0.0
-F025C3YX,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,2.1,Sproat River,0.0,0.0,0.0,0.0,3238,490,,0.0
-ALsp5KG,1222,Comment closed,2024-04-03,2024-05-06,no,2026-01-15,2024-05-07,4.7,Sproat River,0.0,0.0,0.0,0.0,5593,864,,0.0
-ALsp5SF,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,17.6,Sproat River,0.0,0.0,0.0,0.0,3061,801,,0.0
-F025C4L5,2294,Comment closed,2025-05-21,2025-06-21,no,2029-06-01,2025-06-25,12.7,Sproat River,0.0,0.0,0.0,0.0,6015,2535,,0.0
-ALsp5TJ,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,6.3,Nahmint River,0.0,0.0,0.0,0.0,2737,477,,0.0
-ALna5TV,2856,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-13,14.2,Nahmint River,0.0,0.0,0.0,0.0,1746,428,,0.0
-ALna5SG,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,4.4,Nahmint River,0.0,0.0,0.0,0.0,2867,773,,0.0
-ALsp5HN,1222,Comment closed,2024-04-03,2024-05-06,no,2024-10-02,2024-05-07,17.5,Sproat River,0.0,0.0,0.0,0.0,7505,323,,0.0
-ALsp5KK,1222,Comment closed,2024-04-03,2024-05-06,no,2026-01-15,2024-05-07,21.1,Sproat River,0.0,0.0,0.0,0.0,8659,1296,,0.0
-COUS16,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,61.9,Alberni Valley area,0.0,0.0,0.0,0.0,7772,396,,0.0
-COUS 16,2856,Comment closed,2026-03-02,2026-04-02,no,2027-01-01,2026-02-26,61.9,Alberni Valley area,0.0,0.0,0.0,0.0,7772,396,,0.0
-F9,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,3.6,Sproat River,0.0,0.0,0.0,0.0,5898,3239,,0.0
-ALty5AU,2294,Comment closed,2025-05-21,2025-06-21,no,2023-11-16,2025-06-25,8.5,Sproat River,0.0,0.0,0.0,0.0,1128,972,,0.0
-ALty5AW,2294,Comment closed,2025-05-21,2025-06-21,no,2023-11-16,2025-06-25,22.3,Sproat River,0.0,0.0,0.0,0.0,1947,1781,,0.0
-ALty5KH,1222,Comment closed,2024-04-03,2024-05-06,no,2027-07-08,2024-05-07,29.7,Sproat River,0.0,0.0,0.0,0.0,1650,795,,0.0
-B28,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,8.8,Sproat River,0.0,0.0,0.0,0.0,8963,1005,,0.0
-Blk 3A,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,1.8,Stamp River,0.0,0.0,0.0,0.0,8679,2064,,0.0
-Blk 3,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,5.8,Stamp River,0.0,0.0,0.0,0.0,8524,1999,,0.0
-F11,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,6.2,Sproat River,0.0,0.0,0.0,0.0,8633,628,,0.0
-ALsp5B0,2294,Comment closed,2025-05-21,2025-06-21,no,2029-03-07,2025-06-25,22.0,Sproat River,0.0,0.0,0.0,0.0,7056,1125,,0.0
-Blk 4,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,5.1,Stamp River,0.0,0.0,0.0,0.0,7966,1582,,0.0
-W22,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,13.1,Sproat River,0.0,0.0,0.0,0.0,7520,1213,,0.0
-WR-S3,2935,Comment closed,2026-02-18,2026-03-20,no,2026-05-01,2026-03-25,32.8,Alberni Valley area,0.0,0.0,0.0,0.0,20526,561,,0.0
-WR-S2,2935,Comment closed,2026-02-18,2026-03-20,no,2026-05-01,2026-03-25,11.4,Alberni Valley area,0.0,0.0,0.0,0.0,20798,1274,,0.0
-WR-S1,2620,Comment closed,2025-10-08,2025-11-07,no,2025-12-01,2025-11-17,1.8,Alberni Valley area,0.0,0.0,0.0,0.0,19219,2214,,0.0
-Blk 1,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,11.2,Stamp River,0.0,0.0,0.0,0.0,7759,2296,,0.0
-Blk 2,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,5.9,Stamp River,0.0,0.0,0.0,0.0,8698,2005,,0.0
-WR4,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,8.4,Alberni Valley area,0.0,0.0,0.0,0.0,18862,1704,,0.0
-WR3,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,9.3,Alberni Valley area,0.0,0.0,0.0,0.0,19047,1604,,0.0
-WR2,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,6.0,Alberni Valley area,0.0,0.0,0.0,0.0,19071,1373,,0.0
-WR1,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,7.5,Alberni Valley area,0.0,0.0,0.0,0.0,19099,990,,0.0
-ROA25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,15.1,Alberni Valley area,0.0,0.0,0.0,0.0,10862,4967,,0.0
-ROW5,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,2.2,Alberni Valley area,0.0,0.0,0.0,0.0,13102,2750,,0.0
-F036001,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,26.1,Alberni Valley area,0.0,0.0,0.0,0.0,9739,3379,,0.0
-ROW1,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,1.7,Alberni Valley area,0.0,0.0,0.0,0.0,15740,1458,,0.0
-ROW4,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,1.9,Alberni Valley area,0.0,0.0,0.0,0.0,14028,811,,0.0
-ROW3,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,7.2,Alberni Valley area,0.0,0.0,0.0,0.0,14418,805,,0.0
-COO25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,15.9,Alberni Valley area,0.0,0.0,0.0,0.0,13590,804,,0.0
-ROW2,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,5.2,Alberni Valley area,0.0,0.0,0.0,0.0,16619,633,,0.0
-NIL25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,3.0,Alberni Valley area,0.0,0.0,0.0,0.0,17792,381,,0.0
+block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_date,create_date,planned_area_ha,watershed,watershed_card,oldgrowth_overlap_ha,ancient_overlap_ha,deferral_overlap_ha,ogma_overlap_ha,nearest_rec_m,nearest_fish_m,why_matters,priority_score
+171128,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-16,2026-06-17,1.6,Franklin River,Franklin River,0.0,0.0,0.0,0.0,4970,55,near a fish record,8.0
+171130,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-16,2026-06-17,4.9,Franklin River,Franklin River,0.0,0.0,0.0,0.0,8193,608,,0.0
+073322,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-15,2026-06-17,10.2,Corrigan Creek,Franklin River,0.0,0.0,0.0,0.0,6765,539,,0.0
+171127,3247,Open for comment,2026-06-24,2026-07-24,yes,2026-06-16,2026-06-17,35.1,Franklin River,Franklin River,0.0,0.0,0.0,0.0,4252,323,,0.0
+HAN012,3270,Open for comment,2026-07-01,2026-07-31,yes,2026-08-17,2026-06-24,18.0,Tsap'it,Alberni Valley area,0.0,0.0,0.0,0.0,14889,4018,,0.0
+F025C3YL,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-02,2024-05-07,26.6,Nahmint River,Nahmint River,24.24,0.0,23.88,5.63,7752,875,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,92.6
+F024C4RZ,1222,Comment closed,2024-04-03,2024-05-06,no,2027-07-08,2024-05-07,33.1,Nahmint River,Nahmint River,24.9,0.0,24.74,0.3,4378,700,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,87.3
+F025C4LF,1222,Comment closed,2024-04-03,2024-05-06,no,2028-07-13,2024-05-07,32.8,Nahmint River,Nahmint River,17.64,0.0,17.64,2.83,5509,545,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,66.0
+F024C3CE,1222,Comment closed,2024-04-03,2024-05-06,no,2028-07-13,2024-05-07,15.0,Nahmint River,Nahmint River,14.84,0.0,13.77,1.09,7889,1197,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,51.4
+F016C4D2,2294,Comment closed,2025-05-21,2025-06-21,no,2029-07-05,2025-06-25,19.7,Cous Creek,Alberni Valley area,15.8,0.0,10.9,0.0,7674,1336,overlaps mapped old growth; in a priority-deferral area,45.5
+F025C3CR,2294,Comment closed,2025-05-21,2025-06-21,no,2029-06-01,2025-06-25,11.9,Sproat River,Sproat River,11.88,0.0,11.88,0.0,6180,2081,overlaps mapped old growth; in a priority-deferral area,41.6
+ALna5U1,2856,Comment closed,2026-03-02,2026-04-02,no,2027-04-01,2026-04-13,15.0,Nahmint River,Nahmint River,14.86,0.0,0.0,0.0,4357,235,overlaps mapped old growth; near a fish record,30.3
+ALsp3D0,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,8.7,St. Andrew Creek,Sproat River,8.6,0.0,8.6,0.0,6291,2377,overlaps mapped old growth; in a priority-deferral area,30.1
+F015C3YM,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-02,2024-05-07,34.4,Nahmint River,Nahmint River,7.75,0.0,7.72,1.36,6696,1408,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,29.1
+ALna4YW,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,4.2,Nahmint River,Nahmint River,4.22,4.15,4.15,0.0,4753,992,overlaps ancient old growth (over 400 yr); in a priority-deferral area,27.1
+ALsp4Y3,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,11.1,Sproat River,Sproat River,4.14,4.05,4.05,0.0,5098,1028,overlaps ancient old growth (over 400 yr); in a priority-deferral area,26.5
+TOlk2RU,1222,Comment closed,2024-04-03,2024-05-06,no,2026-04-01,2024-05-07,11.7,Lucky Creek,Alberni Valley area,11.54,0.0,0.18,0.0,18955,41,overlaps mapped old growth; in a priority-deferral area; near a fish record,25.7
+ALcu4W5,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,24.3,Alberni Valley area,Alberni Valley area,0.0,0.0,12.53,0.0,517,456,in a priority-deferral area,25.1
+TOlk5PE,1222,Comment closed,2024-04-03,2024-05-06,no,2026-05-07,2024-05-07,11.5,Lucky Creek,Alberni Valley area,11.11,0.0,0.16,0.0,20277,195,overlaps mapped old growth; in a priority-deferral area; near a fish record,25.0
+ALcu577,2294,Comment closed,2025-05-21,2025-06-21,no,2029-07-05,2025-06-25,5.8,Macktush Creek,Alberni Valley area,5.8,1.26,5.69,0.0,7609,2132,overlaps ancient old growth (over 400 yr); in a priority-deferral area,23.9
+ALna4YP,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,7.5,Nahmint River,Nahmint River,7.45,0.0,5.62,0.0,3818,1168,overlaps mapped old growth; in a priority-deferral area,22.4
+ALsp4YG,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-07,2024-05-07,13.4,Sproat River,Sproat River,3.36,3.36,3.36,0.0,5425,1064,overlaps ancient old growth (over 400 yr); in a priority-deferral area,21.8
+ALcu5U9,2856,Comment closed,2026-03-02,2026-04-02,no,2027-04-01,2026-04-13,33.1,Macktush Creek,Alberni Valley area,13.49,0.12,0.39,0.0,7190,1528,overlaps ancient old growth (over 400 yr); in a priority-deferral area,21.4
+ALsp4Y0,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,11.2,Nahmint River,Nahmint River,10.94,0.0,0.0,0.0,4716,1277,overlaps mapped old growth,16.4
+ALsp59Y,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,4.3,Sproat River,Sproat River,3.98,0.0,3.65,0.0,1864,1453,overlaps mapped old growth; in a priority-deferral area,13.3
+F015C4CX,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,7.9,Cous Creek,Alberni Valley area,7.89,0.0,0.0,0.0,3897,2995,overlaps mapped old growth,11.8
+EFF028,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,1.6,Effingham River,Alberni Valley area,1.05,0.0,1.05,0.0,14113,187,overlaps mapped old growth; in a priority-deferral area; near a fish record,11.7
+EFF021,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.1,Alberni Valley area,Alberni Valley area,0.92,0.0,0.92,0.0,12544,149,overlaps mapped old growth; in a priority-deferral area; near a fish record,11.2
+EFF027,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,1.0,Alberni Valley area,Alberni Valley area,0.82,0.0,0.82,0.0,12214,116,overlaps mapped old growth; in a priority-deferral area; near a fish record,10.9
+ALcu57Q,1222,Comment closed,2024-04-03,2024-05-06,no,2025-08-07,2024-05-07,34.5,Alberni Valley area,Alberni Valley area,0.0,0.0,1.34,0.0,708,210,in a priority-deferral area; near a fish record,10.7
+F025C3YX,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,17.4,Nahmint River,Nahmint River,1.43,0.0,0.0,0.0,1950,9,overlaps mapped old growth; near a fish record,10.1
+EFF023,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.7,Alberni Valley area,Alberni Valley area,0.7,0.0,0.0,0.0,12138,275,overlaps mapped old growth; near a fish record,9.1
+ALna5T8,2294,Comment closed,2025-05-21,2025-06-21,no,2025-07-09,2025-06-25,8.5,Gracie Creek,Sproat River,1.77,1.29,1.29,0.0,2268,1227,overlaps ancient old growth (over 400 yr); in a priority-deferral area,9.1
+F025C4RY,1222,Comment closed,2024-04-03,2024-05-06,no,2027-07-07,2024-05-07,0.4,Nahmint River,Nahmint River,0.37,0.0,0.0,0.0,4969,241,overlaps mapped old growth; near a fish record,8.6
+EFF013,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,5.5,Alberni Valley area,Alberni Valley area,5.52,0.0,0.0,0.0,11580,1114,overlaps mapped old growth,8.3
+EFF010,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,2.9,Alberni Valley area,Alberni Valley area,2.89,0.0,2.0,0.0,13343,2505,overlaps mapped old growth; in a priority-deferral area,8.3
+EFF012,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,2.3,Alberni Valley area,Alberni Valley area,2.34,0.0,2.34,0.0,12105,2930,overlaps mapped old growth; in a priority-deferral area,8.2
+EFF029,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,4.9,Effingham River,Alberni Valley area,0.0,0.0,0.0,0.0,13818,80,near a fish record,8.0
+COUS17,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,24.8,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,8505,152,near a fish record,8.0
+COUS 17,2856,Comment closed,2026-03-02,2026-04-02,no,2027-01-01,2026-02-26,24.8,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,8505,152,near a fish record,8.0
+ALcu59J,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-03,2024-05-07,18.5,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,8931,6,near a fish record,8.0
+COUS18,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,32.0,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,6812,160,near a fish record,8.0
+F025C4CU,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,0.4,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,3233,114,near a fish record,8.0
+ALsp5TX,2856,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-13,13.0,Gracie Creek,Sproat River,0.0,0.0,0.0,0.0,3568,55,near a fish record,8.0
+ALsp4XJ,1222,Comment closed,2024-04-03,2024-05-06,no,2026-01-15,2024-05-07,25.7,Gracie Creek,Sproat River,0.0,0.0,0.0,0.0,4816,203,near a fish record,8.0
+ALsp5SJ,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,41.3,Gracie Creek,Sproat River,0.0,0.0,0.0,0.0,4170,0,near a fish record,8.0
+ALsp5TZ,2856,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-13,20.7,Gracie Creek,Sproat River,0.0,0.0,0.0,0.0,3202,98,near a fish record,8.0
+ALty5G3,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,37.1,Taylor River,Taylor River,0.0,0.0,0.0,0.0,7340,212,near a fish record,8.0
+ALsp5AY,1222,Comment closed,2024-04-03,2024-05-06,no,2024-10-02,2024-05-07,7.8,Sproat River,Sproat River,0.0,0.0,0.0,0.0,3215,40,near a fish record,8.0
+F10,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,9.0,Friesen Creek,Sproat River,0.0,0.0,0.0,0.0,8435,268,near a fish record,8.0
+EFF017,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,4.8,Alberni Valley area,Alberni Valley area,4.79,0.0,0.0,0.0,10580,2283,overlaps mapped old growth,7.2
+F015C3SH,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,30.7,Nahmint River,Nahmint River,2.34,0.0,1.64,0.0,3678,2925,overlaps mapped old growth; in a priority-deferral area,6.8
+EFF015,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,4.3,Alberni Valley area,Alberni Valley area,4.33,0.0,0.0,0.0,12232,1999,overlaps mapped old growth,6.5
+F015C4CW,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,9.6,Cous Creek,Alberni Valley area,3.85,0.0,0.0,0.0,4120,2924,overlaps mapped old growth,5.8
+ALna5U3,2856,Comment closed,2026-03-02,2026-04-02,no,2027-04-01,2026-04-13,3.9,Nahmint River,Nahmint River,3.82,0.0,0.0,0.0,5869,708,overlaps mapped old growth,5.7
+ALsp4XH,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,1.5,Gracie Creek,Sproat River,1.49,0.0,1.49,0.0,3810,1994,overlaps mapped old growth; in a priority-deferral area,5.2
+TOlk2RR,1222,Comment closed,2024-04-03,2024-05-06,no,2026-04-01,2024-05-07,3.1,Lucky Creek,Alberni Valley area,3.13,0.0,0.0,0.0,18683,307,overlaps mapped old growth,4.7
+EFF016,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,2.8,Alberni Valley area,Alberni Valley area,2.8,0.0,0.0,0.0,10740,1841,overlaps mapped old growth,4.2
+TOlk5PC,1222,Comment closed,2024-04-03,2024-05-06,no,2026-05-07,2024-05-07,2.4,Lucky Creek,Alberni Valley area,2.43,0.0,0.0,0.0,17157,319,overlaps mapped old growth,3.6
+EFF007,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,2.0,Alberni Valley area,Alberni Valley area,1.84,0.0,0.0,0.0,13855,1030,overlaps mapped old growth,2.8
+EFF003,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.8,Alberni Valley area,Alberni Valley area,1.81,0.0,0.0,0.0,14097,1121,overlaps mapped old growth,2.7
+ALna5G0,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-02,2024-05-07,20.1,Alberni Valley area,Alberni Valley area,0.0,0.0,0.0,1.83,8218,1158,overlaps a protected old-growth area,2.7
+EFF019,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.4,Alberni Valley area,Alberni Valley area,0.39,0.39,0.39,0.0,12790,354,overlaps ancient old growth (over 400 yr); in a priority-deferral area,2.5
+HAN211H,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,1.7,Tsap'it,Alberni Valley area,1.67,0.0,0.0,0.0,14670,3938,overlaps mapped old growth,2.5
+EFF024,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.6,Alberni Valley area,Alberni Valley area,1.58,0.0,0.0,0.0,10839,1125,overlaps mapped old growth,2.4
+EFF014,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.6,Alberni Valley area,Alberni Valley area,1.62,0.0,0.0,0.0,11901,306,overlaps mapped old growth,2.4
+EFF008,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.9,Alberni Valley area,Alberni Valley area,1.48,0.0,0.0,0.0,13998,1032,overlaps mapped old growth,2.2
+EFF020,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.4,Alberni Valley area,Alberni Valley area,1.4,0.0,0.0,0.0,12626,334,overlaps mapped old growth,2.1
+EFF011,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.4,Alberni Valley area,Alberni Valley area,1.37,0.0,0.0,0.0,12417,2659,overlaps mapped old growth,2.1
+EFF025,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,1.3,Effingham River,Alberni Valley area,1.31,0.0,0.0,0.0,16242,2319,overlaps mapped old growth,2.0
+EFF004,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.8,Alberni Valley area,Alberni Valley area,0.77,0.0,0.44,0.0,13375,1978,overlaps mapped old growth; in a priority-deferral area,2.0
+HAN163Sal,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,23.5,Tsap'it,Nahmint River,1.1,0.0,0.0,0.0,12631,1639,overlaps mapped old growth,1.7
+EFF018,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.0,Effingham River,Alberni Valley area,1.04,0.0,0.0,0.0,13087,341,overlaps mapped old growth,1.6
+HAN215H,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,1.1,Tsap'it,Alberni Valley area,1.08,0.0,0.0,0.0,15024,3848,overlaps mapped old growth,1.6
+F024C3CD,1222,Comment closed,2024-04-03,2024-05-06,no,2028-07-13,2024-05-07,1.0,Nahmint River,Nahmint River,0.45,0.0,0.45,0.0,8177,1346,overlaps mapped old growth; in a priority-deferral area,1.6
+EFF026,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,0.6,Alberni Valley area,Alberni Valley area,0.58,0.1,0.1,0.0,12808,772,overlaps ancient old growth (over 400 yr); in a priority-deferral area,1.4
+EFF006,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,1.1,Alberni Valley area,Alberni Valley area,0.96,0.0,0.0,0.0,13771,1155,overlaps mapped old growth,1.4
+F006C3SQ,2294,Comment closed,2025-05-21,2025-06-21,no,2029-10-01,2025-06-25,0.9,Nahmint River,Nahmint River,0.92,0.0,0.0,0.0,10696,853,overlaps mapped old growth,1.4
+F024C464,1222,Comment closed,2024-04-03,2024-05-06,no,2025-07-03,2024-05-07,28.5,Nahmint River,Nahmint River,0.0,0.0,0.0,0.95,6038,1446,overlaps a protected old-growth area,1.4
+ALsp4Z4,1222,Comment closed,2024-04-03,2024-05-06,no,2026-07-09,2024-05-07,0.9,Sproat River,Sproat River,0.85,0.0,0.0,0.0,4794,2223,overlaps mapped old growth,1.3
+F016C4D5,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,30.6,Nahmint River,Nahmint River,0.0,0.0,0.0,0.82,8867,1038,overlaps a protected old-growth area,1.2
+TOlk5PA,1222,Comment closed,2024-04-03,2024-05-06,no,2026-05-07,2024-05-07,0.7,Lucky Creek,Alberni Valley area,0.72,0.0,0.0,0.0,19814,480,overlaps mapped old growth,1.1
+EFF030,3126,Comment closed,2026-05-07,2026-06-06,no,2026-09-01,2026-05-01,0.8,Alberni Valley area,Alberni Valley area,0.71,0.0,0.0,0.0,12139,845,overlaps mapped old growth,1.1
+ALna5P9,1222,Comment closed,2024-04-03,2024-05-06,no,2025-10-02,2024-05-07,1.4,Nahmint River,Nahmint River,0.31,0.0,0.31,0.0,8103,454,overlaps mapped old growth; in a priority-deferral area,1.1
+HAN212H,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,0.7,Tsap'it,Alberni Valley area,0.75,0.0,0.0,0.0,14455,4133,overlaps mapped old growth,1.1
+EFF009,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.7,Alberni Valley area,Alberni Valley area,0.68,0.0,0.0,0.0,13012,2611,overlaps mapped old growth,1.0
+EFF002,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.7,Alberni Valley area,Alberni Valley area,0.63,0.0,0.0,0.0,14581,901,overlaps mapped old growth,0.9
+EFF005,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.5,Alberni Valley area,Alberni Valley area,0.48,0.0,0.0,0.0,13772,1793,overlaps mapped old growth,0.7
+EFF022,3074,Comment closed,2026-04-01,2026-05-01,no,2026-09-26,2026-03-27,0.4,Effingham River,Alberni Valley area,0.38,0.0,0.0,0.0,12802,674,overlaps mapped old growth,0.6
+ALcu5FX,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-02,2024-05-07,20.7,Alberni Valley area,Alberni Valley area,0.0,0.0,0.27,0.0,4641,797,in a priority-deferral area,0.5
+HAN314CSal,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,12.9,Tsap'it,Alberni Valley area,0.2,0.0,0.0,0.0,12931,1656,overlaps mapped old growth,0.3
+F015C3C2,1222,Comment closed,2024-04-03,2024-05-06,no,2025-04-01,2024-05-07,41.9,Nahmint River,Nahmint River,0.0,0.0,0.0,0.15,3471,2534,overlaps a protected old-growth area,0.2
+HAN314ASal,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,4.1,Tsap'it,Alberni Valley area,0.05,0.0,0.0,0.0,13376,2109,overlaps mapped old growth,0.1
+F006C3SR,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-04,2024-05-07,14.6,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,10923,772,,0.0
+HAN314BSal,2827,Comment closed,2025-12-17,2026-01-16,no,2026-03-31,2026-03-04,2.4,Tsap'it,Alberni Valley area,0.0,0.0,0.0,0.0,13527,2313,,0.0
+ALcu5PD,1222,Comment closed,2024-04-03,2024-05-06,no,2026-10-08,2024-05-07,17.4,Macktush Creek,Alberni Valley area,0.0,0.0,0.0,0.0,4881,1100,,0.0
+ALcu5PD,2294,Comment closed,2025-05-21,2025-06-21,no,2025-07-09,2025-06-25,14.9,Macktush Creek,Alberni Valley area,0.0,0.0,0.0,0.0,4885,1096,,0.0
+ALcu5SD,2294,Comment closed,2025-05-21,2025-06-21,no,2029-01-10,2025-06-25,25.0,Macktush Creek,Alberni Valley area,0.0,0.0,0.0,0.0,4017,388,,0.0
+F015C4P9,2294,Comment closed,2025-05-21,2025-06-21,no,2027-04-07,2025-06-25,2.5,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,2678,2081,,0.0
+F015C3T0,2294,Comment closed,2025-05-21,2025-06-21,no,2027-05-05,2025-06-25,2.8,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,1432,943,,0.0
+ALna5TT,2856,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-13,13.6,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,1443,1048,,0.0
+F015C3SJ,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,6.7,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,3046,2319,,0.0
+ALna5SH,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,11.8,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,2704,1813,,0.0
+ALna5SK,2294,Comment closed,2025-05-21,2025-06-21,no,2027-05-05,2025-06-25,4.3,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,2442,559,,0.0
+ALna5SP,2294,Comment closed,2025-05-21,2025-06-21,no,2027-05-05,2025-06-25,3.7,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,1459,1465,,0.0
+ALcu59L,1222,Comment closed,2024-04-03,2024-05-06,no,2024-07-03,2024-05-07,33.2,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,8769,959,,0.0
+ALcu5SW,2294,Comment closed,2025-05-21,2025-06-21,no,2027-05-05,2025-06-25,17.9,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,4989,1715,,0.0
+ALcu5KC,1222,Comment closed,2024-04-03,2024-05-06,no,2025-10-02,2024-05-07,23.0,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,6128,2709,,0.0
+ALcu5UB,2856,Comment closed,2026-03-02,2026-04-02,no,2029-04-01,2026-04-13,20.8,Alberni Valley area,Alberni Valley area,0.0,0.0,0.0,0.0,1463,755,,0.0
+ALcu5K9,1222,Comment closed,2024-04-03,2024-05-06,no,2025-08-07,2024-05-07,8.7,Alberni Valley area,Alberni Valley area,0.0,0.0,0.0,0.0,1533,1422,,0.0
+F025C3YX,1222,Comment closed,2024-04-03,2024-05-06,no,2027-05-06,2024-05-07,2.1,Gracie Creek,Sproat River,0.0,0.0,0.0,0.0,3238,490,,0.0
+ALsp5KG,1222,Comment closed,2024-04-03,2024-05-06,no,2026-01-15,2024-05-07,4.7,Sproat River,Sproat River,0.0,0.0,0.0,0.0,5593,864,,0.0
+ALsp5SF,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,17.6,Gracie Creek,Sproat River,0.0,0.0,0.0,0.0,3061,801,,0.0
+F025C4L5,2294,Comment closed,2025-05-21,2025-06-21,no,2029-06-01,2025-06-25,12.7,Sproat River,Sproat River,0.0,0.0,0.0,0.0,6015,2535,,0.0
+ALsp5TJ,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,6.3,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,2737,477,,0.0
+ALna5TV,2856,Comment closed,2026-03-02,2026-04-02,no,2028-04-01,2026-04-13,14.2,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,1746,428,,0.0
+ALna5SG,2294,Comment closed,2025-05-21,2025-06-21,no,2029-08-08,2025-06-25,4.4,Nahmint River,Nahmint River,0.0,0.0,0.0,0.0,2867,773,,0.0
+ALsp5HN,1222,Comment closed,2024-04-03,2024-05-06,no,2024-10-02,2024-05-07,17.5,Sproat River,Sproat River,0.0,0.0,0.0,0.0,7505,323,,0.0
+ALsp5KK,1222,Comment closed,2024-04-03,2024-05-06,no,2026-01-15,2024-05-07,21.1,Sproat River,Sproat River,0.0,0.0,0.0,0.0,8659,1296,,0.0
+COUS16,2856,Comment closed,2026-03-02,2026-04-02,no,2026-04-01,2026-04-13,61.9,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,7772,396,,0.0
+COUS 16,2856,Comment closed,2026-03-02,2026-04-02,no,2027-01-01,2026-02-26,61.9,Cous Creek,Alberni Valley area,0.0,0.0,0.0,0.0,7772,396,,0.0
+F9,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,3.6,Friesen Creek,Sproat River,0.0,0.0,0.0,0.0,5898,3239,,0.0
+ALty5AU,2294,Comment closed,2025-05-21,2025-06-21,no,2023-11-16,2025-06-25,8.5,Sproat River,Sproat River,0.0,0.0,0.0,0.0,1128,972,,0.0
+ALty5AW,2294,Comment closed,2025-05-21,2025-06-21,no,2023-11-16,2025-06-25,22.3,Sproat River,Sproat River,0.0,0.0,0.0,0.0,1947,1781,,0.0
+ALty5KH,1222,Comment closed,2024-04-03,2024-05-06,no,2027-07-08,2024-05-07,29.7,Sproat River,Sproat River,0.0,0.0,0.0,0.0,1650,795,,0.0
+B28,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,8.8,Bookhout Creek,Sproat River,0.0,0.0,0.0,0.0,8963,1005,,0.0
+Blk 3A,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,1.8,Stamp River,Stamp River,0.0,0.0,0.0,0.0,8679,2064,,0.0
+Blk 3,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,5.8,Stamp River,Stamp River,0.0,0.0,0.0,0.0,8524,1999,,0.0
+F11,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,6.2,Friesen Creek,Sproat River,0.0,0.0,0.0,0.0,8633,628,,0.0
+ALsp5B0,2294,Comment closed,2025-05-21,2025-06-21,no,2029-03-07,2025-06-25,22.0,Sproat River,Sproat River,0.0,0.0,0.0,0.0,7056,1125,,0.0
+Blk 4,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,5.1,Stamp River,Stamp River,0.0,0.0,0.0,0.0,7966,1582,,0.0
+W22,1660,Comment closed,2025-02-03,2025-03-05,no,2025-01-16,2025-01-28,13.1,Sproat River,Sproat River,0.0,0.0,0.0,0.0,7520,1213,,0.0
+WR-S3,2935,Comment closed,2026-02-18,2026-03-20,no,2026-05-01,2026-03-25,32.8,Little Qualicum River,Alberni Valley area,0.0,0.0,0.0,0.0,20526,561,,0.0
+WR-S2,2935,Comment closed,2026-02-18,2026-03-20,no,2026-05-01,2026-03-25,11.4,Kinkade Creek,Alberni Valley area,0.0,0.0,0.0,0.0,20798,1274,,0.0
+WR-S1,2620,Comment closed,2025-10-08,2025-11-07,no,2025-12-01,2025-11-17,1.8,Kinkade Creek,Alberni Valley area,0.0,0.0,0.0,0.0,19219,2214,,0.0
+Blk 1,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,11.2,Stamp River,Stamp River,0.0,0.0,0.0,0.0,7759,2296,,0.0
+Blk 2,3096,Comment closed,2026-05-13,2026-06-12,no,2026-03-30,2026-04-14,5.9,Stamp River,Stamp River,0.0,0.0,0.0,0.0,8698,2005,,0.0
+WR4,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,8.4,Qualicum River,Alberni Valley area,0.0,0.0,0.0,0.0,18862,1704,,0.0
+WR3,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,9.3,Kinkade Creek,Alberni Valley area,0.0,0.0,0.0,0.0,19047,1604,,0.0
+WR2,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,6.0,Qualicum River,Alberni Valley area,0.0,0.0,0.0,0.0,19071,1373,,0.0
+WR1,2019,Comment closed,2024-12-13,2025-01-12,no,2025-03-01,2025-01-20,7.5,Kinkade Creek,Alberni Valley area,0.0,0.0,0.0,0.0,19099,990,,0.0
+ROA25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,15.1,Roaring Creek,Alberni Valley area,0.0,0.0,0.0,0.0,10862,4967,,0.0
+ROW5,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,2.2,Rosewall Creek,Alberni Valley area,0.0,0.0,0.0,0.0,13102,2750,,0.0
+F036001,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,26.1,Qualicum River,Alberni Valley area,0.0,0.0,0.0,0.0,9739,3379,,0.0
+ROW1,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,1.7,Chef Creek,Alberni Valley area,0.0,0.0,0.0,0.0,15740,1458,,0.0
+ROW4,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,1.9,Rosewall Creek,Alberni Valley area,0.0,0.0,0.0,0.0,14028,811,,0.0
+ROW3,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,7.2,Cook Creek,Alberni Valley area,0.0,0.0,0.0,0.0,14418,805,,0.0
+COO25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,15.9,Cook Creek,Alberni Valley area,0.0,0.0,0.0,0.0,13590,804,,0.0
+ROW2,1975,Comment closed,2024-11-28,2024-12-28,no,2025-01-15,2024-11-12,5.2,Chef Creek,Alberni Valley area,0.0,0.0,0.0,0.0,16619,633,,0.0
+NIL25-1,3188,Comment closed,2026-06-03,2026-07-03,no,2026-10-15,2026-06-01,3.0,Nile Creek,Alberni Valley area,0.0,0.0,0.0,0.0,17792,381,,0.0
