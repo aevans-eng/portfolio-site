@@ -3,7 +3,7 @@ block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_da
 671424,1883,Comment closed,2024-10-09,2024-11-09,no,2024-12-01,2024-11-15,42.5,Nitinat area,42.05,0.0,16.97,0.17,17692,1805,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,97.3
 671424,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-04-07,42.5,Nitinat area,42.05,0.0,16.97,0.17,17692,1805,overlaps mapped old growth; in a priority-deferral area; overlaps a protected old-growth area,97.3
 673413-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,2025-07-12,22.4,Cheewhat River,14.35,0.0,13.39,0.0,13657,1171,overlaps mapped old growth; in a priority-deferral area,48.3
-874111,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-05-12,10.6,Nitinat River,10.06,0.0,9.64,0.0,2584,98,overlaps mapped old growth; in a priority-deferral area; near a fish record,42.4
+874111,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-05-12,10.6,Little Nitinat River,10.06,0.0,9.64,0.0,2584,98,overlaps mapped old growth; in a priority-deferral area; near a fish record,42.4
 673227,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-04-07,4.5,Nitinat area,4.51,4.47,4.47,0.0,16369,957,overlaps ancient old growth (over 400 yr); in a priority-deferral area,29.1
 673211-DT1,2336,Comment closed,2025-05-14,2025-06-13,no,2025-10-01,2025-09-04,13.4,Cheewhat River,11.52,0.0,0.0,0.0,14356,137,overlaps mapped old growth; near a fish record,25.3
 4632,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,2025-03-24,7.0,Nitinat area,6.52,0.0,6.51,0.0,26912,654,overlaps mapped old growth; in a priority-deferral area,22.8
@@ -14,7 +14,7 @@ block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_da
 673409-DT,1601,Comment closed,2024-06-21,2024-07-21,no,2024-08-01,2024-08-01,12.6,Cheewhat River,10.94,0.0,0.0,0.0,13248,411,overlaps mapped old growth,16.4
 671417A,2127,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-04-07,3.2,Nitinat area,3.16,2.15,2.15,0.0,18418,2580,overlaps ancient old growth (over 400 yr); in a priority-deferral area,15.5
 673234,1613,Comment closed,2024-06-21,2024-07-21,no,2024-05-31,2024-08-01,10.2,Cheewhat River,9.89,0.0,0.0,0.0,15195,655,overlaps mapped old growth,14.8
-874112,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-05-12,9.3,Nitinat River,1.63,0.0,1.63,0.0,2994,96,overlaps mapped old growth; in a priority-deferral area; near a fish record,13.7
+874112,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-05-12,9.3,Little Nitinat River,1.63,0.0,1.63,0.0,2994,96,overlaps mapped old growth; in a priority-deferral area; near a fish record,13.7
 864321,1353,Comment closed,2024-05-01,2024-05-31,no,2024-08-01,2024-06-11,3.9,Nitinat area,3.87,0.0,3.87,0.0,12181,329,overlaps mapped old growth; in a priority-deferral area,13.5
 863223,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,2026-02-10,12.6,Nitinat area,6.41,0.0,1.43,0.0,16443,779,overlaps mapped old growth; in a priority-deferral area,12.5
 6245A,2205,Comment closed,2025-02-26,2025-03-28,no,2025-04-01,2025-02-24,8.4,Nitinat River,0.82,0.0,0.71,0.0,13653,124,overlaps mapped old growth; in a priority-deferral area; near a fish record,10.7
@@ -29,10 +29,10 @@ block_name,fom_id,status,comment_open,comment_closed,comment_open_now,planned_da
 4609,2173,Comment closed,2025-02-06,2025-03-08,no,2025-06-15,2025-03-24,6.4,Nitinat area,5.92,0.0,0.0,0.0,25319,783,overlaps mapped old growth,8.9
 673211-DT1,2558,Comment closed,2025-09-10,2025-10-10,no,2025-10-10,2025-09-10,0.9,Cheewhat River,0.58,0.0,0.0,0.0,15505,291,overlaps mapped old growth; near a fish record,8.9
 673211-DT,2270,Comment closed,2025-04-09,2025-05-09,no,2025-05-15,2025-07-12,3.1,Cheewhat River,0.37,0.0,0.0,0.0,14509,237,overlaps mapped old growth; near a fish record,8.6
-874114,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-05-12,13.0,Nitinat River,0.0,0.0,0.0,0.33,3587,96,overlaps a protected old-growth area; near a fish record,8.5
+874114,2124,Comment closed,2025-01-22,2025-02-22,no,2025-03-30,2025-05-12,13.0,Little Nitinat River,0.0,0.0,0.0,0.33,3587,96,overlaps a protected old-growth area; near a fish record,8.5
 861421,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,2026-02-10,5.4,Nitinat area,5.45,0.0,0.0,0.0,14330,1483,overlaps mapped old growth,8.2
 861421C,1353,Comment closed,2024-05-01,2024-05-31,no,2024-08-01,2024-06-11,5.5,Nitinat area,5.46,0.0,0.0,0.0,14330,1483,overlaps mapped old growth,8.2
-C077C4DN,2857,Comment closed,2026-03-02,2026-04-02,no,2029-04-01,2026-04-09,62.6,Nitinat River,0.0,0.0,0.0,0.0,9075,14,near a fish record,8.0
+C077C4DN,2857,Comment closed,2026-03-02,2026-04-02,no,2029-04-01,2026-04-09,62.6,Doobah Creek,0.0,0.0,0.0,0.0,9075,14,near a fish record,8.0
 5131,2887,Comment closed,2026-01-22,2026-02-23,no,2026-02-15,2026-03-12,38.5,Nitinat River,0.0,0.0,0.0,0.0,15851,74,near a fish record,8.0
 852413,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,2026-02-10,5.2,Nitinat area,0.0,0.0,0.0,0.0,22011,0,near a fish record,8.0
 852414,2854,Comment closed,2025-12-17,2026-01-16,no,2026-04-01,2026-02-10,16.9,Nitinat area,0.0,0.0,0.0,0.0,21822,31,near a fish record,8.0
@@ -114,7 +114,7 @@ C077C4DN,2857,Comment closed,2026-03-02,2026-04-02,no,2029-04-01,2026-04-09,62.6
 5642,2416,Comment closed,2025-06-19,2025-07-19,no,2025-12-01,2025-10-23,1.7,Nitinat River,0.0,0.0,0.0,0.0,13540,301,,0.0
 5733,3071,Comment closed,2026-04-02,2026-05-04,no,2026-05-15,2026-03-25,28.1,Nitinat River,0.0,0.0,0.0,0.0,14115,1343,,0.0
 854203,3173,Comment closed,2026-05-27,2026-06-26,no,2026-07-15,2026-05-25,9.0,Nitinat area,0.0,0.0,0.0,0.0,20857,404,,0.0
-972128H,2336,Comment closed,2025-05-14,2025-06-13,no,2025-10-01,2025-09-04,0.5,Nitinat River,0.0,0.0,0.0,0.0,5745,3098,,0.0
+972128H,2336,Comment closed,2025-05-14,2025-06-13,no,2025-10-01,2025-09-04,0.5,Little Nitinat River,0.0,0.0,0.0,0.0,5745,3098,,0.0
 874118,2336,Comment closed,2025-05-14,2025-06-13,no,2025-10-01,2025-09-04,5.1,Nitinat River,0.0,0.0,0.0,0.0,4072,309,,0.0
 6041,2247,Comment closed,2025-04-02,2025-05-02,no,2025-05-31,2026-02-27,24.5,Nitinat River,0.0,0.0,0.0,0.0,11696,870,,0.0
 6246B,2895,Comment closed,2026-01-21,2026-02-21,no,2026-03-21,2026-06-23,5.6,Nitinat River,0.0,0.0,0.0,0.0,14986,1002,,0.0
