@@ -1,405 +1,405 @@
 tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,block_area_ha,watershed,deferral_overlap_ha,oldgrowth_overlap_ha,ancient_overlap_ha,ogma_overlap_ha,nearest_stream_m,nearest_rec_site_m,nearest_rec_site,nearest_fish_record_m,after_deferral_recommendation,risk_flags,priority_score
-1,OPENING_ID 1770235,1770235,547695,2020-05-21,2020,16.7,Lake Cowichan area,9.06,9.06,0.0,0.0,0.0,5457.0,FAIRY LAKE,2137.0,False,priority-deferral; old growth (TAP); stream,74.5
-1,OPENING_ID 1744357,1744357,528406,2020-05-14,2020,14.4,Lake Cowichan area,6.33,9.1,0.0,0.0,0.0,5273.0,Avatar Grove Hiking Trails,3642.0,False,priority-deferral; old growth (TAP); stream,60.9
-1,OPENING_ID 1770235,1770235,547696,2020-05-21,2020,3.6,Lake Cowichan area,2.92,2.92,0.0,0.0,10.0,5826.0,FAIRY LAKE,1966.0,False,priority-deferral; old growth (TAP); stream,25.3
-1,OPENING_ID 1769011,1769011,546976,2021-05-13,2021,5.9,Lake Cowichan area,1.12,5.86,0.0,0.0,218.0,4012.0,FAIRY LAKE,5605.0,False,priority-deferral; old growth (TAP),23.2
-1,OPENING_ID 1744357,1744357,528405,2020-05-14,2020,1.5,Lake Cowichan area,1.2,1.5,0.0,0.0,173.0,5208.0,Avatar Grove Hiking Trails,4191.0,False,priority-deferral; old growth (TAP),10.5
-1,OPENING_ID 1770573,1770573,547912,2022-06-24,2022,14.2,Lake Cowichan area,0.0,0.87,0.0,0.0,0.0,6974.0,Harris Creek Spruce,1212.0,False,old growth (TAP); stream,4.6
-1,OPENING_ID 1725472,1725472,515084,2019-04-25,2019,37.6,Lake Cowichan area,0.0,0.0,0.0,0.16,0.0,3923.0,Harris Creek Spruce,0.0,False,legal OGMA; stream; fish record,4.2
-1,OPENING_ID 1681334,1681334,479910,2016-10-25,2016,26.3,Lake Cowichan area,0.0,0.0,0.0,0.11,8.0,15538.0,BALD MOUNTAIN,155.0,False,legal OGMA; stream; fish record,4.1
-1,OPENING_ID 1653496,1653496,461499,2015-03-02,2015,35.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7191.0,Harris Creek Spruce,7.0,False,stream; fish record,4.0
-1,OPENING_ID 1725519,1725519,515118,2019-02-26,2019,26.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4848.0,LIZARD LAKE,59.0,False,stream; fish record,4.0
-1,VCCB_SYSID 75226,,75226,2020-01-01,2020,4.2,Lake Cowichan area,0.0,0.0,0.0,0.0,24.0,6033.0,Harris Creek Spruce,180.0,False,stream; fish record,4.0
-1,OPENING_ID 1720537,1720537,512773,2019-01-30,2019,8.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2669.0,Harris Creek Spruce,6.0,False,stream; fish record,4.0
-1,OPENING_ID 1770570,1770570,547908,2023-03-16,2023,12.2,Lake Cowichan area,0.0,0.0,0.0,0.0,5.0,637.0,Harris Creek Spruce,74.0,False,stream; fish record,4.0
-1,OPENING_ID 1770572,1770572,547909,2022-06-24,2022,14.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,1860.0,Harris Creek Spruce,106.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77178,,77178,2021-04-18,2021,17.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,3167.0,Harris Creek Spruce,177.0,False,stream; fish record,4.0
-1,VCCB_SYSID 78941,,78941,2022-01-15,2022,33.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,3910.0,Harris Creek Spruce,0.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83346,,83346,2024-02-06,2024,7.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,3740.0,Harris Creek Spruce,118.0,False,stream; fish record,4.0
-1,VCCB_SYSID 79119,,79119,2022-02-16,2022,5.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4794.0,Harris Creek Spruce,23.0,False,stream; fish record,4.0
-1,VCCB_SYSID 79090,,79090,2022-02-16,2022,3.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4760.0,Harris Creek Spruce,14.0,False,stream; fish record,4.0
-1,VCCB_SYSID 84713,,84713,2024-07-06,2024,14.8,Lake Cowichan area,0.0,0.0,0.0,0.0,19.0,12827.0,SAN JUAN RIVER,60.0,False,stream; fish record,4.0
-1,VCCB_SYSID 76897,,76897,2021-04-18,2021,3.1,Lake Cowichan area,0.0,0.0,0.0,0.0,17.0,6589.0,Harris Creek Spruce,137.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80865,,80865,2022-11-15,2022,42.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9413.0,SAN JUAN RIVER,62.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83172,,83172,2023-11-26,2023,20.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9871.0,Harris Creek Spruce,23.0,False,stream; fish record,4.0
-1,VCCB_SYSID 84390,,84390,2024-05-20,2024,21.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12978.0,Harris Creek Spruce,83.0,False,stream; fish record,4.0
-1,VCCB_SYSID 75106,,75106,2020-01-01,2020,24.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,23997.0,SPRING BEACH,58.0,False,stream; fish record,4.0
-1,VCCB_SYSID 76570,,76570,2021-03-26,2021,22.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,23942.0,SPRING BEACH,7.0,False,stream; fish record,4.0
-1,VCCB_SYSID 85966,,85966,2024-12-03,2024,26.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,23396.0,SPRING BEACH,55.0,False,stream; fish record,4.0
-1,VCCB_SYSID 75223,,75223,2020-01-01,2020,15.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,20660.0,SAN JUAN RIVER,46.0,False,stream; fish record,4.0
-1,VCCB_SYSID 76566,,76566,2021-03-26,2021,37.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,21503.0,SAN JUAN RIVER,72.0,False,stream; fish record,4.0
-1,VCCB_SYSID 76497,,76497,2021-03-18,2021,44.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,22311.0,SAN JUAN RIVER,171.0,False,stream; fish record,4.0
-1,VCCB_SYSID 79808,,79808,2022-05-23,2022,55.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,19685.0,SAN JUAN RIVER,84.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80947,,80947,2022-11-24,2022,68.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,19057.0,SAN JUAN RIVER,176.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80422,,80422,2022-08-20,2022,50.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,18114.0,SAN JUAN RIVER,196.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77557,,77557,2021-05-20,2021,60.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,19527.0,Harris Creek Spruce,0.0,False,stream; fish record,4.0
-1,VCCB_SYSID 81620,,81620,2023-05-03,2023,82.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,18208.0,Harris Creek Spruce,18.0,False,stream; fish record,4.0
-1,VCCB_SYSID 85969,,85969,2024-12-03,2024,16.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,20869.0,SPRING BEACH,180.0,False,stream; fish record,4.0
-1,VCCB_SYSID 79118,,79118,2022-02-16,2022,59.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,28568.0,SAN JUAN RIVER,141.0,False,stream; fish record,4.0
-1,VCCB_SYSID 75084,,75084,2020-01-01,2020,15.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,26093.0,SAN JUAN RIVER,71.0,False,stream; fish record,4.0
-1,VCCB_SYSID 75104,,75104,2020-01-01,2020,16.7,Cowichan River,0.0,0.0,0.0,0.0,13.0,26507.0,SAN JUAN RIVER,165.0,False,stream; fish record,4.0
-1,VCCB_SYSID 84103,,84103,2024-04-18,2024,49.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,25424.0,SAN JUAN RIVER,79.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80972,,80972,2022-12-01,2022,2.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,29602.0,SAN JUAN RIVER,174.0,False,stream; fish record,4.0
-1,VCCB_SYSID 78985,,78985,2022-01-26,2022,21.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,25010.0,SPRING BEACH,136.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77444,,77444,2021-05-13,2021,60.6,Cowichan River,0.0,0.0,0.0,0.0,33.0,27894.0,SPRING BEACH,128.0,False,stream; fish record,4.0
-1,VCCB_SYSID 81371,,81371,2023-04-07,2023,14.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,24924.0,SPRING BEACH,0.0,False,stream; fish record,4.0
-1,VCCB_SYSID 79976,,79976,2022-06-24,2022,81.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9436.0,BALD MOUNTAIN,195.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80990,,80990,2022-12-01,2022,10.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12600.0,BALD MOUNTAIN,54.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83604,,83604,2024-03-17,2024,2.1,Lake Cowichan area,0.0,0.0,0.0,0.0,28.0,12978.0,BALD MOUNTAIN,103.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83650,,83650,2024-03-17,2024,25.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12071.0,BALD MOUNTAIN,6.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83605,,83605,2024-03-17,2024,5.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12415.0,BALD MOUNTAIN,12.0,False,stream; fish record,4.0
-1,OPENING_ID 1770560,1770560,547886,2022-02-16,2022,18.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14274.0,Avatar Grove Hiking Trails,55.0,False,stream; fish record,4.0
-1,OPENING_ID 1754843,1754843,536424,2021-04-06,2021,9.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14933.0,BALD MOUNTAIN,111.0,False,stream; fish record,4.0
-1,OPENING_ID 1754843,1754843,536426,2021-04-06,2021,1.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,15336.0,BALD MOUNTAIN,195.0,False,stream; fish record,4.0
-1,OPENING_ID 1681437,1681437,480014,2016-06-29,2016,30.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12337.0,Avatar Grove Hiking Trails,12.0,False,stream; fish record,4.0
-1,OPENING_ID 1668326,1668326,470064,2016-01-13,2016,17.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13250.0,Avatar Grove Hiking Trails,49.0,False,stream; fish record,4.0
-1,VCCB_SYSID 84567,,84567,2024-07-03,2024,8.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,5452.0,BALD MOUNTAIN,171.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83959,,83959,2024-04-10,2024,20.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,5399.0,BALD MOUNTAIN,44.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83671,,83671,2024-03-17,2024,13.6,Robertson River,0.0,0.0,0.0,0.0,0.0,7713.0,BALD MOUNTAIN,157.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77039,,77039,2021-04-18,2021,4.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8152.0,Harris Creek Spruce,28.0,False,stream; fish record,4.0
+1,OPENING_ID 1770235,1770235,547695,2020-05-21,2020,16.7,Renfrew Creek,9.06,9.06,0.0,0.0,0.0,5457.0,FAIRY LAKE,2137.0,False,priority-deferral; old growth (TAP); stream,74.5
+1,OPENING_ID 1744357,1744357,528406,2020-05-14,2020,14.4,Braden Creek,6.33,9.1,0.0,0.0,0.0,5273.0,Avatar Grove Hiking Trails,3642.0,False,priority-deferral; old growth (TAP); stream,60.9
+1,OPENING_ID 1770235,1770235,547696,2020-05-21,2020,3.6,Renfrew Creek,2.92,2.92,0.0,0.0,10.0,5826.0,FAIRY LAKE,1966.0,False,priority-deferral; old growth (TAP); stream,25.3
+1,OPENING_ID 1769011,1769011,546976,2021-05-13,2021,5.9,Braden Creek,1.12,5.86,0.0,0.0,218.0,4012.0,FAIRY LAKE,5605.0,False,priority-deferral; old growth (TAP),23.2
+1,OPENING_ID 1744357,1744357,528405,2020-05-14,2020,1.5,Braden Creek,1.2,1.5,0.0,0.0,173.0,5208.0,Avatar Grove Hiking Trails,4191.0,False,priority-deferral; old growth (TAP),10.5
+1,OPENING_ID 1770573,1770573,547912,2022-06-24,2022,14.2,Harris Creek,0.0,0.87,0.0,0.0,0.0,6974.0,Harris Creek Spruce,1212.0,False,old growth (TAP); stream,4.6
+1,OPENING_ID 1725472,1725472,515084,2019-04-25,2019,37.6,Hemmingsen Creek,0.0,0.0,0.0,0.16,0.0,3923.0,Harris Creek Spruce,0.0,False,legal OGMA; stream; fish record,4.2
+1,OPENING_ID 1681334,1681334,479910,2016-10-25,2016,26.3,Hauk Creek,0.0,0.0,0.0,0.11,8.0,15538.0,BALD MOUNTAIN,155.0,False,legal OGMA; stream; fish record,4.1
+1,OPENING_ID 1653496,1653496,461499,2015-03-02,2015,35.2,Renfrew Creek,0.0,0.0,0.0,0.0,0.0,7191.0,Harris Creek Spruce,7.0,False,stream; fish record,4.0
+1,OPENING_ID 1725519,1725519,515118,2019-02-26,2019,26.8,Renfrew Creek,0.0,0.0,0.0,0.0,0.0,4848.0,LIZARD LAKE,59.0,False,stream; fish record,4.0
+1,VCCB_SYSID 75226,,75226,2020-01-01,2020,4.2,Lens Creek,0.0,0.0,0.0,0.0,24.0,6033.0,Harris Creek Spruce,180.0,False,stream; fish record,4.0
+1,OPENING_ID 1720537,1720537,512773,2019-01-30,2019,8.1,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,2669.0,Harris Creek Spruce,6.0,False,stream; fish record,4.0
+1,OPENING_ID 1770570,1770570,547908,2023-03-16,2023,12.2,Harris Creek,0.0,0.0,0.0,0.0,5.0,637.0,Harris Creek Spruce,74.0,False,stream; fish record,4.0
+1,OPENING_ID 1770572,1770572,547909,2022-06-24,2022,14.8,Harris Creek,0.0,0.0,0.0,0.0,0.0,1860.0,Harris Creek Spruce,106.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77178,,77178,2021-04-18,2021,17.1,Lens Creek,0.0,0.0,0.0,0.0,0.0,3167.0,Harris Creek Spruce,177.0,False,stream; fish record,4.0
+1,VCCB_SYSID 78941,,78941,2022-01-15,2022,33.2,Lens Creek,0.0,0.0,0.0,0.0,0.0,3910.0,Harris Creek Spruce,0.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83346,,83346,2024-02-06,2024,7.2,Lens Creek,0.0,0.0,0.0,0.0,0.0,3740.0,Harris Creek Spruce,118.0,False,stream; fish record,4.0
+1,VCCB_SYSID 79119,,79119,2022-02-16,2022,5.1,Lens Creek,0.0,0.0,0.0,0.0,0.0,4794.0,Harris Creek Spruce,23.0,False,stream; fish record,4.0
+1,VCCB_SYSID 79090,,79090,2022-02-16,2022,3.1,Lens Creek,0.0,0.0,0.0,0.0,0.0,4760.0,Harris Creek Spruce,14.0,False,stream; fish record,4.0
+1,VCCB_SYSID 84713,,84713,2024-07-06,2024,14.8,Fleet River,0.0,0.0,0.0,0.0,19.0,12827.0,SAN JUAN RIVER,60.0,False,stream; fish record,4.0
+1,VCCB_SYSID 76897,,76897,2021-04-18,2021,3.1,Lens Creek,0.0,0.0,0.0,0.0,17.0,6589.0,Harris Creek Spruce,137.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80865,,80865,2022-11-15,2022,42.9,Fleet River,0.0,0.0,0.0,0.0,0.0,9413.0,SAN JUAN RIVER,62.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83172,,83172,2023-11-26,2023,20.3,Fleet River,0.0,0.0,0.0,0.0,0.0,9871.0,Harris Creek Spruce,23.0,False,stream; fish record,4.0
+1,VCCB_SYSID 84390,,84390,2024-05-20,2024,21.2,Fleet River,0.0,0.0,0.0,0.0,0.0,12978.0,Harris Creek Spruce,83.0,False,stream; fish record,4.0
+1,VCCB_SYSID 75106,,75106,2020-01-01,2020,24.3,Koksilah River,0.0,0.0,0.0,0.0,0.0,23997.0,SPRING BEACH,58.0,False,stream; fish record,4.0
+1,VCCB_SYSID 76570,,76570,2021-03-26,2021,22.4,Koksilah River,0.0,0.0,0.0,0.0,0.0,23942.0,SPRING BEACH,7.0,False,stream; fish record,4.0
+1,VCCB_SYSID 85966,,85966,2024-12-03,2024,26.6,Koksilah River,0.0,0.0,0.0,0.0,0.0,23396.0,SPRING BEACH,55.0,False,stream; fish record,4.0
+1,VCCB_SYSID 75223,,75223,2020-01-01,2020,15.2,Koksilah River,0.0,0.0,0.0,0.0,0.0,20660.0,SAN JUAN RIVER,46.0,False,stream; fish record,4.0
+1,VCCB_SYSID 76566,,76566,2021-03-26,2021,37.8,Koksilah River,0.0,0.0,0.0,0.0,0.0,21503.0,SAN JUAN RIVER,72.0,False,stream; fish record,4.0
+1,VCCB_SYSID 76497,,76497,2021-03-18,2021,44.7,Koksilah River,0.0,0.0,0.0,0.0,0.0,22311.0,SAN JUAN RIVER,171.0,False,stream; fish record,4.0
+1,VCCB_SYSID 79808,,79808,2022-05-23,2022,55.8,Koksilah River,0.0,0.0,0.0,0.0,0.0,19685.0,SAN JUAN RIVER,84.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80947,,80947,2022-11-24,2022,68.4,Koksilah River,0.0,0.0,0.0,0.0,0.0,19057.0,SAN JUAN RIVER,176.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80422,,80422,2022-08-20,2022,50.2,San Juan River,0.0,0.0,0.0,0.0,0.0,18114.0,SAN JUAN RIVER,196.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77557,,77557,2021-05-20,2021,60.9,Fellows Creek,0.0,0.0,0.0,0.0,0.0,19527.0,Harris Creek Spruce,0.0,False,stream; fish record,4.0
+1,VCCB_SYSID 81620,,81620,2023-05-03,2023,82.2,San Juan River,0.0,0.0,0.0,0.0,0.0,18208.0,Harris Creek Spruce,18.0,False,stream; fish record,4.0
+1,VCCB_SYSID 85969,,85969,2024-12-03,2024,16.6,Fellows Creek,0.0,0.0,0.0,0.0,0.0,20869.0,SPRING BEACH,180.0,False,stream; fish record,4.0
+1,VCCB_SYSID 79118,,79118,2022-02-16,2022,59.4,Koksilah River,0.0,0.0,0.0,0.0,0.0,28568.0,SAN JUAN RIVER,141.0,False,stream; fish record,4.0
+1,VCCB_SYSID 75084,,75084,2020-01-01,2020,15.0,Koksilah River,0.0,0.0,0.0,0.0,0.0,26093.0,SAN JUAN RIVER,71.0,False,stream; fish record,4.0
+1,VCCB_SYSID 75104,,75104,2020-01-01,2020,16.7,Koksilah River,0.0,0.0,0.0,0.0,13.0,26507.0,SAN JUAN RIVER,165.0,False,stream; fish record,4.0
+1,VCCB_SYSID 84103,,84103,2024-04-18,2024,49.4,Koksilah River,0.0,0.0,0.0,0.0,0.0,25424.0,SAN JUAN RIVER,79.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80972,,80972,2022-12-01,2022,2.1,Wild Deer Creek,0.0,0.0,0.0,0.0,0.0,29602.0,SAN JUAN RIVER,174.0,False,stream; fish record,4.0
+1,VCCB_SYSID 78985,,78985,2022-01-26,2022,21.1,Holt Creek,0.0,0.0,0.0,0.0,0.0,25010.0,SPRING BEACH,136.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77444,,77444,2021-05-13,2021,60.6,Holt Creek,0.0,0.0,0.0,0.0,33.0,27894.0,SPRING BEACH,128.0,False,stream; fish record,4.0
+1,VCCB_SYSID 81371,,81371,2023-04-07,2023,14.1,Holt Creek,0.0,0.0,0.0,0.0,0.0,24924.0,SPRING BEACH,0.0,False,stream; fish record,4.0
+1,VCCB_SYSID 79976,,79976,2022-06-24,2022,81.5,Gordon River,0.0,0.0,0.0,0.0,0.0,9436.0,BALD MOUNTAIN,195.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80990,,80990,2022-12-01,2022,10.4,Gordon River,0.0,0.0,0.0,0.0,0.0,12600.0,BALD MOUNTAIN,54.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83604,,83604,2024-03-17,2024,2.1,Gordon River,0.0,0.0,0.0,0.0,28.0,12978.0,BALD MOUNTAIN,103.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83650,,83650,2024-03-17,2024,25.5,Gordon River,0.0,0.0,0.0,0.0,0.0,12071.0,BALD MOUNTAIN,6.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83605,,83605,2024-03-17,2024,5.9,Gordon River,0.0,0.0,0.0,0.0,0.0,12415.0,BALD MOUNTAIN,12.0,False,stream; fish record,4.0
+1,OPENING_ID 1770560,1770560,547886,2022-02-16,2022,18.5,Gordon River,0.0,0.0,0.0,0.0,0.0,14274.0,Avatar Grove Hiking Trails,55.0,False,stream; fish record,4.0
+1,OPENING_ID 1754843,1754843,536424,2021-04-06,2021,9.7,Hauk Creek,0.0,0.0,0.0,0.0,0.0,14933.0,BALD MOUNTAIN,111.0,False,stream; fish record,4.0
+1,OPENING_ID 1754843,1754843,536426,2021-04-06,2021,1.7,Hauk Creek,0.0,0.0,0.0,0.0,0.0,15336.0,BALD MOUNTAIN,195.0,False,stream; fish record,4.0
+1,OPENING_ID 1681437,1681437,480014,2016-06-29,2016,30.6,Gordon River,0.0,0.0,0.0,0.0,0.0,12337.0,Avatar Grove Hiking Trails,12.0,False,stream; fish record,4.0
+1,OPENING_ID 1668326,1668326,470064,2016-01-13,2016,17.4,Gordon River,0.0,0.0,0.0,0.0,0.0,13250.0,Avatar Grove Hiking Trails,49.0,False,stream; fish record,4.0
+1,VCCB_SYSID 84567,,84567,2024-07-03,2024,8.3,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,5452.0,BALD MOUNTAIN,171.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83959,,83959,2024-04-10,2024,20.3,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,5399.0,BALD MOUNTAIN,44.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83671,,83671,2024-03-17,2024,13.6,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,7713.0,BALD MOUNTAIN,157.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77039,,77039,2021-04-18,2021,4.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,8152.0,Harris Creek Spruce,28.0,False,stream; fish record,4.0
 1,VCCB_SYSID 79604,,79604,2022-04-14,2022,47.3,Robertson River,0.0,0.0,0.0,0.0,0.0,12927.0,SPRING BEACH,151.0,False,stream; fish record,4.0
 1,VCCB_SYSID 75242,,75242,2020-01-01,2020,33.0,Robertson River,0.0,0.0,0.0,0.0,0.0,13544.0,SPRING BEACH,69.0,False,stream; fish record,4.0
 1,VCCB_SYSID 76902,,76902,2021-04-18,2021,25.3,Bear Creek,0.0,0.0,0.0,0.0,14.0,14202.0,SPRING BEACH,29.0,False,stream; fish record,4.0
 1,VCCB_SYSID 77622,,77622,2021-05-29,2021,8.5,Bear Creek,0.0,0.0,0.0,0.0,0.0,15863.0,SPRING BEACH,112.0,False,stream; fish record,4.0
 1,OPENING_ID 1716059,1716059,508625,2018-06-30,2018,0.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,17428.0,SPRING BEACH,112.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83059,,83059,2023-11-11,2023,35.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,20970.0,SPRING BEACH,20.0,False,stream; fish record,4.0
-1,VCCB_SYSID 78978,,78978,2022-01-24,2022,56.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,20425.0,SPRING BEACH,30.0,False,stream; fish record,4.0
-1,VCCB_SYSID 75241,,75241,2020-01-01,2020,55.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,18554.0,SPRING BEACH,139.0,False,stream; fish record,4.0
-1,VCCB_SYSID 79931,,79931,2022-06-17,2022,63.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,19387.0,SPRING BEACH,0.0,False,stream; fish record,4.0
-1,VCCB_SYSID 78367,,78367,2021-09-25,2021,55.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,16414.0,SPRING BEACH,0.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83059,,83059,2023-11-11,2023,35.8,Koksilah River,0.0,0.0,0.0,0.0,0.0,20970.0,SPRING BEACH,20.0,False,stream; fish record,4.0
+1,VCCB_SYSID 78978,,78978,2022-01-24,2022,56.8,Koksilah River,0.0,0.0,0.0,0.0,0.0,20425.0,SPRING BEACH,30.0,False,stream; fish record,4.0
+1,VCCB_SYSID 75241,,75241,2020-01-01,2020,55.0,Koksilah River,0.0,0.0,0.0,0.0,0.0,18554.0,SPRING BEACH,139.0,False,stream; fish record,4.0
+1,VCCB_SYSID 79931,,79931,2022-06-17,2022,63.7,Koksilah River,0.0,0.0,0.0,0.0,0.0,19387.0,SPRING BEACH,0.0,False,stream; fish record,4.0
+1,VCCB_SYSID 78367,,78367,2021-09-25,2021,55.5,Koksilah River,0.0,0.0,0.0,0.0,0.0,16414.0,SPRING BEACH,0.0,False,stream; fish record,4.0
 1,OPENING_ID 1738844,1738844,524943,2018-10-24,2018,12.3,Cowichan River,0.0,0.0,0.0,0.0,43.0,14916.0,SPRING BEACH,148.0,False,stream; fish record,4.0
 1,VCCB_SYSID 77142,,77142,2021-04-18,2021,64.5,Bear Creek,0.0,0.0,0.0,0.0,0.0,13886.0,SPRING BEACH,41.0,False,stream; fish record,4.0
-1,VCCB_SYSID 76556,,76556,2021-03-26,2021,4.2,Cowichan River,0.0,0.0,0.0,0.0,78.0,24526.0,SPRING BEACH,190.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83361,,83361,2024-02-06,2024,16.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,23827.0,SPRING BEACH,20.0,False,stream; fish record,4.0
+1,VCCB_SYSID 76556,,76556,2021-03-26,2021,4.2,Currie Creek,0.0,0.0,0.0,0.0,78.0,24526.0,SPRING BEACH,190.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83361,,83361,2024-02-06,2024,16.6,Holt Creek,0.0,0.0,0.0,0.0,0.0,23827.0,SPRING BEACH,20.0,False,stream; fish record,4.0
 1,VCCB_SYSID 77590,,77590,2021-05-24,2021,2.6,Sutton Creek,0.0,0.0,0.0,0.0,12.0,9657.0,BALD MOUNTAIN,33.0,False,stream; fish record,4.0
 1,VCCB_SYSID 77752,,77752,2021-06-21,2021,2.5,Sutton Creek,0.0,0.0,0.0,0.0,34.0,9714.0,BALD MOUNTAIN,63.0,False,stream; fish record,4.0
-1,VCCB_SYSID 78370,,78370,2021-09-25,2021,4.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,11258.0,BALD MOUNTAIN,0.0,False,stream; fish record,4.0
-1,VCCB_SYSID 81491,,81491,2023-04-24,2023,8.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,11082.0,BALD MOUNTAIN,0.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77091,,77091,2021-04-18,2021,21.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14405.0,BALD MOUNTAIN,92.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80268,,80268,2022-07-26,2022,30.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13907.0,BALD MOUNTAIN,172.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77112,,77112,2021-04-18,2021,15.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14520.0,BALD MOUNTAIN,47.0,False,stream; fish record,4.0
+1,VCCB_SYSID 78370,,78370,2021-09-25,2021,4.9,Gordon River,0.0,0.0,0.0,0.0,0.0,11258.0,BALD MOUNTAIN,0.0,False,stream; fish record,4.0
+1,VCCB_SYSID 81491,,81491,2023-04-24,2023,8.5,Gordon River,0.0,0.0,0.0,0.0,0.0,11082.0,BALD MOUNTAIN,0.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77091,,77091,2021-04-18,2021,21.3,Hauk Creek,0.0,0.0,0.0,0.0,0.0,14405.0,BALD MOUNTAIN,92.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80268,,80268,2022-07-26,2022,30.7,Hauk Creek,0.0,0.0,0.0,0.0,0.0,13907.0,BALD MOUNTAIN,172.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77112,,77112,2021-04-18,2021,15.5,Hauk Creek,0.0,0.0,0.0,0.0,0.0,14520.0,BALD MOUNTAIN,47.0,False,stream; fish record,4.0
 1,VCCB_SYSID 77166,,77166,2021-04-18,2021,8.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,9766.0,BALD MOUNTAIN,0.0,False,stream; fish record,4.0
 1,VCCB_SYSID 81762,,81762,2023-05-10,2023,10.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,9484.0,BALD MOUNTAIN,105.0,False,stream; fish record,4.0
 1,VCCB_SYSID 80875,,80875,2022-11-15,2022,4.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,9509.0,BALD MOUNTAIN,0.0,False,stream; fish record,4.0
-1,VCCB_SYSID 82854,,82854,2023-10-03,2023,8.2,Cowichan River,0.0,0.0,0.0,0.0,79.0,10738.0,BALD MOUNTAIN,125.0,False,stream; fish record,4.0
-1,VCCB_SYSID 81704,,81704,2023-05-10,2023,8.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,10408.0,BALD MOUNTAIN,179.0,False,stream; fish record,4.0
+1,VCCB_SYSID 82854,,82854,2023-10-03,2023,8.2,Croft Creek,0.0,0.0,0.0,0.0,79.0,10738.0,BALD MOUNTAIN,125.0,False,stream; fish record,4.0
+1,VCCB_SYSID 81704,,81704,2023-05-10,2023,8.4,Croft Creek,0.0,0.0,0.0,0.0,0.0,10408.0,BALD MOUNTAIN,179.0,False,stream; fish record,4.0
 1,VCCB_SYSID 75255,,75255,2020-01-01,2020,19.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,9919.0,BALD MOUNTAIN,42.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80964,,80964,2022-11-26,2022,3.1,Cowichan River,0.0,0.0,0.0,0.0,77.0,10207.0,BALD MOUNTAIN,185.0,False,stream; fish record,4.0
-1,VCCB_SYSID 75691,,75691,2020-01-01,2020,7.7,Lake Cowichan area,0.0,0.0,0.0,0.0,92.0,13393.0,BALD MOUNTAIN,136.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80964,,80964,2022-11-26,2022,3.1,Croft Creek,0.0,0.0,0.0,0.0,77.0,10207.0,BALD MOUNTAIN,185.0,False,stream; fish record,4.0
+1,VCCB_SYSID 75691,,75691,2020-01-01,2020,7.7,Gordon River,0.0,0.0,0.0,0.0,92.0,13393.0,BALD MOUNTAIN,136.0,False,stream; fish record,4.0
 1,VCCB_SYSID 83939,,83939,2024-04-10,2024,16.4,Sutton Creek,0.0,0.0,0.0,0.0,0.0,6662.0,BALD MOUNTAIN,181.0,False,stream; fish record,4.0
 1,VCCB_SYSID 77818,,77818,2021-06-21,2021,59.3,Sutton Creek,0.0,0.0,0.0,0.0,0.0,5487.0,BALD MOUNTAIN,73.0,False,stream; fish record,4.0
 1,VCCB_SYSID 83672,,83672,2024-03-17,2024,14.7,Sutton Creek,0.0,0.0,0.0,0.0,62.0,7242.0,BALD MOUNTAIN,126.0,False,stream; fish record,4.0
-1,VCCB_SYSID 79147,,79147,2022-02-16,2022,23.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12076.0,SPRING BEACH,22.0,False,stream; fish record,4.0
-1,OPENING_ID 1669960,1669960,471814,2015-05-27,2015,36.7,Lake Cowichan area,0.0,0.0,0.0,0.0,77.0,17511.0,SPRING BEACH,154.0,False,stream; fish record,4.0
-1,VCCB_SYSID 78957,,78957,2022-01-15,2022,41.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,15673.0,BALD MOUNTAIN,189.0,False,stream; fish record,4.0
-1,VCCB_SYSID 75260,,75260,2020-01-01,2020,35.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,16406.0,BALD MOUNTAIN,11.0,False,stream; fish record,4.0
-1,VCCB_SYSID 79124,,79124,2022-02-16,2022,43.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,16177.0,BALD MOUNTAIN,0.0,False,stream; fish record,4.0
+1,VCCB_SYSID 79147,,79147,2022-02-16,2022,23.9,Chipman Creek,0.0,0.0,0.0,0.0,0.0,12076.0,SPRING BEACH,22.0,False,stream; fish record,4.0
+1,OPENING_ID 1669960,1669960,471814,2015-05-27,2015,36.7,Solly Creek,0.0,0.0,0.0,0.0,77.0,17511.0,SPRING BEACH,154.0,False,stream; fish record,4.0
+1,VCCB_SYSID 78957,,78957,2022-01-15,2022,41.0,McKay Creek,0.0,0.0,0.0,0.0,0.0,15673.0,BALD MOUNTAIN,189.0,False,stream; fish record,4.0
+1,VCCB_SYSID 75260,,75260,2020-01-01,2020,35.1,McKay Creek,0.0,0.0,0.0,0.0,0.0,16406.0,BALD MOUNTAIN,11.0,False,stream; fish record,4.0
+1,VCCB_SYSID 79124,,79124,2022-02-16,2022,43.0,McKay Creek,0.0,0.0,0.0,0.0,0.0,16177.0,BALD MOUNTAIN,0.0,False,stream; fish record,4.0
 1,VCCB_SYSID 81484,,81484,2023-04-24,2023,3.7,Cowichan River,0.0,0.0,0.0,0.0,75.0,16566.0,BALD MOUNTAIN,99.0,False,stream; fish record,4.0
 1,VCCB_SYSID 82861,,82861,2023-10-03,2023,26.1,Shaw Creek,0.0,0.0,0.0,0.0,13.0,20643.0,BALD MOUNTAIN,55.0,False,stream; fish record,4.0
 1,VCCB_SYSID 82860,,82860,2023-10-03,2023,16.6,Shaw Creek,0.0,0.0,0.0,0.0,0.0,17481.0,BALD MOUNTAIN,137.0,False,stream; fish record,4.0
 1,VCCB_SYSID 83942,,83942,2024-04-10,2024,7.1,Shaw Creek,0.0,0.0,0.0,0.0,13.0,17973.0,BALD MOUNTAIN,28.0,False,stream; fish record,4.0
 1,VCCB_SYSID 82856,,82856,2023-10-03,2023,12.9,Nixon Creek,0.0,0.0,0.0,0.0,10.0,17933.0,BALD MOUNTAIN,65.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77092,,77092,2021-04-18,2021,11.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,7997.0,BALD MOUNTAIN,104.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77785,,77785,2021-06-21,2021,17.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,8070.0,BALD MOUNTAIN,191.0,False,stream; fish record,4.0
-1,VCCB_SYSID 83955,,83955,2024-04-10,2024,28.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,12592.0,BALD MOUNTAIN,13.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77093,,77093,2021-04-18,2021,7.6,Cowichan River,0.0,0.0,0.0,0.0,26.0,12071.0,BALD MOUNTAIN,73.0,False,stream; fish record,4.0
-1,VCCB_SYSID 84564,,84564,2024-07-03,2024,2.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,12511.0,BALD MOUNTAIN,47.0,False,stream; fish record,4.0
-1,VCCB_SYSID 77754,,77754,2021-06-21,2021,9.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,8476.0,BALD MOUNTAIN,54.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80977,,80977,2022-12-01,2022,12.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,7698.0,BALD MOUNTAIN,17.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80978,,80978,2022-12-01,2022,2.3,Cowichan River,0.0,0.0,0.0,0.0,2.0,8220.0,BALD MOUNTAIN,26.0,False,stream; fish record,4.0
-1,VCCB_SYSID 85972,,85972,2024-12-03,2024,6.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9312.0,SPRING BEACH,29.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77092,,77092,2021-04-18,2021,11.5,Widow Creek,0.0,0.0,0.0,0.0,0.0,7997.0,BALD MOUNTAIN,104.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77785,,77785,2021-06-21,2021,17.6,Widow Creek,0.0,0.0,0.0,0.0,0.0,8070.0,BALD MOUNTAIN,191.0,False,stream; fish record,4.0
+1,VCCB_SYSID 83955,,83955,2024-04-10,2024,28.1,Cottonwood Creek,0.0,0.0,0.0,0.0,0.0,12592.0,BALD MOUNTAIN,13.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77093,,77093,2021-04-18,2021,7.6,Cottonwood Creek,0.0,0.0,0.0,0.0,26.0,12071.0,BALD MOUNTAIN,73.0,False,stream; fish record,4.0
+1,VCCB_SYSID 84564,,84564,2024-07-03,2024,2.3,Cottonwood Creek,0.0,0.0,0.0,0.0,0.0,12511.0,BALD MOUNTAIN,47.0,False,stream; fish record,4.0
+1,VCCB_SYSID 77754,,77754,2021-06-21,2021,9.7,Widow Creek,0.0,0.0,0.0,0.0,0.0,8476.0,BALD MOUNTAIN,54.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80977,,80977,2022-12-01,2022,12.7,Cottonwood Creek,0.0,0.0,0.0,0.0,0.0,7698.0,BALD MOUNTAIN,17.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80978,,80978,2022-12-01,2022,2.3,Cottonwood Creek,0.0,0.0,0.0,0.0,2.0,8220.0,BALD MOUNTAIN,26.0,False,stream; fish record,4.0
+1,VCCB_SYSID 85972,,85972,2024-12-03,2024,6.7,Chemainus River,0.0,0.0,0.0,0.0,0.0,9312.0,SPRING BEACH,29.0,False,stream; fish record,4.0
 1,VCCB_SYSID 79920,,79920,2022-06-17,2022,37.7,Meade Creek,0.0,0.0,0.0,0.0,0.0,6145.0,SPRING BEACH,42.0,False,stream; fish record,4.0
 1,VCCB_SYSID 79961,,79961,2022-06-24,2022,10.5,Meade Creek,0.0,0.0,0.0,0.0,0.0,6867.0,SPRING BEACH,25.0,False,stream; fish record,4.0
-1,VCCB_SYSID 82256,,82256,2023-07-06,2023,16.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10054.0,SPRING BEACH,40.0,False,stream; fish record,4.0
-1,VCCB_SYSID 76561,,76561,2021-03-26,2021,26.2,Lake Cowichan area,0.0,0.0,0.0,0.0,41.0,8767.0,SPRING BEACH,95.0,False,stream; fish record,4.0
-1,VCCB_SYSID 81140,,81140,2023-02-28,2023,3.4,Lake Cowichan area,0.0,0.0,0.0,0.0,4.0,8498.0,SPRING BEACH,120.0,False,stream; fish record,4.0
-1,VCCB_SYSID 80991,,80991,2022-12-01,2022,16.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8539.0,SPRING BEACH,2.0,False,stream; fish record,4.0
-1,OPENING_ID 1770239,1770239,547698,2021-10-26,2021,28.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,474.0,Harris Creek Spruce,415.0,False,stream; recreation,3.0
-1,OPENING_ID 1696204,1696204,493896,2017-09-15,2017,22.8,Lake Cowichan area,0.0,0.0,0.0,0.91,0.0,16191.0,BALD MOUNTAIN,1726.0,False,legal OGMA; stream,2.9
-1,OPENING_ID 1714009,1714009,507345,2019-01-15,2019,20.7,Lake Cowichan area,0.0,0.0,0.0,0.66,17.0,3359.0,Harris Creek Spruce,209.0,False,legal OGMA; stream,2.7
-1,OPENING_ID 1770558,1770558,547882,2022-03-01,2022,4.7,Lake Cowichan area,0.08,0.08,0.0,0.0,99.0,5315.0,Avatar Grove Hiking Trails,4879.0,True,priority-deferral; old growth (TAP); stream,2.6
-1,OPENING_ID 1681946,1681946,480616,2016-08-12,2016,15.7,Lake Cowichan area,0.0,0.0,0.0,0.41,19.0,5677.0,Harris Creek Spruce,851.0,False,legal OGMA; stream,2.4
-1,OPENING_ID 1681332,1681332,479908,2016-08-17,2016,2.1,Lake Cowichan area,0.0,0.0,0.0,0.28,64.0,7527.0,Harris Creek Spruce,846.0,False,legal OGMA; stream,2.3
-1,OPENING_ID 1681950,1681950,480619,2016-11-25,2016,13.7,Lake Cowichan area,0.0,0.0,0.0,0.22,53.0,3379.0,Avatar Grove Hiking Trails,5540.0,False,legal OGMA; stream,2.2
-1,OPENING_ID 1679318,1679318,478529,2017-04-20,2017,12.4,Lake Cowichan area,0.0,0.06,0.0,0.0,7.0,5769.0,FAIRY LAKE,1772.0,False,old growth (TAP); stream,2.2
-1,OPENING_ID 1652660,1652660,461049,2015-05-14,2015,9.0,Lake Cowichan area,0.0,0.0,0.0,0.07,39.0,4917.0,Harris Creek Spruce,2752.0,False,legal OGMA; stream,2.1
-1,VCCB_SYSID 84380,,84380,2024-05-20,2024,3.6,Lake Cowichan area,0.0,0.0,0.0,0.0,148.0,10715.0,SAN JUAN RIVER,97.0,False,fish record,2.0
-1,VCCB_SYSID 83056,,83056,2023-11-11,2023,10.4,Cowichan River,0.0,0.0,0.0,0.0,371.0,29227.0,SPRING BEACH,129.0,False,fish record,2.0
-1,VCCB_SYSID 82990,,82990,2023-10-26,2023,6.2,Lake Cowichan area,0.0,0.0,0.0,0.0,172.0,12222.0,SPRING BEACH,172.0,False,fish record,2.0
-2,OPENING_ID 1653463,1653463,461496,2015-04-22,2015,17.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,6875.0,Harris Creek Spruce,1133.0,False,stream,2.0
-2,OPENING_ID 1668361,1668361,470095,2016-01-27,2016,0.2,Lake Cowichan area,0.0,0.0,0.0,0.0,16.0,5515.0,Harris Creek Spruce,616.0,False,stream,2.0
-2,OPENING_ID 1662298,1662298,465599,2015-11-13,2015,1.6,Lake Cowichan area,0.0,0.0,0.0,0.0,36.0,7420.0,Harris Creek Spruce,619.0,False,stream,2.0
-2,OPENING_ID 1662298,1662298,465602,2015-11-13,2015,7.6,Lake Cowichan area,0.0,0.0,0.0,0.0,47.0,7398.0,Harris Creek Spruce,389.0,False,stream,2.0
-2,OPENING_ID 1737825,1737825,524377,2020-01-08,2020,26.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,3456.0,Harris Creek Spruce,289.0,False,stream,2.0
-2,OPENING_ID 1661706,1661706,465095,2015-11-23,2015,2.3,Lake Cowichan area,0.0,0.0,0.0,0.0,23.0,4695.0,Harris Creek Spruce,694.0,False,stream,2.0
-2,OPENING_ID 1661706,1661706,465096,2015-11-23,2015,1.2,Lake Cowichan area,0.0,0.0,0.0,0.0,32.0,4478.0,Harris Creek Spruce,590.0,False,stream,2.0
-2,OPENING_ID 1661706,1661706,465097,2015-11-23,2015,1.7,Lake Cowichan area,0.0,0.0,0.0,0.0,14.0,4071.0,Harris Creek Spruce,559.0,False,stream,2.0
-2,OPENING_ID 1661706,1661706,465098,2015-11-23,2015,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4241.0,Harris Creek Spruce,308.0,False,stream,2.0
-2,OPENING_ID 1689541,1689541,488683,2017-10-02,2017,10.4,Lake Cowichan area,0.0,0.0,0.0,0.0,41.0,3526.0,Avatar Grove Hiking Trails,6139.0,False,stream,2.0
-2,OPENING_ID 1662298,1662298,465601,2015-11-13,2015,3.9,Lake Cowichan area,0.0,0.0,0.0,0.0,50.0,7654.0,Harris Creek Spruce,645.0,False,stream,2.0
-2,OPENING_ID 1720263,1720263,512477,2018-11-01,2018,9.0,Lake Cowichan area,0.0,0.0,0.0,0.0,15.0,6916.0,Avatar Grove Hiking Trails,3604.0,False,stream,2.0
-2,OPENING_ID 1652664,1652664,461054,2015-01-27,2015,10.2,Lake Cowichan area,0.0,0.0,0.0,0.0,22.0,7362.0,Avatar Grove Hiking Trails,3097.0,False,stream,2.0
-2,OPENING_ID 1681326,1681326,479899,2016-07-20,2016,4.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8038.0,Avatar Grove Hiking Trails,2517.0,False,stream,2.0
-2,OPENING_ID 1681332,1681332,479905,2016-08-17,2016,0.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8281.0,Harris Creek Spruce,1135.0,False,stream,2.0
-2,OPENING_ID 1661784,1661784,465179,2015-09-02,2015,16.6,Lake Cowichan area,0.0,0.0,0.0,0.0,35.0,8190.0,Harris Creek Spruce,1387.0,False,stream,2.0
-2,OPENING_ID 1681332,1681332,479906,2016-08-17,2016,7.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7822.0,Harris Creek Spruce,876.0,False,stream,2.0
-2,OPENING_ID 1672349,1672349,474089,2016-01-25,2016,1.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,6092.0,Harris Creek Spruce,348.0,False,stream,2.0
-2,OPENING_ID 1672349,1672349,474090,2016-01-25,2016,7.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5595.0,Harris Creek Spruce,491.0,False,stream,2.0
-2,OPENING_ID 1696187,1696187,493880,2017-09-08,2017,3.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4930.0,Avatar Grove Hiking Trails,4793.0,False,stream,2.0
-2,OPENING_ID 1741774,1741774,526492,2018-06-15,2018,12.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4732.0,Avatar Grove Hiking Trails,5587.0,False,stream,2.0
-2,OPENING_ID 1696191,1696191,493884,2017-10-24,2017,5.3,Lake Cowichan area,0.0,0.0,0.0,0.0,39.0,6943.0,Avatar Grove Hiking Trails,3532.0,False,stream,2.0
-2,OPENING_ID 1696195,1696195,493889,2017-10-24,2017,13.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4528.0,Avatar Grove Hiking Trails,4798.0,False,stream,2.0
-2,OPENING_ID 1783119,1783119,568401,2022-11-15,2022,17.7,Lake Cowichan area,0.0,0.0,0.0,0.0,5.0,2802.0,Avatar Grove Hiking Trails,5976.0,False,stream,2.0
-2,OPENING_ID 1681952,1681952,480620,2016-11-21,2016,4.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4254.0,Avatar Grove Hiking Trails,4927.0,False,stream,2.0
-2,OPENING_ID 1725459,1725459,515067,2019-04-30,2019,19.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,6246.0,FAIRY LAKE,2363.0,False,stream,2.0
-2,OPENING_ID 1676532,1676532,476936,2016-07-20,2016,3.5,Lake Cowichan area,0.0,0.0,0.0,0.0,42.0,7706.0,FAIRY LAKE,635.0,False,stream,2.0
-2,OPENING_ID 1676532,1676532,476937,2016-07-20,2016,0.3,Lake Cowichan area,0.0,0.0,0.0,0.0,32.0,7935.0,Harris Creek Spruce,647.0,False,stream,2.0
-2,OPENING_ID 1679318,1679318,478528,2017-04-20,2017,8.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5562.0,FAIRY LAKE,1764.0,False,stream,2.0
-2,OPENING_ID 1652657,1652657,461048,2015-03-11,2015,10.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5282.0,FAIRY LAKE,1601.0,False,stream,2.0
-2,OPENING_ID 1652657,1652657,461047,2015-03-11,2015,6.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5274.0,FAIRY LAKE,1576.0,False,stream,2.0
-2,OPENING_ID 1661702,1661702,465091,2015-10-21,2015,17.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5434.0,FAIRY LAKE,778.0,False,stream,2.0
-2,VCCB_SYSID 80968,,80968,2022-11-30,2022,3.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7240.0,Harris Creek Spruce,972.0,False,stream,2.0
-2,VCCB_SYSID 75232,,75232,2020-01-01,2020,6.8,Lake Cowichan area,0.0,0.0,0.0,0.0,41.0,3638.0,Harris Creek Spruce,614.0,False,stream,2.0
-2,VCCB_SYSID 81148,,81148,2023-03-07,2023,14.6,Lake Cowichan area,0.0,0.0,0.0,0.0,78.0,4146.0,Harris Creek Spruce,766.0,False,stream,2.0
-2,VCCB_SYSID 75231,,75231,2020-01-01,2020,8.3,Lake Cowichan area,0.0,0.0,0.0,0.0,21.0,3346.0,Harris Creek Spruce,1034.0,False,stream,2.0
-2,VCCB_SYSID 77037,,77037,2021-04-18,2021,2.4,Lake Cowichan area,0.0,0.0,0.0,0.0,78.0,3739.0,Harris Creek Spruce,1081.0,False,stream,2.0
-2,VCCB_SYSID 81211,,81211,2023-03-21,2023,2.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4551.0,Harris Creek Spruce,1337.0,False,stream,2.0
-2,VCCB_SYSID 75228,,75228,2020-01-01,2020,2.6,Lake Cowichan area,0.0,0.0,0.0,0.0,92.0,3262.0,Harris Creek Spruce,1847.0,False,stream,2.0
-2,VCCB_SYSID 79241,,79241,2022-03-04,2022,34.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4252.0,Harris Creek Spruce,2064.0,False,stream,2.0
-2,VCCB_SYSID 77624,,77624,2021-05-29,2021,5.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4559.0,Harris Creek Spruce,2223.0,False,stream,2.0
-2,VCCB_SYSID 75227,,75227,2020-01-01,2020,9.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,3657.0,Harris Creek Spruce,1667.0,False,stream,2.0
-2,VCCB_SYSID 79832,,79832,2022-05-26,2022,10.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4534.0,Harris Creek Spruce,2433.0,False,stream,2.0
-2,VCCB_SYSID 80210,,80210,2022-07-19,2022,10.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5013.0,Harris Creek Spruce,1438.0,False,stream,2.0
-2,VCCB_SYSID 81190,,81190,2023-03-16,2023,41.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5708.0,Harris Creek Spruce,1165.0,False,stream,2.0
-2,VCCB_SYSID 80259,,80259,2022-07-26,2022,23.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5315.0,Harris Creek Spruce,1431.0,False,stream,2.0
-2,VCCB_SYSID 81591,,81591,2023-05-03,2023,19.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4702.0,Harris Creek Spruce,832.0,False,stream,2.0
-2,VCCB_SYSID 77042,,77042,2021-04-18,2021,3.1,Lake Cowichan area,0.0,0.0,0.0,0.0,11.0,4814.0,Harris Creek Spruce,367.0,False,stream,2.0
-2,VCCB_SYSID 81173,,81173,2023-03-16,2023,16.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,5299.0,Harris Creek Spruce,516.0,False,stream,2.0
-2,VCCB_SYSID 86179,,86179,2025-01-28,2025,8.0,Lake Cowichan area,0.0,0.0,0.0,0.0,41.0,6002.0,Harris Creek Spruce,323.0,False,stream,2.0
-2,OPENING_ID 1687985,1687985,487263,2017-02-23,2017,9.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,3204.0,LIZARD LAKE,236.0,False,stream,2.0
-2,OPENING_ID 1687974,1687974,487249,2017-04-03,2017,3.0,Lake Cowichan area,0.0,0.0,0.0,0.0,19.0,4031.0,SAN JUAN RIVER,1103.0,False,stream,2.0
-2,OPENING_ID 1687985,1687985,487264,2017-02-23,2017,4.5,Lake Cowichan area,0.0,0.0,0.0,0.0,12.0,3568.0,LIZARD LAKE,370.0,False,stream,2.0
-2,OPENING_ID 1687974,1687974,487250,2017-04-03,2017,0.7,Lake Cowichan area,0.0,0.0,0.0,0.0,24.0,4226.0,SAN JUAN RIVER,1313.0,False,stream,2.0
-2,OPENING_ID 1687982,1687982,487258,2017-02-11,2017,34.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2643.0,LIZARD LAKE,833.0,False,stream,2.0
-2,OPENING_ID 1653476,1653476,461497,2015-04-15,2015,41.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2883.0,LIZARD LAKE,1012.0,False,stream,2.0
-2,VCCB_SYSID 85846,,85846,2024-11-15,2024,18.7,Lake Cowichan area,0.0,0.0,0.0,0.0,54.0,4037.0,Harris Creek Spruce,1069.0,False,stream,2.0
-2,VCCB_SYSID 80973,,80973,2022-12-01,2022,47.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,4989.0,Harris Creek Spruce,237.0,False,stream,2.0
-2,VCCB_SYSID 81593,,81593,2023-05-03,2023,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,24.0,5051.0,Harris Creek Spruce,689.0,False,stream,2.0
-2,OPENING_ID 1744336,1744336,528395,2020-09-01,2020,9.9,Lake Cowichan area,0.0,0.0,0.0,0.0,10.0,2691.0,Harris Creek Spruce,217.0,False,stream,2.0
-2,OPENING_ID 1744337,1744337,528396,2020-07-08,2020,34.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2251.0,Harris Creek Spruce,716.0,False,stream,2.0
-2,OPENING_ID 1687979,1687979,487255,2017-04-26,2017,8.2,Lake Cowichan area,0.0,0.0,0.0,0.0,83.0,4436.0,Harris Creek Spruce,2140.0,False,stream,2.0
-2,OPENING_ID 1770240,1770240,547699,2021-11-21,2021,12.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,1057.0,Harris Creek Spruce,1089.0,False,stream,2.0
-2,OPENING_ID 1687980,1687980,487256,2017-03-18,2017,2.8,Lake Cowichan area,0.0,0.0,0.0,0.0,96.0,2557.0,Harris Creek Spruce,1220.0,False,stream,2.0
-2,OPENING_ID 1672360,1672360,474101,2015-11-18,2015,6.1,Lake Cowichan area,0.0,0.0,0.0,0.0,14.0,2161.0,Harris Creek Spruce,906.0,False,stream,2.0
-2,OPENING_ID 1770570,1770570,547906,2022-07-14,2022,1.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,674.0,Harris Creek Spruce,478.0,False,stream,2.0
-2,OPENING_ID 1770570,1770570,547904,2022-04-14,2022,2.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,674.0,Harris Creek Spruce,493.0,False,stream,2.0
-2,OPENING_ID 1770570,1770570,547905,2022-04-14,2022,12.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,628.0,Harris Creek Spruce,576.0,False,stream,2.0
-2,OPENING_ID 1662456,1662456,465758,2015-11-03,2015,2.4,Lake Cowichan area,0.0,0.0,0.0,0.0,93.0,2332.0,Harris Creek Spruce,1264.0,False,stream,2.0
-2,OPENING_ID 1662459,1662459,465760,2015-09-21,2015,8.5,Lake Cowichan area,0.0,0.0,0.0,0.0,83.0,1591.0,Harris Creek Spruce,1182.0,False,stream,2.0
-2,OPENING_ID 1662459,1662459,465759,2015-09-21,2015,8.3,Lake Cowichan area,0.0,0.0,0.0,0.0,28.0,1704.0,Harris Creek Spruce,1309.0,False,stream,2.0
-2,OPENING_ID 1661705,1661705,465093,2015-11-13,2015,3.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2304.0,Harris Creek Spruce,1180.0,False,stream,2.0
-2,OPENING_ID 1687987,1687987,487267,2017-02-20,2017,5.1,Lake Cowichan area,0.0,0.0,0.0,0.0,38.0,3009.0,Harris Creek Spruce,914.0,False,stream,2.0
-2,OPENING_ID 1687987,1687987,487266,2017-02-20,2017,1.2,Lake Cowichan area,0.0,0.0,0.0,0.0,36.0,3273.0,Harris Creek Spruce,873.0,False,stream,2.0
-2,OPENING_ID 1770572,1770572,547911,2022-12-06,2022,1.7,Lake Cowichan area,0.0,0.0,0.0,0.0,45.0,1898.0,Harris Creek Spruce,500.0,False,stream,2.0
-2,OPENING_ID 1770572,1770572,547910,2022-12-06,2022,1.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2095.0,Harris Creek Spruce,337.0,False,stream,2.0
-2,OPENING_ID 1741644,1741644,526378,2020-02-20,2020,33.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2641.0,LIZARD LAKE,601.0,False,stream,2.0
-2,VCCB_SYSID 77138,,77138,2021-04-18,2021,19.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2396.0,Harris Creek Spruce,307.0,False,stream,2.0
-2,VCCB_SYSID 75225,,75225,2020-01-01,2020,35.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2756.0,Harris Creek Spruce,215.0,False,stream,2.0
-2,VCCB_SYSID 78865,,78865,2021-12-06,2021,3.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2946.0,Harris Creek Spruce,658.0,False,stream,2.0
-2,OPENING_ID 1714134,1714134,507393,2018-11-21,2018,42.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,2825.0,LIZARD LAKE,1238.0,False,stream,2.0
-2,VCCB_SYSID 81174,,81174,2023-03-16,2023,2.5,Lake Cowichan area,0.0,0.0,0.0,0.0,73.0,9985.0,Harris Creek Spruce,2144.0,False,stream,2.0
-2,VCCB_SYSID 82835,,82835,2023-10-01,2023,9.0,Robertson River,0.0,0.0,0.0,0.0,91.0,11325.0,Harris Creek Spruce,1571.0,False,stream,2.0
-2,VCCB_SYSID 82466,,82466,2023-07-29,2023,38.4,Robertson River,0.0,0.0,0.0,0.0,0.0,10974.0,Harris Creek Spruce,1769.0,False,stream,2.0
-2,VCCB_SYSID 81615,,81615,2023-05-03,2023,11.1,Robertson River,0.0,0.0,0.0,0.0,0.0,12410.0,Harris Creek Spruce,1195.0,False,stream,2.0
-2,VCCB_SYSID 82128,,82128,2023-06-27,2023,0.2,Lake Cowichan area,0.0,0.0,0.0,0.0,50.0,11297.0,Harris Creek Spruce,2375.0,False,stream,2.0
-2,VCCB_SYSID 82132,,82132,2023-06-27,2023,0.2,Lake Cowichan area,0.0,0.0,0.0,0.0,76.0,11290.0,Harris Creek Spruce,2469.0,False,stream,2.0
+1,VCCB_SYSID 82256,,82256,2023-07-06,2023,16.8,Rheinhart Creek,0.0,0.0,0.0,0.0,0.0,10054.0,SPRING BEACH,40.0,False,stream; fish record,4.0
+1,VCCB_SYSID 76561,,76561,2021-03-26,2021,26.2,Chemainus River,0.0,0.0,0.0,0.0,41.0,8767.0,SPRING BEACH,95.0,False,stream; fish record,4.0
+1,VCCB_SYSID 81140,,81140,2023-02-28,2023,3.4,Chemainus River,0.0,0.0,0.0,0.0,4.0,8498.0,SPRING BEACH,120.0,False,stream; fish record,4.0
+1,VCCB_SYSID 80991,,80991,2022-12-01,2022,16.6,Chemainus River,0.0,0.0,0.0,0.0,0.0,8539.0,SPRING BEACH,2.0,False,stream; fish record,4.0
+1,OPENING_ID 1770239,1770239,547698,2021-10-26,2021,28.2,Harris Creek,0.0,0.0,0.0,0.0,0.0,474.0,Harris Creek Spruce,415.0,False,stream; recreation,3.0
+1,OPENING_ID 1696204,1696204,493896,2017-09-15,2017,22.8,Hauk Creek,0.0,0.0,0.0,0.91,0.0,16191.0,BALD MOUNTAIN,1726.0,False,legal OGMA; stream,2.9
+1,OPENING_ID 1714009,1714009,507345,2019-01-15,2019,20.7,Hemmingsen Creek,0.0,0.0,0.0,0.66,17.0,3359.0,Harris Creek Spruce,209.0,False,legal OGMA; stream,2.7
+1,OPENING_ID 1770558,1770558,547882,2022-03-01,2022,4.7,Braden Creek,0.08,0.08,0.0,0.0,99.0,5315.0,Avatar Grove Hiking Trails,4879.0,True,priority-deferral; old growth (TAP); stream,2.6
+1,OPENING_ID 1681946,1681946,480616,2016-08-12,2016,15.7,Hemmingsen Creek,0.0,0.0,0.0,0.41,19.0,5677.0,Harris Creek Spruce,851.0,False,legal OGMA; stream,2.4
+1,OPENING_ID 1681332,1681332,479908,2016-08-17,2016,2.1,Hemmingsen Creek,0.0,0.0,0.0,0.28,64.0,7527.0,Harris Creek Spruce,846.0,False,legal OGMA; stream,2.3
+1,OPENING_ID 1681950,1681950,480619,2016-11-25,2016,13.7,Braden Creek,0.0,0.0,0.0,0.22,53.0,3379.0,Avatar Grove Hiking Trails,5540.0,False,legal OGMA; stream,2.2
+1,OPENING_ID 1679318,1679318,478529,2017-04-20,2017,12.4,Renfrew Creek,0.0,0.06,0.0,0.0,7.0,5769.0,FAIRY LAKE,1772.0,False,old growth (TAP); stream,2.2
+1,OPENING_ID 1652660,1652660,461049,2015-05-14,2015,9.0,Hemmingsen Creek,0.0,0.0,0.0,0.07,39.0,4917.0,Harris Creek Spruce,2752.0,False,legal OGMA; stream,2.1
+1,VCCB_SYSID 84380,,84380,2024-05-20,2024,3.6,Fleet River,0.0,0.0,0.0,0.0,148.0,10715.0,SAN JUAN RIVER,97.0,False,fish record,2.0
+1,VCCB_SYSID 83056,,83056,2023-11-11,2023,10.4,Glenora Creek,0.0,0.0,0.0,0.0,371.0,29227.0,SPRING BEACH,129.0,False,fish record,2.0
+1,VCCB_SYSID 82990,,82990,2023-10-26,2023,6.2,Chemainus River,0.0,0.0,0.0,0.0,172.0,12222.0,SPRING BEACH,172.0,False,fish record,2.0
+2,OPENING_ID 1653463,1653463,461496,2015-04-22,2015,17.0,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,6875.0,Harris Creek Spruce,1133.0,False,stream,2.0
+2,OPENING_ID 1668361,1668361,470095,2016-01-27,2016,0.2,Hemmingsen Creek,0.0,0.0,0.0,0.0,16.0,5515.0,Harris Creek Spruce,616.0,False,stream,2.0
+2,OPENING_ID 1662298,1662298,465599,2015-11-13,2015,1.6,Hemmingsen Creek,0.0,0.0,0.0,0.0,36.0,7420.0,Harris Creek Spruce,619.0,False,stream,2.0
+2,OPENING_ID 1662298,1662298,465602,2015-11-13,2015,7.6,Hemmingsen Creek,0.0,0.0,0.0,0.0,47.0,7398.0,Harris Creek Spruce,389.0,False,stream,2.0
+2,OPENING_ID 1737825,1737825,524377,2020-01-08,2020,26.2,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,3456.0,Harris Creek Spruce,289.0,False,stream,2.0
+2,OPENING_ID 1661706,1661706,465095,2015-11-23,2015,2.3,Hemmingsen Creek,0.0,0.0,0.0,0.0,23.0,4695.0,Harris Creek Spruce,694.0,False,stream,2.0
+2,OPENING_ID 1661706,1661706,465096,2015-11-23,2015,1.2,Hemmingsen Creek,0.0,0.0,0.0,0.0,32.0,4478.0,Harris Creek Spruce,590.0,False,stream,2.0
+2,OPENING_ID 1661706,1661706,465097,2015-11-23,2015,1.7,Hemmingsen Creek,0.0,0.0,0.0,0.0,14.0,4071.0,Harris Creek Spruce,559.0,False,stream,2.0
+2,OPENING_ID 1661706,1661706,465098,2015-11-23,2015,2.2,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,4241.0,Harris Creek Spruce,308.0,False,stream,2.0
+2,OPENING_ID 1689541,1689541,488683,2017-10-02,2017,10.4,Braden Creek,0.0,0.0,0.0,0.0,41.0,3526.0,Avatar Grove Hiking Trails,6139.0,False,stream,2.0
+2,OPENING_ID 1662298,1662298,465601,2015-11-13,2015,3.9,Hemmingsen Creek,0.0,0.0,0.0,0.0,50.0,7654.0,Harris Creek Spruce,645.0,False,stream,2.0
+2,OPENING_ID 1720263,1720263,512477,2018-11-01,2018,9.0,Braden Creek,0.0,0.0,0.0,0.0,15.0,6916.0,Avatar Grove Hiking Trails,3604.0,False,stream,2.0
+2,OPENING_ID 1652664,1652664,461054,2015-01-27,2015,10.2,Braden Creek,0.0,0.0,0.0,0.0,22.0,7362.0,Avatar Grove Hiking Trails,3097.0,False,stream,2.0
+2,OPENING_ID 1681326,1681326,479899,2016-07-20,2016,4.7,Braden Creek,0.0,0.0,0.0,0.0,0.0,8038.0,Avatar Grove Hiking Trails,2517.0,False,stream,2.0
+2,OPENING_ID 1681332,1681332,479905,2016-08-17,2016,0.9,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,8281.0,Harris Creek Spruce,1135.0,False,stream,2.0
+2,OPENING_ID 1661784,1661784,465179,2015-09-02,2015,16.6,Hemmingsen Creek,0.0,0.0,0.0,0.0,35.0,8190.0,Harris Creek Spruce,1387.0,False,stream,2.0
+2,OPENING_ID 1681332,1681332,479906,2016-08-17,2016,7.1,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,7822.0,Harris Creek Spruce,876.0,False,stream,2.0
+2,OPENING_ID 1672349,1672349,474089,2016-01-25,2016,1.5,Renfrew Creek,0.0,0.0,0.0,0.0,0.0,6092.0,Harris Creek Spruce,348.0,False,stream,2.0
+2,OPENING_ID 1672349,1672349,474090,2016-01-25,2016,7.1,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,5595.0,Harris Creek Spruce,491.0,False,stream,2.0
+2,OPENING_ID 1696187,1696187,493880,2017-09-08,2017,3.0,Braden Creek,0.0,0.0,0.0,0.0,0.0,4930.0,Avatar Grove Hiking Trails,4793.0,False,stream,2.0
+2,OPENING_ID 1741774,1741774,526492,2018-06-15,2018,12.1,Braden Creek,0.0,0.0,0.0,0.0,0.0,4732.0,Avatar Grove Hiking Trails,5587.0,False,stream,2.0
+2,OPENING_ID 1696191,1696191,493884,2017-10-24,2017,5.3,Braden Creek,0.0,0.0,0.0,0.0,39.0,6943.0,Avatar Grove Hiking Trails,3532.0,False,stream,2.0
+2,OPENING_ID 1696195,1696195,493889,2017-10-24,2017,13.6,Braden Creek,0.0,0.0,0.0,0.0,0.0,4528.0,Avatar Grove Hiking Trails,4798.0,False,stream,2.0
+2,OPENING_ID 1783119,1783119,568401,2022-11-15,2022,17.7,Braden Creek,0.0,0.0,0.0,0.0,5.0,2802.0,Avatar Grove Hiking Trails,5976.0,False,stream,2.0
+2,OPENING_ID 1681952,1681952,480620,2016-11-21,2016,4.7,Braden Creek,0.0,0.0,0.0,0.0,0.0,4254.0,Avatar Grove Hiking Trails,4927.0,False,stream,2.0
+2,OPENING_ID 1725459,1725459,515067,2019-04-30,2019,19.2,Reid Creek,0.0,0.0,0.0,0.0,0.0,6246.0,FAIRY LAKE,2363.0,False,stream,2.0
+2,OPENING_ID 1676532,1676532,476936,2016-07-20,2016,3.5,Renfrew Creek,0.0,0.0,0.0,0.0,42.0,7706.0,FAIRY LAKE,635.0,False,stream,2.0
+2,OPENING_ID 1676532,1676532,476937,2016-07-20,2016,0.3,Renfrew Creek,0.0,0.0,0.0,0.0,32.0,7935.0,Harris Creek Spruce,647.0,False,stream,2.0
+2,OPENING_ID 1679318,1679318,478528,2017-04-20,2017,8.8,Renfrew Creek,0.0,0.0,0.0,0.0,0.0,5562.0,FAIRY LAKE,1764.0,False,stream,2.0
+2,OPENING_ID 1652657,1652657,461048,2015-03-11,2015,10.3,Renfrew Creek,0.0,0.0,0.0,0.0,0.0,5282.0,FAIRY LAKE,1601.0,False,stream,2.0
+2,OPENING_ID 1652657,1652657,461047,2015-03-11,2015,6.3,Renfrew Creek,0.0,0.0,0.0,0.0,0.0,5274.0,FAIRY LAKE,1576.0,False,stream,2.0
+2,OPENING_ID 1661702,1661702,465091,2015-10-21,2015,17.1,Renfrew Creek,0.0,0.0,0.0,0.0,0.0,5434.0,FAIRY LAKE,778.0,False,stream,2.0
+2,VCCB_SYSID 80968,,80968,2022-11-30,2022,3.5,Lens Creek,0.0,0.0,0.0,0.0,0.0,7240.0,Harris Creek Spruce,972.0,False,stream,2.0
+2,VCCB_SYSID 75232,,75232,2020-01-01,2020,6.8,Harris Creek,0.0,0.0,0.0,0.0,41.0,3638.0,Harris Creek Spruce,614.0,False,stream,2.0
+2,VCCB_SYSID 81148,,81148,2023-03-07,2023,14.6,Harris Creek,0.0,0.0,0.0,0.0,78.0,4146.0,Harris Creek Spruce,766.0,False,stream,2.0
+2,VCCB_SYSID 75231,,75231,2020-01-01,2020,8.3,Lens Creek,0.0,0.0,0.0,0.0,21.0,3346.0,Harris Creek Spruce,1034.0,False,stream,2.0
+2,VCCB_SYSID 77037,,77037,2021-04-18,2021,2.4,Harris Creek,0.0,0.0,0.0,0.0,78.0,3739.0,Harris Creek Spruce,1081.0,False,stream,2.0
+2,VCCB_SYSID 81211,,81211,2023-03-21,2023,2.3,Lens Creek,0.0,0.0,0.0,0.0,0.0,4551.0,Harris Creek Spruce,1337.0,False,stream,2.0
+2,VCCB_SYSID 75228,,75228,2020-01-01,2020,2.6,Lens Creek,0.0,0.0,0.0,0.0,92.0,3262.0,Harris Creek Spruce,1847.0,False,stream,2.0
+2,VCCB_SYSID 79241,,79241,2022-03-04,2022,34.1,Lens Creek,0.0,0.0,0.0,0.0,0.0,4252.0,Harris Creek Spruce,2064.0,False,stream,2.0
+2,VCCB_SYSID 77624,,77624,2021-05-29,2021,5.7,Lens Creek,0.0,0.0,0.0,0.0,0.0,4559.0,Harris Creek Spruce,2223.0,False,stream,2.0
+2,VCCB_SYSID 75227,,75227,2020-01-01,2020,9.9,Lens Creek,0.0,0.0,0.0,0.0,0.0,3657.0,Harris Creek Spruce,1667.0,False,stream,2.0
+2,VCCB_SYSID 79832,,79832,2022-05-26,2022,10.3,Lens Creek,0.0,0.0,0.0,0.0,0.0,4534.0,Harris Creek Spruce,2433.0,False,stream,2.0
+2,VCCB_SYSID 80210,,80210,2022-07-19,2022,10.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,5013.0,Harris Creek Spruce,1438.0,False,stream,2.0
+2,VCCB_SYSID 81190,,81190,2023-03-16,2023,41.7,Lens Creek,0.0,0.0,0.0,0.0,0.0,5708.0,Harris Creek Spruce,1165.0,False,stream,2.0
+2,VCCB_SYSID 80259,,80259,2022-07-26,2022,23.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,5315.0,Harris Creek Spruce,1431.0,False,stream,2.0
+2,VCCB_SYSID 81591,,81591,2023-05-03,2023,19.5,Lens Creek,0.0,0.0,0.0,0.0,0.0,4702.0,Harris Creek Spruce,832.0,False,stream,2.0
+2,VCCB_SYSID 77042,,77042,2021-04-18,2021,3.1,Lens Creek,0.0,0.0,0.0,0.0,11.0,4814.0,Harris Creek Spruce,367.0,False,stream,2.0
+2,VCCB_SYSID 81173,,81173,2023-03-16,2023,16.6,Lens Creek,0.0,0.0,0.0,0.0,0.0,5299.0,Harris Creek Spruce,516.0,False,stream,2.0
+2,VCCB_SYSID 86179,,86179,2025-01-28,2025,8.0,Lens Creek,0.0,0.0,0.0,0.0,41.0,6002.0,Harris Creek Spruce,323.0,False,stream,2.0
+2,OPENING_ID 1687985,1687985,487263,2017-02-23,2017,9.1,Lens Creek,0.0,0.0,0.0,0.0,0.0,3204.0,LIZARD LAKE,236.0,False,stream,2.0
+2,OPENING_ID 1687974,1687974,487249,2017-04-03,2017,3.0,Lens Creek,0.0,0.0,0.0,0.0,19.0,4031.0,SAN JUAN RIVER,1103.0,False,stream,2.0
+2,OPENING_ID 1687985,1687985,487264,2017-02-23,2017,4.5,Lens Creek,0.0,0.0,0.0,0.0,12.0,3568.0,LIZARD LAKE,370.0,False,stream,2.0
+2,OPENING_ID 1687974,1687974,487250,2017-04-03,2017,0.7,Lens Creek,0.0,0.0,0.0,0.0,24.0,4226.0,SAN JUAN RIVER,1313.0,False,stream,2.0
+2,OPENING_ID 1687982,1687982,487258,2017-02-11,2017,34.5,Harris Creek,0.0,0.0,0.0,0.0,0.0,2643.0,LIZARD LAKE,833.0,False,stream,2.0
+2,OPENING_ID 1653476,1653476,461497,2015-04-15,2015,41.8,Lens Creek,0.0,0.0,0.0,0.0,0.0,2883.0,LIZARD LAKE,1012.0,False,stream,2.0
+2,VCCB_SYSID 85846,,85846,2024-11-15,2024,18.7,Harris Creek,0.0,0.0,0.0,0.0,54.0,4037.0,Harris Creek Spruce,1069.0,False,stream,2.0
+2,VCCB_SYSID 80973,,80973,2022-12-01,2022,47.5,Harris Creek,0.0,0.0,0.0,0.0,0.0,4989.0,Harris Creek Spruce,237.0,False,stream,2.0
+2,VCCB_SYSID 81593,,81593,2023-05-03,2023,2.2,Harris Creek,0.0,0.0,0.0,0.0,24.0,5051.0,Harris Creek Spruce,689.0,False,stream,2.0
+2,OPENING_ID 1744336,1744336,528395,2020-09-01,2020,9.9,Hemmingsen Creek,0.0,0.0,0.0,0.0,10.0,2691.0,Harris Creek Spruce,217.0,False,stream,2.0
+2,OPENING_ID 1744337,1744337,528396,2020-07-08,2020,34.4,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,2251.0,Harris Creek Spruce,716.0,False,stream,2.0
+2,OPENING_ID 1687979,1687979,487255,2017-04-26,2017,8.2,Hemmingsen Creek,0.0,0.0,0.0,0.0,83.0,4436.0,Harris Creek Spruce,2140.0,False,stream,2.0
+2,OPENING_ID 1770240,1770240,547699,2021-11-21,2021,12.9,Harris Creek,0.0,0.0,0.0,0.0,0.0,1057.0,Harris Creek Spruce,1089.0,False,stream,2.0
+2,OPENING_ID 1687980,1687980,487256,2017-03-18,2017,2.8,Harris Creek,0.0,0.0,0.0,0.0,96.0,2557.0,Harris Creek Spruce,1220.0,False,stream,2.0
+2,OPENING_ID 1672360,1672360,474101,2015-11-18,2015,6.1,Harris Creek,0.0,0.0,0.0,0.0,14.0,2161.0,Harris Creek Spruce,906.0,False,stream,2.0
+2,OPENING_ID 1770570,1770570,547906,2022-07-14,2022,1.0,Harris Creek,0.0,0.0,0.0,0.0,0.0,674.0,Harris Creek Spruce,478.0,False,stream,2.0
+2,OPENING_ID 1770570,1770570,547904,2022-04-14,2022,2.4,Harris Creek,0.0,0.0,0.0,0.0,0.0,674.0,Harris Creek Spruce,493.0,False,stream,2.0
+2,OPENING_ID 1770570,1770570,547905,2022-04-14,2022,12.3,Harris Creek,0.0,0.0,0.0,0.0,0.0,628.0,Harris Creek Spruce,576.0,False,stream,2.0
+2,OPENING_ID 1662456,1662456,465758,2015-11-03,2015,2.4,Harris Creek,0.0,0.0,0.0,0.0,93.0,2332.0,Harris Creek Spruce,1264.0,False,stream,2.0
+2,OPENING_ID 1662459,1662459,465760,2015-09-21,2015,8.5,Lens Creek,0.0,0.0,0.0,0.0,83.0,1591.0,Harris Creek Spruce,1182.0,False,stream,2.0
+2,OPENING_ID 1662459,1662459,465759,2015-09-21,2015,8.3,Lens Creek,0.0,0.0,0.0,0.0,28.0,1704.0,Harris Creek Spruce,1309.0,False,stream,2.0
+2,OPENING_ID 1661705,1661705,465093,2015-11-13,2015,3.6,Lens Creek,0.0,0.0,0.0,0.0,0.0,2304.0,Harris Creek Spruce,1180.0,False,stream,2.0
+2,OPENING_ID 1687987,1687987,487267,2017-02-20,2017,5.1,Lens Creek,0.0,0.0,0.0,0.0,38.0,3009.0,Harris Creek Spruce,914.0,False,stream,2.0
+2,OPENING_ID 1687987,1687987,487266,2017-02-20,2017,1.2,Lens Creek,0.0,0.0,0.0,0.0,36.0,3273.0,Harris Creek Spruce,873.0,False,stream,2.0
+2,OPENING_ID 1770572,1770572,547911,2022-12-06,2022,1.7,Harris Creek,0.0,0.0,0.0,0.0,45.0,1898.0,Harris Creek Spruce,500.0,False,stream,2.0
+2,OPENING_ID 1770572,1770572,547910,2022-12-06,2022,1.0,Harris Creek,0.0,0.0,0.0,0.0,0.0,2095.0,Harris Creek Spruce,337.0,False,stream,2.0
+2,OPENING_ID 1741644,1741644,526378,2020-02-20,2020,33.8,Harris Creek,0.0,0.0,0.0,0.0,0.0,2641.0,LIZARD LAKE,601.0,False,stream,2.0
+2,VCCB_SYSID 77138,,77138,2021-04-18,2021,19.1,Lens Creek,0.0,0.0,0.0,0.0,0.0,2396.0,Harris Creek Spruce,307.0,False,stream,2.0
+2,VCCB_SYSID 75225,,75225,2020-01-01,2020,35.3,Lens Creek,0.0,0.0,0.0,0.0,0.0,2756.0,Harris Creek Spruce,215.0,False,stream,2.0
+2,VCCB_SYSID 78865,,78865,2021-12-06,2021,3.1,Lens Creek,0.0,0.0,0.0,0.0,0.0,2946.0,Harris Creek Spruce,658.0,False,stream,2.0
+2,OPENING_ID 1714134,1714134,507393,2018-11-21,2018,42.2,Harris Creek,0.0,0.0,0.0,0.0,0.0,2825.0,LIZARD LAKE,1238.0,False,stream,2.0
+2,VCCB_SYSID 81174,,81174,2023-03-16,2023,2.5,Lens Creek,0.0,0.0,0.0,0.0,73.0,9985.0,Harris Creek Spruce,2144.0,False,stream,2.0
+2,VCCB_SYSID 82835,,82835,2023-10-01,2023,9.0,Lens Creek,0.0,0.0,0.0,0.0,91.0,11325.0,Harris Creek Spruce,1571.0,False,stream,2.0
+2,VCCB_SYSID 82466,,82466,2023-07-29,2023,38.4,Lens Creek,0.0,0.0,0.0,0.0,0.0,10974.0,Harris Creek Spruce,1769.0,False,stream,2.0
+2,VCCB_SYSID 81615,,81615,2023-05-03,2023,11.1,Fleet River,0.0,0.0,0.0,0.0,0.0,12410.0,Harris Creek Spruce,1195.0,False,stream,2.0
+2,VCCB_SYSID 82128,,82128,2023-06-27,2023,0.2,Lens Creek,0.0,0.0,0.0,0.0,50.0,11297.0,Harris Creek Spruce,2375.0,False,stream,2.0
+2,VCCB_SYSID 82132,,82132,2023-06-27,2023,0.2,Lens Creek,0.0,0.0,0.0,0.0,76.0,11290.0,Harris Creek Spruce,2469.0,False,stream,2.0
 2,VCCB_SYSID 82144,,82144,2023-06-27,2023,0.2,Robertson River,0.0,0.0,0.0,0.0,90.0,11655.0,Harris Creek Spruce,2025.0,False,stream,2.0
-2,VCCB_SYSID 75230,,75230,2020-01-01,2020,16.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13992.0,Harris Creek Spruce,692.0,False,stream,2.0
-2,VCCB_SYSID 80866,,80866,2022-11-15,2022,12.6,Lake Cowichan area,0.0,0.0,0.0,0.0,2.0,14194.0,Harris Creek Spruce,1240.0,False,stream,2.0
-2,VCCB_SYSID 80835,,80835,2022-11-11,2022,6.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,15209.0,Harris Creek Spruce,540.0,False,stream,2.0
-2,VCCB_SYSID 81626,,81626,2023-05-03,2023,22.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8735.0,Harris Creek Spruce,1419.0,False,stream,2.0
-2,VCCB_SYSID 83649,,83649,2024-03-17,2024,2.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8898.0,Harris Creek Spruce,1631.0,False,stream,2.0
-2,VCCB_SYSID 82225,,82225,2023-07-06,2023,5.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9088.0,Harris Creek Spruce,1191.0,False,stream,2.0
-2,VCCB_SYSID 82701,,82701,2023-09-08,2023,21.4,Lake Cowichan area,0.0,0.0,0.0,0.0,25.0,9403.0,Harris Creek Spruce,506.0,False,stream,2.0
-2,VCCB_SYSID 83185,,83185,2023-11-27,2023,2.1,Lake Cowichan area,0.0,0.0,0.0,0.0,23.0,9853.0,Harris Creek Spruce,517.0,False,stream,2.0
-2,VCCB_SYSID 83186,,83186,2023-11-27,2023,8.3,Lake Cowichan area,0.0,0.0,0.0,0.0,29.0,9826.0,Harris Creek Spruce,373.0,False,stream,2.0
-2,VCCB_SYSID 83648,,83648,2024-03-17,2024,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9081.0,Harris Creek Spruce,1719.0,False,stream,2.0
-2,VCCB_SYSID 82045,,82045,2023-06-11,2023,14.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10750.0,Harris Creek Spruce,2253.0,False,stream,2.0
-2,VCCB_SYSID 82129,,82129,2023-06-27,2023,3.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,11071.0,Harris Creek Spruce,2297.0,False,stream,2.0
-2,VCCB_SYSID 82127,,82127,2023-06-27,2023,1.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,11279.0,Harris Creek Spruce,2217.0,False,stream,2.0
-2,VCCB_SYSID 84703,,84703,2024-07-06,2024,0.6,Lake Cowichan area,0.0,0.0,0.0,0.0,41.0,12643.0,SAN JUAN RIVER,554.0,False,stream,2.0
-2,VCCB_SYSID 85495,,85495,2024-10-12,2024,2.5,Lake Cowichan area,0.0,0.0,0.0,0.0,42.0,12925.0,SAN JUAN RIVER,569.0,False,stream,2.0
-2,VCCB_SYSID 85496,,85496,2024-10-12,2024,12.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12250.0,SAN JUAN RIVER,283.0,False,stream,2.0
-2,VCCB_SYSID 84702,,84702,2024-07-06,2024,0.2,Lake Cowichan area,0.0,0.0,0.0,0.0,63.0,12546.0,SAN JUAN RIVER,551.0,False,stream,2.0
-2,VCCB_SYSID 85005,,85005,2024-08-08,2024,6.7,Lake Cowichan area,0.0,0.0,0.0,0.0,71.0,12685.0,SAN JUAN RIVER,355.0,False,stream,2.0
-2,VCCB_SYSID 86102,,86102,2025-01-18,2025,23.1,Lake Cowichan area,0.0,0.0,0.0,0.0,12.0,8104.0,Harris Creek Spruce,514.0,False,stream,2.0
-2,VCCB_SYSID 84764,,84764,2024-07-07,2024,7.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12937.0,Harris Creek Spruce,201.0,False,stream,2.0
-2,VCCB_SYSID 85845,,85845,2024-11-15,2024,44.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13603.0,Harris Creek Spruce,500.0,False,stream,2.0
-2,VCCB_SYSID 83364,,83364,2024-02-06,2024,16.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,15230.0,Harris Creek Spruce,1972.0,False,stream,2.0
-2,VCCB_SYSID 83319,,83319,2024-02-06,2024,4.8,Lake Cowichan area,0.0,0.0,0.0,0.0,41.0,15664.0,Harris Creek Spruce,2063.0,False,stream,2.0
-2,VCCB_SYSID 83507,,83507,2024-02-23,2024,3.1,Lake Cowichan area,0.0,0.0,0.0,0.0,46.0,11352.0,Harris Creek Spruce,1621.0,False,stream,2.0
-2,VCCB_SYSID 75236,,75236,2020-01-01,2020,36.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14032.0,Harris Creek Spruce,1140.0,False,stream,2.0
-2,VCCB_SYSID 77608,,77608,2021-05-29,2021,20.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,16476.0,Harris Creek Spruce,814.0,False,stream,2.0
-2,VCCB_SYSID 83347,,83347,2024-02-06,2024,8.4,Lake Cowichan area,0.0,0.0,0.0,0.0,13.0,8703.0,Harris Creek Spruce,1325.0,False,stream,2.0
-2,VCCB_SYSID 76558,,76558,2021-03-26,2021,51.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,22002.0,SPRING BEACH,447.0,False,stream,2.0
-2,VCCB_SYSID 76648,,76648,2021-04-05,2021,8.0,Cowichan River,0.0,0.0,0.0,0.0,60.0,21961.0,SPRING BEACH,565.0,False,stream,2.0
-2,VCCB_SYSID 75224,,75224,2020-01-01,2020,10.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,20799.0,SAN JUAN RIVER,208.0,False,stream,2.0
-2,VCCB_SYSID 76417,,76417,2021-03-11,2021,56.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,20689.0,SAN JUAN RIVER,860.0,False,stream,2.0
-2,VCCB_SYSID 83360,,83360,2024-02-06,2024,39.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,21036.0,SAN JUAN RIVER,322.0,False,stream,2.0
-2,VCCB_SYSID 77141,,77141,2021-04-18,2021,50.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,22312.0,SAN JUAN RIVER,214.0,False,stream,2.0
-2,VCCB_SYSID 83499,,83499,2024-02-23,2024,11.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,19489.0,SAN JUAN RIVER,493.0,False,stream,2.0
-2,VCCB_SYSID 83683,,83683,2024-03-18,2024,11.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,19011.0,SAN JUAN RIVER,648.0,False,stream,2.0
-2,VCCB_SYSID 83925,,83925,2024-04-10,2024,2.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,19775.0,SAN JUAN RIVER,424.0,False,stream,2.0
-2,VCCB_SYSID 83623,,83623,2024-03-17,2024,15.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,18765.0,SAN JUAN RIVER,495.0,False,stream,2.0
-2,VCCB_SYSID 76548,,76548,2021-03-26,2021,47.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,21001.0,SAN JUAN RIVER,386.0,False,stream,2.0
-2,VCCB_SYSID 83947,,83947,2024-04-10,2024,2.3,Cowichan River,0.0,0.0,0.0,0.0,12.0,18771.0,SAN JUAN RIVER,1075.0,False,stream,2.0
-2,VCCB_SYSID 83178,,83178,2023-11-26,2023,9.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,20451.0,SAN JUAN RIVER,214.0,False,stream,2.0
-2,VCCB_SYSID 83263,,83263,2024-01-06,2024,18.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,19756.0,SAN JUAN RIVER,403.0,False,stream,2.0
-2,VCCB_SYSID 83187,,83187,2023-11-27,2023,4.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,20225.0,SAN JUAN RIVER,602.0,False,stream,2.0
-2,VCCB_SYSID 75229,,75229,2020-01-01,2020,30.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,21172.0,SAN JUAN RIVER,687.0,False,stream,2.0
-2,VCCB_SYSID 77556,,77556,2021-05-20,2021,43.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,18622.0,SAN JUAN RIVER,596.0,False,stream,2.0
-2,VCCB_SYSID 77066,,77066,2021-04-18,2021,45.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,20938.0,SAN JUAN RIVER,1166.0,False,stream,2.0
-2,VCCB_SYSID 81592,,81592,2023-05-03,2023,54.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,17992.0,Harris Creek Spruce,297.0,False,stream,2.0
-2,VCCB_SYSID 77367,,77367,2021-05-04,2021,12.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,19000.0,Harris Creek Spruce,671.0,False,stream,2.0
-2,VCCB_SYSID 75233,,75233,2020-01-01,2020,38.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,19327.0,Harris Creek Spruce,356.0,False,stream,2.0
-2,VCCB_SYSID 83266,,83266,2024-01-06,2024,45.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,20810.0,SPRING BEACH,799.0,False,stream,2.0
-2,VCCB_SYSID 85967,,85967,2024-12-03,2024,3.6,Cowichan River,0.0,0.0,0.0,0.0,3.0,21717.0,SPRING BEACH,219.0,False,stream,2.0
-2,VCCB_SYSID 85968,,85968,2024-12-03,2024,7.3,Cowichan River,0.0,0.0,0.0,0.0,23.0,21018.0,SPRING BEACH,711.0,False,stream,2.0
-2,VCCB_SYSID 75237,,75237,2020-01-01,2020,39.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,17093.0,SPRING BEACH,884.0,False,stream,2.0
-2,VCCB_SYSID 79921,,79921,2022-06-17,2022,7.7,Cowichan River,0.0,0.0,0.0,0.0,10.0,30409.0,SAN JUAN RIVER,718.0,False,stream,2.0
-2,VCCB_SYSID 86101,,86101,2025-01-18,2025,34.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,30019.0,SAN JUAN RIVER,380.0,False,stream,2.0
-2,VCCB_SYSID 76308,,76308,2021-02-07,2021,2.1,Cowichan River,0.0,0.0,0.0,0.0,55.0,25962.0,SAN JUAN RIVER,990.0,False,stream,2.0
-2,VCCB_SYSID 76564,,76564,2021-03-26,2021,30.4,Cowichan River,0.0,0.0,0.0,0.0,25.0,26981.0,SAN JUAN RIVER,618.0,False,stream,2.0
-2,VCCB_SYSID 76413,,76413,2021-03-11,2021,2.0,Cowichan River,0.0,0.0,0.0,0.0,30.0,25918.0,SAN JUAN RIVER,348.0,False,stream,2.0
-2,VCCB_SYSID 76414,,76414,2021-03-11,2021,8.5,Cowichan River,0.0,0.0,0.0,0.0,62.0,28138.0,SAN JUAN RIVER,340.0,False,stream,2.0
-2,VCCB_SYSID 76551,,76551,2021-03-26,2021,3.8,Cowichan River,0.0,0.0,0.0,0.0,8.0,28072.0,SAN JUAN RIVER,702.0,False,stream,2.0
-2,VCCB_SYSID 75235,,75235,2020-01-01,2020,4.0,Cowichan River,0.0,0.0,0.0,0.0,15.0,24994.0,SPRING BEACH,659.0,False,stream,2.0
-2,VCCB_SYSID 75085,,75085,2020-01-01,2020,6.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,23807.0,SAN JUAN RIVER,263.0,False,stream,2.0
-2,VCCB_SYSID 76565,,76565,2021-03-26,2021,25.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,23966.0,SAN JUAN RIVER,441.0,False,stream,2.0
-2,VCCB_SYSID 75103,,75103,2020-01-01,2020,31.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,24521.0,SAN JUAN RIVER,1000.0,False,stream,2.0
-2,VCCB_SYSID 75222,,75222,2020-01-01,2020,6.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,24919.0,SAN JUAN RIVER,1410.0,False,stream,2.0
-2,VCCB_SYSID 86016,,86016,2024-12-16,2024,31.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,29717.0,SAN JUAN RIVER,1121.0,False,stream,2.0
-2,VCCB_SYSID 79603,,79603,2022-04-14,2022,23.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,26467.0,SAN JUAN RIVER,1776.0,False,stream,2.0
-2,VCCB_SYSID 82742,,82742,2023-09-15,2023,21.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,29426.0,SAN JUAN RIVER,209.0,False,stream,2.0
-2,VCCB_SYSID 81627,,81627,2023-05-03,2023,26.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,30058.0,SPRING BEACH,858.0,False,stream,2.0
-2,VCCB_SYSID 82098,,82098,2023-06-27,2023,3.7,Cowichan River,0.0,0.0,0.0,0.0,41.0,30973.0,SPRING BEACH,1291.0,False,stream,2.0
-2,VCCB_SYSID 82233,,82233,2023-07-06,2023,7.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,30828.0,SPRING BEACH,1305.0,False,stream,2.0
-2,VCCB_SYSID 83258,,83258,2024-01-06,2024,10.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,28705.0,SPRING BEACH,319.0,False,stream,2.0
-2,VCCB_SYSID 83264,,83264,2024-01-06,2024,10.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,29233.0,SPRING BEACH,533.0,False,stream,2.0
-2,VCCB_SYSID 83265,,83265,2024-01-06,2024,3.2,Cowichan River,0.0,0.0,0.0,0.0,47.0,28285.0,SPRING BEACH,393.0,False,stream,2.0
-2,VCCB_SYSID 80976,,80976,2022-12-01,2022,53.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,27758.0,SPRING BEACH,515.0,False,stream,2.0
-2,VCCB_SYSID 76555,,76555,2021-03-26,2021,4.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,24976.0,SPRING BEACH,759.0,False,stream,2.0
-2,VCCB_SYSID 77548,,77548,2021-05-20,2021,81.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,26618.0,SPRING BEACH,1088.0,False,stream,2.0
-2,VCCB_SYSID 75689,,75689,2020-01-01,2020,19.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8952.0,BALD MOUNTAIN,1542.0,False,stream,2.0
+2,VCCB_SYSID 75230,,75230,2020-01-01,2020,16.1,Fleet River,0.0,0.0,0.0,0.0,0.0,13992.0,Harris Creek Spruce,692.0,False,stream,2.0
+2,VCCB_SYSID 80866,,80866,2022-11-15,2022,12.6,Fleet River,0.0,0.0,0.0,0.0,2.0,14194.0,Harris Creek Spruce,1240.0,False,stream,2.0
+2,VCCB_SYSID 80835,,80835,2022-11-11,2022,6.2,Fleet River,0.0,0.0,0.0,0.0,0.0,15209.0,Harris Creek Spruce,540.0,False,stream,2.0
+2,VCCB_SYSID 81626,,81626,2023-05-03,2023,22.9,Lens Creek,0.0,0.0,0.0,0.0,0.0,8735.0,Harris Creek Spruce,1419.0,False,stream,2.0
+2,VCCB_SYSID 83649,,83649,2024-03-17,2024,2.6,Lens Creek,0.0,0.0,0.0,0.0,0.0,8898.0,Harris Creek Spruce,1631.0,False,stream,2.0
+2,VCCB_SYSID 82225,,82225,2023-07-06,2023,5.2,Lens Creek,0.0,0.0,0.0,0.0,0.0,9088.0,Harris Creek Spruce,1191.0,False,stream,2.0
+2,VCCB_SYSID 82701,,82701,2023-09-08,2023,21.4,Fleet River,0.0,0.0,0.0,0.0,25.0,9403.0,Harris Creek Spruce,506.0,False,stream,2.0
+2,VCCB_SYSID 83185,,83185,2023-11-27,2023,2.1,Fleet River,0.0,0.0,0.0,0.0,23.0,9853.0,Harris Creek Spruce,517.0,False,stream,2.0
+2,VCCB_SYSID 83186,,83186,2023-11-27,2023,8.3,Fleet River,0.0,0.0,0.0,0.0,29.0,9826.0,Harris Creek Spruce,373.0,False,stream,2.0
+2,VCCB_SYSID 83648,,83648,2024-03-17,2024,2.2,Lens Creek,0.0,0.0,0.0,0.0,0.0,9081.0,Harris Creek Spruce,1719.0,False,stream,2.0
+2,VCCB_SYSID 82045,,82045,2023-06-11,2023,14.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,10750.0,Harris Creek Spruce,2253.0,False,stream,2.0
+2,VCCB_SYSID 82129,,82129,2023-06-27,2023,3.6,Lens Creek,0.0,0.0,0.0,0.0,0.0,11071.0,Harris Creek Spruce,2297.0,False,stream,2.0
+2,VCCB_SYSID 82127,,82127,2023-06-27,2023,1.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,11279.0,Harris Creek Spruce,2217.0,False,stream,2.0
+2,VCCB_SYSID 84703,,84703,2024-07-06,2024,0.6,Fleet River,0.0,0.0,0.0,0.0,41.0,12643.0,SAN JUAN RIVER,554.0,False,stream,2.0
+2,VCCB_SYSID 85495,,85495,2024-10-12,2024,2.5,Fleet River,0.0,0.0,0.0,0.0,42.0,12925.0,SAN JUAN RIVER,569.0,False,stream,2.0
+2,VCCB_SYSID 85496,,85496,2024-10-12,2024,12.4,Fleet River,0.0,0.0,0.0,0.0,0.0,12250.0,SAN JUAN RIVER,283.0,False,stream,2.0
+2,VCCB_SYSID 84702,,84702,2024-07-06,2024,0.2,Fleet River,0.0,0.0,0.0,0.0,63.0,12546.0,SAN JUAN RIVER,551.0,False,stream,2.0
+2,VCCB_SYSID 85005,,85005,2024-08-08,2024,6.7,Fleet River,0.0,0.0,0.0,0.0,71.0,12685.0,SAN JUAN RIVER,355.0,False,stream,2.0
+2,VCCB_SYSID 86102,,86102,2025-01-18,2025,23.1,Lens Creek,0.0,0.0,0.0,0.0,12.0,8104.0,Harris Creek Spruce,514.0,False,stream,2.0
+2,VCCB_SYSID 84764,,84764,2024-07-07,2024,7.2,Fleet River,0.0,0.0,0.0,0.0,0.0,12937.0,Harris Creek Spruce,201.0,False,stream,2.0
+2,VCCB_SYSID 85845,,85845,2024-11-15,2024,44.5,Fleet River,0.0,0.0,0.0,0.0,0.0,13603.0,Harris Creek Spruce,500.0,False,stream,2.0
+2,VCCB_SYSID 83364,,83364,2024-02-06,2024,16.5,Fleet River,0.0,0.0,0.0,0.0,0.0,15230.0,Harris Creek Spruce,1972.0,False,stream,2.0
+2,VCCB_SYSID 83319,,83319,2024-02-06,2024,4.8,Fleet River,0.0,0.0,0.0,0.0,41.0,15664.0,Harris Creek Spruce,2063.0,False,stream,2.0
+2,VCCB_SYSID 83507,,83507,2024-02-23,2024,3.1,Lens Creek,0.0,0.0,0.0,0.0,46.0,11352.0,Harris Creek Spruce,1621.0,False,stream,2.0
+2,VCCB_SYSID 75236,,75236,2020-01-01,2020,36.6,Fleet River,0.0,0.0,0.0,0.0,0.0,14032.0,Harris Creek Spruce,1140.0,False,stream,2.0
+2,VCCB_SYSID 77608,,77608,2021-05-29,2021,20.0,Fleet River,0.0,0.0,0.0,0.0,0.0,16476.0,Harris Creek Spruce,814.0,False,stream,2.0
+2,VCCB_SYSID 83347,,83347,2024-02-06,2024,8.4,Lens Creek,0.0,0.0,0.0,0.0,13.0,8703.0,Harris Creek Spruce,1325.0,False,stream,2.0
+2,VCCB_SYSID 76558,,76558,2021-03-26,2021,51.1,Koksilah River,0.0,0.0,0.0,0.0,0.0,22002.0,SPRING BEACH,447.0,False,stream,2.0
+2,VCCB_SYSID 76648,,76648,2021-04-05,2021,8.0,Koksilah River,0.0,0.0,0.0,0.0,60.0,21961.0,SPRING BEACH,565.0,False,stream,2.0
+2,VCCB_SYSID 75224,,75224,2020-01-01,2020,10.2,Koksilah River,0.0,0.0,0.0,0.0,0.0,20799.0,SAN JUAN RIVER,208.0,False,stream,2.0
+2,VCCB_SYSID 76417,,76417,2021-03-11,2021,56.6,Koksilah River,0.0,0.0,0.0,0.0,0.0,20689.0,SAN JUAN RIVER,860.0,False,stream,2.0
+2,VCCB_SYSID 83360,,83360,2024-02-06,2024,39.2,Koksilah River,0.0,0.0,0.0,0.0,0.0,21036.0,SAN JUAN RIVER,322.0,False,stream,2.0
+2,VCCB_SYSID 77141,,77141,2021-04-18,2021,50.7,Koksilah River,0.0,0.0,0.0,0.0,0.0,22312.0,SAN JUAN RIVER,214.0,False,stream,2.0
+2,VCCB_SYSID 83499,,83499,2024-02-23,2024,11.6,Koksilah River,0.0,0.0,0.0,0.0,0.0,19489.0,SAN JUAN RIVER,493.0,False,stream,2.0
+2,VCCB_SYSID 83683,,83683,2024-03-18,2024,11.3,Koksilah River,0.0,0.0,0.0,0.0,0.0,19011.0,SAN JUAN RIVER,648.0,False,stream,2.0
+2,VCCB_SYSID 83925,,83925,2024-04-10,2024,2.5,Koksilah River,0.0,0.0,0.0,0.0,0.0,19775.0,SAN JUAN RIVER,424.0,False,stream,2.0
+2,VCCB_SYSID 83623,,83623,2024-03-17,2024,15.7,Koksilah River,0.0,0.0,0.0,0.0,0.0,18765.0,SAN JUAN RIVER,495.0,False,stream,2.0
+2,VCCB_SYSID 76548,,76548,2021-03-26,2021,47.8,Koksilah River,0.0,0.0,0.0,0.0,0.0,21001.0,SAN JUAN RIVER,386.0,False,stream,2.0
+2,VCCB_SYSID 83947,,83947,2024-04-10,2024,2.3,Koksilah River,0.0,0.0,0.0,0.0,12.0,18771.0,SAN JUAN RIVER,1075.0,False,stream,2.0
+2,VCCB_SYSID 83178,,83178,2023-11-26,2023,9.3,Fellows Creek,0.0,0.0,0.0,0.0,0.0,20451.0,SAN JUAN RIVER,214.0,False,stream,2.0
+2,VCCB_SYSID 83263,,83263,2024-01-06,2024,18.5,Fellows Creek,0.0,0.0,0.0,0.0,0.0,19756.0,SAN JUAN RIVER,403.0,False,stream,2.0
+2,VCCB_SYSID 83187,,83187,2023-11-27,2023,4.3,Fellows Creek,0.0,0.0,0.0,0.0,0.0,20225.0,SAN JUAN RIVER,602.0,False,stream,2.0
+2,VCCB_SYSID 75229,,75229,2020-01-01,2020,30.6,Fellows Creek,0.0,0.0,0.0,0.0,0.0,21172.0,SAN JUAN RIVER,687.0,False,stream,2.0
+2,VCCB_SYSID 77556,,77556,2021-05-20,2021,43.4,Fellows Creek,0.0,0.0,0.0,0.0,0.0,18622.0,SAN JUAN RIVER,596.0,False,stream,2.0
+2,VCCB_SYSID 77066,,77066,2021-04-18,2021,45.2,Fellows Creek,0.0,0.0,0.0,0.0,0.0,20938.0,SAN JUAN RIVER,1166.0,False,stream,2.0
+2,VCCB_SYSID 81592,,81592,2023-05-03,2023,54.0,San Juan River,0.0,0.0,0.0,0.0,0.0,17992.0,Harris Creek Spruce,297.0,False,stream,2.0
+2,VCCB_SYSID 77367,,77367,2021-05-04,2021,12.7,Fellows Creek,0.0,0.0,0.0,0.0,0.0,19000.0,Harris Creek Spruce,671.0,False,stream,2.0
+2,VCCB_SYSID 75233,,75233,2020-01-01,2020,38.9,San Juan River,0.0,0.0,0.0,0.0,0.0,19327.0,Harris Creek Spruce,356.0,False,stream,2.0
+2,VCCB_SYSID 83266,,83266,2024-01-06,2024,45.2,Fellows Creek,0.0,0.0,0.0,0.0,0.0,20810.0,SPRING BEACH,799.0,False,stream,2.0
+2,VCCB_SYSID 85967,,85967,2024-12-03,2024,3.6,Fellows Creek,0.0,0.0,0.0,0.0,3.0,21717.0,SPRING BEACH,219.0,False,stream,2.0
+2,VCCB_SYSID 85968,,85968,2024-12-03,2024,7.3,Fellows Creek,0.0,0.0,0.0,0.0,23.0,21018.0,SPRING BEACH,711.0,False,stream,2.0
+2,VCCB_SYSID 75237,,75237,2020-01-01,2020,39.2,San Juan River,0.0,0.0,0.0,0.0,0.0,17093.0,SPRING BEACH,884.0,False,stream,2.0
+2,VCCB_SYSID 79921,,79921,2022-06-17,2022,7.7,Koksilah River,0.0,0.0,0.0,0.0,10.0,30409.0,SAN JUAN RIVER,718.0,False,stream,2.0
+2,VCCB_SYSID 86101,,86101,2025-01-18,2025,34.7,Koksilah River,0.0,0.0,0.0,0.0,0.0,30019.0,SAN JUAN RIVER,380.0,False,stream,2.0
+2,VCCB_SYSID 76308,,76308,2021-02-07,2021,2.1,Koksilah River,0.0,0.0,0.0,0.0,55.0,25962.0,SAN JUAN RIVER,990.0,False,stream,2.0
+2,VCCB_SYSID 76564,,76564,2021-03-26,2021,30.4,Koksilah River,0.0,0.0,0.0,0.0,25.0,26981.0,SAN JUAN RIVER,618.0,False,stream,2.0
+2,VCCB_SYSID 76413,,76413,2021-03-11,2021,2.0,Koksilah River,0.0,0.0,0.0,0.0,30.0,25918.0,SAN JUAN RIVER,348.0,False,stream,2.0
+2,VCCB_SYSID 76414,,76414,2021-03-11,2021,8.5,Koksilah River,0.0,0.0,0.0,0.0,62.0,28138.0,SAN JUAN RIVER,340.0,False,stream,2.0
+2,VCCB_SYSID 76551,,76551,2021-03-26,2021,3.8,Koksilah River,0.0,0.0,0.0,0.0,8.0,28072.0,SAN JUAN RIVER,702.0,False,stream,2.0
+2,VCCB_SYSID 75235,,75235,2020-01-01,2020,4.0,Holt Creek,0.0,0.0,0.0,0.0,15.0,24994.0,SPRING BEACH,659.0,False,stream,2.0
+2,VCCB_SYSID 75085,,75085,2020-01-01,2020,6.3,Koksilah River,0.0,0.0,0.0,0.0,0.0,23807.0,SAN JUAN RIVER,263.0,False,stream,2.0
+2,VCCB_SYSID 76565,,76565,2021-03-26,2021,25.8,Koksilah River,0.0,0.0,0.0,0.0,0.0,23966.0,SAN JUAN RIVER,441.0,False,stream,2.0
+2,VCCB_SYSID 75103,,75103,2020-01-01,2020,31.3,Koksilah River,0.0,0.0,0.0,0.0,0.0,24521.0,SAN JUAN RIVER,1000.0,False,stream,2.0
+2,VCCB_SYSID 75222,,75222,2020-01-01,2020,6.2,Koksilah River,0.0,0.0,0.0,0.0,0.0,24919.0,SAN JUAN RIVER,1410.0,False,stream,2.0
+2,VCCB_SYSID 86016,,86016,2024-12-16,2024,31.9,Wild Deer Creek,0.0,0.0,0.0,0.0,0.0,29717.0,SAN JUAN RIVER,1121.0,False,stream,2.0
+2,VCCB_SYSID 79603,,79603,2022-04-14,2022,23.0,Koksilah River,0.0,0.0,0.0,0.0,0.0,26467.0,SAN JUAN RIVER,1776.0,False,stream,2.0
+2,VCCB_SYSID 82742,,82742,2023-09-15,2023,21.5,Wild Deer Creek,0.0,0.0,0.0,0.0,0.0,29426.0,SAN JUAN RIVER,209.0,False,stream,2.0
+2,VCCB_SYSID 81627,,81627,2023-05-03,2023,26.9,Wild Deer Creek,0.0,0.0,0.0,0.0,0.0,30058.0,SPRING BEACH,858.0,False,stream,2.0
+2,VCCB_SYSID 82098,,82098,2023-06-27,2023,3.7,Wild Deer Creek,0.0,0.0,0.0,0.0,41.0,30973.0,SPRING BEACH,1291.0,False,stream,2.0
+2,VCCB_SYSID 82233,,82233,2023-07-06,2023,7.6,Wild Deer Creek,0.0,0.0,0.0,0.0,0.0,30828.0,SPRING BEACH,1305.0,False,stream,2.0
+2,VCCB_SYSID 83258,,83258,2024-01-06,2024,10.3,Wild Deer Creek,0.0,0.0,0.0,0.0,0.0,28705.0,SPRING BEACH,319.0,False,stream,2.0
+2,VCCB_SYSID 83264,,83264,2024-01-06,2024,10.3,Wild Deer Creek,0.0,0.0,0.0,0.0,0.0,29233.0,SPRING BEACH,533.0,False,stream,2.0
+2,VCCB_SYSID 83265,,83265,2024-01-06,2024,3.2,Holt Creek,0.0,0.0,0.0,0.0,47.0,28285.0,SPRING BEACH,393.0,False,stream,2.0
+2,VCCB_SYSID 80976,,80976,2022-12-01,2022,53.1,Holt Creek,0.0,0.0,0.0,0.0,0.0,27758.0,SPRING BEACH,515.0,False,stream,2.0
+2,VCCB_SYSID 76555,,76555,2021-03-26,2021,4.0,Holt Creek,0.0,0.0,0.0,0.0,0.0,24976.0,SPRING BEACH,759.0,False,stream,2.0
+2,VCCB_SYSID 77548,,77548,2021-05-20,2021,81.6,Holt Creek,0.0,0.0,0.0,0.0,0.0,26618.0,SPRING BEACH,1088.0,False,stream,2.0
+2,VCCB_SYSID 75689,,75689,2020-01-01,2020,19.8,Gordon River,0.0,0.0,0.0,0.0,0.0,8952.0,BALD MOUNTAIN,1542.0,False,stream,2.0
 2,VCCB_SYSID 82158,,82158,2023-06-27,2023,42.1,Sutton Creek,0.0,0.0,0.0,0.0,0.0,8136.0,BALD MOUNTAIN,1001.0,False,stream,2.0
-2,VCCB_SYSID 75252,,75252,2020-01-01,2020,5.2,Lake Cowichan area,0.0,0.0,0.0,0.0,3.0,10645.0,BALD MOUNTAIN,385.0,False,stream,2.0
-2,VCCB_SYSID 75527,,75527,2020-01-01,2020,29.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9605.0,BALD MOUNTAIN,487.0,False,stream,2.0
+2,VCCB_SYSID 75252,,75252,2020-01-01,2020,5.2,Gordon River,0.0,0.0,0.0,0.0,3.0,10645.0,BALD MOUNTAIN,385.0,False,stream,2.0
+2,VCCB_SYSID 75527,,75527,2020-01-01,2020,29.2,Gordon River,0.0,0.0,0.0,0.0,0.0,9605.0,BALD MOUNTAIN,487.0,False,stream,2.0
 2,VCCB_SYSID 83606,,83606,2024-03-17,2024,13.5,Sutton Creek,0.0,0.0,0.0,0.0,0.0,8890.0,BALD MOUNTAIN,1130.0,False,stream,2.0
 2,VCCB_SYSID 82224,,82224,2023-07-05,2023,21.1,Sutton Creek,0.0,0.0,0.0,0.0,0.0,8473.0,BALD MOUNTAIN,517.0,False,stream,2.0
-2,VCCB_SYSID 75239,,75239,2020-01-01,2020,7.8,Lake Cowichan area,0.0,0.0,0.0,0.0,20.0,7478.0,Harris Creek Spruce,658.0,False,stream,2.0
-2,VCCB_SYSID 76097,,76097,2020-09-30,2020,2.4,Lake Cowichan area,0.0,0.0,0.0,0.0,40.0,7977.0,Harris Creek Spruce,612.0,False,stream,2.0
-2,VCCB_SYSID 77195,,77195,2021-04-18,2021,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7873.0,Harris Creek Spruce,893.0,False,stream,2.0
-2,VCCB_SYSID 79499,,79499,2022-04-05,2022,21.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12015.0,Harris Creek Spruce,1132.0,False,stream,2.0
-2,VCCB_SYSID 79498,,79498,2022-04-05,2022,0.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12908.0,Harris Creek Spruce,1125.0,False,stream,2.0
-2,OPENING_ID 1724657,1724657,514727,2018-11-06,2018,18.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,11856.0,Harris Creek Spruce,1435.0,False,stream,2.0
-2,OPENING_ID 1724687,1724687,514732,2018-11-25,2018,2.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13147.0,Harris Creek Spruce,779.0,False,stream,2.0
-2,OPENING_ID 1758101,1758101,538990,2021-12-15,2021,12.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13313.0,Harris Creek Spruce,820.0,False,stream,2.0
-2,OPENING_ID 1773439,1773439,550226,2022-10-31,2022,2.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12617.0,Harris Creek Spruce,1141.0,False,stream,2.0
-2,OPENING_ID 1724687,1724687,514733,2018-11-25,2018,16.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13406.0,Harris Creek Spruce,276.0,False,stream,2.0
-2,OPENING_ID 1750429,1750429,533920,2020-01-13,2020,2.0,Lake Cowichan area,0.0,0.0,0.0,0.0,36.0,13835.0,Harris Creek Spruce,504.0,False,stream,2.0
-2,OPENING_ID 1750429,1750429,533921,2020-01-13,2020,2.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13611.0,Harris Creek Spruce,443.0,False,stream,2.0
-2,OPENING_ID 1661664,1661664,465067,2015-11-09,2015,4.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14605.0,Harris Creek Spruce,341.0,False,stream,2.0
-2,OPENING_ID 1680580,1680580,479168,2016-10-02,2016,7.2,Lake Cowichan area,0.0,0.0,0.0,0.0,7.0,12854.0,Avatar Grove Hiking Trails,294.0,False,stream,2.0
-2,OPENING_ID 1688863,1688863,488065,2017-02-22,2017,4.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9027.0,Harris Creek Spruce,339.0,False,stream,2.0
-2,OPENING_ID 1688863,1688863,488066,2017-02-22,2017,0.4,Lake Cowichan area,0.0,0.0,0.0,0.0,34.0,9250.0,Harris Creek Spruce,689.0,False,stream,2.0
-2,OPENING_ID 1688863,1688863,488064,2017-02-22,2017,1.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8827.0,Harris Creek Spruce,287.0,False,stream,2.0
-2,OPENING_ID 1679320,1679320,478530,2016-09-12,2016,22.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7718.0,Harris Creek Spruce,384.0,False,stream,2.0
-2,OPENING_ID 1770573,1770573,547913,2022-06-24,2022,17.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7328.0,Harris Creek Spruce,1044.0,False,stream,2.0
-2,OPENING_ID 1680580,1680580,479169,2016-10-02,2016,1.3,Lake Cowichan area,0.0,0.0,0.0,0.0,4.0,13133.0,Avatar Grove Hiking Trails,537.0,False,stream,2.0
-2,OPENING_ID 1661543,1661543,464966,2015-12-20,2015,4.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14234.0,Harris Creek Spruce,1440.0,False,stream,2.0
-2,OPENING_ID 1803938,1803938,590186,2025-05-20,2025,25.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,15125.0,Harris Creek Spruce,1445.0,False,stream,2.0
-2,OPENING_ID 1770231,1770231,547691,2022-02-16,2022,11.8,Lake Cowichan area,0.0,0.0,0.0,0.0,3.0,15217.0,Harris Creek Spruce,1361.0,False,stream,2.0
-2,OPENING_ID 1770233,1770233,547693,2022-02-18,2022,32.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,15759.0,Harris Creek Spruce,1507.0,False,stream,2.0
-2,OPENING_ID 1661664,1661664,465068,2015-11-09,2015,9.4,Lake Cowichan area,0.0,0.0,0.0,0.0,2.0,14734.0,BALD MOUNTAIN,303.0,False,stream,2.0
-2,OPENING_ID 1661673,1661673,465078,2015-11-12,2015,11.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14947.0,BALD MOUNTAIN,288.0,False,stream,2.0
-2,OPENING_ID 1754843,1754843,536423,2021-04-06,2021,7.2,Lake Cowichan area,0.0,0.0,0.0,0.0,3.0,15207.0,BALD MOUNTAIN,406.0,False,stream,2.0
-2,OPENING_ID 1754843,1754843,536425,2021-04-06,2021,2.7,Lake Cowichan area,0.0,0.0,0.0,0.0,15.0,15232.0,BALD MOUNTAIN,241.0,False,stream,2.0
-2,OPENING_ID 1680584,1680584,479173,2016-10-03,2016,12.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10592.0,Avatar Grove Hiking Trails,607.0,False,stream,2.0
-2,OPENING_ID 1680586,1680586,479175,2016-10-03,2016,11.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10623.0,Avatar Grove Hiking Trails,656.0,False,stream,2.0
-2,OPENING_ID 1770234,1770234,547694,2021-11-03,2021,37.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,15494.0,BALD MOUNTAIN,220.0,False,stream,2.0
-2,VCCB_SYSID 75245,,75245,2020-01-01,2020,34.0,Robertson River,0.0,0.0,0.0,0.0,0.0,9683.0,Harris Creek Spruce,1357.0,False,stream,2.0
-2,VCCB_SYSID 82395,,82395,2023-07-22,2023,16.5,Robertson River,0.0,0.0,0.0,0.0,0.0,7060.0,BALD MOUNTAIN,1157.0,False,stream,2.0
-2,VCCB_SYSID 77145,,77145,2021-04-18,2021,2.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,6502.0,BALD MOUNTAIN,688.0,False,stream,2.0
-2,VCCB_SYSID 84912,,84912,2024-07-18,2024,1.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,5881.0,BALD MOUNTAIN,397.0,False,stream,2.0
-2,VCCB_SYSID 77144,,77144,2021-04-18,2021,7.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,6768.0,BALD MOUNTAIN,909.0,False,stream,2.0
-2,VCCB_SYSID 84981,,84981,2024-08-05,2024,6.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,5984.0,BALD MOUNTAIN,327.0,False,stream,2.0
-2,VCCB_SYSID 77046,,77046,2021-04-18,2021,5.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,6473.0,BALD MOUNTAIN,614.0,False,stream,2.0
-2,VCCB_SYSID 77180,,77180,2021-04-18,2021,5.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,6084.0,BALD MOUNTAIN,280.0,False,stream,2.0
-2,VCCB_SYSID 77179,,77179,2021-04-18,2021,2.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,6605.0,BALD MOUNTAIN,844.0,False,stream,2.0
-2,VCCB_SYSID 75687,,75687,2020-01-01,2020,5.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9128.0,BALD MOUNTAIN,2552.0,False,stream,2.0
+2,VCCB_SYSID 75239,,75239,2020-01-01,2020,7.8,Harris Creek,0.0,0.0,0.0,0.0,20.0,7478.0,Harris Creek Spruce,658.0,False,stream,2.0
+2,VCCB_SYSID 76097,,76097,2020-09-30,2020,2.4,Harris Creek,0.0,0.0,0.0,0.0,40.0,7977.0,Harris Creek Spruce,612.0,False,stream,2.0
+2,VCCB_SYSID 77195,,77195,2021-04-18,2021,2.2,Harris Creek,0.0,0.0,0.0,0.0,0.0,7873.0,Harris Creek Spruce,893.0,False,stream,2.0
+2,VCCB_SYSID 79499,,79499,2022-04-05,2022,21.2,Gordon River,0.0,0.0,0.0,0.0,0.0,12015.0,Harris Creek Spruce,1132.0,False,stream,2.0
+2,VCCB_SYSID 79498,,79498,2022-04-05,2022,0.1,Gordon River,0.0,0.0,0.0,0.0,0.0,12908.0,Harris Creek Spruce,1125.0,False,stream,2.0
+2,OPENING_ID 1724657,1724657,514727,2018-11-06,2018,18.4,Gordon River,0.0,0.0,0.0,0.0,0.0,11856.0,Harris Creek Spruce,1435.0,False,stream,2.0
+2,OPENING_ID 1724687,1724687,514732,2018-11-25,2018,2.4,Gordon River,0.0,0.0,0.0,0.0,0.0,13147.0,Harris Creek Spruce,779.0,False,stream,2.0
+2,OPENING_ID 1758101,1758101,538990,2021-12-15,2021,12.2,Gordon River,0.0,0.0,0.0,0.0,0.0,13313.0,Harris Creek Spruce,820.0,False,stream,2.0
+2,OPENING_ID 1773439,1773439,550226,2022-10-31,2022,2.9,Gordon River,0.0,0.0,0.0,0.0,0.0,12617.0,Harris Creek Spruce,1141.0,False,stream,2.0
+2,OPENING_ID 1724687,1724687,514733,2018-11-25,2018,16.5,Gordon River,0.0,0.0,0.0,0.0,0.0,13406.0,Harris Creek Spruce,276.0,False,stream,2.0
+2,OPENING_ID 1750429,1750429,533920,2020-01-13,2020,2.0,Gordon River,0.0,0.0,0.0,0.0,36.0,13835.0,Harris Creek Spruce,504.0,False,stream,2.0
+2,OPENING_ID 1750429,1750429,533921,2020-01-13,2020,2.1,Gordon River,0.0,0.0,0.0,0.0,0.0,13611.0,Harris Creek Spruce,443.0,False,stream,2.0
+2,OPENING_ID 1661664,1661664,465067,2015-11-09,2015,4.7,Gordon River,0.0,0.0,0.0,0.0,0.0,14605.0,Harris Creek Spruce,341.0,False,stream,2.0
+2,OPENING_ID 1680580,1680580,479168,2016-10-02,2016,7.2,Gordon River,0.0,0.0,0.0,0.0,7.0,12854.0,Avatar Grove Hiking Trails,294.0,False,stream,2.0
+2,OPENING_ID 1688863,1688863,488065,2017-02-22,2017,4.7,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,9027.0,Harris Creek Spruce,339.0,False,stream,2.0
+2,OPENING_ID 1688863,1688863,488066,2017-02-22,2017,0.4,Hemmingsen Creek,0.0,0.0,0.0,0.0,34.0,9250.0,Harris Creek Spruce,689.0,False,stream,2.0
+2,OPENING_ID 1688863,1688863,488064,2017-02-22,2017,1.2,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,8827.0,Harris Creek Spruce,287.0,False,stream,2.0
+2,OPENING_ID 1679320,1679320,478530,2016-09-12,2016,22.6,Hemmingsen Creek,0.0,0.0,0.0,0.0,0.0,7718.0,Harris Creek Spruce,384.0,False,stream,2.0
+2,OPENING_ID 1770573,1770573,547913,2022-06-24,2022,17.0,Harris Creek,0.0,0.0,0.0,0.0,0.0,7328.0,Harris Creek Spruce,1044.0,False,stream,2.0
+2,OPENING_ID 1680580,1680580,479169,2016-10-02,2016,1.3,Gordon River,0.0,0.0,0.0,0.0,4.0,13133.0,Avatar Grove Hiking Trails,537.0,False,stream,2.0
+2,OPENING_ID 1661543,1661543,464966,2015-12-20,2015,4.7,Gordon River,0.0,0.0,0.0,0.0,0.0,14234.0,Harris Creek Spruce,1440.0,False,stream,2.0
+2,OPENING_ID 1803938,1803938,590186,2025-05-20,2025,25.4,Gordon River,0.0,0.0,0.0,0.0,0.0,15125.0,Harris Creek Spruce,1445.0,False,stream,2.0
+2,OPENING_ID 1770231,1770231,547691,2022-02-16,2022,11.8,Gordon River,0.0,0.0,0.0,0.0,3.0,15217.0,Harris Creek Spruce,1361.0,False,stream,2.0
+2,OPENING_ID 1770233,1770233,547693,2022-02-18,2022,32.0,Gordon River,0.0,0.0,0.0,0.0,0.0,15759.0,Harris Creek Spruce,1507.0,False,stream,2.0
+2,OPENING_ID 1661664,1661664,465068,2015-11-09,2015,9.4,Gordon River,0.0,0.0,0.0,0.0,2.0,14734.0,BALD MOUNTAIN,303.0,False,stream,2.0
+2,OPENING_ID 1661673,1661673,465078,2015-11-12,2015,11.3,Hauk Creek,0.0,0.0,0.0,0.0,0.0,14947.0,BALD MOUNTAIN,288.0,False,stream,2.0
+2,OPENING_ID 1754843,1754843,536423,2021-04-06,2021,7.2,Hauk Creek,0.0,0.0,0.0,0.0,3.0,15207.0,BALD MOUNTAIN,406.0,False,stream,2.0
+2,OPENING_ID 1754843,1754843,536425,2021-04-06,2021,2.7,Hauk Creek,0.0,0.0,0.0,0.0,15.0,15232.0,BALD MOUNTAIN,241.0,False,stream,2.0
+2,OPENING_ID 1680584,1680584,479173,2016-10-03,2016,12.1,Gordon River,0.0,0.0,0.0,0.0,0.0,10592.0,Avatar Grove Hiking Trails,607.0,False,stream,2.0
+2,OPENING_ID 1680586,1680586,479175,2016-10-03,2016,11.6,Gordon River,0.0,0.0,0.0,0.0,0.0,10623.0,Avatar Grove Hiking Trails,656.0,False,stream,2.0
+2,OPENING_ID 1770234,1770234,547694,2021-11-03,2021,37.9,Hinne Creek,0.0,0.0,0.0,0.0,0.0,15494.0,BALD MOUNTAIN,220.0,False,stream,2.0
+2,VCCB_SYSID 75245,,75245,2020-01-01,2020,34.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,9683.0,Harris Creek Spruce,1357.0,False,stream,2.0
+2,VCCB_SYSID 82395,,82395,2023-07-22,2023,16.5,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,7060.0,BALD MOUNTAIN,1157.0,False,stream,2.0
+2,VCCB_SYSID 77145,,77145,2021-04-18,2021,2.6,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,6502.0,BALD MOUNTAIN,688.0,False,stream,2.0
+2,VCCB_SYSID 84912,,84912,2024-07-18,2024,1.4,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,5881.0,BALD MOUNTAIN,397.0,False,stream,2.0
+2,VCCB_SYSID 77144,,77144,2021-04-18,2021,7.3,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,6768.0,BALD MOUNTAIN,909.0,False,stream,2.0
+2,VCCB_SYSID 84981,,84981,2024-08-05,2024,6.6,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,5984.0,BALD MOUNTAIN,327.0,False,stream,2.0
+2,VCCB_SYSID 77046,,77046,2021-04-18,2021,5.2,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,6473.0,BALD MOUNTAIN,614.0,False,stream,2.0
+2,VCCB_SYSID 77180,,77180,2021-04-18,2021,5.5,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,6084.0,BALD MOUNTAIN,280.0,False,stream,2.0
+2,VCCB_SYSID 77179,,77179,2021-04-18,2021,2.5,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,6605.0,BALD MOUNTAIN,844.0,False,stream,2.0
+2,VCCB_SYSID 75687,,75687,2020-01-01,2020,5.4,Gordon River,0.0,0.0,0.0,0.0,0.0,9128.0,BALD MOUNTAIN,2552.0,False,stream,2.0
 2,VCCB_SYSID 83954,,83954,2024-04-10,2024,15.9,Sutton Creek,0.0,0.0,0.0,0.0,0.0,6441.0,BALD MOUNTAIN,1803.0,False,stream,2.0
 2,VCCB_SYSID 75247,,75247,2020-01-01,2020,8.3,Robertson River,0.0,0.0,0.0,0.0,15.0,9234.0,BALD MOUNTAIN,784.0,False,stream,2.0
 2,VCCB_SYSID 75248,,75248,2020-01-01,2020,4.1,Robertson River,0.0,0.0,0.0,0.0,0.0,8699.0,BALD MOUNTAIN,814.0,False,stream,2.0
 2,VCCB_SYSID 84144,,84144,2024-04-18,2024,5.6,Robertson River,0.0,0.0,0.0,0.0,25.0,7241.0,BALD MOUNTAIN,1133.0,False,stream,2.0
 2,VCCB_SYSID 83674,,83674,2024-03-17,2024,3.6,Robertson River,0.0,0.0,0.0,0.0,39.0,6885.0,BALD MOUNTAIN,1137.0,False,stream,2.0
-2,VCCB_SYSID 80893,,80893,2022-11-15,2022,31.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8908.0,BALD MOUNTAIN,487.0,False,stream,2.0
-2,VCCB_SYSID 83673,,83673,2024-03-17,2024,10.7,Robertson River,0.0,0.0,0.0,0.0,0.0,8040.0,BALD MOUNTAIN,554.0,False,stream,2.0
-2,VCCB_SYSID 85257,,85257,2024-09-24,2024,11.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9770.0,Harris Creek Spruce,1565.0,False,stream,2.0
-2,VCCB_SYSID 83603,,83603,2024-03-17,2024,2.9,Robertson River,0.0,0.0,0.0,0.0,17.0,7838.0,BALD MOUNTAIN,871.0,False,stream,2.0
-2,VCCB_SYSID 83655,,83655,2024-03-17,2024,3.2,Robertson River,0.0,0.0,0.0,0.0,0.0,7611.0,BALD MOUNTAIN,976.0,False,stream,2.0
-2,VCCB_SYSID 77143,,77143,2021-04-18,2021,33.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9387.0,BALD MOUNTAIN,1083.0,False,stream,2.0
-2,VCCB_SYSID 75246,,75246,2020-01-01,2020,6.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9506.0,BALD MOUNTAIN,1194.0,False,stream,2.0
-2,VCCB_SYSID 76903,,76903,2021-04-18,2021,3.6,Lake Cowichan area,0.0,0.0,0.0,0.0,8.0,9382.0,BALD MOUNTAIN,1114.0,False,stream,2.0
-2,VCCB_SYSID 75688,,75688,2020-01-01,2020,4.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,6794.0,BALD MOUNTAIN,786.0,False,stream,2.0
-2,VCCB_SYSID 86300,,86300,2025-03-05,2025,1.4,Lake Cowichan area,0.0,0.0,0.0,0.0,64.0,9061.0,BALD MOUNTAIN,1565.0,False,stream,2.0
-2,VCCB_SYSID 82321,,82321,2023-07-13,2023,3.7,Robertson River,0.0,0.0,0.0,0.0,13.0,6708.0,BALD MOUNTAIN,1097.0,False,stream,2.0
-2,VCCB_SYSID 77593,,77593,2021-05-24,2021,4.0,Robertson River,0.0,0.0,0.0,0.0,0.0,6879.0,BALD MOUNTAIN,1156.0,False,stream,2.0
-2,VCCB_SYSID 82315,,82315,2023-07-13,2023,4.4,Robertson River,0.0,0.0,0.0,0.0,0.0,7016.0,BALD MOUNTAIN,1323.0,False,stream,2.0
-2,VCCB_SYSID 81819,,81819,2023-05-13,2023,4.8,Robertson River,0.0,0.0,0.0,0.0,0.0,7258.0,BALD MOUNTAIN,1556.0,False,stream,2.0
-2,VCCB_SYSID 81997,,81997,2023-05-29,2023,2.3,Robertson River,0.0,0.0,0.0,0.0,0.0,7649.0,BALD MOUNTAIN,1810.0,False,stream,2.0
-2,VCCB_SYSID 82223,,82223,2023-07-05,2023,6.4,Robertson River,0.0,0.0,0.0,0.0,20.0,7544.0,BALD MOUNTAIN,1788.0,False,stream,2.0
-2,VCCB_SYSID 83033,,83033,2023-10-31,2023,6.0,Robertson River,0.0,0.0,0.0,0.0,0.0,6887.0,BALD MOUNTAIN,1139.0,False,stream,2.0
+2,VCCB_SYSID 80893,,80893,2022-11-15,2022,31.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,8908.0,BALD MOUNTAIN,487.0,False,stream,2.0
+2,VCCB_SYSID 83673,,83673,2024-03-17,2024,10.7,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,8040.0,BALD MOUNTAIN,554.0,False,stream,2.0
+2,VCCB_SYSID 85257,,85257,2024-09-24,2024,11.4,Harris Creek,0.0,0.0,0.0,0.0,0.0,9770.0,Harris Creek Spruce,1565.0,False,stream,2.0
+2,VCCB_SYSID 83603,,83603,2024-03-17,2024,2.9,Nineteen Creek,0.0,0.0,0.0,0.0,17.0,7838.0,BALD MOUNTAIN,871.0,False,stream,2.0
+2,VCCB_SYSID 83655,,83655,2024-03-17,2024,3.2,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,7611.0,BALD MOUNTAIN,976.0,False,stream,2.0
+2,VCCB_SYSID 77143,,77143,2021-04-18,2021,33.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,9387.0,BALD MOUNTAIN,1083.0,False,stream,2.0
+2,VCCB_SYSID 75246,,75246,2020-01-01,2020,6.4,Lens Creek,0.0,0.0,0.0,0.0,0.0,9506.0,BALD MOUNTAIN,1194.0,False,stream,2.0
+2,VCCB_SYSID 76903,,76903,2021-04-18,2021,3.6,Lens Creek,0.0,0.0,0.0,0.0,8.0,9382.0,BALD MOUNTAIN,1114.0,False,stream,2.0
+2,VCCB_SYSID 75688,,75688,2020-01-01,2020,4.0,Ashburnham Creek,0.0,0.0,0.0,0.0,0.0,6794.0,BALD MOUNTAIN,786.0,False,stream,2.0
+2,VCCB_SYSID 86300,,86300,2025-03-05,2025,1.4,Lens Creek,0.0,0.0,0.0,0.0,64.0,9061.0,BALD MOUNTAIN,1565.0,False,stream,2.0
+2,VCCB_SYSID 82321,,82321,2023-07-13,2023,3.7,Nineteen Creek,0.0,0.0,0.0,0.0,13.0,6708.0,BALD MOUNTAIN,1097.0,False,stream,2.0
+2,VCCB_SYSID 77593,,77593,2021-05-24,2021,4.0,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,6879.0,BALD MOUNTAIN,1156.0,False,stream,2.0
+2,VCCB_SYSID 82315,,82315,2023-07-13,2023,4.4,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,7016.0,BALD MOUNTAIN,1323.0,False,stream,2.0
+2,VCCB_SYSID 81819,,81819,2023-05-13,2023,4.8,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,7258.0,BALD MOUNTAIN,1556.0,False,stream,2.0
+2,VCCB_SYSID 81997,,81997,2023-05-29,2023,2.3,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,7649.0,BALD MOUNTAIN,1810.0,False,stream,2.0
+2,VCCB_SYSID 82223,,82223,2023-07-05,2023,6.4,Nineteen Creek,0.0,0.0,0.0,0.0,20.0,7544.0,BALD MOUNTAIN,1788.0,False,stream,2.0
+2,VCCB_SYSID 83033,,83033,2023-10-31,2023,6.0,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,6887.0,BALD MOUNTAIN,1139.0,False,stream,2.0
 2,VCCB_SYSID 84432,,84432,2024-06-06,2024,2.6,Robertson River,0.0,0.0,0.0,0.0,0.0,6988.0,BALD MOUNTAIN,1192.0,False,stream,2.0
 2,VCCB_SYSID 83908,,83908,2024-04-08,2024,2.7,Robertson River,0.0,0.0,0.0,0.0,0.0,7140.0,BALD MOUNTAIN,1356.0,False,stream,2.0
 2,VCCB_SYSID 84854,,84854,2024-07-13,2024,2.5,Robertson River,0.0,0.0,0.0,0.0,0.0,7216.0,BALD MOUNTAIN,1426.0,False,stream,2.0
 2,VCCB_SYSID 75250,,75250,2020-01-01,2020,4.3,Robertson River,0.0,0.0,0.0,0.0,0.0,8083.0,BALD MOUNTAIN,1253.0,False,stream,2.0
 2,VCCB_SYSID 76440,,76440,2021-03-11,2021,2.9,Robertson River,0.0,0.0,0.0,0.0,16.0,9192.0,BALD MOUNTAIN,335.0,False,stream,2.0
-2,VCCB_SYSID 76596,,76596,2021-04-01,2021,17.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,6411.0,Harris Creek Spruce,399.0,False,stream,2.0
-2,VCCB_SYSID 77616,,77616,2021-05-29,2021,8.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,6200.0,Harris Creek Spruce,349.0,False,stream,2.0
-2,VCCB_SYSID 76898,,76898,2021-04-18,2021,7.2,Lake Cowichan area,0.0,0.0,0.0,0.0,75.0,5917.0,Harris Creek Spruce,1046.0,False,stream,2.0
-2,VCCB_SYSID 77081,,77081,2021-04-18,2021,8.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,6335.0,Harris Creek Spruce,1239.0,False,stream,2.0
-2,VCCB_SYSID 76899,,76899,2021-04-18,2021,6.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,6869.0,Harris Creek Spruce,965.0,False,stream,2.0
-2,VCCB_SYSID 77082,,77082,2021-04-18,2021,4.6,Lake Cowichan area,0.0,0.0,0.0,0.0,10.0,6874.0,Harris Creek Spruce,767.0,False,stream,2.0
-2,VCCB_SYSID 76900,,76900,2021-04-18,2021,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,82.0,7463.0,Harris Creek Spruce,772.0,False,stream,2.0
-2,VCCB_SYSID 76901,,76901,2021-04-18,2021,2.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7717.0,Harris Creek Spruce,367.0,False,stream,2.0
-2,VCCB_SYSID 83267,,83267,2024-01-06,2024,3.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8908.0,Harris Creek Spruce,501.0,False,stream,2.0
-2,VCCB_SYSID 83268,,83268,2024-01-06,2024,4.5,Lake Cowichan area,0.0,0.0,0.0,0.0,6.0,8952.0,Harris Creek Spruce,462.0,False,stream,2.0
-2,VCCB_SYSID 83500,,83500,2024-02-23,2024,3.3,Lake Cowichan area,0.0,0.0,0.0,0.0,17.0,9338.0,Harris Creek Spruce,876.0,False,stream,2.0
-2,VCCB_SYSID 78488,,78488,2021-10-11,2021,80.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8831.0,Harris Creek Spruce,593.0,False,stream,2.0
-2,VCCB_SYSID 80989,,80989,2022-12-01,2022,49.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9180.0,BALD MOUNTAIN,1394.0,False,stream,2.0
-2,VCCB_SYSID 81175,,81175,2023-03-16,2023,11.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10391.0,Harris Creek Spruce,2251.0,False,stream,2.0
+2,VCCB_SYSID 76596,,76596,2021-04-01,2021,17.3,Harris Creek,0.0,0.0,0.0,0.0,0.0,6411.0,Harris Creek Spruce,399.0,False,stream,2.0
+2,VCCB_SYSID 77616,,77616,2021-05-29,2021,8.9,Harris Creek,0.0,0.0,0.0,0.0,0.0,6200.0,Harris Creek Spruce,349.0,False,stream,2.0
+2,VCCB_SYSID 76898,,76898,2021-04-18,2021,7.2,Harris Creek,0.0,0.0,0.0,0.0,75.0,5917.0,Harris Creek Spruce,1046.0,False,stream,2.0
+2,VCCB_SYSID 77081,,77081,2021-04-18,2021,8.4,Harris Creek,0.0,0.0,0.0,0.0,0.0,6335.0,Harris Creek Spruce,1239.0,False,stream,2.0
+2,VCCB_SYSID 76899,,76899,2021-04-18,2021,6.0,Lens Creek,0.0,0.0,0.0,0.0,0.0,6869.0,Harris Creek Spruce,965.0,False,stream,2.0
+2,VCCB_SYSID 77082,,77082,2021-04-18,2021,4.6,Lens Creek,0.0,0.0,0.0,0.0,10.0,6874.0,Harris Creek Spruce,767.0,False,stream,2.0
+2,VCCB_SYSID 76900,,76900,2021-04-18,2021,2.2,Lens Creek,0.0,0.0,0.0,0.0,82.0,7463.0,Harris Creek Spruce,772.0,False,stream,2.0
+2,VCCB_SYSID 76901,,76901,2021-04-18,2021,2.1,Lens Creek,0.0,0.0,0.0,0.0,0.0,7717.0,Harris Creek Spruce,367.0,False,stream,2.0
+2,VCCB_SYSID 83267,,83267,2024-01-06,2024,3.4,Lens Creek,0.0,0.0,0.0,0.0,0.0,8908.0,Harris Creek Spruce,501.0,False,stream,2.0
+2,VCCB_SYSID 83268,,83268,2024-01-06,2024,4.5,Lens Creek,0.0,0.0,0.0,0.0,6.0,8952.0,Harris Creek Spruce,462.0,False,stream,2.0
+2,VCCB_SYSID 83500,,83500,2024-02-23,2024,3.3,Lens Creek,0.0,0.0,0.0,0.0,17.0,9338.0,Harris Creek Spruce,876.0,False,stream,2.0
+2,VCCB_SYSID 78488,,78488,2021-10-11,2021,80.9,Harris Creek,0.0,0.0,0.0,0.0,0.0,8831.0,Harris Creek Spruce,593.0,False,stream,2.0
+2,VCCB_SYSID 80989,,80989,2022-12-01,2022,49.2,Gordon River,0.0,0.0,0.0,0.0,0.0,9180.0,BALD MOUNTAIN,1394.0,False,stream,2.0
+2,VCCB_SYSID 81175,,81175,2023-03-16,2023,11.6,Lens Creek,0.0,0.0,0.0,0.0,0.0,10391.0,Harris Creek Spruce,2251.0,False,stream,2.0
 2,VCCB_SYSID 77366,,77366,2021-05-04,2021,36.2,Robertson River,0.0,0.0,0.0,0.0,0.0,11727.0,SPRING BEACH,1357.0,False,stream,2.0
 2,VCCB_SYSID 79710,,79710,2022-05-07,2022,72.7,Robertson River,0.0,0.0,0.0,0.0,0.0,11582.0,SPRING BEACH,783.0,False,stream,2.0
-2,VCCB_SYSID 75253,,75253,2020-01-01,2020,10.2,Robertson River,0.0,0.0,0.0,0.0,0.0,7207.0,SPRING BEACH,1086.0,False,stream,2.0
-2,VCCB_SYSID 77029,,77029,2021-04-18,2021,3.3,Robertson River,0.0,0.0,0.0,0.0,0.0,7730.0,SPRING BEACH,1186.0,False,stream,2.0
-2,VCCB_SYSID 77139,,77139,2021-04-18,2021,77.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,7663.0,SPRING BEACH,496.0,False,stream,2.0
+2,VCCB_SYSID 75253,,75253,2020-01-01,2020,10.2,March Creek,0.0,0.0,0.0,0.0,0.0,7207.0,SPRING BEACH,1086.0,False,stream,2.0
+2,VCCB_SYSID 77029,,77029,2021-04-18,2021,3.3,March Creek,0.0,0.0,0.0,0.0,0.0,7730.0,SPRING BEACH,1186.0,False,stream,2.0
+2,VCCB_SYSID 77139,,77139,2021-04-18,2021,77.6,Fairservice Creek,0.0,0.0,0.0,0.0,0.0,7663.0,SPRING BEACH,496.0,False,stream,2.0
 2,VCCB_SYSID 83929,,83929,2024-04-10,2024,4.3,East Robertson River,0.0,0.0,0.0,0.0,2.0,8577.0,SPRING BEACH,2009.0,False,stream,2.0
 2,VCCB_SYSID 83287,,83287,2024-01-23,2024,5.2,East Robertson River,0.0,0.0,0.0,0.0,0.0,8548.0,SPRING BEACH,1704.0,False,stream,2.0
 2,VCCB_SYSID 80954,,80954,2022-11-24,2022,14.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,9628.0,SPRING BEACH,1412.0,False,stream,2.0
 2,VCCB_SYSID 75251,,75251,2020-01-01,2020,16.5,Robertson River,0.0,0.0,0.0,0.0,0.0,7415.0,SPRING BEACH,617.0,False,stream,2.0
-2,VCCB_SYSID 76554,,76554,2021-03-26,2021,15.4,Robertson River,0.0,0.0,0.0,0.0,0.0,7181.0,SPRING BEACH,415.0,False,stream,2.0
-2,VCCB_SYSID 82153,,82153,2023-06-27,2023,5.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14778.0,SPRING BEACH,971.0,False,stream,2.0
-2,VCCB_SYSID 82702,,82702,2023-09-08,2023,36.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14329.0,SPRING BEACH,1053.0,False,stream,2.0
-2,VCCB_SYSID 82152,,82152,2023-06-27,2023,0.1,Lake Cowichan area,0.0,0.0,0.0,0.0,89.0,15028.0,SPRING BEACH,1462.0,False,stream,2.0
-2,VCCB_SYSID 82972,,82972,2023-10-24,2023,5.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14234.0,SPRING BEACH,894.0,False,stream,2.0
-2,VCCB_SYSID 82154,,82154,2023-06-27,2023,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,50.0,14450.0,SPRING BEACH,1180.0,False,stream,2.0
-2,VCCB_SYSID 82155,,82155,2023-06-27,2023,0.3,Lake Cowichan area,0.0,0.0,0.0,0.0,2.0,14356.0,SPRING BEACH,1192.0,False,stream,2.0
-2,VCCB_SYSID 82156,,82156,2023-06-27,2023,0.1,Lake Cowichan area,0.0,0.0,0.0,0.0,98.0,14425.0,SPRING BEACH,1354.0,False,stream,2.0
-2,VCCB_SYSID 82157,,82157,2023-06-27,2023,0.1,Lake Cowichan area,0.0,0.0,0.0,0.0,57.0,14385.0,SPRING BEACH,1338.0,False,stream,2.0
+2,VCCB_SYSID 76554,,76554,2021-03-26,2021,15.4,March Creek,0.0,0.0,0.0,0.0,0.0,7181.0,SPRING BEACH,415.0,False,stream,2.0
+2,VCCB_SYSID 82153,,82153,2023-06-27,2023,5.0,Fleet River,0.0,0.0,0.0,0.0,0.0,14778.0,SPRING BEACH,971.0,False,stream,2.0
+2,VCCB_SYSID 82702,,82702,2023-09-08,2023,36.4,Fleet River,0.0,0.0,0.0,0.0,0.0,14329.0,SPRING BEACH,1053.0,False,stream,2.0
+2,VCCB_SYSID 82152,,82152,2023-06-27,2023,0.1,Fleet River,0.0,0.0,0.0,0.0,89.0,15028.0,SPRING BEACH,1462.0,False,stream,2.0
+2,VCCB_SYSID 82972,,82972,2023-10-24,2023,5.9,Fleet River,0.0,0.0,0.0,0.0,0.0,14234.0,SPRING BEACH,894.0,False,stream,2.0
+2,VCCB_SYSID 82154,,82154,2023-06-27,2023,2.2,Fleet River,0.0,0.0,0.0,0.0,50.0,14450.0,SPRING BEACH,1180.0,False,stream,2.0
+2,VCCB_SYSID 82155,,82155,2023-06-27,2023,0.3,Fleet River,0.0,0.0,0.0,0.0,2.0,14356.0,SPRING BEACH,1192.0,False,stream,2.0
+2,VCCB_SYSID 82156,,82156,2023-06-27,2023,0.1,Fleet River,0.0,0.0,0.0,0.0,98.0,14425.0,SPRING BEACH,1354.0,False,stream,2.0
+2,VCCB_SYSID 82157,,82157,2023-06-27,2023,0.1,Fleet River,0.0,0.0,0.0,0.0,57.0,14385.0,SPRING BEACH,1338.0,False,stream,2.0
 2,VCCB_SYSID 85874,,85874,2024-11-18,2024,12.2,Robertson River,0.0,0.0,0.0,0.0,7.0,13264.0,Harris Creek Spruce,363.0,False,stream,2.0
-2,VCCB_SYSID 77111,,77111,2021-04-18,2021,52.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,16106.0,SPRING BEACH,754.0,False,stream,2.0
-2,VCCB_SYSID 75901,,75901,2020-01-01,2020,19.4,Robertson River,0.0,0.0,0.0,0.0,24.0,15076.0,SPRING BEACH,786.0,False,stream,2.0
-2,VCCB_SYSID 82443,,82443,2023-07-29,2023,15.7,Lake Cowichan area,0.0,0.0,0.0,0.0,23.0,14900.0,SPRING BEACH,1237.0,False,stream,2.0
+2,VCCB_SYSID 77111,,77111,2021-04-18,2021,52.2,Fleet River,0.0,0.0,0.0,0.0,0.0,16106.0,SPRING BEACH,754.0,False,stream,2.0
+2,VCCB_SYSID 75901,,75901,2020-01-01,2020,19.4,Fleet River,0.0,0.0,0.0,0.0,24.0,15076.0,SPRING BEACH,786.0,False,stream,2.0
+2,VCCB_SYSID 82443,,82443,2023-07-29,2023,15.7,Fleet River,0.0,0.0,0.0,0.0,23.0,14900.0,SPRING BEACH,1237.0,False,stream,2.0
 2,OPENING_ID 1742825,1742825,527286,2018-09-18,2018,16.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,19265.0,SPRING BEACH,814.0,False,stream,2.0
 2,OPENING_ID 1800684,1800684,586844,2024-01-24,2024,0.5,Cowichan River,0.0,0.0,0.0,0.0,61.0,19366.0,SPRING BEACH,1202.0,False,stream,2.0
 2,VCCB_SYSID 75575,,75575,2020-01-01,2020,35.0,Bear Creek,0.0,0.0,0.0,0.0,1.0,12833.0,SPRING BEACH,1415.0,False,stream,2.0
@@ -416,13 +416,13 @@ tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,bloc
 2,OPENING_ID 1800684,1800684,586847,2024-01-24,2024,1.9,Cowichan River,0.0,0.0,0.0,0.0,34.0,17366.0,SPRING BEACH,746.0,False,stream,2.0
 2,OPENING_ID 1716059,1716059,508624,2018-06-30,2018,11.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,17166.0,SPRING BEACH,210.0,False,stream,2.0
 2,VCCB_SYSID 76550,,76550,2021-03-26,2021,3.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,18667.0,SPRING BEACH,771.0,False,stream,2.0
-2,VCCB_SYSID 83173,,83173,2023-11-26,2023,2.2,Cowichan River,0.0,0.0,0.0,0.0,18.0,21336.0,SPRING BEACH,496.0,False,stream,2.0
-2,VCCB_SYSID 80974,,80974,2022-12-01,2022,58.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,20113.0,SPRING BEACH,684.0,False,stream,2.0
-2,VCCB_SYSID 83278,,83278,2024-01-13,2024,6.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,18936.0,SPRING BEACH,833.0,False,stream,2.0
-2,VCCB_SYSID 81594,,81594,2023-05-03,2023,9.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,18405.0,SPRING BEACH,586.0,False,stream,2.0
+2,VCCB_SYSID 83173,,83173,2023-11-26,2023,2.2,Koksilah River,0.0,0.0,0.0,0.0,18.0,21336.0,SPRING BEACH,496.0,False,stream,2.0
+2,VCCB_SYSID 80974,,80974,2022-12-01,2022,58.1,Koksilah River,0.0,0.0,0.0,0.0,0.0,20113.0,SPRING BEACH,684.0,False,stream,2.0
+2,VCCB_SYSID 83278,,83278,2024-01-13,2024,6.0,Koksilah River,0.0,0.0,0.0,0.0,0.0,18936.0,SPRING BEACH,833.0,False,stream,2.0
+2,VCCB_SYSID 81594,,81594,2023-05-03,2023,9.0,Koksilah River,0.0,0.0,0.0,0.0,0.0,18405.0,SPRING BEACH,586.0,False,stream,2.0
 2,VCCB_SYSID 75243,,75243,2020-01-01,2020,3.4,Bear Creek,0.0,0.0,0.0,0.0,19.0,15454.0,SPRING BEACH,919.0,False,stream,2.0
 2,VCCB_SYSID 77083,,77083,2021-04-18,2021,11.7,Bear Creek,0.0,0.0,0.0,0.0,0.0,15296.0,SPRING BEACH,655.0,False,stream,2.0
-2,VCCB_SYSID 80953,,80953,2022-11-24,2022,59.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,17316.0,SPRING BEACH,283.0,False,stream,2.0
+2,VCCB_SYSID 80953,,80953,2022-11-24,2022,59.9,Koksilah River,0.0,0.0,0.0,0.0,0.0,17316.0,SPRING BEACH,283.0,False,stream,2.0
 2,VCCB_SYSID 76557,,76557,2021-03-26,2021,2.1,Bear Creek,0.0,0.0,0.0,0.0,0.0,15708.0,SPRING BEACH,1543.0,False,stream,2.0
 2,VCCB_SYSID 83934,,83934,2024-04-10,2024,4.9,Bear Creek,0.0,0.0,0.0,0.0,0.0,16691.0,SPRING BEACH,1025.0,False,stream,2.0
 2,VCCB_SYSID 83935,,83935,2024-04-10,2024,32.0,Bear Creek,0.0,0.0,0.0,0.0,0.0,16589.0,SPRING BEACH,867.0,False,stream,2.0
@@ -437,26 +437,26 @@ tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,bloc
 2,OPENING_ID 1716058,1716058,508620,2018-06-30,2018,0.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,15557.0,SPRING BEACH,758.0,False,stream,2.0
 2,OPENING_ID 1716058,1716058,508623,2018-06-30,2018,1.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,15681.0,SPRING BEACH,538.0,False,stream,2.0
 2,OPENING_ID 1716058,1716058,508618,2018-06-30,2018,1.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,15997.0,SPRING BEACH,1203.0,False,stream,2.0
-2,VCCB_SYSID 75108,,75108,2020-01-01,2020,3.6,Cowichan River,0.0,0.0,0.0,0.0,6.0,23227.0,SPRING BEACH,1315.0,False,stream,2.0
-2,VCCB_SYSID 79919,,79919,2022-06-17,2022,3.4,Cowichan River,0.0,0.0,0.0,0.0,57.0,19555.0,SPRING BEACH,1741.0,False,stream,2.0
-2,VCCB_SYSID 75690,,75690,2020-01-01,2020,20.3,Cowichan River,0.0,0.0,0.0,0.0,69.0,26526.0,SPRING BEACH,616.0,False,stream,2.0
+2,VCCB_SYSID 75108,,75108,2020-01-01,2020,3.6,Koksilah River,0.0,0.0,0.0,0.0,6.0,23227.0,SPRING BEACH,1315.0,False,stream,2.0
+2,VCCB_SYSID 79919,,79919,2022-06-17,2022,3.4,Currie Creek,0.0,0.0,0.0,0.0,57.0,19555.0,SPRING BEACH,1741.0,False,stream,2.0
+2,VCCB_SYSID 75690,,75690,2020-01-01,2020,20.3,Inwood Creek,0.0,0.0,0.0,0.0,69.0,26526.0,SPRING BEACH,616.0,False,stream,2.0
 2,OPENING_ID 1800709,1800709,586877,2021-10-04,2021,0.5,Cowichan River,0.0,0.0,0.0,0.0,17.0,20726.0,SPRING BEACH,242.0,False,stream,2.0
 2,OPENING_ID 1800709,1800709,586878,2021-10-04,2021,2.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,20024.0,SPRING BEACH,734.0,False,stream,2.0
 2,OPENING_ID 1800716,1800716,586884,2024-04-18,2024,1.9,Cowichan River,0.0,0.0,0.0,0.0,30.0,21333.0,SPRING BEACH,433.0,False,stream,2.0
 2,OPENING_ID 1800716,1800716,586885,2024-04-18,2024,4.2,Cowichan River,0.0,0.0,0.0,0.0,25.0,21105.0,SPRING BEACH,254.0,False,stream,2.0
 2,OPENING_ID 1800716,1800716,586887,2024-06-05,2024,3.2,Cowichan River,0.0,0.0,0.0,0.0,66.0,21251.0,SPRING BEACH,247.0,False,stream,2.0
 2,OPENING_ID 1800716,1800716,586886,2024-06-05,2024,1.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,21074.0,SPRING BEACH,254.0,False,stream,2.0
-2,VCCB_SYSID 75238,,75238,2020-01-01,2020,4.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,23516.0,SPRING BEACH,967.0,False,stream,2.0
-2,VCCB_SYSID 83349,,83349,2024-02-06,2024,2.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,23707.0,SPRING BEACH,759.0,False,stream,2.0
-2,VCCB_SYSID 86063,,86063,2025-01-16,2025,14.5,Cowichan River,0.0,0.0,0.0,0.0,78.0,24794.0,SPRING BEACH,1266.0,False,stream,2.0
-2,VCCB_SYSID 75110,,75110,2020-01-01,2020,16.5,Cowichan River,0.0,0.0,0.0,0.0,23.0,22385.0,SPRING BEACH,1340.0,False,stream,2.0
-2,VCCB_SYSID 75109,,75109,2020-01-01,2020,4.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,23053.0,SPRING BEACH,1552.0,False,stream,2.0
-2,VCCB_SYSID 74929,,74929,2020-01-01,2020,5.4,Cowichan River,0.0,0.0,0.0,0.0,97.0,21988.0,SPRING BEACH,1660.0,False,stream,2.0
-2,VCCB_SYSID 75244,,75244,2020-01-01,2020,8.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,21559.0,SPRING BEACH,2114.0,False,stream,2.0
-2,VCCB_SYSID 81056,,81056,2022-12-26,2022,26.6,Cowichan River,0.0,0.0,0.0,0.0,89.0,26748.0,SPRING BEACH,236.0,False,stream,2.0
-2,VCCB_SYSID 83348,,83348,2024-02-06,2024,6.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,28393.0,SPRING BEACH,961.0,False,stream,2.0
-2,VCCB_SYSID 83058,,83058,2023-11-11,2023,6.5,Cowichan River,0.0,0.0,0.0,0.0,41.0,29506.0,SPRING BEACH,962.0,False,stream,2.0
-2,VCCB_SYSID 78481,,78481,2021-10-11,2021,29.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,29035.0,SPRING BEACH,1208.0,False,stream,2.0
+2,VCCB_SYSID 75238,,75238,2020-01-01,2020,4.2,Koksilah River,0.0,0.0,0.0,0.0,0.0,23516.0,SPRING BEACH,967.0,False,stream,2.0
+2,VCCB_SYSID 83349,,83349,2024-02-06,2024,2.3,Holt Creek,0.0,0.0,0.0,0.0,0.0,23707.0,SPRING BEACH,759.0,False,stream,2.0
+2,VCCB_SYSID 86063,,86063,2025-01-16,2025,14.5,Holt Creek,0.0,0.0,0.0,0.0,78.0,24794.0,SPRING BEACH,1266.0,False,stream,2.0
+2,VCCB_SYSID 75110,,75110,2020-01-01,2020,16.5,Koksilah River,0.0,0.0,0.0,0.0,23.0,22385.0,SPRING BEACH,1340.0,False,stream,2.0
+2,VCCB_SYSID 75109,,75109,2020-01-01,2020,4.6,Koksilah River,0.0,0.0,0.0,0.0,0.0,23053.0,SPRING BEACH,1552.0,False,stream,2.0
+2,VCCB_SYSID 74929,,74929,2020-01-01,2020,5.4,Koksilah River,0.0,0.0,0.0,0.0,97.0,21988.0,SPRING BEACH,1660.0,False,stream,2.0
+2,VCCB_SYSID 75244,,75244,2020-01-01,2020,8.5,Koksilah River,0.0,0.0,0.0,0.0,0.0,21559.0,SPRING BEACH,2114.0,False,stream,2.0
+2,VCCB_SYSID 81056,,81056,2022-12-26,2022,26.6,Glenora Creek,0.0,0.0,0.0,0.0,89.0,26748.0,SPRING BEACH,236.0,False,stream,2.0
+2,VCCB_SYSID 83348,,83348,2024-02-06,2024,6.2,Glenora Creek,0.0,0.0,0.0,0.0,0.0,28393.0,SPRING BEACH,961.0,False,stream,2.0
+2,VCCB_SYSID 83058,,83058,2023-11-11,2023,6.5,Kelvin Creek,0.0,0.0,0.0,0.0,41.0,29506.0,SPRING BEACH,962.0,False,stream,2.0
+2,VCCB_SYSID 78481,,78481,2021-10-11,2021,29.6,Kelvin Creek,0.0,0.0,0.0,0.0,0.0,29035.0,SPRING BEACH,1208.0,False,stream,2.0
 2,VCCB_SYSID 82850,,82850,2023-10-03,2023,9.8,Sutton Creek,0.0,0.0,0.0,0.0,0.0,7289.0,BALD MOUNTAIN,303.0,False,stream,2.0
 2,VCCB_SYSID 81923,,81923,2023-05-20,2023,5.9,Sutton Creek,0.0,0.0,0.0,0.0,0.0,7412.0,BALD MOUNTAIN,589.0,False,stream,2.0
 2,VCCB_SYSID 82894,,82894,2023-10-08,2023,2.5,Sutton Creek,0.0,0.0,0.0,0.0,0.0,7604.0,BALD MOUNTAIN,720.0,False,stream,2.0
@@ -464,16 +464,16 @@ tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,bloc
 2,VCCB_SYSID 81925,,81925,2023-05-20,2023,1.2,Sutton Creek,0.0,0.0,0.0,0.0,39.0,7289.0,BALD MOUNTAIN,826.0,False,stream,2.0
 2,VCCB_SYSID 82818,,82818,2023-10-01,2023,5.4,Sutton Creek,0.0,0.0,0.0,0.0,0.0,7221.0,BALD MOUNTAIN,893.0,False,stream,2.0
 2,VCCB_SYSID 82023,,82023,2023-06-03,2023,2.1,Sutton Creek,0.0,0.0,0.0,0.0,0.0,7043.0,BALD MOUNTAIN,890.0,False,stream,2.0
-2,VCCB_SYSID 77196,,77196,2021-04-18,2021,3.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10390.0,BALD MOUNTAIN,322.0,False,stream,2.0
+2,VCCB_SYSID 77196,,77196,2021-04-18,2021,3.3,Gordon River,0.0,0.0,0.0,0.0,0.0,10390.0,BALD MOUNTAIN,322.0,False,stream,2.0
 2,VCCB_SYSID 77528,,77528,2021-05-20,2021,8.7,Sutton Creek,0.0,0.0,0.0,0.0,0.0,9038.0,BALD MOUNTAIN,315.0,False,stream,2.0
-2,VCCB_SYSID 80003,,80003,2022-06-24,2022,24.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13275.0,BALD MOUNTAIN,669.0,False,stream,2.0
-2,VCCB_SYSID 83951,,83951,2024-04-10,2024,4.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12578.0,BALD MOUNTAIN,625.0,False,stream,2.0
-2,VCCB_SYSID 77753,,77753,2021-06-21,2021,3.7,Lake Cowichan area,0.0,0.0,0.0,0.0,38.0,11547.0,BALD MOUNTAIN,242.0,False,stream,2.0
-2,VCCB_SYSID 81703,,81703,2023-05-10,2023,2.3,Lake Cowichan area,0.0,0.0,0.0,0.0,10.0,11378.0,BALD MOUNTAIN,685.0,False,stream,2.0
-2,VCCB_SYSID 78369,,78369,2021-09-25,2021,14.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9953.0,BALD MOUNTAIN,401.0,False,stream,2.0
+2,VCCB_SYSID 80003,,80003,2022-06-24,2022,24.4,Hauk Creek,0.0,0.0,0.0,0.0,0.0,13275.0,BALD MOUNTAIN,669.0,False,stream,2.0
+2,VCCB_SYSID 83951,,83951,2024-04-10,2024,4.2,Gordon River,0.0,0.0,0.0,0.0,0.0,12578.0,BALD MOUNTAIN,625.0,False,stream,2.0
+2,VCCB_SYSID 77753,,77753,2021-06-21,2021,3.7,Gordon River,0.0,0.0,0.0,0.0,38.0,11547.0,BALD MOUNTAIN,242.0,False,stream,2.0
+2,VCCB_SYSID 81703,,81703,2023-05-10,2023,2.3,Gordon River,0.0,0.0,0.0,0.0,10.0,11378.0,BALD MOUNTAIN,685.0,False,stream,2.0
+2,VCCB_SYSID 78369,,78369,2021-09-25,2021,14.2,Gordon River,0.0,0.0,0.0,0.0,0.0,9953.0,BALD MOUNTAIN,401.0,False,stream,2.0
 2,VCCB_SYSID 78362,,78362,2021-09-25,2021,2.3,Sutton Creek,0.0,0.0,0.0,0.0,80.0,9701.0,BALD MOUNTAIN,1294.0,False,stream,2.0
 2,VCCB_SYSID 78371,,78371,2021-09-25,2021,29.9,Sutton Creek,0.0,0.0,0.0,0.0,0.0,8468.0,BALD MOUNTAIN,1371.0,False,stream,2.0
-2,VCCB_SYSID 75528,,75528,2020-01-01,2020,18.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14730.0,BALD MOUNTAIN,337.0,False,stream,2.0
+2,VCCB_SYSID 75528,,75528,2020-01-01,2020,18.9,Hauk Creek,0.0,0.0,0.0,0.0,0.0,14730.0,BALD MOUNTAIN,337.0,False,stream,2.0
 2,VCCB_SYSID 75678,,75678,2020-01-01,2020,11.6,Sutton Creek,0.0,0.0,0.0,0.0,0.0,9560.0,BALD MOUNTAIN,1216.0,False,stream,2.0
 2,VCCB_SYSID 84527,,84527,2024-06-21,2024,25.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,8424.0,BALD MOUNTAIN,717.0,False,stream,2.0
 2,VCCB_SYSID 84752,,84752,2024-07-07,2024,2.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,8779.0,BALD MOUNTAIN,918.0,False,stream,2.0
@@ -489,16 +489,16 @@ tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,bloc
 2,VCCB_SYSID 83652,,83652,2024-03-17,2024,4.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,11457.0,BALD MOUNTAIN,846.0,False,stream,2.0
 2,VCCB_SYSID 83326,,83326,2024-02-06,2024,4.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,11315.0,BALD MOUNTAIN,682.0,False,stream,2.0
 2,VCCB_SYSID 83651,,83651,2024-03-17,2024,4.2,Cowichan River,0.0,0.0,0.0,0.0,13.0,10991.0,BALD MOUNTAIN,370.0,False,stream,2.0
-2,VCCB_SYSID 85083,,85083,2024-08-30,2024,3.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10387.0,BALD MOUNTAIN,905.0,False,stream,2.0
-2,VCCB_SYSID 84526,,84526,2024-06-21,2024,9.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9938.0,BALD MOUNTAIN,845.0,False,stream,2.0
-2,VCCB_SYSID 85087,,85087,2024-08-30,2024,7.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10060.0,BALD MOUNTAIN,1151.0,False,stream,2.0
-2,VCCB_SYSID 75849,,75849,2020-01-01,2020,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,84.0,13918.0,BALD MOUNTAIN,606.0,False,stream,2.0
-2,VCCB_SYSID 77571,,77571,2021-05-20,2021,2.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13913.0,BALD MOUNTAIN,626.0,False,stream,2.0
-2,VCCB_SYSID 84357,,84357,2024-05-12,2024,48.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,15125.0,BALD MOUNTAIN,951.0,False,stream,2.0
+2,VCCB_SYSID 85083,,85083,2024-08-30,2024,3.7,Gordon River,0.0,0.0,0.0,0.0,0.0,10387.0,BALD MOUNTAIN,905.0,False,stream,2.0
+2,VCCB_SYSID 84526,,84526,2024-06-21,2024,9.5,Gordon River,0.0,0.0,0.0,0.0,0.0,9938.0,BALD MOUNTAIN,845.0,False,stream,2.0
+2,VCCB_SYSID 85087,,85087,2024-08-30,2024,7.7,Gordon River,0.0,0.0,0.0,0.0,0.0,10060.0,BALD MOUNTAIN,1151.0,False,stream,2.0
+2,VCCB_SYSID 75849,,75849,2020-01-01,2020,2.2,Gordon River,0.0,0.0,0.0,0.0,84.0,13918.0,BALD MOUNTAIN,606.0,False,stream,2.0
+2,VCCB_SYSID 77571,,77571,2021-05-20,2021,2.9,Gordon River,0.0,0.0,0.0,0.0,0.0,13913.0,BALD MOUNTAIN,626.0,False,stream,2.0
+2,VCCB_SYSID 84357,,84357,2024-05-12,2024,48.6,Gordon River,0.0,0.0,0.0,0.0,0.0,15125.0,BALD MOUNTAIN,951.0,False,stream,2.0
 2,VCCB_SYSID 83926,,83926,2024-04-10,2024,4.0,Cowichan River,0.0,0.0,0.0,0.0,11.0,12658.0,BALD MOUNTAIN,760.0,False,stream,2.0
-2,OPENING_ID 1803956,1803956,590202,2025-09-16,2025,16.9,Lake Cowichan area,0.0,0.0,0.0,0.0,7.0,17075.0,BALD MOUNTAIN,2633.0,False,stream,2.0
-2,OPENING_ID 1782906,1782906,568240,2023-05-30,2023,12.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,16596.0,BALD MOUNTAIN,1942.0,False,stream,2.0
-2,OPENING_ID 1782906,1782906,568241,2023-06-11,2023,4.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,16794.0,BALD MOUNTAIN,2224.0,False,stream,2.0
+2,OPENING_ID 1803956,1803956,590202,2025-09-16,2025,16.9,Hinne Creek,0.0,0.0,0.0,0.0,7.0,17075.0,BALD MOUNTAIN,2633.0,False,stream,2.0
+2,OPENING_ID 1782906,1782906,568240,2023-05-30,2023,12.9,Hinne Creek,0.0,0.0,0.0,0.0,0.0,16596.0,BALD MOUNTAIN,1942.0,False,stream,2.0
+2,OPENING_ID 1782906,1782906,568241,2023-06-11,2023,4.1,Hinne Creek,0.0,0.0,0.0,0.0,0.0,16794.0,BALD MOUNTAIN,2224.0,False,stream,2.0
 2,VCCB_SYSID 85027,,85027,2024-08-16,2024,4.6,Sutton Creek,0.0,0.0,0.0,0.0,0.0,5265.0,BALD MOUNTAIN,841.0,False,stream,2.0
 2,VCCB_SYSID 83608,,83608,2024-03-17,2024,11.6,Sutton Creek,0.0,0.0,0.0,0.0,0.0,6641.0,BALD MOUNTAIN,235.0,False,stream,2.0
 2,VCCB_SYSID 82851,,82851,2023-10-03,2023,5.6,Sutton Creek,0.0,0.0,0.0,0.0,0.0,5612.0,BALD MOUNTAIN,703.0,False,stream,2.0
@@ -506,8 +506,8 @@ tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,bloc
 2,VCCB_SYSID 82853,,82853,2023-10-03,2023,2.6,Sutton Creek,0.0,0.0,0.0,0.0,0.0,6746.0,BALD MOUNTAIN,922.0,False,stream,2.0
 2,VCCB_SYSID 81931,,81931,2023-05-22,2023,6.8,Sutton Creek,0.0,0.0,0.0,0.0,0.0,5396.0,BALD MOUNTAIN,959.0,False,stream,2.0
 2,VCCB_SYSID 79022,,79022,2022-01-31,2022,26.5,Sutton Creek,0.0,0.0,0.0,0.0,0.0,3598.0,BALD MOUNTAIN,759.0,False,stream,2.0
-2,VCCB_SYSID 75212,,75212,2020-01-01,2020,9.8,Robertson River,0.0,0.0,0.0,0.0,88.0,4327.0,BALD MOUNTAIN,1017.0,False,stream,2.0
-2,VCCB_SYSID 76730,,76730,2021-04-11,2021,2.6,Robertson River,0.0,0.0,0.0,0.0,0.0,4492.0,BALD MOUNTAIN,1145.0,False,stream,2.0
+2,VCCB_SYSID 75212,,75212,2020-01-01,2020,9.8,Nineteen Creek,0.0,0.0,0.0,0.0,88.0,4327.0,BALD MOUNTAIN,1017.0,False,stream,2.0
+2,VCCB_SYSID 76730,,76730,2021-04-11,2021,2.6,Nineteen Creek,0.0,0.0,0.0,0.0,0.0,4492.0,BALD MOUNTAIN,1145.0,False,stream,2.0
 2,VCCB_SYSID 78361,,78361,2021-09-25,2021,43.4,Sutton Creek,0.0,0.0,0.0,0.0,0.0,5510.0,BALD MOUNTAIN,996.0,False,stream,2.0
 2,VCCB_SYSID 82849,,82849,2023-10-03,2023,26.4,Sutton Creek,0.0,0.0,0.0,0.0,0.0,6468.0,BALD MOUNTAIN,878.0,False,stream,2.0
 2,VCCB_SYSID 83607,,83607,2024-03-17,2024,6.2,Sutton Creek,0.0,0.0,0.0,0.0,0.0,7051.0,BALD MOUNTAIN,606.0,False,stream,2.0
@@ -515,8 +515,8 @@ tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,bloc
 2,VCCB_SYSID 76907,,76907,2021-04-18,2021,12.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,3105.0,BALD MOUNTAIN,439.0,False,stream,2.0
 2,VCCB_SYSID 76908,,76908,2021-04-18,2021,9.3,Cowichan River,0.0,0.0,0.0,0.0,20.0,3113.0,BALD MOUNTAIN,721.0,False,stream,2.0
 2,VCCB_SYSID 82322,,82322,2023-07-13,2023,24.7,Meade Creek,0.0,0.0,0.0,0.0,0.0,4110.0,SPRING BEACH,876.0,False,stream,2.0
-2,VCCB_SYSID 85847,,85847,2024-11-15,2024,25.2,Sutton Creek,0.0,0.0,0.0,0.0,0.0,5106.0,BALD MOUNTAIN,628.0,False,stream,2.0
-2,VCCB_SYSID 85459,,85459,2024-10-11,2024,6.6,Sutton Creek,0.0,0.0,0.0,0.0,0.0,5807.0,BALD MOUNTAIN,568.0,False,stream,2.0
+2,VCCB_SYSID 85847,,85847,2024-11-15,2024,25.2,Millar Creek,0.0,0.0,0.0,0.0,0.0,5106.0,BALD MOUNTAIN,628.0,False,stream,2.0
+2,VCCB_SYSID 85459,,85459,2024-10-11,2024,6.6,Millar Creek,0.0,0.0,0.0,0.0,0.0,5807.0,BALD MOUNTAIN,568.0,False,stream,2.0
 2,VCCB_SYSID 83502,,83502,2024-02-23,2024,2.7,Cowichan River,0.0,0.0,0.0,0.0,29.0,728.0,SPRING BEACH,1577.0,False,stream,2.0
 2,VCCB_SYSID 83508,,83508,2024-02-23,2024,3.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,856.0,SPRING BEACH,1433.0,False,stream,2.0
 2,VCCB_SYSID 83625,,83625,2024-03-17,2024,4.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,1080.0,SPRING BEACH,1757.0,False,stream,2.0
@@ -528,79 +528,79 @@ tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,bloc
 2,VCCB_SYSID 85970,,85970,2024-12-03,2024,10.5,Meade Creek,0.0,0.0,0.0,0.0,0.0,3308.0,SPRING BEACH,1473.0,False,stream,2.0
 2,VCCB_SYSID 84479,,84479,2024-06-13,2024,3.7,Cowichan River,0.0,0.0,0.0,0.0,89.0,3249.0,SPRING BEACH,1619.0,False,stream,2.0
 2,VCCB_SYSID 81166,,81166,2023-03-16,2023,3.2,Cowichan River,0.0,0.0,0.0,0.0,94.0,3463.0,SPRING BEACH,845.0,False,stream,2.0
-2,VCCB_SYSID 82178,,82178,2023-07-02,2023,2.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,6137.0,SPRING BEACH,836.0,False,stream,2.0
-2,VCCB_SYSID 80512,,80512,2022-09-12,2022,32.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,6083.0,SPRING BEACH,665.0,False,stream,2.0
+2,VCCB_SYSID 82178,,82178,2023-07-02,2023,2.3,Stanley Creek,0.0,0.0,0.0,0.0,0.0,6137.0,SPRING BEACH,836.0,False,stream,2.0
+2,VCCB_SYSID 80512,,80512,2022-09-12,2022,32.0,Stanley Creek,0.0,0.0,0.0,0.0,0.0,6083.0,SPRING BEACH,665.0,False,stream,2.0
 2,VCCB_SYSID 76415,,76415,2021-03-11,2021,2.7,Cowichan River,0.0,0.0,0.0,0.0,22.0,7208.0,SPRING BEACH,1065.0,False,stream,2.0
 2,VCCB_SYSID 80285,,80285,2022-07-28,2022,2.6,Cowichan River,0.0,0.0,0.0,0.0,7.0,7491.0,SPRING BEACH,1226.0,False,stream,2.0
 2,VCCB_SYSID 83163,,83163,2023-11-26,2023,3.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,7583.0,SPRING BEACH,927.0,False,stream,2.0
 2,VCCB_SYSID 80211,,80211,2022-07-19,2022,2.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,7571.0,SPRING BEACH,1504.0,False,stream,2.0
 2,VCCB_SYSID 76383,,76383,2021-03-02,2021,5.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,7774.0,SPRING BEACH,436.0,False,stream,2.0
 2,VCCB_SYSID 80010,,80010,2022-06-24,2022,8.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,7694.0,SPRING BEACH,992.0,False,stream,2.0
-2,OPENING_ID 1681423,1681423,479998,2015-10-01,2015,29.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7915.0,SPRING BEACH,1603.0,False,stream,2.0
-2,VCCB_SYSID 79092,,79092,2022-02-16,2022,4.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,6381.0,SPRING BEACH,466.0,False,stream,2.0
-2,VCCB_SYSID 77312,,77312,2021-04-25,2021,9.5,Cowichan River,0.0,0.0,0.0,0.0,56.0,7826.0,SPRING BEACH,748.0,False,stream,2.0
+2,OPENING_ID 1681423,1681423,479998,2015-10-01,2015,29.4,Chemainus River,0.0,0.0,0.0,0.0,0.0,7915.0,SPRING BEACH,1603.0,False,stream,2.0
+2,VCCB_SYSID 79092,,79092,2022-02-16,2022,4.2,Fairservice Creek,0.0,0.0,0.0,0.0,0.0,6381.0,SPRING BEACH,466.0,False,stream,2.0
+2,VCCB_SYSID 77312,,77312,2021-04-25,2021,9.5,Fairservice Creek,0.0,0.0,0.0,0.0,56.0,7826.0,SPRING BEACH,748.0,False,stream,2.0
 2,VCCB_SYSID 78984,,78984,2022-01-24,2022,22.3,Robertson River,0.0,0.0,0.0,0.0,0.0,4667.0,SPRING BEACH,465.0,False,stream,2.0
 2,VCCB_SYSID 79120,,79120,2022-02-16,2022,31.5,Robertson River,0.0,0.0,0.0,0.0,0.0,4540.0,SPRING BEACH,261.0,False,stream,2.0
 2,VCCB_SYSID 79044,,79044,2022-02-07,2022,2.7,Robertson River,0.0,0.0,0.0,0.0,0.0,4113.0,SPRING BEACH,695.0,False,stream,2.0
-2,OPENING_ID 1772634,1772634,549487,2022-06-14,2022,35.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,16472.0,SPRING BEACH,267.0,False,stream,2.0
-2,OPENING_ID 1728786,1728786,516703,2019-10-04,2019,40.8,Lake Cowichan area,0.0,0.0,0.0,0.0,78.0,17484.0,SPRING BEACH,756.0,False,stream,2.0
-2,VCCB_SYSID 76607,,76607,2021-04-02,2021,10.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8786.0,SPRING BEACH,955.0,False,stream,2.0
-2,VCCB_SYSID 75256,,75256,2020-01-01,2020,23.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8872.0,SPRING BEACH,655.0,False,stream,2.0
-2,VCCB_SYSID 79508,,79508,2022-04-07,2022,45.6,Lake Cowichan area,0.0,0.0,0.0,0.0,71.0,11456.0,SPRING BEACH,1091.0,False,stream,2.0
-2,OPENING_ID 1731219,1731219,518564,2018-05-07,2018,41.1,Lake Cowichan area,0.0,0.0,0.0,0.0,10.0,14741.0,SPRING BEACH,731.0,False,stream,2.0
-2,OPENING_ID 1681423,1681423,479999,2015-10-01,2015,3.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8090.0,SPRING BEACH,2053.0,False,stream,2.0
-2,VCCB_SYSID 75257,,75257,2020-01-01,2020,21.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8404.0,SPRING BEACH,1146.0,False,stream,2.0
-2,OPENING_ID 1738050,1738050,524539,2020-02-20,2020,38.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13596.0,SPRING BEACH,423.0,False,stream,2.0
+2,OPENING_ID 1772634,1772634,549487,2022-06-14,2022,35.5,Silver Creek,0.0,0.0,0.0,0.0,0.0,16472.0,SPRING BEACH,267.0,False,stream,2.0
+2,OPENING_ID 1728786,1728786,516703,2019-10-04,2019,40.8,Silver Creek,0.0,0.0,0.0,0.0,78.0,17484.0,SPRING BEACH,756.0,False,stream,2.0
+2,VCCB_SYSID 76607,,76607,2021-04-02,2021,10.5,Chemainus River,0.0,0.0,0.0,0.0,0.0,8786.0,SPRING BEACH,955.0,False,stream,2.0
+2,VCCB_SYSID 75256,,75256,2020-01-01,2020,23.2,Chemainus River,0.0,0.0,0.0,0.0,0.0,8872.0,SPRING BEACH,655.0,False,stream,2.0
+2,VCCB_SYSID 79508,,79508,2022-04-07,2022,45.6,Chipman Creek,0.0,0.0,0.0,0.0,71.0,11456.0,SPRING BEACH,1091.0,False,stream,2.0
+2,OPENING_ID 1731219,1731219,518564,2018-05-07,2018,41.1,Chemainus River,0.0,0.0,0.0,0.0,10.0,14741.0,SPRING BEACH,731.0,False,stream,2.0
+2,OPENING_ID 1681423,1681423,479999,2015-10-01,2015,3.3,Chemainus River,0.0,0.0,0.0,0.0,0.0,8090.0,SPRING BEACH,2053.0,False,stream,2.0
+2,VCCB_SYSID 75257,,75257,2020-01-01,2020,21.4,Chemainus River,0.0,0.0,0.0,0.0,0.0,8404.0,SPRING BEACH,1146.0,False,stream,2.0
+2,OPENING_ID 1738050,1738050,524539,2020-02-20,2020,38.3,Chipman Creek,0.0,0.0,0.0,0.0,0.0,13596.0,SPRING BEACH,423.0,False,stream,2.0
 2,VCCB_SYSID 80209,,80209,2022-07-19,2022,2.1,Cowichan River,0.0,0.0,0.0,0.0,15.0,7995.0,SPRING BEACH,752.0,False,stream,2.0
-2,OPENING_ID 1681408,1681408,479989,2015-09-29,2015,28.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9799.0,SPRING BEACH,1028.0,False,stream,2.0
-2,OPENING_ID 1775591,1775591,563033,2022-04-25,2022,11.9,Lake Cowichan area,0.0,0.0,0.0,0.0,29.0,21978.0,SPRING BEACH,1137.0,False,stream,2.0
-2,OPENING_ID 1775589,1775589,563031,2022-04-25,2022,16.5,Lake Cowichan area,0.0,0.0,0.0,0.0,4.0,22518.0,SPRING BEACH,1808.0,False,stream,2.0
-2,OPENING_ID 1744133,1744133,528152,2018-01-30,2018,5.3,Cowichan River,0.0,0.0,0.0,0.0,3.0,21757.0,SPRING BEACH,591.0,False,stream,2.0
-2,OPENING_ID 1744133,1744133,528153,2018-01-30,2018,5.6,Cowichan River,0.0,0.0,0.0,0.0,40.0,21517.0,SPRING BEACH,539.0,False,stream,2.0
-2,VCCB_SYSID 77442,,77442,2021-05-13,2021,11.7,Cowichan River,0.0,0.0,0.0,0.0,89.0,19628.0,SPRING BEACH,2093.0,False,stream,2.0
-2,OPENING_ID 1696885,1696885,494388,2017-12-01,2017,41.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,23798.0,SPRING BEACH,460.0,False,stream,2.0
-2,VCCB_SYSID 82314,,82314,2023-07-13,2023,3.0,Cowichan River,0.0,0.0,0.0,0.0,44.0,26124.0,SPRING BEACH,307.0,False,stream,2.0
-2,VCCB_SYSID 77688,,77688,2021-06-05,2021,3.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,23407.0,SPRING BEACH,1781.0,False,stream,2.0
-2,VCCB_SYSID 84337,,84337,2024-05-12,2024,4.5,Cowichan River,0.0,0.0,0.0,0.0,96.0,19877.0,SPRING BEACH,2138.0,False,stream,2.0
-2,VCCB_SYSID 84891,,84891,2024-07-16,2024,0.5,Cowichan River,0.0,0.0,0.0,0.0,2.0,13010.0,BALD MOUNTAIN,1078.0,False,stream,2.0
+2,OPENING_ID 1681408,1681408,479989,2015-09-29,2015,28.7,Chemainus River,0.0,0.0,0.0,0.0,0.0,9799.0,SPRING BEACH,1028.0,False,stream,2.0
+2,OPENING_ID 1775591,1775591,563033,2022-04-25,2022,11.9,Chemainus River,0.0,0.0,0.0,0.0,29.0,21978.0,SPRING BEACH,1137.0,False,stream,2.0
+2,OPENING_ID 1775589,1775589,563031,2022-04-25,2022,16.5,Chemainus River,0.0,0.0,0.0,0.0,4.0,22518.0,SPRING BEACH,1808.0,False,stream,2.0
+2,OPENING_ID 1744133,1744133,528152,2018-01-30,2018,5.3,Inwood Creek,0.0,0.0,0.0,0.0,3.0,21757.0,SPRING BEACH,591.0,False,stream,2.0
+2,OPENING_ID 1744133,1744133,528153,2018-01-30,2018,5.6,Inwood Creek,0.0,0.0,0.0,0.0,40.0,21517.0,SPRING BEACH,539.0,False,stream,2.0
+2,VCCB_SYSID 77442,,77442,2021-05-13,2021,11.7,Currie Creek,0.0,0.0,0.0,0.0,89.0,19628.0,SPRING BEACH,2093.0,False,stream,2.0
+2,OPENING_ID 1696885,1696885,494388,2017-12-01,2017,41.1,Chemainus River,0.0,0.0,0.0,0.0,0.0,23798.0,SPRING BEACH,460.0,False,stream,2.0
+2,VCCB_SYSID 82314,,82314,2023-07-13,2023,3.0,Bings Creek,0.0,0.0,0.0,0.0,44.0,26124.0,SPRING BEACH,307.0,False,stream,2.0
+2,VCCB_SYSID 77688,,77688,2021-06-05,2021,3.0,Inwood Creek,0.0,0.0,0.0,0.0,0.0,23407.0,SPRING BEACH,1781.0,False,stream,2.0
+2,VCCB_SYSID 84337,,84337,2024-05-12,2024,4.5,Currie Creek,0.0,0.0,0.0,0.0,96.0,19877.0,SPRING BEACH,2138.0,False,stream,2.0
+2,VCCB_SYSID 84891,,84891,2024-07-16,2024,0.5,Wardroper Creek,0.0,0.0,0.0,0.0,2.0,13010.0,BALD MOUNTAIN,1078.0,False,stream,2.0
 2,VCCB_SYSID 83950,,83950,2024-04-10,2024,44.9,Cowichan River,0.0,0.0,0.0,0.0,61.0,9229.0,BALD MOUNTAIN,772.0,False,stream,2.0
-2,VCCB_SYSID 85971,,85971,2024-12-03,2024,4.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,12684.0,BALD MOUNTAIN,1285.0,False,stream,2.0
-2,VCCB_SYSID 83958,,83958,2024-04-10,2024,19.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,12679.0,BALD MOUNTAIN,1124.0,False,stream,2.0
-2,VCCB_SYSID 84406,,84406,2024-05-24,2024,2.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,12885.0,BALD MOUNTAIN,1167.0,False,stream,2.0
-2,VCCB_SYSID 86090,,86090,2025-01-18,2025,4.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,13153.0,BALD MOUNTAIN,1155.0,False,stream,2.0
-2,VCCB_SYSID 84670,,84670,2024-07-06,2024,4.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,13073.0,BALD MOUNTAIN,899.0,False,stream,2.0
-2,VCCB_SYSID 84767,,84767,2024-07-07,2024,9.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,13052.0,BALD MOUNTAIN,627.0,False,stream,2.0
-2,VCCB_SYSID 85978,,85978,2024-12-03,2024,6.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,13040.0,BALD MOUNTAIN,742.0,False,stream,2.0
-2,VCCB_SYSID 84669,,84669,2024-07-06,2024,2.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,13312.0,BALD MOUNTAIN,958.0,False,stream,2.0
-2,VCCB_SYSID 84892,,84892,2024-07-16,2024,0.2,Cowichan River,0.0,0.0,0.0,0.0,0.0,13118.0,BALD MOUNTAIN,993.0,False,stream,2.0
-2,VCCB_SYSID 84893,,84893,2024-07-16,2024,0.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,13208.0,BALD MOUNTAIN,937.0,False,stream,2.0
-2,VCCB_SYSID 84894,,84894,2024-07-16,2024,0.1,Cowichan River,0.0,0.0,0.0,0.0,62.0,13286.0,BALD MOUNTAIN,924.0,False,stream,2.0
-2,VCCB_SYSID 84895,,84895,2024-07-16,2024,0.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,13220.0,BALD MOUNTAIN,871.0,False,stream,2.0
-2,VCCB_SYSID 84897,,84897,2024-07-16,2024,0.4,Cowichan River,0.0,0.0,0.0,0.0,12.0,13256.0,BALD MOUNTAIN,811.0,False,stream,2.0
-2,VCCB_SYSID 84896,,84896,2024-07-16,2024,0.1,Cowichan River,0.0,0.0,0.0,0.0,97.0,13352.0,BALD MOUNTAIN,873.0,False,stream,2.0
-2,VCCB_SYSID 84898,,84898,2024-07-16,2024,0.1,Cowichan River,0.0,0.0,0.0,0.0,10.0,13496.0,BALD MOUNTAIN,832.0,False,stream,2.0
-2,VCCB_SYSID 84899,,84899,2024-07-16,2024,0.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,13490.0,BALD MOUNTAIN,741.0,False,stream,2.0
-2,VCCB_SYSID 85979,,85979,2024-12-03,2024,1.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,13658.0,BALD MOUNTAIN,617.0,False,stream,2.0
+2,VCCB_SYSID 85971,,85971,2024-12-03,2024,4.8,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,12684.0,BALD MOUNTAIN,1285.0,False,stream,2.0
+2,VCCB_SYSID 83958,,83958,2024-04-10,2024,19.5,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,12679.0,BALD MOUNTAIN,1124.0,False,stream,2.0
+2,VCCB_SYSID 84406,,84406,2024-05-24,2024,2.3,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,12885.0,BALD MOUNTAIN,1167.0,False,stream,2.0
+2,VCCB_SYSID 86090,,86090,2025-01-18,2025,4.4,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13153.0,BALD MOUNTAIN,1155.0,False,stream,2.0
+2,VCCB_SYSID 84670,,84670,2024-07-06,2024,4.1,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13073.0,BALD MOUNTAIN,899.0,False,stream,2.0
+2,VCCB_SYSID 84767,,84767,2024-07-07,2024,9.5,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13052.0,BALD MOUNTAIN,627.0,False,stream,2.0
+2,VCCB_SYSID 85978,,85978,2024-12-03,2024,6.6,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13040.0,BALD MOUNTAIN,742.0,False,stream,2.0
+2,VCCB_SYSID 84669,,84669,2024-07-06,2024,2.0,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13312.0,BALD MOUNTAIN,958.0,False,stream,2.0
+2,VCCB_SYSID 84892,,84892,2024-07-16,2024,0.2,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13118.0,BALD MOUNTAIN,993.0,False,stream,2.0
+2,VCCB_SYSID 84893,,84893,2024-07-16,2024,0.1,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13208.0,BALD MOUNTAIN,937.0,False,stream,2.0
+2,VCCB_SYSID 84894,,84894,2024-07-16,2024,0.1,Wardroper Creek,0.0,0.0,0.0,0.0,62.0,13286.0,BALD MOUNTAIN,924.0,False,stream,2.0
+2,VCCB_SYSID 84895,,84895,2024-07-16,2024,0.1,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13220.0,BALD MOUNTAIN,871.0,False,stream,2.0
+2,VCCB_SYSID 84897,,84897,2024-07-16,2024,0.4,Wardroper Creek,0.0,0.0,0.0,0.0,12.0,13256.0,BALD MOUNTAIN,811.0,False,stream,2.0
+2,VCCB_SYSID 84896,,84896,2024-07-16,2024,0.1,Wardroper Creek,0.0,0.0,0.0,0.0,97.0,13352.0,BALD MOUNTAIN,873.0,False,stream,2.0
+2,VCCB_SYSID 84898,,84898,2024-07-16,2024,0.1,Wardroper Creek,0.0,0.0,0.0,0.0,10.0,13496.0,BALD MOUNTAIN,832.0,False,stream,2.0
+2,VCCB_SYSID 84899,,84899,2024-07-16,2024,0.1,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13490.0,BALD MOUNTAIN,741.0,False,stream,2.0
+2,VCCB_SYSID 85979,,85979,2024-12-03,2024,1.3,Wardroper Creek,0.0,0.0,0.0,0.0,0.0,13658.0,BALD MOUNTAIN,617.0,False,stream,2.0
 2,VCCB_SYSID 86125,,86125,2025-01-20,2025,3.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,15628.0,BALD MOUNTAIN,787.0,False,stream,2.0
 2,VCCB_SYSID 77174,,77174,2021-04-18,2021,10.2,Shaw Creek,0.0,0.0,0.0,0.0,0.0,19055.0,BALD MOUNTAIN,798.0,False,stream,2.0
 2,VCCB_SYSID 81803,,81803,2023-05-10,2023,2.8,Cowichan River,0.0,0.0,0.0,0.0,36.0,17606.0,BALD MOUNTAIN,491.0,False,stream,2.0
 2,VCCB_SYSID 82859,,82859,2023-10-03,2023,5.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,16957.0,BALD MOUNTAIN,915.0,False,stream,2.0
-2,VCCB_SYSID 79963,,79963,2022-06-24,2022,3.4,Cowichan River,0.0,0.0,0.0,0.0,5.0,16622.0,BALD MOUNTAIN,952.0,False,stream,2.0
-2,VCCB_SYSID 77146,,77146,2021-04-18,2021,6.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,16049.0,BALD MOUNTAIN,388.0,False,stream,2.0
-2,VCCB_SYSID 79962,,79962,2022-06-24,2022,3.0,Cowichan River,0.0,0.0,0.0,0.0,66.0,16128.0,BALD MOUNTAIN,510.0,False,stream,2.0
-2,VCCB_SYSID 79123,,79123,2022-02-16,2022,4.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,16162.0,BALD MOUNTAIN,556.0,False,stream,2.0
-2,VCCB_SYSID 78489,,78489,2021-10-11,2021,7.2,Cowichan River,0.0,0.0,0.0,0.0,19.0,15844.0,BALD MOUNTAIN,403.0,False,stream,2.0
+2,VCCB_SYSID 79963,,79963,2022-06-24,2022,3.4,McKay Creek,0.0,0.0,0.0,0.0,5.0,16622.0,BALD MOUNTAIN,952.0,False,stream,2.0
+2,VCCB_SYSID 77146,,77146,2021-04-18,2021,6.4,McKay Creek,0.0,0.0,0.0,0.0,0.0,16049.0,BALD MOUNTAIN,388.0,False,stream,2.0
+2,VCCB_SYSID 79962,,79962,2022-06-24,2022,3.0,McKay Creek,0.0,0.0,0.0,0.0,66.0,16128.0,BALD MOUNTAIN,510.0,False,stream,2.0
+2,VCCB_SYSID 79123,,79123,2022-02-16,2022,4.4,McKay Creek,0.0,0.0,0.0,0.0,0.0,16162.0,BALD MOUNTAIN,556.0,False,stream,2.0
+2,VCCB_SYSID 78489,,78489,2021-10-11,2021,7.2,McKay Creek,0.0,0.0,0.0,0.0,19.0,15844.0,BALD MOUNTAIN,403.0,False,stream,2.0
 2,OPENING_ID 1692285,1692285,490970,2017-01-23,2017,6.8,Cowichan River,0.0,0.0,0.0,0.0,0.0,10497.0,BALD MOUNTAIN,1690.0,False,stream,2.0
 2,OPENING_ID 1692286,1692286,490971,2017-01-23,2017,3.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,10151.0,BALD MOUNTAIN,2206.0,False,stream,2.0
-2,VCCB_SYSID 85234,,85234,2024-09-16,2024,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,90.0,9972.0,SPRING BEACH,1637.0,False,stream,2.0
-2,VCCB_SYSID 80528,,80528,2022-09-12,2022,31.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9923.0,SPRING BEACH,906.0,False,stream,2.0
-2,VCCB_SYSID 80375,,80375,2022-08-11,2022,19.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10457.0,SPRING BEACH,1560.0,False,stream,2.0
-2,VCCB_SYSID 85057,,85057,2024-08-25,2024,3.9,Lake Cowichan area,0.0,0.0,0.0,0.0,51.0,7993.0,SPRING BEACH,1847.0,False,stream,2.0
-2,VCCB_SYSID 75692,,75692,2020-01-01,2020,30.6,Cowichan River,0.0,0.0,0.0,0.0,0.0,9027.0,BALD MOUNTAIN,510.0,False,stream,2.0
-2,VCCB_SYSID 85461,,85461,2024-10-11,2024,6.8,Lake Cowichan area,0.0,0.0,0.0,0.0,19.0,9364.0,SPRING BEACH,1636.0,False,stream,2.0
-2,VCCB_SYSID 84825,,84825,2024-07-11,2024,14.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9491.0,SPRING BEACH,873.0,False,stream,2.0
-2,VCCB_SYSID 82743,,82743,2023-09-15,2023,15.6,Cowichan River,0.0,0.0,0.0,0.0,1.0,5289.0,BALD MOUNTAIN,885.0,False,stream,2.0
-2,VCCB_SYSID 80519,,80519,2022-09-12,2022,38.0,Cowichan River,0.0,0.0,0.0,0.0,0.0,5580.0,BALD MOUNTAIN,908.0,False,stream,2.0
+2,VCCB_SYSID 85234,,85234,2024-09-16,2024,2.2,Chemainus River,0.0,0.0,0.0,0.0,90.0,9972.0,SPRING BEACH,1637.0,False,stream,2.0
+2,VCCB_SYSID 80528,,80528,2022-09-12,2022,31.5,Chemainus River,0.0,0.0,0.0,0.0,0.0,9923.0,SPRING BEACH,906.0,False,stream,2.0
+2,VCCB_SYSID 80375,,80375,2022-08-11,2022,19.2,Chemainus River,0.0,0.0,0.0,0.0,0.0,10457.0,SPRING BEACH,1560.0,False,stream,2.0
+2,VCCB_SYSID 85057,,85057,2024-08-25,2024,3.9,South Chemainus Creek,0.0,0.0,0.0,0.0,51.0,7993.0,SPRING BEACH,1847.0,False,stream,2.0
+2,VCCB_SYSID 75692,,75692,2020-01-01,2020,30.6,Widow Creek,0.0,0.0,0.0,0.0,0.0,9027.0,BALD MOUNTAIN,510.0,False,stream,2.0
+2,VCCB_SYSID 85461,,85461,2024-10-11,2024,6.8,Harrison Creek,0.0,0.0,0.0,0.0,19.0,9364.0,SPRING BEACH,1636.0,False,stream,2.0
+2,VCCB_SYSID 84825,,84825,2024-07-11,2024,14.8,Chemainus River,0.0,0.0,0.0,0.0,0.0,9491.0,SPRING BEACH,873.0,False,stream,2.0
+2,VCCB_SYSID 82743,,82743,2023-09-15,2023,15.6,Coonskin Creek,0.0,0.0,0.0,0.0,1.0,5289.0,BALD MOUNTAIN,885.0,False,stream,2.0
+2,VCCB_SYSID 80519,,80519,2022-09-12,2022,38.0,Coonskin Creek,0.0,0.0,0.0,0.0,0.0,5580.0,BALD MOUNTAIN,908.0,False,stream,2.0
 2,VCCB_SYSID 83375,,83375,2024-02-07,2024,2.2,Meade Creek,0.0,0.0,0.0,0.0,19.0,5540.0,BALD MOUNTAIN,1363.0,False,stream,2.0
 2,VCCB_SYSID 80050,,80050,2022-06-24,2022,33.7,Meade Creek,0.0,0.0,0.0,0.0,0.0,5497.0,SPRING BEACH,654.0,False,stream,2.0
 2,VCCB_SYSID 82577,,82577,2023-08-14,2023,11.4,Meade Creek,0.0,0.0,0.0,0.0,0.0,5317.0,SPRING BEACH,297.0,False,stream,2.0
@@ -612,71 +612,71 @@ tier,identifier,opening_id,vccb_sysid,harvest_start_date,harvest_start_year,bloc
 2,VCCB_SYSID 82099,,82099,2023-06-27,2023,4.5,Meade Creek,0.0,0.0,0.0,0.0,0.0,6298.0,BALD MOUNTAIN,1501.0,False,stream,2.0
 2,VCCB_SYSID 82046,,82046,2023-06-11,2023,13.9,Meade Creek,0.0,0.0,0.0,0.0,0.0,6560.0,BALD MOUNTAIN,1128.0,False,stream,2.0
 2,VCCB_SYSID 85450,,85450,2024-10-11,2024,1.8,Meade Creek,0.0,0.0,0.0,0.0,7.0,6802.0,BALD MOUNTAIN,1205.0,False,stream,2.0
-2,VCCB_SYSID 83941,,83941,2024-04-10,2024,7.7,Cowichan River,0.0,0.0,0.0,0.0,0.0,10341.0,BALD MOUNTAIN,711.0,False,stream,2.0
-2,VCCB_SYSID 83664,,83664,2024-03-17,2024,9.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,12353.0,BALD MOUNTAIN,444.0,False,stream,2.0
-2,VCCB_SYSID 83611,,83611,2024-03-17,2024,10.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,9849.0,BALD MOUNTAIN,555.0,False,stream,2.0
-2,VCCB_SYSID 83657,,83657,2024-03-17,2024,6.9,Cowichan River,0.0,0.0,0.0,0.0,0.0,10130.0,BALD MOUNTAIN,329.0,False,stream,2.0
-2,VCCB_SYSID 77772,,77772,2021-06-21,2021,9.9,Cowichan River,0.0,0.0,0.0,0.0,2.0,9465.0,BALD MOUNTAIN,471.0,False,stream,2.0
-2,VCCB_SYSID 77800,,77800,2021-06-21,2021,26.4,Cowichan River,0.0,0.0,0.0,0.0,0.0,7647.0,BALD MOUNTAIN,237.0,False,stream,2.0
-2,VCCB_SYSID 78471,,78471,2021-10-11,2021,4.3,Cowichan River,0.0,0.0,0.0,0.0,0.0,8959.0,BALD MOUNTAIN,235.0,False,stream,2.0
-2,VCCB_SYSID 77205,,77205,2021-04-19,2021,3.5,Cowichan River,0.0,0.0,0.0,0.0,0.0,9576.0,BALD MOUNTAIN,476.0,False,stream,2.0
+2,VCCB_SYSID 83941,,83941,2024-04-10,2024,7.7,Cottonwood Creek,0.0,0.0,0.0,0.0,0.0,10341.0,BALD MOUNTAIN,711.0,False,stream,2.0
+2,VCCB_SYSID 83664,,83664,2024-03-17,2024,9.4,Cottonwood Creek,0.0,0.0,0.0,0.0,0.0,12353.0,BALD MOUNTAIN,444.0,False,stream,2.0
+2,VCCB_SYSID 83611,,83611,2024-03-17,2024,10.5,Cottonwood Creek,0.0,0.0,0.0,0.0,0.0,9849.0,BALD MOUNTAIN,555.0,False,stream,2.0
+2,VCCB_SYSID 83657,,83657,2024-03-17,2024,6.9,Cottonwood Creek,0.0,0.0,0.0,0.0,0.0,10130.0,BALD MOUNTAIN,329.0,False,stream,2.0
+2,VCCB_SYSID 77772,,77772,2021-06-21,2021,9.9,Chemainus River,0.0,0.0,0.0,0.0,2.0,9465.0,BALD MOUNTAIN,471.0,False,stream,2.0
+2,VCCB_SYSID 77800,,77800,2021-06-21,2021,26.4,Widow Creek,0.0,0.0,0.0,0.0,0.0,7647.0,BALD MOUNTAIN,237.0,False,stream,2.0
+2,VCCB_SYSID 78471,,78471,2021-10-11,2021,4.3,Widow Creek,0.0,0.0,0.0,0.0,0.0,8959.0,BALD MOUNTAIN,235.0,False,stream,2.0
+2,VCCB_SYSID 77205,,77205,2021-04-19,2021,3.5,Chemainus River,0.0,0.0,0.0,0.0,0.0,9576.0,BALD MOUNTAIN,476.0,False,stream,2.0
 2,VCCB_SYSID 82857,,82857,2023-10-03,2023,4.1,Cowichan River,0.0,0.0,0.0,0.0,0.0,9154.0,BALD MOUNTAIN,1349.0,False,stream,2.0
-2,VCCB_SYSID 81705,,81705,2023-05-10,2023,2.1,Cowichan River,0.0,0.0,0.0,0.0,70.0,8216.0,BALD MOUNTAIN,305.0,False,stream,2.0
-2,VCCB_SYSID 83943,,83943,2024-04-10,2024,44.6,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,13914.0,SPRING BEACH,1476.0,False,stream,2.0
-2,VCCB_SYSID 82634,,82634,2023-08-23,2023,2.8,Lake Cowichan area,0.0,0.0,0.0,0.0,23.0,11021.0,SPRING BEACH,993.0,False,stream,2.0
-2,VCCB_SYSID 77790,,77790,2021-06-21,2021,2.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12043.0,SPRING BEACH,1540.0,False,stream,2.0
-2,VCCB_SYSID 77611,,77611,2021-05-29,2021,21.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,11251.0,SPRING BEACH,723.0,False,stream,2.0
-2,VCCB_SYSID 77617,,77617,2021-05-29,2021,2.8,Lake Cowichan area,0.0,0.0,0.0,0.0,14.0,12320.0,SPRING BEACH,1539.0,False,stream,2.0
-2,VCCB_SYSID 85462,,85462,2024-10-11,2024,35.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8662.0,SPRING BEACH,243.0,False,stream,2.0
-2,VCCB_SYSID 80269,,80269,2022-07-26,2022,36.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9055.0,SPRING BEACH,386.0,False,stream,2.0
+2,VCCB_SYSID 81705,,81705,2023-05-10,2023,2.1,Widow Creek,0.0,0.0,0.0,0.0,70.0,8216.0,BALD MOUNTAIN,305.0,False,stream,2.0
+2,VCCB_SYSID 83943,,83943,2024-04-10,2024,44.6,Haslam Creek,0.0,0.0,0.0,0.0,0.0,13914.0,SPRING BEACH,1476.0,False,stream,2.0
+2,VCCB_SYSID 82634,,82634,2023-08-23,2023,2.8,Rheinhart Creek,0.0,0.0,0.0,0.0,23.0,11021.0,SPRING BEACH,993.0,False,stream,2.0
+2,VCCB_SYSID 77790,,77790,2021-06-21,2021,2.3,Rheinhart Creek,0.0,0.0,0.0,0.0,0.0,12043.0,SPRING BEACH,1540.0,False,stream,2.0
+2,VCCB_SYSID 77611,,77611,2021-05-29,2021,21.8,Rheinhart Creek,0.0,0.0,0.0,0.0,0.0,11251.0,SPRING BEACH,723.0,False,stream,2.0
+2,VCCB_SYSID 77617,,77617,2021-05-29,2021,2.8,Rheinhart Creek,0.0,0.0,0.0,0.0,14.0,12320.0,SPRING BEACH,1539.0,False,stream,2.0
+2,VCCB_SYSID 85462,,85462,2024-10-11,2024,35.8,Chemainus River,0.0,0.0,0.0,0.0,0.0,8662.0,SPRING BEACH,243.0,False,stream,2.0
+2,VCCB_SYSID 80269,,80269,2022-07-26,2022,36.5,Chemainus River,0.0,0.0,0.0,0.0,0.0,9055.0,SPRING BEACH,386.0,False,stream,2.0
 2,VCCB_SYSID 79234,,79234,2022-03-04,2022,29.8,Meade Creek,0.0,0.0,0.0,0.0,0.0,6310.0,SPRING BEACH,353.0,False,stream,2.0
-2,VCCB_SYSID 79935,,79935,2022-06-17,2022,38.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8313.0,SPRING BEACH,980.0,False,stream,2.0
-2,VCCB_SYSID 75259,,75259,2020-01-01,2020,52.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8858.0,SPRING BEACH,216.0,False,stream,2.0
-2,VCCB_SYSID 77610,,77610,2021-05-29,2021,17.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10841.0,SPRING BEACH,349.0,False,stream,2.0
-2,VCCB_SYSID 85857,,85857,2024-11-15,2024,39.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9149.0,SPRING BEACH,312.0,False,stream,2.0
-2,VCCB_SYSID 85848,,85848,2024-11-15,2024,5.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9361.0,SPRING BEACH,614.0,False,stream,2.0
-2,VCCB_SYSID 84793,,84793,2024-07-08,2024,0.1,Lake Cowichan area,0.0,0.0,0.0,0.0,15.0,9702.0,SPRING BEACH,1007.0,False,stream,2.0
-2,VCCB_SYSID 84792,,84792,2024-07-08,2024,0.1,Lake Cowichan area,0.0,0.0,0.0,0.0,93.0,9329.0,SPRING BEACH,491.0,False,stream,2.0
-2,VCCB_SYSID 77361,,77361,2021-05-04,2021,28.6,Lake Cowichan area,0.0,0.0,0.0,0.0,34.0,8998.0,SPRING BEACH,553.0,False,stream,2.0
-2,VCCB_SYSID 82226,,82226,2023-07-06,2023,13.2,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8609.0,SPRING BEACH,1174.0,False,stream,2.0
-2,VCCB_SYSID 82100,,82100,2023-06-27,2023,10.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8500.0,SPRING BEACH,601.0,False,stream,2.0
-2,VCCB_SYSID 80032,,80032,2022-06-24,2022,42.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,8731.0,SPRING BEACH,372.0,False,stream,2.0
-2,VCCB_SYSID 81060,,81060,2022-12-26,2022,51.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,9569.0,SPRING BEACH,654.0,False,stream,2.0
-2,VCCB_SYSID 84762,,84762,2024-07-07,2024,3.0,Lake Cowichan area,0.0,0.0,0.0,0.0,11.0,12539.0,SPRING BEACH,2782.0,False,stream,2.0
-2,VCCB_SYSID 84131,,84131,2024-04-18,2024,35.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12596.0,SPRING BEACH,2226.0,False,stream,2.0
-2,VCCB_SYSID 84485,,84485,2024-06-13,2024,4.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,12705.0,SPRING BEACH,2518.0,False,stream,2.0
+2,VCCB_SYSID 79935,,79935,2022-06-17,2022,38.2,Chemainus River,0.0,0.0,0.0,0.0,0.0,8313.0,SPRING BEACH,980.0,False,stream,2.0
+2,VCCB_SYSID 75259,,75259,2020-01-01,2020,52.3,Chemainus River,0.0,0.0,0.0,0.0,0.0,8858.0,SPRING BEACH,216.0,False,stream,2.0
+2,VCCB_SYSID 77610,,77610,2021-05-29,2021,17.1,Rheinhart Creek,0.0,0.0,0.0,0.0,0.0,10841.0,SPRING BEACH,349.0,False,stream,2.0
+2,VCCB_SYSID 85857,,85857,2024-11-15,2024,39.1,Rheinhart Creek,0.0,0.0,0.0,0.0,0.0,9149.0,SPRING BEACH,312.0,False,stream,2.0
+2,VCCB_SYSID 85848,,85848,2024-11-15,2024,5.9,Rheinhart Creek,0.0,0.0,0.0,0.0,0.0,9361.0,SPRING BEACH,614.0,False,stream,2.0
+2,VCCB_SYSID 84793,,84793,2024-07-08,2024,0.1,Rheinhart Creek,0.0,0.0,0.0,0.0,15.0,9702.0,SPRING BEACH,1007.0,False,stream,2.0
+2,VCCB_SYSID 84792,,84792,2024-07-08,2024,0.1,Rheinhart Creek,0.0,0.0,0.0,0.0,93.0,9329.0,SPRING BEACH,491.0,False,stream,2.0
+2,VCCB_SYSID 77361,,77361,2021-05-04,2021,28.6,Chemainus River,0.0,0.0,0.0,0.0,34.0,8998.0,SPRING BEACH,553.0,False,stream,2.0
+2,VCCB_SYSID 82226,,82226,2023-07-06,2023,13.2,Chemainus River,0.0,0.0,0.0,0.0,0.0,8609.0,SPRING BEACH,1174.0,False,stream,2.0
+2,VCCB_SYSID 82100,,82100,2023-06-27,2023,10.5,Chemainus River,0.0,0.0,0.0,0.0,0.0,8500.0,SPRING BEACH,601.0,False,stream,2.0
+2,VCCB_SYSID 80032,,80032,2022-06-24,2022,42.3,Chemainus River,0.0,0.0,0.0,0.0,0.0,8731.0,SPRING BEACH,372.0,False,stream,2.0
+2,VCCB_SYSID 81060,,81060,2022-12-26,2022,51.7,Chipman Creek,0.0,0.0,0.0,0.0,0.0,9569.0,SPRING BEACH,654.0,False,stream,2.0
+2,VCCB_SYSID 84762,,84762,2024-07-07,2024,3.0,Chipman Creek,0.0,0.0,0.0,0.0,11.0,12539.0,SPRING BEACH,2782.0,False,stream,2.0
+2,VCCB_SYSID 84131,,84131,2024-04-18,2024,35.9,Chipman Creek,0.0,0.0,0.0,0.0,0.0,12596.0,SPRING BEACH,2226.0,False,stream,2.0
+2,VCCB_SYSID 84485,,84485,2024-06-13,2024,4.0,Chipman Creek,0.0,0.0,0.0,0.0,0.0,12705.0,SPRING BEACH,2518.0,False,stream,2.0
 2,VCCB_SYSID 85460,,85460,2024-10-11,2024,25.6,Meade Creek,0.0,0.0,0.0,0.0,0.0,4737.0,SPRING BEACH,1161.0,False,stream,2.0
 2,VCCB_SYSID 85274,,85274,2024-09-29,2024,0.1,Meade Creek,0.0,0.0,0.0,0.0,29.0,5494.0,SPRING BEACH,1341.0,False,stream,2.0
 2,VCCB_SYSID 86194,,86194,2025-01-30,2025,2.8,Meade Creek,0.0,0.0,0.0,0.0,0.0,3710.0,SPRING BEACH,1419.0,False,stream,2.0
-2,VCCB_SYSID 81059,,81059,2022-12-26,2022,27.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7280.0,SPRING BEACH,498.0,False,stream,2.0
-2,VCCB_SYSID 80037,,80037,2022-06-24,2022,56.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,7213.0,SPRING BEACH,241.0,False,stream,2.0
-2,OPENING_ID 1738051,1738051,524540,2020-03-09,2020,39.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14210.0,SPRING BEACH,874.0,False,stream,2.0
-2,OPENING_ID 1734365,1734365,521535,2019-10-04,2019,38.8,Lake Cowichan area,0.0,0.0,0.0,0.0,18.0,15373.0,SPRING BEACH,2071.0,False,stream,2.0
-2,VCCB_SYSID 84360,,84360,2024-05-12,2024,6.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14536.0,SPRING BEACH,379.0,False,stream,2.0
-2,VCCB_SYSID 79612,,79612,2022-04-14,2022,41.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,15625.0,SPRING BEACH,990.0,False,stream,2.0
-2,VCCB_SYSID 82069,,82069,2023-06-19,2023,25.7,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,16597.0,SPRING BEACH,1282.0,False,stream,2.0
-2,VCCB_SYSID 81194,,81194,2023-03-16,2023,57.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,18065.0,SPRING BEACH,754.0,False,stream,2.0
-2,VCCB_SYSID 85958,,85958,2024-12-03,2024,21.8,Lake Cowichan area,0.0,0.0,0.0,0.0,3.0,19177.0,SPRING BEACH,451.0,False,stream,2.0
-2,VCCB_SYSID 85953,,85953,2024-12-03,2024,1.2,Lake Cowichan area,0.0,0.0,0.0,0.0,39.0,18499.0,SPRING BEACH,1442.0,False,stream,2.0
-2,VCCB_SYSID 79472,,79472,2022-04-05,2022,69.0,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,10506.0,SPRING BEACH,361.0,False,stream,2.0
-2,VCCB_SYSID 84358,,84358,2024-05-12,2024,26.6,Lake Cowichan area,0.0,0.0,0.0,0.0,64.0,10798.0,SPRING BEACH,721.0,False,stream,2.0
-2,VCCB_SYSID 84553,,84553,2024-06-30,2024,7.6,Lake Cowichan area,0.0,0.0,0.0,0.0,2.0,11031.0,SPRING BEACH,1533.0,False,stream,2.0
-2,VCCB_SYSID 85983,,85983,2024-12-03,2024,42.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14166.0,SPRING BEACH,367.0,False,stream,2.0
-2,VCCB_SYSID 84723,,84723,2024-07-06,2024,0.1,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,14614.0,SPRING BEACH,667.0,False,stream,2.0
+2,VCCB_SYSID 81059,,81059,2022-12-26,2022,27.4,Chemainus River,0.0,0.0,0.0,0.0,0.0,7280.0,SPRING BEACH,498.0,False,stream,2.0
+2,VCCB_SYSID 80037,,80037,2022-06-24,2022,56.8,Chemainus River,0.0,0.0,0.0,0.0,0.0,7213.0,SPRING BEACH,241.0,False,stream,2.0
+2,OPENING_ID 1738051,1738051,524540,2020-03-09,2020,39.7,Chipman Creek,0.0,0.0,0.0,0.0,0.0,14210.0,SPRING BEACH,874.0,False,stream,2.0
+2,OPENING_ID 1734365,1734365,521535,2019-10-04,2019,38.8,Solly Creek,0.0,0.0,0.0,0.0,18.0,15373.0,SPRING BEACH,2071.0,False,stream,2.0
+2,VCCB_SYSID 84360,,84360,2024-05-12,2024,6.0,Chipman Creek,0.0,0.0,0.0,0.0,0.0,14536.0,SPRING BEACH,379.0,False,stream,2.0
+2,VCCB_SYSID 79612,,79612,2022-04-14,2022,41.5,Haslam Creek,0.0,0.0,0.0,0.0,0.0,15625.0,SPRING BEACH,990.0,False,stream,2.0
+2,VCCB_SYSID 82069,,82069,2023-06-19,2023,25.7,Chipman Creek,0.0,0.0,0.0,0.0,0.0,16597.0,SPRING BEACH,1282.0,False,stream,2.0
+2,VCCB_SYSID 81194,,81194,2023-03-16,2023,57.0,Holland Creek,0.0,0.0,0.0,0.0,0.0,18065.0,SPRING BEACH,754.0,False,stream,2.0
+2,VCCB_SYSID 85958,,85958,2024-12-03,2024,21.8,Holland Creek,0.0,0.0,0.0,0.0,3.0,19177.0,SPRING BEACH,451.0,False,stream,2.0
+2,VCCB_SYSID 85953,,85953,2024-12-03,2024,1.2,Holland Creek,0.0,0.0,0.0,0.0,39.0,18499.0,SPRING BEACH,1442.0,False,stream,2.0
+2,VCCB_SYSID 79472,,79472,2022-04-05,2022,69.0,Chipman Creek,0.0,0.0,0.0,0.0,0.0,10506.0,SPRING BEACH,361.0,False,stream,2.0
+2,VCCB_SYSID 84358,,84358,2024-05-12,2024,26.6,Chipman Creek,0.0,0.0,0.0,0.0,64.0,10798.0,SPRING BEACH,721.0,False,stream,2.0
+2,VCCB_SYSID 84553,,84553,2024-06-30,2024,7.6,Chipman Creek,0.0,0.0,0.0,0.0,2.0,11031.0,SPRING BEACH,1533.0,False,stream,2.0
+2,VCCB_SYSID 85983,,85983,2024-12-03,2024,42.8,Chipman Creek,0.0,0.0,0.0,0.0,0.0,14166.0,SPRING BEACH,367.0,False,stream,2.0
+2,VCCB_SYSID 84723,,84723,2024-07-06,2024,0.1,Chipman Creek,0.0,0.0,0.0,0.0,0.0,14614.0,SPRING BEACH,667.0,False,stream,2.0
 2,OPENING_ID 1748295,1748295,531723,2020-03-10,2020,4.0,Lake Cowichan area,0.0,0.0,0.0,0.0,1.0,26306.0,SPRING BEACH,1299.0,False,stream,2.0
-2,VCCB_SYSID 78360,,78360,2021-09-25,2021,24.9,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,21259.0,SPRING BEACH,1582.0,False,stream,2.0
-2,OPENING_ID 1686438,1686438,485388,2016-09-09,2016,2.8,Lake Cowichan area,0.0,0.0,0.0,0.0,47.0,24779.0,SPRING BEACH,1713.0,False,stream,2.0
-2,VCCB_SYSID 82444,,82444,2023-07-29,2023,19.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,23617.0,SPRING BEACH,1533.0,False,stream,2.0
-2,OPENING_ID 1747531,1747531,530933,2020-11-15,2020,6.5,Lake Cowichan area,0.0,0.0,0.0,0.0,50.0,23655.0,SPRING BEACH,1038.0,False,stream,2.0
-2,OPENING_ID 1757663,1757663,538593,2021-09-15,2021,2.2,Lake Cowichan area,0.0,0.0,0.0,0.0,94.0,24094.0,SPRING BEACH,906.0,False,stream,2.0
-2,OPENING_ID 1712339,1712339,506313,2017-09-15,2017,4.1,Lake Cowichan area,0.0,0.0,0.0,0.0,44.0,24516.0,SPRING BEACH,462.0,False,stream,2.0
-2,VCCB_SYSID 80980,,80980,2022-12-01,2022,12.7,Lake Cowichan area,0.0,0.0,0.0,0.0,7.0,24030.0,SPRING BEACH,809.0,False,stream,2.0
-2,OPENING_ID 1686431,1686431,485384,2016-09-01,2016,5.2,Lake Cowichan area,0.0,0.0,0.0,0.0,42.0,25198.0,SPRING BEACH,1151.0,False,stream,2.0
-2,OPENING_ID 1686435,1686435,485385,2016-09-01,2016,2.4,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,25242.0,SPRING BEACH,986.0,False,stream,2.0
-2,OPENING_ID 1721483,1721483,513405,2018-10-15,2018,11.4,Lake Cowichan area,0.0,0.0,0.0,0.0,30.0,25505.0,SPRING BEACH,1064.0,False,stream,2.0
-2,OPENING_ID 1742835,1742835,527308,2017-04-18,2017,5.0,Lake Cowichan area,0.0,0.0,0.0,0.0,94.0,26733.0,SPRING BEACH,747.0,False,stream,2.0
-2,VCCB_SYSID 85565,,85565,2024-10-16,2024,20.6,Lake Cowichan area,0.0,0.0,0.0,0.0,84.0,20432.0,SPRING BEACH,1705.0,False,stream,2.0
-2,VCCB_SYSID 84768,,84768,2024-07-07,2024,17.3,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,19882.0,SPRING BEACH,1645.0,False,stream,2.0
-2,VCCB_SYSID 78898,,78898,2021-12-23,2021,24.5,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,21046.0,SPRING BEACH,504.0,False,stream,2.0
-2,VCCB_SYSID 79121,,79121,2022-02-16,2022,12.8,Lake Cowichan area,0.0,0.0,0.0,0.0,0.0,23865.0,SPRING BEACH,1128.0,False,stream,2.0
-2,OPENING_ID 1671211,1671211,473133,2015-05-15,2015,4.7,Lake Cowichan area,0.0,0.0,0.0,0.0,80.0,25309.0,SPRING BEACH,535.0,False,stream,2.0
+2,VCCB_SYSID 78360,,78360,2021-09-25,2021,24.9,West Banon Creek,0.0,0.0,0.0,0.0,0.0,21259.0,SPRING BEACH,1582.0,False,stream,2.0
+2,OPENING_ID 1686438,1686438,485388,2016-09-09,2016,2.8,Banon Creek,0.0,0.0,0.0,0.0,47.0,24779.0,SPRING BEACH,1713.0,False,stream,2.0
+2,VCCB_SYSID 82444,,82444,2023-07-29,2023,19.3,Banon Creek,0.0,0.0,0.0,0.0,0.0,23617.0,SPRING BEACH,1533.0,False,stream,2.0
+2,OPENING_ID 1747531,1747531,530933,2020-11-15,2020,6.5,West Banon Creek,0.0,0.0,0.0,0.0,50.0,23655.0,SPRING BEACH,1038.0,False,stream,2.0
+2,OPENING_ID 1757663,1757663,538593,2021-09-15,2021,2.2,West Banon Creek,0.0,0.0,0.0,0.0,94.0,24094.0,SPRING BEACH,906.0,False,stream,2.0
+2,OPENING_ID 1712339,1712339,506313,2017-09-15,2017,4.1,Banon Creek,0.0,0.0,0.0,0.0,44.0,24516.0,SPRING BEACH,462.0,False,stream,2.0
+2,VCCB_SYSID 80980,,80980,2022-12-01,2022,12.7,Banon Creek,0.0,0.0,0.0,0.0,7.0,24030.0,SPRING BEACH,809.0,False,stream,2.0
+2,OPENING_ID 1686431,1686431,485384,2016-09-01,2016,5.2,Banon Creek,0.0,0.0,0.0,0.0,42.0,25198.0,SPRING BEACH,1151.0,False,stream,2.0
+2,OPENING_ID 1686435,1686435,485385,2016-09-01,2016,2.4,Banon Creek,0.0,0.0,0.0,0.0,0.0,25242.0,SPRING BEACH,986.0,False,stream,2.0
+2,OPENING_ID 1721483,1721483,513405,2018-10-15,2018,11.4,Banon Creek,0.0,0.0,0.0,0.0,30.0,25505.0,SPRING BEACH,1064.0,False,stream,2.0
+2,OPENING_ID 1742835,1742835,527308,2017-04-18,2017,5.0,Askew Creek,0.0,0.0,0.0,0.0,94.0,26733.0,SPRING BEACH,747.0,False,stream,2.0
+2,VCCB_SYSID 85565,,85565,2024-10-16,2024,20.6,Banon Creek,0.0,0.0,0.0,0.0,84.0,20432.0,SPRING BEACH,1705.0,False,stream,2.0
+2,VCCB_SYSID 84768,,84768,2024-07-07,2024,17.3,Banon Creek,0.0,0.0,0.0,0.0,0.0,19882.0,SPRING BEACH,1645.0,False,stream,2.0
+2,VCCB_SYSID 78898,,78898,2021-12-23,2021,24.5,Banon Creek,0.0,0.0,0.0,0.0,0.0,21046.0,SPRING BEACH,504.0,False,stream,2.0
+2,VCCB_SYSID 79121,,79121,2022-02-16,2022,12.8,Chemainus River,0.0,0.0,0.0,0.0,0.0,23865.0,SPRING BEACH,1128.0,False,stream,2.0
+2,OPENING_ID 1671211,1671211,473133,2015-05-15,2015,4.7,Banon Creek,0.0,0.0,0.0,0.0,80.0,25309.0,SPRING BEACH,535.0,False,stream,2.0
