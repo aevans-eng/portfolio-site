@@ -120,6 +120,34 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.755,
+          36.203
+        ]
+      },
+      "properties": {
+        "slug": "deetjens",
+        "name": "Deetjen's Big Sur Inn",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "A ramshackle Norwegian village of hand-built redwood cabins with thin walls, no TVs, and a candlelit dining room that's been running since 1939.",
+        "tags": [
+          "inn",
+          "historic",
+          "restaurant",
+          "character"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.745,
           36.811
         ]
@@ -141,6 +169,34 @@
           "otters",
           "estuary",
           "birds"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.67,
+          36.158
+        ]
+      },
+      "properties": {
+        "slug": "ewoldsen-trail",
+        "name": "Ewoldsen Trail",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h",
+        "hook": "The actual hike in the park everyone drives to for a ten-minute waterfall photo, and the one that earns the trip.",
+        "tags": [
+          "redwoods",
+          "waterfall",
+          "coastal-views",
+          "hike"
         ]
       }
     },
@@ -463,6 +519,62 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.9017,
+          36.3064
+        ]
+      },
+      "properties": {
+        "slug": "point-sur-lighthouse",
+        "name": "Point Sur Lighthouse",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h45m",
+        "hook": "A working lighthouse stranded on a 361-foot volcanic rock, and the only one on the coast you can walk through, on a docent's schedule.",
+        "tags": [
+          "lighthouse",
+          "history",
+          "tour-only",
+          "coastal"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.365,
+          35.817
+        ]
+      },
+      "properties": {
+        "slug": "salmon-creek-falls",
+        "name": "Salmon Creek Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "A 120-foot waterfall a five-minute walk from a highway pullout at the far south end, where almost nobody bothers to stop.",
+        "tags": [
+          "waterfall",
+          "swimming-hole",
+          "remote",
+          "easy"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.316,
           35.755
         ]
@@ -484,6 +596,34 @@
           "remote",
           "quiet",
           "tidepools"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.47,
+          35.926
+        ]
+      },
+      "properties": {
+        "slug": "sand-dollar-jade-cove",
+        "name": "Sand Dollar Beach & Jade Cove",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h45m",
+        "hook": "The one place on 90 miles of cliff coast where you can walk a long, open beach, and dig real jade out of the surf next door.",
+        "tags": [
+          "beach",
+          "jade",
+          "remote",
+          "treasure-hunt"
         ]
       }
     },
