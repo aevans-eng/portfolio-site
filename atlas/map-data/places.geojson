@@ -235,6 +235,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.641,
+          36.1256
+        ]
+      },
+      "properties": {
+        "slug": "esalen-hot-springs",
+        "name": "Esalen Hot Springs",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h",
+        "hook": "Cliffside hot springs over the open Pacific, open to outsiders for exactly two hours in the dead of night.",
+        "tags": [
+          "hot-springs",
+          "cliffside",
+          "night",
+          "clothing-optional",
+          "oddity"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.67,
           36.158
         ]
@@ -342,6 +371,35 @@
           "presidio",
           "walking",
           "ephemeral"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.1683,
+          35.6852
+        ]
+      },
+      "properties": {
+        "slug": "hearst-castle-zebras",
+        "name": "Hearst Castle & the San Simeon Zebras",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "A newspaper baron's marble hilltop palace, and the zebras from his private zoo still grazing the ranch below it, for free.",
+        "tags": [
+          "history",
+          "mansion",
+          "zebras",
+          "tour-only",
+          "oddity"
         ]
       }
     },
@@ -492,6 +550,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.115,
+          35.572
+        ]
+      },
+      "properties": {
+        "slug": "moonstone-beach",
+        "name": "Moonstone Beach (Cambria)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "A bluff-top boardwalk where you hunt for moonstones, watch otters, and drop into tide pools, all in an easy mile and a half.",
+        "tags": [
+          "beach",
+          "tidepools",
+          "otters",
+          "beachcombing",
+          "easy"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.458,
           37.7576
         ]
@@ -600,6 +687,34 @@
           "ridge",
           "quiet",
           "retreat"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.1085,
+          35.5665
+        ]
+      },
+      "properties": {
+        "slug": "nitt-witt-ridge",
+        "name": "Nitt Witt Ridge",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h",
+        "hook": "The poor man's Hearst Castle: a hillside palace one man built by hand over fifty years out of beer cans, abalone shells, and whatever the town threw away.",
+        "tags": [
+          "outsider-art",
+          "folk-art",
+          "oddity",
+          "history"
         ]
       }
     },
@@ -723,6 +838,64 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.783,
+          36.247
+        ]
+      },
+      "properties": {
+        "slug": "pfeiffer-falls",
+        "name": "Pfeiffer Falls & Valley View",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "A short redwood loop to a 60-foot fall, the easy leg-stretch inside the park most people only drive through to reach Pfeiffer Beach.",
+        "tags": [
+          "redwoods",
+          "waterfall",
+          "easy",
+          "family",
+          "hike"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.2555,
+          35.6625
+        ]
+      },
+      "properties": {
+        "slug": "piedras-blancas-elephant-seals",
+        "name": "Piedras Blancas Elephant Seal Rookery",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h",
+        "hook": "Thousands of elephant seals sprawled on a beach a few feet below a boardwalk, for free, any day of the year.",
+        "tags": [
+          "wildlife",
+          "elephant-seals",
+          "boardwalk",
+          "free",
+          "coastal"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.939,
           36.5163
         ]
@@ -800,6 +973,35 @@
           "history",
           "tour-only",
           "coastal"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.3247,
+          35.7797
+        ]
+      },
+      "properties": {
+        "slug": "ragged-point",
+        "name": "Ragged Point & Black Swift Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h45m",
+        "hook": "The cliff where Big Sur begins or ends, with a brutal little trail down to a black-sand beach and a 300-foot waterfall you can't see from the top.",
+        "tags": [
+          "cliff",
+          "waterfall",
+          "black-sand",
+          "gateway",
+          "hike"
         ]
       }
     },
