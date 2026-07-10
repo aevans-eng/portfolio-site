@@ -36,6 +36,46 @@
         "kind": "wander-zone",
         "color": "#c17d3a"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.9165,
+              36.6262
+            ],
+            [
+              -121.936,
+              36.6398
+            ],
+            [
+              -121.9448,
+              36.6252
+            ],
+            [
+              -121.9285,
+              36.6092
+            ],
+            [
+              -121.907,
+              36.6172
+            ],
+            [
+              -121.9165,
+              36.6262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "slug": "pacific-grove",
+        "name": "Pacific Grove",
+        "kind": "wander-zone",
+        "color": "#c17d3a"
+      }
     }
   ]
 }

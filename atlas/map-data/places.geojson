@@ -91,6 +91,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.9233,
+          36.5552
+        ]
+      },
+      "properties": {
+        "slug": "carmel-by-the-sea",
+        "name": "Carmel-by-the-Sea",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h15m",
+        "hook": "A one-square-mile village of storybook cottages with no street numbers and a white-sand beach at the bottom of the main street.",
+        "tags": [
+          "town",
+          "beach",
+          "architecture",
+          "galleries",
+          "dog-friendly"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.745,
           36.811
         ]
@@ -262,6 +291,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.767,
+          36.223
+        ]
+      },
+      "properties": {
+        "slug": "nepenthe",
+        "name": "Nepenthe",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "A clifftop terrace with a fifty-mile view that Orson Welles bought on a whim and never once slept in.",
+        "tags": [
+          "view",
+          "history",
+          "bohemian",
+          "restaurant",
+          "crowded"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.623,
           36.101
         ]
@@ -283,6 +341,35 @@
           "ridge",
           "quiet",
           "retreat"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.916,
+          36.6258
+        ]
+      },
+      "properties": {
+        "slug": "pacific-grove",
+        "name": "Pacific Grove",
+        "kind": "wander-zone",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h",
+        "hook": "The Victorian beach town on the tip of the peninsula that locals quietly rate over Carmel, minus the crowds and the price tags.",
+        "tags": [
+          "walking",
+          "coastal",
+          "victorian",
+          "butterflies",
+          "tidepools"
         ]
       }
     },
