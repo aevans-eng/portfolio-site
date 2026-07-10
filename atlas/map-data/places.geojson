@@ -1071,6 +1071,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.501,
+          37.5935
+        ]
+      },
+      "properties": {
+        "slug": "linda-mar-taco-bell",
+        "name": "The Pacifica Taco Bell",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "The only Taco Bell with a walk-up window for surfers and a beach out the back door.",
+        "tags": [
+          "beach",
+          "surf",
+          "fast-food",
+          "walk-up"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4964,
           37.4956
         ]
@@ -1216,6 +1245,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.498,
+          37.625
+        ]
+      },
+      "properties": {
+        "slug": "mori-point",
+        "name": "Mori Point",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "A dramatic Pacifica headland of cliffs and hidden ponds, a short walk off the highway, that most people speeding through never stop for.",
+        "tags": [
+          "headland",
+          "cliffs",
+          "ponds",
+          "coast-trail",
+          "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.5155,
           37.5306
         ]
@@ -1306,6 +1365,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.494,
+          37.672
+        ]
+      },
+      "properties": {
+        "slug": "mussel-rock",
+        "name": "Mussel Rock",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "25m",
+        "hook": "The exact spot where the San Andreas Fault dives into the Pacific, now a hang-gliding launch perched on top of an old landfill.",
+        "tags": [
+          "fault",
+          "hang-gliding",
+          "cliffs",
+          "coast"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.767,
           36.223
         ]
@@ -1359,6 +1447,35 @@
           "retreat"
         ],
         "stay": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.487,
+          37.632
+        ]
+      },
+      "properties": {
+        "slug": "nike-missile-site",
+        "name": "Nike Missile Site SF-51",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "The abandoned concrete bones of a Cold War missile base on a Pacifica ridge, now a windswept graffiti gallery.",
+        "tags": [
+          "cold-war",
+          "ruins",
+          "graffiti",
+          "ridge"
+        ],
+        "stay": false
       }
     },
     {
@@ -2166,6 +2283,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.456,
+          37.612
+        ]
+      },
+      "properties": {
+        "slug": "sweeney-ridge",
+        "name": "Sweeney Ridge & the Bay Discovery Site",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "30m",
+        "hook": "The ridge where a lost Spanish expedition first laid eyes on San Francisco Bay, now a windswept hike with the whole thing at your feet.",
+        "tags": [
+          "ridge",
+          "history",
+          "view",
+          "hike",
+          "fog"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.55,
           36.235
         ]
@@ -2366,6 +2513,35 @@
           "quiet",
           "marina",
           "subtle"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.388,
+          37.6725
+        ]
+      },
+      "properties": {
+        "slug": "wind-harp",
+        "name": "The Wind Harp",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "20m",
+        "hook": "A 92-foot steel harp on a hilltop by the bay, played by nothing but the wind.",
+        "tags": [
+          "sculpture",
+          "wind",
+          "sound",
+          "bay-trail"
         ],
         "stay": false
       }
