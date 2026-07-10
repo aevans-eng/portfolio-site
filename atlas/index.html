@@ -176,6 +176,12 @@ const ZONES  = [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates
 const DEPTH_LABEL = {2:"2+ · everything worth a stop",3:"3+ · worth a detour",4:"4+ · go out of your way",5:"5 · reorders your map"};
 
 const map = L.map('map',{zoomControl:true, attributionControl:true}).setView([37.9,-121.6], 7);
+// Remember the last view so returning from a place page lands you where you were,
+// not back at the default zoom. Persists for the browser-tab session.
+try{ const v=JSON.parse(sessionStorage.getItem('atlasView')||'null');
+  if(v&&typeof v.lat==='number') map.setView([v.lat,v.lng], v.zoom); }catch(e){}
+map.on('moveend zoomend',()=>{ const c=map.getCenter();
+  try{ sessionStorage.setItem('atlasView', JSON.stringify({lat:c.lat,lng:c.lng,zoom:map.getZoom()})); }catch(e){} });
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
   {maxZoom:19, attribution:'© OpenStreetMap contributors'}).addTo(map);
 L.control.scale({imperial:true, metric:false, position:'bottomleft'}).addTo(map);
