@@ -34,6 +34,121 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.845,
+          36.287
+        ]
+      },
+      "properties": {
+        "slug": "andrew-molera",
+        "name": "Andrew Molera State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h50m",
+        "hook": "The big Big Sur park with no scenic drive-in, so the crowds thin the second you're out of the parking lot and across the river.",
+        "tags": [
+          "beach",
+          "bluffs",
+          "wildlife",
+          "walk-in",
+          "quiet"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.902,
+          36.3714
+        ]
+      },
+      "properties": {
+        "slug": "bixby-bridge",
+        "name": "Bixby Creek Bridge",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "2h45m",
+        "hook": "The most photographed thing on the coast, and the clearest example of what this map is trying to steer you around.",
+        "tags": [
+          "bridge",
+          "icon",
+          "photo-op",
+          "crowded"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.745,
+          36.811
+        ]
+      },
+      "properties": {
+        "slug": "elkhorn-slough",
+        "name": "Elkhorn Slough",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h50m",
+        "hook": "Trade the coast drive for a morning and paddle a tidal slough that holds the largest raft of sea otters on the planet.",
+        "tags": [
+          "kayak",
+          "wildlife",
+          "otters",
+          "estuary",
+          "birds"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.92,
+          36.47
+        ]
+      },
+      "properties": {
+        "slug": "garrapata",
+        "name": "Garrapata State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h30m",
+        "hook": "No sign, no entrance, no lot. Just numbered gates on the shoulder of Highway 1 and some of the best coast north of Big Sur proper.",
+        "tags": [
+          "bluffs",
+          "beach",
+          "wildflowers",
+          "hidden",
+          "coastal"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.762,
           36.2225
         ]
@@ -147,6 +262,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.623,
+          36.101
+        ]
+      },
+      "properties": {
+        "slug": "new-camaldoli-hermitage",
+        "name": "New Camaldoli Hermitage",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h30m",
+        "hook": "A working Benedictine monastery on a ridge two miles up a private road, where you can buy honey the monks made and just sit with the quiet.",
+        "tags": [
+          "solitude",
+          "monastery",
+          "ridge",
+          "quiet",
+          "retreat"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.6933,
           36.1783
         ]
@@ -232,6 +376,64 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.316,
+          35.755
+        ]
+      },
+      "properties": {
+        "slug": "san-carpoforo-beach",
+        "name": "San Carp\u00f3foro Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h",
+        "hook": "The wide, driftwood-strewn beach at the very bottom of Big Sur that almost nobody stops for, because there's no sign telling them to.",
+        "tags": [
+          "beach",
+          "driftwood",
+          "remote",
+          "quiet",
+          "tidepools"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.55,
+          36.235
+        ]
+      },
+      "properties": {
+        "slug": "tassajara",
+        "name": "Tassajara Zen Mountain Center",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h30m + 14 miles of dirt road",
+        "hook": "A Zen monastery and clothing-optional hot springs at the end of fourteen miles of dirt road, open to outsiders four months a year.",
+        "tags": [
+          "hot-springs",
+          "zen",
+          "remote",
+          "dirt-road",
+          "retreat"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.9526,
           38.1917
         ]
@@ -252,6 +454,35 @@
           "coastal",
           "hike",
           "solitude"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.593,
+          36.008
+        ]
+      },
+      "properties": {
+        "slug": "vicente-flat-cone-peak",
+        "name": "Vicente Flat & Cone Peak",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "3h15m to the Kirk Creek trailhead",
+        "hook": "A backpacking route from the edge of the highway to the tallest coastal mountain in the lower 48, and a redwood camp one local calls the best on the planet.",
+        "tags": [
+          "backpacking",
+          "redwoods",
+          "summit",
+          "coastal-views",
+          "wilderness"
         ]
       }
     }
