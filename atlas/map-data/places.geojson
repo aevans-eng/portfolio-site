@@ -448,6 +448,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.077,
+          37.414
+        ]
+      },
+      "properties": {
+        "slug": "computer-history-museum",
+        "name": "Computer History Museum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "50m",
+        "hook": "The world's biggest collection of old computers, including a hand-cranked Victorian calculating engine and the actual teapot that shaped all of 3D graphics.",
+        "tags": [
+          "museum",
+          "computers",
+          "history",
+          "tech"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.314,
           37.59
         ]
@@ -2044,6 +2073,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.172,
+          37.427
+        ]
+      },
+      "properties": {
+        "slug": "png-sculpture-garden",
+        "name": "Papua New Guinea Sculpture Garden",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "A quiet grove near Stanford full of towering carved totems and a dugout canoe, made by New Guinea artists flown in to carve the wood on site.",
+        "tags": [
+          "sculpture",
+          "art",
+          "new-guinea",
+          "free",
+          "stanford"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.939,
           36.5163
         ]
@@ -2785,6 +2844,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.3,
+          37.51
+        ]
+      },
+      "properties": {
+        "slug": "waterdog-lake",
+        "name": "Waterdog Lake",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "A hidden reservoir at the top of a Belmont street, a genuine little lake tucked in the hills with trails all around it.",
+        "tags": [
+          "lake",
+          "trails",
+          "hidden",
+          "mtb"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4413,
           37.8086
         ]
@@ -2865,6 +2953,36 @@
           "view",
           "hang-gliders",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.262,
+          37.409
+        ]
+      },
+      "properties": {
+        "slug": "wunderlich-park",
+        "name": "Wunderlich Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "A redwood-and-oak forest above Woodside, threaded with old horse-estate trails, that stays quiet while the famous parks fill up.",
+        "tags": [
+          "redwoods",
+          "oak",
+          "trails",
+          "quiet",
+          "horses"
         ],
         "stay": false
       }
