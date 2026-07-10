@@ -214,6 +214,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.169,
+          37.429
+        ]
+      },
+      "properties": {
+        "slug": "arizona-cactus-garden",
+        "name": "Arizona Cactus Garden",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "A hidden Victorian desert garden on the Stanford campus, a thousand cacti planted for the Stanfords in the 1880s, free and almost always empty.",
+        "tags": [
+          "garden",
+          "cactus",
+          "victorian",
+          "free",
+          "stanford"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.136,
           37.415
         ]
@@ -2626,6 +2656,35 @@
           "letters",
           "view",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.205,
+          37.418
+        ]
+      },
+      "properties": {
+        "slug": "slac",
+        "name": "SLAC (the two-mile accelerator)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "A particle accelerator two miles long running under Interstate 280, once the longest building in the world, where they smashed atoms into Nobel Prizes.",
+        "tags": [
+          "physics",
+          "accelerator",
+          "science",
+          "scale"
         ],
         "stay": false
       }
