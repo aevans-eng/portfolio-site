@@ -155,6 +155,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.093,
+          37.421
+        ]
+      },
+      "properties": {
+        "slug": "android-statues",
+        "name": "The Android Lawn Statues",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "50m",
+        "hook": "A lawn of giant foam mascots at the Googleplex, one for every dessert-named Android release, from a Cupcake to a two-story robot.",
+        "tags": [
+          "google",
+          "statues",
+          "tech",
+          "mascots"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.3378,
           37.1082
         ]
@@ -273,6 +302,34 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.483,
+          37.665
+        ]
+      },
+      "properties": {
+        "slug": "broderick-terry-duel",
+        "name": "The Broderick-Terry Duel Site",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "20m",
+        "hook": "Two stone pillars ten paces apart in a Daly City park mark the last great American duel, where a sitting US senator was shot dead in 1859.",
+        "tags": [
+          "history",
+          "duel",
+          "monument"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.112,
           37.453
         ]
@@ -362,6 +419,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.455,
+          37.677
+        ]
+      },
+      "properties": {
+        "slug": "colma",
+        "name": "Colma",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "20m",
+        "hook": "A town where the dead outnumber the living by more than a thousand to one, built entirely to bury San Francisco's.",
+        "tags": [
+          "cemeteries",
+          "history",
+          "graves",
+          "oddity"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.314,
           37.59
         ]
@@ -442,6 +528,66 @@
           "trail",
           "bike",
           "history"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.287,
+          37.356
+        ]
+      },
+      "properties": {
+        "slug": "djerassi",
+        "name": "Djerassi Sculpture Ranch",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "55m",
+        "hook": "580 acres of Woodside ridge scattered with decades of art, an artists' retreat founded by the man who co-invented the birth-control pill.",
+        "tags": [
+          "art",
+          "residency",
+          "ridge",
+          "sculpture",
+          "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.276,
+          37.47
+        ]
+      },
+      "properties": {
+        "slug": "edgewood-park",
+        "name": "Edgewood Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "40m",
+        "hook": "A serpentine grassland that erupts into one of the Bay Area's best wildflower shows each spring, hidden between the freeways of Redwood City.",
+        "tags": [
+          "wildflowers",
+          "serpentine",
+          "grassland",
+          "spring",
+          "hike"
         ],
         "stay": false
       }
@@ -864,6 +1010,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.053,
+          37.411
+        ]
+      },
+      "properties": {
+        "slug": "hangar-one",
+        "name": "Hangar One",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "One of the largest freestanding buildings ever raised, an eight-acre airship hangar so big fog forms inside near the ceiling, now stripped to a bare steel skeleton.",
+        "tags": [
+          "hangar",
+          "airship",
+          "moffett",
+          "scale"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.1683,
           35.6852
         ]
@@ -1091,6 +1266,36 @@
           "surf",
           "fast-food",
           "walk-up"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.175,
+          37.326
+        ]
+      },
+      "properties": {
+        "slug": "los-trancos-fault",
+        "name": "Los Trancos San Andreas Fault Trail",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "A short loop that walks you straight down the San Andreas Fault, past a fence the 1906 earthquake shoved out of line.",
+        "tags": [
+          "fault",
+          "geology",
+          "self-guided",
+          "loop",
+          "history"
         ],
         "stay": false
       }
@@ -2106,6 +2311,65 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.489,
+          37.612
+        ]
+      },
+      "properties": {
+        "slug": "sams-castle",
+        "name": "Sam's Castle",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "An actual stone castle on a Pacifica hillside, built after 1906 by a man who wanted to be earthquake-proof, with a wild century behind it.",
+        "tags": [
+          "castle",
+          "history",
+          "pacifica",
+          "haunted"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.435,
+          37.689
+        ]
+      },
+      "properties": {
+        "slug": "san-bruno-mountain",
+        "name": "San Bruno Mountain",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "20m",
+        "hook": "A genuinely wild mountain marooned in the middle of the urban peninsula, with rare butterflies and a summit view from the ocean to the bay to the Farallones.",
+        "tags": [
+          "mountain",
+          "endemic",
+          "butterflies",
+          "view",
+          "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.316,
           35.755
         ]
@@ -2274,6 +2538,35 @@
           "free",
           "hidden",
           "fun"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.413,
+          37.66
+        ]
+      },
+      "properties": {
+        "slug": "sign-hill",
+        "name": "Sign Hill",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "20m",
+        "hook": "A hillside spelling out \"SOUTH SAN FRANCISCO THE INDUSTRIAL CITY\" in giant concrete letters, with a trail that climbs up through them.",
+        "tags": [
+          "landmark",
+          "letters",
+          "view",
+          "hike"
         ],
         "stay": false
       }
