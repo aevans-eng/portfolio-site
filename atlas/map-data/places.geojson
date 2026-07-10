@@ -6,6 +6,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.7789,
+          37.9339
+        ]
+      },
+      "properties": {
+        "slug": "alamere-falls",
+        "name": "Alamere Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "1h20m to the Palomarin trailhead",
+        "hook": "A waterfall that pours off a cliff straight onto the sand, at the end of a long, unmarked, slightly dangerous hike almost no casual visitor finishes.",
+        "tags": [
+          "waterfall",
+          "tidefall",
+          "hard-hike",
+          "coastal",
+          "remote"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.3235,
           37.8896
         ]
@@ -492,6 +521,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.5764,
+          37.9294
+        ]
+      },
+      "properties": {
+        "slug": "mount-tamalpais",
+        "name": "Mount Tamalpais",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "50m",
+        "hook": "The mountain the whole Bay Area looks up at, with a fern-and-redwood canyon of wooden ladders on one side and the open ocean on the other.",
+        "tags": [
+          "redwoods",
+          "summit",
+          "coastal-views",
+          "ladders",
+          "hike"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.767,
           36.223
         ]
@@ -685,6 +743,35 @@
           "wildlife",
           "tidepools",
           "hike"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.0208,
+          37.9959
+        ]
+      },
+      "properties": {
+        "slug": "point-reyes-lighthouse",
+        "name": "Point Reyes Lighthouse & Chimney Rock",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h45m",
+        "hook": "The windiest, foggiest point on the West Coast: 308 steps down to a lighthouse on the cliff, and in winter a beach heaving with elephant seals over the ridge.",
+        "tags": [
+          "lighthouse",
+          "whales",
+          "wildlife",
+          "windy",
+          "coastal"
         ]
       }
     },
