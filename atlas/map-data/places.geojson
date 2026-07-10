@@ -95,6 +95,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.2222,
+          37.3969
+        ]
+      },
+      "properties": {
+        "slug": "alpine-inn",
+        "name": "Alpine Inn (Rossotti's)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "An 1852 roadhouse beer garden, second-oldest tavern in California, that also happens to be where the internet took its first real breath.",
+        "tags": [
+          "tavern",
+          "history",
+          "internet",
+          "beer-garden",
+          "cyclists"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.845,
           36.287
         ]
@@ -622,6 +652,35 @@
           "bohemian",
           "culture",
           "free"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2747,
+          37.3188
+        ]
+      },
+      "properties": {
+        "slug": "kesey-la-honda",
+        "name": "Ken Kesey's La Honda",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "A log cabin in the redwoods off Highway 84 where the 1960s more or less caught fire: Ken Kesey's place, where the Acid Tests started and the Furthur bus got its paint.",
+        "tags": [
+          "history",
+          "counterculture",
+          "redwoods",
+          "roadside"
         ],
         "stay": false
       }
@@ -1371,6 +1430,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.348,
+          37.413
+        ]
+      },
+      "properties": {
+        "slug": "purisima-creek-redwoods",
+        "name": "Purisima Creek Redwoods",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "A deep redwood canyon on the coast side of Skyline that most people blow past on the way to the beach, with trails from flat creek walks to a lung-busting climb.",
+        "tags": [
+          "redwoods",
+          "trails",
+          "creek",
+          "quiet",
+          "preserve"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.3247,
           35.7797
         ]
@@ -1571,6 +1660,36 @@
           "retreat"
         ],
         "stay": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.372,
+          37.3625
+        ]
+      },
+      "properties": {
+        "slug": "the-bike-hut",
+        "name": "The Bike Hut",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h (but it's a bike place)",
+        "hook": "An unlocked garage on a farm road, stocked with snacks, coffee, and spare tubes, that runs entirely on the honor system for whoever rides by.",
+        "tags": [
+          "cycling",
+          "honor-system",
+          "farm",
+          "rest-stop",
+          "oddity"
+        ],
+        "stay": false
       }
     },
     {
