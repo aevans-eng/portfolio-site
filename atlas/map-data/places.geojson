@@ -27,7 +27,8 @@
           "hard-hike",
           "coastal",
           "remote"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -55,7 +56,38 @@
           "coastal",
           "ruins",
           "free"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2953,
+          37.3877
         ]
+      },
+      "properties": {
+        "slug": "alices-restaurant",
+        "name": "Alice's Restaurant",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "The wooden roadhouse where Skyline meets Highway 84, and every motorcycle and road bike in the Bay Area seems to end up on a weekend.",
+        "tags": [
+          "roadhouse",
+          "cyclists",
+          "motorcycles",
+          "ride-hub",
+          "food"
+        ],
+        "stay": false
       }
     },
     {
@@ -84,7 +116,68 @@
           "wildlife",
           "walk-in",
           "quiet"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3378,
+          37.1082
         ]
+      },
+      "properties": {
+        "slug": "ano-nuevo",
+        "name": "A\u00f1o Nuevo",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h20m",
+        "hook": "A windswept point where thousands of elephant seals haul out to fight, breed, and molt, reachable in winter only on foot with a docent.",
+        "tags": [
+          "wildlife",
+          "elephant-seals",
+          "dunes",
+          "hike",
+          "guided"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.411,
+          37.227
+        ]
+      },
+      "properties": {
+        "slug": "bean-hollow",
+        "name": "Bean Hollow & Pebble Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h5m",
+        "hook": "A beach of tiny polished pebbles and cliffs eaten into honeycomb, a short walk apart, that nearly everyone drives past.",
+        "tags": [
+          "beach",
+          "tafoni",
+          "pebbles",
+          "tidepools",
+          "geology"
+        ],
+        "stay": false
       }
     },
     {
@@ -112,7 +205,8 @@
           "icon",
           "photo-op",
           "crowded"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -141,7 +235,8 @@
           "architecture",
           "galleries",
           "dog-friendly"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -170,7 +265,8 @@
           "food",
           "walking",
           "culture"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -198,7 +294,38 @@
           "historic",
           "restaurant",
           "character"
+        ],
+        "stay": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5133,
+          37.5762
         ]
+      },
+      "properties": {
+        "slug": "devils-slide-trail",
+        "name": "Devil's Slide Trail",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "30m",
+        "hook": "A stretch of old Highway 1 so treacherous they finally drilled a tunnel around it, now a flat cliff-edge trail you get to walk or ride with no cars.",
+        "tags": [
+          "coastal",
+          "cliff",
+          "trail",
+          "bike",
+          "history"
+        ],
+        "stay": false
       }
     },
     {
@@ -227,7 +354,8 @@
           "otters",
           "estuary",
           "birds"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -256,7 +384,8 @@
           "night",
           "clothing-optional",
           "oddity"
-        ]
+        ],
+        "stay": true
       }
     },
     {
@@ -284,7 +413,38 @@
           "waterfall",
           "coastal-views",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5165,
+          37.5247
         ]
+      },
+      "properties": {
+        "slug": "fitzgerald-marine-reserve",
+        "name": "Fitzgerald Marine Reserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "35m",
+        "hook": "One of the richest tide-pool reefs in California, where a low tide turns a mile of rock into a live aquarium.",
+        "tags": [
+          "tidepools",
+          "wildlife",
+          "coastal",
+          "reef",
+          "family"
+        ],
+        "stay": false
       }
     },
     {
@@ -313,7 +473,8 @@
           "bridge",
           "film",
           "free"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -342,7 +503,8 @@
           "wildflowers",
           "hidden",
           "coastal"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -371,7 +533,37 @@
           "presidio",
           "walking",
           "ephemeral"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4286,
+          37.4636
         ]
+      },
+      "properties": {
+        "slug": "half-moon-bay",
+        "name": "Half Moon Bay",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "The coast's main town: a walkable old Main Street, a long state beach, and the harbor where the Mavericks legend lives.",
+        "tags": [
+          "town",
+          "beach",
+          "main-street",
+          "resupply"
+        ],
+        "stay": false
       }
     },
     {
@@ -400,7 +592,8 @@
           "zebras",
           "tour-only",
           "oddity"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -429,7 +622,8 @@
           "bohemian",
           "culture",
           "free"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -458,7 +652,8 @@
           "hike",
           "shipwrecks",
           "labyrinth"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -487,7 +682,37 @@
           "waterfall",
           "history",
           "quiet"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4964,
+          37.4956
         ]
+      },
+      "properties": {
+        "slug": "mavericks",
+        "name": "Mavericks & Pillar Point",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "40m",
+        "hook": "The wave a local surfed alone for fifteen years before the world found out, and one of the biggest breaks on earth.",
+        "tags": [
+          "surf",
+          "big-wave",
+          "bluff-trail",
+          "harbor"
+        ],
+        "stay": false
       }
     },
     {
@@ -514,7 +739,8 @@
           "waterfall",
           "coastal",
           "viewpoint"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -542,7 +768,37 @@
           "murals",
           "walking",
           "culture"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5183,
+          37.5372
         ]
+      },
+      "properties": {
+        "slug": "montara-lighthouse",
+        "name": "Point Montara Lighthouse Hostel",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "40m",
+        "hook": "A working lighthouse where the old keepers' quarters are now cheap bunks a few feet from the surf.",
+        "tags": [
+          "lighthouse",
+          "hostel",
+          "coastal",
+          "cheap"
+        ],
+        "stay": true
       }
     },
     {
@@ -571,7 +827,38 @@
           "otters",
           "beachcombing",
           "easy"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5155,
+          37.5306
         ]
+      },
+      "properties": {
+        "slug": "moss-beach-distillery",
+        "name": "Moss Beach Distillery",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "35m",
+        "hook": "A Prohibition speakeasy on a bluff over the ocean, still supposedly haunted by the jilted \"Blue Lady,\" Northern California's most famous ghost.",
+        "tags": [
+          "speakeasy",
+          "ghost",
+          "history",
+          "bluff",
+          "drinks"
+        ],
+        "stay": false
       }
     },
     {
@@ -600,7 +887,8 @@
           "quiet",
           "hidden",
           "view"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -629,7 +917,8 @@
           "coastal-views",
           "ladders",
           "hike"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -658,7 +947,8 @@
           "bohemian",
           "restaurant",
           "crowded"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -687,7 +977,8 @@
           "ridge",
           "quiet",
           "retreat"
-        ]
+        ],
+        "stay": true
       }
     },
     {
@@ -715,7 +1006,8 @@
           "folk-art",
           "oddity",
           "history"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -744,7 +1036,38 @@
           "cafes",
           "walking",
           "stairways"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.276,
+          37.268
         ]
+      },
+      "properties": {
+        "slug": "old-haul-road",
+        "name": "Old Haul Road",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h",
+        "hook": "A gentle gravel rail-trail through the redwoods on the bed of an old logging railroad, which most Bay Area riders never find.",
+        "tags": [
+          "gravel",
+          "redwoods",
+          "rail-trail",
+          "bike",
+          "quiet"
+        ],
+        "stay": false
       }
     },
     {
@@ -773,7 +1096,8 @@
           "victorian",
           "butterflies",
           "tidepools"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -802,7 +1126,38 @@
           "quiet",
           "history",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3831,
+          37.2554
         ]
+      },
+      "properties": {
+        "slug": "pescadero",
+        "name": "Pescadero",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h",
+        "hook": "A two-street farm town in the fog-and-redwood country where people drive an hour for artichoke soup and warm garlic bread.",
+        "tags": [
+          "town",
+          "food",
+          "farm",
+          "marsh",
+          "historic"
+        ],
+        "stay": false
       }
     },
     {
@@ -830,7 +1185,8 @@
           "purple-sand",
           "sunset",
           "dog-friendly"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -859,7 +1215,8 @@
           "easy",
           "family",
           "hike"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -888,7 +1245,37 @@
           "boardwalk",
           "free",
           "coastal"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3944,
+          37.1819
         ]
+      },
+      "properties": {
+        "slug": "pigeon-point",
+        "name": "Pigeon Point Lighthouse",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h10m",
+        "hook": "One of the tallest lighthouses on the West Coast, with a hostel in the keepers' houses and a hot tub bolted to the edge of the cliff.",
+        "tags": [
+          "lighthouse",
+          "hostel",
+          "hot-tub",
+          "coastal"
+        ],
+        "stay": true
       }
     },
     {
@@ -916,7 +1303,8 @@
           "wildlife",
           "tidepools",
           "hike"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -945,7 +1333,8 @@
           "wildlife",
           "windy",
           "coastal"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -973,7 +1362,8 @@
           "history",
           "tour-only",
           "coastal"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -1002,7 +1392,8 @@
           "black-sand",
           "gateway",
           "hike"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -1030,7 +1421,8 @@
           "swimming-hole",
           "remote",
           "easy"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -1059,7 +1451,37 @@
           "remote",
           "quiet",
           "tidepools"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3833,
+          37.3247
         ]
+      },
+      "properties": {
+        "slug": "san-gregorio-store",
+        "name": "San Gregorio General Store",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "55m",
+        "hook": "An 1889 general store that's really a saloon with live music, stiff Bloody Marys, and shelves of books, boots, and cast iron.",
+        "tags": [
+          "saloon",
+          "live-music",
+          "general-store",
+          "historic"
+        ],
+        "stay": false
       }
     },
     {
@@ -1087,7 +1509,8 @@
           "jade",
           "remote",
           "treasure-hunt"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -1116,7 +1539,8 @@
           "free",
           "hidden",
           "fun"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -1145,7 +1569,8 @@
           "remote",
           "dirt-road",
           "retreat"
-        ]
+        ],
+        "stay": true
       }
     },
     {
@@ -1174,7 +1599,8 @@
           "hidden",
           "view",
           "residential"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -1202,7 +1628,8 @@
           "coastal",
           "hike",
           "solitude"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -1231,7 +1658,8 @@
           "summit",
           "coastal-views",
           "wilderness"
-        ]
+        ],
+        "stay": false
       }
     },
     {
@@ -1260,7 +1688,8 @@
           "quiet",
           "marina",
           "subtle"
-        ]
+        ],
+        "stay": false
       }
     }
   ]
