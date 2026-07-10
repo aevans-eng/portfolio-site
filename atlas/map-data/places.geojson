@@ -422,6 +422,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.974,
+          38.351
+        ]
+      },
+      "properties": {
+        "slug": "bodega-the-birds",
+        "name": "Bodega (The Birds)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h45m",
+        "hook": "The schoolhouse and church from Hitchcock's \"The Birds,\" still standing in a sleepy inland town that looks eerily unchanged sixty years on.",
+        "tags": [
+          "the-birds",
+          "film",
+          "hitchcock",
+          "town"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.686,
           37.909
         ]
@@ -775,6 +804,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.348,
+          38.254
+        ]
+      },
+      "properties": {
+        "slug": "di-rosa",
+        "name": "di Rosa Center for Contemporary Art",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h15m",
+        "hook": "A former vineyard turned into 200 acres of contemporary art, with sculpture out in the meadows, galleries by a lake, and peacocks strutting the grounds.",
+        "tags": [
+          "art",
+          "sculpture",
+          "preserve",
+          "napa",
+          "peacocks"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.287,
           37.356
         ]
@@ -1101,6 +1160,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.245,
+          38.514
+        ]
+      },
+      "properties": {
+        "slug": "fort-ross",
+        "name": "Fort Ross",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h30m",
+        "hook": "A wooden Russian fort with an onion-domed chapel on the wild Sonoma coast, the southern edge of the Russian empire in America.",
+        "tags": [
+          "russian",
+          "fort",
+          "history",
+          "coast",
+          "chapel"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.159,
           37.409
         ]
@@ -1151,6 +1240,35 @@
           "wildflowers",
           "hidden",
           "coastal"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.128,
+          38.442
+        ]
+      },
+      "properties": {
+        "slug": "goat-rock",
+        "name": "Goat Rock & the Russian River Mouth",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h15m",
+        "hook": "The dramatic mouth of the Russian River, where a colony of harbor seals hauls out on the sand between the river and the sea.",
+        "tags": [
+          "river-mouth",
+          "seals",
+          "sea-stack",
+          "coast"
         ],
         "stay": false
       }
@@ -2164,6 +2282,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.576,
+          38.596
+        ]
+      },
+      "properties": {
+        "slug": "old-faithful-geyser",
+        "name": "Old Faithful Geyser of California",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h30m",
+        "hook": "One of the few geysers on Earth that erupts on a reliable clock, every few minutes, in a Calistoga field shared with fainting goats.",
+        "tags": [
+          "geyser",
+          "geology",
+          "calistoga",
+          "roadside"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.276,
           37.268
         ]
@@ -2305,6 +2452,35 @@
           "farm",
           "marsh",
           "historic"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.651,
+          38.556
+        ]
+      },
+      "properties": {
+        "slug": "petrified-forest",
+        "name": "The Petrified Forest",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h30m",
+        "hook": "Giant redwoods turned entirely to stone by a volcanic eruption three million years ago, lying where they fell, near Calistoga.",
+        "tags": [
+          "petrified-wood",
+          "geology",
+          "roadside",
+          "calistoga"
         ],
         "stay": false
       }
@@ -3053,6 +3229,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.452,
+          38.71
+        ]
+      },
+      "properties": {
+        "slug": "sea-ranch-chapel",
+        "name": "Sea Ranch Chapel",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h45m",
+        "hook": "A tiny, wave-shaped chapel on the Sonoma coast that looks like a seashell grew out of the meadow, open to anyone, of any faith or none.",
+        "tags": [
+          "chapel",
+          "sculpture",
+          "coast",
+          "sea-ranch"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.362,
           37.546
         ]
@@ -3578,6 +3783,36 @@
           "view",
           "hang-gliders",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.547,
+          38.356
+        ]
+      },
+      "properties": {
+        "slug": "wolf-house",
+        "name": "Wolf House (Jack London Park)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h15m",
+        "hook": "The stone ruins of the dream mansion Jack London built and never got to live in, burned to the ground days before he moved in.",
+        "tags": [
+          "ruins",
+          "jack-london",
+          "history",
+          "hike",
+          "sonoma"
         ],
         "stay": false
       }
