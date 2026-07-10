@@ -44,6 +44,42 @@
         "coordinates": [
           [
             [
+              -122.4128,
+              37.8062
+            ],
+            [
+              -122.4045,
+              37.8056
+            ],
+            [
+              -122.4055,
+              37.7974
+            ],
+            [
+              -122.4132,
+              37.7984
+            ],
+            [
+              -122.4128,
+              37.8062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "slug": "north-beach",
+        "name": "North Beach",
+        "kind": "wander-zone",
+        "color": "#c17d3a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               -121.9165,
               36.6262
             ],

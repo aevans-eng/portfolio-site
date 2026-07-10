@@ -263,6 +263,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.5137,
+          37.78
+        ]
+      },
+      "properties": {
+        "slug": "lands-end-sutro-baths",
+        "name": "Lands End & the Sutro Baths Ruins",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "The ruins of the largest swimming pool complex ever built, crumbling into the sea at the wildest corner of the city.",
+        "tags": [
+          "coastal",
+          "ruins",
+          "hike",
+          "shipwrecks",
+          "labyrinth"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.5183,
           36.0083
         ]
@@ -347,6 +376,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.458,
+          37.7576
+        ]
+      },
+      "properties": {
+        "slug": "mount-sutro",
+        "name": "Mount Sutro Cloud Forest",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "A hundred-year-old eucalyptus cloud forest hidden in the dead center of San Francisco, best on the exact foggy days everyone else avoids.",
+        "tags": [
+          "forest",
+          "fog",
+          "quiet",
+          "hidden",
+          "view"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.767,
           36.223
         ]
@@ -397,6 +455,35 @@
           "ridge",
           "quiet",
           "retreat"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.409,
+          37.8
+        ]
+      },
+      "properties": {
+        "slug": "north-beach",
+        "name": "North Beach",
+        "kind": "wander-zone",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "The old Italian quarter where the Beats set up shop, and still the best neighborhood in the city to wander on caffeine and no plan.",
+        "tags": [
+          "italian",
+          "beat-history",
+          "cafes",
+          "walking",
+          "stairways"
         ]
       }
     },
@@ -710,6 +797,35 @@
           "summit",
           "coastal-views",
           "wilderness"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4413,
+          37.8086
+        ]
+      },
+      "properties": {
+        "slug": "wave-organ",
+        "name": "The Wave Organ",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "A musical instrument you play by waiting for the tide, built out of a torn-down cemetery at the tip of a Marina jetty.",
+        "tags": [
+          "sound-art",
+          "jetty",
+          "quiet",
+          "marina",
+          "subtle"
         ]
       }
     }
