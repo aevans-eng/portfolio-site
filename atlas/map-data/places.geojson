@@ -185,6 +185,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.136,
+          37.415
+        ]
+      },
+      "properties": {
+        "slug": "barron-park-donkeys",
+        "name": "The Donkeys of Barron Park",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "Two donkeys in a Palo Alto pasture, one of whom modeled for Shrek's Donkey.",
+        "tags": [
+          "donkeys",
+          "shrek",
+          "community",
+          "bike-path"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.411,
           37.227
         ]
@@ -235,6 +264,35 @@
           "icon",
           "photo-op",
           "crowded"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.112,
+          37.453
+        ]
+      },
+      "properties": {
+        "slug": "byxbee-park",
+        "name": "Byxbee Park",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "40m",
+        "hook": "A capped garbage dump turned into a field of earth art: hundreds of leaning poles, chevrons aimed at the runway, a wind-shaped hill, all built on methane.",
+        "tags": [
+          "earth-art",
+          "landfill",
+          "baylands",
+          "oddity"
         ],
         "stay": false
       }
@@ -354,6 +412,35 @@
           "trail",
           "bike",
           "history"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.172,
+          37.4469
+        ]
+      },
+      "properties": {
+        "slug": "el-palo-alto",
+        "name": "El Palo Alto",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "The thousand-year-old redwood the whole town is named after, standing alone by the railroad tracks.",
+        "tags": [
+          "redwood",
+          "landmark",
+          "history",
+          "tree"
         ],
         "stay": false
       }
@@ -503,6 +590,35 @@
           "bridge",
           "film",
           "free"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.159,
+          37.409
+        ]
+      },
+      "properties": {
+        "slug": "frenchmans-tower",
+        "name": "Frenchman's Tower",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "A lonely two-story brick tower in the Palo Alto foothills that nobody can quite explain, so everyone made up a story.",
+        "tags": [
+          "folly",
+          "tower",
+          "urban-legend",
+          "foothills"
         ],
         "stay": false
       }
@@ -1164,6 +1280,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.105,
+          37.459
+        ]
+      },
+      "properties": {
+        "slug": "palo-alto-baylands",
+        "name": "Palo Alto Baylands",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "40m",
+        "hook": "The largest undisturbed marsh left on San Francisco Bay, flat and free at the edge of Palo Alto, laced with boardwalks and birds.",
+        "tags": [
+          "marsh",
+          "birds",
+          "boardwalk",
+          "flat",
+          "bike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.6933,
           36.1783
         ]
@@ -1430,6 +1576,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.331,
+          37.523
+        ]
+      },
+      "properties": {
+        "slug": "pulgas-water-temple",
+        "name": "Pulgas Water Temple",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "40m",
+        "hook": "A Roman-style temple hidden behind a gate on a country road, built in 1934 to celebrate water arriving from 160 miles away.",
+        "tags": [
+          "monument",
+          "roman",
+          "water",
+          "cycling",
+          "oddity"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.348,
           37.413
         ]
@@ -1481,6 +1657,36 @@
           "black-sand",
           "gateway",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17,
+          37.4322
+        ]
+      },
+      "properties": {
+        "slug": "rodin-sculpture-garden",
+        "name": "Rodin Sculpture Garden (Cantor)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "45m",
+        "hook": "Rodin's Gates of Hell, and the largest collection of his bronzes outside Paris, sitting free and outdoors on the Stanford campus.",
+        "tags": [
+          "art",
+          "rodin",
+          "sculpture",
+          "free",
+          "stanford"
         ],
         "stay": false
       }
@@ -1697,6 +1903,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.177,
+          37.409
+        ]
+      },
+      "properties": {
+        "slug": "the-dish",
+        "name": "The Dish",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "45m",
+        "hook": "A giant Cold War radio telescope on a grassy hill, ringed by a paved loop that half of Palo Alto treats as its living room.",
+        "tags": [
+          "hills",
+          "view",
+          "loop",
+          "walk",
+          "bike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4713,
           37.7562
         ]
@@ -1807,6 +2043,36 @@
           "quiet",
           "marina",
           "subtle"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.247,
+          37.373
+        ]
+      },
+      "properties": {
+        "slug": "windy-hill",
+        "name": "Windy Hill",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "Two bald grassy summits on the Skyline ridge with a full-circle view: bay and valley on one side, ridges rolling to the ocean on the other.",
+        "tags": [
+          "ridge",
+          "grassland",
+          "view",
+          "hang-gliders",
+          "hike"
         ],
         "stay": false
       }
