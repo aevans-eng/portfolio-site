@@ -120,6 +120,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.4075,
+          37.7958
+        ]
+      },
+      "properties": {
+        "slug": "chinatown-alleys",
+        "name": "Chinatown (the alleys)",
+        "kind": "wander-zone",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "The oldest Chinatown in the country, once you get off the souvenir street and into the alleys where it actually lives.",
+        "tags": [
+          "alleys",
+          "history",
+          "food",
+          "walking",
+          "culture"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.755,
           36.203
         ]
@@ -226,6 +255,35 @@
           "wildflowers",
           "hidden",
           "coastal"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.452,
+          37.7896
+        ]
+      },
+      "properties": {
+        "slug": "goldsworthy-presidio",
+        "name": "Andy Goldsworthy in the Presidio",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "The largest collection of Andy Goldsworthy's land art in North America, hidden in a forest you have to walk to find.",
+        "tags": [
+          "land-art",
+          "forest",
+          "presidio",
+          "walking",
+          "ephemeral"
         ]
       }
     },
@@ -740,6 +798,35 @@
           "remote",
           "dirt-road",
           "retreat"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4713,
+          37.7562
+        ]
+      },
+      "properties": {
+        "slug": "tiled-steps",
+        "name": "16th Avenue Tiled Steps",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "in SF",
+        "hook": "A staircase in the far avenues that a whole neighborhood turned into a single sea-to-sky mosaic, and almost no visitor makes it out here.",
+        "tags": [
+          "mosaic",
+          "stairway",
+          "hidden",
+          "view",
+          "residential"
         ]
       }
     },

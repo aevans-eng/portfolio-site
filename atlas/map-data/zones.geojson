@@ -8,6 +8,42 @@
         "coordinates": [
           [
             [
+              -122.4092,
+              37.7976
+            ],
+            [
+              -122.4044,
+              37.797
+            ],
+            [
+              -122.4051,
+              37.7905
+            ],
+            [
+              -122.4094,
+              37.7911
+            ],
+            [
+              -122.4092,
+              37.7976
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "slug": "chinatown-alleys",
+        "name": "Chinatown (the alleys)",
+        "kind": "wander-zone",
+        "color": "#c17d3a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               -122.4245,
               37.7662
             ],
