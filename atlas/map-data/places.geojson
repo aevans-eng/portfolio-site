@@ -184,6 +184,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.43,
+          37.861
+        ]
+      },
+      "properties": {
+        "slug": "angel-island",
+        "name": "Angel Island",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "ferry from SF or Tiburon",
+        "hook": "An island in the middle of the bay with a 360-degree view of the whole region and a haunting immigration station where a century of arrivals were detained.",
+        "tags": [
+          "island",
+          "history",
+          "bike-loop",
+          "views",
+          "ferry"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.3378,
           37.1082
         ]
@@ -303,6 +333,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.49,
+          37.865
+        ]
+      },
+      "properties": {
+        "slug": "bay-model",
+        "name": "The Bay Model",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "15m",
+        "hook": "A working scale model of the entire San Francisco Bay, the size of two football fields, with tides that cycle every fourteen minutes.",
+        "tags": [
+          "model",
+          "bay",
+          "army-corps",
+          "science",
+          "free"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.411,
           37.227
         ]
@@ -353,6 +413,35 @@
           "icon",
           "photo-op",
           "crowded"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.686,
+          37.909
+        ]
+      },
+      "properties": {
+        "slug": "bolinas",
+        "name": "Bolinas",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "The coastal town so committed to being left alone that residents kept tearing down the highway sign pointing to it.",
+        "tags": [
+          "town",
+          "hidden",
+          "coastal",
+          "hippie"
         ],
         "stay": false
       }
@@ -1454,6 +1543,66 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.533,
+          38.011
+        ]
+      },
+      "properties": {
+        "slug": "marin-civic-center",
+        "name": "Marin County Civic Center",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "25m",
+        "hook": "Frank Lloyd Wright's last great building, a long pink-and-blue arcade draped across three hills, that Hollywood keeps casting as the future.",
+        "tags": [
+          "architecture",
+          "frank-lloyd-wright",
+          "civic",
+          "film"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.499,
+          37.829
+        ]
+      },
+      "properties": {
+        "slug": "marin-headlands",
+        "name": "The Marin Headlands",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "15m",
+        "hook": "The most photographed view of the Golden Gate Bridge, and behind it a whole wild headland of old gun batteries, a hidden lighthouse, and a black-sand beach.",
+        "tags": [
+          "headlands",
+          "view",
+          "batteries",
+          "lighthouse",
+          "beach",
+          "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4964,
           37.4956
         ]
@@ -1749,6 +1898,66 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.589,
+          37.987
+        ]
+      },
+      "properties": {
+        "slug": "mtb-museum",
+        "name": "Marin Museum of Bicycling & MTB Hall of Fame",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "35m",
+        "hook": "A Fairfax museum on the exact ground where mountain biking was invented, home to the Mountain Bike Hall of Fame.",
+        "tags": [
+          "bicycling",
+          "mountain-bike",
+          "museum",
+          "history",
+          "mt-tam"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.572,
+          37.892
+        ]
+      },
+      "properties": {
+        "slug": "muir-woods",
+        "name": "Muir Woods & Muir Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "30m",
+        "hook": "The most famous old-growth redwoods near the city, awe-inspiring and reservation-only crowded, with a quieter beach and cliff overlook just down the hill.",
+        "tags": [
+          "redwoods",
+          "old-growth",
+          "beach",
+          "hike",
+          "reservations"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.494,
           37.672
         ]
@@ -1858,6 +2067,35 @@
           "ruins",
           "graffiti",
           "ridge"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.529,
+          37.827
+        ]
+      },
+      "properties": {
+        "slug": "nike-sf88",
+        "name": "Nike Missile Site SF-88",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "20m",
+        "hook": "The only fully restored Nike missile base in the country, where docents raise an actual Cold War nuclear missile out of its silo for you.",
+        "tags": [
+          "cold-war",
+          "missile",
+          "restored",
+          "docents"
         ],
         "stay": false
       }
@@ -2371,6 +2609,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.531,
+          37.974
+        ]
+      },
+      "properties": {
+        "slug": "propaganda-museum",
+        "name": "Museum of International Propaganda",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "25m",
+        "hook": "A small, free San Rafael museum of a century's worth of state propaganda, one couple's unsettling collection of posters, cartoons, and personality-cult kitsch.",
+        "tags": [
+          "museum",
+          "propaganda",
+          "history",
+          "free"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.331,
           37.523
         ]
@@ -2481,6 +2748,36 @@
           "coastal",
           "quiet",
           "ranch",
+          "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.483,
+          37.907
+        ]
+      },
+      "properties": {
+        "slug": "ring-mountain",
+        "name": "Ring Mountain",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "25m",
+        "hook": "A Tiburon ridge with 2,400-year-old Native carvings pecked into the boulders, a wildflower found nowhere else on Earth, and a full sweep of the bay.",
+        "tags": [
+          "petroglyphs",
+          "ridge",
+          "wildflowers",
+          "view",
           "hike"
         ],
         "stay": false
@@ -2697,6 +2994,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.493,
+          37.868
+        ]
+      },
+      "properties": {
+        "slug": "sausalito-houseboats",
+        "name": "The Sausalito Houseboats",
+        "kind": "wander-zone",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "15m",
+        "hook": "A floating neighborhood of wildly individual houseboats on the Sausalito waterfront, the mellow, arty remnant of a 1960s bohemia.",
+        "tags": [
+          "houseboats",
+          "bohemia",
+          "walking",
+          "waterfront"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.363,
           37.547
         ]
@@ -2835,6 +3161,36 @@
           "accelerator",
           "science",
           "scale"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.643,
+          37.901
+        ]
+      },
+      "properties": {
+        "slug": "stinson-beach",
+        "name": "Stinson Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "The Bay Area's classic beach day: a long arc of sand under Mount Tam, water warm enough to actually swim on a good day, and a trailhead for a legendary hike.",
+        "tags": [
+          "beach",
+          "swimming",
+          "mt-tam",
+          "hike",
+          "family"
         ],
         "stay": false
       }
@@ -2994,6 +3350,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.89,
+          38.16
+        ]
+      },
+      "properties": {
+        "slug": "tomales-oysters",
+        "name": "Tomales Bay Oysters",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h20m",
+        "hook": "Shuck your own oysters at a picnic table on the edge of a quiet bay, or paddle it on a dark night when the water glows blue.",
+        "tags": [
+          "oysters",
+          "bay",
+          "food",
+          "bioluminescence",
+          "kayak"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.9526,
           38.1917
         ]
@@ -3014,6 +3400,36 @@
           "coastal",
           "hike",
           "solitude"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.585,
+          37.901
+        ]
+      },
+      "properties": {
+        "slug": "tourist-club",
+        "name": "The Tourist Club (Die Naturfreunde)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "35m",
+        "hook": "A Bavarian-style lodge hidden on the side of Mount Tam that pours cold beer on a sunny deck, but only for hikers, and only on certain Sundays.",
+        "tags": [
+          "beer-garden",
+          "hike-in",
+          "german",
+          "hidden",
+          "mt-tam"
         ],
         "stay": false
       }
