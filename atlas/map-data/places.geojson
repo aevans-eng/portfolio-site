@@ -34,6 +34,91 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.762,
+          36.2225
+        ]
+      },
+      "properties": {
+        "slug": "henry-miller-library",
+        "name": "Henry Miller Memorial Library",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h",
+        "hook": "A bookstore with no sign, free coffee, a ping-pong table, and a lawn where Arcade Fire has played.",
+        "tags": [
+          "books",
+          "music",
+          "bohemian",
+          "culture",
+          "free"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.5183,
+          36.0083
+        ]
+      },
+      "properties": {
+        "slug": "limekiln-state-park",
+        "name": "Limekiln State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h15m",
+        "hook": "The park most people blow past on the way to somewhere more famous, and the one a few of them come back raving about.",
+        "tags": [
+          "redwoods",
+          "beach",
+          "waterfall",
+          "history",
+          "quiet"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6724,
+          36.1578
+        ]
+      },
+      "properties": {
+        "slug": "mcway-falls",
+        "name": "McWay Falls",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h",
+        "hook": "An 80-foot waterfall that drops straight onto a beach you're not allowed to walk on.",
+        "tags": [
+          "waterfall",
+          "coastal",
+          "viewpoint"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4148,
           37.7592
         ]
@@ -54,6 +139,91 @@
           "murals",
           "walking",
           "culture"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6933,
+          36.1783
+        ]
+      },
+      "properties": {
+        "slug": "partington-cove",
+        "name": "Partington Cove",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h",
+        "hook": "An unmarked trail off a blind pullout that drops through a rock tunnel to a cove most people driving past never know is there.",
+        "tags": [
+          "cove",
+          "tunnel",
+          "quiet",
+          "history",
+          "hike"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.818,
+          36.2385
+        ]
+      },
+      "properties": {
+        "slug": "pfeiffer-beach",
+        "name": "Pfeiffer Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h",
+        "hook": "Purple sand and an offshore rock with a keyhole the winter sun fires straight through, reached by a road with no sign.",
+        "tags": [
+          "beach",
+          "purple-sand",
+          "sunset",
+          "dog-friendly"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.939,
+          36.5163
+        ]
+      },
+      "properties": {
+        "slug": "point-lobos",
+        "name": "Point Lobos State Natural Reserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "2h15m",
+        "hook": "The one Big Sur stop worth setting an alarm for, and the reason to be at a gate at 8am on vacation.",
+        "tags": [
+          "coastal",
+          "wildlife",
+          "tidepools",
+          "hike"
         ]
       }
     },
