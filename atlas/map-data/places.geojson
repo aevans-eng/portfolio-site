@@ -214,6 +214,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.274,
+          37.319
+        ]
+      },
+      "properties": {
+        "slug": "apple-jacks",
+        "name": "Apple Jack's",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "50m",
+        "hook": "An 1870s dive bar in the La Honda redwoods, dark and creaky and unbothered, that's been watering loggers, bikers, hippies, and cyclists for 150 years.",
+        "tags": [
+          "dive-bar",
+          "redwoods",
+          "history",
+          "cyclists",
+          "la-honda"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.169,
           37.429
         ]
@@ -351,6 +381,36 @@
           "history",
           "duel",
           "monument"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.254,
+          37.43
+        ]
+      },
+      "properties": {
+        "slug": "bucks-woodside",
+        "name": "Buck's of Woodside",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "The wildly kitschy Woodside diner where some of Silicon Valley's biggest deals got signed over pancakes, under a Soviet spacesuit and a giant Statue of Liberty arm.",
+        "tags": [
+          "diner",
+          "silicon-valley",
+          "kitsch",
+          "breakfast",
+          "history"
         ],
         "stay": false
       }
@@ -498,6 +558,36 @@
           "computers",
           "history",
           "tech"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.443,
+          37.443
+        ]
+      },
+      "properties": {
+        "slug": "cowell-purisima-trail",
+        "name": "Cowell-Purisima Trail",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "A flat bluff-top trail south of Half Moon Bay that runs the cliff edge past working farm fields to a hidden pocket beach, and stays quiet while the town beaches fill.",
+        "tags": [
+          "bluff-trail",
+          "coastal",
+          "quiet",
+          "farmland",
+          "beach"
         ],
         "stay": false
       }
@@ -1421,6 +1511,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.312,
+          37.266
+        ]
+      },
+      "properties": {
+        "slug": "memorial-park",
+        "name": "Memorial Park (Pescadero Creek)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h",
+        "hook": "San Mateo County's oldest park: a grove of genuine old-growth redwoods on Pescadero Creek with a summer swimming hole, deep in the coast-side hills.",
+        "tags": [
+          "redwoods",
+          "creek",
+          "camping",
+          "swimming",
+          "quiet"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4148,
           37.7592
         ]
@@ -2331,6 +2451,36 @@
           "waterfall",
           "black-sand",
           "gateway",
+          "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.47,
+          37.545
+        ]
+      },
+      "properties": {
+        "slug": "rancho-corral-de-tierra",
+        "name": "Rancho Corral de Tierra",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "35m",
+        "hook": "Thousands of acres of wild coastal hills rising straight up behind the Highway 1 towns, a big empty backcountry hiding in plain sight above Montara.",
+        "tags": [
+          "hills",
+          "coastal",
+          "quiet",
+          "ranch",
           "hike"
         ],
         "stay": false
