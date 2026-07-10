@@ -234,6 +234,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.477,
+          37.8106
+        ]
+      },
+      "properties": {
+        "slug": "fort-point",
+        "name": "Fort Point",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "A Civil War fort tucked directly under the Golden Gate Bridge, with the great arch overhead built specifically so the fort could stay.",
+        "tags": [
+          "history",
+          "fort",
+          "bridge",
+          "film",
+          "free"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.92,
           36.47
         ]
@@ -769,6 +798,35 @@
           "jade",
           "remote",
           "treasure-hunt"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.437,
+          37.7592
+        ]
+      },
+      "properties": {
+        "slug": "seward-slides",
+        "name": "The Seward Street Slides",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "in SF",
+        "hook": "Two-story concrete slides built into one of the city's steepest hills, designed by a fourteen-year-old, ridden on a scrap of cardboard.",
+        "tags": [
+          "slides",
+          "absurd",
+          "free",
+          "hidden",
+          "fun"
         ]
       }
     },
