@@ -421,6 +421,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.33,
+          37.423
+        ]
+      },
+      "properties": {
+        "slug": "el-corte-tafoni",
+        "name": "El Corte de Madera & the Tafoni Monolith",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "A redwood mountain-bike preserve on Skyline hiding a sandstone monolith that weather carved into a giant honeycomb skull.",
+        "tags": [
+          "redwoods",
+          "tafoni",
+          "mtb",
+          "gravel",
+          "geology"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.172,
           37.4469
         ]
@@ -530,6 +560,35 @@
           "waterfall",
           "coastal-views",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.312,
+          37.472
+        ]
+      },
+      "properties": {
+        "slug": "filoli",
+        "name": "Filoli",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "40m",
+        "hook": "A 1917 Georgian country estate and sixteen acres of formal gardens in the Woodside hills, so photogenic it played the mansion in Dynasty's opening credits.",
+        "tags": [
+          "estate",
+          "gardens",
+          "history",
+          "mansion"
         ],
         "stay": false
       }
@@ -688,6 +747,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.172,
+          37.488
+        ]
+      },
+      "properties": {
+        "slug": "great-spirit-path",
+        "name": "The Great Spirit Path",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "40m",
+        "hook": "A poem laid into the ground across a bayfront park, its verses marked by pictograph sculptures, hidden on a capped landfill.",
+        "tags": [
+          "poetry",
+          "stone-art",
+          "landfill",
+          "bayfront"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4286,
           37.4636
         ]
@@ -770,6 +858,35 @@
           "free"
         ],
         "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.164,
+          37.332
+        ]
+      },
+      "properties": {
+        "slug": "hidden-villa",
+        "name": "Hidden Villa",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "50m",
+        "hook": "A working organic farm in the Los Altos hills that opened the first youth hostel in the American West, and still rents you a bunk.",
+        "tags": [
+          "farm",
+          "hostel",
+          "trails",
+          "history"
+        ],
+        "stay": true
       }
     },
     {
@@ -1576,6 +1693,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.22,
+          37.256
+        ]
+      },
+      "properties": {
+        "slug": "portola-redwoods",
+        "name": "Portola Redwoods State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h",
+        "hook": "A deep, quiet redwood canyon at the far side of the Skyline hills that takes real effort to reach, so almost nobody bothers.",
+        "tags": [
+          "redwoods",
+          "canyon",
+          "quiet",
+          "trails",
+          "gravel"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.331,
           37.523
         ]
@@ -1804,6 +1951,36 @@
           "jade",
           "remote",
           "treasure-hunt"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.363,
+          37.547
+        ]
+      },
+      "properties": {
+        "slug": "sawyer-camp-trail",
+        "name": "Sawyer Camp Trail & Crystal Springs",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "35m",
+        "hook": "A paved car-free trail running straight down the San Andreas Fault, along two reservoirs, past a laurel tree older than California.",
+        "tags": [
+          "fault",
+          "reservoir",
+          "paved-trail",
+          "bike",
+          "ancient-tree"
         ],
         "stay": false
       }
