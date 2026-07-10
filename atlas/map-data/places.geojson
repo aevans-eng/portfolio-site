@@ -362,6 +362,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.314,
+          37.59
+        ]
+      },
+      "properties": {
+        "slug": "coyote-point",
+        "name": "Coyote Point & CuriOdyssey",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "A eucalyptus-covered point jutting into the bay with a beach, a stretch of the Bay Trail, and a little wildlife center full of rescued native animals.",
+        "tags": [
+          "bayfront",
+          "beach",
+          "wildlife",
+          "bay-trail",
+          "family"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.755,
           36.203
         ]
@@ -619,6 +649,35 @@
           "coastal",
           "reef",
           "family"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.356,
+          37.557
+        ]
+      },
+      "properties": {
+        "slug": "flintstone-house",
+        "name": "The Flintstone House",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "30m",
+        "hook": "The bulbous orange house off Interstate 280 that everyone points at, and that got its owner sued over the dinosaurs in the yard.",
+        "tags": [
+          "roadside",
+          "house",
+          "flintstones",
+          "absurd"
         ],
         "stay": false
       }
@@ -887,6 +946,35 @@
           "history"
         ],
         "stay": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25,
+          37.514
+        ]
+      },
+      "properties": {
+        "slug": "hiller-aviation",
+        "name": "Hiller Aviation Museum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "35m",
+        "hook": "A hangar of oddball aircraft at the little San Carlos airport, from a walk-in 747 nose to the flying cars that never were.",
+        "tags": [
+          "aviation",
+          "museum",
+          "aircraft",
+          "prototypes"
+        ],
+        "stay": false
       }
     },
     {
@@ -1487,6 +1575,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.348,
+          37.581
+        ]
+      },
+      "properties": {
+        "slug": "pez-museum",
+        "name": "The Pez Museum",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "30m",
+        "hook": "A little Burlingame storefront holding the world's largest collection of Pez dispensers, plus a museum of toys that got banned.",
+        "tags": [
+          "museum",
+          "pez",
+          "toys",
+          "collection"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.818,
           36.2385
         ]
@@ -1981,6 +2098,35 @@
           "paved-trail",
           "bike",
           "ancient-tree"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.362,
+          37.546
+        ]
+      },
+      "properties": {
+        "slug": "serra-statue",
+        "name": "The Jun\u00edpero Serra Statue",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "A 26-foot concrete Jun\u00edpero Serra kneeling by the freeway and pointing west, that locals swear looks sculpted from mashed potatoes.",
+        "tags": [
+          "statue",
+          "roadside",
+          "history",
+          "oddity"
         ],
         "stay": false
       }
