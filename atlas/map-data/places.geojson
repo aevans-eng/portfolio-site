@@ -365,6 +365,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.9214,
+          40.3111
+        ]
+      },
+      "properties": {
+        "slug": "avenue-of-the-giants",
+        "name": "Avenue of the Giants",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "3h45m",
+        "hook": "The old highway was left in place when the freeway bypassed it \u2014 31 miles of two-lane road threading through the largest remaining old-growth redwood forest on Earth.",
+        "tags": [
+          "old-growth",
+          "redwoods",
+          "scenic-drive",
+          "rockefeller-forest",
+          "humboldt",
+          "far-edge"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.136,
           37.415
         ]
