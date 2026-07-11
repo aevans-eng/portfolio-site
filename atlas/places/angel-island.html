@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>ferry from SF or Tiburon</b></div>
     <div class="stat">Effort<b>A ~5-mile perimeter loop on foot or bike; ferry-only access</b></div>
     <div class="stat">Best<b>Clear days for the 360 views; book the ferry ahead in summer</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An island in the middle of the bay with a 360-degree view of the whole region and a haunting immigration station where a century of arrivals were detained.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Take the ferry from San Francisco or Tiburon (book ahead in summer). Ride or walk the perimeter road for the views, and tour the Immigration Station to read the wall poems. Pack food and layers; it's exposed, and services on the island are limited.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=468" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=468</a>  ·  <a href="https://www.aisf.org/" target="_blank" rel="noopener">https://www.aisf.org/</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "angel-island", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

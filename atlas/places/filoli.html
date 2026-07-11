@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>40m</b></div>
     <div class="stat">Effort<b>A few hours; gardens, house, and preserve trails</b></div>
     <div class="stat">Best<b>Spring bloom or fall color; opening time to dodge crowds</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A 1917 Georgian country estate and sixteen acres of formal gardens in the Woodside hills, so photogenic it played the mansion in Dynasty's opening credits.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's on Cañada Road near Woodside, so pair it with Pulgas Water Temple and the Sawyer Camp Trail, all a short hop apart. Tickets are timed; go at opening in spring to beat the crowds, or in fall for color and calm. The estate's preserve trails give you the quieter edges.</p></section>
     <div class="sources">Sources · <a href="https://filoli.org/" target="_blank" rel="noopener">https://filoli.org/</a>  ·  <a href="https://en.wikipedia.org/wiki/Filoli" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Filoli</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "filoli", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

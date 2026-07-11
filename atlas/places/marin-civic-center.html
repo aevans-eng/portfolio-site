@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>25m</b></div>
     <div class="stat">Effort<b>A walk-through, inside and out; free during business hours</b></div>
     <div class="stat">Best<b>A weekday, to see it in use; docent tours some days</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Frank Lloyd Wright's last great building, a long pink-and-blue arcade draped across three hills, that Hollywood keeps casting as the future.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's off Highway 101 in San Rafael, open during business hours and free to walk through (it's a working government building). Docent tours run some days. Go on a weekday to see it in use; the interior atria and the long exterior sweep both deserve time.</p></section>
     <div class="sources">Sources · <a href="https://www.atlasobscura.com/places/marin-county-civic-center" target="_blank" rel="noopener">https://www.atlasobscura.com/places/marin-county-civic-center</a>  ·  <a href="https://en.wikipedia.org/wiki/Marin_County_Civic_Center" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Marin_County_Civic_Center</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "marin-civic-center", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

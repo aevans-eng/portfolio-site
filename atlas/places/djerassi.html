@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>55m</b></div>
     <div class="stat">Effort<b>A few miles on a scheduled public hike day; reserve ahead</b></div>
     <div class="stat">Best<b>Scheduled public hikes only — check the calendar</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>580 acres of Woodside ridge scattered with decades of art, an artists' retreat founded by the man who co-invented the birth-control pill.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Access is limited to scheduled public hikes and events, so check the Djerassi calendar and reserve; you can't just turn up. On a hike day it's a few miles through meadow and forest with sculpture along the way. Wear real shoes and dress for ridge weather.</p></section>
     <div class="sources">Sources · <a href="https://www.atlasobscura.com/places/djerassi-ranch" target="_blank" rel="noopener">https://www.atlasobscura.com/places/djerassi-ranch</a>  ·  <a href="https://djerassi.org/" target="_blank" rel="noopener">https://djerassi.org/</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "djerassi", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

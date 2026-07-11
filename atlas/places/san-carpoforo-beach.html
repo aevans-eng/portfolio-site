@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>4h</b></div>
     <div class="stat">Effort<b>Easy ~1 mile each way through a gate most people don't notice</b></div>
     <div class="stat">Best<b>Low tide to reach the hidden second cove; avoid plover nesting areas</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The wide, driftwood-strewn beach at the very bottom of Big Sur that almost nobody stops for, because there's no sign telling them to.</p></section>
@@ -96,4 +102,22 @@
 <section class="sec locals"><h2>From the locals</h2><p>One post is the whole reason this is on the map: "there's an incredible beach called San Carpóforo... opens up to some sort of creek flowing into the ocean... Tons of insane driftwood and rock finds, including the state rock Serpentine." Mentioned once, by someone who clearly didn't want to gatekeep it.</p></section>
     <div class="sources">Sources · <a href="https://www.californiabeaches.com/beach/san-carpoforo-creek-beach/" target="_blank" rel="noopener">https://www.californiabeaches.com/beach/san-carpoforo-creek-beach/</a>  ·  <a href="https://www.raggedpointinn.com/hikes" target="_blank" rel="noopener">https://www.raggedpointinn.com/hikes</a>  ·  r/bigsur — see research/reading/big-sur.md</div>
   </main>
+<script>
+(function(){
+  var SLUG = "san-carpoforo-beach", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

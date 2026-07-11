@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>3h</b></div>
     <div class="stat">Effort<b>~1.5–2 mile loop, easy, some steps</b></div>
     <div class="stat">Best<b>After winter rain for real flow</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A short redwood loop to a 60-foot fall, the easy leg-stretch inside the park most people only drive through to reach Pfeiffer Beach.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Start from the trailhead inside Pfeiffer Big Sur State Park; there's a day-use fee. Go after winter rain for the falls to actually run, and tack on the short Valley View spur for the overlook. Figure a couple of hours at most, round trip.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=570" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=570</a>  ·  <a href="https://redwoodhikes.com/BigSur/PfeifferFalls.html" target="_blank" rel="noopener">https://redwoodhikes.com/BigSur/PfeifferFalls.html</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "pfeiffer-falls", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>1h45m</b></div>
     <div class="stat">Effort<b>Flat 9.5mi out-and-back; turn around anytime</b></div>
     <div class="stat">Best<b>Green season Dec–Apr; fall rut Aug–Oct for bugling</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Elk on the tip of a peninsula, ocean on one side and Tomales Bay on the other, and usually no one else on the trail.</p></section>
@@ -96,4 +102,22 @@
 <section class="sec locals"><h2>From the locals</h2><p>Regulars go on weekdays, turn around at the first ridge instead of forcing the full nine miles, and treat the fog as the mood rather than a problem.</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Tule_elk" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Tule_elk</a>  ·  <a href="https://www.sierraclub.org/sierra/elk-fence-point-reyes-finally-coming-down" target="_blank" rel="noopener">https://www.sierraclub.org/sierra/elk-fence-point-reyes-finally-coming-down</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "tomales-point-tule-elk", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

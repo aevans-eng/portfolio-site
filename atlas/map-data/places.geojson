@@ -125,6 +125,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.7996,
+          37.3969
+        ]
+      },
+      "properties": {
+        "slug": "alum-rock-park",
+        "name": "Alum Rock Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "55m",
+        "hook": "California's oldest municipal park hides the stone ruins of a Victorian health spa \u2014 mineral-spring grottoes still seeping sulfur water in a canyon above San Jose.",
+        "tags": [
+          "canyon",
+          "mineral-springs",
+          "victorian-ruins",
+          "san-jose",
+          "history",
+          "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.845,
           36.287
         ]
@@ -304,6 +335,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.0037,
+          38.5364
+        ]
+      },
+      "properties": {
+        "slug": "armstrong-redwoods",
+        "name": "Armstrong Redwoods",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h30m",
+        "hook": "Wine country's old-growth grove: a 1,400-year-old giant named for the lumberman who couldn't bring himself to cut it, in a cool canyon a mile from Guerneville's river scene.",
+        "tags": [
+          "old-growth",
+          "redwoods",
+          "guerneville",
+          "russian-river",
+          "colonel-armstrong"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.136,
           37.415
         ]
@@ -384,6 +445,68 @@
           "pebbles",
           "tidepools",
           "geology"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1586,
+          38.0494
+        ]
+      },
+      "properties": {
+        "slug": "benicia",
+        "name": "Benicia",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "45m",
+        "hook": "California's forgotten third capital keeps its 1852 capitol building intact, a waterfront main street pointed at the strait \u2014 and a Civil War arsenal whose \"camel barns\" once auctioned off the US Army's camels.",
+        "tags": [
+          "state-capitol",
+          "camel-barns",
+          "arsenal",
+          "glass-art",
+          "waterfront",
+          "carquinez"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.222,
+          37.172
+        ]
+      },
+      "properties": {
+        "slug": "big-basin",
+        "name": "Big Basin Redwoods",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h30m",
+        "hook": "California's first state park \u2014 the 1902 victory that started redwood conservation \u2014 burned almost entirely in 2020, and visiting now means watching a 2,000-year-old forest rebuild itself in real time.",
+        "tags": [
+          "redwoods",
+          "first-state-park",
+          "czu-fire",
+          "recovery",
+          "boulder-creek",
+          "history"
         ],
         "stay": false
       }
@@ -480,6 +603,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.613,
+          37.949
+        ]
+      },
+      "properties": {
+        "slug": "bon-tempe-lake",
+        "name": "Bon Tempe & the Mt Tam Lakes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "Mount Tamalpais hides a chain of five reservoir lakes on its north flank \u2014 pine-ringed, trout-stocked, eagle-visited \u2014 that even many Marin residents haven't found.",
+        "tags": [
+          "lakes",
+          "mt-tam",
+          "fishing",
+          "quiet",
+          "watershed",
+          "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.483,
           37.665
         ]
@@ -538,6 +692,69 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.44,
+          37.7681
+        ]
+      },
+      "properties": {
+        "slug": "buena-vista-tombstones",
+        "name": "Buena Vista Park's Tombstone Gutters",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "in SF",
+        "hook": "The rain gutters of San Francisco's oldest park are lined with broken Gold Rush-era tombstones \u2014 the leftovers from when the city evicted its dead.",
+        "tags": [
+          "park",
+          "tombstones",
+          "history",
+          "cemetery",
+          "haight",
+          "views"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.335,
+          37.213
+        ]
+      },
+      "properties": {
+        "slug": "butano-state-park",
+        "name": "Butano State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h10m",
+        "hook": "A whole redwood canyon folded into the hills behind Pescadero that most coast traffic drives straight past \u2014 the quiet alternative to every famous grove in the region.",
+        "tags": [
+          "redwoods",
+          "canyon",
+          "quiet",
+          "fire-recovery",
+          "pescadero",
+          "hike",
+          "bike-reachable"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.112,
           37.453
         ]
@@ -558,6 +775,37 @@
           "landfill",
           "baylands",
           "oddity"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.3105,
+          38.2769
+        ]
+      },
+      "properties": {
+        "slug": "calaveras-big-trees",
+        "name": "Calaveras Big Trees",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h45m",
+        "hook": "The grove that introduced the world to giant sequoias \u2014 and promptly cut the biggest one down and turned its stump into a dance floor, an outrage that helped invent conservation.",
+        "tags": [
+          "giant-sequoia",
+          "groves",
+          "conservation-history",
+          "stump-story",
+          "sierra",
+          "snow"
         ],
         "stay": false
       }
@@ -597,6 +845,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.1817,
+          37.8189
+        ]
+      },
+      "properties": {
+        "slug": "chabot-space",
+        "name": "Chabot Space & Science Center",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "30m",
+        "hook": "Three historic telescopes in the Oakland hills \u2014 including a 36-inch reflector \u2014 open to the public for free every clear Friday and Saturday night, staffed by volunteers who genuinely want you to see Saturn.",
+        "tags": [
+          "observatory",
+          "telescopes",
+          "free",
+          "oakland-hills",
+          "night",
+          "family"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.462,
+          38.0021
+        ]
+      },
+      "properties": {
+        "slug": "china-camp",
+        "name": "China Camp",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "35m",
+        "hook": "A 19th-century Chinese shrimp-fishing village survives whole on a quiet San Rafael cove \u2014 pier, cabins, and all \u2014 because one man, born there in 1925, stayed his entire life.",
+        "tags": [
+          "shrimping-village",
+          "chinese-american",
+          "state-park",
+          "bay",
+          "mtb",
+          "camping"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4075,
           37.7958
         ]
@@ -618,6 +928,68 @@
           "food",
           "walking",
           "culture"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.4894,
+          37.7677
+        ]
+      },
+      "properties": {
+        "slug": "clouds-rest",
+        "name": "Clouds Rest",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h15m",
+        "hook": "The best summit view in Yosemite isn't Half Dome \u2014 it's the peak a thousand feet above it, with no cables, no lottery, and a final ridge just narrow enough to make you earn it.",
+        "tags": [
+          "summit",
+          "day-hike",
+          "half-dome-view",
+          "ridge-walk",
+          "earned",
+          "day-section"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.265,
+          37.8817
+        ]
+      },
+      "properties": {
+        "slug": "codornices-rose-garden",
+        "name": "Codornices Slide & the Rose Garden",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "30m",
+        "hook": "Across the street from each other in the Berkeley hills: a WPA rose amphitheater with a Golden Gate view, and a 40-foot concrete slide that adults ride on flattened cardboard with zero shame.",
+        "tags": [
+          "concrete-slide",
+          "rose-garden",
+          "berkeley",
+          "wpa",
+          "free",
+          "kids-and-adults"
         ],
         "stay": false
       }
@@ -656,6 +1028,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.8919,
+          38.8003
+        ]
+      },
+      "properties": {
+        "slug": "coloma-gold-discovery",
+        "name": "Coloma & the Gold Discovery",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h20m",
+        "hook": "The exact spot where California began: James Marshall's sawmill tailrace on the American River, where a glint in the water on January 24, 1848 set off the largest migration in the hemisphere's history.",
+        "tags": [
+          "gold-rush",
+          "sutters-mill",
+          "rafting",
+          "state-park",
+          "wakamatsu",
+          "american-river"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.077,
           37.414
         ]
@@ -676,6 +1079,37 @@
           "computers",
           "history",
           "tech"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.438,
+          38.266
+        ]
+      },
+      "properties": {
+        "slug": "cosumnes-river-preserve",
+        "name": "Cosumnes River Preserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h25m",
+        "hook": "The last major undammed river off the Sierra ends here in a sprawl of winter wetlands \u2014 and every November thousands of sandhill cranes drop out of the dusk to roost, bugling like something from the Pleistocene.",
+        "tags": [
+          "sandhill-cranes",
+          "wetlands",
+          "free-flowing-river",
+          "birding",
+          "winter",
+          "boardwalk"
         ],
         "stay": false
       }
@@ -706,6 +1140,37 @@
           "quiet",
           "farmland",
           "beach"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.091,
+          37.5546
+        ]
+      },
+      "properties": {
+        "slug": "coyote-hills",
+        "name": "Coyote Hills",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "45m",
+        "hook": "A knot of grassy hills on the Fremont bayshore where 2,000-year-old Ohlone shellmounds meet tule marshes \u2014 and one of the best sunset panoramas on the entire bay.",
+        "tags": [
+          "shellmound",
+          "ohlone",
+          "marsh",
+          "bay-views",
+          "bike",
+          "fremont"
         ],
         "stay": false
       }
@@ -767,6 +1232,37 @@
           "character"
         ],
         "stay": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6969,
+          37.5896
+        ]
+      },
+      "properties": {
+        "slug": "del-valle",
+        "name": "Del Valle",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h5m",
+        "hook": "A five-mile lake folded into the golden hills south of Livermore \u2014 the East Bay's best swimming water, and the back door into its biggest wilderness.",
+        "tags": [
+          "lake",
+          "swimming",
+          "oak-savanna",
+          "livermore",
+          "camping",
+          "ohlone-trail"
+        ],
+        "stay": false
       }
     },
     {
@@ -857,6 +1353,68 @@
           "hike"
         ],
         "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.974,
+          37.4602
+        ]
+      },
+      "properties": {
+        "slug": "drawbridge-ghost-town",
+        "name": "Drawbridge (ghost town)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "50m",
+        "hook": "The Bay Area has an actual ghost town: a former hunting-resort village in the South Bay marshes, abandoned since 1979, whose weathered cabins are slowly sinking into the mud.",
+        "tags": [
+          "ghost-town",
+          "abandoned",
+          "wetlands",
+          "trains",
+          "sinking",
+          "no-entry"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4337,
+          37.9627
+        ]
+      },
+      "properties": {
+        "slug": "east-brother-light",
+        "name": "East Brother Light Station",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "35m + boat",
+        "hook": "A working 1874 Victorian lighthouse on its own tiny island in San Pablo Bay \u2014 run as a five-room inn where the innkeepers boat you out, cook you dinner, and fire up the original foghorn.",
+        "tags": [
+          "lighthouse",
+          "island",
+          "bed-and-breakfast",
+          "victorian",
+          "richmond",
+          "stay"
+        ],
+        "stay": true
       }
     },
     {
@@ -983,6 +1541,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.1104,
+          38.9542
+        ]
+      },
+      "properties": {
+        "slug": "emerald-bay-rubicon",
+        "name": "Emerald Bay via the Rubicon Trail",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h45m",
+        "hook": "Tahoe's postcard \u2014 a green-glass bay with a stone Scandinavian castle and the lake's only island \u2014 earns its fame; the trick is arriving along the shoreline instead of fighting for the overlook.",
+        "tags": [
+          "lake",
+          "castle",
+          "island",
+          "shoreline-trail",
+          "icon-redeemed",
+          "day-section"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.641,
           36.1256
         ]
@@ -1033,6 +1622,68 @@
           "waterfall",
           "coastal-views",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.048,
+          38.901
+        ]
+      },
+      "properties": {
+        "slug": "fallen-leaf-lake",
+        "name": "Fallen Leaf Lake",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h40m",
+        "hook": "A mile from the South Lake Tahoe sprawl hides a glacial lake that's basically Tahoe in miniature \u2014 warmer, quieter, ringed by Desolation's peaks \u2014 that tourists drive past without a glance.",
+        "tags": [
+          "lake",
+          "swimming",
+          "quiet",
+          "mt-tallac",
+          "desolation-gateway",
+          "locals"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4041,
+          37.8022
+        ]
+      },
+      "properties": {
+        "slug": "filbert-steps",
+        "name": "The Filbert Steps",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "in SF",
+        "hook": "Where Filbert Street hits Telegraph Hill it gives up on being a street entirely: 400-odd steps through private gardens, wooden cottages from the 1870s, and the famous flock of wild parrots.",
+        "tags": [
+          "stairs",
+          "gardens",
+          "parrots",
+          "telegraph-hill",
+          "wooden-cottages",
+          "climb"
         ],
         "stay": false
       }
@@ -1121,6 +1772,37 @@
           "house",
           "flintstones",
           "absurd"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.502,
+          37.713
+        ]
+      },
+      "properties": {
+        "slug": "fort-funston",
+        "name": "Fort Funston",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "20m",
+        "hook": "200-foot sand bluffs at San Francisco's southwest corner where hang gliders launch off old coastal-defense batteries and half the city's dogs run leash-free below.",
+        "tags": [
+          "cliffs",
+          "hang-gliding",
+          "dogs",
+          "bunkers",
+          "beach",
+          "dunes"
         ],
         "stay": false
       }
@@ -1249,6 +1931,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.0182,
+          36.9642
+        ]
+      },
+      "properties": {
+        "slug": "giant-dipper-boardwalk",
+        "name": "The Giant Dipper (Santa Cruz Boardwalk)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h20m",
+        "hook": "A 1924 wooden roller coaster \u2014 a National Historic Landmark still running its original half-mile of lumber \u2014 anchors the last old-school seaside amusement park on the West Coast.",
+        "tags": [
+          "roller-coaster",
+          1924,
+          "boardwalk",
+          "wooden-coaster",
+          "icon-redeemed",
+          "kitsch"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4405,
+          37.7401
+        ]
+      },
+      "properties": {
+        "slug": "glen-canyon",
+        "name": "Glen Canyon Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "in SF",
+        "hook": "An actual wild canyon in the middle of San Francisco \u2014 chert cliffs, a free-flowing creek, and resident coyotes \u2014 that a shocking number of locals have never heard of.",
+        "tags": [
+          "canyon",
+          "wild",
+          "coyotes",
+          "rock-climbing",
+          "hidden",
+          "city-escape"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.128,
           38.442
         ]
@@ -1337,6 +2081,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.227,
+          37.857
+        ]
+      },
+      "properties": {
+        "slug": "grizzly-peak-wall",
+        "name": "Grizzly Peak & \"The Wall\"",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "30m",
+        "hook": "The pullouts along Grizzly Peak Boulevard serve the East Bay's definitive sunset view \u2014 and the one locals actually mean is \"The Wall,\" a graffitied ledge sitting directly above the Caldecott Tunnel.",
+        "tags": [
+          "viewpoint",
+          "sunset",
+          "berkeley-hills",
+          "drive",
+          "motorcycles",
+          "night-view"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0448,
+          37.2537
+        ]
+      },
+      "properties": {
+        "slug": "hakone-gardens",
+        "name": "Hakone Gardens",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h5m",
+        "hook": "One of the oldest Japanese-style residential gardens in the Western Hemisphere, terraced into a Saratoga hillside since 1915 \u2014 a pocket of engineered calm above Silicon Valley.",
+        "tags": [
+          "japanese-garden",
+          "saratoga",
+          "koi",
+          "bamboo",
+          "tea-house",
+          "historic"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4286,
           37.4636
         ]
@@ -1395,6 +2201,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.081,
+          37.6722
+        ]
+      },
+      "properties": {
+        "slug": "hayward-fault-walk",
+        "name": "The Hayward Fault Walk",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "40m",
+        "hook": "Downtown Hayward's sidewalks are slowly tearing themselves apart in real time \u2014 the Hayward Fault creeps right through town, and you can walk from crack to offset curb like a geologic crime scene.",
+        "tags": [
+          "earthquake",
+          "fault-creep",
+          "urban-geology",
+          "free",
+          "hayward",
+          "curbs"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.1683,
           35.6852
         ]
@@ -1425,6 +2262,99 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.2779,
+          37.7946
+        ]
+      },
+      "properties": {
+        "slug": "heinolds-saloon",
+        "name": "Heinold's First and Last Chance",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "20m",
+        "hook": "An 1884 saloon built from a whaling ship's timbers, where the 1906 earthquake tilted the floor so steeply your beer sits crooked \u2014 and where a teenage Jack London did his homework at the bar.",
+        "tags": [
+          "saloon",
+          "jack-london",
+          "1906-quake",
+          "tilted-floor",
+          "oakland",
+          "historic-bar"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.423,
+          37.1866
+        ]
+      },
+      "properties": {
+        "slug": "henry-coe-state-park",
+        "name": "Henry W. Coe State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h20m",
+        "hook": "The largest state park in Northern California, 87,000 acres of empty ridgelines an hour from San Jose, and almost nobody goes.",
+        "tags": [
+          "wilderness",
+          "backpacking",
+          "wildflowers",
+          "solitude",
+          "diablo-range",
+          "trails"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0635,
+          37.0405
+        ]
+      },
+      "properties": {
+        "slug": "henry-cowell-garden-of-eden",
+        "name": "Henry Cowell Redwoods & the Garden of Eden",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h15m",
+        "hook": "Old-growth redwoods you can walk in twenty flat minutes \u2014 and downstream, the San Lorenzo River pools into genuine swimming holes, including the worst-kept secret in the Santa Cruz Mountains, the Garden of Eden.",
+        "tags": [
+          "redwoods",
+          "swimming-hole",
+          "river",
+          "felton",
+          "old-growth",
+          "steam-railroad"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.762,
           36.2225
         ]
@@ -1446,6 +2376,37 @@
           "bohemian",
           "culture",
           "free"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7877,
+          37.9469
+        ]
+      },
+      "properties": {
+        "slug": "hetch-hetchy",
+        "name": "Hetch Hetchy",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h30m",
+        "hook": "Yosemite has a twin \u2014 a second glacier-carved valley John Muir called a \"wonderfully exact counterpart\" \u2014 and San Francisco drowned it. What's left is the park's emptiest grand landscape.",
+        "tags": [
+          "reservoir",
+          "waterfalls",
+          "lost-valley",
+          "quiet",
+          "history",
+          "day-section"
         ],
         "stay": false
       }
@@ -1513,6 +2474,130 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.1775,
+          36.999
+        ]
+      },
+      "properties": {
+        "slug": "hole-in-the-wall-beach",
+        "name": "Hole-in-the-Wall Beach (Davenport)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h20m",
+        "hook": "A sea arch punched through a sandstone cliff on the Davenport coast \u2014 walk through the hole at low tide and a second, emptier beach opens on the other side.",
+        "tags": [
+          "beach",
+          "sea-arch",
+          "low-tide",
+          "davenport",
+          "cliffs",
+          "scramble"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.413,
+          37.7996
+        ]
+      },
+      "properties": {
+        "slug": "ina-coolbrith-park",
+        "name": "Ina Coolbrith Park",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "in SF",
+        "hook": "A vertical pocket garden stacked into the Russian Hill stairways with one of the city's finest bay views \u2014 named for California's first poet laureate, who mentored Jack London from this hill.",
+        "tags": [
+          "viewpoint",
+          "stairs",
+          "garden",
+          "russian-hill",
+          "quiet",
+          "poet"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.273,
+          37.8925
+        ]
+      },
+      "properties": {
+        "slug": "indian-rock",
+        "name": "Indian Rock Park",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "30m",
+        "hook": "A volcanic rock the size of a building sits in the middle of a Berkeley neighborhood, with staircases carved into its face and the entire Golden Gate framed from the top.",
+        "tags": [
+          "rock",
+          "sunset",
+          "bouldering",
+          "berkeley",
+          "neighborhood-gem",
+          "free"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.703,
+          38.008
+        ]
+      },
+      "properties": {
+        "slug": "inkwells-lagunitas",
+        "name": "The Inkwells & Lagunitas Creek",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "50m",
+        "hook": "A set of dark rock pools on Lagunitas Creek that flips identity twice a year: swimming hole in summer, and in winter one of the last places on the coast to watch wild coho salmon leap.",
+        "tags": [
+          "swimming-hole",
+          "salmon",
+          "creek",
+          "west-marin",
+          "seasonal",
+          "redwoods"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.2747,
           37.3188
         ]
@@ -1533,6 +2618,37 @@
           "counterculture",
           "redwoods",
           "roadside"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.259,
+          37.806
+        ]
+      },
+      "properties": {
+        "slug": "lake-merritt-fairyland",
+        "name": "Lake Merritt & Children's Fairyland",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "25m",
+        "hook": "America's first official wildlife refuge (1870) is a saltwater lagoon in downtown Oakland \u2014 ringed by a light necklace, patrolled by pelicans, crossed by Venetian gondolas, and home to the storybook park that inspired Disneyland.",
+        "tags": [
+          "lake",
+          "wildlife-refuge",
+          "gondola",
+          "fairyland",
+          "oakland",
+          "promenade"
         ],
         "stay": false
       }
@@ -1563,6 +2679,37 @@
           "hike",
           "shipwrecks",
           "labyrinth"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6429,
+          37.3414
+        ]
+      },
+      "properties": {
+        "slug": "lick-observatory",
+        "name": "Lick Observatory (Mt Hamilton)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h40m",
+        "hook": "The world's first permanently staffed mountaintop observatory crowns the Bay Area's highest peak \u2014 and James Lick, the eccentric millionaire who paid for it, is buried under the telescope.",
+        "tags": [
+          "observatory",
+          "summit",
+          "history",
+          "twisty-road",
+          "telescope",
+          "tarantulas"
         ],
         "stay": false
       }
@@ -1631,6 +2778,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.816,
+          37.504
+        ]
+      },
+      "properties": {
+        "slug": "little-yosemite-sunol",
+        "name": "Little Yosemite (Sunol Wilderness)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "55m",
+        "hook": "A boulder-choked gorge on Alameda Creek in the Sunol backcountry that early park boosters named \"Little Yosemite\" \u2014 overselling it charmingly, and it's still worth the walk.",
+        "tags": [
+          "gorge",
+          "creek",
+          "hike",
+          "sunol",
+          "wildflowers",
+          "dogs-off-leash"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.5088,
+          38.2508
+        ]
+      },
+      "properties": {
+        "slug": "locke",
+        "name": "Locke & the Delta",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h30m",
+        "hook": "The only town in America built by Chinese immigrants for Chinese immigrants still stands on a Delta levee \u2014 one wooden block of leaning false-front buildings, half museum, half lived-in.",
+        "tags": [
+          "chinese-american",
+          "historic-town",
+          "levee-roads",
+          "delta",
+          "time-capsule",
+          "national-landmark"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.175,
           37.326
         ]
@@ -1652,6 +2861,37 @@
           "self-guided",
           "loop",
           "history"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.266,
+          38.089
+        ]
+      },
+      "properties": {
+        "slug": "mare-island",
+        "name": "Mare Island",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45m",
+        "hook": "The US Navy's first Pacific shipyard \u2014 142 years of warships, from wooden paddle steamers to nuclear submarines \u2014 sits half-preserved, half-reborn across the strait from Vallejo, with a chapel full of Tiffany windows.",
+        "tags": [
+          "naval-shipyard",
+          "history",
+          "tiffany-windows",
+          "industrial",
+          "vallejo",
+          "adaptive-reuse"
         ],
         "stay": false
       }
@@ -1750,6 +2990,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.419,
+          37.718
+        ]
+      },
+      "properties": {
+        "slug": "mclaren-park",
+        "name": "John McLaren Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "in SF",
+        "hook": "San Francisco's second-largest park \u2014 grasslands, forest, an amphitheater, and a sky-blue water tower with one of the city's best unknown views \u2014 used by almost nobody but its neighbors.",
+        "tags": [
+          "park",
+          "views",
+          "philosophers-way",
+          "water-tower",
+          "uncrowded",
+          "southeast-sf"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.6724,
           36.1578
         ]
@@ -1799,6 +3070,37 @@
           "camping",
           "swimming",
           "quiet"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.7995,
+          39.3076
+        ]
+      },
+      "properties": {
+        "slug": "mendocino-village",
+        "name": "Mendocino",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h15m",
+        "hook": "A New England village on a California headland \u2014 saltbox houses and redwood water towers on a bluff wrapped on three sides by state-park coast, at the far edge of the three-hour radius.",
+        "tags": [
+          "coast-village",
+          "headlands",
+          "new-england",
+          "water-towers",
+          "far-edge",
+          "overnight"
         ],
         "stay": false
       }
@@ -1866,6 +3168,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.396,
+          39.2367
+        ]
+      },
+      "properties": {
+        "slug": "montgomery-woods",
+        "name": "Montgomery Woods",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h45m",
+        "hook": "An old-growth redwood grove that briefly held the world's tallest known tree \u2014 reached by a mountain road so out-of-the-way that you'll likely have it entirely to yourself.",
+        "tags": [
+          "old-growth",
+          "redwoods",
+          "empty",
+          "tallest-trees",
+          "remote",
+          "anti-muir-woods"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.115,
           35.572
         ]
@@ -1887,6 +3220,37 @@
           "otters",
           "beachcombing",
           "easy"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7953,
+          37.8186
+        ]
+      },
+      "properties": {
+        "slug": "morgan-territory",
+        "name": "Morgan Territory",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h10m",
+        "hook": "The emptiest of the East Bay's big parklands, on Mount Diablo's hidden back side \u2014 reached by a one-lane mountain road that locals describe with equal parts love and horror.",
+        "tags": [
+          "preserve",
+          "remote",
+          "wildflowers",
+          "twisty-road",
+          "diablo-range",
+          "solitude"
         ],
         "stay": false
       }
@@ -1956,6 +3320,99 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.4547,
+          37.7379
+        ]
+      },
+      "properties": {
+        "slug": "mount-davidson-cross",
+        "name": "Mount Davidson & the Cross",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "in SF",
+        "hook": "The highest natural point in San Francisco is a eucalyptus-forested peak most residents can't name, topped by a 103-foot concrete cross with a genuinely strange civic history.",
+        "tags": [
+          "summit",
+          "cross",
+          "forest",
+          "fog",
+          "armenian-memorial",
+          "dirty-harry"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9143,
+          37.8816
+        ]
+      },
+      "properties": {
+        "slug": "mount-diablo-summit",
+        "name": "Mount Diablo Summit",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h",
+        "hook": "On the right day you can stand on this East Bay summit and see the Farallon Islands out one side and Half Dome out the other \u2014 one of the longest sightlines in the country.",
+        "tags": [
+          "summit",
+          "views",
+          "history",
+          "drive",
+          "bike-climb",
+          "state-park"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.705,
+          37.013
+        ]
+      },
+      "properties": {
+        "slug": "mount-madonna",
+        "name": "Mount Madonna",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h30m",
+        "hook": "A redwood mountain between Gilroy and the sea, where white deer descended from a Hearst gift graze beside the ruins of a cattle king's summer mansion.",
+        "tags": [
+          "redwoods",
+          "white-deer",
+          "mansion-ruins",
+          "henry-miller",
+          "gilroy",
+          "camping"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.458,
           37.7576
         ]
@@ -2007,6 +3464,68 @@
           "coastal-views",
           "ladders",
           "hike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8994,
+          37.1601
+        ]
+      },
+      "properties": {
+        "slug": "mount-umunhum",
+        "name": "Mount Umunhum",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h15m",
+        "hook": "A Santa Cruz Mountains summit crowned by a five-story concrete Cold War radar cube, closed to the public for 60 years and only reopened in 2017.",
+        "tags": [
+          "summit",
+          "cold-war",
+          "radar-tower",
+          "views",
+          "santa-cruz-mountains",
+          "ohlone"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.242,
+          37.833
+        ]
+      },
+      "properties": {
+        "slug": "mountain-view-cemetery",
+        "name": "Mountain View Cemetery (Oakland)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "30m",
+        "hook": "Frederick Law Olmsted \u2014 the man who designed Central Park \u2014 laid out this Oakland cemetery in 1863, and locals treat it as one of the East Bay's best walking parks, crowned by a row of robber-baron pyramids with a Golden Gate view.",
+        "tags": [
+          "cemetery",
+          "olmsted",
+          "history",
+          "views",
+          "walk",
+          "oakland"
         ],
         "stay": false
       }
@@ -2076,6 +3595,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.4157,
+          37.8095
+        ]
+      },
+      "properties": {
+        "slug": "musee-mecanique",
+        "name": "Mus\u00e9e M\u00e9canique",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "in SF",
+        "hook": "One of the world's largest private collections of coin-operated antique arcade machines \u2014 a century of penny arcades, still working, still a quarter \u2014 hiding in plain sight on Fisherman's Wharf.",
+        "tags": [
+          "arcade",
+          "antique",
+          "free-entry",
+          "fishermans-wharf",
+          "laughing-sal"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.494,
           37.672
         ]
@@ -2096,6 +3645,68 @@
           "hang-gliding",
           "cliffs",
           "coast"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.001,
+          37.0172
+        ]
+      },
+      "properties": {
+        "slug": "mystery-spot",
+        "name": "The Mystery Spot",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h25m",
+        "hook": "A tilted shack in the redwoods where balls roll uphill and people lean past falling \u2014 a 1940s roadside \"gravitational anomaly\" that is, wonderfully, a franchise built from shared blueprints.",
+        "tags": [
+          "tourist-trap-redeemed",
+          "tilted-house",
+          "illusion",
+          "1940s",
+          "santa-cruz",
+          "kitsch"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0578,
+          36.9505
+        ]
+      },
+      "properties": {
+        "slug": "natural-bridges-west-cliff",
+        "name": "Natural Bridges & West Cliff",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h20m",
+        "hook": "Each winter thousands of monarch butterflies hang in dripping orange clusters in a eucalyptus grove behind the beach \u2014 beside a surviving sea arch and the clifftop walk past the best surf-watching perch in California.",
+        "tags": [
+          "monarchs",
+          "tidepools",
+          "sea-arch",
+          "surfing",
+          "clifftop-walk",
+          "santa-cruz"
         ],
         "stay": false
       }
@@ -2126,6 +3737,68 @@
           "bohemian",
           "restaurant",
           "crowded"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.0161,
+          39.2616
+        ]
+      },
+      "properties": {
+        "slug": "nevada-city",
+        "name": "Nevada City & the South Yuba",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h45m",
+        "hook": "The best-preserved Gold Rush town in the Sierra foothills, all gas lamps and balconied Victorians \u2014 with the emerald swimming holes of the South Yuba River ten minutes away.",
+        "tags": [
+          "gold-rush",
+          "victorian",
+          "river",
+          "swim-holes",
+          "town",
+          "foothills"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8225,
+          37.1766
+        ]
+      },
+      "properties": {
+        "slug": "new-almaden",
+        "name": "New Almaden & Quicksilver Park",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h5m",
+        "hook": "The Gold Rush ran on mercury, and the mercury came from here: California's oldest and richest mine, with its company town still intact in a San Jose canyon.",
+        "tags": [
+          "mercury-mine",
+          "gold-rush",
+          "company-town",
+          "museum",
+          "trails",
+          "san-jose"
         ],
         "stay": false
       }
@@ -2214,6 +3887,37 @@
           "missile",
           "restored",
           "docents"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9805,
+          37.5776
+        ]
+      },
+      "properties": {
+        "slug": "niles-district",
+        "name": "Niles (Fremont)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "50m",
+        "hook": "Before Hollywood, there was Niles: the small-town main street where Charlie Chaplin filmed \"The Tramp,\" with a silent-film museum that still screens movies the old way and a steam railroad running up the canyon.",
+        "tags": [
+          "silent-film",
+          "chaplin",
+          "steam-train",
+          "antiques",
+          "time-capsule",
+          "fremont"
         ],
         "stay": false
       }
@@ -2637,6 +4341,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.16,
+          36.4826
+        ]
+      },
+      "properties": {
+        "slug": "pinnacles",
+        "name": "Pinnacles National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h20m",
+        "hook": "The Bay Area's own national park is the one nobody visits: half of an ancient volcano that drifted 195 miles up the San Andreas Fault, full of caves you scramble through and condors overhead.",
+        "tags": [
+          "national-park",
+          "condors",
+          "talus-caves",
+          "volcanic",
+          "dark-sky",
+          "day-section"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.172,
           37.427
         ]
@@ -2658,6 +4393,37 @@
           "new-guinea",
           "free",
           "stanford"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.7404,
+          38.9546
+        ]
+      },
+      "properties": {
+        "slug": "point-arena",
+        "name": "Point Arena & the Stornetta Lands",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "The tallest lighthouse on the Pacific coast stands where the San Andreas Fault runs out to sea \u2014 beside miles of public bluffs pocked with sinkholes, sea arches, and blowholes you wander with no fences and no crowds.",
+        "tags": [
+          "lighthouse",
+          "bluffs",
+          "national-monument",
+          "sinkholes",
+          "whales",
+          "far-edge"
         ],
         "stay": false
       }
@@ -2746,6 +4512,37 @@
           "history",
           "tour-only",
           "coastal"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1833,
+          38.0466
+        ]
+      },
+      "properties": {
+        "slug": "port-costa",
+        "name": "Port Costa",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "45m",
+        "hook": "A dead-end former grain port on the Carquinez Strait that time forgot: one street, a Victorian roadhouse, and a cavernous warehouse bar with a stuffed polar bear.",
+        "tags": [
+          "town",
+          "saloon",
+          "time-capsule",
+          "carquinez",
+          "food",
+          "bikers"
         ],
         "stay": false
       }
@@ -2934,6 +4731,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.165,
+          37.8125
+        ]
+      },
+      "properties": {
+        "slug": "redwood-regional",
+        "name": "Reinhardt Redwood Regional Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "Ships entering the Golden Gate once navigated by redwoods on this Oakland ridge so huge they were visible 16 miles out at sea \u2014 all cut by 1860, and the forest that grew back is now the East Bay's secret cathedral.",
+        "tags": [
+          "redwoods",
+          "canyon",
+          "oakland",
+          "second-growth",
+          "ladybugs",
+          "history"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.483,
           37.907
         ]
@@ -2987,6 +4815,99 @@
           "stanford"
         ],
         "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9231,
+          37.3336
+        ]
+      },
+      "properties": {
+        "slug": "rosicrucian-egyptian-museum",
+        "name": "Rosicrucian Egyptian Museum",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h",
+        "hook": "The largest collection of Egyptian artifacts on the US West Coast \u2014 real mummies included \u2014 built and run by a mystical order in a San Jose neighborhood, in a campus styled after an Egyptian temple complex.",
+        "tags": [
+          "museum",
+          "egypt",
+          "mummies",
+          "esoteric",
+          "san-jose",
+          "gardens"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.34,
+          37.9095
+        ]
+      },
+      "properties": {
+        "slug": "rosie-the-riveter",
+        "name": "Rosie the Riveter NHP (Richmond)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "Richmond built 747 ships in four years \u2014 a Liberty ship in under five days at the record \u2014 and the national park telling that story sits in the very shipyards, with one of the last Victory ships still afloat at the dock.",
+        "tags": [
+          "wwii",
+          "home-front",
+          "shipyards",
+          "history",
+          "richmond",
+          "national-park"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7089,
+          38.5296
+        ]
+      },
+      "properties": {
+        "slug": "safari-west",
+        "name": "Safari West",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h20m",
+        "hook": "Four hundred acres of Sonoma hills run as an African savanna \u2014 giraffes, rhinos, cheetahs \u2014 with luxury safari tents imported from Botswana, and a fire story that tells you everything about the place.",
+        "tags": [
+          "safari",
+          "giraffes",
+          "tent-camp",
+          "sonoma",
+          "wildlife",
+          "stay"
+        ],
+        "stay": true
       }
     },
     {
@@ -3229,6 +5150,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.736,
+          38.456
+        ]
+      },
+      "properties": {
+        "slug": "schulz-museum",
+        "name": "Charles M. Schulz Museum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "1h5m",
+        "hook": "Charles Schulz drew Peanuts in Santa Rosa for thirty years \u2014 and the museum across from his beloved ice rink holds the drawn-by-hand evidence of the most widely read comic strip in history.",
+        "tags": [
+          "peanuts",
+          "snoopy",
+          "museum",
+          "ice-rink",
+          "santa-rosa",
+          "comics"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.452,
           38.71
         ]
@@ -3435,6 +5387,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.5865,
+          37.7125
+        ]
+      },
+      "properties": {
+        "slug": "taft-point-sentinel-dome",
+        "name": "Taft Point & Sentinel Dome",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h",
+        "hook": "One trailhead on Glacier Point Road serves both of Yosemite's best cheap thrills: a guardrail-free ledge hanging 3,000 feet over the Valley, and a bald dome with a 360\u00b0 view that embarrasses Glacier Point itself.",
+        "tags": [
+          "viewpoint",
+          "fissures",
+          "granite-dome",
+          "glacier-point-road",
+          "sunset",
+          "day-section"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.9285,
+          39.1855
+        ]
+      },
+      "properties": {
+        "slug": "tahoe-east-shore",
+        "name": "Tahoe East Shore Coves",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "The Nevada side's granite-boulder coves are the Caribbean of the Sierra \u2014 and between the famous beach and the nude one runs a string of pocket coves most visitors never find.",
+        "tags": [
+          "beaches",
+          "coves",
+          "boulders",
+          "clear-water",
+          "nevada-side",
+          "swimming"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.55,
           36.235
         ]
@@ -3458,6 +5472,37 @@
           "retreat"
         ],
         "stay": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.545,
+          37.853
+        ]
+      },
+      "properties": {
+        "slug": "tennessee-valley",
+        "name": "Tennessee Valley & Tennessee Cove",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "30m",
+        "hook": "A flat valley walk in the Marin Headlands that ends at a black-sand cove named for a gold-rush steamship that wrecked there in 1853 \u2014 and whose engine still surfaces at extreme low tides.",
+        "tags": [
+          "beach",
+          "shipwreck",
+          "hike",
+          "marin-headlands",
+          "wildlife",
+          "easy"
+        ],
+        "stay": false
       }
     },
     {
@@ -3516,6 +5561,37 @@
           "loop",
           "walk",
           "bike"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.244,
+          37.9046
+        ]
+      },
+      "properties": {
+        "slug": "tilden-steam-trains",
+        "name": "Tilden Park Steam Trains",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 2,
+        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "radius": 5,
+        "drive": "35m",
+        "hook": "Two separate miniature railways sit side by side in the Berkeley hills \u2014 a coal-fired steam line that hauls you through actual redwoods, and next door a hobbyist club running their own home-built locomotives.",
+        "tags": [
+          "trains",
+          "miniature",
+          "redwoods",
+          "tilden",
+          "kids-but-not-only",
+          "berkeley-hills"
         ],
         "stay": false
       }
@@ -3644,6 +5720,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.3582,
+          37.8733
+        ]
+      },
+      "properties": {
+        "slug": "tuolumne-meadows",
+        "name": "Tuolumne Meadows & the Tioga High Country",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h30m",
+        "hook": "An hour past the Valley crowds, Tioga Road climbs into a different park entirely: subalpine meadows at 8,600 feet, glacier-polished domes, and lakes you can actually hear.",
+        "tags": [
+          "high-country",
+          "meadows",
+          "granite-domes",
+          "alpine-lakes",
+          "tioga-road",
+          "day-section"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.793,
+          37.0844
+        ]
+      },
+      "properties": {
+        "slug": "uvas-canyon",
+        "name": "Uvas Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h20m",
+        "hook": "A pocket canyon behind Morgan Hill stacks half a dozen waterfalls along a single one-mile loop \u2014 the South Bay's rain-day secret, gated by a reservation system that keeps it sane.",
+        "tags": [
+          "waterfalls",
+          "canyon",
+          "reservation",
+          "morgan-hill",
+          "redwoods",
+          "rain-chaser"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.593,
           36.008
         ]
@@ -3724,6 +5862,37 @@
           "quiet",
           "marina",
           "subtle"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9511,
+          37.3184
+        ]
+      },
+      "properties": {
+        "slug": "winchester-mystery-house",
+        "name": "Winchester Mystery House",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "50m",
+        "hook": "A rifle heiress spent 38 years building a mansion with staircases into ceilings and doors onto two-story drops \u2014 and stopped only when she died.",
+        "tags": [
+          "mansion",
+          "stairs-to-nowhere",
+          "victorian",
+          "legend",
+          "san-jose",
+          "icon-redeemed"
         ],
         "stay": false
       }
@@ -3843,6 +6012,36 @@
           "trails",
           "quiet",
           "horses"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.5936,
+          37.7456
+        ]
+      },
+      "properties": {
+        "slug": "yosemite-valley",
+        "name": "Yosemite Valley (done right)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "3h45m",
+        "hook": "The most famous seven square miles of granite on Earth \u2014 and it still beats the hype, if you refuse to experience it as a drive-through.",
+        "tags": [
+          "national-park",
+          "waterfalls",
+          "granite",
+          "icon-redeemed",
+          "day-section"
         ],
         "stay": false
       }

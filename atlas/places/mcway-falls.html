@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>3h</b></div>
     <div class="stat">Effort<b>10-minute roadside viewpoint; pair it with a real trail nearby</b></div>
     <div class="stat">Best<b>Clear light; it looks the same at any tide</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An 80-foot waterfall that drops straight onto a beach you're not allowed to walk on.</p></section>
@@ -97,4 +103,22 @@
 <section class="sec locals"><h2>From the locals</h2><p>The honest version shows up in one back-to-back pair of comments: "exceeded my expectations, felt like a dream watching the freshwater falling onto the beach," right next to the practical "McWay closed for construction but visible from roadside."</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=578" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=578</a>  ·  <a href="https://www.hikespeak.com/trails/mcway-falls-big-sur/" target="_blank" rel="noopener">https://www.hikespeak.com/trails/mcway-falls-big-sur/</a>  ·  r/bigsur — see research/reading/big-sur.md</div>
   </main>
+<script>
+(function(){
+  var SLUG = "mcway-falls", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

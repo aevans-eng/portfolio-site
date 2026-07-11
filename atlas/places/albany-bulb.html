@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>30m</b></div>
     <div class="stat">Effort<b>1–2h wandering; easy but rubble underfoot</b></div>
     <div class="stat">Best<b>Golden hour into sunset; low tide for the shoreline art</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A construction landfill that turned into an unofficial sculpture park, out on a spit in the bay.</p></section>
@@ -97,4 +103,22 @@
 <section class="sec locals"><h2>From the locals</h2><p>East Bay regulars keep it quiet and protective, and tell you to go at golden hour and expect it to look nothing like the photos.</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Albany_Bulb" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Albany_Bulb</a>  ·  <a href="https://www.atlasobscura.com/places/albany-bulb" target="_blank" rel="noopener">https://www.atlasobscura.com/places/albany-bulb</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "albany-bulb", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>4h</b></div>
     <div class="stat">Effort<b>Flat boardwalk; stay as long as you want</b></div>
     <div class="stat">Best<b>Dec–Mar for the birthing-and-breeding chaos; early morning</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Thousands of elephant seals sprawled on a beach a few feet below a boardwalk, for free, any day of the year.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park at the signed viewing area seven miles north of San Simeon and walk the boardwalk both directions. Come early for calmer wind, more active animals, and fewer people. Winter for the full spectacle, and bring binoculars; the far end of the beach is where a lot of the action is.</p></section>
     <div class="sources">Sources · <a href="https://elephantseal.org/plan-your-visit/" target="_blank" rel="noopener">https://elephantseal.org/plan-your-visit/</a>  ·  <a href="https://www.marinemammalcenter.org/news/when-and-where-to-see-elephant-seals-in-california-and-livestream" target="_blank" rel="noopener">https://www.marinemammalcenter.org/news/when-and-where-to-see-elephant-seals-in-california-and-livestream</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "piedras-blancas-elephant-seals", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>2h</b></div>
     <div class="stat">Effort<b>A half day on foot along the shore and up into town</b></div>
     <div class="stat">Best<b>Sunrise at Lovers Point; Nov–Jan for the monarchs</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The Victorian beach town on the tip of the peninsula that locals quietly rate over Carmel, minus the crowds and the price tags.</p></section>
@@ -96,4 +102,22 @@
 <section class="sec locals"><h2>From the locals</h2><p>Someone who moved away still aches for it: "I spent a lot of time wandering around Lovers Point and Asilomar with my wife and daughter... something about that charming little coastal town. You'll always have a special place in our hearts, Pacific Grove."</p></section>
     <div class="sources">Sources · <a href="https://www.cityofpacificgrove.gov/our_city/departments/recreation/beaches,_trails___outdoor/coastal_recreation_trail.php" target="_blank" rel="noopener">https://www.cityofpacificgrove.gov/our_city/departments/recreation/beaches,_trails___outdoor/coastal_recreation_trail.php</a>  ·  <a href="https://www.visitcalifornia.com/experience/monarch-grove-sanctuary/" target="_blank" rel="noopener">https://www.visitcalifornia.com/experience/monarch-grove-sanctuary/</a>  ·  r/montereybay — see research/reading/big-sur.md</div>
   </main>
+<script>
+(function(){
+  var SLUG = "pacific-grove", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

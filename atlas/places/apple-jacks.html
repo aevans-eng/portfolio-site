@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>50m</b></div>
     <div class="stat">Effort<b>A beer stop in the redwoods, mid-ride</b></div>
     <div class="stat">Best<b>A weekend afternoon on the Highway 84 run</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An 1870s dive bar in the La Honda redwoods, dark and creaky and unbothered, that's been watering loggers, bikers, hippies, and cyclists for 150 years.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's on La Honda Road (Highway 84), a natural mid-ride stop between the Skyline climb and the coast. Have a beer, soak up the century of grime and stories, and pair it with the Kesey history a stone's throw away.</p></section>
     <div class="sources">Sources · <a href="https://www.mercurynews.com/2016/07/20/apple-jacks-in-la-honda-a-classic-old-west-style-tavern/" target="_blank" rel="noopener">https://www.mercurynews.com/2016/07/20/apple-jacks-in-la-honda-a-classic-old-west-style-tavern/</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "apple-jacks", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

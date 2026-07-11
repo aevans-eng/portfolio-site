@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>1h45m</b></div>
     <div class="stat">Effort<b>0.4mi walk, then 308 steps down to the light and back up</b></div>
     <div class="stat">Best<b>Dec–May for gray whales; Dec–Mar for elephant seals; dress for wind</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The windiest, foggiest point on the West Coast: 308 steps down to a lighthouse on the cliff, and in winter a beach heaving with elephant seals over the ridge.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Go for the season, not the scenery: gray whales roughly December through May, elephant seals December through March. Dress for real wind and fog even when it's warm inland, and know the stairs close when it's blowing too hard. On busy winter weekends a shuttle replaces private cars on the road out to the point.</p></section>
     <div class="sources">Sources · <a href="https://www.nps.gov/pore/planyourvisit/wildlife_viewing_whales.htm" target="_blank" rel="noopener">https://www.nps.gov/pore/planyourvisit/wildlife_viewing_whales.htm</a>  ·  <a href="https://www.visitcalifornia.com/experience/point-reyes-lighthouse/" target="_blank" rel="noopener">https://www.visitcalifornia.com/experience/point-reyes-lighthouse/</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "point-reyes-lighthouse", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

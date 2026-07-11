@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>4h</b></div>
     <div class="stat">Effort<b>70-minute tour (book ahead); the zebras are a roadside look</b></div>
     <div class="stat">Best<b>Reserve a tour; scan the east side of Highway 1 for zebras</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A newspaper baron's marble hilltop palace, and the zebras from his private zoo still grazing the ranch below it, for free.</p></section>
@@ -96,4 +102,22 @@
 <section class="sec skip"><h2><span class="idx">03</span>Skip the cliché</h2><p>If you're short on time or money, skip the tour and just find the zebras. The free, weird thing beats the expensive, crowded one here.</p></section>
     <div class="sources">Sources · <a href="https://visitsansimeonca.com/what-to-do/highway-1-zebra-viewing/" target="_blank" rel="noopener">https://visitsansimeonca.com/what-to-do/highway-1-zebra-viewing/</a>  ·  <a href="https://en.wikipedia.org/wiki/Hearst_Castle" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Hearst_Castle</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "hearst-castle-zebras", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

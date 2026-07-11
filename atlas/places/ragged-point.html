@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>3h45m</b></div>
     <div class="stat">Effort<b>Steep 0.5mi / 400ft down to the beach; or a flat clifftop trail</b></div>
     <div class="stat">Best<b>After winter rain for the waterfall; top off your gas here</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The cliff where Big Sur begins or ends, with a brutal little trail down to a black-sand beach and a 300-foot waterfall you can't see from the top.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park at the Ragged Point Inn. Take the Black Swift Falls trail down after winter rain for the falls, and remember you climb 400 feet back up, often in full sun. If your knees say no, the flat clifftop nature trail gives you the views without the descent. Fill your tank here; gas is scarce north of this point.</p></section>
     <div class="sources">Sources · <a href="https://highway1roadtrip.com/blog/ragged-point-trail/" target="_blank" rel="noopener">https://highway1roadtrip.com/blog/ragged-point-trail/</a>  ·  <a href="https://www.world-of-waterfalls.com/waterfalls/california-black-swift-falls/" target="_blank" rel="noopener">https://www.world-of-waterfalls.com/waterfalls/california-black-swift-falls/</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "ragged-point", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

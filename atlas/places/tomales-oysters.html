@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>1h20m</b></div>
     <div class="stat">Effort<b>A bayside picnic, or a night paddle</b></div>
     <div class="stat">Best<b>Reserve a table for oysters; new-moon nights for bioluminescence</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Shuck your own oysters at a picnic table on the edge of a quiet bay, or paddle it on a dark night when the water glows blue.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>For oysters, reserve a picnic table at Hog Island or buy from the smaller farms along Highway 1 near Marshall (bring a shucking knife, glove, and lemon, or rent a kit). For bioluminescence, book a new-moon night kayak tour in the warmer months. Pair the day with Point Reyes.</p></section>
     <div class="sources">Sources · <a href="https://hogislandoysters.com/marshall-oyster-farm/" target="_blank" rel="noopener">https://hogislandoysters.com/marshall-oyster-farm/</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "tomales-oysters", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

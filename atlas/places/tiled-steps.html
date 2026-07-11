@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,11 +93,31 @@
     <div class="stat">From SF<b>in SF</b></div>
     <div class="stat">Effort<b>A climb up 163 steps, then on to Grandview Park</b></div>
     <div class="stat">Best<b>Early morning for solitude; posted hours are 9–7</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A staircase in the far avenues that a whole neighborhood turned into a single sea-to-sky mosaic, and almost no visitor makes it out here.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Residents in Golden Gate Heights spent years covering an ordinary flight of steps in what Fodor's calls maybe the largest mosaic staircase in the world: 163 steps rising ninety feet, more than two thousand handmade tiles building a scene from sea creatures at the bottom up through land animals and birds to a sun and moon at the top. It was inspired by the painted steps in Rio, designed by two local artists and laid by the neighborhood, and it climbs to Grandview Park, a small sandy summit with one of the best quiet views in the city. It's out past where tourists go, with no crowd and no fee.</p></section>
-<section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Take the N-Judah to 16th and Judah and walk up. Go early, because it's a residential block: keep it quiet, don't block driveways, and be off it by evening. Then keep climbing past the top to Grandview Park for the payoff view.</p></section>
+<section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Take the N-Judah to 16th and Judah and walk up. Go early, because it's a residential block: keep it quiet, don't block driveways, and be off it by evening. Then keep climbing past the top to Grandview Park — "Turtle Hill" to the neighborhood, which locals argue "pretty much rivals Twin Peaks" — for the payoff view.</p></section>
+<section class="sec locals"><h2>From the locals</h2><p>The full circuit, as prescribed on r/sanfrancisco: "start at 15th Ave and Kirkham — there's another set of mosaic steps! Go up those and around the corner to these, and then up Grandview Park if you're still alive."</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/16th_Avenue_Tiled_Steps" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/16th_Avenue_Tiled_Steps</a>  ·  <a href="https://www.colettecrutcher.com/16th-ave" target="_blank" rel="noopener">https://www.colettecrutcher.com/16th-ave</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "tiled-steps", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

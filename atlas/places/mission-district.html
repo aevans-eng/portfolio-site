@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>in SF</b></div>
     <div class="stat">Effort<b>Half a day on foot; more if you eat your way through</b></div>
     <div class="stat">Best<b>A sunny afternoon into evening; Dolores Park at golden hour</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The one part of San Francisco to walk with no plan. It's the warmest, densest, most argued-over square mile in the city.</p></section>
@@ -97,4 +103,22 @@
 <section class="sec locals"><h2>From the locals</h2><p>Locals treat it as a walk, not a checklist, and steer newcomers to 24th Street over the more touristed north end.</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Mission_District,_San_Francisco" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Mission_District,_San_Francisco</a>  ·  <a href="https://www.kqed.org/news/12043304/born-in-the-mission-built-by-immigrants-the-burrito-that-became-a-bay-area-icon" target="_blank" rel="noopener">https://www.kqed.org/news/12043304/born-in-the-mission-built-by-immigrants-the-burrito-that-became-a-bay-area-icon</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "mission-district", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>

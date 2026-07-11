@@ -71,6 +71,11 @@
   .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
     border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
   .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
 </style></head>
 <body>
   <header class="hero">
@@ -88,6 +93,7 @@
     <div class="stat">From SF<b>30m</b></div>
     <div class="stat">Effort<b>Short walk to the lake, longer loops around it</b></div>
     <div class="stat">Best<b>A weekday walk or ride; bay views from the upper trails</b></div>
+    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A hidden reservoir at the top of a Belmont street, a genuine little lake tucked in the hills with trails all around it.</p></section>
@@ -95,4 +101,22 @@
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Access from the Lake Road or Hallmark Drive trailheads in Belmont. Walk in a short way to the lake, or loop the surrounding trails for a longer outing. It's popular with mountain bikers, so stay alert on the descents. Weekdays are quiet.</p></section>
     <div class="sources">Sources · <a href="https://www.belmont.gov/departments/parks-recreation/parks-trails/water-dog-lake-park" target="_blank" rel="noopener">https://www.belmont.gov/departments/parks-recreation/parks-trails/water-dog-lake-park</a></div>
   </main>
+<script>
+(function(){
+  var SLUG = "waterdog-lake", btn = document.getElementById('visitBtn');
+  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  function paint(){
+    var d = get()[SLUG];
+    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
+    btn.classList.toggle('on', !!d);
+  }
+  btn.addEventListener('click', function(){
+    var v = get();
+    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
+    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+    paint();
+  });
+  paint();
+})();
+</script>
 </body></html>
