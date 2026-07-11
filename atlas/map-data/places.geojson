@@ -906,6 +906,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.7929,
+          35.1914
+        ]
+      },
+      "properties": {
+        "slug": "carrizo-plain",
+        "name": "Carrizo Plain",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h45m",
+        "hook": "The last great piece of the grassland sea that once filled the Central Valley \u2014 where superblooms turn fifty miles of plain solid gold, and the San Andreas Fault shows itself on the surface more clearly than anywhere on Earth.",
+        "tags": [
+          "grassland",
+          "superbloom",
+          "san-andreas",
+          "painted-rock",
+          "remote",
+          "national-monument"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.1817,
           37.8189
         ]
