@@ -1644,6 +1644,7 @@
         "drive": "30m",
         "hook": "A stretch of old Highway 1 so treacherous they finally drilled a tunnel around it, now a flat cliff-edge trail you get to walk or ride with no cars.",
         "tags": [
+          "bunker",
           "coastal",
           "cliff",
           "trail",
@@ -5852,6 +5853,43 @@
         ],
         "stay": false,
         "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4767,
+          37.5773
+        ]
+      },
+      "properties": {
+        "slug": "san-pedro-valley",
+        "name": "San Pedro Valley & Brooks Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "25m",
+        "hook": "Twenty-five minutes from San Francisco, a three-tier waterfall drops 175 feet down a Pacifica canyon each winter \u2014 and most of the city has never heard of it.",
+        "tags": [
+          "waterfall",
+          "pacifica",
+          "redwoods",
+          "montara-mountain",
+          "rain-chaser",
+          "county-park"
+        ],
+        "stay": false,
+        "season": [
+          12,
+          1,
+          2,
+          3
+        ]
       }
     },
     {
