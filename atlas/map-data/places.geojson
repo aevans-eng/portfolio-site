@@ -419,6 +419,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.041,
+          38.916
+        ]
+      },
+      "properties": {
+        "slug": "auburn-confluence",
+        "name": "Auburn Confluence & Foresthill Bridge",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h",
+        "hook": "Two forks of the American River meet in a canyon below the tallest bridge in California \u2014 730 feet of steel built for a reservoir that never came, over water that still runs wild.",
+        "tags": [
+          "river-confluence",
+          "tallest-bridge",
+          "swimming",
+          "canyon",
+          "auburn",
+          "trails"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.9214,
           40.3111
         ]
@@ -3535,6 +3567,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.024,
+          41.241
+        ]
+      },
+      "properties": {
+        "slug": "mccloud-falls",
+        "name": "McCloud Falls & Castle Crags",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h30m",
+        "hook": "Three waterfalls stacked along two miles of one river under Mount Shasta \u2014 the middle one a fifty-foot curtain into a swimming hole locals treat as the far north's best cold plunge.",
+        "tags": [
+          "waterfalls",
+          "swimming-holes",
+          "mount-shasta",
+          "granite-spires",
+          "far-north",
+          "river"
+        ],
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.419,
           37.718
         ]
@@ -3679,6 +3748,38 @@
           "murals",
           "walking",
           "culture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.2502,
+          36.0148
+        ]
+      },
+      "properties": {
+        "slug": "mission-san-antonio",
+        "name": "Mission San Antonio de Padua",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "Of all twenty-one California missions, only this one still stands alone in its original landscape \u2014 no town grew around it, because the Army bought the entire valley, and Hearst owned it before them.",
+        "tags": [
+          "mission",
+          1771,
+          "untouched-landscape",
+          "fort-hunter-liggett",
+          "oaks",
+          "remote"
         ],
         "stay": false,
         "season": []
