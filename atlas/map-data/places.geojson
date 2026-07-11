@@ -28,7 +28,13 @@
           "coastal",
           "remote"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          1,
+          2,
+          3,
+          4
+        ]
       }
     },
     {
@@ -57,7 +63,8 @@
           "ruins",
           "free"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -87,7 +94,8 @@
           "ride-hub",
           "food"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -117,7 +125,8 @@
           "beer-garden",
           "cyclists"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -148,7 +157,8 @@
           "history",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -178,7 +188,8 @@
           "walk-in",
           "quiet"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -207,7 +218,8 @@
           "tech",
           "mascots"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -237,7 +249,8 @@
           "views",
           "ferry"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -267,7 +280,13 @@
           "hike",
           "guided"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          12,
+          1,
+          2,
+          3
+        ]
       }
     },
     {
@@ -297,7 +316,8 @@
           "cyclists",
           "la-honda"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -327,7 +347,8 @@
           "free",
           "stanford"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -357,7 +378,8 @@
           "russian-river",
           "colonel-armstrong"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -388,7 +410,8 @@
           "humboldt",
           "far-edge"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -417,7 +440,8 @@
           "community",
           "bike-path"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -447,7 +471,8 @@
           "science",
           "free"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -477,7 +502,8 @@
           "tidepools",
           "geology"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -508,7 +534,8 @@
           "waterfront",
           "carquinez"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -539,7 +566,8 @@
           "boulder-creek",
           "history"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -568,7 +596,8 @@
           "photo-op",
           "crowded"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -597,7 +626,8 @@
           "hitchcock",
           "town"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -627,7 +657,13 @@
           "eastern-sierra",
           "state-park"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9
+        ]
       }
     },
     {
@@ -656,7 +692,8 @@
           "coastal",
           "hippie"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -687,7 +724,8 @@
           "watershed",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -715,7 +753,8 @@
           "duel",
           "monument"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -745,7 +784,8 @@
           "breakfast",
           "history"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -776,7 +816,8 @@
           "haight",
           "views"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -808,7 +849,8 @@
           "hike",
           "bike-reachable"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -837,7 +879,8 @@
           "baylands",
           "oddity"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -868,7 +911,8 @@
           "sierra",
           "snow"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -898,7 +942,8 @@
           "galleries",
           "dog-friendly"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -929,7 +974,11 @@
           "remote",
           "national-monument"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          3,
+          4
+        ]
       }
     },
     {
@@ -960,7 +1009,8 @@
           "night",
           "family"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -991,7 +1041,8 @@
           "mtb",
           "camping"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1021,7 +1072,8 @@
           "walking",
           "culture"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1052,7 +1104,8 @@
           "earned",
           "day-section"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1083,7 +1136,8 @@
           "free",
           "kids-and-adults"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1112,7 +1166,8 @@
           "graves",
           "oddity"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1143,7 +1198,8 @@
           "wakamatsu",
           "american-river"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1172,7 +1228,8 @@
           "history",
           "tech"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1203,7 +1260,14 @@
           "fishing",
           "loop-walk"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
       }
     },
     {
@@ -1234,7 +1298,8 @@
           "views",
           "staircase-hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1265,7 +1330,13 @@
           "winter",
           "boardwalk"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          11,
+          12,
+          1,
+          2
+        ]
       }
     },
     {
@@ -1295,7 +1366,8 @@
           "farmland",
           "beach"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1326,7 +1398,8 @@
           "bike",
           "fremont"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1356,7 +1429,8 @@
           "bay-trail",
           "family"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1385,7 +1459,8 @@
           "restaurant",
           "character"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -1416,7 +1491,8 @@
           "camping",
           "ohlone-trail"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1446,7 +1522,8 @@
           "bike",
           "history"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1476,7 +1553,8 @@
           "napa",
           "peacocks"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1506,7 +1584,8 @@
           "sculpture",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1537,7 +1616,8 @@
           "sinking",
           "no-entry"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1568,7 +1648,8 @@
           "richmond",
           "stay"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -1598,7 +1679,8 @@
           "spring",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1628,7 +1710,8 @@
           "gravel",
           "geology"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1657,7 +1740,8 @@
           "history",
           "tree"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1687,7 +1771,8 @@
           "estuary",
           "birds"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1718,7 +1803,13 @@
           "icon-redeemed",
           "day-section"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9
+        ]
       }
     },
     {
@@ -1748,7 +1839,8 @@
           "clothing-optional",
           "oddity"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -1777,7 +1869,8 @@
           "coastal-views",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1808,7 +1901,12 @@
           "desolation-gateway",
           "locals"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8
+        ]
       }
     },
     {
@@ -1839,7 +1937,8 @@
           "wooden-cottages",
           "climb"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1868,7 +1967,8 @@
           "history",
           "mansion"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1898,7 +1998,8 @@
           "reef",
           "family"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1927,7 +2028,8 @@
           "flintstones",
           "absurd"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1958,7 +2060,8 @@
           "fresno",
           "outsider-architecture"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -1989,7 +2092,8 @@
           "beach",
           "dunes"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2019,7 +2123,8 @@
           "film",
           "free"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2049,7 +2154,8 @@
           "coast",
           "chapel"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2078,7 +2184,8 @@
           "urban-legend",
           "foothills"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2108,7 +2215,8 @@
           "hidden",
           "coastal"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2138,7 +2246,8 @@
           "santa-cruz-mountains",
           "lore"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2169,7 +2278,8 @@
           "icon-redeemed",
           "kitsch"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2200,7 +2310,8 @@
           "hidden",
           "city-escape"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2229,7 +2340,8 @@
           "sea-stack",
           "coast"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2259,7 +2371,8 @@
           "walking",
           "ephemeral"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2288,7 +2401,8 @@
           "landfill",
           "bayfront"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2319,7 +2433,8 @@
           "motorcycles",
           "night-view"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2350,7 +2465,8 @@
           "tea-house",
           "historic"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2379,7 +2495,8 @@
           "main-street",
           "resupply"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2408,7 +2525,8 @@
           "moffett",
           "scale"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2439,7 +2557,8 @@
           "hayward",
           "curbs"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2469,7 +2588,8 @@
           "tour-only",
           "oddity"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2500,7 +2620,8 @@
           "oakland",
           "historic-bar"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2531,7 +2652,8 @@
           "diablo-range",
           "trails"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2562,7 +2684,8 @@
           "old-growth",
           "steam-railroad"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2592,7 +2715,8 @@
           "culture",
           "free"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2623,7 +2747,12 @@
           "history",
           "day-section"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          3,
+          4,
+          5
+        ]
       }
     },
     {
@@ -2652,7 +2781,8 @@
           "trails",
           "history"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -2681,7 +2811,8 @@
           "aircraft",
           "prototypes"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2712,7 +2843,8 @@
           "cliffs",
           "scramble"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2743,7 +2875,14 @@
           "steam",
           "no-swimming"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
       }
     },
     {
@@ -2774,7 +2913,8 @@
           "quiet",
           "poet"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2805,7 +2945,8 @@
           "neighborhood-gem",
           "free"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2836,7 +2977,14 @@
           "seasonal",
           "redwoods"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          12,
+          1
+        ]
       }
     },
     {
@@ -2865,7 +3013,8 @@
           "redwoods",
           "roadside"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2896,7 +3045,8 @@
           "oakland",
           "promenade"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2926,7 +3076,8 @@
           "shipwrecks",
           "labyrinth"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -2957,7 +3108,13 @@
           "boardwalk",
           "far-edge"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          7,
+          8,
+          9,
+          10
+        ]
       }
     },
     {
@@ -2988,7 +3145,8 @@
           "telescope",
           "tarantulas"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3018,7 +3176,8 @@
           "history",
           "quiet"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3047,7 +3206,8 @@
           "fast-food",
           "walk-up"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3078,7 +3238,8 @@
           "wildflowers",
           "dogs-off-leash"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3109,7 +3270,8 @@
           "time-capsule",
           "national-landmark"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3139,7 +3301,8 @@
           "loop",
           "history"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3170,7 +3333,8 @@
           "vallejo",
           "adaptive-reuse"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3199,7 +3363,8 @@
           "civic",
           "film"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3230,7 +3395,8 @@
           "beach",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3259,7 +3425,13 @@
           "bluff-trail",
           "harbor"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          11,
+          12,
+          1,
+          2
+        ]
       }
     },
     {
@@ -3290,7 +3462,8 @@
           "uncrowded",
           "southeast-sf"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3318,7 +3491,8 @@
           "coastal",
           "viewpoint"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3348,7 +3522,8 @@
           "swimming",
           "quiet"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3379,7 +3554,8 @@
           "far-edge",
           "overnight"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3408,7 +3584,8 @@
           "walking",
           "culture"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3439,7 +3616,13 @@
           "ancient",
           "swim"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9
+        ]
       }
     },
     {
@@ -3468,7 +3651,8 @@
           "coastal",
           "cheap"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -3499,7 +3683,8 @@
           "remote",
           "anti-muir-woods"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3529,7 +3714,8 @@
           "beachcombing",
           "easy"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3560,7 +3746,8 @@
           "diablo-range",
           "solitude"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3590,7 +3777,8 @@
           "coast-trail",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3620,7 +3808,8 @@
           "bluff",
           "drinks"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3651,7 +3840,8 @@
           "armenian-memorial",
           "dirty-harry"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3682,7 +3872,8 @@
           "bike-climb",
           "state-park"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3713,7 +3904,8 @@
           "gilroy",
           "camping"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3743,7 +3935,8 @@
           "hidden",
           "view"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3773,7 +3966,8 @@
           "ladders",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3804,7 +3998,8 @@
           "santa-cruz-mountains",
           "ohlone"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3835,7 +4030,8 @@
           "walk",
           "oakland"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3865,7 +4061,8 @@
           "history",
           "mt-tam"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3895,7 +4092,8 @@
           "hike",
           "reservations"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3925,7 +4123,8 @@
           "fishermans-wharf",
           "laughing-sal"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3954,7 +4153,8 @@
           "cliffs",
           "coast"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -3985,7 +4185,8 @@
           "santa-cruz",
           "kitsch"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4016,7 +4217,12 @@
           "clifftop-walk",
           "santa-cruz"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          11,
+          12,
+          1
+        ]
       }
     },
     {
@@ -4046,7 +4252,8 @@
           "restaurant",
           "crowded"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4077,7 +4284,8 @@
           "town",
           "foothills"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4108,7 +4316,8 @@
           "trails",
           "san-jose"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4138,7 +4347,8 @@
           "quiet",
           "retreat"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -4167,7 +4377,8 @@
           "graffiti",
           "ridge"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4196,7 +4407,8 @@
           "restored",
           "docents"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4227,7 +4439,8 @@
           "time-capsule",
           "fremont"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4256,7 +4469,8 @@
           "oddity",
           "history"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4286,7 +4500,8 @@
           "walking",
           "stairways"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4315,7 +4530,8 @@
           "calistoga",
           "roadside"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4345,7 +4561,8 @@
           "bike",
           "quiet"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4375,7 +4592,8 @@
           "butterflies",
           "tidepools"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4405,7 +4623,8 @@
           "flat",
           "bike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4435,7 +4654,8 @@
           "history",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4465,7 +4685,8 @@
           "marsh",
           "historic"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4494,7 +4715,8 @@
           "roadside",
           "calistoga"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4523,7 +4745,8 @@
           "toys",
           "collection"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4552,7 +4775,8 @@
           "sunset",
           "dog-friendly"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4582,7 +4806,8 @@
           "family",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4612,7 +4837,12 @@
           "free",
           "coastal"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          12,
+          1,
+          2
+        ]
       }
     },
     {
@@ -4641,7 +4871,8 @@
           "hot-tub",
           "coastal"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -4672,7 +4903,8 @@
           "dark-sky",
           "day-section"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4702,7 +4934,8 @@
           "free",
           "stanford"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4733,7 +4966,8 @@
           "whales",
           "far-edge"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4762,7 +4996,8 @@
           "tidepools",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4792,7 +5027,13 @@
           "windy",
           "coastal"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          12,
+          1,
+          2,
+          3
+        ]
       }
     },
     {
@@ -4821,7 +5062,8 @@
           "tour-only",
           "coastal"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4852,7 +5094,8 @@
           "food",
           "bikers"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4882,7 +5125,8 @@
           "trails",
           "gravel"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4911,7 +5155,8 @@
           "history",
           "free"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4941,7 +5186,8 @@
           "cycling",
           "oddity"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -4971,7 +5217,8 @@
           "quiet",
           "preserve"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5001,7 +5248,8 @@
           "gateway",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5031,7 +5279,8 @@
           "ranch",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5062,7 +5311,8 @@
           "ladybugs",
           "history"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5092,7 +5342,8 @@
           "view",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5122,7 +5373,8 @@
           "free",
           "stanford"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5153,7 +5405,8 @@
           "san-jose",
           "gardens"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5184,7 +5437,8 @@
           "richmond",
           "national-park"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5215,7 +5469,8 @@
           "wildlife",
           "stay"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -5244,7 +5499,8 @@
           "remote",
           "easy"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5273,7 +5529,8 @@
           "pacifica",
           "haunted"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5303,7 +5560,8 @@
           "view",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5333,7 +5591,8 @@
           "quiet",
           "tidepools"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5362,7 +5621,8 @@
           "general-store",
           "historic"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5391,7 +5651,8 @@
           "remote",
           "treasure-hunt"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5420,7 +5681,8 @@
           "walking",
           "waterfront"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5450,7 +5712,8 @@
           "bike",
           "ancient-tree"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5481,7 +5744,8 @@
           "santa-rosa",
           "comics"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5510,7 +5774,8 @@
           "coast",
           "sea-ranch"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5539,7 +5804,8 @@
           "history",
           "oddity"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5569,7 +5835,8 @@
           "hidden",
           "fun"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5598,7 +5865,8 @@
           "view",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5627,7 +5895,8 @@
           "science",
           "scale"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5657,7 +5926,8 @@
           "hike",
           "family"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5687,7 +5957,8 @@
           "hike",
           "fog"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5718,7 +5989,14 @@
           "sunset",
           "day-section"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
       }
     },
     {
@@ -5749,7 +6027,12 @@
           "nevada-side",
           "swimming"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8
+        ]
       }
     },
     {
@@ -5779,7 +6062,8 @@
           "dirt-road",
           "retreat"
         ],
-        "stay": true
+        "stay": true,
+        "season": []
       }
     },
     {
@@ -5810,7 +6094,8 @@
           "wildlife",
           "easy"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5840,7 +6125,8 @@
           "rest-stop",
           "oddity"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5870,7 +6156,8 @@
           "walk",
           "bike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5901,7 +6188,8 @@
           "kids-but-not-only",
           "berkeley-hills"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5931,7 +6219,8 @@
           "view",
           "residential"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5961,7 +6250,8 @@
           "bioluminescence",
           "kayak"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -5990,7 +6280,8 @@
           "hike",
           "solitude"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6020,7 +6311,8 @@
           "hidden",
           "mt-tam"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6051,7 +6343,12 @@
           "tioga-road",
           "day-section"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          7,
+          8,
+          9
+        ]
       }
     },
     {
@@ -6082,7 +6379,13 @@
           "redwoods",
           "rain-chaser"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          1,
+          2,
+          3,
+          4
+        ]
       }
     },
     {
@@ -6112,7 +6415,8 @@
           "coastal-views",
           "wilderness"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6141,7 +6445,8 @@
           "hidden",
           "mtb"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6171,7 +6476,8 @@
           "marina",
           "subtle"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6202,7 +6508,8 @@
           "san-jose",
           "icon-redeemed"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6231,7 +6538,8 @@
           "sound",
           "bay-trail"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6261,7 +6569,8 @@
           "hang-gliders",
           "hike"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6291,7 +6600,8 @@
           "hike",
           "sonoma"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6321,7 +6631,8 @@
           "quiet",
           "horses"
         ],
-        "stay": false
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -6351,7 +6662,12 @@
           "icon-redeemed",
           "day-section"
         ],
-        "stay": false
+        "stay": false,
+        "season": [
+          4,
+          5,
+          6
+        ]
       }
     }
   ]
