@@ -2980,6 +2980,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.2397,
+          37.5027
+        ]
+      },
+      "properties": {
+        "slug": "hornitos",
+        "name": "Hornitos",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h45m",
+        "hook": "A Mexican-founded gold town that outlived its neighbors and then just stopped \u2014 iron-doored ruins around an empty plaza, including the store where Domingo Ghirardelli sold chocolate before San Francisco.",
+        "tags": [
+          "ghost-town",
+          "gold-rush",
+          "ghirardelli",
+          "mexican-founded",
+          "mariposa",
+          "wpa-guide-find"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -118.828,
           37.6605
         ]
