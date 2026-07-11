@@ -1992,6 +1992,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.95,
+          37.1386
+        ]
+      },
+      "properties": {
+        "slug": "ghost-railroad-santa-cruz",
+        "name": "Ghost Railroad of the Santa Cruz Mountains",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h10m",
+        "hook": "A mainline railroad once tunneled straight through the Santa Cruz Mountains \u2014 mile-long bores, resort stops, whole towns \u2014 and the forest has eaten nearly all of it. The portals are still out there.",
+        "tags": [
+          "abandoned-railroad",
+          "tunnels",
+          "ghost-towns",
+          "santa-cruz-mountains",
+          "lore"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.0182,
           36.9642
         ]
