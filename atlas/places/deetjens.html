@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Dinner by candlelight; book the restaurant ahead</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A ramshackle Norwegian village of hand-built redwood cabins with thin walls, no TVs, and a candlelit dining room that's been running since 1939.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In the 1930s a Norwegian immigrant named Helmuth Deetjen built a cluster of board-and-batten cabins in a redwood canyon in the style of his home country, and more or less invented the Big Sur building look everyone copied afterward. It's on the National Register now, but it still runs like his house: creaky, candlelit, walls you can hear through, some doors without locks. For a passer-through, the restaurant is the way in, an old-world dining room doing genuinely good food in a space that has pointedly never been updated for your comfort.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In the 1930s a Norwegian immigrant named Helmuth Deetjen built a cluster of board-and-batten cabins in a redwood canyon in the style of his home country, and more or less invented the Big Sur building look everyone copied afterward. It's on the National Register now, but it still runs like his house: creaky, candlelit, walls you can hear through, some doors without locks. For a passer-through, the restaurant is the way in, an old-world dining room doing good food in a space that has pointedly never been updated for your comfort.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>You don't have to stay to get it. Breakfast and dinner in the restaurant are the accessible version, and dinner by candlelight is the one to book. If you do stay the night, know what you're choosing: charm over amenities, thin walls, no screens.</p></section>
 <section class="sec locals"><h2>From the locals</h2><p>The plain endorsement that says more than a rave: "Deetjen's breakfast was stellar."</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Deetjen's_Big_Sur_Inn" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Deetjen's_Big_Sur_Inn</a>  ·  <a href="https://www.deetjens.org/history" target="_blank" rel="noopener">https://www.deetjens.org/history</a>  ·  r/bigsur — see research/reading/big-sur.md</div>

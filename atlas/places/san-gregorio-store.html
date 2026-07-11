@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Weekend afternoons when a band's playing</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 7/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class=""></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An 1889 general store that's really a saloon with live music, stiff Bloody Marys, and shelves of books, boots, and cast iron.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>From outside it's a barn at a country crossroads. Inside, the San Gregorio General Store has run since 1889 and never picked a lane: it's a full bar, a bookstore, a hardware-and-clothing shop, and a music venue all at once, with a potbelly stove, cowboy hats and skillets for sale, and live bluegrass and blues every Friday, Saturday, and Sunday. Ranchers, locals, and cyclists coming off the hills all end up leaning on the same bar. It's a genuine one-off, the kind of place that feels unbothered by the last hundred years, a mile inland from the beach it's named for.</p></section>

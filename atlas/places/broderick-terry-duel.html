@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>A quick stop</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Two stone pillars ten paces apart in a Daly City park mark the last great American duel, where a sitting US senator was shot dead in 1859.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Behind a golf course near Lake Merced, two low pillars labeled "Broderick" and "Terry" stand exactly ten paces apart on the spot where, in 1859, US Senator David Broderick and California's former chief justice David Terry settled a bitter feud over slavery with pistols. Terry killed Broderick, and the outrage helped turn California against slavery on the eve of the Civil War. It's remembered as the "last notable American duel," and standing between the two markers, pacing off the distance, is a small, strange, free brush with a violent, half-forgotten piece of California history.</p></section>

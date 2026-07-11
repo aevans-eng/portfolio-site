@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Early mornings before the wine-country day-trippers; winter for mist</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Wine country's old-growth grove: a 1,400-year-old giant named for the lumberman who couldn't bring himself to cut it, in a cool canyon a mile from Guerneville's river scene.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Colonel James Armstrong made his money logging the Russian River redwoods in the 1870s — and set this canyon aside as a "natural park," one of the earliest private acts of redwood preservation, decades before the state parks existed. The grove that carries his name holds the <strong>Colonel Armstrong Tree</strong> (over 1,400 years old) and the 310-foot Parson Jones, both minutes from the parking lot on flat, shaded paths — which is exactly its role: the effortless old-growth fix for the Russian River corridor. When the 2020 Walbridge Fire came through, crews made a stand specifically to defend the Colonel ("firefighters are deployed specifically to defend Colonel Armstrong, which is 1400 years old") — the grove survived with scorch marks that are part of the story now. Honesty: this is the wine-country default redwood stop and summer middays run busy; the depth move is upward — the Pool Ridge and East Ridge trails climb steeply out of the grove into Austin Creek's empty backcountry, where the crowd evaporates completely.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Colonel James Armstrong made his money logging the Russian River redwoods in the 1870s — and set this canyon aside as a "natural park," one of the earliest private acts of redwood preservation, decades before the state parks existed. The grove that carries his name holds the <strong>Colonel Armstrong Tree</strong> (over 1,400 years old) and the 310-foot Parson Jones, both minutes from the parking lot on flat, shaded paths — which is exactly its role: the effortless old-growth fix for the Russian River corridor. When the 2020 Walbridge Fire came through, crews made a stand specifically to defend the Colonel ("firefighters are deployed specifically to defend Colonel Armstrong, which is 1400 years old") — the grove survived with scorch marks that are part of the story now. This is the wine-country default redwood stop, and summer middays run busy. The depth move is upward — the Pool Ridge and East Ridge trails climb steeply out of the grove into Austin Creek's empty backcountry, where the crowd evaporates completely.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Armstrong Woods Rd from downtown Guerneville. Walk in (free) rather than driving the grove road; do the Colonel and Parson Jones loop early, then either climb toward McCray Ridge for solitude or surrender to a Russian River beach afternoon. Winter mist in the canyon is the connoisseur's version.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=450" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=450</a>  ·  <a href="https://reddit.com/r/bayarea/comments/ig6ot9/redwoods_survive_wildfire_at_californias_oldest/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/ig6ot9/redwoods_survive_wildfire_at_californias_oldest/</a></div>
   </main>

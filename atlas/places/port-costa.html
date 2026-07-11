@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Saturday night for the Warehouse bar scene; the drive in via Carquinez Scenic Dr</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A dead-end former grain port on the Carquinez Strait that time forgot: one street, a Victorian roadhouse, and a cavernous warehouse bar with a stuffed polar bear.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In the 1880s Port Costa was the busiest wheat port on the West Coast; when the ferries and grain trade died, the town just stopped, and what's left is a genuine time capsule at the end of a road that goes nowhere else. The scale is the charm — you're not here to tour anything. You're here to eat at the Bull Valley Roadhouse (serious food in a gaslamp-era saloon) or drink at the Warehouse Cafe, a former grain warehouse where you pick a beer from a walk-in fridge and drink it under the gaze of a taxidermied polar bear, alongside a mixed crowd of bikers, old-timers, and East Bay day-trippers. Bay Area regulars cite it in hidden-gem threads precisely because people who've lived here for decades have never made the turn off Highway 4.</p></section>

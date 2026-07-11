@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Clear light; it looks the same at any tide</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 7/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class=""></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An 80-foot waterfall that drops straight onto a beach you're not allowed to walk on.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>It's one of the only waterfalls in California that lands on the sand instead of in a river, backed by turquoise water and a cove of pale sand that only exists because a 1983 landslide filled it in. It genuinely looks unreal. Set expectations, though: this is a look, not a walk. The overlook trail has been closed for a retaining-wall rebuild into 2026, so you see it from a small pullout on Highway 1, the beach and cliffs are fenced off, and you'll be shoulder to shoulder with everyone else who read the same list. Ten minutes and you're back in the car.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>It's one of the only waterfalls in California that lands on the sand instead of in a river, backed by turquoise water and a cove of pale sand that only exists because a 1983 landslide filled it in. It looks unreal. Set expectations, though: this is a look, not a walk. The overlook trail has been closed for a retaining-wall rebuild into 2026, so you see it from a small pullout on Highway 1, the beach and cliffs are fenced off, and you'll be shoulder to shoulder with everyone else who read the same list. Ten minutes and you're back in the car.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Don't build a day around it. Pair it with the Ewoldsen Trail in the same park, which stays open, or Partington Cove a few minutes north, so the drive down here buys more than one photo.</p></section>
 <section class="sec skip"><h2><span class="idx">03</span>Skip the cliché</h2><p>The dreamy "empty private cove" shots you've seen are either old or someone trespassing. There's no legal way down to the beach, so go in knowing it's a viewpoint.</p></section>
 <section class="sec locals"><h2>From the locals</h2><p>The honest version shows up in one back-to-back pair of comments: "exceeded my expectations, felt like a dream watching the freshwater falling onto the beach," right next to the practical "McWay closed for construction but visible from roadside."</p></section>

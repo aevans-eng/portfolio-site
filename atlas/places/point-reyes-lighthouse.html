@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Dec–May for gray whales; Dec–Mar for elephant seals; dress for wind</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 7/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class=""></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The windiest, foggiest point on the West Coast: 308 steps down to a lighthouse on the cliff, and in winter a beach heaving with elephant seals over the ridge.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Point Reyes juts farther into the Pacific than anywhere else on the coast, which makes its tip the best whale-watching perch in the Bay Area and one of the most punishing places to stand on it. Forty-mile-an-hour wind is an ordinary day here. You walk out and drop 308 steps to a small 1870 lighthouse bolted to the rock. In winter and spring gray whales stream past on migration, and just over the ridge at Chimney Rock and Drakes Beach, elephant seals haul out by the hundreds to fight and breed. This is a raw, weather-beaten headland, not a gentle viewpoint, and that's exactly why it's worth the long drive out.</p></section>

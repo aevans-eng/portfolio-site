@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Late afternoon, gas lamps on, before the Square crowd arrives</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An 1884 saloon built from a whaling ship's timbers, where the 1906 earthquake tilted the floor so steeply your beer sits crooked — and where a teenage Jack London did his homework at the bar.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Heinold's is the rare "historic bar" where every claim is load-bearing. The building really was assembled from the bones of a whaling ship; the floor really has run downhill since the 1906 quake dropped the pilings (walking in sober feels like walking out drunk — the clock on the wall still leans with the building); the gas lamps are original because the wiring was never modernized; and Jack London really did study here as a boy, borrow money from proprietor Johnny Heinold to attend Berkeley, and soak up the waterfront talk that became <em>The Sea-Wolf</em> and <em>Call of the Wild</em>. The name records its function: last chance for a legal drink before the ferry to dry Alameda, first chance coming back. It closes the atlas's Jack London triangle — his Beauty Ranch and Wolf House ruins in Sonoma, his rowdy education here.</p></section>

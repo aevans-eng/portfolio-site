@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Clear days for the view; summer for evening telescope programs; October for tarantulas</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The world's first permanently staffed mountaintop observatory crowns the Bay Area's highest peak — and James Lick, the eccentric millionaire who paid for it, is buried under the telescope.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Mount Hamilton rises 4,265 feet over San Jose, and since 1888 its summit has carried a working observatory that changed astronomy — the Great Lick Refractor was the largest telescope on Earth when it saw first light, and moons of Jupiter were discovered here. Lick himself — piano maker turned wealthiest man in California — funded it on the condition he be entombed beneath the great telescope, where he remains. The road up is the other half of the experience: 19 miles and ~365 turns of Highway 130, engineered gentle for horse-drawn instrument wagons, now a pilgrimage climb for cyclists and motorcyclists (with a seasonal hazard locals relish: "bombing down Mt Hamilton at 40+ mph and seeing tarantulas on the ground" — the males walk the road each fall looking for mates). Up top: the marble main building, the visitor gallery under the dome, and a view from the Sierra to Monterey Bay. Summer evening concert-and-telescope programs sell out for a reason.</p></section>

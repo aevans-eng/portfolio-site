@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>When ranger programs run — for years that included talks by real Rosies</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Richmond built 747 ships in four years — a Liberty ship in under five days at the record — and the national park telling that story sits in the very shipyards, with one of the last Victory ships still afloat at the dock.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The WWII home front changed the Bay Area more than the war itself: Kaiser's four Richmond yards invented prefabricated shipbuilding, hired women and Black workers by the tens of thousands, pioneered employer healthcare (Kaiser Permanente started here as shipyard medicine), and rewired the region's demographics — the East Bay you drive through today is downstream of these docks. The park's visitor center (in the old Ford assembly plant, itself a daylight-factory landmark that turned out tanks) is one of the best-curated small museums in the region, unsentimental about both the triumph and the segregation. Down the waterfront: the <strong>SS Red Oak Victory</strong>, a Richmond-built ship being restored by volunteers, open to clamber through on scheduled days, and the sculptural Rosie memorial on the bay. For years the park's docent talks were given by actual wartime "Rosies" in their late 90s — check what programming survives; it was the most direct line to living history the Bay Area offered.</p></section>

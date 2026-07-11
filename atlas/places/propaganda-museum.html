@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -91,13 +102,14 @@
     <div class="stat">Kind<b style="color:var(--kc)">Oddity</b></div>
     <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>25m</b></div>
-    <div class="stat">Effort<b>An hour with a genuinely unsettling collection; free</b></div>
+    <div class="stat">Effort<b>An hour with an unsettling collection; free</b></div>
     <div class="stat">Best<b>Check the limited hours first</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A small, free San Rafael museum of a century's worth of state propaganda, one couple's unsettling collection of posters, cartoons, and personality-cult kitsch.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Propaganda is meant to be disposable, the flier, the cartoon strip, the leader's face on a plate, all designed to work in the moment and then vanish. Tom and Lilka Areton spent decades saving exactly that, and turned their collection into this small storefront museum in San Rafael: Soviet, Nazi, Maoist, North Korean, American, and more, wall to wall, organized to show how states across the century used the same tricks to move people. It's free, quiet, and genuinely disquieting in the best way, the kind of place that makes you notice the machinery behind persuasion, then walk out and see it everywhere. For a niche subject, it's remarkably affecting, and a real oddity to find on a suburban Marin street.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Propaganda is meant to be disposable, the flier, the cartoon strip, the leader's face on a plate, all designed to work in the moment and then vanish. Tom and Lilka Areton spent decades saving exactly that, and turned their collection into this small storefront museum in San Rafael: Soviet, Nazi, Maoist, North Korean, American, and more, wall to wall, organized to show how states across the century used the same tricks to move people. It's free, quiet, and disquieting in the best way, the kind of place that makes you notice the machinery behind persuasion, then walk out and see it everywhere. For a niche subject, it's remarkably affecting, and a real oddity to find on a suburban Marin street.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's in downtown San Rafael with limited hours, so check before you go. Give it an hour and read the labels; the value is in the through-line the Aretons draw across very different regimes. Free, though donations help keep it open.</p></section>
     <div class="sources">Sources · <a href="https://www.atlasobscura.com/places/museum-of-international-propaganda" target="_blank" rel="noopener">https://www.atlasobscura.com/places/museum-of-international-propaganda</a>  ·  <a href="https://www.propagandamuseum.us/" target="_blank" rel="noopener">https://www.propagandamuseum.us/</a></div>
   </main>

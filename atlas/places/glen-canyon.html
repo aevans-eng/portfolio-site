@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Early morning for coyotes and quiet; spring for the green</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An actual wild canyon in the middle of San Francisco — chert cliffs, a free-flowing creek, and resident coyotes — that a shocking number of locals have never heard of.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Islais Creek runs open through the bottom of Glen Canyon, one of the last places in the city where a natural creek still flows above ground, between rocky outcrops that boulderers have used for generations. The canyon floor feels genuinely apart — willows, blackberry tangle, red-tailed hawks, and coyotes you'll likely hear if you come early ("I used to run from my house through the canyon and up Twin Peaks... especially when you hear the coyotes early in the morning"). The top-voted answer when AskSF was asked for real hidden gems was, verbatim, "Glen Fucking Canyon" — and the recurring theme underneath it was disbelief that people who've lived in SF for years don't know it exists. It also chains: from the canyon's top end you can climb through Glen Park's stairways onto Twin Peaks for a full city-wilderness traverse.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Islais Creek runs open through the bottom of Glen Canyon, one of the last places in the city where a natural creek still flows above ground, between rocky outcrops that boulderers have used for generations. The canyon floor feels apart — willows, blackberry tangle, red-tailed hawks, and coyotes you'll likely hear if you come early ("I used to run from my house through the canyon and up Twin Peaks... especially when you hear the coyotes early in the morning"). The top-voted answer when AskSF was asked for real hidden gems was, verbatim, "Glen Fucking Canyon" — and the recurring theme underneath it was disbelief that people who've lived in SF for years don't know it exists. It also chains: from the canyon's top end you can climb through Glen Park's stairways onto Twin Peaks for a full city-wilderness traverse.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Enter at Bosworth &amp; O'Shaughnessy by the rec center (easy from Glen Park BART). Walk the canyon-floor trail north, take the upper trails back along the cliff line, and keep dogs and kids close at dawn/dusk — the coyotes are established residents. Combine with coffee in Glen Park village.</p></section>
     <div class="sources">Sources · <a href="https://sfrecpark.org/facilities/facility/details/Glen-Canyon-Park-127" target="_blank" rel="noopener">https://sfrecpark.org/facilities/facility/details/Glen-Canyon-Park-127</a>  ·  <a href="https://reddit.com/r/AskSF/comments/1dzkz3v/whats_a_real_hidden_gem_landmark_or_viewpoint_in/" target="_blank" rel="noopener">https://reddit.com/r/AskSF/comments/1dzkz3v/whats_a_real_hidden_gem_landmark_or_viewpoint_in/</a></div>
   </main>

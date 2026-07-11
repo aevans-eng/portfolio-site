@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>A weekday walk or ride; bay views from the upper trails</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A hidden reservoir at the top of a Belmont street, a genuine little lake tucked in the hills with trails all around it.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Plenty of people in Belmont don't know it's there: Waterdog Lake, a small reservoir hidden in the hills behind the neighborhoods, reached by trails that climb off the streets into oak woodland. It's a surprise, a real lake with a quiet wooded shoreline and a web of hiking and mountain-biking trails, minutes from the freeway but feeling much farther. It's not a destination-grade wonder; it's the good local secret, the place you'd walk the dog or ride after work, and finding a lake at the top of a residential street is its own small delight. The higher trails open up to bay views.</p></section>

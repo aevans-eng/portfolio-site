@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,15 +100,16 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Nature</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>1h5m</b></div>
     <div class="stat">Effort<b>Flat 1-mile bluff trail between the two coves</b></div>
     <div class="stat">Best<b>Low tide for the pools; any clear day</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A beach of tiny polished pebbles and cliffs eaten into honeycomb, a short walk apart, that nearly everyone drives past.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Two small coves a mile apart on Highway 1, linked by a flat bluff trail, each doing something odd. Pebble Beach, at the north end, is covered not in sand but in tiny polished stones, agate, jasper, jade, carnelian, that people crouch and sift through by the handful. Bean Hollow, south, has tide pools and, best of all, sandstone eaten into tafoni: delicate honeycomb lacework the salt air has carved into the rock over centuries. Neither looks like much from the car, which is exactly why they stay quiet. Up close, the pebbles and the honeycombed stone are small, strange, and genuinely worth getting down on your knees for.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Two small coves a mile apart on Highway 1, linked by a flat bluff trail, each doing something odd. Pebble Beach, at the north end, is covered not in sand but in tiny polished stones, agate, jasper, jade, carnelian, that people crouch and sift through by the handful. Bean Hollow, south, has tide pools and, best of all, sandstone eaten into tafoni: delicate honeycomb lacework the salt air has carved into the rock over centuries. Neither looks like much from the car, which is exactly why they stay quiet. Up close, the pebbles and the honeycombed stone are small, strange, and worth getting down on your knees for.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park at either cove and walk the mile of bluff trail between them. Comb the pebbles at the north beach (look and admire, mostly leave them), and hunt the honeycomb tafoni on the rocks at Bean Hollow. Low tide adds the tide pools.</p></section>
 <section class="sec locals"><h2>From the locals</h2><p>It's a Bay Area native's pick for the pebbles, not the postcard: skip the famous golf-course Pebble Beach, one advises, and come here instead for "a little beach with pebble type rocks."</p></section>
     <div class="sources">Sources · <a href="https://parks.ca.gov/?page_id=527" target="_blank" rel="noopener">https://parks.ca.gov/?page_id=527</a>  ·  <a href="http://www.mobileranger.com/blog/collecting-ancient-rocks-in-bloomers-at-pescaderos-pebble-beach/" target="_blank" rel="noopener">http://www.mobileranger.com/blog/collecting-ancient-rocks-in-bloomers-at-pescaderos-pebble-beach/</a>  ·  <a href="https://reddit.com/r/bayarea/comments/7isqps/fun_things_to_do_alone_for_a_bay_area_native/dr1cggf/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/7isqps/fun_things_to_do_alone_for_a_bay_area_native/dr1cggf/</a></div>

@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Spring for green hills and wildflowers; avoid summer heat; carry real water</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The largest state park in Northern California, 87,000 acres of empty ridgelines an hour from San Jose, and almost nobody goes.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Coe is the Bay Area's big, hard, quiet backcountry. It sprawls across the Diablo Range east of Morgan Hill in endless folds of oak savanna, manzanita, and pine, laced with ponds and creeks and trails that climb straight up the hills because the old ranchers never bothered with switchbacks. That's its reputation among locals who love it: brutal, beautiful, and gloriously empty, the place you train on before the Sierra rather than after. In spring the hills go electric green and the wildflowers come in properly, and you can walk for hours without seeing another person. The tradeoffs are real and worth respecting: the climbs are relentless, the sun is unshaded, water is scarce in the backcountry, and ticks are serious business off-trail. Go in for a lung-busting day hike from headquarters, or load a pack and disappear for a couple of nights.</p></section>

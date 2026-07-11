@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Clear days for the coast; after rain for the Steep Ravine creek</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 10/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The mountain the whole Bay Area looks up at, with a fern-and-redwood canyon of wooden ladders on one side and the open ocean on the other.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Mount Tam is Marin's presiding peak, and the reason to climb it isn't the drive-up summit, it's the trails getting there. The Steep Ravine trail drops through a dark, fern-draped redwood canyon along a creek, complete with a wooden ladder you climb down beside a small waterfall. The Matt Davis trail runs the open slopes with the whole Pacific laid out below, all the way down to Stinson Beach. String them into a loop and you get redwood canyon, coastal meadow, and ocean in a single day, forty-five minutes from the city. And if you can't do the big hike, the paved Verna Dunshee loop at East Peak hands the summit panorama to everyone.</p></section>

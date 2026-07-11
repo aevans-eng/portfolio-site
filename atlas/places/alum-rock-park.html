@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Winter–spring when the creek runs and the hills are green</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>California's oldest municipal park hides the stone ruins of a Victorian health spa — mineral-spring grottoes still seeping sulfur water in a canyon above San Jose.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In the 1890s this canyon was "the Little Yosemite of San Jose" (the name predates and outdoes Sunol's): a famous health resort with 27 mineral springs, an indoor pool, a tea garden, and a steam railroad delivering crowds from downtown. The resort is gone, but its stonework isn't — along Penitencia Creek you walk past arched grottoes built around the springs, still stained orange and smelling faintly of sulfur, plus stone bridges and the old railroad grade. It's a ruin you can wander for free at the edge of a major city, which is the kind of casual time travel this map exists for. The park behind it is real too: shaded canyon floor, steep chaparral trails up to South Bay views, and the Youth Science Institute for kids.</p></section>

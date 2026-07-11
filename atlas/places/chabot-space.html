@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,8 +106,9 @@
     <div class="stat">Best<b>Clear Friday/Saturday nights, 7:30–10:30pm, free — moon and planets best</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
-    <section class="sec lead"><h2>The hook</h2><p>Three historic telescopes in the Oakland hills — including a 36-inch reflector — open to the public for free every clear Friday and Saturday night, staffed by volunteers who genuinely want you to see Saturn.</p></section>
+    <section class="sec lead"><h2>The hook</h2><p>Three historic telescopes in the Oakland hills — including a 36-inch reflector — open to the public for free every clear Friday and Saturday night, staffed by volunteers who want you to see Saturn.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Chabot's observatory deck is the Bay Area's most accessible real-telescope experience: "Leah" (1883) and "Rachel" (1915, the largest refractor in the western US regularly open to the public) plus a modern 36-inch reflector, all pointed at whatever the sky is doing that night, all free after 7:30pm on weekends — no ticket, no reservation, just walk up the hill and queue for the eyepiece. Seeing Saturn's rings through a century-old brass refractor while an amateur astronomer talks you through it beats any planetarium show, including the ones downstairs (the paid science center is solid family fare, but the free deck is the soul of the place). It sits on the dark ridge above Redwood Regional Park, so an evening here stacks naturally onto an afternoon in the redwoods — and it's the city-side answer to Lick Observatory's mountain pilgrimage.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Skyline Blvd, Oakland hills. Check the weather and chabotspace.org's viewing status, arrive after 7:30pm Fri/Sat, park free, walk to the observatory deck. Moon phases matter: a first-quarter moon and planets beat full-moon nights. Dress for ridge-top cold even in summer.</p></section>
     <div class="sources">Sources · <a href="https://chabotspace.org/" target="_blank" rel="noopener">https://chabotspace.org/</a></div>

@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,15 +100,16 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Nature</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>45m</b></div>
     <div class="stat">Effort<b>3.5-mile paved loop; ~1–1.5h walk, quick spin on a bike</b></div>
     <div class="stat">Best<b>Sunset or early morning; clear days for the bay view</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A giant Cold War radio telescope on a grassy hill, ringed by a paved loop that half of Palo Alto treats as its living room.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The 150-foot dish, built in 1966 and still used for research, sits in the Stanford foothills above town, and the 3.5-mile paved loop around it is the closest thing the south peninsula has to a communal front porch. On a clear evening it's full of runners, walkers, dogs, and students, all out for the same thing: rolling gold hills, the whole bay spread out below, and cattle grazing under a piece of space-age hardware. It isn't wilderness and it's rarely quiet, but the mix of the surreal dish, the grassland, and the view genuinely lands, and it's a ride straight up from East Palo Alto. It's a managed preserve, so it closes at night and keeps you on the pavement.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The 150-foot dish, built in 1966 and still used for research, sits in the Stanford foothills above town, and the 3.5-mile paved loop around it is the closest thing the south peninsula has to a communal front porch. On a clear evening it's full of runners, walkers, dogs, and students, all out for the same thing: rolling gold hills, the whole bay spread out below, and cattle grazing under a piece of space-age hardware. It isn't wilderness and it's rarely quiet, but the mix of the surreal dish, the grassland, and the view lands, and it's a ride straight up from East Palo Alto. It's a managed preserve, so it closes at night and keeps you on the pavement.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Start from the Stanford Avenue gate and take the loop counterclockwise so the view builds. Go at sunset or early morning; it's paved the whole way, easy on any bike, and a short spin from EPA. Bring water — there's no shade.</p></section>
 <section class="sec locals"><h2>From the locals</h2><p>The standard local read is exactly that, no more and no less: "the Stanford dish trail is a nice loop, a little hilly but all paved and accessible." It's an everyday-good workout, not a wilderness pilgrimage.</p></section>
     <div class="sources">Sources · <a href="https://facilities.stanford.edu/dish" target="_blank" rel="noopener">https://facilities.stanford.edu/dish</a>  ·  <a href="https://reddit.com/r/bayarea/comments/sv99c0/any_good_paved_spots_for_hiking_with_someone_with/hxesjch/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/sv99c0/any_good_paved_spots_for_hiking_with_someone_with/hxesjch/</a></div>

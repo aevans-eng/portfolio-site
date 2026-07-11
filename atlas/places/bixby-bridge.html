@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Honestly, from your car as you come around the bend</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The most photographed thing on the coast, and the clearest example of what this map is trying to steer you around.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>It is a genuinely beautiful 1932 concrete arch spanning a deep canyon, and it's worth a glance. But it's also a case study in what a place becomes when the only reason to stop is that everyone stops: tour buses, a passed 12-month parking ban, and a steady stream of people parking on a blind highway curve and standing in live traffic lanes to photograph their cars. You've already seen this bridge a hundred times without knowing its name. The honest move is to slow down, look, and keep driving.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>It is a beautiful 1932 concrete arch spanning a deep canyon, and it's worth a glance. But it's also a case study in what a place becomes when the only reason to stop is that everyone stops: tour buses, a passed 12-month parking ban, and a steady stream of people parking on a blind highway curve and standing in live traffic lanes to photograph their cars. You've already seen this bridge a hundred times without knowing its name. The honest move is to slow down, look, and keep driving.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>If you must stop, use the pullout on the north side, don't park on the road, and don't cross into traffic for a photo. The bridge actually looks best in your mirror as you come around the next curve.</p></section>
 <section class="sec skip"><h2><span class="idx">03</span>Skip the cliché</h2><p>This is the cliché. It's here so it's named honestly, not so you build a day around it. Give it thirty seconds and spend your real time at the places a few minutes away that nobody's crowding.</p></section>
 <section class="sec locals"><h2>From the locals</h2><p>Locals are blunt about it: "the tourists are hell-bent on taking photos of the bridge... people parking unsafely on the highway," and "many of you will literally park on a highway to get a photo op."</p></section>

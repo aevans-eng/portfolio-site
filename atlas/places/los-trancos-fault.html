@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,15 +100,16 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Nature</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>50m</b></div>
     <div class="stat">Effort<b>A short, easy loop, under a mile</b></div>
     <div class="stat">Best<b>Any clear day; read the interpretive signs</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A short loop that walks you straight down the San Andreas Fault, past a fence the 1906 earthquake shoved out of line.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>At Los Trancos preserve on Page Mill Road, a self-guided trail traces the actual line of the San Andreas Fault, the crack that leveled San Francisco in 1906. Numbered posts mark where the fault runs, signs explain what you're standing on, and the payoff is a row of old fence and trees visibly offset, shoved sideways several feet, by the rupture that tore through right here. It's an easy sub-mile loop, more educational than scenic, but the chance to literally straddle the fault and read the ground's own record of a great earthquake is a genuinely uncommon thing to do, and it's minutes from Palo Alto.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>At Los Trancos preserve on Page Mill Road, a self-guided trail traces the actual line of the San Andreas Fault, the crack that leveled San Francisco in 1906. Numbered posts mark where the fault runs, signs explain what you're standing on, and the payoff is a row of old fence and trees visibly offset, shoved sideways several feet, by the rupture that tore through right here. It's an easy sub-mile loop, more educational than scenic, but the chance to literally straddle the fault and read the ground's own record of a great earthquake is an uncommon thing to do, and it's minutes from Palo Alto.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park at the Los Trancos lot on Page Mill Road (across from Monte Bello). Walk the signed Fault Trail loop with its numbered posts; it's short and flat. Read the signs or grab the interpretive guide to get the most out of it, then cross to Monte Bello for a bigger hike if you want one.</p></section>
     <div class="sources">Sources · <a href="https://www.openspace.org/preserves/los-trancos" target="_blank" rel="noopener">https://www.openspace.org/preserves/los-trancos</a></div>
   </main>

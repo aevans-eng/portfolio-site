@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,12 +100,13 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Nature</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>30m</b></div>
     <div class="stat">Effort<b>Flat, paved 1.3 miles each way; walk or ride</b></div>
     <div class="stat">Best<b>Clear afternoons; foggy days for the drama</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A stretch of old Highway 1 so treacherous they finally drilled a tunnel around it, now a flat cliff-edge trail you get to walk or ride with no cars.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>For decades this was the white-knuckle piece of Highway 1, a two-lane road clinging to a crumbling cliff that landslides kept closing, sometimes for months. In 2013 they rerouted the highway through the Tom Lantos Tunnels and handed the old roadbed to walkers and cyclists. So you get a wide, paved, 1.3-mile balcony hung on the cliff face, with the ocean straight down on one side and benches and spotting scopes for whales and peregrine falcons. It's the rare place where the appeal is that something dangerous was made calm: you stroll a road people used to grip the wheel on.</p></section>

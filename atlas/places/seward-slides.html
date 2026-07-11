@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Bring flattened cardboard; open Tue–Sun 10–5</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Two-story concrete slides built into one of the city's steepest hills, designed by a fourteen-year-old, ridden on a scrap of cardboard.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>A tiny hillside park the neighbors saved from developers in the 1970s, with twin cement chutes running down the slope fast enough that you need cardboard under you and sturdy pants over you. A 14-year-old named Kim Clark designed them in 1973, winning a competition the sculptor Ruth Asawa ran, and they still do exactly what she intended: you hit close to thirty miles an hour at the bottom. It's a genuinely absurd, genuinely fun thing hidden on a residential street, free, and gloriously pointless in the best way.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>A tiny hillside park the neighbors saved from developers in the 1970s, with twin cement chutes running down the slope fast enough that you need cardboard under you and sturdy pants over you. A 14-year-old named Kim Clark designed them in 1973, winning a competition the sculptor Ruth Asawa ran, and they still do exactly what she intended: you hit close to thirty miles an hour at the bottom. It's an absurd, fun thing hidden on a residential street, free, and gloriously pointless in the best way.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Bring your own flattened cardboard; there's often a pile left by the last people, but don't count on it. Open Tuesday through Sunday, 10 to 5. It sits in a quiet neighborhood tucked below the street, so find the stairs down and keep the noise reasonable.</p></section>
     <div class="sources">Sources · <a href="https://www.atlasobscura.com/places/seward-street-slides" target="_blank" rel="noopener">https://www.atlasobscura.com/places/seward-street-slides</a>  ·  <a href="https://sfrecpark.org/facilities/facility/details/sewardminipark-203" target="_blank" rel="noopener">https://sfrecpark.org/facilities/facility/details/sewardminipark-203</a></div>
   </main>

@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Times for the Difference Engine + Spacewar! demos</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The world's biggest collection of old computers, including a hand-cranked Victorian calculating engine and the actual teapot that shaped all of 3D graphics.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In Mountain View, the Computer History Museum holds the largest collection of computing artifacts anywhere: the room-filling machines, punch cards, early PCs, and a working reconstruction of Babbage's 19th-century Difference Engine that a docent cranks by hand. The relic to hunt for is the Utah Teapot, an ordinary Melitta teapot a graphics researcher measured in the 1970s to test 3D rendering, which became the single most-rendered object in computer-graphics history, the "hello world" of 3D, sitting right there in a case, faintly absurd and genuinely iconic. Even if you're not a computer person, the sweep of how fast all of this happened, and that it happened right here, lands.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In Mountain View, the Computer History Museum holds the largest collection of computing artifacts anywhere: the room-filling machines, punch cards, early PCs, and a working reconstruction of Babbage's 19th-century Difference Engine that a docent cranks by hand. The relic to hunt for is the Utah Teapot, an ordinary Melitta teapot a graphics researcher measured in the 1970s to test 3D rendering, which became the single most-rendered object in computer-graphics history, the "hello world" of 3D, sitting right there in a case, faintly absurd and iconic. Even if you're not a computer person, the sweep of how fast all of this happened, and that it happened right here, lands.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's on North Shoreline Boulevard in Mountain View, paid admission, daytime hours. The Difference Engine demos and the restored PDP-1 running Spacewar! (the first video game) run on a schedule, so check times. Pair it with the Android statues a few minutes away.</p></section>
     <div class="sources">Sources · <a href="https://computerhistory.org/" target="_blank" rel="noopener">https://computerhistory.org/</a></div>
   </main>

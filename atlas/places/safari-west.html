@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Morning safaris for active animals; warm months for tent nights</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Four hundred acres of Sonoma hills run as an African savanna — giraffes, rhinos, cheetahs — with luxury safari tents imported from Botswana, and a fire story that tells you everything about the place.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Safari West is a working conservation breeding facility (nearly 1,000 animals, 90+ species) that funds itself by doing the safari properly: open-top vintage Dodge trucks lurching through big open enclosures where giraffe come to the window, then an aviary-and-cheetah walking section. Staying is the deeper cut — canvas safari tents on stilts, hardwood floors and hot showers, with wildebeest grunting outside all night. The place's defining moment came in the 2017 Tubbs Fire: owner Peter Lang sent his guests away and stayed alone through the night with garden hoses as the fire burned to the property line — every animal survived. Locals' affection dates from that ("Safari West is an awesome place to visit and stay"). Honesty: it's not cheap, it's not a zoo you wander at will (everything is guided), and wine-country traffic frames the fantasy. But as the atlas's most improbable overnight — African savanna, 90 minutes from the Golden Gate — it earns the 🛏.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Safari West is a working conservation breeding facility (nearly 1,000 animals, 90+ species) that funds itself by doing the safari properly: open-top vintage Dodge trucks lurching through big open enclosures where giraffe come to the window, then an aviary-and-cheetah walking section. Staying is the deeper cut — canvas safari tents on stilts, hardwood floors and hot showers, with wildebeest grunting outside all night. The place's defining moment came in the 2017 Tubbs Fire: owner Peter Lang sent his guests away and stayed alone through the night with garden hoses as the fire burned to the property line — every animal survived. Locals' affection dates from that ("Safari West is an awesome place to visit and stay"). It's not cheap, it's not a zoo you wander at will (everything is guided), and wine-country traffic frames the fantasy. But as the atlas's most improbable overnight — African savanna, 90 minutes from the Golden Gate — it earns the 🛏.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Porter Creek Rd between Santa Rosa and Calistoga. Book the classic 3-hour safari ahead (they sell out); the overnight+safari package is the real version. Mornings beat afternoons for animal activity. Pairs with the Petrified Forest and Old Faithful Geyser just over the hill — the full "Sonoma is stranger than it looks" circuit.</p></section>
     <div class="sources">Sources · <a href="https://www.safariwest.com/" target="_blank" rel="noopener">https://www.safariwest.com/</a>  ·  <a href="https://reddit.com/r/bayarea/comments/75awd2/oakland_zoo_on_standby_to_help_safari_west/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/75awd2/oakland_zoo_on_standby_to_help_safari_west/</a></div>
   </main>

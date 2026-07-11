@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Museum + St Peter's Chapel open days (check first); golden hour on the dry docks</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The US Navy's first Pacific shipyard — 142 years of warships, from wooden paddle steamers to nuclear submarines — sits half-preserved, half-reborn across the strait from Vallejo, with a chapel full of Tiffany windows.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Mare Island built more than 500 ships between 1854 and its 1996 closure, and walking it now is the Bay Area's best industrial time capsule: colossal dry docks of quarried granite, crane rails, ammunition bunkers, officers' mansions on a eucalyptus-lined avenue, and the shipyard museum run by veterans who worked the yard and will talk submarines as long as you'll listen. The unexpected treasure is <strong>St Peter's Chapel</strong> (1901), the oldest naval chapel in the country, whose interior glows with one of the largest collections of Tiffany stained-glass windows anywhere — a jewel box nobody expects on a shipyard. The island today is mid-rebirth — breweries and a coal-shed distillery in the old machine shops, film crews in the derelict blocks — which gives it a working, unpolished feel no curated museum district has. It's also a hinge of harder history: the WWII boom here and at Port Chicago shaped (and segregated) the East Bay's Black working class, a story the museum handles directly.</p></section>

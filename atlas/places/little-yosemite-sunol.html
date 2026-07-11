@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Winter–spring after rain, when Alameda Creek actually roars; weekdays</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A boulder-choked gorge on Alameda Creek in the Sunol backcountry that early park boosters named "Little Yosemite" — overselling it charmingly, and it's still worth the walk.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Set the expectation honestly, like the locals do: "I wouldn't go there expecting Little Yosemite to look like Yosemite." What it is: a compact rocky gorge where Alameda Creek — the Bay Area's biggest stream — crashes through green-grey boulders, reached by an easy, nearly flat two miles from the Sunol visitor center through classic oak-savanna hills. After winter rain it genuinely performs ("probably a roaring torrent"), and in spring the surrounding hills run green with wildflowers and newts cross the trails. The deeper value is what it opens onto: Sunol Regional Wilderness is the quiet corner of the East Bay parks, with weekday solitude locals brag about ("almost every time I went during the week I hardly saw a single person"), backpacking sites up-canyon, and the Ohlone Wilderness Trail heading off toward Del Valle for the ambitious. Dogs run off-leash, which for many East Bay people is the whole point.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Set the expectation honestly, like the locals do: "I wouldn't go there expecting Little Yosemite to look like Yosemite." What it is: a compact rocky gorge where Alameda Creek — the Bay Area's biggest stream — crashes through green-grey boulders, reached by an easy, nearly flat two miles from the Sunol visitor center through classic oak-savanna hills. After winter rain it performs ("probably a roaring torrent"), and in spring the surrounding hills run green with wildflowers and newts cross the trails. The deeper value is what it opens onto: Sunol Regional Wilderness is the quiet corner of the East Bay parks, with weekday solitude locals brag about ("almost every time I went during the week I hardly saw a single person"), backpacking sites up-canyon, and the Ohlone Wilderness Trail heading off toward Del Valle for the ambitious. Dogs run off-leash, which for many East Bay people is the whole point.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Sunol Regional Wilderness entrance off Calaveras Road (parking fee); take Camp Ohlone Road — a flat gravel road — to the gorge, scramble the boulders, come back on the Canyon View Trail for modest climbing and views. Go after rain, on a weekday if you can. Summer is hot, dry, and the creek shrinks to pools. On the drive in, the <strong>Sunol Water Temple</strong> — a Beaux-Arts rotunda where three underground water sources meet, sister to the Pulgas temple on the Peninsula — sits improbably among the ranch fields, a two-minute detour locals file under "weirdest places in the Bay Area."</p></section>
     <div class="sources">Sources · <a href="https://www.ebparks.org/parks/sunol" target="_blank" rel="noopener">https://www.ebparks.org/parks/sunol</a>  ·  <a href="https://reddit.com/r/bayarea/comments/t8rzdf/hidden_gems_of_bay_area_places_edition/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/t8rzdf/hidden_gems_of_bay_area_places_edition/</a></div>
   </main>

@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>A quiet day; respect that it's a real, private-feeling town</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 9/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The coastal town so committed to being left alone that residents kept tearing down the highway sign pointing to it.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Bolinas is a tiny, weathered town on a lagoon at the edge of Point Reyes, famous mostly for not wanting to be famous: for years locals repeatedly removed the road sign marking the turnoff from Highway 1, until the county gave up replacing it, an act of collective hermitage that became legend. What's actually there is low-key and lovely, a scruffy main street with a saloon and a couple of shops, a mellow beach, tide pools and a bird observatory nearby, and a proudly old-hippie, off-the-grid air that the sign-removal protects. It isn't a place with sights to tick off; its whole appeal is its refusal to be a destination, which is exactly why finding it, and being quietly welcome once you do, is the charm.</p></section>

@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Early morning, or June/September shoulder; midsummer midday is gridlock</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 8/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Tahoe's postcard — a green-glass bay with a stone Scandinavian castle and the lake's only island — earns its fame; the trick is arriving along the shoreline instead of fighting for the overlook.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Emerald Bay is the "checkbox" pin redeemed by method. The overlook pullout is a parking brawl by 10am, but locals' actual favorite is the approach: the <strong>Rubicon Trail</strong> from D.L. Bliss State Park, 4.5 miles of pine-shaded path directly along Tahoe's clearest water — coves flashing turquoise below, granite dropping straight into hundred-foot visibility — that shows up in local "favorites" lists far more than the overlook does. It delivers you to <strong>Vikingsholm</strong>, a genuinely odd artifact: a 1929 Scandinavian-revival castle, one of the finest in the hemisphere, built as a summer house complete with sod roofs and dragon beams (tours in season). Offshore sits Fannette Island, Tahoe's only island, crowned by the ruin of a stone tearoom where the castle's owner took guests by boat. Kayaking the bay at dawn — flat water, castle, island, nobody — is the other local prescription.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Emerald Bay is the "checkbox" pin redeemed by method. The overlook pullout is a parking brawl by 10am, but locals' actual favorite is the approach: the <strong>Rubicon Trail</strong> from D.L. Bliss State Park, 4.5 miles of pine-shaded path directly along Tahoe's clearest water — coves flashing turquoise below, granite dropping straight into hundred-foot visibility — that shows up in local "favorites" lists far more than the overlook does. It delivers you to <strong>Vikingsholm</strong>, an odd artifact: a 1929 Scandinavian-revival castle, one of the finest in the hemisphere, built as a summer house complete with sod roofs and dragon beams (tours in season). Offshore sits Fannette Island, Tahoe's only island, crowned by the ruin of a stone tearoom where the castle's owner took guests by boat. Kayaking the bay at dawn — flat water, castle, island, nobody — is the other local prescription.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park at D.L. Bliss (arrive early; the lot caps) and walk the Rubicon south to Vikingsholm; shuttle back or retrace. Lazy version: the steep 1-mile drop from the Vikingsholm lot. Boat-in campground and kayak rentals at the bay in season. Winter closes most of it — this is a summer/shoulder pin.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=506" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=506</a>  ·  <a href="https://reddit.com/r/tahoe/" target="_blank" rel="noopener">https://reddit.com/r/tahoe/</a></div>
   </main>

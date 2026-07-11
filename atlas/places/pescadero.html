@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Lunch; call ahead for a Harley Farms goat tour</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 8/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A two-street farm town in the fog-and-redwood country where people drive an hour for artichoke soup and warm garlic bread.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Pescadero is tiny, a couple of blocks marooned between the coast and the hills, and it punches absurdly above its size on food and character. Duarte's Tavern has anchored it since 1894, a James Beard-honored old dive known for cream of artichoke soup and olallieberry pie. Down the street, Arcangeli's grocery has baked its artichoke-garlic bread since 1929, and Harley Farms is a working goat dairy where you can meet the goats and buy the chèvre. Around town are a marsh preserve and a state beach. It isn't a sight to tick off; it's a genuinely old, unhurried place to eat well and wander, which is exactly what you want in the middle of a coast day.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Pescadero is tiny, a couple of blocks marooned between the coast and the hills, and it punches absurdly above its size on food and character. Duarte's Tavern has anchored it since 1894, a James Beard-honored old dive known for cream of artichoke soup and olallieberry pie. Down the street, Arcangeli's grocery has baked its artichoke-garlic bread since 1929, and Harley Farms is a working goat dairy where you can meet the goats and buy the chèvre. Around town are a marsh preserve and a state beach. It isn't a sight to tick off; it's an old, unhurried place to eat well and wander, which is exactly what you want in the middle of a coast day.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Eat: artichoke soup at Duarte's, a warm loaf from Arcangeli, cheese from Harley Farms (call ahead if you want the farm tour). Walk the two streets, then drop to Pescadero State Beach and the marsh a mile west. It's a short, well-worth-it detour off Highway 1.</p></section>
 <section class="sec locals"><h2>From the locals</h2><p>Bay Area regulars describe the whole town in one breath, and mean it as praise: "one coffee shop, one amazing bakery at the grocery store, taqueria at the gas station, and Duarte's." That's the entire place, and that smallness is exactly the appeal.</p></section>
     <div class="sources">Sources · <a href="https://madeinpescadero.com/pescadero/" target="_blank" rel="noopener">https://madeinpescadero.com/pescadero/</a>  ·  <a href="https://duartestavern.com/" target="_blank" rel="noopener">https://duartestavern.com/</a>  ·  <a href="https://reddit.com/r/bayarea/comments/sbd4de/what_are_some_awesome_or_odd_little_towns_or/htzluji/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/sbd4de/what_are_some_awesome_or_odd_little_towns_or/htzluji/</a></div>

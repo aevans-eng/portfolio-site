@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Nov–Jan for the monarch grove; big-swell winter days for Steamer Lane</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Each winter thousands of monarch butterflies hang in dripping orange clusters in a eucalyptus grove behind the beach — beside a surviving sea arch and the clifftop walk past the best surf-watching perch in California.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Natural Bridges packs three genuinely different spectacles into one corner of Santa Cruz. The <strong>monarch grove</strong> (a Natural Preserve with a boardwalk) hosts one of the state's most reliable overwintering colonies — on cool mornings the butterflies mass in hanging garlands, and when the sun warms them the air goes to confetti; it's a phenomenon with an expiry date as monarch numbers swing, which is a reason to go, not to skip. The <strong>last standing arch</strong> of the three that named the park frames the sunset offshore, above tidepools rangers actually staff at low tide. Then walk east: <strong>West Cliff Drive</strong> runs three miles along the bluff to the wharf, past the surfing-lighthouse museum at <strong>Steamer Lane</strong> — the point break that made Santa Cruz "Surf City," where you stand on the cliff edge literally above surfers dropping in. It's the town's whole seaward identity in one afternoon.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Natural Bridges packs three different spectacles into one corner of Santa Cruz. The <strong>monarch grove</strong> (a Natural Preserve with a boardwalk) hosts one of the state's most reliable overwintering colonies — on cool mornings the butterflies mass in hanging garlands, and when the sun warms them the air goes to confetti; it's a phenomenon with an expiry date as monarch numbers swing, which is a reason to go, not to skip. The <strong>last standing arch</strong> of the three that named the park frames the sunset offshore, above tidepools rangers actually staff at low tide. Then walk east: <strong>West Cliff Drive</strong> runs three miles along the bluff to the wharf, past the surfing-lighthouse museum at <strong>Steamer Lane</strong> — the point break that made Santa Cruz "Surf City," where you stand on the cliff edge literally above surfers dropping in. It's the town's whole seaward identity in one afternoon.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park at Natural Bridges (fee) — monarchs first if it's Nov–Jan (mid-morning warmth is peak flutter), tidepools if the tide cooperates. Then walk or bike West Cliff to the lighthouse: the surfing museum inside is tiny, cheap, and full of redwood boards and shark-bite stories. Winter swells make Steamer Lane an amphitheater.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=541" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=541</a></div>
   </main>

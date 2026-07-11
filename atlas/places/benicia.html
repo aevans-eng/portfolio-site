@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Saturday afternoons: open studios energy, waterfront light</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>California's forgotten third capital keeps its 1852 capitol building intact, a waterfront main street pointed at the strait — and a Civil War arsenal whose "camel barns" once auctioned off the US Army's camels.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Benicia's history is a string of almosts that left great buildings behind. It was the state capital for thirteen months (1853–54) before Sacramento won, and the brick Greek Revival <strong>capitol</strong> still stands downtown, restored to its legislative-hall furnishings — the only pre-Sacramento capitol surviving. The army's <strong>Benicia Arsenal</strong> ran here for a century; its sandstone warehouses earned their nickname when the War Department's experimental Camel Corps was disbanded and its camels auctioned from these buildings in 1864 (the <strong>Camel Barn Museum</strong> tells it straight-faced). The arsenal district is now one of the West Coast's bigger artist colonies — dozens of studios, including a serious glassblowing cluster, in the old military structures. Add <strong>First Street</strong>: a walkable antique-and-cafe main street running downhill to a fishing pier on the Carquinez Strait, with the kind of unhurried, un-touristed waterfront the inner Bay lost decades ago. North Bay locals quietly rate the town a keeper; it pairs naturally with Port Costa across the strait for a full Carquinez day.</p></section>

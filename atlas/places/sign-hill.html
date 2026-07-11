@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Clear days for the view</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A hillside spelling out "SOUTH SAN FRANCISCO THE INDUSTRIAL CITY" in giant concrete letters, with a trail that climbs up through them.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>On the slope above South San Francisco, sixty-foot concrete letters spell out "SOUTH SAN FRANCISCO THE INDUSTRIAL CITY," a civic boast laid down in the 1920s and now a protected landmark, the town's own unironic answer to the Hollywood sign. A steep park trail climbs past and above the letters, and from the top you get a wide view over the bayside flats, the port, and the planes dropping into SFO. It's part earnest small-city pride, part accidental oddity: a place that decided to write its blue-collar identity across a mountain and never took it down. The letters and the view are the payoff; the climb is short but genuinely steep.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>On the slope above South San Francisco, sixty-foot concrete letters spell out "SOUTH SAN FRANCISCO THE INDUSTRIAL CITY," a civic boast laid down in the 1920s and now a protected landmark, the town's own unironic answer to the Hollywood sign. A steep park trail climbs past and above the letters, and from the top you get a wide view over the bayside flats, the port, and the planes dropping into SFO. It's part earnest small-city pride, part accidental oddity: a place that decided to write its blue-collar identity across a mountain and never took it down. The letters and the view are the payoff; the climb is short but steep.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Start from the Sign Hill Park trailheads in South San Francisco and climb the steep trail up past the letters to the ridge. Go on a clear day for the view, and take it slow; it's a real little workout for its length.</p></section>
     <div class="sources">Sources · <a href="https://www.ssf.net/departments/parks-recreation/parks-facilities-playgrounds/sign-hill-park" target="_blank" rel="noopener">https://www.ssf.net/departments/parks-recreation/parks-facilities-playgrounds/sign-hill-park</a></div>
   </main>

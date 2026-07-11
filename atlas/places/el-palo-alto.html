@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>A quick stop on a Baylands or Stanford ride</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The thousand-year-old redwood the whole town is named after, standing alone by the railroad tracks.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>A single coast redwood on the bank of San Francisquito Creek, right beside the Caltrain tracks, is the tree Palo Alto is named for: "the tall stick." It's roughly a thousand years old, an outlier surviving in a spot far drier than the foggy groves redwoods usually need, kept alive through railroad soot and drought by generations of local effort. It's the tree Stanford put on its seal and that its scrambling "Tree" mascot riffs on. It isn't a grove or a hike, just one venerable, improbable tree in a small park. But standing under something that was already centuries old when the Spanish arrived, in the middle of Silicon Valley, carries its own quiet weight.</p></section>

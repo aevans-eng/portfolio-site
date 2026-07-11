@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Feb–April: wildflowers, green hills, condors; summer is brutally hot</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 9/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The Bay Area's own national park is the one nobody visits: half of an ancient volcano that drifted 195 miles up the San Andreas Fault, full of caves you scramble through and condors overhead.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Pinnacles is a geologic punchline — the other half of the volcano is still near Lancaster, in Southern California; the fault carried this half north over 23 million years. What that left is a compact wonderland: rock spires where climbers dodge nesting falcons, <strong>talus caves</strong> (boulder-choked canyons you traverse by headlamp, home to bat colonies), and the <strong>High Peaks loop</strong>, where steep-and-narrow staircases blasted into the rock in the 1930s thread between pinnacles at condor altitude. This is one of the release sites for the California condor recovery — patient visitors routinely see the largest bird in North America riding thermals off the ridge. The catches are honest: it's the hottest corner of our radius (summer middays are dangerous, not just unpleasant), the two entrances don't connect by road, and reservations/caves can close seasonally for bats and rain. Bonus for night people: the country just east of the park is some of the darkest sky within three hours of the Bay — locals camp there specifically for the stars.</p></section>

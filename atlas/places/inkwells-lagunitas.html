@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Two seasons: hot summer days (swim) and after winter rains (coho salmon run)</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A set of dark rock pools on Lagunitas Creek that flips identity twice a year: swimming hole in summer, and in winter one of the last places on the coast to watch wild coho salmon leap.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The Inkwells — named for the deep, ink-dark pools where the creek drops over ledges near Shafter Bridge — are West Marin's classic local swim spot, the cool-off half of a prescription Marin regulars hand out whole: "Roy's Redwoods in Woodacre, and then go cool off at the Inkwells in Lagunitas." The winter version is rarer and better: Lagunitas Creek hosts one of the last significant wild coho salmon runs in central California, and after the first big rains locals time visits to watch fish throw themselves up the drops ("see salmon jumping at Inkwells after the rain this week"). The valley around it stacks: Roy's Redwoods (a mellow old-growth loop, freshly re-trailed), Samuel P. Taylor's redwood campground and Devil's Gulch waterfall upstream, and the Papermill Creek Saloon in Forest Knolls — "my favorite bar in Marin" — for after. Honest notes: the pools are small and get slammed on hot weekends, parking on Sir Francis Drake is tight and ticketed, and during the salmon run swimming is off — the fish outrank you.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The Inkwells — named for the deep, ink-dark pools where the creek drops over ledges near Shafter Bridge — are West Marin's classic local swim spot, the cool-off half of a prescription Marin regulars hand out whole: "Roy's Redwoods in Woodacre, and then go cool off at the Inkwells in Lagunitas." The winter version is rarer and better: Lagunitas Creek hosts one of the last significant wild coho salmon runs in central California, and after the first big rains locals time visits to watch fish throw themselves up the drops ("see salmon jumping at Inkwells after the rain this week"). The valley around it stacks: Roy's Redwoods (a mellow old-growth loop, freshly re-trailed), Samuel P. Taylor's redwood campground and Devil's Gulch waterfall upstream, and the Papermill Creek Saloon in Forest Knolls — "my favorite bar in Marin" — for after. The pools are small and get slammed on hot weekends, parking on Sir Francis Drake is tight and ticketed, and during the salmon run swimming is off — the fish outrank you.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Pools are just off Sir Francis Drake Blvd at Shafter Bridge, where Highway 1 traffic to Point Reyes rolls past without noticing. Summer: go early on weekdays, pack out everything. Winter: check the creek after storms (SPAWN runs guided salmon walks) and keep out of the water. Beer at Papermill Creek Saloon either way.</p></section>
     <div class="sources">Sources · <a href="https://www.onetam.org/" target="_blank" rel="noopener">https://www.onetam.org/</a>  ·  <a href="https://reddit.com/r/Marin/comments/1hd709g/love_marin_hiking_trails/" target="_blank" rel="noopener">https://reddit.com/r/Marin/comments/1hd709g/love_marin_hiking_trails/</a></div>
   </main>

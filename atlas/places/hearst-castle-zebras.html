@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Reserve a tour; scan the east side of Highway 1 for zebras</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A newspaper baron's marble hilltop palace, and the zebras from his private zoo still grazing the ranch below it, for free.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Hearst Castle is the famous stop, and it's worth being straight about it: an over-the-top hilltop mansion you can only see on a paid, timed, roughly 70-minute guided tour, shuttled up from a visitor center. If you love Gilded Age excess, it delivers. If you don't, it's a pricey, crowded slog through someone else's stuff. The genuinely surreal part is free and at the bottom of the hill. William Randolph Hearst kept a private zoo, and more than a hundred zebras descended from it still roam the Hearst Ranch grasslands right along Highway 1. Catching a herd of zebras grazing a golden California hillside above the Pacific, no ticket required, is stranger and more memorable than anything inside the house.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Hearst Castle is the famous stop, and it's worth being straight about it: an over-the-top hilltop mansion you can only see on a paid, timed, roughly 70-minute guided tour, shuttled up from a visitor center. If you love Gilded Age excess, it delivers. If you don't, it's a pricey, crowded slog through someone else's stuff. The surreal part is free and at the bottom of the hill. William Randolph Hearst kept a private zoo, and more than a hundred zebras descended from it still roam the Hearst Ranch grasslands right along Highway 1. Catching a herd of zebras grazing a golden California hillside above the Pacific, no ticket required, is stranger and more memorable than anything inside the house.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>If you want the castle, book a tour in advance; the Grand Rooms tour is the standard first visit. For the zebras, just watch the east side of Highway 1 between Cambria and San Simeon, best early or late in the day. Keep your distance and stay in the car near them; they kick and bite.</p></section>
 <section class="sec skip"><h2><span class="idx">03</span>Skip the cliché</h2><p>If you're short on time or money, skip the tour and just find the zebras. The free, weird thing beats the expensive, crowded one here.</p></section>
     <div class="sources">Sources · <a href="https://visitsansimeonca.com/what-to-do/highway-1-zebra-viewing/" target="_blank" rel="noopener">https://visitsansimeonca.com/what-to-do/highway-1-zebra-viewing/</a>  ·  <a href="https://en.wikipedia.org/wiki/Hearst_Castle" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Hearst_Castle</a></div>

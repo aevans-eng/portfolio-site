@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -91,13 +102,14 @@
     <div class="stat">Kind<b style="color:var(--kc)">Oddity</b></div>
     <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>50m</b></div>
-    <div class="stat">Effort<b>A guided-tour hour-plus; tickets are genuinely pricey</b></div>
+    <div class="stat">Effort<b>A guided-tour hour-plus; tickets are pricey</b></div>
     <div class="stat">Best<b>Off-season weekdays; the candlelight Halloween tours if you're into it</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A rifle heiress spent 38 years building a mansion with staircases into ceilings and doors onto two-story drops — and stopped only when she died.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Sarah Winchester, widow of the rifle fortune, kept carpenters working on this house continuously from 1886 to 1922: 160 rooms, 10,000 windows, stairs that dead-end into ceilings, a door that opens onto an eight-foot exterior drop, the number 13 recurring in windows and chandeliers. The marketing legend — that a medium told her to build forever to appease the ghosts of everyone killed by Winchester rifles — is probably embroidery; the duller truth (grief, wealth, obsessive renovation, possibly arthritis-friendly experiments like the tiny "easy riser" stairs) is its own kind of haunting. Either way the house is architecturally real and genuinely disorienting to walk. Honest framing: it's a polished, ticketed attraction with gift-shop energy and admission north of $40 — a true oddity wearing a tourist trap's clothes. Go for the building, skip the ghost theater.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Sarah Winchester, widow of the rifle fortune, kept carpenters working on this house continuously from 1886 to 1922: 160 rooms, 10,000 windows, stairs that dead-end into ceilings, a door that opens onto an eight-foot exterior drop, the number 13 recurring in windows and chandeliers. The marketing legend — that a medium told her to build forever to appease the ghosts of everyone killed by Winchester rifles — is probably embroidery; the duller truth (grief, wealth, obsessive renovation, possibly arthritis-friendly experiments like the tiny "easy riser" stairs) is its own kind of haunting. Either way the house is architecturally real and disorienting to walk. It's a polished, ticketed attraction with gift-shop energy and admission north of $40 — a true oddity wearing a tourist trap's clothes. Go for the building, skip the ghost theater.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Winchester Blvd, San Jose, opposite Santana Row. Book the basic mansion tour online (the add-ons are padding), go weekday off-season, and pay attention to the small wrongnesses — that's the house talking. Pairs with the Rosicrucian museum for a full San Jose weird-history day.</p></section>
     <div class="sources">Sources · <a href="https://winchestermysteryhouse.com/" target="_blank" rel="noopener">https://winchestermysteryhouse.com/</a>  ·  <a href="https://en.wikipedia.org/wiki/Winchester_Mystery_House" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Winchester_Mystery_House</a></div>
   </main>

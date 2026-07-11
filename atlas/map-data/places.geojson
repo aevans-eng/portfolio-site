@@ -16,9 +16,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 5,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
-        "radius": 11,
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
         "drive": "1h20m to the Palomarin trailhead",
         "hook": "A waterfall that pours off a cliff straight onto the sand, at the end of a long, unmarked, slightly dangerous hike almost no casual visitor finishes.",
         "tags": [
@@ -105,9 +105,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "50m",
         "hook": "An 1852 roadhouse beer garden, second-oldest tavern in California, that also happens to be where the internet took its first real breath.",
         "tags": [
@@ -434,9 +434,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "1h5m",
         "hook": "A beach of tiny polished pebbles and cliffs eaten into honeycomb, a short walk apart, that nearly everyone drives past.",
         "tags": [
@@ -565,6 +565,36 @@
           "film",
           "hitchcock",
           "town"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.0126,
+          38.2122
+        ]
+      },
+      "properties": {
+        "slug": "bodie",
+        "name": "Bodie",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h45m (summer, via Tioga)",
+        "hook": "The best-preserved ghost town in the American West sits at 8,400 feet east of the Sierra \u2014 200 buildings frozen mid-abandonment, interiors still set with bottles, desks, and a roulette wheel.",
+        "tags": [
+          "ghost-town",
+          "gold-rush",
+          "arrested-decay",
+          "eastern-sierra",
+          "state-park"
         ],
         "stay": false
       }
@@ -859,7 +889,7 @@
         "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
         "radius": 5,
         "drive": "30m",
-        "hook": "Three historic telescopes in the Oakland hills \u2014 including a 36-inch reflector \u2014 open to the public for free every clear Friday and Saturday night, staffed by volunteers who genuinely want you to see Saturn.",
+        "hook": "Three historic telescopes in the Oakland hills \u2014 including a 36-inch reflector \u2014 open to the public for free every clear Friday and Saturday night, staffed by volunteers who want you to see Saturn.",
         "tags": [
           "observatory",
           "telescopes",
@@ -1009,9 +1039,9 @@
         "kind": "town",
         "kindLabel": "Town",
         "color": "#3c7f7a",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "20m",
         "hook": "A town where the dead outnumber the living by more than a thousand to one, built entirely to bury San Francisco's.",
         "tags": [
@@ -1280,9 +1310,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "30m",
         "hook": "A stretch of old Highway 1 so treacherous they finally drilled a tunnel around it, now a flat cliff-edge trail you get to walk or ride with no cars.",
         "tags": [
@@ -1462,9 +1492,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "50m",
         "hook": "A redwood mountain-bike preserve on Skyline hiding a sandstone monolith that weather carved into a giant honeycomb skull.",
         "tags": [
@@ -1703,9 +1733,9 @@
         "kind": "point",
         "kindLabel": "Point",
         "color": "#4b6d8c",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "40m",
         "hook": "A 1917 Georgian country estate and sixteen acres of formal gardens in the Woodside hills, so photogenic it played the mansion in Dynasty's opening credits.",
         "tags": [
@@ -1762,9 +1792,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "30m",
         "hook": "The bulbous orange house off Interstate 280 that everyone points at, and that got its owner sued over the dinosaurs in the yard.",
         "tags": [
@@ -1772,6 +1802,37 @@
           "house",
           "flintstones",
           "absurd"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.797,
+          36.809
+        ]
+      },
+      "properties": {
+        "slug": "forestiere-underground-gardens",
+        "name": "Forestiere Underground Gardens",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h45m",
+        "hook": "A Sicilian immigrant spent forty years hand-digging ten acres of rooms, courtyards, and grottoes beneath Fresno \u2014 with citrus trees growing underground, reaching up through skylights he carved for them.",
+        "tags": [
+          "underground",
+          "hand-dug",
+          "sicilian",
+          "citrus",
+          "fresno",
+          "outsider-architecture"
         ],
         "stay": false
       }
@@ -1822,9 +1883,9 @@
         "kind": "point",
         "kindLabel": "Point",
         "color": "#4b6d8c",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "in SF",
         "hook": "A Civil War fort tucked directly under the Golden Gate Bridge, with the great arch overhead built specifically so the fort could stay.",
         "tags": [
@@ -1911,9 +1972,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "2h30m",
         "hook": "No sign, no entrance, no lot. Just numbered gates on the shoulder of Highway 1 and some of the best coast north of Big Sur proper.",
         "tags": [
@@ -2032,9 +2093,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "in SF",
         "hook": "The largest collection of Andy Goldsworthy's land art in North America, hidden in a forest you have to walk to find.",
         "tags": [
@@ -2182,9 +2243,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "50m",
         "hook": "One of the largest freestanding buildings ever raised, an eight-acre airship hangar so big fog forms inside near the ceiling, now stripped to a bare steel skeleton.",
         "tags": [
@@ -2608,9 +2669,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "50m",
         "hook": "A log cabin in the redwoods off Highway 84 where the 1960s more or less caught fire: Ken Kesey's place, where the Acid Tests started and the Furthur bus got its paint.",
         "tags": [
@@ -2729,9 +2790,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
         "drive": "3h15m",
         "hook": "The park most people blow past on the way to somewhere more famous, and the one a few of them come back raving about.",
         "tags": [
@@ -2850,9 +2911,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "50m",
         "hook": "A short loop that walks you straight down the San Andreas Fault, past a fence the 1906 earthquake shoved out of line.",
         "tags": [
@@ -2911,9 +2972,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "25m",
         "hook": "Frank Lloyd Wright's last great building, a long pink-and-blue arcade draped across three hills, that Hollywood keeps casting as the future.",
         "tags": [
@@ -3139,6 +3200,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.121,
+          37.977
+        ]
+      },
+      "properties": {
+        "slug": "mono-lake",
+        "name": "Mono Lake",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "4h30m (summer, via Tioga)",
+        "hook": "A lake older than the Great Basin itself, twice as salty as the ocean, ringed by limestone towers that grew underwater \u2014 drained nearly to death by Los Angeles and saved by a lawsuit that rewrote California water law.",
+        "tags": [
+          "tufa",
+          "alkaline-lake",
+          "water-wars",
+          "eastern-sierra",
+          "ancient",
+          "swim"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.5183,
           37.5372
         ]
@@ -3334,7 +3426,7 @@
         "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
         "radius": 5,
         "drive": "in SF",
-        "hook": "The highest natural point in San Francisco is a eucalyptus-forested peak most residents can't name, topped by a 103-foot concrete cross with a genuinely strange civic history.",
+        "hook": "The highest natural point in San Francisco is a eucalyptus-forested peak most residents can't name, topped by a 103-foot concrete cross with a strange civic history.",
         "tags": [
           "summit",
           "cross",
@@ -3423,9 +3515,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "in SF",
         "hook": "A hundred-year-old eucalyptus cloud forest hidden in the dead center of San Francisco, best on the exact foggy days everyone else avoids.",
         "tags": [
@@ -3575,9 +3667,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "30m",
         "hook": "The most famous old-growth redwoods near the city, awe-inspiring and reservation-only crowded, with a quieter beach and cliff overlook just down the hill.",
         "tags": [
@@ -3937,9 +4029,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "4h",
         "hook": "The poor man's Hearst Castle: a hillside palace one man built by hand over fifty years out of beer cans, abalone shells, and whatever the town threw away.",
         "tags": [
@@ -4204,9 +4296,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "30m",
         "hook": "A little Burlingame storefront holding the world's largest collection of Pez dispensers, plus a museum of toys that got banned.",
         "tags": [
@@ -4621,9 +4713,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "40m",
         "hook": "A Roman-style temple hidden behind a gate on a country road, built in 1934 to celebrate water arriving from 160 miles away.",
         "tags": [
@@ -4681,9 +4773,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "3h45m",
         "hook": "The cliff where Big Sur begins or ends, with a brutal little trail down to a black-sand beach and a 300-foot waterfall you can't see from the top.",
         "tags": [
@@ -4802,9 +4894,9 @@
         "kind": "point",
         "kindLabel": "Point",
         "color": "#4b6d8c",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "45m",
         "hook": "Rodin's Gates of Hell, and the largest collection of his bronzes outside Paris, sitting free and outdoors on the Stanford campus.",
         "tags": [
@@ -4983,11 +5075,11 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "20m",
-        "hook": "A genuinely wild mountain marooned in the middle of the urban peninsula, with rare butterflies and a summit view from the ocean to the bay to the Farallones.",
+        "hook": "A wild mountain marooned in the middle of the urban peninsula, with rare butterflies and a summit view from the ocean to the bay to the Farallones.",
         "tags": [
           "mountain",
           "endemic",
@@ -5130,9 +5222,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "35m",
         "hook": "A paved car-free trail running straight down the San Andreas Fault, along two reservoirs, past a laurel tree older than California.",
         "tags": [
@@ -5367,9 +5459,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "30m",
         "hook": "The ridge where a lost Spanish expedition first laid eyes on San Francisco Bay, now a windswept hike with the whole thing at your feet.",
         "tags": [
@@ -5520,9 +5612,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "1h (but it's a bike place)",
         "hook": "An unlocked garage on a farm road, stocked with snacks, coffee, and spare tubes, that runs entirely on the honor system for whoever rides by.",
         "tags": [
@@ -5550,9 +5642,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "45m",
         "hook": "A giant Cold War radio telescope on a grassy hill, ringed by a paved loop that half of Palo Alto treats as its living room.",
         "tags": [
@@ -5730,9 +5822,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
         "drive": "4h30m",
         "hook": "An hour past the Valley crowds, Tioga Road climbs into a different park entirely: subalpine meadows at 8,600 feet, glacier-polished domes, and lakes you can actually hear.",
         "tags": [
@@ -5792,9 +5884,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 5,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
-        "radius": 11,
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
         "drive": "3h15m to the Kirk Creek trailhead",
         "hook": "A backpacking route from the edge of the highway to the tallest coastal mountain in the lower 48, and a redwood camp one local calls the best on the planet.",
         "tags": [
@@ -5851,9 +5943,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "in SF",
         "hook": "A musical instrument you play by waiting for the tide, built out of a torn-down cemetery at the tip of a Marina jetty.",
         "tags": [
@@ -5941,9 +6033,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "50m",
         "hook": "Two bald grassy summits on the Skyline ridge with a full-circle view: bay and valley on one side, ridges rolling to the ocean on the other.",
         "tags": [

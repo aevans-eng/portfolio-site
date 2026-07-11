@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>A weekday; link to Old Haul Road for a bigger loop</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A deep, quiet redwood canyon at the far side of the Skyline hills that takes real effort to reach, so almost nobody bothers.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Portola Redwoods sits down a long, winding road in a steep canyon on the ocean side of Skyline, and that awkward access is exactly why it stays empty while the marquee redwood parks are mobbed. It's second-growth with pockets of old giants, a creek, and trails ranging from a flat loop to a real hike out to a 300-foot tree or over to Pescadero Creek and the Old Haul Road. Shaded, cool, and genuinely peaceful, it's the kind of place where you can walk under big trees for an hour and pass no one. For anyone riding gravel over these hills, it plugs into the same redwood-and-fire-road network as Memorial and Sam McDonald parks.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Portola Redwoods sits down a long, winding road in a steep canyon on the ocean side of Skyline, and that awkward access is exactly why it stays empty while the marquee redwood parks are mobbed. It's second-growth with pockets of old giants, a creek, and trails ranging from a flat loop to a real hike out to a 300-foot tree or over to Pescadero Creek and the Old Haul Road. Shaded, cool, and peaceful, it's the kind of place where you can walk under big trees for an hour and pass no one. For anyone riding gravel over these hills, it plugs into the same redwood-and-fire-road network as Memorial and Sam McDonald parks.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's off Portola State Park Road via Alpine Road or Highway 84, a slow drive or a committing ride in. Check hours and road conditions first. Do the flat Sequoia loop for an easy visit, or link to Old Haul Road for a bigger day on foot or gravel bike.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=539" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=539</a></div>
   </main>

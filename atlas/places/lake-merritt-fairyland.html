@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Weekend afternoons for the full Oakland promenade; dusk for the Necklace of Lights</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>America's first official wildlife refuge (1870) is a saltwater lagoon in downtown Oakland — ringed by a light necklace, patrolled by pelicans, crossed by Venetian gondolas, and home to the storybook park that inspired Disneyland.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Lake Merritt collects superlatives quietly: the oldest designated wildlife refuge in North America (the bird islands still host night-herons and cormorants mid-city), a 1925 "Necklace of Lights" strung around the entire 3.4-mile shore, and — the genuine oddity — <strong>Children's Fairyland</strong> (1950), a ten-acre storybook park of hand-built sets, talking storybook boxes, and puppet theater, which Walt Disney toured before building Disneyland and from which he hired Fairyland's first director. It operates on a strict rule that still holds: no adult admitted without a child. The lake itself is Oakland's living room — lakeside barbecues, the colonnaded Pergola, actual <strong>gondola rides</strong> from the boating center — and walking the loop on a Saturday is the city's best people-watching. It anchors the map's Oakland cluster: Mountain View Cemetery uphill, Heinold's saloon at the waterfront.</p></section>

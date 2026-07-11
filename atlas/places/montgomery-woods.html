@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Any quiet weekday; after rain the grove floor glows</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An old-growth redwood grove that briefly held the world's tallest known tree — reached by a mountain road so out-of-the-way that you'll likely have it entirely to yourself.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>This is the anti-Muir Woods, and locals invoke it exactly that way: in threads lamenting Muir's crowds ("gorgeous, primeval nature, juxtaposed with jarringly loud, utterly insensitive city-people"), Montgomery Woods is the counter-prescription. The reserve protects five old-growth groves in a hidden valley on Orr Springs Road between Ukiah and the coast; in the 1990s one of its trees, the Mendocino Tree, was measured as the tallest living thing on Earth (a title since passed to trees in Humboldt — the park, characteristically, never even marked which tree it was, to protect it). The experience is a two-mile loop on a fern-floored valley bottom among trees over 350 feet tall, in a silence the famous groves can't offer. No visitor center, no cell service, vault toilet, maybe three other cars. That's the entire pitch, and for a certain kind of day it's the best one on this map.</p></section>

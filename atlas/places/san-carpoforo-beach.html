@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Low tide to reach the hidden second cove; avoid plover nesting areas</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 7/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class=""></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The wide, driftwood-strewn beach at the very bottom of Big Sur that almost nobody stops for, because there's no sign telling them to.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>A gate and a small pullout on the ocean side of Highway 1, then an easy sand path opens onto a wide, wild beach where a creek runs into the sea and the tide stacks up bleached driftwood and rock. It gets few visitors, so it keeps a genuinely remote feel that the famous stops up the coast lost years ago. At low tide you can slip past the big rock at the south end into a second hidden cove below Ragged Point. This is the reward for driving to the very end.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>A gate and a small pullout on the ocean side of Highway 1, then an easy sand path opens onto a wide, wild beach where a creek runs into the sea and the tide stacks up bleached driftwood and rock. It gets few visitors, so it keeps a remote feel that the famous stops up the coast lost years ago. At low tide you can slip past the big rock at the south end into a second hidden cove below Ragged Point. This is the reward for driving to the very end.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>The trailhead is about 1.5 miles south of Ragged Point Inn, across from 18550 Cabrillo Highway. Check the tides before you commit; rogue waves come in hard and the sea caves are only safe at very low tide. Leave the dog behind and steer clear of the snowy plover nests in the dunes.</p></section>
 <section class="sec locals"><h2>From the locals</h2><p>One post is the whole reason this is on the map: "there's an incredible beach called San Carpóforo... opens up to some sort of creek flowing into the ocean... Tons of insane driftwood and rock finds, including the state rock Serpentine." Mentioned once, by someone who clearly didn't want to gatekeep it.</p></section>
     <div class="sources">Sources · <a href="https://www.californiabeaches.com/beach/san-carpoforo-creek-beach/" target="_blank" rel="noopener">https://www.californiabeaches.com/beach/san-carpoforo-creek-beach/</a>  ·  <a href="https://www.raggedpointinn.com/hikes" target="_blank" rel="noopener">https://www.raggedpointinn.com/hikes</a>  ·  r/bigsur — see research/reading/big-sur.md</div>

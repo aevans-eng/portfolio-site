@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,15 +100,16 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Nature</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>3h45m</b></div>
     <div class="stat">Effort<b>Steep 0.5mi / 400ft down to the beach; or a flat clifftop trail</b></div>
     <div class="stat">Best<b>After winter rain for the waterfall; top off your gas here</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The cliff where Big Sur begins or ends, with a brutal little trail down to a black-sand beach and a 300-foot waterfall you can't see from the top.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Ragged Point is the southern gateway to Big Sur: a blufftop with benches set right on the edge and one of the last gas stations for a long stretch. The reason to actually stop is the Black Swift Falls trail, a steep half-mile that drops 400 feet in switchbacks down the cliff face to a small black-sand beach, with a 300-foot seasonal waterfall that thunders after winter storms and shrinks to a trickle by late summer. It's short but genuinely steep, and it hands you a hidden beach-and-waterfall combo the people photographing from the overlook never reach.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Ragged Point is the southern gateway to Big Sur: a blufftop with benches set right on the edge and one of the last gas stations for a long stretch. The reason to actually stop is the Black Swift Falls trail, a steep half-mile that drops 400 feet in switchbacks down the cliff face to a small black-sand beach, with a 300-foot seasonal waterfall that thunders after winter storms and shrinks to a trickle by late summer. It's short but steep, and it hands you a hidden beach-and-waterfall combo the people photographing from the overlook never reach.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park at the Ragged Point Inn. Take the Black Swift Falls trail down after winter rain for the falls, and remember you climb 400 feet back up, often in full sun. If your knees say no, the flat clifftop nature trail gives you the views without the descent. Fill your tank here; gas is scarce north of this point.</p></section>
     <div class="sources">Sources · <a href="https://highway1roadtrip.com/blog/ragged-point-trail/" target="_blank" rel="noopener">https://highway1roadtrip.com/blog/ragged-point-trail/</a>  ·  <a href="https://www.world-of-waterfalls.com/waterfalls/california-black-swift-falls/" target="_blank" rel="noopener">https://www.world-of-waterfalls.com/waterfalls/california-black-swift-falls/</a></div>
   </main>

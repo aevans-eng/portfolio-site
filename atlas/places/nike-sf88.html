@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Scheduled open days (usually weekends) for the missile demo</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 7/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class=""></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The only fully restored Nike missile base in the country, where docents raise an actual Cold War nuclear missile out of its silo for you.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Hidden among the bunkers of the Marin Headlands sits SF-88, the most completely restored of the roughly 300 Nike missile sites the Army built to shoot down Soviet bombers. Unlike the graffiti'd ruin down in Pacifica, this one has been painstakingly rebuilt by veterans and volunteers, and on open days they walk you through the radar and control room and the underground magazine, then raise a real, deactivated Nike missile up the elevator and tip it to firing position, exactly as they once drilled to do at a moment's notice. The docents are often veterans who served on these very systems. It's free, deeply strange, and one of the most tangible Cold War experiences going, a doomsday weapon demonstrated in the middle of a beautiful national park.</p></section>

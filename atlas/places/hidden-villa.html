@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Spring for baby farm animals and green hills</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A working organic farm in the Los Altos hills that opened the first youth hostel in the American West, and still rents you a bunk.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In 1924 Frank and Josephine Duveneck started a farm and wilderness preserve in the hills above Los Altos, and they used it to try out ideas well ahead of their time. In 1937 they opened the first youth hostel in the West, and soon after, the country's first racially integrated summer camp. It's still a working organic farm and a 1,600-acre preserve, with animals, gardens, wilderness trails climbing toward Black Mountain, and that historic hostel you can book a bunk in. It's part educational nonprofit, part genuine escape, quieter and more purposeful than an ordinary park. Come for the farm and the trails, and know you're standing where some decent history got made.</p></section>

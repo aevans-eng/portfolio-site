@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Winter–spring: full lakes, waterfalls running, eagles about</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Mount Tamalpais hides a chain of five reservoir lakes on its north flank — pine-ringed, trout-stocked, eagle-visited — that even many Marin residents haven't found.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The Marin watershed lands above Fairfax are the county's quiet interior: no ocean drama, no Muir Woods buses, just lakes folded into the mountain's skirts with dirt roads and single-track running between them. Bon Tempe is the heart of it — a genuinely pretty 4-mile shoreline loop through pine and manzanita — and its own subreddit thread asked, sincerely, whether it's "underrated and not known by many" (consensus: yes; one regular: "I saw my first ever Marin bald eagle there a few months ago, it was magical"). It's stocked with trout in season, which gives it a low-key fishing culture the coastal parks lack. The upgrade path is the point: from Bon Tempe's Alpine Lake edge, the Kent and Helen Markt trails run along the reservoir to the base of <strong>Cataract Falls</strong>, Marin's best waterfall staircase — locals' preferred approach when the Pantoll side is mobbed ("the views along the way are worth it").</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The Marin watershed lands above Fairfax are the county's quiet interior: no ocean drama, no Muir Woods buses, just lakes folded into the mountain's skirts with dirt roads and single-track running between them. Bon Tempe is the heart of it — a pretty 4-mile shoreline loop through pine and manzanita — and its own subreddit thread asked, sincerely, whether it's "underrated and not known by many" (consensus: yes; one regular: "I saw my first ever Marin bald eagle there a few months ago, it was magical"). It's stocked with trout in season, which gives it a low-key fishing culture the coastal parks lack. The upgrade path is the point: from Bon Tempe's Alpine Lake edge, the Kent and Helen Markt trails run along the reservoir to the base of <strong>Cataract Falls</strong>, Marin's best waterfall staircase — locals' preferred approach when the Pantoll side is mobbed ("the views along the way are worth it").</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Drive through Fairfax up Bolinas–Fairfax Rd to the Sky Oaks entrance (small watershed day-use fee). Loop Bon Tempe, or commit to the Cataract extension after good rain. No swimming (it's drinking water), dogs on leash on fire roads. Winter and spring are the season — full lakes, green hills, running falls.</p></section>
     <div class="sources">Sources · <a href="https://www.marinwater.org/watershed-recreation" target="_blank" rel="noopener">https://www.marinwater.org/watershed-recreation</a>  ·  <a href="https://reddit.com/r/Marin/comments/1bcdet2/am_i_the_only_one_who_thinks_bon_tempe_lake_is/" target="_blank" rel="noopener">https://reddit.com/r/Marin/comments/1bcdet2/am_i_the_only_one_who_thinks_bon_tempe_lake_is/</a></div>
   </main>

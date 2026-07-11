@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Post-surf or sunset with the fog rolling in</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The only Taco Bell with a walk-up window for surfers and a beach out the back door.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>On the sand at Pacifica's Linda Mar Beach sits a Taco Bell that, against all odds, is genuinely beloved: a low building with a walk-up window, a patio, and surfboard racks, where wetsuited surfers come straight off the waves for a burrito and beginners refuel after a lesson. People only half-joke that it's the most beautiful Taco Bell in the world, because eating fast food with sand on your feet and Pacific fog rolling in hits completely differently than a strip-mall drive-thru. It isn't fine dining and isn't pretending to be. It's a chain that happens to have the best location in its entire empire, and leaning into that absurdity is the whole point.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>On the sand at Pacifica's Linda Mar Beach sits a Taco Bell that, against all odds, is beloved: a low building with a walk-up window, a patio, and surfboard racks, where wetsuited surfers come straight off the waves for a burrito and beginners refuel after a lesson. People only half-joke that it's the most beautiful Taco Bell in the world, because eating fast food with sand on your feet and Pacific fog rolling in hits completely differently than a strip-mall drive-thru. It isn't fine dining and isn't pretending to be. It's a chain that happens to have the best location in its entire empire, and leaning into that absurdity is the whole point.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's right on Highway 1 at Linda Mar Beach in Pacifica. Order at the walk-up window, take it to the beach patio, and watch the surfers. Sunset with the fog is peak. Pair it with a Devil's Slide walk just up the road.</p></section>
     <div class="sources">Sources · <a href="https://www.atlasobscura.com/places/linda-mar-taco-bell" target="_blank" rel="noopener">https://www.atlasobscura.com/places/linda-mar-taco-bell</a></div>
   </main>

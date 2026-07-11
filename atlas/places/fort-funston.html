@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Windy afternoons for the hang gliders; weekday mornings for quiet</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>200-foot sand bluffs at San Francisco's southwest corner where hang gliders launch off old coastal-defense batteries and half the city's dogs run leash-free below.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Fort Funston is what's left of a harbor-defense post gone feral: WWII gun batteries and Nike-era remnants buried in dune scrub, a clifftop launch that makes it one of the country's premier coastal hang-gliding sites, and a wide, usually foggy beach at the bottom of a very soft sand ladder. The mood is unpolished in the best way — locals describe threading "the maze of trees" to come out on top of the bunkers with a private ocean view. On a windy day you can sit on a battery roof and watch gliders hover at eye level, which is quietly hypnotic. Fair warning that shapes the visit: this is the Bay Area's most famous off-leash dog park, so expect joyful chaos on the main trails; and the cliffs are genuinely unstable — respect the closure fences.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Fort Funston is what's left of a harbor-defense post gone feral: WWII gun batteries and Nike-era remnants buried in dune scrub, a clifftop launch that makes it one of the country's premier coastal hang-gliding sites, and a wide, usually foggy beach at the bottom of a very soft sand ladder. The mood is unpolished in the best way — locals describe threading "the maze of trees" to come out on top of the bunkers with a private ocean view. On a windy day you can sit on a battery roof and watch gliders hover at eye level, which is quietly hypnotic. Fair warning that shapes the visit: this is the Bay Area's most famous off-leash dog park, so expect joyful chaos on the main trails; and the cliffs are unstable — respect the closure fences.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Parking lot off Skyline Blvd (Highway 35) just south of Lake Merced. Check the hang-glider viewing deck first — if the wind's right, that's the show. Then the loop: north along the bluff through the trees and bunkers, down to the beach, back up the sand ladder (harder than it looks). Fog transforms it; that's not a bad thing.</p></section>
     <div class="sources">Sources · <a href="https://www.nps.gov/goga/fofu.htm" target="_blank" rel="noopener">https://www.nps.gov/goga/fofu.htm</a>  ·  <a href="https://reddit.com/r/bayarea/comments/3f9ig5/what_is_your_favorite_secret_hidden_gem_in_the_bay/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/3f9ig5/what_is_your_favorite_secret_hidden_gem_in_the_bay/</a></div>
   </main>

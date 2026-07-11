@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Weekdays; after rain for green ferns</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A redwood-and-oak forest above Woodside, threaded with old horse-estate trails, that stays quiet while the famous parks fill up.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Once the stable and grounds of a grand Woodside estate, Wunderlich is now a forested park where trails climb from a historic barn up through oak, madrone, and cool redwood groves toward Skyline. It's less dramatic than the marquee redwood parks and far less crowded, which is exactly the point: a genuinely peaceful patch of big trees and dappled trail minutes from the peninsula, still laced with the bridle paths of its horse-country past, so you'll share it with the occasional rider. It's the everyday-good forest hike locals keep to themselves, a solid few-mile loop under the canopy without the drive to Big Sur.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Once the stable and grounds of a grand Woodside estate, Wunderlich is now a forested park where trails climb from a historic barn up through oak, madrone, and cool redwood groves toward Skyline. It's less dramatic than the marquee redwood parks and far less crowded, which is exactly the point: a peaceful patch of big trees and dappled trail minutes from the peninsula, still laced with the bridle paths of its horse-country past, so you'll share it with the occasional rider. It's the everyday-good forest hike locals keep to themselves, a solid few-mile loop under the canopy without the drive to Big Sur.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Start at the Wunderlich parking area on Woodside Road; the loop up to Salamander Flat and back down through the redwoods is the classic. Watch for horses on the trails, go on a weekday for solitude, and after rain for the greenest ferns.</p></section>
     <div class="sources">Sources · <a href="https://parks.smcgov.org/wunderlich-park" target="_blank" rel="noopener">https://parks.smcgov.org/wunderlich-park</a></div>
   </main>

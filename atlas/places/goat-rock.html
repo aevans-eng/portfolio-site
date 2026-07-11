@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Spring for seal pups; keep your distance</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 7/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class=""></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The dramatic mouth of the Russian River, where a colony of harbor seals hauls out on the sand between the river and the sea.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Where the Russian River finally meets the Pacific at Jenner, a big sea stack anchors a beach split between fresh river and salt ocean, and on the sandy spit between them a colony of harbor seals hauls out to rest and, in spring, to pup. It's a genuinely wild, cinematic piece of coast: the river curling into the surf, the rock offshore, pelicans and seals, the Sonoma hills rolling north. You watch the seals from a respectful distance, the pupping rookery is roped off and volunteers keep watch. One hard rule: don't get in the water. Sneaker waves and rip currents here have killed people. This is a place to walk and look, the payoff at the end of the Russian River and one of the best seal-watching spots on the coast.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Where the Russian River finally meets the Pacific at Jenner, a big sea stack anchors a beach split between fresh river and salt ocean, and on the sandy spit between them a colony of harbor seals hauls out to rest and, in spring, to pup. It's a wild, cinematic piece of coast: the river curling into the surf, the rock offshore, pelicans and seals, the Sonoma hills rolling north. You watch the seals from a respectful distance, the pupping rookery is roped off and volunteers keep watch. One hard rule: don't get in the water. Sneaker waves and rip currents here have killed people. This is a place to walk and look, the payoff at the end of the Russian River and one of the best seal-watching spots on the coast.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's at Goat Rock State Beach off Highway 1 at Jenner. Park and walk the beach toward the river mouth to see the seals, keeping well back, especially in spring pupping season. Do not swim; the currents are lethal. Pair it with the drive up the Sonoma coast to Fort Ross.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=451" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=451</a></div>
   </main>

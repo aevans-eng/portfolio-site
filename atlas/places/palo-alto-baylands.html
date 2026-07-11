@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Near high tide + golden hour; fall–spring migration for birds</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The largest undisturbed marsh left on San Francisco Bay, flat and free at the edge of Palo Alto, laced with boardwalks and birds.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Right where East Palo Alto meets the water sits the biggest tract of undisturbed tidal marsh on the whole bay. Levee trails and boardwalks run out over the pickleweed and mud, and depending on the tide and season you'll see egrets, avocets, burrowing owls, and clouds of shorebirds, with the bay and the hills beyond. It isn't dramatic. It's a quiet, horizontal, wind-and-birds kind of place that's best near high tide, when water fills the channels, or at golden hour when the mud glows. For anyone based in EPA it's the nearest real nature, reachable on foot or bike, and a genuinely good one.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Right where East Palo Alto meets the water sits the biggest tract of undisturbed tidal marsh on the whole bay. Levee trails and boardwalks run out over the pickleweed and mud, and depending on the tide and season you'll see egrets, avocets, burrowing owls, and clouds of shorebirds, with the bay and the hills beyond. It isn't dramatic. It's a quiet, horizontal, wind-and-birds kind of place that's best near high tide, when water fills the channels, or at golden hour when the mud glows. For anyone based in EPA it's the nearest real nature, reachable on foot or bike, and a good one.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Start at the end of Embarcadero (Palo Alto Baylands) or from the EPA side and ride or walk the flat levees and boardwalks as far as you like. Time it near high tide for water and birds, and bring binoculars. Golden hour is the move.</p></section>
     <div class="sources">Sources · <a href="https://www.cityofpaloalto.org/Departments/Community-Services/Parks-Trails-Open-Space/Baylands-Nature-Preserve" target="_blank" rel="noopener">https://www.cityofpaloalto.org/Departments/Community-Services/Parks-Trails-Open-Space/Baylands-Nature-Preserve</a></div>
   </main>

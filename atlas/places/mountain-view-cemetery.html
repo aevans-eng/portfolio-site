@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Late afternoon up Millionaires' Row for the light and the view</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Frederick Law Olmsted — the man who designed Central Park — laid out this Oakland cemetery in 1863, and locals treat it as one of the East Bay's best walking parks, crowned by a row of robber-baron pyramids with a Golden Gate view.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Olmsted designed Mountain View as a landscape first: formal avenues climbing the Piedmont hills, Italian cypress and cedar of Lebanon, fountains, and sweeping curves built for strolling a century before "cemetery tourism" was a phrase. The residents are a who's-who of the coast's founding money and talent — Domingo Ghirardelli (chocolate), Henry Durant (founded Berkeley), architect Julia Morgan (Hearst Castle), Elizabeth Short's era of mayors and governors — with the crescendo at <strong>Millionaires' Row</strong>: a line of colossal mausoleums, including Crocker's pyramid, staring down the hill at San Francisco. Locals recommend it without irony ("genuinely a cool, if a bit eerie, place to walk around"; "Millionaires Row has some great views"). It's an odd, calm, beautiful place to spend an hour thinking about what the Bay Area was before it was this.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Olmsted designed Mountain View as a landscape first: formal avenues climbing the Piedmont hills, Italian cypress and cedar of Lebanon, fountains, and sweeping curves built for strolling a century before "cemetery tourism" was a phrase. The residents are a who's-who of the coast's founding money and talent — Domingo Ghirardelli (chocolate), Henry Durant (founded Berkeley), architect Julia Morgan (Hearst Castle), Elizabeth Short's era of mayors and governors — with the crescendo at <strong>Millionaires' Row</strong>: a line of colossal mausoleums, including Crocker's pyramid, staring down the hill at San Francisco. Locals recommend it without irony ("a cool, if a bit eerie, place to walk around"; "Millionaires Row has some great views"). It's an odd, calm, beautiful place to spend an hour thinking about what the Bay Area was before it was this.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Main gate at the top of Piedmont Avenue, Oakland; open daily to visitors on foot or by car. Walk the main avenue uphill to Millionaires' Row and the upper view plots. Be what the place asks: quiet, respectful, off the grass around services. Piedmont Ave's cafes sit right outside the gate.</p></section>
     <div class="sources">Sources · <a href="https://mountainviewcemetery.org/" target="_blank" rel="noopener">https://mountainviewcemetery.org/</a>  ·  <a href="https://reddit.com/r/bayarea/comments/1dnn4k5/what_are_some_hidden_gem_activities_restaurants/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/1dnn4k5/what_are_some_hidden_gem_activities_restaurants/</a></div>
   </main>

@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,12 +100,13 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Oddity</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>50m</b></div>
     <div class="stat">Effort<b>A drive-by / ride-by with the story in your head</b></div>
     <div class="stat">Best<b>On the way over Highway 84; it's private, so just pass through</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A log cabin in the redwoods off Highway 84 where the 1960s more or less caught fire: Ken Kesey's place, where the Acid Tests started and the Furthur bus got its paint.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In the mid-1960s Ken Kesey, fresh off the money from One Flew Over the Cuckoo's Nest, bought a rustic cabin on a couple of redwood acres in La Honda and filled it with the Merry Pranksters. This is where the Acid Tests began, where they wired the trees for sound, where Neal Cassady held court and the Hells Angels came to party, and where they painted a 1939 school bus in psychedelic swirls and misspelled "Furthur" across the front. It's ordinary redwood-canyon roadside now, and someone lives there, so there's nothing to tour. The value is knowing what happened here as you roll past on Highway 84: one quiet bend in the road that the whole psychedelic era ran through.</p></section>

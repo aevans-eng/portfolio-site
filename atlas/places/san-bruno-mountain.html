@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,14 +100,15 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Nature</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>20m</b></div>
     <div class="stat">Effort<b>Drive to the summit, or a real climb; windy and exposed</b></div>
     <div class="stat">Best<b>Clear days; spring for wildflowers and rare butterflies</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
-    <section class="sec lead"><h2>The hook</h2><p>A genuinely wild mountain marooned in the middle of the urban peninsula, with rare butterflies and a summit view from the ocean to the bay to the Farallones.</p></section>
+    <section class="sec lead"><h2>The hook</h2><p>A wild mountain marooned in the middle of the urban peninsula, with rare butterflies and a summit view from the ocean to the bay to the Farallones.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Ringed by Daly City, Brisbane, and South San Francisco, San Bruno Mountain rises out of the suburbs as a surprising island of wilderness, thousands of acres of grassland and coastal scrub that somehow never got developed. It shelters endemic species found almost nowhere else, including the endangered Mission blue and San Bruno elfin butterflies, and from its ridges you get one of the most complete views anywhere: downtown SF and the bay on one side, the ocean and the Farallon Islands on the other, planes stacking into SFO below. It's windy, often half in fog, and feels far wilder than its location has any right to. For a mountain you can stand on top of fifteen minutes from the city, it's remarkable.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Drive up Guadalupe Canyon Parkway to the summit lot, or hike from the base. The Summit and Ridge trails give the big views; the Saddle and Bog trails hold the wildflowers and butterflies in spring. Dress for wind and fog even in summer.</p></section>
     <div class="sources">Sources · <a href="https://parks.smcgov.org/san-bruno-mountain-state-county-park" target="_blank" rel="noopener">https://parks.smcgov.org/san-bruno-mountain-state-county-park</a></div>

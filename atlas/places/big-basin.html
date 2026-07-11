@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Spring; go expecting a fire-recovery landscape, not the old cathedral</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>California's first state park — the 1902 victory that started redwood conservation — burned almost entirely in 2020, and visiting now means watching a 2,000-year-old forest rebuild itself in real time.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Big Basin is where the idea of saving redwoods won its first fight: the Sempervirens Club's 1900 campaign made this the state's first park and the template for every one after. The 2020 CZU Lightning Complex burned 97% of it — every historic building, the headquarters, the campgrounds — but not the story: coast redwoods are built for fire, and the old-growth giants stand blackened and <em>alive</em>, crowns resprouting, trunks fuzzed green from basal shoots. That's the reason to go now, stated honestly: not the shaded cathedral of before (that's a decade-plus away), but the rarest thing a landscape can show you — wholesale rebirth, with interpretive loops through the old-growth explaining what survived and how. The Rancho del Oso coastal side (Waddell Creek, where the park meets Highway 1) burned less and keeps the greener trails, including the long route to Berry Creek Falls.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Big Basin is where the idea of saving redwoods won its first fight: the Sempervirens Club's 1900 campaign made this the state's first park and the template for every one after. The 2020 CZU Lightning Complex burned 97% of it — every historic building, the headquarters, the campgrounds — but not the story: coast redwoods are built for fire, and the old-growth giants stand blackened and <em>alive</em>, crowns resprouting, trunks fuzzed green from basal shoots. The reason to go now is not the shaded cathedral of before (that's a decade-plus away). It's the rarest thing a landscape can show you — wholesale rebirth, with interpretive loops through the old-growth explaining what survived and how. The Rancho del Oso coastal side (Waddell Creek, where the park meets Highway 1) burned less and keeps the greener trails, including the long route to Berry Creek Falls.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Day-use is reservation-only with limited parking (reservecalifornia.com) via Highway 236 from Boulder Creek — check current access before driving, it's still evolving. Do the redwood loop at headquarters and read the fire interpretive signs; for waterfalls and green forest, enter from Rancho del Oso on Hwy 1 instead. Pair with Boulder Creek's main street or Henry Cowell (unburned old growth) for the before-and-after.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=540" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=540</a>  ·  <a href="https://reddit.com/r/santacruz/" target="_blank" rel="noopener">https://reddit.com/r/santacruz/</a></div>
   </main>

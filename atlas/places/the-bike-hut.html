@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,12 +100,13 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Oddity</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>1h (but it's a bike place)</b></div>
     <div class="stat">Effort<b>A rest stop mid-climb; open 24/7, honor system</b></div>
     <div class="stat">Best<b>Mid-ride on Tunitas Creek; bring small bills for the cash box</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An unlocked garage on a farm road, stocked with snacks, coffee, and spare tubes, that runs entirely on the honor system for whoever rides by.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>A mile up Tunitas Creek Road from Highway 1, someone turned an old one-car garage into a 24/7 supply shack for cyclists. Inside: snacks, drinks, organic coffee and tea, emergency bike parts, a picnic table, a porta-potty, and a logbook that's half road-conditions board and half years of scrawled notes from strangers. Nobody's watching. You take what you need and leave money in a box. The farm behind it, Potrero Nuevo, is run by a nonprofit that employs people who've been homeless and gives away tens of thousands of pounds of produce, so the whole thing is quietly generous in a way that sneaks up on you. It only really makes sense if you arrive on a bike, halfway up a climb, which is exactly the point.</p></section>

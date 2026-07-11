@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,15 +100,16 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Nature</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>50m</b></div>
     <div class="stat">Effort<b>Dirt trails + a short spur to the formation; gravel/MTB or hike</b></div>
     <div class="stat">Best<b>Weekdays; ride it on a gravel or mountain bike</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A redwood mountain-bike preserve on Skyline hiding a sandstone monolith that weather carved into a giant honeycomb skull.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>El Corte de Madera Creek is the Skyline preserve mountain bikers love: miles of shaded dirt trail through second-growth redwoods on the ocean side of the ridge. Tucked inside it is the Tafoni Sandstone Formation, a big pale outcrop that thousands of years of salt-air weathering have eaten into honeycomb lace, so pocked and hollowed that in the right light it reads as a skull or a meteorite dropped in the forest. It's the same tafoni process you see on the coast at Bean Hollow, but here it's a single strange monolith deep in the redwoods, reached by a short spur off the trails. For anyone on a gravel or mountain bike, it's a genuinely good ride to a genuinely weird payoff.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>El Corte de Madera Creek is the Skyline preserve mountain bikers love: miles of shaded dirt trail through second-growth redwoods on the ocean side of the ridge. Tucked inside it is the Tafoni Sandstone Formation, a big pale outcrop that thousands of years of salt-air weathering have eaten into honeycomb lace, so pocked and hollowed that in the right light it reads as a skull or a meteorite dropped in the forest. It's the same tafoni process you see on the coast at Bean Hollow, but here it's a single strange monolith deep in the redwoods, reached by a short spur off the trails. For anyone on a gravel or mountain bike, it's a good ride to a weird payoff.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park at the Skyline (Highway 35) lots and take the trails down to the signed Tafoni/Vista Point spur (a short walk in from the bike-legal trails). It's dirt, so it suits gravel and mountain bikes and hikers alike. Weekdays are quiet; watch for bikes on the descents.</p></section>
     <div class="sources">Sources · <a href="https://www.openspace.org/preserves/el-corte-de-madera-creek" target="_blank" rel="noopener">https://www.openspace.org/preserves/el-corte-de-madera-creek</a>  ·  <a href="https://www.atlasobscura.com/places/tafoni-sandstone-monolith" target="_blank" rel="noopener">https://www.atlasobscura.com/places/tafoni-sandstone-monolith</a></div>
   </main>

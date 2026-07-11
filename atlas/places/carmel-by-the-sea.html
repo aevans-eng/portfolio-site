@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>A weekday to dodge the crowds; sunset on the beach</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A one-square-mile village of storybook cottages with no street numbers and a white-sand beach at the bottom of the main street.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Carmel is precious and it knows it, so set expectations: the main drag can feel like an upscale outdoor mall in peak season. Two blocks off it, though, it turns into a genuine oddity, a town that banned street addresses and streetlights and filled itself with fairy-tale cottages, many built by one 1920s designer who seemed allergic to right angles. Ocean Avenue runs straight downhill to a wide, soft, free, dog-friendly beach that's better than any of the shopping. Come for the residential lanes and the sand; treat the galleries as scenery.</p></section>

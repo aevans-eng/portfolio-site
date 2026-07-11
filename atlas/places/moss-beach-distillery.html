@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Sunset drinks on the bluff patio; ask about the Blue Lady</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A Prohibition speakeasy on a bluff over the ocean, still supposedly haunted by the jilted "Blue Lady," Northern California's most famous ghost.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>This clifftop bar opened in 1927 as Frank's Place, a speakeasy that ran rum straight up the beach below and, unlike its neighbors, never got raided. Its real fame is the ghost: the Blue Lady, a young woman in blue said to have been killed on the beach below while meeting her lover, who's been the coast's favorite spook story for a century. Set the ghost aside and it's still a genuinely good spot, a wooden bar and patio hung right over the water, exactly where you want a drink at sunset. It leans into the legend hard, which is part of the fun; go for the view and the history, treat the séance-level ghost marketing as seasoning.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>This clifftop bar opened in 1927 as Frank's Place, a speakeasy that ran rum straight up the beach below and, unlike its neighbors, never got raided. Its real fame is the ghost: the Blue Lady, a young woman in blue said to have been killed on the beach below while meeting her lover, who's been the coast's favorite spook story for a century. Set the ghost aside and it's still a good spot, a wooden bar and patio hung right over the water, exactly where you want a drink at sunset. It leans into the legend hard, which is part of the fun; go for the view and the history, treat the séance-level ghost marketing as seasoning.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's right above the Fitzgerald tide pools, so pair them: reef at low tide, then up to the bluff for a drink. Grab the outdoor patio at sunset. Ask a bartender about the Blue Lady and you'll get the whole yarn.</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Moss_Beach_Distillery" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Moss_Beach_Distillery</a>  ·  <a href="https://mossbeachdistillery.com/history-ghost/" target="_blank" rel="noopener">https://mossbeachdistillery.com/history-ghost/</a></div>
   </main>

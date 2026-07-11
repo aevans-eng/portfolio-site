@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Summer for the river (go early); December for the gaslit Victorian Christmas</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The best-preserved Gold Rush town in the Sierra foothills, all gas lamps and balconied Victorians — with the emerald swimming holes of the South Yuba River ten minutes away.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Nevada City was one of the richest gold towns in California, and when the gold thinned it simply stopped changing: the whole downtown is a historic district of 1850s–60s brick and iron shutters, now filled with a genuinely odd mix — old saloons, a working 1865 theater (Mark Twain lectured there), herbalists and record stores from its 70s counterculture wave. Bay Area regulars name it (with sister town Grass Valley and its Empire Mine) as the Gold Country getaway that actually holds a weekend. The other half of the pin is the <strong>South Yuba</strong>: granite-carved swimming holes of absurdly clear green water at the Highway 49 crossing and Edwards Crossing, plus the world's longest single-span covered bridge at Bridgeport. Summer honesty: the famous holes are no secret anymore — parking fills by mid-morning on hot weekends, and the river kills unprepared swimmers in spring runoff. Go early, go weekdays, respect the current.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Nevada City was one of the richest gold towns in California, and when the gold thinned it simply stopped changing: the whole downtown is a historic district of 1850s–60s brick and iron shutters, now filled with an odd mix — old saloons, a working 1865 theater (Mark Twain lectured there), herbalists and record stores from its 70s counterculture wave. Bay Area regulars name it (with sister town Grass Valley and its Empire Mine) as the Gold Country getaway that actually holds a weekend. The other half of the pin is the <strong>South Yuba</strong>: granite-carved swimming holes of absurdly clear green water at the Highway 49 crossing and Edwards Crossing, plus the world's longest single-span covered bridge at Bridgeport. Summer honesty: the famous holes are no secret anymore — parking fills by mid-morning on hot weekends, and the river kills unprepared swimmers in spring runoff. Go early, go weekdays, respect the current.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>I-80 to Highway 49. Walk Broad Street end to end, poke into the National Exchange Hotel, then drive 10 minutes north to the Hwy 49 river crossing — trails lead up- and downstream to quieter pools. Empire Mine State Historic Park (the deepest, richest hardrock mine in California; the owner's estate is intact) makes the history concrete. December's Victorian Christmas — gaslit streets, no cars — is the town at full strength.</p></section>
     <div class="sources">Sources · <a href="https://www.nevadacityca.gov/" target="_blank" rel="noopener">https://www.nevadacityca.gov/</a>  ·  <a href="https://reddit.com/r/bayarea/comments/795h8b/romantic_weekend_getaway_spots/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/795h8b/romantic_weekend_getaway_spots/</a></div>
   </main>

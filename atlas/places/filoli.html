@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -89,15 +100,16 @@
   </header>
   <div class="meta"><div class="meta-in">
     <div class="stat">Kind<b style="color:var(--kc)">Point</b></div>
-    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
     <div class="stat">From SF<b>40m</b></div>
     <div class="stat">Effort<b>A few hours; gardens, house, and preserve trails</b></div>
     <div class="stat">Best<b>Spring bloom or fall color; opening time to dodge crowds</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A 1917 Georgian country estate and sixteen acres of formal gardens in the Woodside hills, so photogenic it played the mansion in Dynasty's opening credits.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Filoli is old-money California at its most composed: a red-brick Georgian house from 1917 on 654 acres, with sixteen acres of walled formal gardens, clipped hedges, reflecting pools, and seasonal blooms that pull crowds in spring. Calibrate before you go, because this is beauty by design, not by accident: a genteel, manicured, ticketed garden stroll rather than a wild discovery. But the gardens are genuinely gorgeous, the house is a clean window into a vanished world of live-in staff and formal dinners, and the nature-preserve trails behind the estate are quieter and free-feeling. Spring bloom and fall color are the two times it fully delivers.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Filoli is old-money California at its most composed: a red-brick Georgian house from 1917 on 654 acres, with sixteen acres of walled formal gardens, clipped hedges, reflecting pools, and seasonal blooms that pull crowds in spring. Calibrate before you go, because this is beauty by design, not by accident: a genteel, manicured, ticketed garden stroll rather than a wild discovery. But the gardens are gorgeous, the house is a clean window into a vanished world of live-in staff and formal dinners, and the nature-preserve trails behind the estate are quieter and free-feeling. Spring bloom and fall color are the two times it fully delivers.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's on Cañada Road near Woodside, so pair it with Pulgas Water Temple and the Sawyer Camp Trail, all a short hop apart. Tickets are timed; go at opening in spring to beat the crowds, or in fall for color and calm. The estate's preserve trails give you the quieter edges.</p></section>
     <div class="sources">Sources · <a href="https://filoli.org/" target="_blank" rel="noopener">https://filoli.org/</a>  ·  <a href="https://en.wikipedia.org/wiki/Filoli" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Filoli</a></div>
   </main>

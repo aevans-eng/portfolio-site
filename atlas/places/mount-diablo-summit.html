@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>A clear day right after winter rain; hazy days are a waste</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>On the right day you can stand on this East Bay summit and see the Farallon Islands out one side and Half Dome out the other — one of the longest sightlines in the country.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Diablo isn't the tallest mountain around, but it rises alone off the flat Central Valley edge, which is why 1850s surveyors made it the baseline for mapping most of California — on the clearest days of that era they could reportedly see both Shasta and Whitney. The modern version of that game still works: go the day after a winter rain scrubs the air and locals swear by the view stretching from the Farallons to the Sierra crest ("you can even see Half Dome if you're lucky and have good enough binoculars" — people have signaled between the two summits with mirrors). There's a stone observation tower from the CCC era at the top, and the drive up is a winding classic — or, for cyclists, one of the Bay Area's benchmark climbs. The honest caveat: on an ordinary hazy summer day the magic mostly isn't there. This is a conditions play.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Diablo isn't the tallest mountain around, but it rises alone off the flat Central Valley edge, which is why 1850s surveyors made it the baseline for mapping most of California — on the clearest days of that era they could reportedly see both Shasta and Whitney. The modern version of that game still works: go the day after a winter rain scrubs the air and locals swear by the view stretching from the Farallons to the Sierra crest ("you can even see Half Dome if you're lucky and have good enough binoculars" — people have signaled between the two summits with mirrors). There's a stone observation tower from the CCC era at the top, and the drive up is a winding classic — or, for cyclists, one of the Bay Area's benchmark climbs. On an ordinary hazy summer day the magic mostly isn't there. This is a conditions play.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Enter through Danville (South Gate) or Walnut Creek (North Gate); the roads meet and climb to the summit lot. Check visibility before committing — after rain in fall through spring is the window. Pay the state-park day fee, climb the tower, and bring binoculars for the Sierra test. Watch for cyclists on every curve. On the way down via South Gate, stop at <strong>Rock City</strong> — wind-carved sandstone caves and slot formations you can scramble through, the mountain's second act locals list on its own merits.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=517" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=517</a>  ·  <a href="https://reddit.com/r/bayarea/comments/1f0ws9n/what_are_some_hidden_gem_places_in_the_bay_area/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/1f0ws9n/what_are_some_hidden_gem_places_in_the_bay_area/</a></div>
   </main>

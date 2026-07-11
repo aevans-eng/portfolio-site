@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Clear days for the 360 views; book the ferry ahead in summer</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 9/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>An island in the middle of the bay with a 360-degree view of the whole region and a haunting immigration station where a century of arrivals were detained.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Angel Island sits in the heart of San Francisco Bay, reachable only by ferry, which is exactly what keeps it quiet. A five-mile road loops the perimeter, flat enough for an easy ride or walk, and it hands you a slowly rotating panorama, the city, the bridges, the North Bay, Mount Tam, with the water all around. The heavy history is the old Immigration Station, the "Ellis Island of the West," where mostly Asian immigrants were held, sometimes for months, and where detainees carved poems into the barrack walls that you can still read. So it's two things at once: a breezy, beautiful island escape with the best all-around bay view going, and a sober, moving piece of American immigration history. Bring a bike or rent one and make a half-day of it.</p></section>

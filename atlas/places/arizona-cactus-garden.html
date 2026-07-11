@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Spring for blooms; a quiet weekday</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A hidden Victorian desert garden on the Stanford campus, a thousand cacti planted for the Stanfords in the 1880s, free and almost always empty.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Tucked in an out-of-the-way corner of the Stanford campus, near the family mausoleum, is the Arizona Cactus Garden: a formal desert garden the Stanfords planted in the 1880s, now a dense, spiky, wonderfully odd collection of old cacti and succulents, some huge and gnarled with age, laid out in geometric Victorian beds. It's free, rarely crowded, and genuinely surreal, a slice of the Sonoran desert marooned in green Northern California, blooming in spring. Most people on campus have no idea it's there. It's a quiet ten-minute wander that feels like a secret.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Tucked in an out-of-the-way corner of the Stanford campus, near the family mausoleum, is the Arizona Cactus Garden: a formal desert garden the Stanfords planted in the 1880s, now a dense, spiky, wonderfully odd collection of old cacti and succulents, some huge and gnarled with age, laid out in geometric Victorian beds. It's free, rarely crowded, and surreal, a slice of the Sonoran desert marooned in green Northern California, blooming in spring. Most people on campus have no idea it's there. It's a quiet ten-minute wander that feels like a secret.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's near the Stanford Mausoleum, a short walk or ride from the main campus, open and free. Go on a weekday for solitude and in spring for the blooms. Loop it with the Rodin garden, the Papua New Guinea totems, and El Palo Alto for a free art-and-oddity tour of Stanford.</p></section>
     <div class="sources">Sources · <a href="https://www.atlasobscura.com/places/arizona-cactus-garden" target="_blank" rel="noopener">https://www.atlasobscura.com/places/arizona-cactus-garden</a></div>
   </main>

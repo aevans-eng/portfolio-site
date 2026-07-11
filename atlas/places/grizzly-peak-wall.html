@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Sunset into blue hour, when the whole bay lights up; clear winter evenings</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The pullouts along Grizzly Peak Boulevard serve the East Bay's definitive sunset view — and the one locals actually mean is "The Wall," a graffitied ledge sitting directly above the Caldecott Tunnel.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>From the ridge of the Berkeley Hills the entire metropolitan bay arranges itself in one frame: Golden Gate dead ahead, both bridges, the city stacked behind Alcatraz, and at dusk a carpet of lights coming up from Oakland to Richmond. Locals argue it beats every paid view in the region ("on a good, clear evening you can see straight out the Golden Gate, Bay Bridge, SF skyline, Marin"). The Wall itself — a short graffiti-covered retaining ledge near Claremont Avenue, long claimed by motorcyclists — is the connoisseur's stop: less parking-lot, more perch. Honest notes: it's a scene on warm weekend nights (car meets, occasional closures of the pullouts), and it's a viewpoint, not a destination — depth comes from what it shows you, not what's there.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>From the ridge of the Berkeley Hills the entire metropolitan bay arranges itself in one frame: Golden Gate dead ahead, both bridges, the city stacked behind Alcatraz, and at dusk a carpet of lights coming up from Oakland to Richmond. Locals argue it beats every paid view in the region ("on a good, clear evening you can see straight out the Golden Gate, Bay Bridge, SF skyline, Marin"). The Wall itself — a short graffiti-covered retaining ledge near Claremont Avenue, long claimed by motorcyclists — is the connoisseur's stop: less parking-lot, more perch. It's a scene on warm weekend nights (car meets, occasional closures of the pullouts), and it's a viewpoint, not a destination — depth comes from what it shows you, not what's there.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Take Claremont Avenue up from Berkeley or Fish Ranch Road from the Caldecott, then cruise Grizzly Peak Blvd between Claremont and Lomas Cantadas and pick your pullout. Arrive 30 minutes before sunset, stay for blue hour. Pairs with the Tilden steam trains just up the ridge, or Fish Ranch Road down into Orinda for dinner.</p></section>
     <div class="sources">Sources · <a href="https://reddit.com/r/bayarea/comments/3f9ig5/what_is_your_favorite_secret_hidden_gem_in_the_bay/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/comments/3f9ig5/what_is_your_favorite_secret_hidden_gem_in_the_bay/</a></div>
   </main>

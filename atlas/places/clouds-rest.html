@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>July–September; start at dawn, both for light and thunderstorm margin</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 9/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The best summit view in Yosemite isn't Half Dome — it's the peak a thousand feet above it, with no cables, no lottery, and a final ridge just narrow enough to make you earn it.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Ask the subreddit for favorite hikes and Clouds Rest keeps winning — "my favorite hike of all time" is nearly a genre there (people propose marriage on this summit at a notable rate). The logic: Half Dome's famous view has one flaw, which is that Half Dome is in every direction <em>except</em> the one you came for. From Clouds Rest, 1,000 feet higher, Half Dome poses below you in profile with the entire Valley falling away behind it, Tenaya Canyon plunging 5,000 feet directly off your toes, and the high country wheeling around the rest of the circle. The approach from Tenaya Lake is a real but honest day — 13 miles, most of the climbing in the first half — and the finale is the famous ridge: a granite spine a few feet wide with big air on both sides, walkable by any steady adult and unforgettable to all of them. No permits, no cables, no circus. Just the better mountain.</p></section>

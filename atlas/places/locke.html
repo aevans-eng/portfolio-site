@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Weekdays for the ghost-town quiet; any warm evening for Al's</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The only town in America built by Chinese immigrants for Chinese immigrants still stands on a Delta levee — one wooden block of leaning false-front buildings, half museum, half lived-in.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>After a 1915 fire burned the Chinese quarter of nearby Walnut Grove, a group of Chung Shan merchants leased land from rancher George Locke (California's alien land laws barred them from buying it) and built their own town: gambling halls, boarding houses, groceries, a school, all in wood, all in a row below the levee crown. At its peak 600 people lived here; today it's a National Historic Landmark with a few dozen residents, and walking Main Street — boardwalks, sagging balconies, the Dai Loy gambling-house museum with its games still laid out — is the closest thing to time travel in Northern California. Al the Wop's (1934), the street's famous bar-steakhouse, serves peanut butter with your steak and keeps dollar bills on the ceiling. The town sits in the larger Delta oddity: a thousand miles of levee roads over below-sea-level islands, drawbridges, and river towns (Walnut Grove, Isleton, Rio Vista) that feel like the 1940s never ended. It's the emptiest-feeling landscape within 90 minutes of the Bay, and that's its gift.</p></section>

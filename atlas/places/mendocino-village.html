@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Any season; winter storms and whale migration are the connoisseur's pick</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 9/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A New England village on a California headland — saltbox houses and redwood water towers on a bluff wrapped on three sides by state-park coast, at the far edge of the three-hour radius.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Mendocino was built by Maine lumbermen in the 1850s and looks it: white clapboard, widow's walks, and the town's signature — wooden water towers on nearly every block, leftovers from when every household pumped its own. When the mills died the town nearly did, until artists colonized it in the 1950s and effectively froze it; Hollywood has been using it as a New England stand-in ever since (it's Cabot Cove in <em>Murder, She Wrote</em>, and the <em>East of Eden</em> sets came here). The trump card is the <strong>Mendocino Headlands</strong>: the entire blufftop ringing the village is state park, so you can walk out of any street onto wave-tunneled cliffs, sea arches, and blowholes, with whale migration passing close in winter and spring. It's the anchor of the atlas's north edge — pair it with the Point Cabrillo lighthouse walk, Russian Gulch's Devil's Punchbowl, or Big River's paddle-up estuary. Honesty: it's precious (galleries, inns, jam shops) and summer weekends run full; the further you walk onto the headlands, the more it reverts to what it is. Fort Bragg's famous Glass Beach, ten minutes north, is largely picked clean — go for the coastal trail, not the treasure hunt.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Mendocino was built by Maine lumbermen in the 1850s and looks it: white clapboard, widow's walks, and the town's signature — wooden water towers on nearly every block, leftovers from when every household pumped its own. When the mills died the town nearly did, until artists colonized it in the 1950s and effectively froze it; Hollywood has been using it as a New England stand-in ever since (it's Cabot Cove in <em>Murder, She Wrote</em>, and the <em>East of Eden</em> sets came here). The trump card is the <strong>Mendocino Headlands</strong>: the entire blufftop ringing the village is state park, so you can walk out of any street onto wave-tunneled cliffs, sea arches, and blowholes, with whale migration passing close in winter and spring. It's the anchor of the atlas's north edge — pair it with the Point Cabrillo lighthouse walk, Russian Gulch's Devil's Punchbowl, or Big River's paddle-up estuary. It's precious (galleries, inns, jam shops) and summer weekends run full; the further you walk onto the headlands, the more it reverts to what it is. Fort Bragg's famous Glass Beach, ten minutes north, is largely picked clean — go for the coastal trail, not the treasure hunt.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Highway 128 through the Anderson Valley redwood tunnel, then Highway 1 up the coast — the drive is part of the trip (allow 3h15m+ without stops, and you'll stop). Stay the night; day-tripping this is a waste. Walk the Headlands loop at golden hour, browse the water towers, and eat like the town takes food seriously, because it does.</p></section>
     <div class="sources">Sources · <a href="https://www.parks.ca.gov/?page_id=442" target="_blank" rel="noopener">https://www.parks.ca.gov/?page_id=442</a>  ·  <a href="https://reddit.com/r/bayarea/" target="_blank" rel="noopener">https://reddit.com/r/bayarea/</a></div>
   </main>

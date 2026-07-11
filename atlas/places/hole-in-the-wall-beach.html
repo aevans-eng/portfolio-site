@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Low tide, or you can't reach the arch at all; calm-swell days only</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A sea arch punched through a sandstone cliff on the Davenport coast — walk through the hole at low tide and a second, emptier beach opens on the other side.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The north Santa Cruz coast between Davenport and Año Nuevo is a run of golden bluffs and pocket beaches, and this is its best little trick: from Panther Beach, at low tide, you pass through a person-sized arch in the cliff wall into Hole-in-the-Wall Beach proper — a threshold moment that makes the second beach feel earned even though the whole detour is minutes. Locals name it among favorite coastal day trips out of the city, and its neighborhood stacks: Shark Fin Cove's iconic fin-shaped sea stack is two minutes south, Davenport's one-street town (Whale City Bakery, the overlook where whales actually pass) two minutes further. Respect the physics: at high tide or heavy swell the arch closes and the beaches shrink to nothing, the cliff path down is a genuine informal scramble, and rip currents here are serious — this is a walking-and-gawking coast, not a swimming one.</p></section>

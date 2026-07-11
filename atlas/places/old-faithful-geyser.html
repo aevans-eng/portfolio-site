@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Any time — it erupts every few minutes; the fainting goats are a bonus</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>One of the few geysers on Earth that erupts on a reliable clock, every few minutes, in a Calistoga field shared with fainting goats.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Calistoga sits on a geothermal hot spot, and this little private geyser taps it: superheated groundwater blasts thirty to sixty feet into the air every few minutes, one of only a handful of "faithful" (regularly erupting) geysers in the world. You don't have to wait long or hike anywhere; you sit in a viewing area and it goes off on schedule. It's frankly a small, kitschy, family-run roadside attraction, with a petting zoo of fainting goats and a gift shop, so calibrate accordingly, this is a fun half-hour, not a Yellowstone. But a genuine geyser erupting on demand, plus goats that keel over when startled, is a wholesomely weird stop, and it rounds out Calistoga's volcanic oddities with the Petrified Forest down the road.</p></section>

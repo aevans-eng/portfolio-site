@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Check hours; then ride Repack and the Tam fire roads</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A Fairfax museum on the exact ground where mountain biking was invented, home to the Mountain Bike Hall of Fame.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Mountain biking was born on the slopes of Mount Tam in the 1970s, when a crew of Marin riders bombed a fire road they called "Repack", for how often the coaster-brake hubs smoked and had to be repacked, on modified old cruisers, then started building bikes to do it better. This small museum in Fairfax, ground zero for that scene, tells the story with a deep collection of historic bikes going back to the 1800s and houses the Mountain Bike Hall of Fame. For anyone who rides, it's a genuine pilgrimage to the sport's birthplace, with the Mt Tam fire roads, including Repack itself, right there to go ride. Even if you don't, the "a global sport started with these guys on this hill" tale is a good one.</p></section>

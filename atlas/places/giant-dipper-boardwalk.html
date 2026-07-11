@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Friday summer nights (free concerts on the sand); off-season for empty rides</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A 1924 wooden roller coaster — a National Historic Landmark still running its original half-mile of lumber — anchors the last old-school seaside amusement park on the West Coast.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The Boardwalk is a tourist magnet and the map says so honestly; the reason it earns a pin is that it's <em>real</em> in a way almost nothing like it survives: California's oldest amusement park (1907), free to walk, on an actual working beach, with the <strong>Giant Dipper</strong> rattling overhead as it has for a century. The ride itself is the argument — a genuine 1924 woodie, all white timber and red track, dark tunnel launch, ocean view from the lift hill, still in the world's top tier of historic coasters (film buffs know it from <em>The Lost Boys</em>). Add the 1911 Looff carousel — hand-carved horses and a working brass-ring toss, one of the last anywhere — and you're riding two National Historic Landmarks for pocket money. The rest is corn dogs and midway noise, which is either the charm or the tax depending on your constitution.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The Boardwalk is a tourist magnet. It earns a pin because it's <em>real</em> in a way almost nothing like it survives: California's oldest amusement park (1907), free to walk, on an actual working beach, with the <strong>Giant Dipper</strong> rattling overhead as it has for a century. The ride itself is the argument — a genuine 1924 woodie, all white timber and red track, dark tunnel launch, ocean view from the lift hill, still in the world's top tier of historic coasters (film buffs know it from <em>The Lost Boys</em>). Add the 1911 Looff carousel — hand-carved horses and a working brass-ring toss, one of the last anywhere — and you're riding two National Historic Landmarks for pocket money. The rest is corn dogs and midway noise, which is either the charm or the tax depending on your constitution.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Park entry is free — buy single-ride tickets and do the Dipper and the carousel (grab for the ring), then walk the wharf for the sea lions under the pilings. Summer Friday nights have free concerts on the beach; winter weekdays the Dipper runs near-empty and the light goes golden. Natural Bridges and Steamer Lane redeem the rest of the day.</p></section>
 <section class="sec skip"><h2><span class="idx">03</span>Skip the cliché</h2><p>Skip the arcade-and-funnel-cake day-long version unless you have kids who demand it. The pin is two historic machines and the Pacific — an hour does it.</p></section>
     <div class="sources">Sources · <a href="https://beachboardwalk.com/" target="_blank" rel="noopener">https://beachboardwalk.com/</a>  ·  <a href="https://en.wikipedia.org/wiki/Giant_Dipper_(Santa_Cruz)" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Giant_Dipper_(Santa_Cruz)</a></div>

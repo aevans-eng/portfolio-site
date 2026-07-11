@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>A slow walk at golden hour</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A poem laid into the ground across a bayfront park, its verses marked by pictograph sculptures, hidden on a capped landfill.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>At Bedwell Bayfront Park in Menlo Park, on top of a former landfill by the water, someone set a long poem into the earth as a trail of stone words and boulders, punctuated by sculptures inspired by Native American pictographs. You walk the verses one at a time. It's easy to miss, unmarked and low to the ground, so most people jogging the park's grassy hills never notice they're passing through a poem. Like Byxbee Park a few miles south, it quietly turns a garbage mound into art, and finding it on foot, stanza by stanza, is the whole experience. Small, free, and genuinely unexpected.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>At Bedwell Bayfront Park in Menlo Park, on top of a former landfill by the water, someone set a long poem into the earth as a trail of stone words and boulders, punctuated by sculptures inspired by Native American pictographs. You walk the verses one at a time. It's easy to miss, unmarked and low to the ground, so most people jogging the park's grassy hills never notice they're passing through a poem. Like Byxbee Park a few miles south, it quietly turns a garbage mound into art, and finding it on foot, stanza by stanza, is the whole experience. Small, free, and unexpected.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's in Bedwell Bayfront Park off Marsh Road in Menlo Park. Walk the trails and look down for the stone-laid poem and the pictograph markers. Go slow, at golden hour; it rewards not being in a hurry, and the bay views come free.</p></section>
     <div class="sources">Sources · <a href="https://www.atlasobscura.com/places/great-spirit-path" target="_blank" rel="noopener">https://www.atlasobscura.com/places/great-spirit-path</a></div>
   </main>

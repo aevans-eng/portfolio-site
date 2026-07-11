@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Windy afternoons for the hang gliders</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The exact spot where the San Andreas Fault dives into the Pacific, now a hang-gliding launch perched on top of an old landfill.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>At the Daly City–Pacifica line, Mussel Rock marks where the San Andreas Fault, the crack responsible for the 1906 earthquake, runs off the land and out under the ocean; the 1906 rupture came ashore right around here. Today the bluff above it is a premier hang-gliding and paragliding launch, so on breezy afternoons you'll watch pilots step off the cliff and soar the coastline. Underneath all of it, awkwardly, sits a capped garbage dump. So it's a strange, layered place: world-famous geology, a buried landfill, and people flying off the edge for fun, at a windy overlook most Bay Area residents have never visited. The views up and down the coast are excellent, and knowing you're standing where the fault meets the sea gives it a charge.</p></section>

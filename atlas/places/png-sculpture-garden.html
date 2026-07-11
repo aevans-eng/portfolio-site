@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>A quiet weekday; pair with the Rodin or Cactus gardens</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>A quiet grove near Stanford full of towering carved totems and a dugout canoe, made by New Guinea artists flown in to carve the wood on site.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In an unassuming clearing at the edge of the Stanford campus stands the Papua New Guinea Sculpture Garden: a cluster of tall, intricate wooden totems, poles, and a canoe carved by master artists from the Sepik River region who were brought to Stanford in the 1990s to make the work right there from local trees. It's free, rarely visited, and genuinely striking, ancestral Melanesian art rising out of a California oak grove and weathering slowly in the open air. Most students walk past without knowing it's there. It's a five-minute wander that feels like stumbling somewhere much farther away than Palo Alto.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In an unassuming clearing at the edge of the Stanford campus stands the Papua New Guinea Sculpture Garden: a cluster of tall, intricate wooden totems, poles, and a canoe carved by master artists from the Sepik River region who were brought to Stanford in the 1990s to make the work right there from local trees. It's free, rarely visited, and striking, ancestral Melanesian art rising out of a California oak grove and weathering slowly in the open air. Most students walk past without knowing it's there. It's a five-minute wander that feels like stumbling somewhere much farther away than Palo Alto.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>It's near the corner of Santa Teresa Street and Lomita Drive on the Stanford campus, open and free. Go on a quiet weekday, walk among the poles, and read the small plaques about the carvers. It's an easy ride from EPA, and pairs with the Rodin garden or the Arizona Cactus Garden nearby.</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Papua_New_Guinea_Sculpture_Garden" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Papua_New_Guinea_Sculpture_Garden</a></div>
   </main>

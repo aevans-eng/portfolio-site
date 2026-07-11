@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>April–May when the falls thunder and the crowds are still nowhere</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 9/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Yosemite has a twin — a second glacier-carved valley John Muir called a "wonderfully exact counterpart" — and San Francisco drowned it. What's left is the park's emptiest grand landscape.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Hetch Hetchy Valley was, by every account, Yosemite Valley's sister: the same sheer granite, its own El Capitan-scale walls, its own waterfalls. The 1913 decision to dam it for San Francisco's water supply broke John Muir (he died a year later) and founded the modern environmental movement — the "restore Hetch Hetchy" argument is still live in every thread about it ("down with the dam, restore the sister valley"). The place today is a strange, moving hybrid: you walk across O'Shaughnessy Dam, through a granite tunnel, and along the reservoir's edge under walls that would be world famous if they weren't half-submerged, to <strong>Wapama Falls</strong>, which in spring crashes directly onto the footbridges you cross — "so underrated" is the standing verdict. It gets a fraction of one percent of the park's visitors. You will have a Yosemite-grade landscape essentially to yourself, plus the melancholy of knowing what's under the water — which is, honestly, part of the experience.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Hetch Hetchy Valley was, by every account, Yosemite Valley's sister: the same sheer granite, its own El Capitan-scale walls, its own waterfalls. The 1913 decision to dam it for San Francisco's water supply broke John Muir (he died a year later) and founded the modern environmental movement — the "restore Hetch Hetchy" argument is still live in every thread about it ("down with the dam, restore the sister valley"). The place today is a strange, moving hybrid: you walk across O'Shaughnessy Dam, through a granite tunnel, and along the reservoir's edge under walls that would be world famous if they weren't half-submerged, to <strong>Wapama Falls</strong>, which in spring crashes directly onto the footbridges you cross — "so underrated" is the standing verdict. It gets a fraction of one percent of the park's visitors. You will have a Yosemite-grade landscape essentially to yourself, plus the melancholy of knowing what's under the water — which is, honestly, part of the experience. This is also the closest grand Yosemite section to the Bay Area — no Valley traffic, a separate entrance off Evergreen Road, day-use gate hours. In spring, poison oak crowds the trail edges and the falls can close the footbridges with force; check conditions.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Enter via Evergreen Rd off Hwy 120 just before the main park entrance (separate gate, day-use hours posted). Walk dam → tunnel → Wapama Falls (~5 mi round trip, rolling). Push on to Rancheria Falls if the day is cool. Bring more water than the mileage suggests — this is low, sunny country by Yosemite standards.</p></section>
     <div class="sources">Sources · <a href="https://www.nps.gov/yose/planyourvisit/hh.htm" target="_blank" rel="noopener">https://www.nps.gov/yose/planyourvisit/hh.htm</a>  ·  <a href="https://reddit.com/r/Yosemite/comments/13fbg6w/wapama_falls_hetch_hetchy_is_so_underrated/" target="_blank" rel="noopener">https://reddit.com/r/Yosemite/comments/13fbg6w/wapama_falls_hetch_hetchy_is_so_underrated/</a></div>
   </main>

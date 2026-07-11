@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,9 +106,10 @@
     <div class="stat">Best<b>Weekday mornings in summer; Sand Harbor needs a reservation, the coves don't</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>The Nevada side's granite-boulder coves are the Caribbean of the Sierra — and between the famous beach and the nude one runs a string of pocket coves most visitors never find.</p></section>
-<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The east shore is where Tahoe's water does its best trick: giant rounded boulders in gin-clear turquoise, like someone airlifted the Seychelles to 6,200 feet. <strong>Sand Harbor</strong> is the famous version — genuinely gorgeous, and honestly managed like it: the lot sells out by mid-morning and summer now requires reservations; locals watch the crowds with resignation. The local version is everything south of it: <strong>Chimney Beach</strong>, <strong>Secret Cove</strong> (Tahoe's de facto clothing-optional beach — know before you go), and a rosary of unnamed pockets reached by short, steep scrambles from Highway 28 pullouts, where the payoff is the same water with a tenth of the people. Photographers come for <strong>Bonsai Rock</strong>, a boulder with four tiny trees growing out of a crack, best at dusk. <strong>Cave Rock</strong> — a sacred Washoe site the highway tunnels through — has a short summit trail locals rate as "pretty incredible" for whole-lake sunsets. The paved East Shore Trail (Incline to Sand Harbor) makes the north stretch walkable/bikeable if the lots defeat you.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>The east shore is where Tahoe's water does its best trick: giant rounded boulders in gin-clear turquoise, like someone airlifted the Seychelles to 6,200 feet. <strong>Sand Harbor</strong> is the famous version — gorgeous, and honestly managed like it: the lot sells out by mid-morning and summer now requires reservations; locals watch the crowds with resignation. The local version is everything south of it: <strong>Chimney Beach</strong>, <strong>Secret Cove</strong> (Tahoe's de facto clothing-optional beach — know before you go), and a rosary of unnamed pockets reached by short, steep scrambles from Highway 28 pullouts, where the payoff is the same water with a tenth of the people. Photographers come for <strong>Bonsai Rock</strong>, a boulder with four tiny trees growing out of a crack, best at dusk. <strong>Cave Rock</strong> — a sacred Washoe site the highway tunnels through — has a short summit trail locals rate as "pretty incredible" for whole-lake sunsets. The paved East Shore Trail (Incline to Sand Harbor) makes the north stretch walkable/bikeable if the lots defeat you.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Highway 28 south of Incline Village. For coves: park in the marked pullouts/lots between Sand Harbor and Skunk Harbor and take any use trail down — pack out everything, there are no facilities. Sand Harbor itself: reserve ahead or arrive at opening. This is a summer pin; the water never stops being cold, which after the scramble down is the point.</p></section>
     <div class="sources">Sources · <a href="https://parks.nv.gov/parks/lake-tahoe-nevada-state-park" target="_blank" rel="noopener">https://parks.nv.gov/parks/lake-tahoe-nevada-state-park</a>  ·  <a href="https://reddit.com/r/tahoe/" target="_blank" rel="noopener">https://reddit.com/r/tahoe/</a></div>
   </main>

@@ -76,6 +76,17 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
 </style></head>
 <body>
   <header class="hero">
@@ -95,6 +106,7 @@
     <div class="stat">Best<b>Hot summer weekdays for the river; the grove is good year-round</b></div>
     <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
   </div></div>
+  
   <main class="wrap">
     <section class="sec lead"><h2>The hook</h2><p>Old-growth redwoods you can walk in twenty flat minutes — and downstream, the San Lorenzo River pools into genuine swimming holes, including the worst-kept secret in the Santa Cruz Mountains, the Garden of Eden.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Henry Cowell's Redwood Grove Loop is the easiest real old-growth experience in the region: a level, under-a-mile walk among 1,500-year-old trees, including one John C. Frémont allegedly camped inside — big-tree awe without Muir Woods' shuttle-bus circus ("a bit of a hidden jewel — pretty secluded despite being off Highway 9"). The river is the summer version of the park: the San Lorenzo drops through sandstone pools, and locals finish grove walks with a dip ("there's a little swimming hole in the river... after a walk around the redwoods my kids always like a dip"). The famous one is the <strong>Garden of Eden</strong>, an emerald pool below Highway 9 — beautiful, and honestly no secret for decades ("I'm just old enough to remember when it was a sick Santa Cruz local spot"), so treat summer weekends as busy and go midweek. Steam-train bonus: the Roaring Camp railroad runs vintage engines through the park's redwoods from Felton.</p></section>
