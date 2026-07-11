@@ -2872,6 +2872,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.5015,
+          40.4585
+        ]
+      },
+      "properties": {
+        "slug": "lassen-bumpass-hell",
+        "name": "Lassen & Bumpass Hell",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h15m",
+        "hook": "California has its own Yellowstone and almost nobody goes: a plug-dome volcano that erupted in 1915, with a boiling basin named for the guide who fell through the crust and lost a leg showing it off.",
+        "tags": [
+          "volcano",
+          "fumaroles",
+          "boiling-springs",
+          "national-park",
+          "boardwalk",
+          "far-edge"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.6429,
           37.3414
         ]
