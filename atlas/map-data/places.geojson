@@ -103,6 +103,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.387,
+          35.8644
+        ]
+      },
+      "properties": {
+        "slug": "allensworth",
+        "name": "Colonel Allensworth State Historic Park",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h30m",
+        "hook": "The first California town founded, financed, and governed by Black Americans stands restored on the valley floor \u2014 schoolhouse, church, and library rebuilt exactly where Colonel Allensworth planted them in 1908.",
+        "tags": [
+          "black-history",
+          "town",
+          "state-park",
+          "central-valley",
+          1908,
+          "restored"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.2222,
           37.3969
         ]
@@ -1071,6 +1103,70 @@
           "food",
           "walking",
           "culture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.172,
+          39.136
+        ]
+      },
+      "properties": {
+        "slug": "city-of-ten-thousand-buddhas",
+        "name": "City of Ten Thousand Buddhas",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h10m",
+        "hook": "One of the largest Buddhist monastic communities in the Western Hemisphere occupies a former state mental hospital outside Ukiah \u2014 a hall lined floor to ceiling with ten thousand Buddha statues, and peacocks patrolling the grounds.",
+        "tags": [
+          "buddhist-monastery",
+          "former-asylum",
+          "peacocks",
+          "ukiah",
+          "vegetarian",
+          "pilgrimage"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.755,
+          38.9769
+        ]
+      },
+      "properties": {
+        "slug": "clear-lake-konocti",
+        "name": "Clear Lake & Mount Konocti",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h15m",
+        "hook": "The oldest lake in North America \u2014 holding water continuously for something like half a million years \u2014 sits two hours north of the bay under a dormant volcano, and almost nobody from the Bay Area has been.",
+        "tags": [
+          "oldest-lake",
+          "volcano",
+          "fishing",
+          "lake-county",
+          "eagles",
+          "overlooked"
         ],
         "stay": false,
         "season": []
