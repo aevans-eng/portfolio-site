@@ -5860,6 +5860,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.883,
+          37.38
+        ]
+      },
+      "properties": {
+        "slug": "san-jose-flea-market",
+        "name": "San Jose Flea Market",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "55m",
+        "hook": "\"La Pulga\" \u2014 one of the largest open-air markets in America since 1960 \u2014 is eight lanes of produce rows, taco smoke, quincea\u00f1era dresses, and live banda that most of the Bay Area north of it has never visited.",
+        "tags": [
+          "flea-market",
+          "scenes",
+          "food",
+          "la-pulga",
+          "since-1960",
+          "market"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4767,
           37.5773
         ]
@@ -6161,6 +6193,38 @@
           "accelerator",
           "science",
           "scale"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.906,
+          36.969
+        ]
+      },
+      "properties": {
+        "slug": "ss-palo-alto",
+        "name": "SS Palo Alto (the Cement Ship)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h25m",
+        "hook": "A concrete ocean tanker \u2014 built when WWI steel ran short \u2014 has been beached at the end of the Seacliff pier since 1930, spending its century as a dance-hall, a fishing spot, and now a crumbling seabird reef.",
+        "tags": [
+          "concrete-ship",
+          "wreck",
+          "seacliff",
+          "aptos",
+          1919,
+          "pier"
         ],
         "stay": false,
         "season": []
@@ -6900,6 +6964,39 @@
         ],
         "stay": false,
         "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.6284,
+          37.7285
+        ]
+      },
+      "properties": {
+        "slug": "yosemite-firefall",
+        "name": "Horsetail Fall \"Firefall\"",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h45m",
+        "hook": "For about two weeks each February, if the water is flowing and the sky is clear, the setting sun turns a thin waterfall on El Capitan into what looks exactly like molten fire pouring down the granite.",
+        "tags": [
+          "ephemeral",
+          "waterfall",
+          "light-phenomenon",
+          "february-only",
+          "el-capitan"
+        ],
+        "stay": false,
+        "season": [
+          2
+        ]
       }
     },
     {
