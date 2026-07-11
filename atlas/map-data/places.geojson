@@ -1118,6 +1118,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.8563,
+          37.5905
+        ]
+      },
+      "properties": {
+        "slug": "convict-lake",
+        "name": "Convict Lake",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5h (summer, via Tioga)",
+        "hook": "A glacial lake pinned against a 12,000-foot wall of banded rock, named for an 1871 shootout where escaped Carson City convicts killed a posse leader on its shore.",
+        "tags": [
+          "glacial-lake",
+          "eastern-sierra",
+          "aspens",
+          "shootout-history",
+          "fishing",
+          "loop-walk"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.438,
           38.266
         ]
@@ -2587,6 +2618,37 @@
           "davenport",
           "cliffs",
           "scramble"
+        ],
+        "stay": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.828,
+          37.6605
+        ]
+      },
+      "properties": {
+        "slug": "hot-creek",
+        "name": "Hot Creek Geological Site",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5h (summer, via Tioga)",
+        "hook": "A trout stream runs straight through the floor of a live volcanic caldera \u2014 boiling turquoise pools erupt in the creekbed itself, steam pouring off snowmelt water.",
+        "tags": [
+          "geothermal",
+          "turquoise-pools",
+          "caldera",
+          "mammoth",
+          "steam",
+          "no-swimming"
         ],
         "stay": false
       }
