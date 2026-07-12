@@ -6725,6 +6725,45 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.912,
+          38.1613
+        ]
+      },
+      "properties": {
+        "slug": "tomales-bioluminescence",
+        "name": "Tomales Bay Bioluminescence Paddle",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h15m + a night on the water",
+        "hook": "On moonless summer and fall nights, Tomales Bay glows \u2014 every paddle stroke ignites blue-green fire, fish trail comet streaks, and your wake burns behind you.",
+        "tags": [
+          "bioluminescence",
+          "night-kayak",
+          "ephemeral",
+          "tomales-bay",
+          "guided",
+          "glow"
+        ],
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.89,
           38.16
         ]
