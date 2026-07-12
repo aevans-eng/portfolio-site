@@ -3999,6 +3999,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.5836,
+          36.7947
+        ]
+      },
+      "properties": {
+        "slug": "kings-canyon",
+        "name": "Kings Canyon & Cedar Grove",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "A glacial gorge deeper than the Grand Canyon runs into the southern Sierra, and John Muir thought it beat Yosemite.",
+        "tags": [
+          "glacial-canyon",
+          "kings-river",
+          "cedar-grove",
+          "zumwalt-meadow",
+          "sequoia-kings",
+          "john-muir"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.487,
           37.829
         ]
@@ -4422,6 +4454,38 @@
           9,
           10
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1542,
+          36.7284
+        ]
+      },
+      "properties": {
+        "slug": "manzanar",
+        "name": "Manzanar National Historic Site",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5.5h",
+        "hook": "Between the highway and the Sierra wall, the government held eleven thousand of its own citizens behind barbed wire for being of Japanese descent.",
+        "tags": [
+          "history",
+          "wwii",
+          "japanese-american-incarceration",
+          "owens-valley",
+          "nps",
+          "reckoning"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
