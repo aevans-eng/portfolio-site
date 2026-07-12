@@ -826,6 +826,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.3617,
+          37.9036
+        ]
+      },
+      "properties": {
+        "slug": "brooks-island",
+        "name": "Brooks Island",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m + a guided paddle",
+        "hook": "A whole island in the middle of the bay \u2014 2,500-year-old Ohlone shellmound, a 160-foot summit, and Bing Crosby's old private hunting club \u2014 closed to everyone except a handful of naturalist-led paddle tours a year.",
+        "tags": [
+          "island",
+          "guided-only",
+          "shellmound",
+          "kayak",
+          "richmond",
+          "bing-crosby"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.254,
           37.43
         ]
@@ -2099,6 +2131,45 @@
           6,
           7,
           8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.0034,
+          37.6989
+        ]
+      },
+      "properties": {
+        "slug": "farallon-islands",
+        "name": "Farallon Islands (by boat)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "boat-only \u2014 full-day cruise from SF",
+        "hook": "Twenty-seven miles off the Golden Gate stand the \"Devil's Teeth\" \u2014 the wildest place in the Bay Area, home to the largest US seabird colony south of Alaska, patrolled by great whites, visitable only by a day-long boat pilgrimage.",
+        "tags": [
+          "islands",
+          "boat-only",
+          "whales",
+          "seabirds",
+          "egg-war",
+          "wildest-place"
+        ],
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
         ]
       }
     },
