@@ -1095,6 +1095,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.505,
+          38.5847
+        ]
+      },
+      "properties": {
+        "slug": "ca-railroad-museum",
+        "name": "California State Railroad Museum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h30m",
+        "hook": "Twenty-one lavishly restored locomotives and cars \u2014 some dating to 1863 \u2014 fill a cavernous hall in Old Sacramento, in what's widely called the finest railroad museum in North America, on the ground where the transcontinental railroad actually began.",
+        "tags": [
+          "railroad",
+          "museum",
+          "old-sacramento",
+          "transcontinental",
+          "locomotives",
+          "restored"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.3105,
           38.2769
         ]
@@ -3492,6 +3524,38 @@
           12,
           1
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.866,
+          38.115
+        ]
+      },
+      "properties": {
+        "slug": "inverness-shipwreck",
+        "name": "The Inverness Shipwreck (SS Point Reyes)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h20m",
+        "hook": "A wooden fishing boat that beached itself on the Tomales Bay mudflats decades ago and never left \u2014 listing in the reeds, weathered silver, one of the most photographed wrecks in California.",
+        "tags": [
+          "shipwreck",
+          "abandoned",
+          "tomales-bay",
+          "photography",
+          "fire-damaged",
+          "at-risk"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
