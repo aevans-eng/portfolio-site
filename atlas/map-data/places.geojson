@@ -3605,6 +3605,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.814,
+          39.376
+        ]
+      },
+      "properties": {
+        "slug": "jughandle-staircase",
+        "name": "Jughandle Ecological Staircase",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3h15m",
+        "hook": "A single trail near Mendocino climbs a \"staircase\" of five sea terraces \u2014 each one about 100,000 years older than the one below it \u2014 so you walk from young coastal prairie up half a million years to a forest of full-grown trees stunted to waist height.",
+        "tags": [
+          "ecological-staircase",
+          "marine-terraces",
+          "pygmy-forest",
+          "geology",
+          "mendocino",
+          "science"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.2747,
           37.3188
         ]
@@ -5940,6 +5972,38 @@
           "quiet",
           "trails",
           "gravel"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.928,
+          38.356
+        ]
+      },
+      "properties": {
+        "slug": "preston-castle",
+        "name": "Preston Castle",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h15m",
+        "hook": "A 120-room Romanesque castle rises over the Gold Country town of Ione \u2014 built in 1894 not as a mansion but as a reform school, and abandoned with a reputation dark enough that ghost-hunting TV keeps coming back.",
+        "tags": [
+          "reform-school",
+          "romanesque-revival",
+          "ruins",
+          "ione",
+          "haunted",
+          "amador"
         ],
         "stay": false,
         "season": []
