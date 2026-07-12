@@ -1899,6 +1899,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.085,
+          37.625
+        ]
+      },
+      "properties": {
+        "slug": "devils-postpile",
+        "name": "Devils Postpile & Rainbow Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5h30m (summer, via Tioga)",
+        "hook": "A cliff of basalt columns so geometrically perfect it looks stacked by hand \u2014 60-foot hexagonal posts a glacier sheared off and polished flat on top, so you can walk out onto the columns' honeycombed ends like paving stones.",
+        "tags": [
+          "columnar-basalt",
+          "glacial-polish",
+          "waterfall",
+          "national-monument",
+          "mammoth",
+          "day-section"
+        ],
+        "stay": false,
+        "season": [
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.5133,
           37.5762
         ]
@@ -5536,6 +5572,38 @@
           "sinkholes",
           "whales",
           "far-edge"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5296,
+          37.8158
+        ]
+      },
+      "properties": {
+        "slug": "point-bonita-lighthouse",
+        "name": "Point Bonita Lighthouse",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "30m",
+        "hook": "The only lighthouse in America you reach by crossing a suspension bridge \u2014 out a hand-carved rock tunnel and over a miniature Golden Gate to a light clinging to the last crag of the Marin Headlands, where the Bay meets the ocean.",
+        "tags": [
+          "lighthouse",
+          "tunnel",
+          "suspension-bridge",
+          "marin-headlands",
+          "last-manned",
+          "golden-gate"
         ],
         "stay": false,
         "season": []
