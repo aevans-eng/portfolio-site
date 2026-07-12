@@ -737,6 +737,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.1041,
+          38.5119
+        ]
+      },
+      "properties": {
+        "slug": "berryessa-glory-hole",
+        "name": "The Glory Hole (Lake Berryessa)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1.5h",
+        "hook": "When Lake Berryessa fills past the brim, the overflow doesn't run over a dam. It vanishes down a 72-foot hole in the middle of the water.",
+        "tags": [
+          "spillway",
+          "oddity",
+          "engineering",
+          "lake-berryessa",
+          "monticello-dam",
+          "napa"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.222,
           37.172
         ]
@@ -7835,6 +7867,39 @@
           "mt-tam",
           "hike",
           "family"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.515,
+          38.437
+        ]
+      },
+      "properties": {
+        "slug": "sugarloaf-ridge",
+        "name": "Sugarloaf Ridge & the Ferguson Observatory",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1.25h",
+        "hook": "A state park in the Sonoma hills holds the largest observatory in the West built purely for the public, under some of the darkest skies near the Bay.",
+        "tags": [
+          "observatory",
+          "dark-sky",
+          "waterfall",
+          "bald-mountain",
+          "mayacamas",
+          "sonoma",
+          "hiking"
         ],
         "stay": false,
         "season": []
