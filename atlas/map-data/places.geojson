@@ -2914,6 +2914,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.789,
+          36.616
+        ]
+      },
+      "properties": {
+        "slug": "fort-ord",
+        "name": "Fort Ord National Monument",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h",
+        "hook": "An army base where soldiers trained for three wars is now 86 miles of trail across the hills above Monterey Bay.",
+        "tags": [
+          "national-monument",
+          "former-army-base",
+          "maritime-chaparral",
+          "mountain-biking",
+          "trails",
+          "monterey",
+          "blm"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.477,
           37.8106
         ]
@@ -5823,6 +5856,39 @@
           "antiques",
           "time-capsule",
           "fremont"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8996,
+          36.9846
+        ]
+      },
+      "properties": {
+        "slug": "nisene-marks",
+        "name": "Forest of Nisene Marks",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1.5h",
+        "hook": "The epicenter of the earthquake that stopped the 1989 World Series is a small sign in the woods, and you can hike to it.",
+        "tags": [
+          "redwoods",
+          "loma-prieta",
+          "earthquake",
+          "aptos",
+          "logging-history",
+          "trails",
+          "santa-cruz"
         ],
         "stay": false,
         "season": []
