@@ -8557,6 +8557,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.4685,
+          38.5722
+        ]
+      },
+      "properties": {
+        "slug": "sutters-fort",
+        "name": "Sutter's Fort",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1.75h",
+        "hook": "The adobe fort a Swiss immigrant built in 1839 became the seed the whole city of Sacramento grew around, and it's still standing in the middle of it.",
+        "tags": [
+          "history",
+          1839,
+          "john-sutter",
+          "donner-party",
+          "gold-rush",
+          "sacramento",
+          "state-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.456,
           37.612
         ]
