@@ -5332,6 +5332,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.866,
+          35.369
+        ]
+      },
+      "properties": {
+        "slug": "morro-rock",
+        "name": "Morro Rock",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3.5h",
+        "hook": "A 581-foot volcanic plug rises straight out of the water at the harbor mouth, sacred to two tribes and closed to climbers, with peregrines nesting on its face.",
+        "tags": [
+          "volcanic-plug",
+          "morro-bay",
+          "nine-sisters",
+          "chumash-sacred",
+          "peregrine-falcon",
+          "central-coast"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.5155,
           37.5306
         ]
@@ -8064,6 +8096,38 @@
           "mayacamas",
           "sonoma",
           "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.377,
+          40.5945
+        ]
+      },
+      "properties": {
+        "slug": "sundial-bridge",
+        "name": "Sundial Bridge",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3.25h",
+        "hook": "A white spar leans over the Sacramento River in Redding, holding up a glass-decked footbridge that is also a working sundial, one of the largest in the world.",
+        "tags": [
+          "architecture",
+          "calatrava",
+          "sundial",
+          "sacramento-river",
+          "redding",
+          "turtle-bay"
         ],
         "stay": false,
         "season": []
