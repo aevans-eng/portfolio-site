@@ -3605,6 +3605,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.823,
+          38.274
+        ]
+      },
+      "properties": {
+        "slug": "jepson-prairie",
+        "name": "Jepson Prairie",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h15m",
+        "hook": "For a few weeks each spring, one of California's last great vernal-pool prairies performs its trick: as the seasonal lakes evaporate, native wildflowers bloom outward in concentric rings of yellow, white, and blue chasing the shrinking water.",
+        "tags": [
+          "vernal-pools",
+          "wildflowers",
+          "fairy-shrimp",
+          "prairie",
+          "ephemeral",
+          "solano"
+        ],
+        "stay": false,
+        "season": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.814,
           39.376
         ]
@@ -4688,6 +4724,38 @@
           "henry-miller",
           "gilroy",
           "camping"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.628,
+          38.68
+        ]
+      },
+      "properties": {
+        "slug": "mount-st-helena",
+        "name": "Mount St. Helena & the Silverado Squat",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h45m",
+        "hook": "Robert Louis Stevenson spent his honeymoon squatting in an abandoned mine bunkhouse on this mountain above Calistoga \u2014 and the 4,343-foot summit he climbed still gives, on the right day, a view from the Pacific to Mount Shasta.",
+        "tags": [
+          "summit",
+          "robert-louis-stevenson",
+          "silverado",
+          "big-view",
+          "napa",
+          "hike"
         ],
         "stay": false,
         "season": []
