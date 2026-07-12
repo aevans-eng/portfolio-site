@@ -669,6 +669,45 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.067,
+          38.304
+        ]
+      },
+      "properties": {
+        "slug": "bodega-head",
+        "name": "Bodega Head & the Hole in the Head",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h30m",
+        "hook": "A granite headland that rode up the San Andreas Fault from hundreds of miles south \u2014 with cliffs among the best gray-whale perches on the coast, and a pond that's really the abandoned excavation for a nuclear plant nobody dared build.",
+        "tags": [
+          "headland",
+          "whale-watching",
+          "san-andreas",
+          "abandoned-nuclear",
+          "marine-lab",
+          "bodega-bay"
+        ],
+        "stay": false,
+        "season": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          12
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.974,
           38.351
         ]
@@ -5966,6 +6005,38 @@
           "swimming-hole",
           "remote",
           "easy"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.331,
+          38.571
+        ]
+      },
+      "properties": {
+        "slug": "salt-point",
+        "name": "Salt Point State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h15m",
+        "hook": "Six thousand acres of Sonoma coast where the sandstone bluffs are eaten into honeycomb lacework, one of California's first underwater parks lies just offshore, and the ridgetop forest is a garden of full-grown trees stunted to knee height.",
+        "tags": [
+          "tafoni",
+          "pygmy-forest",
+          "underwater-park",
+          "sonoma-coast",
+          "rhododendron",
+          "sandstone"
         ],
         "stay": false,
         "season": []
