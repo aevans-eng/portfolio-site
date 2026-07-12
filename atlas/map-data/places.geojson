@@ -2694,6 +2694,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -124.0645,
+          41.4001
+        ]
+      },
+      "properties": {
+        "slug": "fern-canyon",
+        "name": "Fern Canyon & Gold Bluffs Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5.5h",
+        "hook": "A creek runs down a canyon whose walls stand fifty feet high and solid green with ferns, some from plant families older than the dinosaurs.",
+        "tags": [
+          "fern-canyon",
+          "redwoods",
+          "prairie-creek",
+          "roosevelt-elk",
+          "jurassic-park",
+          "gold-bluffs",
+          "humboldt"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4041,
           37.8022
         ]
@@ -2994,6 +3027,38 @@
           "wildflowers",
           "hidden",
           "coastal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.7514,
+          36.5816
+        ]
+      },
+      "properties": {
+        "slug": "general-sherman",
+        "name": "General Sherman & the Giant Forest",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5.5h",
+        "hook": "The largest living thing on Earth by volume is a giant sequoia in the southern Sierra, and it stands in a forest full of trees nearly its size.",
+        "tags": [
+          "giant-sequoia",
+          "largest-tree",
+          "giant-forest",
+          "sequoia-np",
+          "old-growth",
+          "tulare"
         ],
         "stay": false,
         "season": []
