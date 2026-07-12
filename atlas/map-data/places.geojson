@@ -3584,6 +3584,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.4862,
+          37.7694
+        ]
+      },
+      "properties": {
+        "slug": "golden-gate-park",
+        "name": "Golden Gate Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "A thousand acres of made land, bigger than Central Park, holding the oldest Japanese garden in the country, a Victorian glass conservatory, and a paddock of bison.",
+        "tags": [
+          "urban-park",
+          "japanese-tea-garden",
+          "conservatory-of-flowers",
+          "bison",
+          "museums",
+          "san-francisco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.452,
           37.7896
         ]
@@ -6627,6 +6659,38 @@
           "victorian",
           "butterflies",
           "tidepools"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4485,
+          37.8029
+        ]
+      },
+      "properties": {
+        "slug": "palace-of-fine-arts",
+        "name": "Palace of Fine Arts",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "in SF",
+        "hook": "A monumental Roman rotunda reflected in a lagoon, built as a fake ruin for a 1915 world's fair and the only building from it left standing.",
+        "tags": [
+          "architecture",
+          "maybeck",
+          "1915-exposition",
+          "rotunda",
+          "marina",
+          "san-francisco"
         ],
         "stay": false,
         "season": []
