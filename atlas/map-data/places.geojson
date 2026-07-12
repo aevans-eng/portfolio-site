@@ -5929,6 +5929,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.087,
+          37.301
+        ]
+      },
+      "properties": {
+        "slug": "picchetti-ranch",
+        "name": "Picchetti Ranch & Winery",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h",
+        "hook": "One of the oldest surviving wineries in California still stands on the Monte Bello ridge above Cupertino \u2014 an 1870s Italian homestead where peacocks strut the grounds and you can taste wine on the porch of a building older than the state's wine industry.",
+        "tags": [
+          "historic-winery",
+          "peacocks",
+          "homestead",
+          "monte-bello",
+          "open-space",
+          "tasting"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.2555,
           35.6625
         ]
@@ -7959,6 +7991,38 @@
           "summit",
           "coastal-views",
           "wilderness"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.045,
+          37.238
+        ]
+      },
+      "properties": {
+        "slug": "villa-montalvo",
+        "name": "Villa Montalvo",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h5m",
+        "hook": "A senator built an Italian Mediterranean villa into the Saratoga foothills in 1912, filled it with carved Granada doors and hand-worked woodwork, and left it to California \u2014 where it became one of the country's oldest artist residencies, ringed by free hiking trails.",
+        "tags": [
+          "italian-villa",
+          "arts-center",
+          "artist-residency",
+          "gardens",
+          "trails",
+          "saratoga"
         ],
         "stay": false,
         "season": []
