@@ -86,6 +86,52 @@
     {
       "type": "Feature",
       "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -121.75,
+            38.02
+          ],
+          [
+            -121.69,
+            38.09
+          ],
+          [
+            -121.61,
+            38.16
+          ],
+          [
+            -121.575,
+            38.21
+          ],
+          [
+            -121.51,
+            38.24
+          ],
+          [
+            -121.5088,
+            38.2508
+          ],
+          [
+            -121.52,
+            38.33
+          ],
+          [
+            -121.5,
+            38.42
+          ]
+        ]
+      },
+      "properties": {
+        "slug": "delta-levee-loop",
+        "name": "The Delta Levee Loop (Hwy 160)",
+        "kind": "route",
+        "color": "#8a6d3b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -117,6 +163,48 @@
         "name": "The Mission",
         "kind": "wander-zone",
         "color": "#c17d3a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -121.818,
+            37.372
+          ],
+          [
+            -121.79,
+            37.376
+          ],
+          [
+            -121.76,
+            37.366
+          ],
+          [
+            -121.72,
+            37.356
+          ],
+          [
+            -121.69,
+            37.34
+          ],
+          [
+            -121.665,
+            37.335
+          ],
+          [
+            -121.6429,
+            37.3414
+          ]
+        ]
+      },
+      "properties": {
+        "slug": "mt-hamilton-road",
+        "name": "Mount Hamilton Road (Hwy 130)",
+        "kind": "route",
+        "color": "#8a6d3b"
       }
     },
     {

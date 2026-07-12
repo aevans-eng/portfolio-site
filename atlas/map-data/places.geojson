@@ -1660,6 +1660,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.575,
+          38.21
+        ]
+      },
+      "properties": {
+        "slug": "delta-levee-loop",
+        "name": "The Delta Levee Loop (Hwy 160)",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h10m to the south end",
+        "hook": "Highway 160 rides the top of the Sacramento River levees for forty miles \u2014 eye-level with boat traffic, above the sunken islands, through drawbridges and towns the twentieth century forgot to update.",
+        "tags": [
+          "route",
+          "levee-roads",
+          "drawbridges",
+          "river-towns",
+          "delta",
+          "slow-drive"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.5133,
           37.5762
         ]
@@ -4291,6 +4323,37 @@
           "views",
           "walk",
           "oakland"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.72,
+          37.356
+        ]
+      },
+      "properties": {
+        "slug": "mt-hamilton-road",
+        "name": "Mount Hamilton Road (Hwy 130)",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h to the base",
+        "hook": "Nineteen miles and roughly 365 turns, graded gently enough for horse-drawn telescope wagons in 1876 \u2014 which is exactly why cyclists and drivers treat it as the Bay Area's great ceremonial climb.",
+        "tags": [
+          "route",
+          "twisty-road",
+          "cycling-benchmark",
+          "observatory",
+          "tarantulas"
         ],
         "stay": false,
         "season": []
