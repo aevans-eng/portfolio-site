@@ -669,6 +669,48 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.864,
+          37.964
+        ]
+      },
+      "properties": {
+        "slug": "black-diamond-mines",
+        "name": "Black Diamond Mines",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h",
+        "hook": "Northern California's largest coal mining district ran in these hills above Antioch \u2014 five vanished towns, a hilltop pioneer cemetery, and a sand mine you can walk 950 feet into on a lantern-lit tour.",
+        "tags": [
+          "coal-mine",
+          "sand-mine",
+          "underground-tour",
+          "ghost-towns",
+          "cemetery",
+          "east-bay"
+        ],
+        "stay": false,
+        "season": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.067,
           38.304
         ]
@@ -6709,6 +6751,38 @@
           "free",
           "hidden",
           "fun"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.199,
+          37.8497
+        ]
+      },
+      "properties": {
+        "slug": "sibley-volcanic",
+        "name": "Sibley Volcanic Preserve",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "30m",
+        "hook": "A ten-million-year-old volcano lies in the Oakland hills \u2014 tipped on its side by the Hayward Fault so you can walk straight into its guts \u2014 and someone has laid stone labyrinths in the old quarry pits at the bottom.",
+        "tags": [
+          "extinct-volcano",
+          "labyrinth",
+          "hayward-fault",
+          "oakland-hills",
+          "geology",
+          "meditation"
         ],
         "stay": false,
         "season": []
