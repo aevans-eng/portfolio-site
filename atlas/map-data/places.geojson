@@ -581,6 +581,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.4836,
+          37.7936
+        ]
+      },
+      "properties": {
+        "slug": "baker-beach",
+        "name": "Baker Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "The classic Golden Gate view from the sand, a disappearing cannon in the dunes behind it, and the beach where Burning Man started with twenty people and an eight-foot wooden man.",
+        "tags": [
+          "beach",
+          "golden-gate-view",
+          "burning-man",
+          "battery-chamberlin",
+          "presidio",
+          "san-francisco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.136,
           37.415
         ]
@@ -8257,6 +8289,39 @@
           "sacramento-river",
           "redding",
           "turtle-bay"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.514,
+          37.7795
+        ]
+      },
+      "properties": {
+        "slug": "sutro-heights",
+        "name": "Sutro Heights Park",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "in SF",
+        "hook": "A silver baron built a clifftop estate above the Cliff House, filled its gardens with two hundred statues, and opened it to the public for a dime; the mansion is gone but the parapet and the lions remain.",
+        "tags": [
+          "ruins",
+          "garden",
+          "adolph-sutro",
+          "ocean-view",
+          "lands-end",
+          "san-francisco",
+          "history"
         ],
         "stay": false,
         "season": []
