@@ -1040,6 +1040,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.366,
+          39.009
+        ]
+      },
+      "properties": {
+        "slug": "boonville-boontling",
+        "name": "Boonville & the Boontling Language",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2.5h",
+        "hook": "An isolated valley town invented its own language in the 1890s, some 1,600 words of it, and spent the next century speaking a tongue nobody outside could follow.",
+        "tags": [
+          "folk-language",
+          "boontling",
+          "boonville",
+          "anderson-valley",
+          "oddity",
+          "mendocino",
+          "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.651,
           38.867
         ]
@@ -1547,6 +1580,39 @@
           "calistoga",
           "torture-chamber",
           "obsession-build"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.568,
+          37.38
+        ]
+      },
+      "properties": {
+        "slug": "castle-air-museum",
+        "name": "Castle Air Museum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h",
+        "hook": "Eighty-odd military aircraft sit out on a field in the Central Valley, an SR-71 and a B-52 among them, on the old bomber base that once flew them.",
+        "tags": [
+          "aviation",
+          "military-aircraft",
+          "sr-71",
+          "cold-war",
+          "atwater",
+          "central-valley",
+          "museum"
         ],
         "stay": false,
         "season": []
@@ -6141,6 +6207,39 @@
           "rail-trail",
           "bike",
           "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.493,
+          40.599
+        ]
+      },
+      "properties": {
+        "slug": "old-shasta",
+        "name": "Old Shasta (Shasta State Historic Park)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3.5h",
+        "hook": "A half-mile of roofless brick storefronts with iron doors is nearly all that's left of the town that was once the capital of California's northern gold mines.",
+        "tags": [
+          "ghost-town",
+          "gold-rush",
+          "brick-ruins",
+          "state-historic-park",
+          "redding",
+          "shasta",
+          "history"
         ],
         "stay": false,
         "season": []
