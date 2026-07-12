@@ -4001,6 +4001,45 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.51,
+          41.714
+        ]
+      },
+      "properties": {
+        "slug": "lava-beds",
+        "name": "Lava Beds National Monument",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "A volcanic tableland in California's far northeast is riddled with more than 700 lava-tube caves you explore by headlamp \u2014 and one of them, a natural lava fortress, is where 53 Modoc fighters held off ten times their number for months.",
+        "tags": [
+          "lava-tubes",
+          "caves",
+          "modoc-war",
+          "petroglyphs",
+          "volcanic",
+          "far-edge"
+        ],
+        "stay": false,
+        "season": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.6429,
           37.3414
         ]
@@ -4957,6 +4996,44 @@
         ],
         "stay": false,
         "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.197,
+          41.36
+        ]
+      },
+      "properties": {
+        "slug": "mount-shasta",
+        "name": "Mount Shasta",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5h",
+        "hook": "A 14,179-foot glaciered volcano stands alone above the far-north forests, visible for a hundred miles \u2014 sacred to the Wintu and Karuk, a magnet for mountaineers and mystics alike, with an alpine spring-meadow you can walk to near the timberline.",
+        "tags": [
+          "volcano",
+          "sacred-mountain",
+          "panther-meadows",
+          "climbing",
+          "cascades",
+          "far-north"
+        ],
+        "stay": false,
+        "season": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
       }
     },
     {
