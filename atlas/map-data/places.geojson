@@ -607,6 +607,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.4156,
+          37.743
+        ]
+      },
+      "properties": {
+        "slug": "bernal-heights",
+        "name": "Bernal Heights Summit",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "A bare grassy hill in the middle of San Francisco with a full 360\u00b0 of the city \u2014 downtown, both bridges, the bay, San Bruno Mountain \u2014 and, when the city hasn't taken it down yet, a rope swing hung from the one tree, out over the whole view.",
+        "tags": [
+          "summit",
+          "360-view",
+          "off-leash-dogs",
+          "swing",
+          "neighborhood-gem",
+          "sunset"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.222,
           37.172
         ]
@@ -3725,6 +3757,38 @@
           "counterculture",
           "redwoods",
           "roadside"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.487,
+          37.829
+        ]
+      },
+      "properties": {
+        "slug": "kirby-cove",
+        "name": "Kirby Cove",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "25m + a steep mile walk in",
+        "hook": "A hidden cove tucked directly beneath the Marin end of the Golden Gate Bridge \u2014 a coarse-sand beach framed by cypress and a WWII gun battery, where you look up at the bridge's underside and out at San Francisco across the water.",
+        "tags": [
+          "beach",
+          "golden-gate-view",
+          "walk-in-campground",
+          "battery",
+          "marin-headlands",
+          "swing"
         ],
         "stay": false,
         "season": []
