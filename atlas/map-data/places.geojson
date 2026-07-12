@@ -1225,6 +1225,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.542,
+          38.558
+        ]
+      },
+      "properties": {
+        "slug": "castello-di-amorosa",
+        "name": "Castello di Amorosa",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h30m",
+        "hook": "One man spent $40 million and fifteen years building an authentically medieval Tuscan castle in Calistoga \u2014 107 rooms, a moat, a drawbridge, and a real dungeon with a genuine late-Renaissance iron maiden \u2014 that happens to sell wine.",
+        "tags": [
+          "castle",
+          "winery",
+          "medieval",
+          "calistoga",
+          "torture-chamber",
+          "obsession-build"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.1817,
           37.8189
         ]
@@ -1731,6 +1763,38 @@
           "wildlife",
           "bay-trail",
           "family"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.953,
+          38.087
+        ]
+      },
+      "properties": {
+        "slug": "cypress-tree-tunnel",
+        "name": "Cypress Tree Tunnel & KPH Radio",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h20m",
+        "hook": "A quarter-mile corridor of Monterey cypress, planted around 1930, leads to a white Art Deco radio station that took down the first West Coast word of Pearl Harbor \u2014 and still taps out Morse code today.",
+        "tags": [
+          "tree-tunnel",
+          "art-deco",
+          "morse-code",
+          "radio-station",
+          "pearl-harbor",
+          "point-reyes"
         ],
         "stay": false,
         "season": []
