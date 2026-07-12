@@ -6299,6 +6299,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.067,
+          37.047
+        ]
+      },
+      "properties": {
+        "slug": "roaring-camp",
+        "name": "Roaring Camp Railroads",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h15m",
+        "hook": "Century-old steam locomotives haul you up some of the steepest railroad grades in North America, straight through old-growth redwoods \u2014 on engines dating to 1890, among the oldest authentically preserved narrow-gauge steam still running regular passenger service in America.",
+        "tags": [
+          "narrow-gauge",
+          "steam-train",
+          "redwoods",
+          "felton",
+          "beach-train",
+          "historic-locomotives"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.17,
           37.4322
         ]
@@ -7658,6 +7690,38 @@
           "quiet",
           "marina",
           "subtle"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.085,
+          36.961
+        ]
+      },
+      "properties": {
+        "slug": "wilder-ranch",
+        "name": "Wilder Ranch",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h20m",
+        "hook": "A perfectly preserved 1890s dairy ranch sits at the foot of a staircase of fault-lifted coastal terraces just north of Santa Cruz \u2014 7,000 acres where you walk or ride out onto sea-cliff prairie and, on the way, tour a Victorian farmstead still running its water-powered machine shop.",
+        "tags": [
+          "coastal-terraces",
+          "historic-ranch",
+          "mountain-biking",
+          "bluffs",
+          "santa-cruz",
+          "dairy"
         ],
         "stay": false,
         "season": []
