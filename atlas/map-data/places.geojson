@@ -105,6 +105,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.423,
+          37.8267
+        ]
+      },
+      "properties": {
+        "slug": "alcatraz",
+        "name": "Alcatraz Island",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "The most famous prison in America sits on an island in the bay, and its fullest story isn't the cellblock but the nineteen months a group of Native activists held it.",
+        "tags": [
+          "prison",
+          "island",
+          "native-occupation",
+          "escape",
+          "national-park",
+          "san-francisco",
+          "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.2953,
           37.3877
         ]
@@ -2327,6 +2360,38 @@
           "wildlife",
           "bay-trail",
           "family"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.501,
+          38.576
+        ]
+      },
+      "properties": {
+        "slug": "crocker-art-museum",
+        "name": "Crocker Art Museum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1.75h",
+        "hook": "The oldest art museum in the West sits in a Sacramento railroad baron's 1872 mansion, gallery upstairs and a bowling alley down.",
+        "tags": [
+          "art-museum",
+          "oldest-in-west",
+          "crocker",
+          "victorian",
+          "sacramento",
+          "central-valley"
         ],
         "stay": false,
         "season": []
