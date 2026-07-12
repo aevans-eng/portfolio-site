@@ -831,6 +831,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.636,
+          38.418
+        ]
+      },
+      "properties": {
+        "slug": "black-chasm",
+        "name": "Black Chasm Cavern",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2.75h",
+        "hook": "A Gold Country cave holds more than ten thousand helictites \u2014 crystals that ignore gravity, twisting sideways and up out of the walls like frozen smoke.",
+        "tags": [
+          "cavern",
+          "helictites",
+          "national-natural-landmark",
+          "geology",
+          "volcano",
+          "gold-country"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.864,
           37.964
         ]
@@ -5137,6 +5169,39 @@
           8,
           9
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.887,
+          35.271
+        ]
+      },
+      "properties": {
+        "slug": "montana-de-oro",
+        "name": "Monta\u00f1a de Oro State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3.75h",
+        "hook": "One of California's largest and least-tamed state parks: eight thousand acres of golden cliffs, sea caves, and blowholes just south of Morro Bay.",
+        "tags": [
+          "wild-coast",
+          "bluff-trail",
+          "tide-pools",
+          "sea-caves",
+          "state-park",
+          "los-osos",
+          "central-coast"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
