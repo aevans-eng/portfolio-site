@@ -1232,6 +1232,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.92,
+          36.5442
+        ]
+      },
+      "properties": {
+        "slug": "carmel-mission",
+        "name": "Carmel Mission (San Carlos Borromeo)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h10m",
+        "hook": "The stone basilica in Carmel was the headquarters of the entire California mission chain \u2014 and Jun\u00edpero Serra, who ran all of it from here, is buried under the altar floor where he died in 1784.",
+        "tags": [
+          "mission",
+          "serra",
+          "basilica",
+          1771,
+          "headquarters",
+          "restored"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.175,
           38.048
         ]
@@ -3950,6 +3982,38 @@
           "delta",
           "time-capsule",
           "national-landmark"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9656,
+          36.568
+        ]
+      },
+      "properties": {
+        "slug": "lone-cypress-17mile",
+        "name": "The Lone Cypress & 17-Mile Drive",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h15m",
+        "hook": "A solitary cypress has clung to a bare granite headland over Carmel Bay for some 250 years \u2014 one of the most photographed trees in North America \u2014 anchoring a private coastal drive that's been a scenic pilgrimage since the 1880s.",
+        "tags": [
+          "scenic-drive",
+          "lone-cypress",
+          "pebble-beach",
+          "monterey-cypress",
+          "toll-road",
+          "coast"
         ],
         "stay": false,
         "season": []
