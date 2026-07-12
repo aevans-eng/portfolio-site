@@ -1233,6 +1233,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.5137,
+          37.7787
+        ]
+      },
+      "properties": {
+        "slug": "camera-obscura-sf",
+        "name": "The Camera Obscura",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "in SF",
+        "hook": "A building shaped like a giant camera perches on the cliff by the old Cliff House \u2014 and inside, a rotating lens quietly projects a live, moving 360\u00b0 image of the crashing ocean onto a dish in a dark room, exactly as it has since 1946.",
+        "tags": [
+          "camera-obscura",
+          "cliff-house",
+          "lands-end",
+          "national-register",
+          "giant-camera",
+          "optics"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.9233,
           36.5552
         ]
@@ -1385,6 +1417,38 @@
           "calistoga",
           "torture-chamber",
           "obsession-build"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.096,
+          37.231
+        ]
+      },
+      "properties": {
+        "slug": "castle-rock",
+        "name": "Castle Rock State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1h5m",
+        "hook": "High on the Santa Cruz Mountains' crest, wind and rain have hollowed the sandstone into honeycombed caves and bulbous formations that look like sleeping stone giants \u2014 a natural climbing gym where a young Chris Sharma learned the sport.",
+        "tags": [
+          "tafoni",
+          "sandstone-caves",
+          "rock-climbing",
+          "waterfall",
+          "skyline-to-the-sea",
+          "santa-cruz"
         ],
         "stay": false,
         "season": []
