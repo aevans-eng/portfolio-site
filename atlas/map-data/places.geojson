@@ -1978,6 +1978,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.401,
+          38.0355
+        ]
+      },
+      "properties": {
+        "slug": "columbia-shp",
+        "name": "Columbia State Historic Park",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2.5h",
+        "hook": "A whole gold-rush town survives with no cars in it, costumed shopkeepers working the same trades, and a stagecoach still running the main street.",
+        "tags": [
+          "gold-rush",
+          "living-history",
+          "state-park",
+          "stagecoach",
+          "tuolumne",
+          "sonora",
+          "1850s"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.077,
           37.414
         ]
@@ -8683,6 +8716,39 @@
           "quiet",
           "marina",
           "subtle"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.941,
+          40.7315
+        ]
+      },
+      "properties": {
+        "slug": "weaverville-joss-house",
+        "name": "Weaverville Joss House",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4.5h",
+        "hook": "In a gold-rush town four hours north, the oldest continuously used Chinese temple in California still burns incense at an altar carried over from China in the 1870s.",
+        "tags": [
+          "chinese-temple",
+          "taoist",
+          "gold-rush",
+          "state-historic-park",
+          "weaverville",
+          "trinity",
+          "history"
         ],
         "stay": false,
         "season": []
