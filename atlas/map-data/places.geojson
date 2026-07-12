@@ -1990,9 +1990,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "in SF",
         "hook": "A bare red-rock crown above the Castro with a full downtown panorama \u2014 and on its flank, a wall of chert polished to a mirror by the fault that shaped it, one of the best \"slickensides\" geologists can show you anywhere.",
         "tags": [
