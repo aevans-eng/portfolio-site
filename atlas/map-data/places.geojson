@@ -355,6 +355,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.068,
+          38.871
+        ]
+      },
+      "properties": {
+        "slug": "angora-lakes",
+        "name": "Angora Lakes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "Up a one-lane road above Fallen Leaf Lake, two small lakes sit in a granite bowl, and the resort at the top has been selling the same lemonade for a century.",
+        "tags": [
+          "alpine-lake",
+          "swimming",
+          "historic-resort",
+          "lemonade",
+          "fallen-leaf",
+          "tahoe",
+          "family"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.3378,
           37.1082
         ]
@@ -2194,6 +2227,39 @@
           "river-towns",
           "delta",
           "slow-drive"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.145,
+          38.862
+        ]
+      },
+      "properties": {
+        "slug": "desolation-wilderness",
+        "name": "Desolation Wilderness",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "3.5h",
+        "hook": "West of Tahoe the forest gives out and the land turns to bare white granite holding more than a hundred alpine lakes.",
+        "tags": [
+          "wilderness",
+          "granite",
+          "alpine-lakes",
+          "backpacking",
+          "tahoe",
+          "permit",
+          "glacial"
         ],
         "stay": false,
         "season": []
