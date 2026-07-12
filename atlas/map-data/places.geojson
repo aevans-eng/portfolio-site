@@ -1206,6 +1206,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.664,
+          35.2795
+        ]
+      },
+      "properties": {
+        "slug": "bubblegum-alley",
+        "name": "Bubblegum Alley",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "A downtown alley in San Luis Obispo has both walls packed with decades of chewed gum, fifteen feet high and seventy feet long.",
+        "tags": [
+          "oddity",
+          "gum-wall",
+          "downtown",
+          "san-luis-obispo",
+          "roadside"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.254,
           37.43
         ]
@@ -4716,6 +4747,39 @@
           9,
           10
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.671,
+          35.2555
+        ]
+      },
+      "properties": {
+        "slug": "madonna-inn",
+        "name": "The Madonna Inn",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h",
+        "hook": "A highway builder opened a hotel in 1958, painted nearly all of it pink, gave each of its 110 rooms a different over-the-top theme, and put a rock waterfall in the men's urinal.",
+        "tags": [
+          "kitsch",
+          "hotel",
+          "pink",
+          "themed-rooms",
+          "san-luis-obispo",
+          "roadside-icon",
+          "central-coast"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
