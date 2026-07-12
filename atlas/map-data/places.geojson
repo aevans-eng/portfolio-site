@@ -4124,6 +4124,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.6395,
+          38.4245
+        ]
+      },
+      "properties": {
+        "slug": "indian-grinding-rock",
+        "name": "Chaw'se Indian Grinding Rock",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2.5h",
+        "hook": "A slab of limestone in the Sierra foothills is dimpled with 1,185 grinding holes, the most of any bedrock mortar site in North America, worn there by the Miwok over thousands of years.",
+        "tags": [
+          "miwok",
+          "bedrock-mortars",
+          "petroglyphs",
+          "roundhouse",
+          "native-california",
+          "gold-country",
+          "state-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.273,
           37.8925
         ]
@@ -6433,6 +6466,38 @@
           "rail-trail",
           "bike",
           "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.5045,
+          38.5845
+        ]
+      },
+      "properties": {
+        "slug": "old-sacramento-underground",
+        "name": "The Old Sacramento Underground",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1.75h",
+        "hook": "After floods kept drowning it, Sacramento jacked its whole downtown up a full story in the 1860s, and you can still tour the streets and storefronts it buried.",
+        "tags": [
+          "underground",
+          "raised-city",
+          "gold-rush",
+          "sacramento",
+          "history-tour",
+          "oddity"
         ],
         "stay": false,
         "season": []
