@@ -1395,6 +1395,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.635,
+          37.933
+        ]
+      },
+      "properties": {
+        "slug": "cataract-falls",
+        "name": "Cataract Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "After winter rain, a creek off Mount Tamalpais tumbles down a mossy fern-walled staircase in waterfall after waterfall \u2014 the most beloved cascade hike in Marin, and it looks like a rainforest most people don't know California has.",
+        "tags": [
+          "waterfall",
+          "mount-tam",
+          "mossy-staircase",
+          "redwoods",
+          "rain-fed",
+          "marin"
+        ],
+        "stay": false,
+        "season": [
+          12,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.1817,
           37.8189
         ]
@@ -6009,6 +6047,38 @@
           "marin-headlands",
           "last-manned",
           "golden-gate"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.323,
+          37.899
+        ]
+      },
+      "properties": {
+        "slug": "point-isabel",
+        "name": "Point Isabel",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "30m",
+        "hook": "One of the largest off-leash dog parks in the country \u2014 23 acres of Richmond bayshore where a half-million dog visits a year happen under nothing but voice control, all with the Golden Gate Bridge as the backdrop.",
+        "tags": [
+          "dog-park",
+          "off-leash",
+          "scene",
+          "richmond-shoreline",
+          "golden-gate-view",
+          "bay-trail"
         ],
         "stay": false,
         "season": []
