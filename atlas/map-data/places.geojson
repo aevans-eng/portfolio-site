@@ -4914,6 +4914,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.3325,
+          37.42
+        ]
+      },
+      "properties": {
+        "slug": "methuselah-tree",
+        "name": "The Methuselah Tree",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1h",
+        "hook": "An 1,800-year-old redwood stands right at the edge of Skyline Boulevard, the biggest and oldest tree in these mountains outside Big Basin, left alone because it was too gnarled to cut.",
+        "tags": [
+          "redwood",
+          "old-growth",
+          "skyline",
+          "roadside-landmark",
+          "woodside",
+          "ancient-tree"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4148,
           37.7592
         ]
@@ -8708,6 +8740,39 @@
           "history",
           "hike",
           "sonoma"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2565,
+          37.4308
+        ]
+      },
+      "properties": {
+        "slug": "woodside-store",
+        "name": "The Woodside Store",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "45min",
+        "hook": "At the bottom of Kings Mountain Road sits an 1854 general store that was also the post office, the saloon, the dentist, and the library, kept just about as it was.",
+        "tags": [
+          "history",
+          1854,
+          "general-store",
+          "national-register",
+          "woodside",
+          "kings-mountain",
+          "museum"
         ],
         "stay": false,
         "season": []
