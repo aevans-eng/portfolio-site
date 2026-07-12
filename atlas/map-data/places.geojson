@@ -797,6 +797,46 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.651,
+          38.867
+        ]
+      },
+      "properties": {
+        "slug": "bowling-ball-beach",
+        "name": "Bowling Ball Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "At the right low tide, a Mendocino beach reveals rows of near-perfect stone spheres \u2014 two to five feet across \u2014 lined up in the sandstone reef like a giant's abandoned bowling alley.",
+        "tags": [
+          "concretions",
+          "sandstone-spheres",
+          "low-tide",
+          "mendocino-coast",
+          "schooner-gulch",
+          "geology"
+        ],
+        "stay": false,
+        "season": [
+          12,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.483,
           37.665
         ]
@@ -911,6 +951,38 @@
           "cemetery",
           "haight",
           "views"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6519,
+          41.0121
+        ]
+      },
+      "properties": {
+        "slug": "burney-falls",
+        "name": "McArthur-Burney Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4h30m",
+        "hook": "A 129-foot waterfall that doesn't come from the creek above it \u2014 most of the water bursts straight out of the rock face from underground springs, so it pours at the same rate in a drought August as it does in May.",
+        "tags": [
+          "waterfall",
+          "spring-fed",
+          "far-north",
+          "constant-flow",
+          "roosevelt",
+          "shasta-cascade"
         ],
         "stay": false,
         "season": []
@@ -6422,6 +6494,37 @@
           "mt-tam",
           "hike",
           "family"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.82,
+          39.21
+        ]
+      },
+      "properties": {
+        "slug": "sutter-buttes",
+        "name": "Sutter Buttes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h15m",
+        "hook": "A ring of eroded volcanic domes rises 2,000 feet straight out of the flat Sacramento Valley \u2014 often called the world's smallest mountain range, a whole extinct volcano you can drive around in twenty minutes but almost never enter.",
+        "tags": [
+          "volcano",
+          "smallest-mountain-range",
+          "private-land",
+          "guided-only",
+          "sacramento-valley"
         ],
         "stay": false,
         "season": []
