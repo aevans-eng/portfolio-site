@@ -6364,6 +6364,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.087,
+          37.332
+        ]
+      },
+      "properties": {
+        "slug": "rancho-san-antonio",
+        "name": "Rancho San Antonio & Deer Hollow Farm",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "The most-loved trail network on the Peninsula hides a 160-year-old working homestead in its folds \u2014 a real farm with pigs, goats, and a cow, a mile's flat walk from a Cupertino parking lot, at the foot of 25 miles of hills.",
+        "tags": [
+          "open-space",
+          "deer-hollow-farm",
+          "trails",
+          "cupertino",
+          "homestead",
+          "family"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.165,
           37.8125
         ]
@@ -6547,6 +6579,42 @@
         ],
         "stay": false,
         "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.193,
+          37.317
+        ]
+      },
+      "properties": {
+        "slug": "russian-ridge",
+        "name": "Russian Ridge & Borel Hill",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "50m",
+        "hook": "The highest named point in San Mateo County sits on an open grass ridge above Skyline \u2014 and in April it detonates into one of the best wildflower displays on the Peninsula, poppies and lupine to the horizon, with the ocean on one side and the whole bay on the other.",
+        "tags": [
+          "wildflowers",
+          "ridge",
+          "borel-hill",
+          "skyline",
+          "views",
+          "open-space"
+        ],
+        "stay": false,
+        "season": [
+          3,
+          4,
+          5
+        ]
       }
     },
     {
