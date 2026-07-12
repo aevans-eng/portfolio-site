@@ -3881,6 +3881,45 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -124.0731,
+          40.0276
+        ]
+      },
+      "properties": {
+        "slug": "lost-coast",
+        "name": "The Lost Coast (King Range)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5h30m to Shelter Cove",
+        "hook": "The mountains here rise 4,000 feet straight out of the surf in under three miles \u2014 so steep and unstable that highway engineers gave up and routed Highway 1 inland, leaving the longest roadless coastline in the Lower 48.",
+        "tags": [
+          "wilderness-coast",
+          "roadless",
+          "king-range",
+          "backpacking",
+          "black-sand",
+          "far-edge"
+        ],
+        "stay": false,
+        "season": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.266,
           38.089
         ]
@@ -4292,6 +4331,38 @@
           "cheap"
         ],
         "stay": true,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9019,
+          36.6182
+        ]
+      },
+      "properties": {
+        "slug": "monterey-bay-aquarium",
+        "name": "Monterey Bay Aquarium",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "2h",
+        "hook": "Built inside a defunct sardine cannery on Steinbeck's Cannery Row, this is the aquarium that first grew a living kelp forest indoors \u2014 a three-story, sunlit tank of giant kelp swaying in real surge \u2014 and it's widely rated among the best in the world.",
+        "tags": [
+          "aquarium",
+          "kelp-forest",
+          "cannery-row",
+          "steinbeck",
+          "conservation",
+          "world-class"
+        ],
+        "stay": false,
         "season": []
       }
     },
