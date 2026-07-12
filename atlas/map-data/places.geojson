@@ -6,6 +6,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.1186,
+          36.6072
+        ]
+      },
+      "properties": {
+        "slug": "alabama-hills",
+        "name": "Alabama Hills",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "A field of rounded orange boulders sits at the foot of the highest mountain in the Lower 48, and Hollywood has been filming here for a hundred years.",
+        "tags": [
+          "movie-location",
+          "arches",
+          "mount-whitney",
+          "lone-pine",
+          "granite",
+          "blm",
+          "camping"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.7789,
           37.9339
         ]
@@ -188,6 +221,38 @@
           "san-jose",
           "history",
           "hike"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.179,
+          37.3856
+        ]
+      },
+      "properties": {
+        "slug": "ancient-bristlecone",
+        "name": "Ancient Bristlecone Pine Forest",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "7h",
+        "hook": "A grove of trees near the top of the White Mountains has been alive since before the pyramids, and the Forest Service won't tell you which one is the oldest.",
+        "tags": [
+          "oldest-trees",
+          "white-mountains",
+          "dendrochronology",
+          "high-altitude",
+          "inyo",
+          "pilgrimage"
         ],
         "stay": false,
         "season": []
