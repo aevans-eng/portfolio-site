@@ -4,6 +4,52 @@
     {
       "type": "Feature",
       "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.214,
+            38.0525
+          ],
+          [
+            -122.201,
+            38.053
+          ],
+          [
+            -122.193,
+            38.051
+          ],
+          [
+            -122.186,
+            38.048
+          ],
+          [
+            -122.1833,
+            38.0466
+          ],
+          [
+            -122.17,
+            38.04
+          ],
+          [
+            -122.152,
+            38.03
+          ],
+          [
+            -122.1341,
+            38.0195
+          ]
+        ]
+      },
+      "properties": {
+        "slug": "carquinez-scenic-drive",
+        "name": "Carquinez Scenic Drive",
+        "kind": "route",
+        "color": "#8a6d3b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [

@@ -1015,6 +1015,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.175,
+          38.048
+        ]
+      },
+      "properties": {
+        "slug": "carquinez-scenic-drive",
+        "name": "Carquinez Scenic Drive",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "40m to the west end",
+        "hook": "The old bluff-top road between Crockett and Martinez was too landslide-prone to keep as a through road \u2014 so the middle became a car-free ribbon above the strait, and the whole thing became the East Bay's best slow mile.",
+        "tags": [
+          "route",
+          "scenic-road",
+          "carquinez",
+          "bluffs",
+          "car-free-section",
+          "crockett"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -119.7929,
           35.1914
         ]
