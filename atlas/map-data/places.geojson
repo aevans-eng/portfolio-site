@@ -7774,6 +7774,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -122.178,
+          39.437
+        ]
+      },
+      "properties": {
+        "slug": "sacramento-nwr",
+        "name": "Sacramento National Wildlife Refuge",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2.5h",
+        "hook": "On winter afternoons a cloud of snow geese lifts off a Central Valley marsh all at once, loud enough to feel, and you can watch it from a levee road.",
+        "tags": [
+          "waterfowl",
+          "snow-geese",
+          "pacific-flyway",
+          "wildlife-refuge",
+          "winter",
+          "central-valley",
+          "birding"
+        ],
+        "stay": false,
+        "season": [
+          11,
+          12,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.7089,
           38.5296
         ]
