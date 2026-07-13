@@ -4715,6 +4715,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.665,
+          37.818
+        ]
+      },
+      "properties": {
+        "slug": "knights-ferry",
+        "name": "Knights Ferry Covered Bridge",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h",
+        "hook": "The longest covered bridge west of the Mississippi crosses the Stanislaus at a gold-rush town most people have never heard of.",
+        "tags": [
+          "covered-bridge",
+          "gold-rush",
+          "stanislaus-river",
+          "howe-truss",
+          "oakdale",
+          "history",
+          "tubing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.259,
           37.806
         ]
@@ -5555,6 +5588,40 @@
         ],
         "stay": false,
         "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.996,
+          37.648
+        ]
+      },
+      "properties": {
+        "slug": "modesto-graffiti",
+        "name": "Modesto & the American Graffiti Cruise",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1.75h",
+        "hook": "The cruising culture George Lucas grew up in became American Graffiti, and Modesto still cruises McHenry Avenue every summer to prove the movie right.",
+        "tags": [
+          "american-graffiti",
+          "george-lucas",
+          "cruising",
+          "car-culture",
+          "modesto",
+          "central-valley"
+        ],
+        "stay": false,
+        "season": [
+          6
+        ]
       }
     },
     {
