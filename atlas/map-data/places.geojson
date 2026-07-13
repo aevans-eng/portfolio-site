@@ -1854,6 +1854,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.568,
+          35.225
+        ]
+      },
+      "properties": {
+        "slug": "cesar-chavez-monument",
+        "name": "C\u00e9sar E. Ch\u00e1vez National Monument",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "The farm-labor leader who changed California is buried in a rose garden at the union headquarters he built in the Tehachapi foothills.",
+        "tags": [
+          "history",
+          "cesar-chavez",
+          "farm-workers",
+          "ufw",
+          "national-monument",
+          "civil-rights",
+          "keene"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.1817,
           37.8189
         ]
@@ -4545,6 +4578,39 @@
           "geology",
           "mendocino",
           "science"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.425,
+          35.755
+        ]
+      },
+      "properties": {
+        "slug": "kernville-kern-river",
+        "name": "Kernville & the Kern River",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "4.5h",
+        "hook": "The Kern River drops out of the high Sierra in one of the wildest whitewater runs in the country, and the old mining town of Kernville sits right on the bank of it.",
+        "tags": [
+          "whitewater",
+          "kern-river",
+          "rafting",
+          "mountain-town",
+          "sequoia-gateway",
+          "southern-sierra",
+          "fly-fishing"
         ],
         "stay": false,
         "season": []
