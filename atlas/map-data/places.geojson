@@ -8466,6 +8466,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -124.149,
+          41.1355
+        ]
+      },
+      "properties": {
+        "slug": "sue-meg",
+        "name": "Sue-meg State Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5.5h",
+        "hook": "The first California park to get its name back: Sue-meg, as the Yurok have always called this headland, with a living village site and a beach where people hunt agates.",
+        "tags": [
+          "yurok",
+          "sumeg-village",
+          "agate-beach",
+          "wedding-rock",
+          "tidepools",
+          "state-park",
+          "humboldt"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.515,
           38.437
         ]
@@ -9042,6 +9075,39 @@
           "german",
           "hidden",
           "mt-tam"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -124.1426,
+          41.0593
+        ]
+      },
+      "properties": {
+        "slug": "trinidad",
+        "name": "Trinidad",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5.5h",
+        "hook": "A fishing village of fewer than four hundred people sits over a rock-studded harbor on the far north coast, with ten beaches within a few minutes of its one main street.",
+        "tags": [
+          "fishing-village",
+          "trinidad-head",
+          "lighthouse",
+          "beaches",
+          "sea-stacks",
+          "humboldt",
+          "north-coast"
         ],
         "stay": false,
         "season": []
