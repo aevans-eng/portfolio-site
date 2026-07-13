@@ -2827,6 +2827,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.233,
+          39.3235
+        ]
+      },
+      "properties": {
+        "slug": "donner-memorial",
+        "name": "Donner Memorial State Park",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "A stone monument stands with its pedestal exactly twenty-two feet tall, the depth of the snow that trapped the Donner Party here in the winter of 1846.",
+        "tags": [
+          "donner-party",
+          "history",
+          "pioneer-monument",
+          "emigrant-trail",
+          "donner-lake",
+          "museum",
+          "tahoe"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.327,
+          39.316
+        ]
+      },
+      "properties": {
+        "slug": "donner-summit-tunnels",
+        "name": "The Donner Summit Railroad Tunnels",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "You can walk straight through the abandoned summit tunnel that Chinese laborers cut through Sierra granite by hand for the first transcontinental railroad.",
+        "tags": [
+          "abandoned-railroad",
+          "transcontinental",
+          "chinese-labor",
+          "donner-pass",
+          "urbex",
+          "history",
+          "tahoe"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.974,
           37.4602
         ]
