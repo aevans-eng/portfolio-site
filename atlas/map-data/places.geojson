@@ -3866,6 +3866,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.023,
+          35.508
+        ]
+      },
+      "properties": {
+        "slug": "harmony",
+        "name": "Harmony (pop. 18)",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3.75h",
+        "hook": "A whole town of eighteen people sits just off Highway 1, named Harmony as a peace treaty, where Hearst used to stop for buttermilk on his way to the castle.",
+        "tags": [
+          "tiny-town",
+          "population-18",
+          "creamery",
+          "glassblowing",
+          "highway-1",
+          "oddity",
+          "cambria"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.081,
           37.6722
         ]
@@ -7391,6 +7424,38 @@
           "history",
           "tour-only",
           "coastal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.651,
+          35.317
+        ]
+      },
+      "properties": {
+        "slug": "poly-canyon",
+        "name": "Poly Canyon (the Architecture Graveyard)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3.75h",
+        "hook": "A canyon behind Cal Poly holds sixty years of student-built experimental structures \u2014 a shell house, a bridge house, geodesic domes \u2014 slowly weathering where their builders left them.",
+        "tags": [
+          "experimental-architecture",
+          "cal-poly",
+          "oddity",
+          "hike",
+          "san-luis-obispo",
+          "student-built"
         ],
         "stay": false,
         "season": []
