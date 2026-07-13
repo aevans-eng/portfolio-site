@@ -521,6 +521,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -124.085,
+          40.857
+        ]
+      },
+      "properties": {
+        "slug": "arcata-marsh",
+        "name": "Arcata Marsh & Wildlife Sanctuary",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "The city of Arcata treats its sewage by running it through a marsh, and that marsh is now one of the best places to watch birds on the whole North Coast.",
+        "tags": [
+          "wetland",
+          "birding",
+          "wastewater",
+          "pacific-flyway",
+          "arcata",
+          "humboldt-bay",
+          "eco-oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.169,
           37.429
         ]
@@ -3209,6 +3242,39 @@
           "jurassic-park",
           "gold-bluffs",
           "humboldt"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -124.264,
+          40.576
+        ]
+      },
+      "properties": {
+        "slug": "ferndale",
+        "name": "Ferndale & the Kinetic Race",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "A whole town of ornate Victorian \"butterfat palaces\" survives on the Humboldt coast, and every spring it's where a three-day race of giant human-powered art sculptures crosses the finish line.",
+        "tags": [
+          "victorian-village",
+          "cream-city",
+          "kinetic-race",
+          "hobart-brown",
+          "film-location",
+          "humboldt",
+          "historic-landmark"
         ],
         "stay": false,
         "season": []
