@@ -264,6 +264,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.316,
+          38.612
+        ]
+      },
+      "properties": {
+        "slug": "american-river-parkway",
+        "name": "The American River Parkway",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "1.75h",
+        "hook": "A paved trail runs 32 unbroken miles up a river through the middle of Sacramento, one of the longest purpose-built bike paths in the country, and locals call it the city's gem.",
+        "tags": [
+          "bike-trail",
+          "river",
+          "route",
+          "sacramento",
+          "jedediah-smith",
+          "swimming",
+          "cycling"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -118.179,
           37.3856
         ]
@@ -6505,6 +6538,42 @@
         ],
         "stay": false,
         "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.542,
+          39.596
+        ]
+      },
+      "properties": {
+        "slug": "north-table-mountain",
+        "name": "North Table Mountain & Phantom Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2.75h",
+        "hook": "For a few weeks each spring, a lava mesa above Oroville turns solid wildflower and pours waterfalls off its cliffs; by summer both are gone.",
+        "tags": [
+          "superbloom",
+          "basalt-mesa",
+          "ephemeral-waterfall",
+          "vernal-pools",
+          "oroville",
+          "spring",
+          "wildflowers"
+        ],
+        "stay": false,
+        "season": [
+          3,
+          4
+        ]
       }
     },
     {

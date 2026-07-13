@@ -7,6 +7,60 @@
         "type": "LineString",
         "coordinates": [
           [
+            -121.5065,
+            38.601
+          ],
+          [
+            -121.459,
+            38.59
+          ],
+          [
+            -121.426,
+            38.567
+          ],
+          [
+            -121.391,
+            38.566
+          ],
+          [
+            -121.352,
+            38.59
+          ],
+          [
+            -121.316,
+            38.612
+          ],
+          [
+            -121.268,
+            38.636
+          ],
+          [
+            -121.226,
+            38.656
+          ],
+          [
+            -121.183,
+            38.681
+          ],
+          [
+            -121.166,
+            38.723
+          ]
+        ]
+      },
+      "properties": {
+        "slug": "american-river-parkway",
+        "name": "The American River Parkway",
+        "kind": "route",
+        "color": "#8a6d3b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
             -122.214,
             38.0525
           ],
