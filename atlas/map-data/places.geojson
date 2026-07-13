@@ -7786,6 +7786,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.402,
+          36.8
+        ]
+      },
+      "properties": {
+        "slug": "rae-lakes-loop",
+        "name": "The Rae Lakes Loop",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h to trailhead",
+        "hook": "A forty-mile loop out of Kings Canyon climbs to a chain of alpine lakes under a spire called the Painted Lady, over a twelve-thousand-foot pass, on some of the best trail in the Sierra.",
+        "tags": [
+          "backpacking",
+          "kings-canyon",
+          "alpine-lakes",
+          "glen-pass",
+          "jmt",
+          "wilderness",
+          "southern-sierra"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.3247,
           35.7797
         ]
@@ -9213,6 +9246,39 @@
           "loop",
           "walk",
           "bike"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.173,
+          37.725
+        ]
+      },
+      "properties": {
+        "slug": "thousand-island-lake",
+        "name": "Thousand Island Lake",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5.5h to trailhead",
+        "hook": "An alpine lake scattered with rocky islets sits under Banner Peak, and it's the reflection Ansel Adams made famous.",
+        "tags": [
+          "alpine-lake",
+          "ansel-adams-wilderness",
+          "banner-peak",
+          "jmt",
+          "backpacking",
+          "eastern-sierra",
+          "mammoth"
         ],
         "stay": false,
         "season": []
