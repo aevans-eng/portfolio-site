@@ -3084,6 +3084,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.274,
+          39.61
+        ]
+      },
+      "properties": {
+        "slug": "feather-falls",
+        "name": "Feather Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "3h",
+        "hook": "A 410-foot waterfall pours off a sheer cliff in the Sierra foothills above Lake Oroville, and a viewing platform hangs on the canyon rim directly across from it.",
+        "tags": [
+          "waterfall",
+          "plumas",
+          "oroville",
+          "hiking",
+          "sierra-foothills",
+          "spring"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -124.0645,
           41.4001
         ]
@@ -4053,6 +4085,39 @@
           4,
           5
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.163,
+          38.96
+        ]
+      },
+      "properties": {
+        "slug": "hidden-falls",
+        "name": "Hidden Falls Regional Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2h",
+        "hook": "Twelve hundred acres of foothill oak woodland north of Auburn, laced with thirty miles of trail and a pair of creek waterfalls with decks built out over them.",
+        "tags": [
+          "waterfall",
+          "oak-woodland",
+          "placer-county",
+          "auburn",
+          "trails",
+          "swimming",
+          "foothills"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
