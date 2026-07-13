@@ -899,6 +899,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.498,
+          37.123
+        ]
+      },
+      "properties": {
+        "slug": "big-pine-lakes",
+        "name": "Big Pine Lakes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h to trailhead",
+        "hook": "A chain of impossibly turquoise lakes sits below the southernmost glacier in the country, colored by the rock the ice grinds to powder.",
+        "tags": [
+          "turquoise-lakes",
+          "glacier",
+          "palisade",
+          "big-pine",
+          "backpacking",
+          "eastern-sierra",
+          "temple-crag"
+        ],
+        "stay": false,
+        "season": [
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.902,
           36.3714
         ]
@@ -4973,6 +5010,44 @@
         ],
         "stay": false,
         "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.745,
+          37.435
+        ]
+      },
+      "properties": {
+        "slug": "little-lakes-valley",
+        "name": "Little Lakes Valley",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5.5h to trailhead",
+        "hook": "The most alpine lakes you can reach for the least climbing in the whole Sierra: a nearly flat trail from the highest trailhead in the range, past lake after lake under a wall of thirteen-thousand-foot peaks.",
+        "tags": [
+          "alpine-lakes",
+          "rock-creek",
+          "mosquito-flat",
+          "easy-high-sierra",
+          "aspens",
+          "eastern-sierra",
+          "dayhike"
+        ],
+        "stay": false,
+        "season": [
+          7,
+          8,
+          9,
+          10
+        ]
       }
     },
     {
