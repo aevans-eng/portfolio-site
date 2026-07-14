@@ -2380,6 +2380,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.793,
+          34.506
+        ]
+      },
+      "properties": {
+        "slug": "chumash-painted-cave",
+        "name": "Chumash Painted Cave",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "Up a narrow mountain road above Santa Barbara, a small sandstone cave holds Chumash paintings still vivid in red, black, and white after centuries.",
+        "tags": [
+          "rock-art",
+          "chumash",
+          "pictographs",
+          "state-historic-park",
+          "san-marcos-pass",
+          "indigenous",
+          "santa-barbara"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.172,
           39.136
         ]
@@ -2498,6 +2531,38 @@
           "wpa",
           "free",
           "kids-and-adults"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.809,
+          34.518
+        ]
+      },
+      "properties": {
+        "slug": "cold-spring-tavern",
+        "name": "Cold Spring Tavern",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "A stagecoach stop from 1868 is still standing on the old road over the mountains, still serving travelers, now a rustic tavern famous for its tri-tip and weekend bands.",
+        "tags": [
+          "stagecoach-stop",
+          "historic-tavern",
+          "san-marcos-pass",
+          "live-music",
+          "tri-tip",
+          "santa-barbara"
         ],
         "stay": false,
         "season": []
@@ -4272,6 +4337,39 @@
           "wildflowers",
           "hidden",
           "coastal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.227,
+          34.488
+        ]
+      },
+      "properties": {
+        "slug": "gaviota-wind-caves",
+        "name": "Gaviota Wind Caves",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "A short, steep climb above the coast west of Santa Barbara ends at a set of sandstone caves the wind hollowed out of the cliff.",
+        "tags": [
+          "wind-caves",
+          "sandstone",
+          "tafoni",
+          "hike",
+          "gaviota-state-park",
+          "coast-view",
+          "santa-barbara"
         ],
         "stay": false,
         "season": []
@@ -6298,6 +6396,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.818,
+          34.508
+        ]
+      },
+      "properties": {
+        "slug": "lizards-mouth",
+        "name": "Lizard's Mouth",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "A field of wind-carved sandstone boulders on the ridge above Santa Barbara has the best view of the city, and you get to climb all over it.",
+        "tags": [
+          "sandstone",
+          "tafoni",
+          "boulders",
+          "scrambling",
+          "sunset-views",
+          "santa-ynez-mountains",
+          "santa-barbara"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.5088,
           38.2508
         ]
@@ -7843,6 +7974,38 @@
           "museum",
           "history",
           "mt-tam"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.06,
+          34.087
+        ]
+      },
+      "properties": {
+        "slug": "mugu-rock",
+        "name": "Mugu Rock",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "That dramatic rock on the ocean side of Pacific Coast Highway, the one from a hundred car commercials, is Mugu Rock, and it exists because they blasted the road through the headland.",
+        "tags": [
+          "pacific-coast-highway",
+          "rock-formation",
+          "ocean-view",
+          "point-mugu",
+          "scenic-drive",
+          "ventura"
         ],
         "stay": false,
         "season": []
@@ -9819,6 +9982,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.477,
+          34.373
+        ]
+      },
+      "properties": {
+        "slug": "rincon",
+        "name": "Rincon Point",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "The most famous wave in California peels for hundreds of yards around a point on the Santa Barbara-Ventura line, and on a good winter swell you can ride from one county into the next.",
+        "tags": [
+          "surf",
+          "point-break",
+          "queen-of-the-coast",
+          "winter-swell",
+          "county-line",
+          "ventura"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.483,
           37.907
         ]
@@ -9903,6 +10098,39 @@
           "sculpture",
           "free",
           "stanford"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.171,
+          34.541
+        ]
+      },
+      "properties": {
+        "slug": "rose-valley-falls",
+        "name": "Rose Valley Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A three-hundred-foot waterfall drops in two tiers over mossy rock at the end of a short, easy trail in the mountains above Ojai.",
+        "tags": [
+          "waterfall",
+          "ojai",
+          "los-padres",
+          "topatopa-mountains",
+          "easy-hike",
+          "free-campground",
+          "ventura"
         ],
         "stay": false,
         "season": []
