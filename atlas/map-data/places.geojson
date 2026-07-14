@@ -8576,6 +8576,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -115.731,
+          33.3505
+        ]
+      },
+      "properties": {
+        "slug": "salton-sea",
+        "name": "The Salton Sea & Bombay Beach",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "9.5h",
+        "hook": "California's largest lake was an accident, a river breach that flooded the desert in 1905, and its dead resort towns are now the eeriest landscape in the state.",
+        "tags": [
+          "salton-sea",
+          "bombay-beach",
+          "ghost-town",
+          "ecological-disaster",
+          "outsider-art",
+          "oddity",
+          "southern-california"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -115.4725,
           33.2543
         ]
@@ -9986,6 +10019,39 @@
           3,
           4
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.321,
+          34.489
+        ]
+      },
+      "properties": {
+        "slug": "vasquez-rocks",
+        "name": "Vasquez Rocks",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "The tilted sandstone slabs where Captain Kirk fought the Gorn stand an hour north of LA, shoved up on end by the San Andreas Fault.",
+        "tags": [
+          "rock-formation",
+          "san-andreas-fault",
+          "film-location",
+          "star-trek",
+          "agua-dulce",
+          "los-angeles",
+          "pct"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
