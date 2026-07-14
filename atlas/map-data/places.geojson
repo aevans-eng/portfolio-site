@@ -2797,6 +2797,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.135,
+          32.673
+        ]
+      },
+      "properties": {
+        "slug": "desert-view-tower",
+        "name": "Desert View Tower & Boulder Park",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "9h",
+        "hook": "A seventy-foot stone tower and a maze of boulders carved into animals sit together off the interstate near the Mexican border, both the work of men with time and not much else.",
+        "tags": [
+          "roadside",
+          "folk-art",
+          "stone-tower",
+          "boulder-park",
+          "jacumba",
+          "national-register",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.145,
           38.862
         ]
@@ -4753,6 +4786,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.709,
+          33.745
+        ]
+      },
+      "properties": {
+        "slug": "idyllwild",
+        "name": "Idyllwild",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "An alpine arts town sits in the pines an hour above the desert, under the granite rock where modern American climbing worked out its grades.",
+        "tags": [
+          "mountain-town",
+          "arts-colony",
+          "rock-climbing",
+          "tahquitz",
+          "pct",
+          "san-jacinto",
+          "inland-empire"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.413,
           37.7996
         ]
@@ -6673,6 +6739,39 @@
           "drive",
           "bike-climb",
           "state-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.42,
+          32.87
+        ]
+      },
+      "properties": {
+        "slug": "mount-laguna",
+        "name": "Mount Laguna",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "An hour east of San Diego the desert gives way to a mile-high forest of vanilla-scented pines, dark enough at night that a university keeps its telescopes here.",
+        "tags": [
+          "pine-forest",
+          "dark-sky",
+          "observatory",
+          "garnet-peak",
+          "pct",
+          "cleveland-forest",
+          "san-diego"
         ],
         "stay": false,
         "season": []
