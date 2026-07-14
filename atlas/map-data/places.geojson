@@ -7210,6 +7210,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.283,
+          34.137
+        ]
+      },
+      "properties": {
+        "slug": "old-la-zoo",
+        "name": "The Old LA Zoo",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The original Los Angeles Zoo closed in 1966 and was just left there, so now you can climb through the empty bear grottos and picnic inside the old cages, free, in the middle of Griffith Park.",
+        "tags": [
+          "abandoned",
+          "griffith-park",
+          "ruins",
+          "picnic",
+          "los-angeles",
+          "hidden-gem"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.5045,
           38.5845
         ]
@@ -9388,6 +9420,40 @@
           "sacramento-river",
           "redding",
           "turtle-bay"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.293,
+          33.705
+        ]
+      },
+      "properties": {
+        "slug": "sunken-city",
+        "name": "Sunken City",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A cliffside neighborhood in San Pedro slid into the ocean starting in 1929, and the broken streets and foundations are still out there on the bluff, tilted and graffitied, behind a fence people keep breaking.",
+        "tags": [
+          "landslide",
+          "ruins",
+          "urbex",
+          "san-pedro",
+          "point-fermin",
+          "graffiti",
+          "los-angeles",
+          "off-limits"
         ],
         "stay": false,
         "season": []
