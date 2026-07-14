@@ -5204,6 +5204,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.497,
+          33.672
+        ]
+      },
+      "properties": {
+        "slug": "holy-jim-falls",
+        "name": "Holy Jim Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A rough dirt road into the Santa Ana Mountains ends at a trail to a hidden waterfall named for a foul-mouthed beekeeper the mapmakers cleaned up.",
+        "tags": [
+          "waterfall",
+          "trabuco-canyon",
+          "santa-ana-mountains",
+          "cleveland-forest",
+          "dirt-road",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.2397,
           37.5027
         ]
@@ -6201,6 +6233,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.995,
+          33.745
+        ]
+      },
+      "properties": {
+        "slug": "little-saigon",
+        "name": "Little Saigon",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The largest Vietnamese community in the world outside Vietnam fills a stretch of Orange County, built by refugees who arrived with almost nothing after 1975.",
+        "tags": [
+          "vietnamese",
+          "little-saigon",
+          "food",
+          "asian-garden-mall",
+          "westminster",
+          "culture",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.816,
           37.504
         ]
@@ -7008,6 +7073,38 @@
         "season": [
           6
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.612,
+          33.708
+        ]
+      },
+      "properties": {
+        "slug": "modjeska-house",
+        "name": "Modjeska House (Arden)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A world-famous Shakespearean actress had one of America's top architects build her a country house in a hidden Orange County canyon, and it's still standing on the creek.",
+        "tags": [
+          "historic-house",
+          "stanford-white",
+          "helena-modjeska",
+          "national-historic-landmark",
+          "canyon",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -8586,6 +8683,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.853,
+          33.788
+        ]
+      },
+      "properties": {
+        "slug": "old-towne-orange",
+        "name": "Old Towne Orange",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The largest historic district in California is an 1880s downtown built around a traffic circle, and it's now the antique capital of Southern California.",
+        "tags": [
+          "historic-district",
+          "antiques",
+          "plaza",
+          "orange-circle",
+          "walkable",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.916,
           36.6258
         ]
@@ -8610,6 +8739,38 @@
         ],
         "stay": false,
         "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.777,
+          33.546
+        ]
+      },
+      "properties": {
+        "slug": "pageant-of-the-masters",
+        "name": "Pageant of the Masters",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "Every summer in a Laguna canyon, hundreds of volunteers hold perfectly still inside giant frames so that, for a few minutes each, they become famous paintings.",
+        "tags": [
+          "living-pictures",
+          "tableaux-vivants",
+          "laguna-beach",
+          "festival-of-arts",
+          "summer",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": "summer"
       }
     },
     {
@@ -11786,6 +11947,39 @@
           8,
           9
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.885,
+          33.64
+        ]
+      },
+      "properties": {
+        "slug": "upper-newport-back-bay",
+        "name": "Upper Newport Bay",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "Tucked behind the yacht harbors of Newport Beach is one of the last big estuaries in Southern California, loud with birds.",
+        "tags": [
+          "estuary",
+          "wetland",
+          "birding",
+          "kayak",
+          "pacific-flyway",
+          "newport-beach",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
