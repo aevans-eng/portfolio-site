@@ -4790,6 +4790,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -115.901,
+          33.873
+        ]
+      },
+      "properties": {
+        "slug": "joshua-tree",
+        "name": "Joshua Tree National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "8h",
+        "hook": "The Joshua trees only grow where the Mojave meets the Colorado desert, and this is the park built around that line: eight hundred thousand acres of them and the granite climbers come from everywhere to touch.",
+        "tags": [
+          "desert",
+          "joshua-trees",
+          "rock-climbing",
+          "mojave",
+          "dark-sky",
+          "national-park",
+          "southern-california"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.814,
           39.376
         ]
@@ -8533,6 +8566,39 @@
           "sonoma-coast",
           "rhododendron",
           "sandstone"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.4725,
+          33.2543
+        ]
+      },
+      "properties": {
+        "slug": "salvation-mountain",
+        "name": "Salvation Mountain",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "9.5h",
+        "hook": "One man spent thirty years painting a hill in the desert, with half a million gallons of paint, to say as big as he could that God is love.",
+        "tags": [
+          "folk-art",
+          "visionary-environment",
+          "leonard-knight",
+          "slab-city",
+          "salton-sea",
+          "oddity",
+          "southern-california"
         ],
         "stay": false,
         "season": []
