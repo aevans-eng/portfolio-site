@@ -9533,6 +9533,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.1622,
+          32.7345
+        ]
+      },
+      "properties": {
+        "slug": "spruce-street-bridge",
+        "name": "Spruce Street Suspension Bridge",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A wooden footbridge from 1912 hangs on steel cables over a wooded canyon in the middle of San Diego, and it sways when you walk across it.",
+        "tags": [
+          "footbridge",
+          "suspension-bridge",
+          "wiggly-bridge",
+          "bankers-hill",
+          "canyon",
+          "san-diego",
+          "free"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.906,
           36.969
         ]
@@ -9728,6 +9761,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.2718,
+          32.848
+        ]
+      },
+      "properties": {
+        "slug": "sunny-jims-sea-cave",
+        "name": "Sunny Jim's Sea Cave",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "The only sea cave in California you can reach on foot is at the bottom of a hand-dug tunnel that starts inside a La Jolla gift shop.",
+        "tags": [
+          "sea-cave",
+          "tunnel",
+          "la-jolla",
+          "cave-store",
+          "oddity",
+          "san-diego",
+          "wizard-of-oz"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.514,
           37.7795
         ]
@@ -9815,6 +9881,39 @@
           "gold-rush",
           "sacramento",
           "state-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.294,
+          33.0365
+        ]
+      },
+      "properties": {
+        "slug": "swamis-encinitas",
+        "name": "Swami's & the Self-Realization Fellowship",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A world-famous surf break named itself after the swami whose ashram sits on the bluff above it, and the ashram's meditation garden is open, quiet, and free.",
+        "tags": [
+          "surf-break",
+          "meditation-garden",
+          "self-realization-fellowship",
+          "yogananda",
+          "encinitas",
+          "san-diego",
+          "bluff"
         ],
         "stay": false,
         "season": []
@@ -10241,6 +10340,39 @@
           "coastal",
           "hike",
           "solitude"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2515,
+          32.92
+        ]
+      },
+      "properties": {
+        "slug": "torrey-pines",
+        "name": "Torrey Pines State Natural Reserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "The rarest pine in North America grows wild in only two places on Earth, and one of them is a set of eroded sea cliffs just north of La Jolla.",
+        "tags": [
+          "rare-pines",
+          "sea-cliffs",
+          "coastal-reserve",
+          "hiking",
+          "la-jolla",
+          "san-diego",
+          "badlands"
         ],
         "stay": false,
         "season": []
