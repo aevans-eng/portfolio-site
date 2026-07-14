@@ -2022,6 +2022,40 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.556,
+          34.048
+        ]
+      },
+      "properties": {
+        "slug": "channel-islands",
+        "name": "Channel Islands National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5.5h to Ventura",
+        "hook": "Take a boat out from Ventura to a chain of wild islands where a fox the size of a house cat lives and nothing else on Earth does, and paddle into one of the biggest sea caves on the continent.",
+        "tags": [
+          "national-park",
+          "islands",
+          "endemic-species",
+          "island-fox",
+          "sea-caves",
+          "kayaking",
+          "ventura",
+          "santa-barbara"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.462,
           38.0021
         ]
@@ -2561,6 +2595,39 @@
           "victorian",
           "sacramento",
           "central-valley"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.838,
+          33.572
+        ]
+      },
+      "properties": {
+        "slug": "crystal-cove",
+        "name": "Crystal Cove",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6.5h",
+        "hook": "A colony of forty-six hand-built 1930s beach cottages survives on an Orange County cove, a rustic slice of old California beach life that the coast paved over everywhere else.",
+        "tags": [
+          "beach",
+          "historic-cottages",
+          "tide-pools",
+          "film-history",
+          "newport-coast",
+          "orange-county",
+          "state-park"
         ],
         "stay": false,
         "season": []
