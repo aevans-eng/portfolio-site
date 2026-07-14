@@ -1106,6 +1106,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.6785,
+          33.7556
+        ]
+      },
+      "properties": {
+        "slug": "black-star-canyon",
+        "name": "Black Star Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A remote canyon in the Santa Ana Mountains draws hikers with a hidden waterfall and a dark reputation, though the story behind the reputation may not be true.",
+        "tags": [
+          "canyon",
+          "waterfall",
+          "santa-ana-mountains",
+          "wilderness",
+          "local-legend",
+          "orange-county",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.067,
           38.304
         ]
@@ -5514,6 +5547,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.6642,
+          33.5008
+        ]
+      },
+      "properties": {
+        "slug": "los-rios-district",
+        "name": "Los Rios Historic District",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The oldest neighborhood in California is a short, shaded street of adobe houses across the tracks from the San Juan Capistrano mission, and people still live in them.",
+        "tags": [
+          "historic-district",
+          "adobe",
+          "oldest-street",
+          "san-juan-capistrano",
+          "mission",
+          "orange-county",
+          "train-access"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.175,
           37.326
         ]
@@ -7238,6 +7304,39 @@
           "folk-art",
           "oddity",
           "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8819,
+          33.6895
+        ]
+      },
+      "properties": {
+        "slug": "noguchi-california-scenario",
+        "name": "California Scenario (Noguchi Garden)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "One of the country's best sculpture gardens is a free acre and a half of desert, forest, and stone tucked between two office towers in Costa Mesa.",
+        "tags": [
+          "sculpture-garden",
+          "isamu-noguchi",
+          "costa-mesa",
+          "free",
+          "hidden",
+          "orange-county",
+          "modern-art"
         ],
         "stay": false,
         "season": []
@@ -10574,6 +10673,39 @@
           "summit",
           "coastal-views",
           "wilderness"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7585,
+          33.5086
+        ]
+      },
+      "properties": {
+        "slug": "victoria-beach-pirate-tower",
+        "name": "Victoria Beach Pirate Tower",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A sixty-foot stone tower shaped like a castle turret stands on a Laguna Beach cove, and the tide has to be out for you to reach it.",
+        "tags": [
+          "tower",
+          "oddity",
+          "laguna-beach",
+          "cove",
+          "low-tide",
+          "orange-county",
+          "la-tour"
         ],
         "stay": false,
         "season": []
