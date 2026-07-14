@@ -454,6 +454,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.2685,
+          33.0175
+        ]
+      },
+      "properties": {
+        "slug": "annies-canyon",
+        "name": "Annie's Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A narrow sandstone slot canyon hides in a coastal lagoon between two beach towns, tight enough that you climb out through a crack and up a ladder.",
+        "tags": [
+          "slot-canyon",
+          "sandstone",
+          "san-elijo-lagoon",
+          "solana-beach",
+          "squeeze",
+          "san-diego",
+          "coastal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.3378,
           37.1082
         ]
@@ -6320,6 +6353,39 @@
           "fort-hunter-liggett",
           "oaks",
           "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.515,
+          34.943
+        ]
+      },
+      "properties": {
+        "slug": "mitchell-caverns",
+        "name": "Mitchell Caverns",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "9h",
+        "hook": "The only limestone caves in California's state parks are hidden in a desert mountain range so remote you can get in only by reservation, and only a few days a week.",
+        "tags": [
+          "limestone-cave",
+          "providence-mountains",
+          "mojave",
+          "reservation-only",
+          "remote",
+          "high-desert",
+          "guided-tour"
         ],
         "stay": false,
         "season": []
