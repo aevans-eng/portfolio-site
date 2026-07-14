@@ -1412,6 +1412,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.2477,
+          34.0505
+        ]
+      },
+      "properties": {
+        "slug": "bradbury-building",
+        "name": "The Bradbury Building",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "Behind a plain brick front on a downtown corner is the most beautiful interior in Los Angeles, a five-story court of wrought iron and light most people walk right past.",
+        "tags": [
+          "architecture",
+          "atrium",
+          "wrought-iron",
+          "blade-runner",
+          "downtown",
+          "los-angeles",
+          "historic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.483,
           37.665
         ]
@@ -2820,6 +2853,38 @@
           "river-towns",
           "delta",
           "slow-drive"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.213,
+          34.2005
+        ]
+      },
+      "properties": {
+        "slug": "descanso-gardens",
+        "name": "Descanso Gardens",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "Under a canopy of native oaks in La Ca\u00f1ada grows one of the largest camellia forests in the hemisphere, and the reason it's so large is not a happy one.",
+        "tags": [
+          "gardens",
+          "camellias",
+          "oak-woodland",
+          "la-canada",
+          "internment-history",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -4749,6 +4814,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.294,
+          34.1105
+        ]
+      },
+      "properties": {
+        "slug": "hollyhock-house",
+        "name": "Hollyhock House",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "Frank Lloyd Wright's first Los Angeles house crowns a hill in the middle of the city, and it's the only one of his LA houses you can walk into.",
+        "tags": [
+          "frank-lloyd-wright",
+          "architecture",
+          "unesco",
+          "barnsdall",
+          "east-hollywood",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.2397,
           37.5027
         ]
@@ -5379,6 +5476,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.356,
+          34.0639
+        ]
+      },
+      "properties": {
+        "slug": "la-brea-tar-pits",
+        "name": "La Brea Tar Pits",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "In the middle of the city, next to the art museums, cold black asphalt still bubbles up out of the ground the same way it trapped mammoths for the last forty thousand years.",
+        "tags": [
+          "ice-age",
+          "fossils",
+          "asphalt",
+          "paleontology",
+          "miracle-mile",
+          "los-angeles",
+          "active-dig"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.259,
           37.806
         ]
@@ -5472,6 +5602,38 @@
           9,
           10
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2498,
+          34.0477
+        ]
+      },
+      "properties": {
+        "slug": "last-bookstore",
+        "name": "The Last Bookstore",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "California's biggest used bookstore fills an old downtown bank, and upstairs the shelves curl into tunnels and arches built entirely out of books.",
+        "tags": [
+          "bookstore",
+          "labyrinth",
+          "former-bank",
+          "downtown",
+          "los-angeles",
+          "book-tunnel"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -7034,6 +7196,39 @@
           "views",
           "santa-cruz-mountains",
           "ohlone"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0575,
+          34.2257
+        ]
+      },
+      "properties": {
+        "slug": "mount-wilson-observatory",
+        "name": "Mount Wilson Observatory",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "On a peak above the city sits the telescope where a man looked out one night in the 1920s and found that the universe is far larger, and stranger, than anyone had believed.",
+        "tags": [
+          "observatory",
+          "hubble",
+          "telescope",
+          "san-gabriels",
+          "science-history",
+          "los-angeles",
+          "expanding-universe"
         ],
         "stay": false,
         "season": []
@@ -10616,6 +10811,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.1145,
+          34.129
+        ]
+      },
+      "properties": {
+        "slug": "the-huntington",
+        "name": "The Huntington",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "A railroad fortune bought a Gutenberg Bible, Gainsborough's Blue Boy, and a hundred and twenty acres of gardens, and left all of it open to the public in San Marino.",
+        "tags": [
+          "gardens",
+          "rare-books",
+          "art-museum",
+          "desert-garden",
+          "chinese-garden",
+          "san-marino",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -119.173,
           37.725
         ]
@@ -11005,6 +11233,39 @@
           "agua-dulce",
           "los-angeles",
           "pct"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.279,
+          34.029
+        ]
+      },
+      "properties": {
+        "slug": "velaslavasay-panorama",
+        "name": "The Velaslavasay Panorama",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "In a 1910 theater in West Adams, an artist revived a dead nineteenth-century art form: a painting that wraps all the way around you until you can't tell where the room ends.",
+        "tags": [
+          "panorama",
+          "painted-art",
+          "west-adams",
+          "oddity",
+          "union-theatre",
+          "los-angeles",
+          "immersive"
         ],
         "stay": false,
         "season": []
