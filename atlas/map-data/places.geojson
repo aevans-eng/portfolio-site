@@ -5560,9 +5560,9 @@
         "kind": "nature",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 5,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
-        "radius": 11,
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
         "drive": "3h15m",
         "hook": "The park most people blow past on the way to somewhere more famous, and the one a few of them come back raving about.",
         "tags": [
