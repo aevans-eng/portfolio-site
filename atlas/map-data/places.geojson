@@ -421,6 +421,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.25,
+          34.051
+        ]
+      },
+      "properties": {
+        "slug": "angels-flight",
+        "name": "Angels Flight",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The world's shortest railway climbs a single downtown block, has done since 1901, and costs a dollar fifty.",
+        "tags": [
+          "funicular",
+          "railway",
+          "downtown",
+          "bunker-hill",
+          "historic",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.068,
           38.871
         ]
@@ -3305,6 +3337,39 @@
           "mtb",
           "gravel",
           "geology"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.877,
+          34.0378
+        ]
+      },
+      "properties": {
+        "slug": "el-matador",
+        "name": "El Matador State Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The prettiest beach in Malibu is a small cove of sea stacks, arches, and caves you reach down a cliff, with barely room to park.",
+        "tags": [
+          "beach",
+          "sea-stacks",
+          "sea-caves",
+          "arches",
+          "tide-pools",
+          "malibu",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -6238,6 +6303,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.341,
+          34.105
+        ]
+      },
+      "properties": {
+        "slug": "magic-castle",
+        "name": "The Magic Castle",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "Behind a hedge in Hollywood is a Victorian mansion full of magicians, and you can only get in if one of them invites you or you stay at the hotel next door.",
+        "tags": [
+          "magic",
+          "private-club",
+          "hollywood",
+          "victorian-mansion",
+          "members-only",
+          "oddity",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -118.1542,
           36.7284
         ]
@@ -7516,6 +7614,39 @@
           "beach",
           "hike",
           "reservations"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.521,
+          34.056
+        ]
+      },
+      "properties": {
+        "slug": "murphy-ranch",
+        "name": "Murphy Ranch",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "In a canyon above the Palisades are the graffiti-covered ruins of a compound built in the 1930s by Americans who expected the Nazis to win.",
+        "tags": [
+          "ruins",
+          "dark-history",
+          "rustic-canyon",
+          "hike",
+          "urbex",
+          "pacific-palisades",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
