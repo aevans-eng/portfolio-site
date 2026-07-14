@@ -3633,6 +3633,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.691,
+          38.156
+        ]
+      },
+      "properties": {
+        "slug": "fosters-bighorn",
+        "name": "Foster's Bighorn",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "1.25h",
+        "hook": "In a Delta river town, you can eat dinner in a 1931 bar under the mounted heads of some three hundred big-game animals, one of them an elephant with a thirteen-foot trunk.",
+        "tags": [
+          "oddity",
+          "taxidermy",
+          "delta",
+          "rio-vista",
+          "prohibition",
+          "historic-bar"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.159,
           37.409
         ]
