@@ -1404,6 +1404,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -115.733,
+          33.351
+        ]
+      },
+      "properties": {
+        "slug": "bombay-beach",
+        "name": "Bombay Beach",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "9h",
+        "hook": "A 1950s resort town that the dying Salton Sea left to rot has been colonized by artists, so its ruins now hold a car drive-in facing nothing and a swing set out in the receding water.",
+        "tags": [
+          "salton-sea",
+          "art-installations",
+          "ghost-town",
+          "biennale",
+          "ruins",
+          "below-sea-level",
+          "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.613,
           37.949
         ]
@@ -4508,6 +4541,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.39,
+          34.333
+        ]
+      },
+      "properties": {
+        "slug": "giant-rock",
+        "name": "Giant Rock",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A seven-story boulder sitting alone in the open Mojave was the site of UFO conventions that drew thousands, and the reason the Integratron down the road exists.",
+        "tags": [
+          "boulder",
+          "landers",
+          "ufo-history",
+          "van-tassel",
+          "mojave",
+          "integratron",
+          "high-desert"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4405,
           37.7401
         ]
@@ -7438,6 +7504,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.546,
+          33.808
+        ]
+      },
+      "properties": {
+        "slug": "moorten-botanical-garden",
+        "name": "Moorten Botanical Garden",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A one-acre family cactus garden in Palm Springs holds three thousand kinds of desert plant and the world's first \"Cactarium,\" a word the founders made up.",
+        "tags": [
+          "cactus-garden",
+          "cactarium",
+          "palm-springs",
+          "family-run",
+          "desert-plants",
+          "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.7953,
           37.8186
         ]
@@ -7683,6 +7781,39 @@
           "henry-miller",
           "gilroy",
           "camping"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.397,
+          33.984
+        ]
+      },
+      "properties": {
+        "slug": "mount-rubidoux",
+        "name": "Mount Rubidoux",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The hill Riverside walks up for exercise is also where the country's first outdoor Easter sunrise service was held, back in 1909, and it still happens every year.",
+        "tags": [
+          "hilltop-park",
+          "easter-sunrise",
+          "peace-tower",
+          "riverside",
+          "city-views",
+          "frank-miller",
+          "inland-empire"
         ],
         "stay": false,
         "season": []
@@ -8963,6 +9094,38 @@
           "rotunda",
           "marina",
           "san-francisco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.6125,
+          33.8365
+        ]
+      },
+      "properties": {
+        "slug": "palm-springs-tramway",
+        "name": "Palm Springs Aerial Tramway",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "In ten minutes a rotating cable car lifts you from the desert floor to an alpine forest eight thousand feet up, and the car spins slowly so everyone gets the view.",
+        "tags": [
+          "tramway",
+          "mount-san-jacinto",
+          "desert-to-alpine",
+          "rotating-car",
+          "palm-springs",
+          "views"
         ],
         "stay": false,
         "season": []
@@ -10975,6 +11138,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.276,
+          33.718
+        ]
+      },
+      "properties": {
+        "slug": "shields-date-garden",
+        "name": "Shields Date Garden",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A 1924 date farm in Indio serves a date milkshake that tastes like caramel and, in its own little theater, screens a film called \"The Romance and Sex Life of the Date.\"",
+        "tags": [
+          "date-farm",
+          "date-shake",
+          "indio",
+          "roadside",
+          "kitsch",
+          "coachella-valley",
+          "palm-springs"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.199,
           37.8497
         ]
@@ -11695,6 +11891,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.548,
+          33.813
+        ]
+      },
+      "properties": {
+        "slug": "tahquitz-canyon",
+        "name": "Tahquitz Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A sixty-foot waterfall runs down a canyon on Cahuilla land minutes from downtown Palm Springs, in a place their oldest story calls home to a banished shaman.",
+        "tags": [
+          "waterfall",
+          "agua-caliente",
+          "cahuilla",
+          "canyon-hike",
+          "palm-springs",
+          "rock-art"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.55,
           36.235
         ]
@@ -11876,6 +12104,38 @@
           "backpacking",
           "eastern-sierra",
           "mammoth"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.305,
+          33.828
+        ]
+      },
+      "properties": {
+        "slug": "thousand-palms-oasis",
+        "name": "Thousand Palms Oasis",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "The San Andreas Fault pushes groundwater to the surface in the middle of the desert here, and native fan palms have grown up around it into shady green oases you cross on a boardwalk.",
+        "tags": [
+          "fan-palm-oasis",
+          "san-andreas-fault",
+          "coachella-valley-preserve",
+          "boardwalk",
+          "pupfish",
+          "palm-springs"
         ],
         "stay": false,
         "season": []
