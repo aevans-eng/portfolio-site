@@ -5551,6 +5551,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.639,
+          34.453
+        ]
+      },
+      "properties": {
+        "slug": "lotusland",
+        "name": "Ganna Walska Lotusland",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "A Polish opera singer married six times spent forty years turning a Montecito estate into nineteen theatrical gardens, and paid for the rarest one by auctioning off her jewels.",
+        "tags": [
+          "garden",
+          "ganna-walska",
+          "cycads",
+          "eccentric",
+          "montecito",
+          "santa-barbara",
+          "reservation-only"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.671,
           35.2555
         ]
@@ -7242,6 +7275,39 @@
           3,
           4
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.243,
+          34.448
+        ]
+      },
+      "properties": {
+        "slug": "ojai",
+        "name": "Ojai & Bart's Books",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "A valley town under the Topatopa Mountains lights up pink at sunset, and its bookstore is a hundred and thirty thousand books shelved outdoors on the sidewalk, sold on the honor system.",
+        "tags": [
+          "town",
+          "pink-moment",
+          "barts-books",
+          "arts",
+          "topatopa",
+          "ventura",
+          "honor-system"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
