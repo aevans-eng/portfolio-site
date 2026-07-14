@@ -810,6 +810,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.149,
+          32.734
+        ]
+      },
+      "properties": {
+        "slug": "balboa-park",
+        "name": "Balboa Park",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "The biggest urban cultural park in the country, bigger than Central Park, is a mile of Spanish-fantasy architecture, fifteen museums, and gardens in the middle of San Diego, most of it free to walk.",
+        "tags": [
+          "urban-park",
+          "museums",
+          "spanish-colonial",
+          "gardens",
+          "organ-pavilion",
+          "1915-exposition",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.136,
           37.415
         ]
@@ -1791,6 +1824,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.241,
+          32.672
+        ]
+      },
+      "properties": {
+        "slug": "cabrillo-national-monument",
+        "name": "Cabrillo National Monument",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "At the tip of Point Loma, where the first European stepped ashore on the West Coast, are the best tide pools in California and an old lighthouse on the headland.",
+        "tags": [
+          "point-loma",
+          "tide-pools",
+          "lighthouse",
+          "bay-views",
+          "cabrillo",
+          "whale-watching",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.3105,
           38.2769
         ]
@@ -2209,6 +2275,38 @@
           "kayaking",
           "ventura",
           "santa-barbara"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.143,
+          32.701
+        ]
+      },
+      "properties": {
+        "slug": "chicano-park",
+        "name": "Chicano Park",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "Under the ramps of the Coronado Bridge, the concrete pylons hold the largest collection of Chicano murals in the world, and the neighborhood took the land by force to make it happen.",
+        "tags": [
+          "murals",
+          "chicano-movement",
+          "barrio-logan",
+          "national-historic-landmark",
+          "public-art",
+          "san-diego"
         ],
         "stay": false,
         "season": []
@@ -2663,6 +2761,38 @@
           "quiet",
           "farmland",
           "beach"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.032,
+          32.815
+        ]
+      },
+      "properties": {
+        "slug": "cowles-mountain",
+        "name": "Cowles Mountain & Mission Trails",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "The highest point in the city of San Diego is a summit hike inside the largest municipal park in California, and half the city seems to climb it.",
+        "tags": [
+          "summit-hike",
+          "mission-trails",
+          "city-park",
+          "views",
+          "kumeyaay",
+          "san-diego"
         ],
         "stay": false,
         "season": []
@@ -4046,6 +4176,39 @@
           "tower",
           "urban-legend",
           "foothills"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.375,
+          33.27
+        ]
+      },
+      "properties": {
+        "slug": "galleta-meadows",
+        "name": "Galleta Meadows Sculptures",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "9h",
+        "hook": "Scattered free across the open desert around Borrego Springs are a hundred and thirty giant rusted-metal animals, including a three-hundred-and-fifty-foot serpent that surfaces from the sand.",
+        "tags": [
+          "metal-sculptures",
+          "borrego-springs",
+          "desert-art",
+          "breceda",
+          "anza-borrego",
+          "free",
+          "san-diego"
         ],
         "stay": false,
         "season": []
@@ -8517,6 +8680,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.865,
+          33.3563
+        ]
+      },
+      "properties": {
+        "slug": "palomar-observatory",
+        "name": "Palomar Observatory",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "For twenty-six years the largest telescope on Earth sat on a mountain in the back country of San Diego County, and you can still drive up and stand under it.",
+        "tags": [
+          "observatory",
+          "hale-telescope",
+          "palomar-mountain",
+          "science-history",
+          "caltech",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.6933,
           36.1783
         ]
@@ -10486,6 +10681,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -115.468,
+          33.258
+        ]
+      },
+      "properties": {
+        "slug": "slab-city",
+        "name": "Slab City",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "9h",
+        "hook": "On the concrete slabs of a torn-down WWII base by the Salton Sea, a few hundred people live off the grid year-round in what they call the last free place in America.",
+        "tags": [
+          "off-grid",
+          "community",
+          "east-jesus",
+          "salton-sea",
+          "niland",
+          "outsider-art",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.205,
           37.418
         ]
@@ -10635,6 +10863,39 @@
           "mt-tam",
           "hike",
           "family"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.58,
+          32.985
+        ]
+      },
+      "properties": {
+        "slug": "stonewall-peak",
+        "name": "Stonewall Peak & Cuyamaca",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "An hour east of San Diego the land climbs into a pine-and-oak mountain range, and a chain-assisted scramble tops out on a granite dome over the whole park.",
+        "tags": [
+          "mountain",
+          "pine-forest",
+          "summit-scramble",
+          "gold-mining",
+          "cuyamaca",
+          "cedar-fire",
+          "san-diego"
         ],
         "stay": false,
         "season": []
