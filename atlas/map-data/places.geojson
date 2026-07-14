@@ -4141,6 +4141,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.572,
+          34.9718
+        ]
+      },
+      "properties": {
+        "slug": "guadalupe-dunes",
+        "name": "Guadalupe Dunes & the Lost City of DeMille",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "Cecil B. DeMille built the largest movie set in history out here in 1923, then had the whole Egyptian city torn down and secretly buried in the dunes, where it still is.",
+        "tags": [
+          "dunes",
+          "buried-movie-set",
+          "ten-commandments",
+          "demille",
+          "dunes-center",
+          "santa-barbara",
+          "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.0448,
           37.2537
         ]
@@ -9445,6 +9478,39 @@
           "jade",
           "remote",
           "treasure-hunt"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7032,
+          34.4225
+        ]
+      },
+      "properties": {
+        "slug": "santa-barbara-courthouse",
+        "name": "Santa Barbara County Courthouse",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "A working county courthouse is one of the most beautiful public buildings in the country, and you can ride an elevator up its clock tower for a free view over the whole city to the sea.",
+        "tags": [
+          "architecture",
+          "spanish-colonial",
+          "clock-tower",
+          "free",
+          "sunken-garden",
+          "santa-barbara",
+          "courthouse"
         ],
         "stay": false,
         "season": []
