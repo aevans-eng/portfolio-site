@@ -490,6 +490,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.375,
+          33.256
+        ]
+      },
+      "properties": {
+        "slug": "anza-borrego",
+        "name": "Anza-Borrego & the Desert Sculptures",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "The largest state park in the country runs on badlands and slot canyons and a wildflower bloom that only shows up some springs, and someone scattered a hundred and thirty giant metal dinosaurs across the desert floor.",
+        "tags": [
+          "desert",
+          "largest-state-park",
+          "superbloom",
+          "slot-canyon",
+          "metal-sculptures",
+          "borrego-springs",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.274,
           37.319
         ]
@@ -8570,6 +8603,38 @@
           "stay"
         ],
         "stay": true,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.245,
+          32.887
+        ]
+      },
+      "properties": {
+        "slug": "salk-institute",
+        "name": "The Salk Institute",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "Louis Kahn's most famous building is a bare travertine courtyard split by a single thin line of water that runs straight out to the Pacific.",
+        "tags": [
+          "architecture",
+          "louis-kahn",
+          "brutalist",
+          "la-jolla",
+          "jonas-salk",
+          "san-diego"
+        ],
+        "stay": false,
         "season": []
       }
     },
