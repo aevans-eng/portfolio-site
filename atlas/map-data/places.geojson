@@ -4719,6 +4719,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.537,
+          33.748
+        ]
+      },
+      "properties": {
+        "slug": "indian-canyons",
+        "name": "The Indian Canyons",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "The largest palm oasis on Earth is a fifteen-mile canyon of native fan palms along a desert stream, on Cahuilla land just south of Palm Springs.",
+        "tags": [
+          "palm-oasis",
+          "agua-caliente",
+          "cahuilla",
+          "desert-canyon",
+          "hiking",
+          "palm-springs",
+          "stream"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.6395,
           38.4245
         ]
@@ -7869,6 +7902,39 @@
           "volcanic",
           "dark-sky",
           "day-section"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.494,
+          34.16
+        ]
+      },
+      "properties": {
+        "slug": "pioneertown",
+        "name": "Pioneertown & Pappy and Harriet's",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "In 1946 a group of Western movie stars built a fake 1880s town in the high desert to film in and live in, and it's still standing, still a real town, with a roadhouse out back that books serious music.",
+        "tags": [
+          "movie-set",
+          "old-west",
+          "pappy-and-harriets",
+          "live-music",
+          "high-desert",
+          "joshua-tree",
+          "national-register"
         ],
         "stay": false,
         "season": []
