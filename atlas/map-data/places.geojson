@@ -4196,6 +4196,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -123.475,
+          39.076
+        ]
+      },
+      "properties": {
+        "slug": "hendy-woods",
+        "name": "Hendy Woods & the Hermit",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "2.75h",
+        "hook": "Two groves of thousand-year-old redwoods sit in the middle of Anderson Valley's wine country, and a Russian hermit once lived among them in shelters he built from fallen wood.",
+        "tags": [
+          "old-growth",
+          "redwoods",
+          "anderson-valley",
+          "hendy-hermit",
+          "navarro-river",
+          "mendocino",
+          "state-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.423,
           37.1866
         ]
@@ -8935,6 +8968,39 @@
           "letters",
           "view",
           "hike"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.805,
+          39.446
+        ]
+      },
+      "properties": {
+        "slug": "skunk-train",
+        "name": "The Skunk Train",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "4h",
+        "hook": "A logging railroad from 1885 still climbs off the Mendocino coast into the redwoods, and you can ride it in a rail motorcar or pedal it yourself on an electric railbike.",
+        "tags": [
+          "railroad",
+          "redwoods",
+          "railbikes",
+          "fort-bragg",
+          "logging-history",
+          "mendocino",
+          "excursion"
         ],
         "stay": false,
         "season": []
