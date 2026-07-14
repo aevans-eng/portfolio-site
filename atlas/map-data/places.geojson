@@ -4888,6 +4888,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.403,
+          34.2957
+        ]
+      },
+      "properties": {
+        "slug": "integratron",
+        "name": "The Integratron",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A man said aliens from Venus gave him the plans for a machine to reverse aging, and he spent eighteen years building it in the desert; today people lie on the floor inside it for sound baths.",
+        "tags": [
+          "oddity",
+          "dome",
+          "landers",
+          "sound-bath",
+          "ufo-history",
+          "high-desert",
+          "van-tassel"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.866,
           38.115
         ]
@@ -5011,6 +5044,39 @@
           "geology",
           "mendocino",
           "science"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.708,
+          34.902
+        ]
+      },
+      "properties": {
+        "slug": "kelso-dunes",
+        "name": "Kelso Dunes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "9h",
+        "hook": "Climb these Mojave dunes, slide back down, and the whole slope answers with a low booming hum you can feel through your feet.",
+        "tags": [
+          "sand-dunes",
+          "booming-sand",
+          "mojave-preserve",
+          "hiking",
+          "remote",
+          "high-desert",
+          "natural-wonder"
         ],
         "stay": false,
         "season": []
@@ -6090,6 +6156,39 @@
           "murals",
           "walking",
           "culture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3745,
+          33.9825
+        ]
+      },
+      "properties": {
+        "slug": "mission-inn",
+        "name": "The Mission Inn",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A hotel keeper spent fifty-five years turning a small adobe boarding house into a full-block fantasia of towers, flying buttresses, and catacombs, and it's still a working hotel.",
+        "tags": [
+          "architecture",
+          "historic-hotel",
+          "mission-revival",
+          "riverside",
+          "frank-miller",
+          "inland-empire",
+          "festival-of-lights"
         ],
         "stay": false,
         "season": []
@@ -7304,6 +7403,39 @@
           "folk-art",
           "oddity",
           "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.34,
+          34.15
+        ]
+      },
+      "properties": {
+        "slug": "noah-purifoy-desert-museum",
+        "name": "Noah Purifoy Desert Art Museum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "An artist spent the last fifteen years of his life turning ten acres of open desert into a walk-through city of sculptures built from junk, and left it unfenced on purpose.",
+        "tags": [
+          "outdoor-art",
+          "assemblage",
+          "joshua-tree",
+          "high-desert",
+          "free",
+          "noah-purifoy",
+          "sculpture"
         ],
         "stay": false,
         "season": []
