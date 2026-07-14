@@ -8543,6 +8543,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -124.19,
+          40.806
+        ]
+      },
+      "properties": {
+        "slug": "samoa-cookhouse",
+        "name": "The Samoa Cookhouse",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "The last lumber-camp cookhouse in the West still feeds you the way it fed loggers in 1893: family-style at long tables, in bowls you pass around, until nobody leaves hungry.",
+        "tags": [
+          "lumber-camp",
+          "family-style",
+          "logging-history",
+          "samoa",
+          "eureka",
+          "humboldt",
+          "historic-restaurant"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.489,
           37.612
         ]
