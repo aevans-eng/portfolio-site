@@ -6671,6 +6671,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.391,
+          34.025
+        ]
+      },
+      "properties": {
+        "slug": "museum-jurassic-technology",
+        "name": "The Museum of Jurassic Technology",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "A small museum on a Los Angeles boulevard shows you an ant with a fungus bursting from its head, a sculpture carved to sit inside the eye of a needle, and a dozen exhibits that may or may not be true, and it won't tell you which.",
+        "tags": [
+          "museum",
+          "cabinet-of-curiosities",
+          "oddity",
+          "culver-city",
+          "los-angeles",
+          "wonder"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.494,
           37.672
         ]
@@ -10142,6 +10174,38 @@
           "trails",
           "hidden",
           "mtb"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2415,
+          33.9385
+        ]
+      },
+      "properties": {
+        "slug": "watts-towers",
+        "name": "The Watts Towers",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "An Italian immigrant tile-setter spent thirty-three years building seventeen steel towers in his Watts backyard out of broken glass and pottery, the tallest a hundred feet, then handed over the deed and walked away.",
+        "tags": [
+          "outsider-art",
+          "folk-art",
+          "simon-rodia",
+          "national-historic-landmark",
+          "watts",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
