@@ -1172,6 +1172,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.199,
+          34.13
+        ]
+      },
+      "properties": {
+        "slug": "bob-baker-marionette",
+        "name": "Bob Baker Marionette Theater",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The oldest puppet theater in the country still puts on marionette shows where the puppeteers walk the characters right up into your lap, and afterward everyone gets ice cream.",
+        "tags": [
+          "marionettes",
+          "puppet-theater",
+          "highland-park",
+          "historic",
+          "family",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.067,
           38.304
         ]
@@ -3959,6 +3991,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.16,
+          34.155
+        ]
+      },
+      "properties": {
+        "slug": "gamble-house",
+        "name": "The Gamble House",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The finest Arts and Crafts house in America is a wooden bungalow in Pasadena so perfectly made that architects come just to study the joinery.",
+        "tags": [
+          "architecture",
+          "arts-and-crafts",
+          "greene-and-greene",
+          "pasadena",
+          "ultimate-bungalow",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.92,
           36.47
         ]
@@ -4012,6 +4076,39 @@
           "sequoia-np",
           "old-growth",
           "tulare"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.565,
+          34.045
+        ]
+      },
+      "properties": {
+        "slug": "getty-villa",
+        "name": "The Getty Villa",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "A recreated ancient Roman villa sits above the ocean at the edge of the Palisades, full of Greek and Roman antiquities, and it came within a hundred feet of burning down last year.",
+        "tags": [
+          "antiquities",
+          "roman-villa",
+          "museum",
+          "gardens",
+          "pacific-palisades",
+          "getty",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -4230,6 +4327,39 @@
           "stone-art",
           "landfill",
           "bayfront"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3004,
+          34.1184
+        ]
+      },
+      "properties": {
+        "slug": "griffith-observatory",
+        "name": "Griffith Observatory",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "Yes, it's the most obvious landmark in Los Angeles, and yes, it's genuinely worth it, and it has been free to everyone since 1935 because the man who paid for it insisted.",
+        "tags": [
+          "observatory",
+          "free",
+          "city-view",
+          "planetarium",
+          "griffith-park",
+          "iconic",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -5466,6 +5596,38 @@
           "oakdale",
           "history",
           "tubing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.052,
+          34.145
+        ]
+      },
+      "properties": {
+        "slug": "la-arboretum",
+        "name": "Los Angeles County Arboretum",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A hundred and twenty-seven acres of gardens in Arcadia come with about two hundred and fifty wild peacocks that wander the lawns and scream from the rooftops like they own the place.",
+        "tags": [
+          "botanical-garden",
+          "peacocks",
+          "arcadia",
+          "queen-anne-cottage",
+          "baldwin-lake",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -10004,6 +10166,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.546,
+          34.0405
+        ]
+      },
+      "properties": {
+        "slug": "self-realization-lake-shrine",
+        "name": "Self-Realization Fellowship Lake Shrine",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A spring-fed lake ringed by gardens and a windmill chapel hides off Sunset Boulevard, with a portion of Gandhi's ashes enshrined at the water's edge, open to anyone for free.",
+        "tags": [
+          "meditation-garden",
+          "lake",
+          "gandhi-shrine",
+          "self-realization",
+          "pacific-palisades",
+          "quiet",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.362,
           37.546
         ]
@@ -10180,6 +10375,39 @@
           "accelerator",
           "science",
           "scale"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.744,
+          34.0405
+        ]
+      },
+      "properties": {
+        "slug": "solstice-canyon",
+        "name": "Solstice Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "An easy Malibu canyon walk ends at the ruins of a modernist ranch house built into a waterfall, burned out and left to the creek.",
+        "tags": [
+          "malibu",
+          "canyon",
+          "waterfall",
+          "ruins",
+          "paul-williams",
+          "easy-hike",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -11488,6 +11716,39 @@
           "weaverville",
           "trinity",
           "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.413,
+          34.013
+        ]
+      },
+      "properties": {
+        "slug": "wende-museum",
+        "name": "The Wende Museum",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A museum in a Cold War National Guard armory in Culver City holds the world's largest collection of things from East Germany, and the longest stretch of the Berlin Wall outside Berlin sits out front.",
+        "tags": [
+          "cold-war",
+          "east-germany",
+          "museum",
+          "culver-city",
+          "berlin-wall",
+          "free",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
