@@ -1160,6 +1160,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.933,
+          34.0889
+        ]
+      },
+      "properties": {
+        "slug": "big-falls-forest-falls",
+        "name": "Big Falls (Forest Falls)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The tallest year-round waterfall in Southern California drops some five hundred feet down a mountainside above the hamlet of Forest Falls, and the short walk to see it has also been one of the deadliest.",
+        "tags": [
+          "waterfall",
+          "forest-falls",
+          "san-bernardino-mountains",
+          "tallest-waterfall",
+          "overlook",
+          "safety",
+          "inland-empire"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -118.498,
           37.123
         ]
@@ -2074,6 +2107,39 @@
           "stump-story",
           "sierra",
           "snow"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4881,
+          33.9203
+        ]
+      },
+      "properties": {
+        "slug": "california-citrus-park",
+        "name": "California Citrus State Historic Park",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A living grove of the oranges that built Southern California survives as a state park in Riverside, rows of trees kept as they stood when citrus was king.",
+        "tags": [
+          "state-park",
+          "citrus-heritage",
+          "living-museum",
+          "groves",
+          "riverside",
+          "history",
+          "inland-empire"
         ],
         "stay": false,
         "season": []
@@ -3289,6 +3355,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.6108,
+          34.2225
+        ]
+      },
+      "properties": {
+        "slug": "cucamonga-peak",
+        "name": "Cucamonga Peak",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The peak that looms over Rancho Cucamonga is the hardest and best of the Inland Empire's local summits, a near-vertical drop on its south face and a line of hikers grinding up its back all weekend.",
+        "tags": [
+          "summit",
+          "six-pack-of-peaks",
+          "san-gabriel-mountains",
+          "icehouse-canyon",
+          "strenuous-hike",
+          "rancho-cucamonga",
+          "inland-empire"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.953,
           38.087
         ]
@@ -3311,6 +3410,39 @@
           "radio-station",
           "pearl-harbor",
           "point-reyes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1717,
+          34.3389
+        ]
+      },
+      "properties": {
+        "slug": "deep-creek-hot-springs",
+        "name": "Deep Creek Hot Springs",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A string of natural hot pools sits in a desert canyon along the Pacific Crest Trail, a hard walk from any road, beloved and genuinely hazardous in equal measure.",
+        "tags": [
+          "hot-springs",
+          "wild-soak",
+          "san-bernardino-national-forest",
+          "pct",
+          "clothing-optional",
+          "safety",
+          "inland-empire"
         ],
         "stay": false,
         "season": []
@@ -4116,6 +4248,38 @@
           "canyon-hike",
           "seasonal",
           "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.5289,
+          34.2016
+        ]
+      },
+      "properties": {
+        "slug": "etiwanda-falls",
+        "name": "Etiwanda Falls & North Etiwanda Preserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The Inland Empire's most-hiked waterfall pours off the San Gabriel foothills right above Rancho Cucamonga, close enough to the suburbs that the trailhead fills before breakfast.",
+        "tags": [
+          "waterfall",
+          "foothills",
+          "north-etiwanda-preserve",
+          "rancho-cucamonga",
+          "hike",
+          "inland-empire"
         ],
         "stay": false,
         "season": []
@@ -5502,6 +5666,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.309,
+          34.243
+        ]
+      },
+      "properties": {
+        "slug": "heart-rock",
+        "name": "Heart Rock (Seeley Creek)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A near-perfect heart, a few feet across, is worn into the rock beside a small waterfall on Seeley Creek, and no one carved it.",
+        "tags": [
+          "natural-oddity",
+          "pothole",
+          "seeley-creek",
+          "crestline",
+          "waterfall",
+          "easy-hike",
+          "inland-empire"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.2779,
           37.7946
         ]
@@ -6517,6 +6714,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.1731,
+          34.0308
+        ]
+      },
+      "properties": {
+        "slug": "kimberly-crest",
+        "name": "Kimberly Crest House & Gardens",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A French ch\u00e2teau with a stone tower and terraced Italian gardens looks down over Redlands, built by citrus money and left, whole, to the public.",
+        "tags": [
+          "historic-home",
+          "mansion",
+          "gardens",
+          "redlands",
+          "chateau",
+          "gilded-age",
+          "inland-empire"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -118.5836,
           36.7947
         ]
@@ -7067,6 +7297,39 @@
           "waterfall",
           "history",
           "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1836,
+          34.0558
+        ]
+      },
+      "properties": {
+        "slug": "lincoln-memorial-shrine",
+        "name": "Lincoln Memorial Shrine",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The only museum devoted to Abraham Lincoln west of the Mississippi is a small limestone octagon in Redlands, its walls carved with his words.",
+        "tags": [
+          "museum",
+          "lincoln",
+          "civil-war",
+          "redlands",
+          "smiley-library",
+          "history",
+          "inland-empire"
         ],
         "stay": false,
         "season": []
@@ -11705,6 +11968,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.8253,
+          34.0997
+        ]
+      },
+      "properties": {
+        "slug": "san-gorgonio-mountain",
+        "name": "San Gorgonio Mountain (Old Greyback)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "The highest mountain in Southern California isn't in the Sierra. It's Old Greyback, an 11,503-foot dome above the Inland Empire, high enough that its summit clears the treeline entirely.",
+        "tags": [
+          "highest-peak",
+          "wilderness",
+          "alpine",
+          "san-bernardino-mountains",
+          "backpacking",
+          "sand-to-snow",
+          "inland-empire"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.3833,
           37.3247
         ]
@@ -14061,6 +14357,38 @@
           "berlin-wall",
           "free",
           "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.403,
+          34.1083
+        ]
+      },
+      "properties": {
+        "slug": "wigwam-motel",
+        "name": "Wigwam Motel (Village",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "You can still sleep in a concrete teepee on Route 66 in Rialto, one of the last three survivors of a lost roadside chain and the model for a Pixar movie.",
+        "tags": [
+          "route-66",
+          "roadside-americana",
+          "teepee-motel",
+          "rialto",
+          "national-register",
+          "inland-empire"
         ],
         "stay": false,
         "season": []
