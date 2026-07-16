@@ -843,6 +843,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.376,
+          34.018
+        ]
+      },
+      "properties": {
+        "slug": "baldwin-hills-overlook",
+        "name": "Baldwin Hills Scenic Overlook",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The city's favorite outdoor stairmaster is 282 steep steps up a hill in the middle of LA, and the reward at the top is the whole basin from downtown to the ocean.",
+        "tags": [
+          "stairs",
+          "city-view",
+          "overlook",
+          "culver-city",
+          "workout",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.136,
           37.415
         ]
@@ -1594,6 +1626,38 @@
           "history",
           "duel",
           "monument"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.313,
+          34.125
+        ]
+      },
+      "properties": {
+        "slug": "bronson-caves",
+        "name": "Bronson Caves",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The original Batcave is a short rock tunnel in Griffith Park, and it's been the secret entrance to a thousand movies since the 1930s.",
+        "tags": [
+          "batcave",
+          "griffith-park",
+          "filming-location",
+          "quarry-tunnel",
+          "hollywood",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -3513,6 +3577,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.254,
+          34.0435
+        ]
+      },
+      "properties": {
+        "slug": "eastern-columbia",
+        "name": "Eastern Columbia Building",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The finest Art Deco building in Los Angeles is a thirteen-story tower of glossy turquoise on Broadway, topped by a clock the city broke its own rules to allow.",
+        "tags": [
+          "art-deco",
+          "architecture",
+          "turquoise",
+          "downtown",
+          "clock-tower",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.276,
           37.47
         ]
@@ -4274,6 +4370,38 @@
           "tower",
           "urban-legend",
           "foothills"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.192,
+          34.112
+        ]
+      },
+      "properties": {
+        "slug": "galcos",
+        "name": "Galco's Soda Pop Stop",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "An old Italian grocery in Highland Park stocks more than seven hundred kinds of soda, most of them ones you've never heard of, sold by a man on a mission against the big brands.",
+        "tags": [
+          "soda",
+          "highland-park",
+          "old-grocery",
+          "john-nese",
+          "oddity",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -6020,6 +6148,38 @@
           "oakdale",
           "history",
           "tubing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.295,
+          33.713
+        ]
+      },
+      "properties": {
+        "slug": "korean-bell",
+        "name": "Korean Bell of Friendship",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A seventeen-ton bronze bell in an ornate Korean pavilion sits on a windy bluff above the Pacific in San Pedro, a bicentennial gift most Angelenos have never seen.",
+        "tags": [
+          "korean-bell",
+          "san-pedro",
+          "angels-gate",
+          "monument",
+          "ocean-bluff",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -12948,6 +13108,39 @@
           "view",
           "hang-gliders",
           "hike"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.326,
+          34.137
+        ]
+      },
+      "properties": {
+        "slug": "wisdom-tree",
+        "name": "The Wisdom Tree",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "One pine tree on a Hollywood ridgeline survived the fire that took everything around it in 2007, and people hike up to leave their thoughts in a box beneath it.",
+        "tags": [
+          "lone-tree",
+          "cahuenga-peak",
+          "griffith-park",
+          "journals",
+          "hollywood-sign",
+          "hike",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
