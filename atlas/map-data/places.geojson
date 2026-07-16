@@ -1632,6 +1632,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.4944,
+          34.2353
+        ]
+      },
+      "properties": {
+        "slug": "bonita-falls",
+        "name": "Bonita Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A hundred-foot waterfall hides up a side canyon in Lytle Creek, unsigned and easy to miss, the second-tallest fall in the whole San Bernardino forest and far less known than the first.",
+        "tags": [
+          "waterfall",
+          "hidden",
+          "lytle-creek",
+          "boulder-scramble",
+          "san-bernardino-national-forest",
+          "inland-empire"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.366,
           39.009
         ]
@@ -8221,6 +8253,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.2966,
+          34.2803
+        ]
+      },
+      "properties": {
+        "slug": "mission-san-buenaventura",
+        "name": "Mission Basilica San Buenaventura",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The ninth of California's missions, and the last one Jun\u00edpero Serra founded before he died, still stands as a working church in the middle of downtown Ventura.",
+        "tags": [
+          "mission",
+          "serra",
+          "basilica",
+          "downtown-ventura",
+          1782,
+          "history",
+          "ventura"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -117.662,
           33.503
         ]
@@ -9554,9 +9619,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "3h30m",
         "hook": "A working Benedictine monastery on a ridge two miles up a private road, where you can buy honey the monks made and just sit with the quiet.",
         "tags": [
@@ -9886,6 +9951,39 @@
           "sculpture-garden",
           "uncrowded",
           "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.955,
+          34.056
+        ]
+      },
+      "properties": {
+        "slug": "oak-glen",
+        "name": "Oak Glen",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "An hour from the desert heat of the Inland Empire, a mile up in the mountains, sits an unlikely pocket of apple country that fills every fall with cider presses and u-pick orchards.",
+        "tags": [
+          "apple-country",
+          "orchards",
+          "cider",
+          "mountain",
+          "yucaipa",
+          "fall",
+          "inland-empire"
         ],
         "stay": false,
         "season": []
@@ -10557,6 +10655,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.275,
+          34.56
+        ]
+      },
+      "properties": {
+        "slug": "piedra-blanca",
+        "name": "Piedra Blanca",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h30m",
+        "hook": "Round a bend in the Sespe backcountry above Ojai and a cluster of enormous pale sandstone domes rises out of the chaparral, smooth and strange and made for climbing on.",
+        "tags": [
+          "sandstone",
+          "formations",
+          "scrambling",
+          "sespe",
+          "ojai",
+          "los-padres",
+          "ventura"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.2555,
           35.6625
         ]
@@ -10900,6 +11031,39 @@
           "wildlife",
           "tidepools",
           "hike"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.017,
+          34.0725
+        ]
+      },
+      "properties": {
+        "slug": "point-mugu",
+        "name": "Big Sycamore Canyon & La Jolla Valley (Point Mugu)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "Where the Santa Monica Mountains meet the sea at the Ventura county line, a canyon of old sycamores runs inland to one of the last native grasslands in Southern California, and in autumn the monarchs come.",
+        "tags": [
+          "state-park",
+          "sycamore-canyon",
+          "monarchs",
+          "native-grassland",
+          "hiking",
+          "coast",
+          "ventura"
         ],
         "stay": false,
         "season": []
@@ -12163,6 +12327,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.0593,
+          34.3542
+        ]
+      },
+      "properties": {
+        "slug": "santa-paula",
+        "name": "Santa Paula",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "A citrus town that time mostly left alone still calls itself the Citrus Capital of the World, its main street lined with murals and a century-old oil headquarters turned museum.",
+        "tags": [
+          "heritage-town",
+          "citrus",
+          "oil-history",
+          "murals",
+          "aviation",
+          "downtown",
+          "ventura"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.493,
           37.868
         ]
@@ -12339,6 +12536,39 @@
           "roadside",
           "history",
           "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.93,
+          34.54
+        ]
+      },
+      "properties": {
+        "slug": "sespe-condor-sanctuary",
+        "name": "Sespe Wilderness & the Condor Sanctuary",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The largest flying land bird in North America came back from twenty-two individuals, and this wild river canyon northeast of Fillmore is where it was set free again.",
+        "tags": [
+          "condor",
+          "wilderness",
+          "sespe",
+          "backcountry",
+          "los-padres",
+          "topatopa",
+          "ventura"
         ],
         "stay": false,
         "season": []
@@ -12679,9 +12909,9 @@
         "kind": "oddity",
         "kindLabel": "Oddity",
         "color": "#8f5276",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "1h25m",
         "hook": "A concrete ocean tanker \u2014 built when WWI steel ran short \u2014 has been beached at the end of the Seacliff pier since 1930, spending its century as a dance-hall, a fishing spot, and now a crumbling seabird reef.",
         "tags": [
