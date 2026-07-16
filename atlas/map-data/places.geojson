@@ -2639,6 +2639,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.4,
+          34.025
+        ]
+      },
+      "properties": {
+        "slug": "clui",
+        "name": "Center for Land Use Interpretation",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A storefront in Culver City is a museum about how humans use land, and it means that as broadly and strangely as it sounds: dead malls, missile ranges, the first highway in Antarctica.",
+        "tags": [
+          "land-use",
+          "research",
+          "culver-city",
+          "cerebral",
+          "unusual-museum",
+          "oddity",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.265,
           37.8817
         ]
@@ -2755,6 +2788,39 @@
           "state-park",
           "wakamatsu",
           "american-river"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.165,
+          34.145
+        ]
+      },
+      "properties": {
+        "slug": "colorado-street-bridge",
+        "name": "Colorado Street Bridge",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A graceful arched bridge from 1913 curves 150 feet above the Arroyo Seco in Pasadena, beautiful enough to be a landmark and sad enough to have earned a grim nickname.",
+        "tags": [
+          "bridge",
+          "beaux-arts",
+          1913,
+          "arroyo-seco",
+          "pasadena",
+          "landmark",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -3379,6 +3445,39 @@
           8,
           9
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.866,
+          34.414
+        ]
+      },
+      "properties": {
+        "slug": "devils-punchbowl",
+        "name": "Devil's Punchbowl",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "On the desert edge of the San Gabriels, the San Andreas Fault has tilted whole slabs of sandstone up on end, and you can walk down into the jumbled bowl of them.",
+        "tags": [
+          "rock-formations",
+          "san-andreas-fault",
+          "geology",
+          "antelope-valley",
+          "pearblossom",
+          "hike",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -9399,6 +9498,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.238,
+          34.0575
+        ]
+      },
+      "properties": {
+        "slug": "olvera-street",
+        "name": "Olvera Street & El Pueblo",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The oldest corner of Los Angeles is a short brick market street off the original plaza, anchored by an adobe house built in 1818 that's still standing.",
+        "tags": [
+          "el-pueblo",
+          "oldest-la",
+          "avila-adobe",
+          "mexican-marketplace",
+          "historic-plaza",
+          "downtown",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.916,
           36.6258
         ]
@@ -10019,6 +10151,39 @@
           "marin-headlands",
           "last-manned",
           "golden-gate"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.293,
+          33.706
+        ]
+      },
+      "properties": {
+        "slug": "point-fermin-lighthouse",
+        "name": "Point Fermin Lighthouse",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A gingerbread Victorian lighthouse from 1874 stands on the San Pedro bluffs, the twin of a lighthouse the atlas already loves up in San Francisco Bay.",
+        "tags": [
+          "lighthouse",
+          "victorian",
+          "san-pedro",
+          "bluffs",
+          "free-tours",
+          "ocean-view",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -12207,6 +12372,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.147,
+          34.268
+        ]
+      },
+      "properties": {
+        "slug": "switzer-falls",
+        "name": "Switzer Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A shaded creek canyon in the mountains above Pasadena drops through granite pools to a fifty-foot waterfall, past the ghost of a Victorian resort with a chapel over the falls.",
+        "tags": [
+          "waterfall",
+          "arroyo-seco",
+          "angeles-forest",
+          "san-gabriels",
+          "historic-camp",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -119.5865,
           37.7125
         ]
@@ -12397,6 +12594,39 @@
           "farm",
           "rest-stop",
           "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25,
+          34.0546
+        ]
+      },
+      "properties": {
+        "slug": "the-broad",
+        "name": "The Broad",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A major contemporary-art museum downtown, wrapped in a honeycomb shell, is free to walk into, and it holds one of Yayoi Kusama's infinity mirror rooms.",
+        "tags": [
+          "contemporary-art",
+          "free",
+          "infinity-room",
+          "kusama",
+          "downtown",
+          "architecture",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -12855,6 +13085,38 @@
           "pacific-flyway",
           "newport-beach",
           "orange-county"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.359,
+          34.064
+        ]
+      },
+      "properties": {
+        "slug": "urban-light",
+        "name": "Urban Light",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "Two hundred and two antique street lamps stand in a grid outside the art museum on Wilshire, lit every night, free to walk into whenever you want.",
+        "tags": [
+          "public-art",
+          "chris-burden",
+          "street-lamps",
+          "lacma",
+          "free",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
