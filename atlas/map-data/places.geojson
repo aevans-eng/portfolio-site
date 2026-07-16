@@ -3741,6 +3741,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.26,
+          34.0725
+        ]
+      },
+      "properties": {
+        "slug": "echo-park-lake",
+        "name": "Echo Park Lake",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A little lake just uphill from downtown grows the largest bed of lotus flowers in the country, with pedal boats shaped like swans gliding past the skyline.",
+        "tags": [
+          "lake",
+          "lotus",
+          "swan-boats",
+          "echo-park",
+          "downtown-view",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.276,
           37.47
         ]
@@ -3957,6 +3989,38 @@
           "oddity"
         ],
         "stay": true,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.755,
+          34.033
+        ]
+      },
+      "properties": {
+        "slug": "escondido-falls",
+        "name": "Escondido Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "The tallest waterfall in the Santa Monica Mountains hides at the end of a Malibu canyon, reached on a walk that starts by passing some truly absurd mansions.",
+        "tags": [
+          "waterfall",
+          "malibu",
+          "santa-monica-mountains",
+          "canyon-hike",
+          "seasonal",
+          "los-angeles"
+        ],
+        "stay": false,
         "season": []
       }
     },
@@ -8760,6 +8824,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.34,
+          34.1015
+        ]
+      },
+      "properties": {
+        "slug": "musso-and-frank",
+        "name": "Musso & Frank Grill",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "Hollywood's oldest restaurant has been pouring martinis in the same red booths since 1919, and the ghosts at the bar include Chandler, Fitzgerald, Faulkner, and Bukowski.",
+        "tags": [
+          "old-hollywood",
+          "historic-restaurant",
+          "martini",
+          "red-booths",
+          "literary",
+          "hollywood",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.001,
           37.0172
         ]
@@ -10151,6 +10248,39 @@
           "marin-headlands",
           "last-manned",
           "golden-gate"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.806,
+          34.001
+        ]
+      },
+      "properties": {
+        "slug": "point-dume",
+        "name": "Point Dume",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A rocky headland juts out of the Malibu coast with a cove and tide pools below and, in winter, gray whales passing close enough to watch from the bluff.",
+        "tags": [
+          "malibu",
+          "headland",
+          "tide-pools",
+          "whale-watching",
+          "bluff-trail",
+          "cove",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
