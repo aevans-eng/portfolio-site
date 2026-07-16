@@ -1501,6 +1501,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.049,
+          33.693
+        ]
+      },
+      "properties": {
+        "slug": "bolsa-chica",
+        "name": "Bolsa Chica Ecological Reserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The largest saltwater marsh on the California coast survives right across the highway from the Huntington Beach surf, alive with hundreds of kinds of birds.",
+        "tags": [
+          "wetland",
+          "saltwater-marsh",
+          "birding",
+          "huntington-beach",
+          "pacific-flyway",
+          "restored",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -115.733,
           33.351
         ]
@@ -2532,6 +2565,38 @@
           "food",
           "walking",
           "culture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.977,
+          33.787
+        ]
+      },
+      "properties": {
+        "slug": "christ-cathedral",
+        "name": "Christ Cathedral (Crystal Cathedral)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A cathedral built entirely of glass, ten thousand panes of it, rises out of a Garden Grove parking lot, once the home of a televangelist and now the seat of a Catholic diocese.",
+        "tags": [
+          "architecture",
+          "philip-johnson",
+          "glass-cathedral",
+          "garden-grove",
+          "modernist",
+          "orange-county"
         ],
         "stay": false,
         "season": []
@@ -5469,6 +5534,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.794,
+          33.546
+        ]
+      },
+      "properties": {
+        "slug": "heisler-park",
+        "name": "Heisler Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A bluff-top park strung along the Laguna cliffs, with stairs down to some of the best tide pools in Southern California and a marine reserve full of life below.",
+        "tags": [
+          "bluff-park",
+          "tide-pools",
+          "laguna-beach",
+          "marine-reserve",
+          "coves",
+          "art",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -123.475,
           39.076
         ]
@@ -7850,6 +7948,39 @@
           "fort-hunter-liggett",
           "oaks",
           "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.662,
+          33.503
+        ]
+      },
+      "properties": {
+        "slug": "mission-san-juan-capistrano",
+        "name": "Mission San Juan Capistrano",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "The oldest building still in use in California is a small chapel here, the only one where Jun\u00edpero Serra is documented to have said Mass, and out front stand the ruins of a great stone church an earthquake brought down.",
+        "tags": [
+          "mission",
+          "serra",
+          "oldest-building",
+          "great-stone-church",
+          "swallows",
+          "historic",
+          "orange-county"
         ],
         "stay": false,
         "season": []
@@ -11953,6 +12084,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.872,
+          33.596
+        ]
+      },
+      "properties": {
+        "slug": "sherman-gardens",
+        "name": "Sherman Library & Gardens",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "A full city block in Corona del Mar hides a lush botanical garden and research library, built by one man who kept buying up the lots next door.",
+        "tags": [
+          "botanical-garden",
+          "corona-del-mar",
+          "conservatory",
+          "library",
+          "cafe",
+          "orange-county"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -116.276,
           33.718
         ]
@@ -13016,6 +13179,39 @@
           "chinese-garden",
           "san-marino",
           "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.882,
+          33.593
+        ]
+      },
+      "properties": {
+        "slug": "the-wedge",
+        "name": "The Wedge",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "7h",
+        "hook": "At the end of the Balboa Peninsula, waves fold back on themselves against a jetty and stack into freak peaks up to thirty feet that break in a few feet of water, and it exists by accident.",
+        "tags": [
+          "surf",
+          "bodysurfing",
+          "shore-break",
+          "newport-beach",
+          "jetty-wave",
+          "spectacle",
+          "orange-county"
         ],
         "stay": false,
         "season": []
