@@ -1000,6 +1000,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.251,
+          32.77
+        ]
+      },
+      "properties": {
+        "slug": "belmont-park-giant-dipper",
+        "name": "The Giant Dipper",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A wooden roller coaster from 1925 still rattles along the sand at Mission Beach, one of the last of its kind and a National Historic Landmark you can actually ride.",
+        "tags": [
+          "roller-coaster",
+          "wooden-coaster",
+          "belmont-park",
+          "mission-beach",
+          "national-historic-landmark",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.1586,
           38.0494
         ]
@@ -6259,6 +6291,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.602,
+          33.0785
+        ]
+      },
+      "properties": {
+        "slug": "julian",
+        "name": "Julian",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "An hour up into the mountains east of San Diego is a gold-rush town that ran out of gold and reinvented itself around apple pie.",
+        "tags": [
+          "gold-rush",
+          "mountain-town",
+          "apple-pie",
+          "eagle-mine",
+          "historic",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -115.708,
           34.902
         ]
@@ -6572,6 +6636,72 @@
           "downtown",
           "free",
           "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.272,
+          32.85
+        ]
+      },
+      "properties": {
+        "slug": "la-jolla-cove-seals",
+        "name": "La Jolla Cove & the Seals",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A colony of wild sea lions and harbor seals hauls out on the rocks and little beaches of La Jolla, close enough to watch the pups nurse, right in the middle of a fancy seaside town.",
+        "tags": [
+          "sea-lions",
+          "harbor-seals",
+          "la-jolla",
+          "sea-caves",
+          "childrens-pool",
+          "wildlife",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.114,
+          33.064
+        ]
+      },
+      "properties": {
+        "slug": "lake-hodges-bridge",
+        "name": "Lake Hodges Bridge",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A thousand-foot ribbon of concrete just sixteen inches thick floats across a reservoir north of San Diego, and it's the longest bridge of its kind in the world.",
+        "tags": [
+          "pedestrian-bridge",
+          "stress-ribbon",
+          "lake-hodges",
+          "bernardo-bay",
+          "trail",
+          "engineering",
+          "san-diego"
         ],
         "stay": false,
         "season": []
@@ -12112,6 +12242,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.1735,
+          32.7205
+        ]
+      },
+      "properties": {
+        "slug": "star-of-india",
+        "name": "Star of India",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "The oldest sailing ship in the world that still actually sails is tied up on the San Diego waterfront, and once a year they take her out.",
+        "tags": [
+          "tall-ship",
+          "maritime-museum",
+          "embarcadero",
+          1863,
+          "oldest-sailing-ship",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.643,
           37.901
         ]
@@ -12331,6 +12493,39 @@
           "oddity",
           "san-diego",
           "wizard-of-oz"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.254,
+          32.716
+        ]
+      },
+      "properties": {
+        "slug": "sunset-cliffs",
+        "name": "Sunset Cliffs",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A mile and a half of sandstone bluffs on the edge of Point Loma, cut into arches and sea caves, and about the best place in San Diego to watch the sun go down.",
+        "tags": [
+          "sea-cliffs",
+          "sunset",
+          "point-loma",
+          "tide-pools",
+          "sea-caves",
+          "ocean-beach",
+          "san-diego"
         ],
         "stay": false,
         "season": []
@@ -13059,6 +13254,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.251,
+          32.89
+        ]
+      },
+      "properties": {
+        "slug": "torrey-pines-gliderport",
+        "name": "Torrey Pines Gliderport",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "On the cliffs above Black's Beach, people have been throwing themselves off the edge under a wing since 1936, and you can stand at the launch and watch, or go up yourself.",
+        "tags": [
+          "paragliding",
+          "hang-gliding",
+          "sea-cliffs",
+          "blacks-beach",
+          "historic",
+          "la-jolla",
+          "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -117.2515,
           32.92
         ]
@@ -13731,6 +13959,39 @@
           "wind",
           "sound",
           "bay-trail"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.279,
+          32.828
+        ]
+      },
+      "properties": {
+        "slug": "windansea",
+        "name": "Windansea Beach",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A rocky La Jolla surf beach guarded by a little palm-frond shack from 1946 that's now an official historical landmark, and by a surf culture famous enough that Tom Wolfe wrote a book about it.",
+        "tags": [
+          "surf",
+          "la-jolla",
+          "surf-shack",
+          "pump-house-gang",
+          "historic-landmark",
+          "beach",
+          "san-diego"
         ],
         "stay": false,
         "season": []
