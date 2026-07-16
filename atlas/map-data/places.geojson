@@ -555,6 +555,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.397,
+          34.724
+        ]
+      },
+      "properties": {
+        "slug": "antelope-valley-poppies",
+        "name": "Antelope Valley Poppy Reserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "In the right spring, seventeen hundred acres of high-desert hills north of LA turn solid, blazing orange with California's state flower.",
+        "tags": [
+          "superbloom",
+          "poppies",
+          "wildflowers",
+          "lancaster",
+          "antelope-valley",
+          "spring",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": "spring"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -116.375,
           33.256
         ]
@@ -4350,6 +4383,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.411,
+          34.118
+        ]
+      },
+      "properties": {
+        "slug": "franklin-canyon",
+        "name": "Franklin Canyon Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "There's a quiet lake and six hundred acres of oak woodland hidden in the hills dead center in Los Angeles, and you've almost certainly seen it without knowing where it was.",
+        "tags": [
+          "hidden-park",
+          "reservoir",
+          "filming-location",
+          "nature-center",
+          "beverly-hills",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.159,
           37.409
         ]
@@ -4563,6 +4628,40 @@
           "sequoia-np",
           "old-growth",
           "tulare"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.474,
+          34.078
+        ]
+      },
+      "properties": {
+        "slug": "getty-center",
+        "name": "The Getty Center",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "6h",
+        "hook": "A cable tram carries you up out of the traffic to a hilltop city of white stone and gardens, with world-class art inside and the whole basin spread out below, and none of it costs a cent.",
+        "tags": [
+          "getty",
+          "richard-meier",
+          "architecture",
+          "central-garden",
+          "free",
+          "brentwood",
+          "views",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
@@ -5496,6 +5595,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.319,
+          34.09
+        ]
+      },
+      "properties": {
+        "slug": "hollywood-forever",
+        "name": "Hollywood Forever Cemetery",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "On summer nights, a few thousand people spread blankets on the lawn of a Hollywood cemetery and watch a movie projected on a mausoleum wall, surrounded by the graves of the people who built the movies.",
+        "tags": [
+          "cemetery",
+          "movie-screenings",
+          "cinespia",
+          "dia-de-los-muertos",
+          "hollywood",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -117.497,
           33.672
         ]
@@ -6255,6 +6386,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.254,
+          34.0505
+        ]
+      },
+      "properties": {
+        "slug": "la-central-library",
+        "name": "Los Angeles Central Library",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "Downtown's third architectural treasure, alongside the Bradbury and Union Station, is the public library, and it's free to walk straight into.",
+        "tags": [
+          "architecture",
+          "goodhue",
+          "rotunda",
+          "murals",
+          "downtown",
+          "free",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.259,
           37.806
         ]
@@ -6419,6 +6583,39 @@
           9,
           10
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.327,
+          34.009
+        ]
+      },
+      "properties": {
+        "slug": "leimert-park",
+        "name": "Leimert Park Village",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "For most of a century this small South LA village has been the cultural heart of Black Los Angeles, compared to Harlem, and on Sundays a drum circle fills the park.",
+        "tags": [
+          "black-culture",
+          "jazz",
+          "drum-circle",
+          "world-stage",
+          "arts-district",
+          "south-la",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -8939,6 +9136,39 @@
           3,
           4
         ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.159,
+          34.1465
+        ]
+      },
+      "properties": {
+        "slug": "norton-simon",
+        "name": "Norton Simon Museum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "One of the greatest private art collections ever assembled sits in Pasadena, holds Rembrandts and Van Goghs and a room of Degas, and is somehow never crowded.",
+        "tags": [
+          "art-museum",
+          "old-masters",
+          "degas",
+          "pasadena",
+          "sculpture-garden",
+          "uncrowded",
+          "los-angeles"
+        ],
+        "stay": false,
+        "season": []
       }
     },
     {
@@ -12728,6 +12958,38 @@
           "union-theatre",
           "los-angeles",
           "immersive"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.467,
+          33.987
+        ]
+      },
+      "properties": {
+        "slug": "venice-canals",
+        "name": "The Venice Canals",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "6h",
+        "hook": "A few blocks off the chaos of the Venice boardwalk is a silent neighborhood of real canals, with footbridges and ducks and no cars, that almost got paved over for good.",
+        "tags": [
+          "canals",
+          "abbot-kinney",
+          "venice",
+          "footbridges",
+          "hidden-neighborhood",
+          "los-angeles"
         ],
         "stay": false,
         "season": []
