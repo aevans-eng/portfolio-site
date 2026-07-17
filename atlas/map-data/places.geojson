@@ -2084,6 +2084,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.503,
+          33.964
+        ]
+      },
+      "properties": {
+        "slug": "cabots-pueblo",
+        "name": "Cabot's Pueblo Museum",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "One man spent decades hand-building a four-story, thirty-five-room Hopi-style pueblo out of other people's cast-offs, and it still stands in Desert Hot Springs exactly as he left it.",
+        "tags": [
+          "folk-architecture",
+          "hand-built",
+          "pueblo",
+          "desert-hot-springs",
+          "cabot-yerxa",
+          "outsider",
+          "palm-springs"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -117.241,
           32.672
         ]
@@ -7029,6 +7062,38 @@
           "childrens-pool",
           "wildlife",
           "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.986,
+          33.611
+        ]
+      },
+      "properties": {
+        "slug": "ladder-canyon",
+        "name": "Ladder Canyon & Painted Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h30m",
+        "hook": "In the crumbling badlands where the San Andreas Fault crosses the desert near the Salton Sea, a hike threads up a slot canyon so narrow you climb it by ladder.",
+        "tags": [
+          "slot-canyon",
+          "ladders",
+          "mecca-hills",
+          "san-andreas-fault",
+          "badlands",
+          "palm-springs"
         ],
         "stay": false,
         "season": []
@@ -12195,6 +12260,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.6794,
+          33.8147
+        ]
+      },
+      "properties": {
+        "slug": "san-jacinto-peak",
+        "name": "Mount San Jacinto Peak & Cactus to Clouds",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "8h",
+        "hook": "From the desert floor in Palm Springs, one of the steepest big climbs in the country rises more than ten thousand feet to an alpine summit, and John Muir thought the view from the top the finest on Earth.",
+        "tags": [
+          "peak",
+          "alpine",
+          "cactus-to-clouds",
+          "tramway",
+          "wilderness",
+          "palm-springs",
+          "san-jacinto"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.883,
           37.38
         ]
@@ -13182,6 +13280,39 @@
           "oddity",
           "san-diego",
           "wizard-of-oz"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.403,
+          33.769
+        ]
+      },
+      "properties": {
+        "slug": "sunnylands",
+        "name": "Sunnylands (the Annenberg Estate)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "Behind a pink wall in Rancho Mirage sits the mid-century estate where presidents and kings came to talk, its gardens now free and open to anyone.",
+        "tags": [
+          "mid-century-modern",
+          "annenberg",
+          "estate",
+          "gardens",
+          "rancho-mirage",
+          "quincy-jones",
+          "palm-springs"
         ],
         "stay": false,
         "season": []
@@ -14587,6 +14718,38 @@
           "berlin-wall",
           "free",
           "los-angeles"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.654,
+          33.989
+        ]
+      },
+      "properties": {
+        "slug": "whitewater-preserve",
+        "name": "Whitewater Preserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "8h",
+        "hook": "A cold river runs year-round through a canyon on the desert's edge, and around it a former trout farm has become one of the loveliest oases in Southern California.",
+        "tags": [
+          "oasis",
+          "river",
+          "wildlands-conservancy",
+          "pct",
+          "bighorn",
+          "palm-springs"
         ],
         "stay": false,
         "season": []
