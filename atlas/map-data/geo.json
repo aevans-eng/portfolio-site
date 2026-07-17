@@ -1860,7 +1860,7 @@
     "zoom": 6,
     "band": [
       5,
-      9
+      7
     ],
     "hook": "If California walked out of the Union tomorrow, it would leave carrying the world's fourth-largest economy \u2014 it passed Japan in 2024. It also carries sand dunes that sing, the rarest pine on Earth, and a lake two and a half times saltier than the sea, and almost none of that makes the guidebooks. This is the atlas's first branch, charted at full depth.",
     "geometry": {
@@ -2022,6 +2022,301 @@
           [
             -114.642,
             35.053
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "bay-area",
+    "name": "The Bay Area",
+    "level": "region",
+    "color": "#4b6d8c",
+    "center": [
+      37.75,
+      -122.24
+    ],
+    "zoom": 9,
+    "band": [
+      8,
+      11
+    ],
+    "hook": "The Bay itself is partly a mining artifact. Gold Rush water cannons blasted a billion and a half cubic yards of the Sierra into the rivers, and the mud rode 150 miles down to build new shoreline, shallow the water, and lace the floor with mercury it still carries. The cities grew on top of that made-land, and the densest stretch of this atlas grew on top of the cities.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -123.192,
+            38.05
+          ],
+          [
+            -123.183,
+            37.687
+          ],
+          [
+            -122.365,
+            36.93
+          ],
+          [
+            -121.599,
+            36.867
+          ],
+          [
+            -121.275,
+            37.085
+          ],
+          [
+            -121.287,
+            38.363
+          ],
+          [
+            -122.825,
+            39.143
+          ],
+          [
+            -123.192,
+            38.05
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "central-coast",
+    "name": "The Central Coast",
+    "level": "region",
+    "color": "#3c7f7a",
+    "center": [
+      36.34,
+      -121.57
+    ],
+    "zoom": 8,
+    "band": [
+      8,
+      11
+    ],
+    "hook": "Just off Moss Landing, the sea floor drops into a canyon on the scale of the Grand Canyon \u2014 walls a mile high, running ninety-five miles out under the Pacific. That trench is why the whales come so close to shore here, and why marine-science institutes cluster on this one bend of coast. On land the seam runs the other direction: Big Sur's cliffs, otter-filled sloughs, and towns that never got around to modernizing.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -122.333,
+            37.314
+          ],
+          [
+            -122.299,
+            37.132
+          ],
+          [
+            -122.081,
+            36.29
+          ],
+          [
+            -120.79,
+            35.119
+          ],
+          [
+            -120.556,
+            35.117
+          ],
+          [
+            -120.531,
+            35.183
+          ],
+          [
+            -122.027,
+            37.301
+          ],
+          [
+            -122.187,
+            37.386
+          ],
+          [
+            -122.333,
+            37.314
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "desert",
+    "name": "The California Desert",
+    "level": "region",
+    "color": "#a8853f",
+    "center": [
+      33.98,
+      -115.95
+    ],
+    "zoom": 8,
+    "band": [
+      8,
+      11
+    ],
+    "hook": "California's largest lake is an accident. In 1905 the Colorado River broke through a canal cut and poured into the desert for two years before anyone could stop it, and the Salton Sea has been slowly evaporating ever since. The desert seam holds the state's strangest register: dunes that sing when they slide, a mountain painted by one man over decades, and whole art towns built from what everyone else threw away.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -116.855,
+            33.775
+          ],
+          [
+            -115.674,
+            33.181
+          ],
+          [
+            -115.373,
+            33.104
+          ],
+          [
+            -115.368,
+            33.108
+          ],
+          [
+            -115.441,
+            35.107
+          ],
+          [
+            -115.662,
+            35.076
+          ],
+          [
+            -116.53,
+            34.446
+          ],
+          [
+            -116.834,
+            33.991
+          ],
+          [
+            -116.855,
+            33.775
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "sierra",
+    "name": "The Sierra & Gold Country",
+    "level": "region",
+    "color": "#437a52",
+    "center": [
+      38.07,
+      -119.85
+    ],
+    "zoom": 8,
+    "band": [
+      8,
+      11
+    ],
+    "hook": "The largest living thing on Earth is a tree in the southern Sierra \u2014 General Sherman, more wood in one trunk than any other single organism \u2014 and the range thinks in that scale everywhere: granite walls half a mile tall, record snows, a ghost town frozen mid-abandonment on its eastern slope, and the foothill towns where the Gold Rush actually happened.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -121.312,
+            39.061
+          ],
+          [
+            -121.102,
+            38.402
+          ],
+          [
+            -120.837,
+            37.764
+          ],
+          [
+            -118.331,
+            35.602
+          ],
+          [
+            -117.981,
+            36.491
+          ],
+          [
+            -118.013,
+            37.317
+          ],
+          [
+            -119.941,
+            39.365
+          ],
+          [
+            -120.286,
+            39.496
+          ],
+          [
+            -121.142,
+            39.39
+          ],
+          [
+            -121.312,
+            39.061
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "socal",
+    "name": "Southern California",
+    "level": "region",
+    "color": "#b0562e",
+    "center": [
+      33.91,
+      -117.9
+    ],
+    "zoom": 8,
+    "band": [
+      8,
+      11
+    ],
+    "hook": "Los Angeles pumps oil from under its streets and pulls Ice Age bones from a tar seep beside a shopping district \u2014 the richest Pleistocene fossil site on Earth, still bubbling. Southern California runs on that kind of coexistence: surf town, desert edge, and twelve-lane metropolis sharing the same afternoon, with the strange parts hiding in plain sight.",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -120.739,
+            35.038
+          ],
+          [
+            -120.676,
+            34.553
+          ],
+          [
+            -117.156,
+            32.513
+          ],
+          [
+            -115.987,
+            32.57
+          ],
+          [
+            -116.209,
+            33.201
+          ],
+          [
+            -116.648,
+            34.131
+          ],
+          [
+            -117.017,
+            34.43
+          ],
+          [
+            -118.49,
+            34.878
+          ],
+          [
+            -120.739,
+            35.038
           ]
         ]
       ]
