@@ -49,6 +49,9 @@
 
   /* field notes + visited */
   .visit-count{ font-size:.62rem; color:var(--pine); margin-left:6px; letter-spacing:.03em; }
+  .my-atlas{ font-family:"IBM Plex Mono",monospace; font-size:.64rem; color:var(--muted);
+    letter-spacing:.03em; line-height:1.5; margin:8px 2px 2px; padding-top:8px;
+    border-top:1px dashed var(--line); }
   .notes{ display:flex; gap:7px; margin:6px 0 4px; }
   .notes input{ flex:1; padding:8px 11px; border:1px solid var(--line); border-radius:2px;
     background:var(--card); font-family:"IBM Plex Mono",monospace; font-size:.76rem; color:var(--ink); }
@@ -66,6 +69,13 @@
     background:var(--card); color:var(--muted); font-family:"IBM Plex Mono",monospace; font-size:.66rem;
     letter-spacing:.1em; text-transform:uppercase; cursor:pointer; }
   .note-export:hover{ border-color:var(--pine); color:var(--pine); }
+  /* mood lenses */
+  .lenses{ display:flex; flex-wrap:wrap; gap:6px; margin:12px 0 2px; }
+  .lens{ padding:6px 11px; border:1px solid var(--line); border-radius:30px; background:var(--card);
+    color:var(--muted); font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.03em;
+    cursor:pointer; transition:background .15s,color .15s,border-color .15s; white-space:nowrap; }
+  .lens:hover{ border-color:var(--pine); color:var(--pine); }
+  .lens.on{ background:var(--pine); color:var(--card); border-color:var(--pine); }
   .tools{ display:flex; flex-wrap:wrap; gap:7px; margin-top:2px; }
 
   .lbl{ font-family:"IBM Plex Mono",monospace; font-size:.64rem; letter-spacing:.2em;
@@ -167,7 +177,16 @@
       <input id="q" placeholder="jump to a place…" autocomplete="off">
       <button type="submit">Go</button>
     </form>
-    <div class="lbl reveal" style="animation-delay:.24s">Show on map</div>
+    <div class="lbl reveal" style="animation-delay:.22s">Lenses</div>
+    <div class="lenses reveal" style="animation-delay:.24s" id="lenses">
+      <button class="lens" data-lens="bigday" onclick="applyLens('bigday')">☀️ Big day out</button>
+      <button class="lens" data-lens="rainy" onclick="applyLens('rainy')">🌧 Rainy day</button>
+      <button class="lens" data-lens="date" onclick="applyLens('date')">💛 Date</button>
+      <button class="lens" data-lens="adventure" onclick="applyLens('adventure')">🥾 Adventure</button>
+      <button class="lens" data-lens="stay" onclick="applyLens('stay')">🛏 Overnighter</button>
+      <button class="lens" data-lens="season" onclick="applyLens('season')">✦ Good now</button>
+    </div>
+    <div class="lbl reveal" style="animation-delay:.26s">Show on map</div>
     <div class="reveal" style="animation-delay:.28s"><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="wander-zone" checked><span class="sw" style="--sw:#c17d3a"></span><span class="kf-label">Wander zone</span><span class="kf-ct">5</span></label><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="nature" checked><span class="sw" style="--sw:#437a52"></span><span class="kf-label">Nature</span><span class="kf-ct">210</span></label><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="point" checked><span class="sw" style="--sw:#4b6d8c"></span><span class="kf-label">Point</span><span class="kf-ct">118</span></label><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="oddity" checked><span class="sw" style="--sw:#8f5276"></span><span class="kf-label">Oddity</span><span class="kf-ct">114</span></label><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="town" checked><span class="sw" style="--sw:#3c7f7a"></span><span class="kf-label">Town</span><span class="kf-ct">22</span></label><label class="kf-row" data-empty="0"><input type="checkbox" class="kf" value="route" checked><span class="sw" style="--sw:#8a6d3b"></span><span class="kf-label">Route</span><span class="kf-ct">4</span></label></div>
     <div class="lbl reveal" style="animation-delay:.34s">Minimum depth</div>
     <div class="reveal" style="animation-delay:.38s">
@@ -180,9 +199,13 @@
     <label class="kf-row reveal" style="animation-delay:.43s">
       <input type="checkbox" id="hideVisited"><span class="sw" style="--sw:#2f5c46"></span>
       <span class="kf-label">Hide visited <small id="visitCount" class="visit-count"></small></span></label>
+    <label class="kf-row reveal" style="animation-delay:.435s">
+      <input type="checkbox" id="wantOnly"><span class="sw" style="--sw:#b0562e"></span>
+      <span class="kf-label">★ Want-to-go only <small id="wantCount" class="visit-count"></small></span></label>
     <label class="kf-row reveal" style="animation-delay:.44s">
       <input type="checkbox" id="seasonNow"><span class="sw" style="--sw:#437a52"></span>
       <span class="kf-label">✦ In season now</span></label>
+    <div id="myAtlas" class="my-atlas reveal" style="animation-delay:.45s"></div>
     <div class="lbl reveal" style="animation-delay:.46s">Field notes</div>
     <form class="notes reveal" style="animation-delay:.48s" onsubmit="return addNote(event)">
       <input id="noteIn" placeholder="idea, tip, place to add…" autocomplete="off" maxlength="300">
@@ -200,7 +223,7 @@
     <p class="note reveal" style="animation-delay:.44s">
       Pins are <b>colored by kind</b> and <b>sized by depth</b> — bigger means a bigger payoff.
       Tap a pin for the hook, then open its page for the whole story.<br><br>
-      473 places · built 2026-07-16
+      473 places · built 2026-07-17
     </p>
   </div></aside>
   <main id="map"></main>
@@ -242,11 +265,22 @@ function toggleVisit(slug){
   const v = getVisited();
   if(v[slug]) delete v[slug]; else v[slug] = new Date().toISOString().slice(0,10);
   try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
-  refreshVisited();
+  refreshMine();
+}
+// ---- want-to-go list + private reactions (never averaged; personal, on this device) ----
+function getWant(){ try{ return JSON.parse(localStorage.getItem('atlas_want'))||{}; }catch(e){ return {}; } }
+function getRatings(){ try{ return JSON.parse(localStorage.getItem('atlas_rating'))||{}; }catch(e){ return {}; } }
+function toggleWant(slug){
+  const w = getWant();
+  if(w[slug]) delete w[slug]; else w[slug] = new Date().toISOString().slice(0,10);
+  try{ localStorage.setItem('atlas_want', JSON.stringify(w)); }catch(e){}
+  refreshMine();
 }
 function popupHtml(p){
   const v = getVisited(), seen = v[p.slug];
-  return '<div class="pop-name">'+(seen?'✓ ':'')+p.name+'</div>'+
+  const w = getWant(), want = w[p.slug];
+  const mark = seen ? '✓ ' : (want ? '★ ' : '');
+  return '<div class="pop-name">'+mark+p.name+'</div>'+
     '<div class="pop-meta">'+(p.stay?'<span style="color:#7a5a2a">🛏 stay · </span>':'')+
     '<span style="color:'+p.color+'">'+p.kindLabel+'</span>'+
     '<span style="color:'+p.color+';letter-spacing:1px">'+p.dots+'</span>'+
@@ -255,7 +289,8 @@ function popupHtml(p){
     ((p.season&&p.season.length&&!p.season.includes(new Date().getMonth()+1))?'<span style="color:#b0562e">· out of season</span>':'')+'</div>'+
     '<div class="pop-hook">'+(p.hook||'')+'</div>'+
     '<a class="pop-link" style="color:'+p.color+'" href="places/'+p.slug+'.html">Open full page</a>'+
-    '<a class="pop-link" style="color:#7c6f56;margin-left:14px;cursor:pointer" onclick="toggleVisit(\''+p.slug+'\');return false" href="#">'+(seen?'Unmark':'Mark visited')+'</a>';
+    '<a class="pop-link" style="color:#7c6f56;margin-left:12px;cursor:pointer" onclick="toggleWant(\''+p.slug+'\');return false" href="#">'+(want?'★ Saved':'☆ Want to go')+'</a>'+
+    '<a class="pop-link" style="color:#7c6f56;margin-left:12px;cursor:pointer" onclick="toggleVisit(\''+p.slug+'\');return false" href="#">'+(seen?'Unmark':'✓ Visited')+'</a>';
 }
 
 const zoneLayers = [];
@@ -263,7 +298,7 @@ ZONES.forEach(f=>{
   const layer = L.geoJSON(f,{style:{color:f.properties.color,weight:2,dashArray:'5 4',fillColor:f.properties.color,fillOpacity:.13}});
   const p = PLACES.find(x=>x.properties.slug===f.properties.slug);
   if(p) layer.bindPopup(popupHtml(p.properties));
-  zoneLayers.push({kind:f.properties.kind, layer});
+  zoneLayers.push({kind:f.properties.kind, slug:f.properties.slug, layer});
 });
 
 const markers = [], markerBySlug = {};
@@ -301,12 +336,22 @@ function surprise(){
   focusPlace(pool[Math.floor(Math.random()*pool.length)]);
 }
 
-function refreshVisited(){
-  const v = getVisited();
-  markers.forEach(o=>{ o.marker.setStyle({fillOpacity: v[o.slug] ? .35 : .95}); });
-  const n = markers.filter(o=>v[o.slug]).length;
-  const el = document.getElementById('visitCount');
-  if(el) el.textContent = n ? (n+' of '+markers.length+' visited') : '';
+function refreshMine(){
+  const v = getVisited(), w = getWant(), r = getRatings();
+  // visited pins fade; want-to-go pins get a warm ring
+  markers.forEach(o=>{
+    o.marker.setStyle({ fillOpacity: v[o.slug] ? .35 : .95,
+      color: w[o.slug] ? '#b0562e' : '#f6efdd', weight: w[o.slug] ? 3 : 2 });
+  });
+  const nv = markers.filter(o=>v[o.slug]).length,
+        nw = markers.filter(o=>w[o.slug]).length,
+        nl = Object.values(r).filter(x=>x==='love').length;
+  const vc = document.getElementById('visitCount'); if(vc) vc.textContent = nv ? (nv+' of '+markers.length) : '';
+  const wc = document.getElementById('wantCount'); if(wc) wc.textContent = nw || '';
+  const ma = document.getElementById('myAtlas');
+  if(ma) ma.innerHTML = (nv||nw||nl)
+    ? ('★ '+nw+' want · ✓ '+nv+' visited'+(nl?(' · ♥ '+nl+' loved'):''))
+    : 'Mark places ★ want-to-go or ✓ visited — saved on this device.';
   render();
 }
 
@@ -315,23 +360,60 @@ function render(){
   const kinds = activeKinds(), minDepth = +document.getElementById('depth').value;
   const stayOnly = document.getElementById('stayOnly').checked;
   const hideVisited = document.getElementById('hideVisited').checked;
+  const wantOnly = document.getElementById('wantOnly').checked;
   const seasonNow = document.getElementById('seasonNow').checked, mon = new Date().getMonth()+1;
   const v = hideVisited ? getVisited() : {};
-  markers.forEach(o=>{ const on = kinds.has(o.kind)&&o.depth>=minDepth&&(!stayOnly||o.stay)&&!(hideVisited&&v[o.slug])&&(!seasonNow||!o.season.length||o.season.includes(mon));
+  const w = wantOnly ? getWant() : {};
+  markers.forEach(o=>{ const on = kinds.has(o.kind)&&o.depth>=minDepth&&(!stayOnly||o.stay)&&!(hideVisited&&v[o.slug])&&(!wantOnly||w[o.slug])&&(!seasonNow||!o.season.length||o.season.includes(mon));
     if(on&&!map.hasLayer(o.marker)) o.marker.addTo(map);
     if(!on&&map.hasLayer(o.marker)) map.removeLayer(o.marker); });
-  zoneLayers.forEach(o=>{ const on = kinds.has(o.kind)&&!stayOnly;
+  zoneLayers.forEach(o=>{ const on = kinds.has(o.kind)&&!stayOnly&&(!wantOnly||w[o.slug]);
     if(on&&!map.hasLayer(o.layer)) o.layer.addTo(map);
     if(!on&&map.hasLayer(o.layer)) map.removeLayer(o.layer); });
 }
-function onDepth(){ document.getElementById('depthVal').textContent = DEPTH_LABEL[document.getElementById('depth').value]; render(); }
-document.querySelectorAll('.kf').forEach(c=>c.addEventListener('change',render));
-document.getElementById('stayOnly').addEventListener('change',render);
+function onDepth(){ document.getElementById('depthVal').textContent = DEPTH_LABEL[document.getElementById('depth').value]; clearLens(); render(); }
+function onFilterChange(){ clearLens(); render(); }
+document.querySelectorAll('.kf').forEach(c=>c.addEventListener('change',onFilterChange));
+document.getElementById('stayOnly').addEventListener('change',onFilterChange);
 document.getElementById('hideVisited').addEventListener('change',render);
-document.getElementById('seasonNow').addEventListener('change',render);
+document.getElementById('wantOnly').addEventListener('change',render);
+document.getElementById('seasonNow').addEventListener('change',onFilterChange);
+
+// ---- mood lenses: curated presets over the existing filters (product-strategy §3) ----
+const LENSES = {
+  bigday:    {kinds:null, depth:4, stay:false, season:false},                        // worth going out of your way
+  rainy:     {kinds:['point','oddity','town','wander-zone'], depth:3, stay:false, season:false}, // indoor-leaning
+  date:      {kinds:['town','oddity','wander-zone','point'], depth:3, stay:false, season:false}, // atmospheric, not a hike
+  adventure: {kinds:['nature'], depth:4, stay:false, season:false},                  // get out into it
+  stay:      {kinds:null, depth:2, stay:true, season:false},                         // unique overnights
+  season:    {kinds:null, depth:2, stay:false, season:true}                          // good right now
+};
+function clearLens(){ document.querySelectorAll('.lens.on').forEach(b=>b.classList.remove('on')); }
+function resetFilters(){
+  document.querySelectorAll('.kf').forEach(c=>c.checked=true);
+  document.getElementById('depth').value=2; document.getElementById('depthVal').textContent=DEPTH_LABEL[2];
+  document.getElementById('stayOnly').checked=false;
+  document.getElementById('seasonNow').checked=false;
+  clearLens(); render();
+}
+function applyLens(name){
+  const L = LENSES[name]; if(!L) return;
+  const btn = document.querySelector('.lens[data-lens="'+name+'"]');
+  const wasOn = btn && btn.classList.contains('on');
+  clearLens();
+  if(wasOn){ resetFilters(); return; }   // clicking the active lens clears it
+  document.querySelectorAll('.kf').forEach(c=>{ c.checked = L.kinds ? L.kinds.includes(c.value) : true; });
+  document.getElementById('depth').value = L.depth;
+  document.getElementById('depthVal').textContent = DEPTH_LABEL[L.depth];
+  document.getElementById('stayOnly').checked = !!L.stay;
+  document.getElementById('seasonNow').checked = !!L.season;
+  if(btn) btn.classList.add('on');
+  render();
+  if(window.innerWidth<=760) openPanel(false);
+}
 // re-sync visited state when returning from a place page (back button / other tab)
-window.addEventListener('pageshow', refreshVisited);
-window.addEventListener('focus', refreshVisited);
+window.addEventListener('pageshow', refreshMine);
+window.addEventListener('focus', refreshMine);
 
 // ---- field notes (suggestion box; stored locally, export = copy) ----
 function getNotes(){ try{ return JSON.parse(localStorage.getItem('atlas_notes'))||[]; }catch(e){ return []; } }
@@ -381,7 +463,7 @@ async function doSearch(e){
 // ---- backup / restore (visited log + notes -> JSON file) ----
 function backupData(){
   const blob = new Blob([JSON.stringify({
-    atlas_visited: getVisited(), atlas_notes: getNotes(),
+    atlas_visited: getVisited(), atlas_want: getWant(), atlas_rating: getRatings(), atlas_notes: getNotes(),
     exported: new Date().toISOString()
   }, null, 2)], {type:'application/json'});
   const a = document.createElement('a');
@@ -397,17 +479,19 @@ function restoreData(ev){
       const d = JSON.parse(rd.result);
       const v = Object.assign(getVisited(), d.atlas_visited||{});
       localStorage.setItem('atlas_visited', JSON.stringify(v));
+      localStorage.setItem('atlas_want', JSON.stringify(Object.assign(getWant(), d.atlas_want||{})));
+      localStorage.setItem('atlas_rating', JSON.stringify(Object.assign(getRatings(), d.atlas_rating||{})));
       const seen = new Set(getNotes().map(n=>n.t+n.d));
       const merged = getNotes().concat((d.atlas_notes||[]).filter(n=>!seen.has(n.t+n.d)));
       localStorage.setItem('atlas_notes', JSON.stringify(merged));
-      refreshVisited(); renderNotes();
+      refreshMine(); renderNotes();
       alert('Restored: '+Object.keys(d.atlas_visited||{}).length+' visited, '+(d.atlas_notes||[]).length+' notes (merged).');
     }catch(err){ alert('Not a valid atlas backup file.'); }
   };
   rd.readAsText(f); ev.target.value='';
 }
 
-refreshVisited();
+refreshMine();
 // deep link: #slug opens that place (beats the restored view)
 if(location.hash){
   const o = markerBySlug[location.hash.slice(1)];

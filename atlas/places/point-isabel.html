@@ -76,6 +76,13 @@
     color:var(--muted); cursor:pointer; }
   .visit:hover{ border-color:var(--pine); color:var(--pine); }
   .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .mine{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .react{ display:inline-flex; gap:5px; }
+  .rx{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.06em; text-transform:uppercase;
+    padding:8px 11px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .rx:hover{ border-color:var(--rust); color:var(--rust); }
+  .rx.on{ background:var(--rust); border-color:var(--rust); color:#f6efdd; }
   .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
   .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
     border-radius:5px; padding:13px 22px; }
@@ -104,7 +111,14 @@
     <div class="stat">From SF<b>30m</b></div>
     <div class="stat">Effort<b>A flat shoreline stroll; the whole park is off-leash for dogs</b></div>
     <div class="stat">Best<b>Any clear afternoon; weekends for peak dog-culture spectacle</b></div>
-    <div class="stat" style="margin-left:auto"><button id="visitBtn" class="visit"></button></div>
+    <div class="stat mine" style="margin-left:auto">
+      <button id="wantBtn" class="visit"></button>
+      <button id="visitBtn" class="visit"></button>
+      <span id="reactWrap" class="react" style="display:none">
+        <button id="loveBtn" class="rx" title="Loved it">♥ loved</button>
+        <button id="mehBtn" class="rx" title="Didn't do it for me">meh</button>
+      </span>
+    </div>
   </div></div>
   <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 7/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class=""></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
   <main class="wrap">
@@ -115,19 +129,35 @@
   </main>
 <script>
 (function(){
-  var SLUG = "point-isabel", btn = document.getElementById('visitBtn');
-  function get(){ try{ return JSON.parse(localStorage.getItem('atlas_visited'))||{}; }catch(e){ return {}; } }
+  var SLUG = "point-isabel";
+  var wantBtn=document.getElementById('wantBtn'), visitBtn=document.getElementById('visitBtn'),
+      reactWrap=document.getElementById('reactWrap'), loveBtn=document.getElementById('loveBtn'),
+      mehBtn=document.getElementById('mehBtn');
+  function g(k){ try{ return JSON.parse(localStorage.getItem(k))||{}; }catch(e){ return {}; } }
+  function s(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
   function paint(){
-    var d = get()[SLUG];
-    btn.textContent = d ? ('\u2713 Visited ' + d) : 'Mark as visited';
-    btn.classList.toggle('on', !!d);
+    var vis=g('atlas_visited')[SLUG], want=g('atlas_want')[SLUG], rx=g('atlas_rating')[SLUG];
+    wantBtn.textContent = want ? '\u2605 Saved' : '\u2606 Want to go';
+    wantBtn.classList.toggle('on', !!want);
+    visitBtn.textContent = vis ? ('\u2713 Visited ' + vis) : 'Mark visited';
+    visitBtn.classList.toggle('on', !!vis);
+    reactWrap.style.display = vis ? '' : 'none';   // a reaction only means something once you've been
+    loveBtn.classList.toggle('on', rx==='love');
+    mehBtn.classList.toggle('on', rx==='meh');
   }
-  btn.addEventListener('click', function(){
-    var v = get();
-    if(v[SLUG]) delete v[SLUG]; else v[SLUG] = new Date().toISOString().slice(0,10);
-    try{ localStorage.setItem('atlas_visited', JSON.stringify(v)); }catch(e){}
+  wantBtn.addEventListener('click', function(){
+    var w=g('atlas_want'); if(w[SLUG]) delete w[SLUG]; else w[SLUG]=new Date().toISOString().slice(0,10);
+    s('atlas_want', w); paint();
+  });
+  visitBtn.addEventListener('click', function(){
+    var v=g('atlas_visited'); if(v[SLUG]) delete v[SLUG]; else v[SLUG]=new Date().toISOString().slice(0,10);
+    s('atlas_visited', v);
+    if(!v[SLUG]){ var r=g('atlas_rating'); delete r[SLUG]; s('atlas_rating', r); }  // un-visiting clears the reaction
     paint();
   });
+  function react(val){ var r=g('atlas_rating'); if(r[SLUG]===val) delete r[SLUG]; else r[SLUG]=val; s('atlas_rating', r); paint(); }
+  loveBtn.addEventListener('click', function(){ react('love'); });
+  mehBtn.addEventListener('click', function(){ react('meh'); });
   paint();
 })();
 </script>
