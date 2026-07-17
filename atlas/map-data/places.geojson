@@ -15304,6 +15304,40 @@
           6
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2497,
+          42.4913
+        ]
+      },
+      "properties": {
+        "slug": "bomarzo",
+        "name": "The Park of the Monsters (Bomarzo)",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A grieving Renaissance prince spent decades filling the wood below his castle with giant stone monsters: a screaming hell-mouth you can walk into, a war elephant crushing a soldier, a house built deliberately crooked. Then it was forgotten for three hundred years.",
+        "tags": [
+          "mannerist",
+          "sculpture-park",
+          "grotesque",
+          "renaissance",
+          "grief",
+          "viterbo",
+          "dali",
+          "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
     }
   ]
 }
