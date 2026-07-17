@@ -2310,6 +2310,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.523,
+          34.389
+        ]
+      },
+      "properties": {
+        "slug": "carpinteria-seal-rookery",
+        "name": "Carpinteria Bluffs & the Harbor Seal Rookery",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h30m",
+        "hook": "On the bluffs at the edge of Carpinteria, a stretch of beach fills every winter with hundreds of harbor seals hauling out to give birth, one of only four rookeries on the whole Southern California coast and the only one the public can watch.",
+        "tags": [
+          "harbor-seals",
+          "rookery",
+          "bluffs",
+          "coastal-trail",
+          "carpinteria",
+          "wildlife",
+          "santa-barbara"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.175,
           38.048
         ]
@@ -4558,6 +4591,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -119.977,
+          34.736
+        ]
+      },
+      "properties": {
+        "slug": "figueroa-mountain",
+        "name": "Figueroa Mountain",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "In the right spring, the slopes above the Santa Ynez wine country turn solid with lupine and poppies, and the drive up Figueroa Mountain becomes one of the great wildflower shows in the state.",
+        "tags": [
+          "wildflowers",
+          "superbloom",
+          "scenic-drive",
+          "los-padres",
+          "los-olivos",
+          "seasonal",
+          "santa-barbara"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.4041,
           37.8022
         ]
@@ -6550,6 +6616,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.501,
+          34.512
+        ]
+      },
+      "properties": {
+        "slug": "jalama-beach",
+        "name": "Jalama Beach & the Jalama Burger",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h",
+        "hook": "At the end of a fourteen-mile road that goes nowhere else sits a windswept county beach, a campground full of regulars, and a burger people drive two hours for.",
+        "tags": [
+          "remote-beach",
+          "camping",
+          "surf",
+          "burger",
+          "lompoc",
+          "end-of-the-road",
+          "santa-barbara"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.823,
           38.274
         ]
@@ -7062,6 +7161,39 @@
           "childrens-pool",
           "wildlife",
           "san-diego"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.42,
+          34.67
+        ]
+      },
+      "properties": {
+        "slug": "la-purisima-mission",
+        "name": "La Pur\u00edsima Mission",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "5h",
+        "hook": "Every other California mission is a church with some ruins around it. La Pur\u00edsima is the whole thing, rebuilt board by adobe board, the only place you can walk through a mission as it actually was.",
+        "tags": [
+          "mission",
+          "state-historic-park",
+          "ccc",
+          "living-history",
+          "lompoc",
+          "restored",
+          "santa-barbara"
         ],
         "stay": false,
         "season": []
@@ -8374,6 +8506,38 @@
           "swallows",
           "historic",
           "orange-county"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.713,
+          34.4383
+        ]
+      },
+      "properties": {
+        "slug": "mission-santa-barbara",
+        "name": "Mission Santa Barbara (Queen of the Missions)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "5h30m",
+        "hook": "The one California mission with two matching bell towers looks down over Santa Barbara from its hill, and Franciscan friars have kept it running without a break since 1786.",
+        "tags": [
+          "mission",
+          "twin-towers",
+          "franciscan",
+          "historic",
+          "santa-barbara",
+          "hilltop"
         ],
         "stay": false,
         "season": []
