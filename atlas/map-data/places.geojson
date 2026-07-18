@@ -15310,6 +15310,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -16.179,
+          64.048
+        ]
+      },
+      "properties": {
+        "slug": "jokulsarlon",
+        "name": "J\u00f6kuls\u00e1rl\u00f3n (the glacier lagoon)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Icebergs the size of houses break off a glacier and drift across a lagoon that didn't exist a century ago, then wash up as polished blocks on a black-sand beach.",
+        "tags": [
+          "glacier-lagoon",
+          "icebergs",
+          "diamond-beach",
+          "climate",
+          "seals",
+          "ring-road",
+          "iceland"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.2497,
           42.4913
         ]
@@ -15334,6 +15367,72 @@
           "viterbo",
           "dali",
           "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1139,
+          42.6277
+        ]
+      },
+      "properties": {
+        "slug": "civita-di-bagnoregio",
+        "name": "Civita di Bagnoregio (the dying town)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A medieval town sits alone on a crumbling pinnacle of rock, reachable only by a long footbridge, and every year a little more of it drops into the valley. They call it the town that is dying.",
+        "tags": [
+          "dying-town",
+          "hilltop",
+          "erosion",
+          "etruscan",
+          "footbridge",
+          "lazio",
+          "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4623,
+          36.7328
+        ]
+      },
+      "properties": {
+        "slug": "jigokudani-snow-monkeys",
+        "name": "The Snow Monkeys of Jigokudani",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "In the mountains of Nagano, wild monkeys have learned to do what no other wild monkeys on Earth do: sit up to their necks in a hot spring while the snow comes down, and soak.",
+        "tags": [
+          "snow-monkeys",
+          "macaques",
+          "onsen",
+          "wildlife",
+          "nagano",
+          "japan-alps",
+          "winter"
         ],
         "stay": false,
         "season": []
