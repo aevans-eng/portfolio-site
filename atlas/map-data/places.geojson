@@ -15343,6 +15343,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -19.06,
+          63.99
+        ]
+      },
+      "properties": {
+        "slug": "landmannalaugar",
+        "name": "Landmannalaugar (the rainbow mountains)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Mountains streaked red, green, and blue rise over a valley where a hot river runs warm enough to bathe in, and for most of the year no road can reach it.",
+        "tags": [
+          "highlands",
+          "rhyolite",
+          "rainbow-mountains",
+          "hot-spring",
+          "laugavegur",
+          "trek",
+          "iceland"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.2497,
           42.4913
         ]
@@ -15433,6 +15466,107 @@
           "nagano",
           "japan-alps",
           "winter"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.583,
+          34.213
+        ]
+      },
+      "properties": {
+        "slug": "koyasan",
+        "name": "Mount K\u014dya (Koyasan)",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "On a mountaintop wrapped in cedar forest sits a thousand-year-old monastic town, and at the far end of its graveyard a monk has been sitting in meditation, his followers believe, for twelve hundred years.",
+        "tags": [
+          "buddhism",
+          "monastery",
+          "temple-stay",
+          "okunoin",
+          "cemetery",
+          "kobo-daishi",
+          "wakayama",
+          "japan"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6,
+          68.1
+        ]
+      },
+      "properties": {
+        "slug": "lofoten",
+        "name": "The Lofoten Islands",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Granite peaks a thousand meters high rise straight out of the Arctic sea, and red fishermen's cabins on stilts cling to the water at their feet. This far north, the light does the rest.",
+        "tags": [
+          "arctic",
+          "islands",
+          "fjords",
+          "fishing-villages",
+          "rorbuer",
+          "aurora",
+          "norway"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.877,
+          -13.394
+        ]
+      },
+      "properties": {
+        "slug": "choquequirao",
+        "name": "Choquequirao",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "There is a second Machu Picchu, larger than the first, and to reach it you have to walk for two days into a canyon. Almost no one does.",
+        "tags": [
+          "inca",
+          "ruins",
+          "trek",
+          "cloud-forest",
+          "apurimac",
+          "cusco",
+          "remote",
+          "peru"
         ],
         "stay": false,
         "season": []
