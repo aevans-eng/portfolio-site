@@ -16352,6 +16352,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -88.025,
+          17.74
+        ]
+      },
+      "properties": {
+        "slug": "barrier-reef-blue-hole",
+        "name": "The Barrier Reef & Blue Hole",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The second-largest barrier reef in the world, a wonderland of coral, turtles, and rays off a string of laid-back palm-fringed cayes, guarding one of diving's most iconic sights: a perfect deep-blue circle in the sea.",
+        "tags": [
+          "barrier-reef",
+          "blue-hole",
+          "diving",
+          "cayes",
+          "snorkeling",
+          "caye-caulker",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.1178,
+          16.7636
+        ]
+      },
+      "properties": {
+        "slug": "belize-maya-interior",
+        "name": "The Maya Interior & Caves",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Beyond the reef, Belize's jungle interior hides Maya cities lost in the forest and, most hauntingly, a cave where you wade and swim through an underworld to find the crystallised skeletons of ancient sacrifice victims.",
+        "tags": [
+          "maya",
+          "caracol",
+          "atm-cave",
+          "jungle",
+          "sacrifice",
+          "cayo",
+          "ruins"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.4167,
           6.4667
         ]
@@ -17946,6 +18012,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -84.703,
+          10.463
+        ]
+      },
+      "properties": {
+        "slug": "monteverde-arenal",
+        "name": "Monteverde & Arenal",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The heart of Costa Rica's famous ecotourism: a misty cloud forest dripping with life and a perfect volcano cone rising over hot springs, linked by canopy walkways, zip-lines, and the country's easygoing \"pura vida\" spirit.",
+        "tags": [
+          "cloud-forest",
+          "arenal-volcano",
+          "hanging-bridges",
+          "ziplines",
+          "quetzal",
+          "hot-springs"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.59,
+          8.54
+        ]
+      },
+      "properties": {
+        "slug": "osa-corcovado",
+        "name": "The Osa Peninsula & Corcovado",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Costa Rica at its wildest: a remote rainforest peninsula that National Geographic called the most biologically intense place on Earth, where lowland jungle meets empty Pacific beaches teeming with tapirs, monkeys, and scarlet macaws.",
+        "tags": [
+          "corcovado",
+          "rainforest",
+          "wildlife",
+          "tapirs",
+          "scarlet-macaws",
+          "osa",
+          "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           18.1077,
           42.6407
         ]
@@ -18622,6 +18753,70 @@
           "camping",
           "sahara",
           "oasis"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.382,
+          13.494
+        ]
+      },
+      "properties": {
+        "slug": "el-tunco-surf",
+        "name": "El Tunco & the Surf Coast",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A mellow black-sand surf town on El Salvador's Pacific coast, gateway to a string of world-class right-hand point breaks that have made this little country a rising star of Central American surfing.",
+        "tags": [
+          "surf",
+          "black-sand",
+          "el-tunco",
+          "point-breaks",
+          "beach-town",
+          "pacific"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.79,
+          13.86
+        ]
+      },
+      "properties": {
+        "slug": "ruta-de-las-flores",
+        "name": "The Ruta de las Flores & Volcanoes",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A winding highland road linking a string of colourful little coffee towns famous for their murals, weekend food fairs, and waterfalls, near a perfect volcano you can climb to peer into a steaming turquoise crater above a huge blue lake.",
+        "tags": [
+          "flower-route",
+          "coffee",
+          "santa-ana-volcano",
+          "coatepeque",
+          "towns",
+          "murals"
         ],
         "stay": false,
         "season": []
@@ -19776,6 +19971,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -90.7295,
+          14.5586
+        ]
+      },
+      "properties": {
+        "slug": "antigua-atitlan",
+        "name": "Antigua & Lake Atitl\u00e1n",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A ravishing colonial city of cobbled streets and pastel fa\u00e7ades framed by volcanoes, and, a couple of hours away, a lake so beautiful that Aldous Huxley called it the most beautiful in the world, ringed by fire and Maya villages.",
+        "tags": [
+          "colonial",
+          "volcanoes",
+          "maya",
+          "lake-atitlan",
+          "markets",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6237,
+          17.222
+        ]
+      },
+      "properties": {
+        "slug": "tikal",
+        "name": "Tikal",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the greatest cities of the ancient Maya, its steep temple-pyramids thrusting up through the rainforest canopy, wreathed in mist and the roar of howler monkeys, a lost metropolis reclaimed by the jungle.",
+        "tags": [
+          "maya",
+          "temples",
+          "jungle",
+          "canopy",
+          "howler-monkeys",
+          "peten",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -12.29,
           11.32
         ]
@@ -19831,6 +20091,71 @@
           "biosphere",
           "unesco",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.53,
+          16.32
+        ]
+      },
+      "properties": {
+        "slug": "bay-islands",
+        "name": "The Bay Islands",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A string of Caribbean islands sitting on the world's second-largest barrier reef, famous as one of the cheapest and best places on Earth to learn to scuba dive, and among the most reliable spots to swim with whale sharks.",
+        "tags": [
+          "diving",
+          "roatan",
+          "utila",
+          "coral-reef",
+          "whale-sharks",
+          "caribbean",
+          "cheap-diving"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.142,
+          14.838
+        ]
+      },
+      "properties": {
+        "slug": "copan",
+        "name": "Cop\u00e1n",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The Athens of the Maya world: a smaller ruin than Tikal, but unmatched for the artistry of its stone carving, with intricately-sculpted portrait stelae, temples, and a monumental stairway inscribed with the longest ancient Maya text ever found.",
+        "tags": [
+          "maya",
+          "sculpture",
+          "hieroglyphic-stairway",
+          "stelae",
+          "macaws",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -24426,6 +24751,70 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -85.956,
+          11.9344
+        ]
+      },
+      "properties": {
+        "slug": "granada-ometepe",
+        "name": "Granada & Ometepe",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A gorgeous, colourful colonial city on the shore of a vast lake, looking out to a fairy-tale island formed by two volcanoes rising straight from the water, one of Central America's most striking natural sights.",
+        "tags": [
+          "colonial",
+          "lake-nicaragua",
+          "ometepe",
+          "volcanoes",
+          "granada",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.878,
+          12.434
+        ]
+      },
+      "properties": {
+        "slug": "leon-volcanoes",
+        "name": "Le\u00f3n & the Volcanoes",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A hot, gritty, intellectual colonial city crowned by the largest cathedral in Central America, and the launchpad for one of the world's more absurd thrills: sliding down the black slopes of an active volcano on a wooden board.",
+        "tags": [
+          "colonial",
+          "cerro-negro",
+          "volcano-boarding",
+          "cathedral",
+          "revolution",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           8.5,
           18.0
         ]
@@ -24912,6 +25301,71 @@
           "archaeology",
           "unesco",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.24,
+          9.34
+        ]
+      },
+      "properties": {
+        "slug": "bocas-del-toro",
+        "name": "Bocas del Toro",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A laid-back Caribbean archipelago of jungle-covered islands, over-water bungalows, and mellow beach bars, where you hop by boat between reefs, surf breaks, mangroves, and sloth-filled jungle.",
+        "tags": [
+          "caribbean",
+          "archipelago",
+          "beaches",
+          "snorkeling",
+          "surf",
+          "laid-back",
+          "boats"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5199,
+          8.9824
+        ]
+      },
+      "properties": {
+        "slug": "panama-canal-city",
+        "name": "The Panama Canal & Panama City",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the engineering wonders of the modern world, where you can watch giant ships climb a staircase of water between two oceans, beside a cosmopolitan capital that pairs a glittering skyline with a romantic, restored colonial old town.",
+        "tags": [
+          "panama-canal",
+          "casco-viejo",
+          "skyline",
+          "ships",
+          "rainforest",
+          "unesco"
         ],
         "stay": false,
         "season": []
