@@ -18407,6 +18407,209 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          48.52,
+          32.008
+        ]
+      },
+      "properties": {
+        "slug": "chogha-zanbil",
+        "name": "Chogha Zanbil",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A colossal mud-brick ziggurat rising from the plain of southwestern Iran, built by the little-known Elamite civilisation over three thousand years ago, one of the best-preserved stepped temple-towers left outside Mesopotamia.",
+        "tags": [
+          "elamite",
+          "ziggurat",
+          "ancient",
+          "mesopotamia",
+          "khuzestan",
+          "archaeology",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.6776,
+          32.6572
+        ]
+      },
+      "properties": {
+        "slug": "isfahan",
+        "name": "Isfahan",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The jewel of old Persia, built around one of the largest public squares on earth and lined with tiled blue mosques, a palace, and a bazaar, a city so beautiful that a Persian rhyme calls it \"half the world.\"",
+        "tags": [
+          "safavid",
+          "naqsh-e-jahan",
+          "blue-mosque",
+          "bridges",
+          "bazaar",
+          "persia",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.8916,
+          29.9354
+        ]
+      },
+      "properties": {
+        "slug": "persepolis",
+        "name": "Persepolis",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The ceremonial capital of the mighty Persian Empire, a terrace of colossal columns and stairways carved with processions of the empire's subjects bringing tribute, burned by Alexander the Great and left as majestic ruin.",
+        "tags": [
+          "achaemenid",
+          "persia",
+          "darius",
+          "xerxes",
+          "reliefs",
+          "ruins",
+          "alexander",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.5837,
+          29.5918
+        ]
+      },
+      "properties": {
+        "slug": "shiraz",
+        "name": "Shiraz",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The Persian city of poets, roses, and nightingales, where a mosque's stained-glass windows scatter the morning sun into a carpet of colour, and locals still gather at the tomb of a beloved poet to read his verse aloud.",
+        "tags": [
+          "poets",
+          "hafez",
+          "gardens",
+          "pink-mosque",
+          "persia",
+          "nightingales",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.389,
+          35.6892
+        ]
+      },
+      "properties": {
+        "slug": "tehran",
+        "name": "Tehran",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Iran's sprawling, mountain-backed capital, where the old shahs' mirror-tiled palaces and a dazzling vault of crown jewels sit amid a chaotic modern metropolis of galleries, caf\u00e9s, and famously heavy traffic.",
+        "tags": [
+          "capital",
+          "palaces",
+          "crown-jewels",
+          "bazaar",
+          "alborz",
+          "museums",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.3569,
+          31.8974
+        ]
+      },
+      "properties": {
+        "slug": "yazd",
+        "name": "Yazd",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A honey-coloured desert city of mud-brick lanes and rooftops bristling with windcatchers, ancient towers that funnel breezes down into the houses, and a fire that Zoroastrians say has burned without pause for over a thousand years.",
+        "tags": [
+          "desert",
+          "windcatchers",
+          "badgir",
+          "zoroastrian",
+          "mud-brick",
+          "fire-temple",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -9.4309,
           52.9715
         ]
@@ -19024,6 +19227,168 @@
           "moss",
           "unesco",
           "kyushu"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.47,
+          31.5
+        ]
+      },
+      "properties": {
+        "slug": "dead-sea",
+        "name": "The Dead Sea",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The lowest point on the surface of the earth, a salt lake so dense you cannot sink, where the novelty is bobbing on your back like a cork while reading a newspaper.",
+        "tags": [
+          "lowest-point",
+          "salt",
+          "float",
+          "mud",
+          "jordan-valley",
+          "shrinking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8911,
+          32.2811
+        ]
+      },
+      "properties": {
+        "slug": "jerash",
+        "name": "Jerash",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the best-preserved Roman provincial cities anywhere, where you walk an intact colonnaded main street rutted by chariot wheels, into a rare oval forum ringed by columns, all in golden stone.",
+        "tags": [
+          "roman",
+          "decapolis",
+          "colonnaded-street",
+          "oval-plaza",
+          "ruins",
+          "amman"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7956,
+          31.7175
+        ]
+      },
+      "properties": {
+        "slug": "madaba-nebo",
+        "name": "Madaba & Mount Nebo",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A town whose churches hold the oldest surviving map of the Holy Land, laid out in Byzantine mosaic on a floor, beside the hill where, tradition says, Moses looked out over a promised land he would never enter.",
+        "tags": [
+          "mosaics",
+          "holy-land-map",
+          "mount-nebo",
+          "moses",
+          "byzantine",
+          "pilgrimage"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3285
+        ]
+      },
+      "properties": {
+        "slug": "petra",
+        "name": "Petra",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A whole city carved into rose-coloured sandstone cliffs by an ancient desert trading people, entered through a long narrow canyon that opens, without warning, on a temple fa\u00e7ade cut straight into the rock.",
+        "tags": [
+          "nabataean",
+          "rose-city",
+          "treasury",
+          "monastery",
+          "siq",
+          "ruins",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.42,
+          29.5833
+        ]
+      },
+      "properties": {
+        "slug": "wadi-rum",
+        "name": "Wadi Rum",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A desert of red sand and towering sandstone and granite mountains, so otherworldly it stands in for Mars in the movies, where Lawrence of Arabia rode and Bedouin still run camps under skies thick with stars.",
+        "tags": [
+          "desert",
+          "sandstone",
+          "lawrence-of-arabia",
+          "bedouin",
+          "camp",
+          "stars",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -20336,6 +20701,105 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          54.0924,
+          17.0151
+        ]
+      },
+      "properties": {
+        "slug": "dhofar-salalah",
+        "name": "Dhofar & Salalah",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The far south of Oman, where a summer monsoon does something no other Arabian desert sees, turning the hills lush green and misty, in the ancient land of frankincense at the edge of the world's greatest sand sea.",
+        "tags": [
+          "khareef",
+          "frankincense",
+          "monsoon",
+          "beaches",
+          "empty-quarter",
+          "salalah",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.4059,
+          23.588
+        ]
+      },
+      "properties": {
+        "slug": "muscat-hajar",
+        "name": "Muscat & the Hajar Mountains",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A refreshingly low-rise, white-washed capital on the Gulf of Oman, gateway to jagged mountains hiding deep canyons, palm-shaded villages, and old forts, in one of Arabia's most welcoming and traditional countries.",
+        "tags": [
+          "muscat",
+          "hajar",
+          "jebel-shams",
+          "nizwa",
+          "wadis",
+          "forts",
+          "frankincense"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.8,
+          22.0
+        ]
+      },
+      "properties": {
+        "slug": "wahiba-sands",
+        "name": "The Wahiba Sands",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A sea of tall red-and-gold dunes rolling to the horizon, where you sleep in a Bedouin desert camp under the stars, an easy taste of the great Arabian sands within reach of the coast.",
+        "tags": [
+          "desert",
+          "dunes",
+          "bedouin",
+          "camp",
+          "turtles",
+          "ras-al-jinz",
+          "stars"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           74.3436,
           31.5497
         ]
@@ -20948,6 +21412,104 @@
           "dracula",
           "carpathians",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.9542,
+          26.7917
+        ]
+      },
+      "properties": {
+        "slug": "alula-hegra",
+        "name": "AlUla & Hegra",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Saudi Arabia's answer to Petra: monumental tombs carved into desert sandstone outcrops by the same Nabataean people, standing almost alone in a dramatic oasis valley that until recently almost no outsider had seen.",
+        "tags": [
+          "nabataean",
+          "hegra",
+          "madain-salih",
+          "rock-tombs",
+          "oasis",
+          "desert",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.575,
+          24.737
+        ]
+      },
+      "properties": {
+        "slug": "diriyah-riyadh",
+        "name": "Diriyah & Riyadh",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "On the edge of the capital, the restored mud-brick town where the Saudi state was born, a warren of earthen palaces and walls beside a palm-filled valley, now the historic counterpoint to Riyadh's glass towers.",
+        "tags": [
+          "najd",
+          "at-turaif",
+          "mud-brick",
+          "first-saudi-state",
+          "riyadh",
+          "heritage"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "slug": "empty-quarter",
+        "name": "The Empty Quarter (Rub' al Khali)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The largest continuous sand desert on earth, an ocean of dunes hundreds of metres high stretching to the horizon across the south of the Arabian Peninsula, one of the emptiest and most forbidding places on the planet.",
+        "tags": [
+          "desert",
+          "sand-sea",
+          "dunes",
+          "rub-al-khali",
+          "bedouin",
+          "remote",
+          "care"
         ],
         "stay": false,
         "season": []
