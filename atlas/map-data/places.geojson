@@ -17363,6 +17363,105 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          40.3,
+          14.2417
+        ]
+      },
+      "properties": {
+        "slug": "danakil-depression",
+        "name": "The Danakil Depression",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the hottest and lowest places on earth, an alien landscape of neon-yellow sulphur springs, salt flats worked by camel caravans, and a volcano with a lake of molten lava you can peer into at night.",
+        "tags": [
+          "danakil",
+          "dallol",
+          "erta-ale",
+          "lava-lake",
+          "sulphur",
+          "salt",
+          "afar",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.0409,
+          12.0319
+        ]
+      },
+      "properties": {
+        "slug": "lalibela",
+        "name": "Lalibela",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A cluster of medieval churches carved downward out of solid rock, entire buildings hewn from the living stone below ground level, still thronged with white-robed pilgrims of one of the world's oldest Christian traditions.",
+        "tags": [
+          "rock-hewn-churches",
+          "orthodox",
+          "pilgrimage",
+          "monolithic",
+          "bete-giyorgis",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.0667,
+          13.1833
+        ]
+      },
+      "properties": {
+        "slug": "simien-mountains",
+        "name": "The Simien Mountains",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A jagged wall of peaks and plunging escarpments in the Ethiopian highlands, often called the roof of Africa, where troops of shaggy, red-chested gelada, found only here, graze the clifftops in their hundreds.",
+        "tags": [
+          "escarpment",
+          "gelada",
+          "trekking",
+          "ras-dashen",
+          "wildlife",
+          "highlands",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           28.88,
           61.8642
         ]
@@ -21423,6 +21522,105 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          16.33,
+          -18.8
+        ]
+      },
+      "properties": {
+        "slug": "etosha",
+        "name": "Etosha National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A vast, shimmering salt pan so large it dominates the landscape, ringed by waterholes where, in the dry season, the wildlife comes to you, elephants, rhinos, lions, and giraffes gathering at the water against a stark white backdrop.",
+        "tags": [
+          "safari",
+          "salt-pan",
+          "waterholes",
+          "self-drive",
+          "elephants",
+          "rhinos",
+          "wildlife"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.53,
+          -22.68
+        ]
+      },
+      "properties": {
+        "slug": "skeleton-coast-swakopmund",
+        "name": "The Skeleton Coast & Swakopmund",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A bleak, fog-shrouded shore where the great dunes of the Namib run straight into the cold Atlantic, littered with the rusting hulks of shipwrecks and the bones of whales, with an incongruous little German-colonial resort town in the middle of it.",
+        "tags": [
+          "skeleton-coast",
+          "shipwrecks",
+          "swakopmund",
+          "seals",
+          "kolmanskop",
+          "fog",
+          "desert"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3,
+          -24.7333
+        ]
+      },
+      "properties": {
+        "slug": "sossusvlei",
+        "name": "Sossusvlei",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A landscape of towering rust-red sand dunes, among the highest on earth, marching across the ancient Namib desert, and, hidden among them, a white clay pan studded with the black skeletons of long-dead trees.",
+        "tags": [
+          "namib",
+          "dunes",
+          "deadvlei",
+          "desert",
+          "red-sand",
+          "clay-pan",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           83.9856,
           28.2096
         ]
@@ -23892,6 +24090,200 @@
           "high-altitude",
           "road-trip",
           "homestays"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.63,
+          -4.67
+        ]
+      },
+      "properties": {
+        "slug": "gombe-tanganyika",
+        "name": "Gombe & Lake Tanganyika",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The forested slopes above Lake Tanganyika where Jane Goodall began her famous study of wild chimpanzees, and where you can still hike into the trees to sit near our closest relatives, on the shore of one of the oldest and deepest lakes on earth.",
+        "tags": [
+          "chimpanzees",
+          "jane-goodall",
+          "lake-tanganyika",
+          "forest",
+          "tracking",
+          "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.3556,
+          -3.0674
+        ]
+      },
+      "properties": {
+        "slug": "kilimanjaro",
+        "name": "Mount Kilimanjaro",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The highest mountain in Africa and the tallest free-standing mountain on earth, a snow-capped volcano you can walk to the top of, no ropes or ice axes needed, through five climate zones from rainforest to arctic summit.",
+        "tags": [
+          "kilimanjaro",
+          "highest-in-africa",
+          "trek",
+          "altitude",
+          "glaciers",
+          "roof-of-africa"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5833,
+          -3.1667
+        ]
+      },
+      "properties": {
+        "slug": "ngorongoro",
+        "name": "The Ngorongoro Crater",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A vast, unbroken volcanic caldera whose sheer walls enclose a self-contained world of grassland, lake, and forest, packed with wildlife, a natural amphitheatre where you can see almost every big animal of the plains in a single day.",
+        "tags": [
+          "caldera",
+          "big-five",
+          "maasai",
+          "wildlife",
+          "olduvai",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.5,
+          -7.7
+        ]
+      },
+      "properties": {
+        "slug": "ruaha-selous",
+        "name": "The Southern Circuit",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Tanzania's vast, wild, little-visited south, huge parks the size of small countries where you can watch wildlife along a great river with barely another vehicle in sight, the antidote to the crowded northern circuit.",
+        "tags": [
+          "ruaha",
+          "nyerere",
+          "selous",
+          "wilderness",
+          "uncrowded",
+          "boat-safari",
+          "elephants"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8333,
+          -2.3333
+        ]
+      },
+      "properties": {
+        "slug": "serengeti",
+        "name": "The Serengeti",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The name means \"endless plains,\" and that is exactly it: a sea of golden grassland stretching past the horizon, host to the largest overland animal migration on earth and to one of the greatest concentrations of predators anywhere.",
+        "tags": [
+          "safari",
+          "great-migration",
+          "plains",
+          "big-cats",
+          "wildebeest",
+          "endless"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.2026,
+          -6.1659
+        ]
+      },
+      "properties": {
+        "slug": "zanzibar",
+        "name": "Zanzibar",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A spice island in the Indian Ocean where an ancient Swahili trading town of carved doors and winding lanes gives way to turquoise water and white sand, a place of monsoon dhows, cloves, and a heavy history.",
+        "tags": [
+          "stone-town",
+          "swahili",
+          "spices",
+          "beaches",
+          "dhows",
+          "slavery-history",
+          "unesco"
         ],
         "stay": false,
         "season": []
