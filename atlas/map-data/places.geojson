@@ -15506,6 +15506,201 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.8,
+          52.57
+        ]
+      },
+      "properties": {
+        "slug": "belovezhskaya-pushcha",
+        "name": "Belovezhskaya Pushcha",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The Belarusian half of Europe's last great primeval lowland forest, home to wild European bison, and the quiet lodge in the woods where leaders signed the agreement that dissolved the Soviet Union.",
+        "tags": [
+          "primeval-forest",
+          "bison",
+          "wisent",
+          "bialowieza",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6558,
+          52.0826
+        ]
+      },
+      "properties": {
+        "slug": "brest-fortress",
+        "name": "Brest Fortress",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The ruined 19th-century fortress on the Polish border where a Soviet garrison held out against the German invasion in 1941, now one of the most monumental and emotionally charged war memorials of the former USSR.",
+        "tags": [
+          "wwii",
+          "memorial",
+          1941,
+          "soviet",
+          "monument",
+          "brest",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.559,
+          53.9006
+        ]
+      },
+      "properties": {
+        "slug": "minsk",
+        "name": "Minsk",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital almost entirely destroyed in the Second World War and rebuilt from scratch as a showcase of Stalinist city planning, with a vast central avenue of monumental fa\u00e7ades that reads like a Soviet stage set.",
+        "tags": [
+          "stalinist",
+          "reconstruction",
+          "independence-avenue",
+          "soviet",
+          "wwii",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2247,
+          51.2093
+        ]
+      },
+      "properties": {
+        "slug": "bruges",
+        "name": "Bruges",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A medieval Flemish trading city that grew rich, then fell asleep for centuries when its harbour silted up, and woke to find its canals, guild houses, and belfry perfectly preserved.",
+        "tags": [
+          "canals",
+          "medieval",
+          "flanders",
+          "belfry",
+          "beer",
+          "chocolate",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3517,
+          50.8503
+        ]
+      },
+      "properties": {
+        "slug": "brussels",
+        "name": "Brussels",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital that is easy to underrate, with one of the most ornate market squares in Europe, whole neighbourhoods of Art Nouveau, comic-strip murals on the walls, and a serious appetite for chocolate, beer, and fries.",
+        "tags": [
+          "grand-place",
+          "art-nouveau",
+          "horta",
+          "comics",
+          "eu",
+          "chocolate",
+          "beer"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7174,
+          51.0543
+        ]
+      },
+      "properties": {
+        "slug": "ghent",
+        "name": "Ghent",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Bruges's bigger, grittier neighbour and, for many, the better one: a medieval Flemish city just as handsome but full of students and real life, home to the extraordinary Van Eyck altarpiece.",
+        "tags": [
+          "flanders",
+          "van-eyck",
+          "ghent-altarpiece",
+          "canals",
+          "student-city",
+          "gravensteen"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           17.8983,
           43.2578
         ]
@@ -16379,6 +16574,104 @@
           "sainte-croix",
           "hiking",
           "climbing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.6906,
+          41.648
+        ]
+      },
+      "properties": {
+        "slug": "kakheti",
+        "name": "Kakheti Wine Country",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The heartland of Georgian wine, where people have been making it in buried clay vessels for some eight thousand years, among the oldest winemaking traditions known anywhere, in a landscape of vineyards, hill towns, and old monasteries under the Caucasus.",
+        "tags": [
+          "wine",
+          "qvevri",
+          "sighnaghi",
+          "alaverdi",
+          "amber-wine",
+          "harvest",
+          "cradle-of-wine"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.0167,
+          42.9167
+        ]
+      },
+      "properties": {
+        "slug": "svaneti",
+        "name": "Svaneti",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A remote region high in the Caucasus where medieval stone defensive towers still stand in every village beneath snow peaks, and Ushguli, among the highest permanently inhabited settlements in Europe, sits under Georgia's tallest mountain.",
+        "tags": [
+          "caucasus",
+          "svan-towers",
+          "ushguli",
+          "mestia",
+          "mountains",
+          "unesco",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8337,
+          41.6941
+        ]
+      },
+      "properties": {
+        "slug": "tbilisi",
+        "name": "Tbilisi",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A crossroads capital in the Caucasus where wooden-balconied houses lean over cobbled lanes, a fortress looks down from the hill, and you can lower yourself into a domed bathhouse fed by natural hot sulphur springs.",
+        "tags": [
+          "caucasus",
+          "sulphur-baths",
+          "old-town",
+          "wine",
+          "balconies",
+          "silk-road"
         ],
         "stay": false,
         "season": []
@@ -17561,6 +17854,103 @@
           "jewish-heritage",
           "kgb",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.86,
+          47.13
+        ]
+      },
+      "properties": {
+        "slug": "milestii-mici",
+        "name": "The Mile\u0219tii Mici Wine Cellars",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An underground wine cellar so vast you tour it by car, more than a hundred and fifty kilometres of tunnels lined with millions of bottles, holding what is recognised as the largest wine collection in the world.",
+        "tags": [
+          "wine",
+          "underground",
+          "cellars",
+          "cricova",
+          "tunnels",
+          "guinness"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.96,
+          47.305
+        ]
+      },
+      "properties": {
+        "slug": "orheiul-vechi",
+        "name": "Orheiul Vechi",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A cave monastery carved into a limestone cliff above a looping river gorge in the Moldovan countryside, still used by monks, with a small stone cross marking the entrance on the clifftop.",
+        "tags": [
+          "cave-monastery",
+          "gorge",
+          "raut",
+          "rock-church",
+          "orthodox",
+          "rural"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6433,
+          46.8403
+        ]
+      },
+      "properties": {
+        "slug": "transnistria",
+        "name": "Transnistria",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A sliver of land along the Dniester that broke away from Moldova in the early 1990s and declared itself a country nobody recognises, with its own flag, currency, and border posts, and a Soviet aesthetic it never let go of.",
+        "tags": [
+          "breakaway",
+          "unrecognised",
+          "soviet",
+          "tiraspol",
+          "dniester",
+          "frozen-conflict",
+          "care"
         ],
         "stay": false,
         "season": []
@@ -19094,6 +19484,104 @@
           "boat",
           "castle",
           "day-trip"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5234,
+          50.4501
+        ]
+      },
+      "properties": {
+        "slug": "kyiv",
+        "name": "Kyiv",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The ancient capital on the Dnipro, mother-city of the Slavic Orthodox world, its skyline gold with monastery domes, and since 2022 a city defending itself against full-scale invasion.",
+        "tags": [
+          "kyiv",
+          "lavra",
+          "saint-sophia",
+          "maidan",
+          "dnipro",
+          "orthodox",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0297,
+          49.8397
+        ]
+      },
+      "properties": {
+        "slug": "lviv",
+        "name": "Lviv",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Ukraine's most Central European city, a Habsburg-era old town of cobbled squares, coffee houses, and layered Polish, Austrian, Jewish, and Ukrainian heritage, far from the front but still a country at war.",
+        "tags": [
+          "lviv",
+          "habsburg",
+          "old-town",
+          "coffee",
+          "galicia",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5,
+          48.15
+        ]
+      },
+      "properties": {
+        "slug": "ukrainian-carpathians",
+        "name": "The Ukrainian Carpathians",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The green wooded mountains of Ukraine's far west, home to the Hutsul highlanders and their steep-roofed wooden churches, a world of forest, folk culture, and old ways in a country now at war.",
+        "tags": [
+          "carpathians",
+          "hutsul",
+          "wooden-churches",
+          "mountains",
+          "forest",
+          "care"
         ],
         "stay": false,
         "season": []
