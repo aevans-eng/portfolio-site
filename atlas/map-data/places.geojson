@@ -302,6 +302,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -58.3816,
+          -34.6037
+        ]
+      },
+      "properties": {
+        "slug": "buenos-aires",
+        "name": "Buenos Aires",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A grand, faded-glamour capital often called the Paris of South America, where tango was born in the port barrios, caf\u00e9 culture and bookshops fill the boulevards, and dinner is late, meaty, and washed down with Malbec.",
+        "tags": [
+          "tango",
+          "cafes",
+          "steak",
+          "recoleta",
+          "san-telmo",
+          "european",
+          "nightlife"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.8458,
+          -32.8895
+        ]
+      },
+      "properties": {
+        "slug": "mendoza",
+        "name": "Mendoza & the High Andes",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Argentina's wine capital, where sun-drenched vineyards spread beneath the snow-capped Andes, pouring the country's signature Malbec, in the shadow of Aconcagua, the highest mountain outside Asia.",
+        "tags": [
+          "malbec",
+          "wine",
+          "aconcagua",
+          "andes",
+          "vineyards",
+          "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.04,
+          -50.47
+        ]
+      },
+      "properties": {
+        "slug": "patagonia-glaciers",
+        "name": "Argentine Patagonia",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The end of the world's greatest hits: a colossal glacier that calves house-sized ice into a milky lake with a crack like thunder, and, up the road, jagged granite spires that draw trekkers and climbers from across the planet.",
+        "tags": [
+          "perito-moreno",
+          "glacier",
+          "el-chalten",
+          "fitz-roy",
+          "trekking",
+          "patagonia",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           44.8149,
           40.1408
         ]
@@ -16647,6 +16745,233 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -60.0217,
+          -3.119
+        ]
+      },
+      "properties": {
+        "slug": "amazon-manaus",
+        "name": "The Amazon & Manaus",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The gateway to the greatest rainforest and river on Earth, an improbable jungle city with a grand opera house left from the rubber boom, where two mighty rivers run side by side without mixing before merging into the Amazon proper.",
+        "tags": [
+          "amazon",
+          "rainforest",
+          "meeting-of-waters",
+          "manaus",
+          "river",
+          "opera-house"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -32.43,
+          -3.85
+        ]
+      },
+      "properties": {
+        "slug": "fernando-noronha",
+        "name": "Fernando de Noronha",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A remote volcanic archipelago in the Atlantic, often crowned Brazil's most beautiful island, where jagged peaks rise from turquoise water, spinner dolphins gather in their hundreds, and one bay regularly tops lists of the best beaches on Earth.",
+        "tags": [
+          "island",
+          "beaches",
+          "diving",
+          "dolphins",
+          "marine-park",
+          "turtles",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.4367,
+          -25.6953
+        ]
+      },
+      "properties": {
+        "slug": "iguacu",
+        "name": "Igua\u00e7u Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A wall of water nearly three kilometres wide where hundreds of waterfalls thunder over the jungle in clouds of spray, so overwhelming that a visiting first lady reportedly gasped \"poor Niagara.\"",
+        "tags": [
+          "waterfall",
+          "iguacu",
+          "devils-throat",
+          "rainforest",
+          "argentina",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.13,
+          -2.6
+        ]
+      },
+      "properties": {
+        "slug": "lencois",
+        "name": "Len\u00e7\u00f3is Maranhenses",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A vast field of pristine white sand dunes that looks like a desert but isn't, because after the rains, thousands of crystal-clear turquoise and green lagoons appear in the valleys between the dunes, and you can swim in them surrounded by sand.",
+        "tags": [
+          "dunes",
+          "lagoons",
+          "desert",
+          "maranhao",
+          "seasonal",
+          "swimming"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.5,
+          -17.0
+        ]
+      },
+      "properties": {
+        "slug": "pantanal",
+        "name": "The Pantanal",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The world's largest tropical wetland, a vast seasonally-flooded plain teeming with more visible wildlife than the Amazon, and by far the best place on Earth to see a wild jaguar.",
+        "tags": [
+          "wetland",
+          "jaguars",
+          "wildlife",
+          "caimans",
+          "capybaras",
+          "birds",
+          "safari"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1729,
+          -22.9068
+        ]
+      },
+      "properties": {
+        "slug": "rio",
+        "name": "Rio de Janeiro",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A city wedged spectacularly between jungle mountains and the sea, where a giant Christ spreads his arms over the bay, cable cars rise to a sugarloaf-shaped peak, and the beaches, samba, and street life spill into one of the world's most beautiful and exuberant urban settings.",
+        "tags": [
+          "christ-redeemer",
+          "sugarloaf",
+          "copacabana",
+          "samba",
+          "carnival",
+          "beaches"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5014,
+          -12.9714
+        ]
+      },
+      "properties": {
+        "slug": "salvador",
+        "name": "Salvador & Bahia",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The first capital of colonial Brazil and the heart of its Afro-Brazilian soul, a city of gilded churches and pastel colonial mansions ringing with drums, where capoeira, candombl\u00e9, and some of the country's most vibrant music and food were born.",
+        "tags": [
+          "afro-brazilian",
+          "pelourinho",
+          "capoeira",
+          "candomble",
+          "music",
+          "colonial",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           25.3939,
           42.7358
         ]
@@ -17028,6 +17353,103 @@
           "savanna",
           "comeback",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.2,
+          -23.86
+        ]
+      },
+      "properties": {
+        "slug": "atacama",
+        "name": "The Atacama Desert",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The driest desert on Earth, where some weather stations have never recorded rain, a high, otherworldly landscape of salt flats, steaming geysers, flamingo lagoons, and skies so clear that the world's great telescopes gather here.",
+        "tags": [
+          "driest-desert",
+          "geysers",
+          "salt-flats",
+          "flamingos",
+          "stargazing",
+          "altiplano"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6693,
+          -33.4489
+        ]
+      },
+      "properties": {
+        "slug": "santiago-valparaiso",
+        "name": "Santiago & Valpara\u00edso",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Chile's contrasting central duo: a modern, orderly capital pressed against a wall of snow-capped Andes, and, over the coastal hills, a gloriously chaotic port city of clattering funiculars, tumbling painted houses, and street art.",
+        "tags": [
+          "santiago",
+          "valparaiso",
+          "funiculars",
+          "street-art",
+          "wine",
+          "neruda",
+          "andes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0,
+          -51.0
+        ]
+      },
+      "properties": {
+        "slug": "torres-del-paine",
+        "name": "Torres del Paine",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Patagonia's crown jewel: three sheer granite towers soaring above a turquoise glacial lake, at the heart of a national park of glaciers, emerald valleys, and roaming guanacos that draws trekkers from around the world.",
+        "tags": [
+          "patagonia",
+          "granite-towers",
+          "w-trek",
+          "guanacos",
+          "glaciers",
+          "national-park"
         ],
         "stay": false,
         "season": []
