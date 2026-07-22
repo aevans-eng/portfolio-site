@@ -17692,6 +17692,235 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          115.2625,
+          -8.5069
+        ]
+      },
+      "properties": {
+        "slug": "bali-ubud",
+        "name": "Bali",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A single Hindu island in the world's largest Muslim country, where daily offerings sit on every doorstep, rice terraces stair-step down the hills, and temples cling to sea cliffs, all of it now wrestling with its own popularity.",
+        "tags": [
+          "hindu",
+          "temples",
+          "rice-terraces",
+          "ubud",
+          "surf",
+          "offerings",
+          "overtourism"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.2038,
+          -7.6079
+        ]
+      },
+      "properties": {
+        "slug": "borobudur",
+        "name": "Borobudur",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The largest Buddhist temple in the world, a mountain of carved stone built around the year 800, lost under volcanic ash and jungle for centuries, its terraces climbing toward a crown of bell-shaped stupas above the Javanese plain.",
+        "tags": [
+          "buddhist",
+          "temple",
+          "java",
+          "stupa",
+          "unesco",
+          "sunrise",
+          "volcanoes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.489,
+          -8.55
+        ]
+      },
+      "properties": {
+        "slug": "komodo",
+        "name": "Komodo National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A cluster of dry, rugged islands that are the only home of the Komodo dragon, the largest lizard on earth, set in some of the richest diving waters in the world, with a beach the colour of rose.",
+        "tags": [
+          "komodo-dragon",
+          "diving",
+          "pink-beach",
+          "islands",
+          "labuan-bajo",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.8756,
+          2.6845
+        ]
+      },
+      "properties": {
+        "slug": "lake-toba",
+        "name": "Lake Toba",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An enormous lake filling the crater of one of the largest volcanic eruptions in the history of the planet, with an island nearly the size of Singapore sitting in the middle of it, home to the Batak people.",
+        "tags": [
+          "supervolcano",
+          "crater-lake",
+          "samosir",
+          "batak",
+          "sumatra",
+          "highland"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.953,
+          -7.9425
+        ]
+      },
+      "properties": {
+        "slug": "mount-bromo",
+        "name": "Mount Bromo & Ijen",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A smoking volcano cone standing in a vast sea of ash, ringed by an ancient caldera, and a nearby crater where miners carry sulphur out past electric-blue flames that only show in the dark.",
+        "tags": [
+          "volcano",
+          "caldera",
+          "sunrise",
+          "blue-fire",
+          "sulphur",
+          "tengger",
+          "east-java"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.82,
+          -3.07
+        ]
+      },
+      "properties": {
+        "slug": "tana-toraja",
+        "name": "Tana Toraja",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A green highland in Sulawesi where death is the centre of life: elaborate multi-day funerals, the dead kept at home for months or years before burial, and graves carved into cliffs guarded by wooden effigies.",
+        "tags": [
+          "toraja",
+          "funerals",
+          "tongkonan",
+          "cliff-graves",
+          "sulawesi",
+          "highland",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.9333,
+          -2.7333
+        ]
+      },
+      "properties": {
+        "slug": "tanjung-puting",
+        "name": "Tanjung Puting & the Orangutans",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A Borneo national park where you chug up a jungle river on a wooden liveaboard boat to watch wild and rehabilitated orangutans, our red-haired cousins, swing down to forest feeding platforms.",
+        "tags": [
+          "orangutan",
+          "borneo",
+          "kalimantan",
+          "klotok",
+          "rainforest",
+          "wildlife",
+          "conservation"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -9.4309,
           52.9715
         ]
