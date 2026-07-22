@@ -15310,6 +15310,300 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          6.876,
+          45.929
+        ]
+      },
+      "properties": {
+        "slug": "mer-de-glace",
+        "name": "Chamonix & the Mer de Glace",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "France's largest glacier, reached by a little red rack railway, with the ice cave re-carved every summer because the glacier keeps dropping out from under it.",
+        "tags": [
+          "mont-blanc",
+          "glacier",
+          "alps",
+          "chamonix",
+          "aiguille-du-midi",
+          "climate",
+          "mountaineering"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5114,
+          48.636
+        ]
+      },
+      "properties": {
+        "slug": "mont-saint-michel",
+        "name": "Mont-Saint-Michel",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A medieval abbey stacked on a rock in a bay with some of the fastest tides in Europe, cut off from land twice a day and floated on the water at the highest ones.",
+        "tags": [
+          "abbey",
+          "tidal-island",
+          "normandy",
+          "brittany-border",
+          "unesco",
+          "pilgrimage",
+          "tides"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.331,
+          43.749
+        ]
+      },
+      "properties": {
+        "slug": "verdon-gorge",
+        "name": "The Verdon Gorge",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A limestone canyon up to seven hundred metres deep in the hills of Provence, with a river at the bottom the colour of antifreeze.",
+        "tags": [
+          "canyon",
+          "provence",
+          "turquoise",
+          "kayak",
+          "sainte-croix",
+          "hiking",
+          "climbing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.073,
+          50.961
+        ]
+      },
+      "properties": {
+        "slug": "bastei",
+        "name": "The Bastei",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A stone bridge from 1851 threading between free-standing sandstone pinnacles nearly two hundred metres above the Elbe, in a forest of rock towers that looks invented for a fairy tale.",
+        "tags": [
+          "sandstone",
+          "saxon-switzerland",
+          "elbe",
+          "bastei-bridge",
+          "rathen",
+          "national-park",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.729,
+          50.139
+        ]
+      },
+      "properties": {
+        "slug": "middle-rhine-valley",
+        "name": "The Middle Rhine Valley",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The stretch of the Rhine where the river carves a steep gorge past a castle roughly every few kilometres, vineyards climbing the slate slopes, and a rock where a siren was said to wreck boatmen.",
+        "tags": [
+          "rhine",
+          "castles",
+          "lorelei",
+          "riesling",
+          "unesco",
+          "boppard",
+          "koblenz"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7498,
+          47.5576
+        ]
+      },
+      "properties": {
+        "slug": "neuschwanstein",
+        "name": "Neuschwanstein Castle",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The pale turreted castle that half the world pictures when it hears \"fairy-tale castle,\" built by a reclusive Bavarian king who barely lived in it and died mysteriously before it was finished.",
+        "tags": [
+          "ludwig-ii",
+          "bavaria",
+          "alps",
+          "fairytale-castle",
+          "fussen",
+          "marienbrucke"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.63,
+          39.715
+        ]
+      },
+      "properties": {
+        "slug": "meteora",
+        "name": "Meteora",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Orthodox monasteries built on top of sheer sandstone pillars, reached for centuries only by rope ladders and nets the monks could pull up behind them.",
+        "tags": [
+          "monasteries",
+          "sandstone-pillars",
+          "orthodox",
+          "thessaly",
+          "unesco",
+          "kalambaka"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.055,
+          36.686
+        ]
+      },
+      "properties": {
+        "slug": "monemvasia",
+        "name": "Monemvasia",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A whole Byzantine town hidden on the seaward face of a giant rock, invisible from the mainland, reached by a single causeway whose name means \"one entrance.\"",
+        "tags": [
+          "byzantine",
+          "fortress-town",
+          "peloponnese",
+          "laconia",
+          "hidden-town",
+          "castle"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.376,
+          37.107
+        ]
+      },
+      "properties": {
+        "slug": "naxos",
+        "name": "Naxos",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The biggest and greenest of the Cyclades, with mountain villages, long empty beaches, and a giant marble doorway standing alone on an islet, framing the sunset and leading nowhere.",
+        "tags": [
+          "cyclades",
+          "island",
+          "portara",
+          "mount-zas",
+          "villages",
+          "beaches",
+          "anti-santorini"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -16.179,
           64.048
         ]
@@ -15433,6 +15727,106 @@
           "footbridge",
           "lazio",
           "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3055,
+          46.6186
+        ]
+      },
+      "properties": {
+        "slug": "dolomites",
+        "name": "The Dolomites",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A whole range of pale limestone towers that turn rose and orange at sunset, standing over green meadows instead of the usual grey Alpine scree. Old coral reefs, pushed two miles into the sky.",
+        "tags": [
+          "alps",
+          "limestone",
+          "tre-cime",
+          "alpe-di-siusi",
+          "unesco",
+          "hiking",
+          "via-ferrata",
+          "south-tyrol"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.993,
+          37.751
+        ]
+      },
+      "properties": {
+        "slug": "etna",
+        "name": "Mount Etna",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The most active volcano in Europe, and one you can actually climb toward, walking over black lava that was liquid a few years ago while the summit smokes above you.",
+        "tags": [
+          "volcano",
+          "sicily",
+          "eruption",
+          "lava",
+          "catania",
+          "unesco",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6106,
+          40.6664
+        ]
+      },
+      "properties": {
+        "slug": "matera",
+        "name": "The Sassi of Matera",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A town of houses dug into a limestone ravine, lived in for something like nine thousand years. Seventy years ago the Italian state called it a national disgrace and emptied it by force.",
+        "tags": [
+          "cave-city",
+          "sassi",
+          "basilicata",
+          "unesco",
+          "rock-churches",
+          "gravina",
+          "history"
         ],
         "stay": false,
         "season": []
@@ -15567,6 +15961,203 @@
           "cusco",
           "remote",
           "peru"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.588,
+          37.176
+        ]
+      },
+      "properties": {
+        "slug": "alhambra",
+        "name": "The Alhambra",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The last palace of Muslim Spain, a fortress on a hill above Granada whose inner rooms are carved into lace, held by the Nasrids until 1492 and nearly torn down for centuries after.",
+        "tags": [
+          "nasrid",
+          "moorish",
+          "granada",
+          "islamic-art",
+          "generalife",
+          "alandalus",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.855,
+          43.197
+        ]
+      },
+      "properties": {
+        "slug": "picos-de-europa",
+        "name": "The Picos de Europa",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A wall of sheer grey limestone rising a few miles inland from the wet northern coast, close enough to the sea that sailors used it to know they were nearly home.",
+        "tags": [
+          "mountains",
+          "limestone",
+          "asturias",
+          "cantabria",
+          "cable-car",
+          "covadonga",
+          "national-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0244,
+          39.8567
+        ]
+      },
+      "properties": {
+        "slug": "toledo",
+        "name": "Toledo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A whole medieval city crammed onto a rock inside a loop of the Tagus, where for a few centuries Muslims, Jews, and Christians built side by side before the Inquisition ended it.",
+        "tags": [
+          "three-cultures",
+          "el-greco",
+          "castile",
+          "medieval",
+          "tagus",
+          "swords",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5116,
+          55.2408
+        ]
+      },
+      "properties": {
+        "slug": "giants-causeway",
+        "name": "The Giant's Causeway",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Some forty thousand hexagonal basalt columns packed together at the sea's edge, so regular they look poured by hand. The old story says a giant built them as stepping stones to Scotland.",
+        "tags": [
+          "basalt-columns",
+          "antrim",
+          "causeway-coast",
+          "unesco",
+          "finn-mccool",
+          "geology"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.379,
+          55.006
+        ]
+      },
+      "properties": {
+        "slug": "hadrians-wall",
+        "name": "Hadrian's Wall",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Roman Empire's northern edge, a stone wall run coast to coast across northern England around AD 122, still marching over the crags with forts and mile-castles strung along it.",
+        "tags": [
+          "roman",
+          "frontier",
+          "northumberland",
+          "housesteads",
+          "sycamore-gap",
+          "unesco",
+          "national-trail"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.183,
+          57.507
+        ]
+      },
+      "properties": {
+        "slug": "isle-of-skye",
+        "name": "The Isle of Skye",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A big Hebridean island of jagged black peaks and green landslip terraces, where the weather changes every twenty minutes and half the drama is watching it come across the water.",
+        "tags": [
+          "hebrides",
+          "highlands",
+          "old-man-of-storr",
+          "quiraing",
+          "cuillin",
+          "single-track",
+          "scotland"
         ],
         "stay": false,
         "season": []
