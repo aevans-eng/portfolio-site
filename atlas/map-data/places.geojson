@@ -20374,6 +20374,234 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          34.8289,
+          38.6431
+        ]
+      },
+      "properties": {
+        "slug": "cappadocia",
+        "name": "Cappadocia",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A surreal landscape of soft volcanic rock eroded into \"fairy chimney\" spires and honeycombed with cave homes, churches, and entire cities dug deep underground, all watched each dawn by a sky full of hot-air balloons.",
+        "tags": [
+          "fairy-chimneys",
+          "cave-hotels",
+          "balloons",
+          "goreme",
+          "derinkuyu",
+          "underground-city",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3417,
+          37.9395
+        ]
+      },
+      "properties": {
+        "slug": "ephesus",
+        "name": "Ephesus",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the best-preserved ancient cities in the Mediterranean, where you walk a real Roman main street of marble past temples, terraced houses, and the soaring two-storey fa\u00e7ade of a great library.",
+        "tags": [
+          "roman",
+          "ruins",
+          "library-of-celsus",
+          "ancient-city",
+          "artemis",
+          "selcuk",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.9224,
+          37.2233
+        ]
+      },
+      "properties": {
+        "slug": "gobekli-tepe",
+        "name": "G\u00f6bekli Tepe",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The oldest known monumental site on earth, carved T-shaped pillars raised around 11,600 years ago, older than Stonehenge by six thousand years and built before farming, pottery, writing, or the wheel.",
+        "tags": [
+          "neolithic",
+          "oldest-temple",
+          "archaeology",
+          "sanliurfa",
+          "prehistory",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9784,
+          41.0082
+        ]
+      },
+      "properties": {
+        "slug": "istanbul",
+        "name": "Istanbul",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The only city that straddles two continents, capital of two great empires in turn, where a fifteen-hundred-year-old former cathedral, imperial mosques, and a labyrinthine bazaar crowd the hills above the Bosphorus.",
+        "tags": [
+          "bosphorus",
+          "hagia-sophia",
+          "byzantine",
+          "ottoman",
+          "grand-bazaar",
+          "two-continents"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6386,
+          36.202
+        ]
+      },
+      "properties": {
+        "slug": "lycian-coast",
+        "name": "The Lycian Coast",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A turquoise stretch of Mediterranean coast where pine-covered mountains drop into clear water, ancient Lycian tombs are carved into the cliffs, and a whole sunken city lies just under the surface off Kekova.",
+        "tags": [
+          "lycia",
+          "turquoise-coast",
+          "kekova",
+          "lycian-way",
+          "gulet",
+          "ruins",
+          "kas"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.7411,
+          37.9806
+        ]
+      },
+      "properties": {
+        "slug": "mount-nemrut",
+        "name": "Mount Nemrut",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "On a remote 2,100-metre summit, a little-known king built himself a tomb guarded by colossal seated statues of gods; earthquakes toppled their heads, which now sit on the ground staring out at the sunrise.",
+        "tags": [
+          "commagene",
+          "colossal-statues",
+          "stone-heads",
+          "tomb",
+          "sunrise",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1206,
+          37.9203
+        ]
+      },
+      "properties": {
+        "slug": "pamukkale",
+        "name": "Pamukkale & Hierapolis",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A hillside of blinding white terraces built up over millennia by mineral-rich hot springs, where warm turquoise water pools on shelves of stone, topped by a Roman spa city and a pool you swim in among fallen marble columns.",
+        "tags": [
+          "travertine",
+          "hot-springs",
+          "terraces",
+          "hierapolis",
+          "roman",
+          "antique-pool",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.5234,
           50.4501
         ]
