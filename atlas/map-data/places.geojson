@@ -16187,6 +16187,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.4167,
+          6.4667
+        ]
+      },
+      "properties": {
+        "slug": "ganvie",
+        "name": "Ganvi\u00e9",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A whole town of tens of thousands built on stilts over a lagoon, where the streets are water, everyone travels by pirogue, and there is even a floating market, founded as a refuge that a spiritual taboo made untouchable.",
+        "tags": [
+          "stilt-village",
+          "lagoon",
+          "tofinu",
+          "pirogue",
+          "venice-of-africa",
+          "lake"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.085,
+          6.36
+        ]
+      },
+      "properties": {
+        "slug": "ouidah",
+        "name": "Ouidah",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The spiritual home of voodoo, where a temple full of sacred pythons sits near a haunting slave route that ends at a \"door of no return\" on the beach, a town where a living African religion and a terrible history meet.",
+        "tags": [
+          "vodun",
+          "voodoo",
+          "slave-route",
+          "door-of-no-return",
+          "python-temple",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4,
+          11.25
+        ]
+      },
+      "properties": {
+        "slug": "pendjari",
+        "name": "Pendjari National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the last strongholds of wildlife in West Africa, a remote savanna park in Benin's far north that shelters some of the region's last lions, elephants, and hippos, far from the famous safari lands of the east and south.",
+        "tags": [
+          "safari",
+          "lions",
+          "elephants",
+          "savanna",
+          "wap-complex",
+          "west-africa",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           90.75,
           27.55
         ]
@@ -18205,6 +18302,103 @@
           "fairytale-castle",
           "fussen",
           "marienbrucke"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2466,
+          5.1053
+        ]
+      },
+      "properties": {
+        "slug": "cape-coast-castles",
+        "name": "Cape Coast & Elmina Castles",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Whitewashed forts on a palm-fringed shore whose beauty masks a terrible history: these were holding prisons of the transatlantic slave trade, where captured Africans were chained in dungeons before passing through the \"door of no return.\"",
+        "tags": [
+          "slave-trade",
+          "castles",
+          "elmina",
+          "door-of-no-return",
+          "history",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.38,
+          5.35
+        ]
+      },
+      "properties": {
+        "slug": "kakum",
+        "name": "Kakum National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A rare surviving tract of West African rainforest where a series of rope-and-plank bridges are strung between the treetops, letting you walk high above the forest floor among the birds and the canopy.",
+        "tags": [
+          "rainforest",
+          "canopy-walkway",
+          "birds",
+          "ghana",
+          "coast",
+          "nature"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.85,
+          9.7
+        ]
+      },
+      "properties": {
+        "slug": "mole",
+        "name": "Mole National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Ghana's largest wildlife refuge, a stretch of northern savanna where you can walk on foot with a ranger and, from the lodge's clifftop pool, watch elephants come to drink at the waterhole below.",
+        "tags": [
+          "safari",
+          "elephants",
+          "walking-safari",
+          "savanna",
+          "ghana",
+          "north"
         ],
         "stay": false,
         "season": []
@@ -21261,6 +21455,106 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -4.555,
+          13.906
+        ]
+      },
+      "properties": {
+        "slug": "djenne",
+        "name": "Djenn\u00e9",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The largest mud-brick building in the world, a magnificent, spiky-walled Great Mosque that is re-plastered by the whole town each year in a communal festival, at the heart of an ancient Sahel trading city.",
+        "tags": [
+          "great-mosque",
+          "mud-brick",
+          "adobe",
+          "market",
+          "sahel",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.61,
+          14.35
+        ]
+      },
+      "properties": {
+        "slug": "dogon-country",
+        "name": "The Dogon Country",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A dramatic sandstone escarpment where the Dogon people built villages into the cliffs and terraces, keeping one of Africa's most intricate cosmologies, mythologies, and mask traditions, long a legendary trekking destination now shadowed by conflict.",
+        "tags": [
+          "dogon",
+          "bandiagara",
+          "escarpment",
+          "cliff-villages",
+          "cosmology",
+          "masks",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0074,
+          16.7735
+        ]
+      },
+      "properties": {
+        "slug": "timbuktu",
+        "name": "Timbuktu",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The name that stands, in many languages, for the most remote place on earth, once a fabled Saharan city of gold, salt, and scholarship, home to great mud mosques and libraries of hundreds of thousands of ancient manuscripts.",
+        "tags": [
+          "sahara",
+          "manuscripts",
+          "caravan-city",
+          "mud-mosques",
+          "learning",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -12.36,
           20.46
         ]
@@ -22471,6 +22765,105 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          8.592,
+          12.0022
+        ]
+      },
+      "properties": {
+        "slug": "kano",
+        "name": "Kano",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the great cities of the Sahel, an ancient Hausa trading hub whose old town of earthen walls, vast markets, and centuries-old indigo dye pits offers a completely different Nigeria from the coastal megacities.",
+        "tags": [
+          "hausa",
+          "sahel",
+          "dye-pits",
+          "old-city",
+          "trans-saharan",
+          "markets",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3792,
+          6.5244
+        ]
+      },
+      "properties": {
+        "slug": "lagos",
+        "name": "Lagos",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of Africa's biggest and most electric cities, a roaring megacity of some twenty million where fortunes are chased, Afrobeats blasts from every corner, and the sheer energy and hustle are the whole experience.",
+        "tags": [
+          "megacity",
+          "afrobeats",
+          "markets",
+          "nollywood",
+          "energy",
+          "island",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5667,
+          7.7667
+        ]
+      },
+      "properties": {
+        "slug": "osun-osogbo",
+        "name": "The Osun-Osogbo Sacred Grove",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A dense forest along a sacred river, dotted with shrines and fantastical sculptures to the Yoruba gods, one of the last great sacred groves of a living African religion, and the stage for a huge annual festival to the river goddess Osun.",
+        "tags": [
+          "yoruba",
+          "sacred-grove",
+          "osun",
+          "shrines",
+          "sculpture",
+          "festival",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           20.8016,
           41.1231
         ]
@@ -23574,6 +23967,105 @@
           "bedouin",
           "remote",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.4677,
+          14.7167
+        ]
+      },
+      "properties": {
+        "slug": "dakar-goree",
+        "name": "Dakar & Gor\u00e9e Island",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "West Africa's most vibrant capital, thrumming with music and markets on the continent's westernmost point, with a short ferry to a beautiful, painful island that has become a memorial to the transatlantic slave trade.",
+        "tags": [
+          "dakar",
+          "goree",
+          "slave-house",
+          "music",
+          "westernmost-africa",
+          "lac-rose",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.5,
+          16.03
+        ]
+      },
+      "properties": {
+        "slug": "saint-louis",
+        "name": "Saint-Louis",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A crumbling, characterful old colonial town on a narrow island at the mouth of the Senegal River, once the capital of French West Africa, now faded, arty, and famous for its jazz, beside one of the world's great bird sanctuaries.",
+        "tags": [
+          "colonial",
+          "island",
+          "jazz",
+          "fishing",
+          "djoudj",
+          "birds",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.5,
+          13.9
+        ]
+      },
+      "properties": {
+        "slug": "sine-saloum",
+        "name": "The Sine-Saloum Delta",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A vast maze of mangrove channels, tidal flats, and islands where two rivers meet the Atlantic, some of them built up over centuries from millions of discarded shells, alive with pelicans, flamingos, and pirogue-borne fishing life.",
+        "tags": [
+          "delta",
+          "mangroves",
+          "pirogue",
+          "birds",
+          "shell-islands",
+          "fishing",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -25134,6 +25626,70 @@
           "elephants",
           "night-market",
           "hill-tribes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1333,
+          10.0667
+        ]
+      },
+      "properties": {
+        "slug": "koutammakou",
+        "name": "Koutammakou (the Batammariba)",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A landscape of extraordinary fortress-like mud tower-houses, sculpted homes with turrets, granaries, and rooftop terraces, built by the Batammariba people, whose architecture and way of life are woven into their beliefs about the world.",
+        "tags": [
+          "batammariba",
+          "takienta",
+          "tower-houses",
+          "mud-architecture",
+          "culture",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2314,
+          6.1725
+        ]
+      },
+      "properties": {
+        "slug": "lome",
+        "name": "Lom\u00e9",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A relaxed, palm-lined seaside capital on the Gulf of Guinea, best known for the Akodessewa fetish market, a startling open-air emporium of the ingredients of West African voodoo.",
+        "tags": [
+          "capital",
+          "fetish-market",
+          "voodoo",
+          "beaches",
+          "markets",
+          "gulf-of-guinea"
         ],
         "stay": false,
         "season": []
