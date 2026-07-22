@@ -16320,6 +16320,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          24.5,
+          -18.5
+        ]
+      },
+      "properties": {
+        "slug": "chobe",
+        "name": "Chobe National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A park famous for its enormous elephant herds, where the best seat is a boat on the river at sunset as hundreds of elephants, buffalo, and hippos come down to drink and cross the water.",
+        "tags": [
+          "elephants",
+          "chobe-river",
+          "boat-safari",
+          "wildlife",
+          "kasane",
+          "four-corners"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2,
+          -20.7
+        ]
+      },
+      "properties": {
+        "slug": "kalahari-makgadikgadi",
+        "name": "The Kalahari & Makgadikgadi Pans",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A landscape of almost unimaginable emptiness: vast white salt pans, the bed of a long-vanished super-lake, stretching flat to the curved horizon, and the red Kalahari sands where meerkats stand sentinel and desert lions roam.",
+        "tags": [
+          "kalahari",
+          "salt-pans",
+          "meerkats",
+          "desert",
+          "quad-bike",
+          "stars",
+          "migration"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9,
+          -19.3
+        ]
+      },
+      "properties": {
+        "slug": "okavango-delta",
+        "name": "The Okavango Delta",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A river that never reaches the sea, spilling instead into the Kalahari to form a vast maze of channels, islands, and flooded plains, where you glide silently past elephants and hippos in a dugout canoe.",
+        "tags": [
+          "delta",
+          "mokoro",
+          "water-safari",
+          "wildlife",
+          "wetland",
+          "botswana",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           25.3939,
           42.7358
         ]
@@ -20805,6 +20903,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          34.1,
+          -11.9
+        ]
+      },
+      "properties": {
+        "slug": "lake-malawi",
+        "name": "Lake Malawi",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A vast, clear freshwater lake, the \"lake of stars,\" so full of colourful fish found nowhere else that snorkelling in it feels like drifting through a tropical aquarium, ringed by beaches and sleepy fishing villages.",
+        "tags": [
+          "lake",
+          "cichlids",
+          "snorkeling",
+          "islands",
+          "freshwater",
+          "likoma",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3,
+          -14.8
+        ]
+      },
+      "properties": {
+        "slug": "liwonde",
+        "name": "Liwonde National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Malawi's finest wildlife park, a conservation success story along a broad river where, thanks to a dramatic rewilding, elephants, lions, and rhinos have returned to a landscape once emptied by poaching.",
+        "tags": [
+          "safari",
+          "shire-river",
+          "elephants",
+          "rewilding",
+          "boat-safari",
+          "malawi"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6,
+          -15.95
+        ]
+      },
+      "properties": {
+        "slug": "mount-mulanje",
+        "name": "Mount Mulanje",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A colossal granite massif rising abruptly out of the tea plantations of southern Malawi, its sheer walls and plateaus of grassland and forest towering thousands of metres above the plain, laced with trekking routes between mountain huts.",
+        "tags": [
+          "mountain",
+          "granite",
+          "inselberg",
+          "trekking",
+          "huts",
+          "tea",
+          "malawi"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           100.3292,
           5.4145
         ]
@@ -22723,6 +22919,103 @@
           "dracula",
           "carpathians",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0606,
+          -1.9536
+        ]
+      },
+      "properties": {
+        "slug": "kigali",
+        "name": "Kigali",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of Africa's cleanest, safest, and most orderly capitals, spread over green hills, and home to a memorial that confronts the 1994 genocide with unflinching honesty, essential to understanding the country.",
+        "tags": [
+          "kigali",
+          "genocide-memorial",
+          "clean",
+          "safe",
+          "hills",
+          "coffee",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.25,
+          -2.05
+        ]
+      },
+      "properties": {
+        "slug": "lake-kivu-nyungwe",
+        "name": "Lake Kivu & Nyungwe Forest",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A big, calm lake fringed with beaches and terraced hills, beside one of the oldest rainforests in Africa, where a swaying canopy walkway hangs high above the trees and chimpanzees call through the mist.",
+        "tags": [
+          "lake-kivu",
+          "nyungwe",
+          "canopy-walk",
+          "chimpanzees",
+          "rainforest",
+          "beaches"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.52,
+          -1.47
+        ]
+      },
+      "properties": {
+        "slug": "volcanoes-gorillas",
+        "name": "Volcanoes National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The misty, volcano-cradled forest where Dian Fossey made mountain gorillas known to the world, and where trekking up the slopes of the Virunga volcanoes to sit with a gorilla family is Rwanda's signature experience.",
+        "tags": [
+          "mountain-gorillas",
+          "virunga",
+          "dian-fossey",
+          "trekking",
+          "volcanoes",
+          "conservation"
         ],
         "stay": false,
         "season": []
@@ -24717,6 +25010,102 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          29.67,
+          -1.06
+        ]
+      },
+      "properties": {
+        "slug": "bwindi",
+        "name": "Bwindi Impenetrable Forest",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A dense, ancient rainforest cloaking steep mountains, home to roughly half the world's remaining mountain gorillas, where a hard trek through the tangled green rewards you with an hour beside a family of these gentle giants.",
+        "tags": [
+          "mountain-gorillas",
+          "rainforest",
+          "trekking",
+          "primates",
+          "conservation",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.69,
+          2.278
+        ]
+      },
+      "properties": {
+        "slug": "murchison-falls",
+        "name": "Murchison Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Where the entire Nile is squeezed through a gap in the rocks just seven metres wide and explodes through in a violent, thundering torrent, at the heart of Uganda's largest national park.",
+        "tags": [
+          "waterfall",
+          "nile",
+          "safari",
+          "boat-cruise",
+          "wildlife",
+          "uganda"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.2,
+          0.42
+        ]
+      },
+      "properties": {
+        "slug": "nile-source-jinja",
+        "name": "The Source of the Nile, Jinja",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Where the world's longest river begins, the point at which the White Nile flows out of Lake Victoria to start its 6,000-kilometre journey to the Mediterranean, and one of Africa's best white-water rafting rivers.",
+        "tags": [
+          "nile",
+          "lake-victoria",
+          "rafting",
+          "jinja",
+          "speke",
+          "adventure"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.5234,
           50.4501
         ]
@@ -25360,6 +25749,199 @@
           "indian-ocean",
           "unesco",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.86,
+          -17.92
+        ]
+      },
+      "properties": {
+        "slug": "livingstone-devils-pool",
+        "name": "Livingstone & Devil's Pool",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Zambian side of Victoria Falls, where in the low-water months you can swim to a natural rock pool right on the very lip of the cliff and peer over the edge as the Zambezi thunders down beside you.",
+        "tags": [
+          "victoria-falls",
+          "devils-pool",
+          "zambezi",
+          "livingstone",
+          "infinity-edge",
+          "adventure"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.3,
+          -15.7
+        ]
+      },
+      "properties": {
+        "slug": "lower-zambezi",
+        "name": "The Lower Zambezi",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A stretch of the great Zambezi where the wildlife gathers along the river beneath an escarpment, and you drift past drinking elephants and yawning hippos in a canoe, at water level and in near silence.",
+        "tags": [
+          "zambezi",
+          "canoe-safari",
+          "river",
+          "elephants",
+          "fishing",
+          "wildlife",
+          "zambia"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.83,
+          -13.09
+        ]
+      },
+      "properties": {
+        "slug": "south-luangwa",
+        "name": "South Luangwa",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The birthplace of the walking safari, a wild, uncrowded park along a meandering river where you explore on foot with an armed guide, and where night drives turn up some of the best leopard sightings in Africa.",
+        "tags": [
+          "walking-safari",
+          "leopards",
+          "luangwa",
+          "wildlife",
+          "zambia",
+          "night-drives"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.9339,
+          -20.2675
+        ]
+      },
+      "properties": {
+        "slug": "great-zimbabwe",
+        "name": "Great Zimbabwe",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The largest ancient stone structure in sub-Saharan Africa, the ruined capital of a powerful medieval kingdom, its great curving walls built without mortar from millions of precisely-fitted granite blocks, and the monument that gave a nation its name.",
+        "tags": [
+          "ruins",
+          "stone-city",
+          "shona",
+          "medieval",
+          "great-enclosure",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.95,
+          -18.65
+        ]
+      },
+      "properties": {
+        "slug": "hwange",
+        "name": "Hwange National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Zimbabwe's largest game reserve, a vast wilderness of teak forest and grassland famous for its enormous elephant herds, where in the dry season the wildlife gathers around waterholes kept alive by pumped water.",
+        "tags": [
+          "safari",
+          "elephants",
+          "waterholes",
+          "wild-dogs",
+          "hwange",
+          "zimbabwe"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.8572,
+          -17.9243
+        ]
+      },
+      "properties": {
+        "slug": "victoria-falls",
+        "name": "Victoria Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Zambezi crashing over a kilometre-and-a-half-wide cliff into a narrow gorge, throwing up a column of spray visible for miles, a curtain of falling water so vast that locals named it \"the smoke that thunders.\"",
+        "tags": [
+          "waterfall",
+          "zambezi",
+          "mosi-oa-tunya",
+          "rainforest",
+          "adventure",
+          "unesco"
         ],
         "stay": false,
         "season": []
