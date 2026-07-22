@@ -15735,6 +15735,105 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          13.3777,
+          52.5163
+        ]
+      },
+      "properties": {
+        "slug": "berlin",
+        "name": "Berlin",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital that spent the twentieth century at the centre of its worst events and now confronts that history in the open, from a wall that split the city to a field of grey slabs for the murdered of Europe.",
+        "tags": [
+          "berlin-wall",
+          "cold-war",
+          "museums",
+          "memorial",
+          "nightlife",
+          "reichstag",
+          "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2,
+          48.0
+        ]
+      },
+      "properties": {
+        "slug": "black-forest",
+        "name": "The Black Forest",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The dark, densely wooded hills of Germany's southwest corner, home of the cuckoo clock, the gateau, and a landscape of fir, waterfalls, and spa towns that fed the country's fairy tales.",
+        "tags": [
+          "schwarzwald",
+          "cuckoo-clocks",
+          "baden",
+          "spa",
+          "hiking",
+          "gateau",
+          "waterfalls"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9885,
+          53.5443
+        ]
+      },
+      "properties": {
+        "slug": "hamburg",
+        "name": "Hamburg",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Germany's great port, a brick city of canals and warehouses where an old Hanseatic trading town meets a wave-shaped glass concert hall on top of a former cocoa store.",
+        "tags": [
+          "port",
+          "speicherstadt",
+          "elbphilharmonie",
+          "canals",
+          "reeperbahn",
+          "hanseatic",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           7.729,
           50.139
         ]
@@ -16655,6 +16754,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -8.4256,
+          40.2081
+        ]
+      },
+      "properties": {
+        "slug": "coimbra",
+        "name": "Coimbra",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Home to one of the oldest universities in the world, whose gilded Baroque library is guarded at night by a resident colony of bats that eat the insects threatening the books.",
+        "tags": [
+          "university",
+          "joanina-library",
+          "fado",
+          "mondego",
+          "students",
+          "bats",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -7.546,
           41.1608
         ]
@@ -16709,6 +16841,72 @@
           "roman-temple",
           "almendres",
           "megaliths",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1334,
+          38.7139
+        ]
+      },
+      "properties": {
+        "slug": "lisbon",
+        "name": "Lisbon",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A city of seven hills above the Tagus, rebuilt on a grid after one of history's most devastating earthquakes, where wooden trams grind up alleys and mournful fado drifts out of Alfama's doorways.",
+        "tags": [
+          "alfama",
+          "fado",
+          "trams",
+          "tiles",
+          "belem",
+          "miradouros",
+          "earthquake"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6116,
+          41.1408
+        ]
+      },
+      "properties": {
+        "slug": "porto",
+        "name": "Porto",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The hard-working city that gave Portugal its name and its most famous wine, tumbling down granite banks to the Douro in a jumble of tiled fa\u00e7ades, iron bridges, and stacked riverfront houses.",
+        "tags": [
+          "douro",
+          "port-wine",
+          "ribeira",
+          "azulejos",
+          "dom-luis-bridge",
+          "gaia",
           "unesco"
         ],
         "stay": false,
@@ -16949,6 +17147,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          8.05,
+          46.45
+        ]
+      },
+      "properties": {
+        "slug": "aletsch-glacier",
+        "name": "The Aletsch Glacier",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The largest glacier in the Alps, a twenty-kilometre river of ice curving between peaks, viewed from ridge-top villages reached only by cable car, and visibly retreating year by year.",
+        "tags": [
+          "valais",
+          "glacier",
+          "aletsch",
+          "bettmeralp",
+          "unesco",
+          "climate",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           9.679,
           46.6799
         ]
@@ -17015,6 +17246,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          8.3093,
+          47.0502
+        ]
+      },
+      "properties": {
+        "slug": "lucerne",
+        "name": "Lucerne & Lake Lucerne",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A medieval town on a lake ringed by mountains, with a covered wooden footbridge from the fourteenth century and cog railways and cable cars up peaks that rise straight from the water.",
+        "tags": [
+          "chapel-bridge",
+          "lake",
+          "pilatus",
+          "rigi",
+          "old-town",
+          "steamer",
+          "alps"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           7.6586,
           45.9763
         ]
@@ -17037,6 +17301,71 @@
           "gornergrat",
           "mountaineering",
           "glacier"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6156,
+          47.6779
+        ]
+      },
+      "properties": {
+        "slug": "rhine-falls",
+        "name": "The Rhine Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "One of the most powerful waterfalls in Europe, where the whole Rhine pours over a wide ledge with a jagged rock standing in the middle of the torrent that you can climb by boat.",
+        "tags": [
+          "waterfall",
+          "schaffhausen",
+          "rhine",
+          "boat",
+          "castle",
+          "day-trip"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0763,
+          53.0685
+        ]
+      },
+      "properties": {
+        "slug": "eryri-snowdonia",
+        "name": "Eryri (Snowdonia)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The rugged mountain heart of Wales, crowned by Yr Wyddfa, the highest peak in England and Wales, with a Welsh-speaking culture and a slate-mining past written into the valleys below.",
+        "tags": [
+          "wales",
+          "mountains",
+          "yr-wyddfa",
+          "slate",
+          "welsh-language",
+          "national-park",
+          "hiking"
         ],
         "stay": false,
         "season": []
@@ -17135,6 +17464,73 @@
           "cuillin",
           "single-track",
           "scotland"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0886,
+          54.4609
+        ]
+      },
+      "properties": {
+        "slug": "lake-district",
+        "name": "The Lake District",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A knot of green mountains and long lakes in England's northwest that invented a big part of how the modern world thinks about wild landscape, thanks to the Romantic poets who lived and walked here.",
+        "tags": [
+          "cumbria",
+          "fells",
+          "wordsworth",
+          "wainwright",
+          "lakes",
+          "national-park",
+          "unesco",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8262,
+          51.1789
+        ]
+      },
+      "properties": {
+        "slug": "stonehenge-avebury",
+        "name": "Stonehenge & Avebury",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The most famous prehistoric monument in the world, and a bigger, stranger stone circle twenty miles north that you can actually walk into with a pub in the middle of it.",
+        "tags": [
+          "neolithic",
+          "stone-circle",
+          "wiltshire",
+          "avebury",
+          "prehistory",
+          "salisbury-plain",
+          "unesco"
         ],
         "stay": false,
         "season": []
