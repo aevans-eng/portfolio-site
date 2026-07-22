@@ -15505,6 +15505,299 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          12.8712,
+          50.2306
+        ]
+      },
+      "properties": {
+        "slug": "karlovy-vary",
+        "name": "Karlovy Vary",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A belle-\u00e9poque spa town strung along a wooded river valley, where the ritual is to stroll grand colonnades sipping warm mineral water from a spouted cup, as Europe's aristocracy did for centuries.",
+        "tags": [
+          "spa",
+          "hot-springs",
+          "colonnade",
+          "becherovka",
+          "west-bohemia",
+          "belle-epoque"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.2509,
+          49.5938
+        ]
+      },
+      "properties": {
+        "slug": "olomouc",
+        "name": "Olomouc",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A handsome Moravian university town that feels like Prague without the crowds, with a giant Baroque plague column big enough to have a chapel inside it and a cheese famous for its smell.",
+        "tags": [
+          "moravia",
+          "baroque",
+          "holy-trinity-column",
+          "astronomical-clock",
+          "cheese",
+          "students",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4378,
+          50.0755
+        ]
+      },
+      "properties": {
+        "slug": "prague",
+        "name": "Prague",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A Gothic and Baroque city that came through the twentieth century almost unscathed, stacked along a river with a statue-lined stone bridge, a hilltop castle, and a medieval clock that draws a crowd on the hour.",
+        "tags": [
+          "charles-bridge",
+          "old-town",
+          "castle",
+          "astronomical-clock",
+          "bohemia",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5683,
+          55.6761
+        ]
+      },
+      "properties": {
+        "slug": "copenhagen",
+        "name": "Copenhagen",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A flat, bike-mad harbour capital where you can swim in the middle of the city, eat some of the world's most celebrated cooking, and feel out what the Danes mean by hygge.",
+        "tags": [
+          "bikes",
+          "nyhavn",
+          "hygge",
+          "new-nordic",
+          "harbour-baths",
+          "design",
+          "christiania"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5477,
+          54.9686
+        ]
+      },
+      "properties": {
+        "slug": "mons-klint",
+        "name": "M\u00f8ns Klint",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Six kilometres of brilliant white chalk cliffs dropping into the turquoise Baltic on a quiet island, backed by old beech forest and some of the darkest night skies in Denmark.",
+        "tags": [
+          "chalk-cliffs",
+          "dark-sky",
+          "beech-forest",
+          "fossils",
+          "mon",
+          "baltic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6316,
+          57.7364
+        ]
+      },
+      "properties": {
+        "slug": "skagen",
+        "name": "Skagen & Grenen",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The northern tip of Denmark, where two seas crash into each other along a sandbar you can walk to and stand with a foot in each, under a clear light that drew a whole colony of painters.",
+        "tags": [
+          "jutland",
+          "grenen",
+          "two-seas",
+          "skagen-painters",
+          "light",
+          "sandbar",
+          "dunes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.88,
+          61.8642
+        ]
+      },
+      "properties": {
+        "slug": "finnish-lakeland",
+        "name": "The Finnish Lakeland",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The heart of Finland is water: thousands of lakes threaded with forest and islands, where the national ritual is a lakeside cabin, a wood-fired sauna, and a jump into cold water.",
+        "tags": [
+          "lakes",
+          "sauna",
+          "cottage",
+          "savonlinna",
+          "olavinlinna",
+          "mokki",
+          "forest"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7294,
+          66.5039
+        ]
+      },
+      "properties": {
+        "slug": "finnish-lapland",
+        "name": "Finnish Lapland",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Finland's Arctic north, a land of snow forests and reindeer where winter brings the northern lights and a commercialised but sincere claim to be the home of Santa Claus.",
+        "tags": [
+          "arctic",
+          "aurora",
+          "sami",
+          "reindeer",
+          "rovaniemi",
+          "midnight-sun",
+          "santa"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9384,
+          60.1699
+        ]
+      },
+      "properties": {
+        "slug": "helsinki",
+        "name": "Helsinki & Suomenlinna",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A calm, sea-facing capital of clean design and public saunas, with a short ferry out to Suomenlinna, an 18th-century fortress spread across a cluster of islands guarding the harbour.",
+        "tags": [
+          "design",
+          "suomenlinna",
+          "sauna",
+          "baltic",
+          "market-square",
+          "architecture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           0.2058,
           49.707
         ]
@@ -16084,6 +16377,104 @@
           "arched-bridges",
           "pindus",
           "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0402,
+          47.4979
+        ]
+      },
+      "properties": {
+        "slug": "budapest",
+        "name": "Budapest",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A grand imperial capital split by the Danube into hilly Buda and flat Pest, sitting on hot springs that feed sprawling thermal bath palaces where the city goes to soak and play chess in the steam.",
+        "tags": [
+          "thermal-baths",
+          "danube",
+          "buda",
+          "pest",
+          "ruin-bars",
+          "parliament",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.73,
+          46.83
+        ]
+      },
+      "properties": {
+        "slug": "lake-balaton",
+        "name": "Lake Balaton",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The largest lake in Central Europe, so central to a landlocked country that Hungarians call it their sea, warm and shallow enough to wade far out, ringed by vineyards and an old abbey on a volcanic tongue of land.",
+        "tags": [
+          "balaton",
+          "lake",
+          "tihany",
+          "wine",
+          "volcanic",
+          "swimming",
+          "hungarian-sea"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.41,
+          48.117
+        ]
+      },
+      "properties": {
+        "slug": "tokaj",
+        "name": "Tokaj Wine Country",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The hills where one of the world's original great sweet wines is made, from grapes deliberately left to shrivel with noble rot, once served at royal courts and dubbed the wine of kings.",
+        "tags": [
+          "tokaji",
+          "sweet-wine",
+          "aszu",
+          "cellars",
+          "volcanic",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -16754,6 +17145,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.87,
+          52.7
+        ]
+      },
+      "properties": {
+        "slug": "bialowieza",
+        "name": "Bia\u0142owie\u017ca Forest",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the last surviving fragments of the primeval lowland forest that once blanketed Europe, and the home of the European bison, brought back from the edge of extinction after the last wild ones were shot here.",
+        "tags": [
+          "primeval-forest",
+          "bison",
+          "wisent",
+          "unesco",
+          "wildlife",
+          "belarus-border"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.945,
+          50.0647
+        ]
+      },
+      "properties": {
+        "slug": "krakow",
+        "name": "Krak\u00f3w & Wieliczka",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Poland's old royal capital, one of the few big Polish cities the war left standing, with a vast medieval square, a hilltop castle, and a nearby salt mine hollowed into underground chapels.",
+        "tags": [
+          "old-town",
+          "wawel",
+          "wieliczka",
+          "salt-mine",
+          "auschwitz",
+          "jewish-quarter",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0122,
+          52.2497
+        ]
+      },
+      "properties": {
+        "slug": "warsaw",
+        "name": "Warsaw's Old Town",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A picturesque medieval old town that is barely eighty years old, rebuilt brick by brick from paintings and rubble after the Nazis deliberately razed the entire city.",
+        "tags": [
+          "reconstruction",
+          "wwii",
+          "uprising",
+          "royal-castle",
+          "phoenix",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -8.4256,
           40.2081
         ]
@@ -17137,6 +17625,104 @@
           "tagus",
           "swords",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0686,
+          59.3293
+        ]
+      },
+      "properties": {
+        "slug": "stockholm",
+        "name": "Stockholm & the Archipelago",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital built across fourteen islands where the lake meets the Baltic, opening straight out into an archipelago of some thousands more that locals scatter to by ferry all summer.",
+        "tags": [
+          "archipelago",
+          "gamla-stan",
+          "islands",
+          "design",
+          "vasa",
+          "baltic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.83,
+          68.3494
+        ]
+      },
+      "properties": {
+        "slug": "swedish-lapland",
+        "name": "Swedish Lapland",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Swedish Arctic, where the sun doesn't set for weeks in summer and doesn't rise for weeks in winter, home to the S\u00e1mi, the northern lights, and a hotel rebuilt out of river ice every year.",
+        "tags": [
+          "arctic",
+          "aurora",
+          "sami",
+          "icehotel",
+          "abisko",
+          "midnight-sun",
+          "kungsleden"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.2948,
+          57.6348
+        ]
+      },
+      "properties": {
+        "slug": "visby-gotland",
+        "name": "Visby & Gotland",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the best-preserved medieval walled towns in northern Europe, ringed by a nearly complete stone rampart, on a Baltic island of sheep, roses, and strange sea-stacks.",
+        "tags": [
+          "gotland",
+          "hanseatic",
+          "medieval",
+          "city-wall",
+          "baltic",
+          "roses",
+          "sea-stacks"
         ],
         "stay": false,
         "season": []
