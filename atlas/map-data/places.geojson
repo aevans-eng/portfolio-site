@@ -498,6 +498,234 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          145.4,
+          -16.25
+        ]
+      },
+      "properties": {
+        "slug": "daintree",
+        "name": "The Daintree & Tropical North",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the oldest rainforests on Earth, a dense, ancient jungle of dinosaur-era plants that tumbles right down to the sea, the only place on the planet where two natural World Heritage wonders, rainforest and coral reef, meet on the same shore.",
+        "tags": [
+          "rainforest",
+          "daintree",
+          "cape-tribulation",
+          "crocodiles",
+          "cassowary",
+          "reef",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.0,
+          -16.7
+        ]
+      },
+      "properties": {
+        "slug": "great-barrier-reef",
+        "name": "The Great Barrier Reef",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The largest living structure on Earth, a coral wonderland stretching more than two thousand kilometres, so vast it can be seen from space, teeming with turtles, rays, sharks, and fish in every colour, a fragile marvel worth seeing thoughtfully.",
+        "tags": [
+          "coral-reef",
+          "snorkeling",
+          "diving",
+          "cairns",
+          "whitsundays",
+          "marine-life",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9631,
+          -37.8136
+        ]
+      },
+      "properties": {
+        "slug": "melbourne-great-ocean-road",
+        "name": "Melbourne & the Great Ocean Road",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Australia's coolest, most cultured city, a place of hidden laneways, street art, world-class coffee, and sport obsession, paired with one of the planet's great coastal drives past limestone stacks rising from a wild ocean.",
+        "tags": [
+          "laneways",
+          "coffee",
+          "twelve-apostles",
+          "coastal-drive",
+          "art",
+          "food"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2093,
+          -33.8688
+        ]
+      },
+      "properties": {
+        "slug": "sydney",
+        "name": "Sydney",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A city built around one of the world's most beautiful harbours, where the sail-like shells of the Opera House and the great arch of the Harbour Bridge frame a life of ferries, beaches, and coastal walks under near-perpetual sun.",
+        "tags": [
+          "opera-house",
+          "harbour-bridge",
+          "bondi",
+          "beaches",
+          "coastal-walk",
+          "harbour"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.5,
+          -42.0
+        ]
+      },
+      "properties": {
+        "slug": "tasmania",
+        "name": "Tasmania",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Australia's wild island state, a compact world of ancient rainforest, jagged mountains, and pristine white-sand coves, some of the cleanest air on Earth, marsupials found nowhere else, and, in its capital, one of the world's most provocative art museums.",
+        "tags": [
+          "wilderness",
+          "cradle-mountain",
+          "freycinet",
+          "mona",
+          "devils",
+          "hobart",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.0369,
+          -25.3444
+        ]
+      },
+      "properties": {
+        "slug": "uluru",
+        "name": "Uluru & the Red Centre",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A colossal russet monolith rising alone from the flat red heart of the continent, sacred to its Aboriginal custodians for tens of thousands of years, glowing through fiery reds and purples as the desert sun rises and sets.",
+        "tags": [
+          "uluru",
+          "sacred",
+          "anangu",
+          "red-centre",
+          "kata-tjuta",
+          "desert",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.7,
+          -22.7
+        ]
+      },
+      "properties": {
+        "slug": "western-australia",
+        "name": "Ningaloo & Western Australia",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Australia's vast, remote west, where a coral reef you can swim off the beach hosts the world's biggest fish, ancient life-forms still build living rocks in a turquoise bay, and a wilderness of beehive-striped domes and hidden gorges stretches beyond the horizon.",
+        "tags": [
+          "ningaloo",
+          "whale-sharks",
+          "kimberley",
+          "bungle-bungles",
+          "shark-bay",
+          "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.7519,
           47.0744
         ]
@@ -25366,6 +25594,201 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          172.9,
+          -40.9
+        ]
+      },
+      "properties": {
+        "slug": "abel-tasman-glaciers",
+        "name": "Abel Tasman & the West Coast Glaciers",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The upper South Island's contrasts: a golden-sand coastal track winding past turquoise bays perfect for kayaking, and, over the mountains on the wild west coast, glaciers that flow down through rainforest almost to the sea.",
+        "tags": [
+          "abel-tasman",
+          "coast-track",
+          "kayaking",
+          "franz-josef",
+          "fox-glacier",
+          "west-coast"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.096,
+          -43.734
+        ]
+      },
+      "properties": {
+        "slug": "aoraki-mount-cook",
+        "name": "Aoraki / Mount Cook",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "New Zealand's highest mountain presiding over a valley of glaciers, iceberg-dotted lakes, and turquoise rivers, in one of the largest dark-sky reserves on Earth, where the Southern Alps meet a blaze of stars.",
+        "tags": [
+          "southern-alps",
+          "aoraki",
+          "glaciers",
+          "hooker-valley",
+          "tekapo",
+          "dark-sky",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7633,
+          -36.8485
+        ]
+      },
+      "properties": {
+        "slug": "auckland-bay-of-islands",
+        "name": "Auckland & the Bay of Islands",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "New Zealand's biggest city, a laid-back \"City of Sails\" spread over harbours and old volcanoes, and gateway to the subtropical north, where the Bay of Islands scatters green islets across turquoise water and the nation's founding treaty was signed.",
+        "tags": [
+          "auckland",
+          "city-of-sails",
+          "bay-of-islands",
+          "waitangi",
+          "beaches",
+          "sailing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.6626,
+          -45.0312
+        ]
+      },
+      "properties": {
+        "slug": "queenstown-fiordland",
+        "name": "Queenstown & Fiordland",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The adventure capital of the world set on a jewel-blue lake beneath jagged peaks, and, over the mountains, the fiords: sheer cliffs and waterfalls plunging into dark water at Milford Sound, one of the most beautiful places on the planet.",
+        "tags": [
+          "milford-sound",
+          "fiordland",
+          "adventure",
+          "bungy",
+          "lakes",
+          "alps",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.251,
+          -38.137
+        ]
+      },
+      "properties": {
+        "slug": "rotorua",
+        "name": "Rotorua & the Geothermal North",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A steaming, sulphur-scented landscape of geysers, bubbling mud pools, and rainbow hot springs, and the heartland of living M\u0101ori culture, where you can soak in geothermal waters and share a feast cooked in the earth.",
+        "tags": [
+          "geothermal",
+          "geysers",
+          "maori",
+          "hangi",
+          "hobbiton",
+          "waitomo",
+          "glowworms"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.642,
+          -39.133
+        ]
+      },
+      "properties": {
+        "slug": "tongariro",
+        "name": "Tongariro & the Central Plateau",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Widely rated one of the world's best single-day hikes, a trek across a raw volcanic wonderland of steaming craters, jewel-coloured lakes, and lava fields, past the perfect cone that played Mount Doom in \"The Lord of the Rings.\"",
+        "tags": [
+          "tongariro",
+          "alpine-crossing",
+          "volcanoes",
+          "mount-doom",
+          "emerald-lakes",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -85.956,
           11.9344
         ]
@@ -25981,6 +26404,71 @@
           "ships",
           "rainforest",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.23,
+          -5.85
+        ]
+      },
+      "properties": {
+        "slug": "png-highlands",
+        "name": "The Highlands & Sing-sings",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The most culturally and linguistically diverse place on Earth, where hundreds of distinct peoples speaking over eight hundred languages gather at spectacular festivals in dazzling feathered headdresses, paint, and shells for the ritual gatherings called sing-sings.",
+        "tags": [
+          "tribal-cultures",
+          "sing-sing",
+          "festivals",
+          "languages",
+          "highlands",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.0,
+          -5.0
+        ]
+      },
+      "properties": {
+        "slug": "png-islands",
+        "name": "The Islands & the Reefs",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Some of the richest coral reefs and most thrilling wreck diving on Earth, scattered across remote tropical islands where volcanoes smoke over a town buried in ash and the underwater life of the Coral Triangle reaches its dazzling peak.",
+        "tags": [
+          "diving",
+          "coral-triangle",
+          "wwii-wrecks",
+          "volcanoes",
+          "rabaul",
+          "reefs",
+          "care"
         ],
         "stay": false,
         "season": []
