@@ -15701,6 +15701,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          90.75,
+          27.55
+        ]
+      },
+      "properties": {
+        "slug": "bumthang",
+        "name": "The Bumthang Valleys",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The spiritual heartland of Bhutan, a group of high central valleys thick with the country's oldest and holiest temples, sacred lakes, and the smell of woodsmoke and buckwheat, far up the mountain road from the tourist west.",
+        "tags": [
+          "bumthang",
+          "temples",
+          "sacred-valley",
+          "buckwheat",
+          "festivals",
+          "himalaya",
+          "central-bhutan"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.6339,
+          27.4712
+        ]
+      },
+      "properties": {
+        "slug": "thimphu-punakha",
+        "name": "Thimphu & Punakha",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The world's only capital with no traffic lights, gateway to a Buddhist kingdom that measures itself by Gross National Happiness, and to Punakha, whose great fortress-monastery sits where two rivers meet like a stone ship.",
+        "tags": [
+          "dzong",
+          "thimphu",
+          "punakha",
+          "gross-national-happiness",
+          "buddhism",
+          "himalaya"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3639,
+          27.4917
+        ]
+      },
+      "properties": {
+        "slug": "tigers-nest",
+        "name": "The Tiger's Nest (Paro Taktsang)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A whitewashed monastery clinging to a sheer cliff face nine hundred metres above the valley floor, reached by a steep pilgrim path, and the image the whole country is known by.",
+        "tags": [
+          "monastery",
+          "cliff",
+          "paro",
+          "buddhism",
+          "pilgrimage",
+          "himalaya",
+          "hike"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           17.8983,
           43.2578
         ]
@@ -18646,6 +18744,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          105.95,
+          13.95
+        ]
+      },
+      "properties": {
+        "slug": "four-thousand-islands",
+        "name": "The 4000 Islands (Si Phan Don)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Where the Mekong braids into a scatter of river islands just before Cambodia, a sleepy, hammock-slung backwater of rice paddies and old French railway relics, with rare river dolphins and thundering falls nearby.",
+        "tags": [
+          "mekong",
+          "islands",
+          "irrawaddy-dolphins",
+          "khone-falls",
+          "hammocks",
+          "don-det"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.135,
+          19.8834
+        ]
+      },
+      "properties": {
+        "slug": "luang-prabang",
+        "name": "Luang Prabang",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A serene old royal town on a finger of land between the Mekong and a tributary, full of gilded temples and French-colonial villas, where at dawn lines of barefoot monks collect alms through the mist.",
+        "tags": [
+          "temples",
+          "alms-giving",
+          "mekong",
+          "kuang-si",
+          "french-colonial",
+          "monks",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.15,
+          19.43
+        ]
+      },
+      "properties": {
+        "slug": "plain-of-jars",
+        "name": "The Plain of Jars",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Hundreds of huge, ancient stone jars scattered across highland meadows, carved by an unknown people for reasons no one is sure of, in a region that was also one of the most heavily bombed places on earth.",
+        "tags": [
+          "megalithic",
+          "stone-jars",
+          "xieng-khouang",
+          "secret-war",
+          "uxo",
+          "mystery",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           24.859,
           57.154
         ]
@@ -18842,6 +19038,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          100.3292,
+          5.4145
+        ]
+      },
+      "properties": {
+        "slug": "george-town-penang",
+        "name": "George Town, Penang",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A former British trading port on an island where Malay, Chinese, Indian, and colonial worlds fused into a distinct culture, now a walkable old town of shophouses, clan temples, street art, and some of the best street food in Asia.",
+        "tags": [
+          "peranakan",
+          "street-food",
+          "heritage",
+          "murals",
+          "clan-jetties",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5583,
+          6.075
+        ]
+      },
+      "properties": {
+        "slug": "kinabalu-borneo",
+        "name": "Borneo: Kinabalu & Sabah",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The Malaysian slice of Borneo, where one of Southeast Asia's highest peaks rises straight from the jungle, orphaned orangutans swing at a famous sanctuary, and a tiny island offshore is one of the planet's great dive sites.",
+        "tags": [
+          "mount-kinabalu",
+          "orangutan",
+          "sepilok",
+          "sipadan",
+          "rainforest",
+          "sabah",
+          "borneo"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.4,
+          4.3833
+        ]
+      },
+      "properties": {
+        "slug": "taman-negara",
+        "name": "Taman Negara",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the oldest tropical rainforests on earth, said to have grown undisturbed for well over a hundred million years, where you trek under giant trees, walk a swaying canopy bridge, and sleep to a wall of jungle sound.",
+        "tags": [
+          "rainforest",
+          "jungle",
+          "canopy-walkway",
+          "orang-asli",
+          "wildlife",
+          "river"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           28.86,
           47.13
         ]
@@ -18929,6 +19222,105 @@
           "dniester",
           "frozen-conflict",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.9627,
+          48.9683
+        ]
+      },
+      "properties": {
+        "slug": "altai-eagle-hunters",
+        "name": "The Altai Eagle Hunters",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "In Mongolia's far western mountains, ethnic Kazakh herders still hunt from horseback with trained golden eagles, a bond between human, bird, and landscape passed down for centuries.",
+        "tags": [
+          "kazakh",
+          "golden-eagle",
+          "altai",
+          "hunting",
+          "nomads",
+          "olgii",
+          "festival"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0,
+          43.5
+        ]
+      },
+      "properties": {
+        "slug": "gobi-desert",
+        "name": "The Gobi Desert",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A vast cold desert of gravel plains, singing sand dunes, and red cliffs where the first dinosaur eggs were found, crossed by nomads and their camels and emptier than almost anywhere on earth.",
+        "tags": [
+          "gobi",
+          "dunes",
+          "flaming-cliffs",
+          "dinosaurs",
+          "camels",
+          "ger",
+          "nomads"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.84,
+          47.197
+        ]
+      },
+      "properties": {
+        "slug": "karakorum-orkhon",
+        "name": "Karakorum & the Orkhon Valley",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The grassy valley that was the cradle of steppe empires and the site of Genghis Khan's capital, where a walled monastery built from the ruins of that lost city stands amid endless rolling grassland.",
+        "tags": [
+          "genghis-khan",
+          "karakorum",
+          "erdene-zuu",
+          "steppe",
+          "nomads",
+          "orkhon",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -19027,6 +19419,103 @@
           "pilgrimage",
           "sveti-vasilije",
           "rock-church"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.8585,
+          21.1717
+        ]
+      },
+      "properties": {
+        "slug": "bagan",
+        "name": "Bagan",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A dusty plain beside the Irrawaddy studded with thousands of brick temples and pagodas built by the kings of a medieval empire, an ancient skyline best seen from a temple terrace at dawn as mist and balloons drift over the spires.",
+        "tags": [
+          "temples",
+          "pagodas",
+          "irrawaddy",
+          "ancient-capital",
+          "sunrise",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.91,
+          20.55
+        ]
+      },
+      "properties": {
+        "slug": "inle-lake",
+        "name": "Inle Lake",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A calm highland lake where fishermen row standing on one leg, wrapping the other around the oar, and whole villages of stilt houses and floating vegetable gardens sit out on the water.",
+        "tags": [
+          "lake",
+          "leg-rowers",
+          "floating-gardens",
+          "stilt-villages",
+          "intha",
+          "shan",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.1735,
+          16.8409
+        ]
+      },
+      "properties": {
+        "slug": "yangon",
+        "name": "Yangon",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Myanmar's largest city, a humid sprawl of mouldering colonial mansions and busy tea shops gathered around the vast golden dome of the Shwedagon Pagoda, the country's most sacred site.",
+        "tags": [
+          "shwedagon",
+          "colonial",
+          "pagoda",
+          "tea-shops",
+          "faded-grandeur",
+          "care"
         ],
         "stay": false,
         "season": []
@@ -19387,6 +19876,103 @@
           "cusco",
           "remote",
           "peru"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1,
+          16.9333
+        ]
+      },
+      "properties": {
+        "slug": "banaue-rice-terraces",
+        "name": "The Banaue Rice Terraces",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Vast amphitheatres of rice terraces carved by hand into steep mountainsides by the Ifugao people, some said to be up to two thousand years old, still farmed and still watered by an ancient system nobody has improved on.",
+        "tags": [
+          "ifugao",
+          "rice-terraces",
+          "batad",
+          "cordillera",
+          "indigenous",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.173,
+          9.828
+        ]
+      },
+      "properties": {
+        "slug": "chocolate-hills-bohol",
+        "name": "Bohol & the Chocolate Hills",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An island scattered with over a thousand oddly uniform, cone-shaped hills that dry to chocolate brown in summer, home to the tarsier, a wide-eyed primate small enough to sit in your palm.",
+        "tags": [
+          "chocolate-hills",
+          "tarsier",
+          "loboc-river",
+          "beaches",
+          "panglao",
+          "visayas"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.39,
+          11.18
+        ]
+      },
+      "properties": {
+        "slug": "palawan",
+        "name": "Palawan",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A long, thin island of jungle-topped limestone cliffs and hidden lagoons, where you hop by boat between turquoise coves, and, further south, sunken WWII wrecks and one of the world's longest navigable underground rivers.",
+        "tags": [
+          "el-nido",
+          "coron",
+          "lagoons",
+          "limestone",
+          "island-hopping",
+          "underground-river",
+          "diving"
         ],
         "stay": false,
         "season": []
