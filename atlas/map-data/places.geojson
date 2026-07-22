@@ -170,6 +170,73 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          3.0588,
+          36.7538
+        ]
+      },
+      "properties": {
+        "slug": "algiers-casbah",
+        "name": "Algiers & the Casbah",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A dazzling white city tumbling down to the Mediterranean, crowned by the Casbah, a steep, ancient labyrinth of Ottoman-era lanes, palaces, and mosques that has witnessed pirates, empires, and a revolution.",
+        "tags": [
+          "casbah",
+          "ottoman",
+          "white-city",
+          "mediterranean",
+          "tipaza",
+          "roman",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5,
+          24.5
+        ]
+      },
+      "properties": {
+        "slug": "tassili-hoggar",
+        "name": "Tassili n'Ajjer & the Hoggar",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Deep in the Algerian Sahara, a plateau of surreal eroded rock holds one of the greatest galleries of prehistoric art on Earth, thousands of paintings that show green savanna, herds, and hunters where now there is only sand.",
+        "tags": [
+          "sahara",
+          "rock-art",
+          "tassili",
+          "hoggar",
+          "tuareg",
+          "assekrem",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           16.0,
           -9.08
         ]
@@ -16840,6 +16907,137 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          9.17,
+          4.2
+        ]
+      },
+      "properties": {
+        "slug": "mount-cameroon",
+        "name": "Mount Cameroon & the Coast",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The highest peak in West and Central Africa, an active volcano that rises straight from the Atlantic coast, its slopes climbing from black-sand beaches through rainforest to a bare, ashy summit.",
+        "tags": [
+          "volcano",
+          "mount-cameroon",
+          "limbe",
+          "black-sand",
+          "trekking",
+          "coast"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6,
+          11.3
+        ]
+      },
+      "properties": {
+        "slug": "waza",
+        "name": "Waza National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The best-known wildlife park in Cameroon, a stretch of Sahel savanna in the far north where elephants, giraffes, lions, and vast flocks of birds gather, a classic dry-country safari far from the forested south.",
+        "tags": [
+          "safari",
+          "elephants",
+          "sahel",
+          "savanna",
+          "birds",
+          "waza",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.0,
+          17.0
+        ]
+      },
+      "properties": {
+        "slug": "ennedi",
+        "name": "The Ennedi Massif",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A vast sandstone labyrinth in the middle of the Sahara, where erosion has carved soaring natural arches, towers, and canyons, ancient rock art covers the walls, and crocodiles improbably survive in a hidden desert pool.",
+        "tags": [
+          "sahara",
+          "sandstone-arches",
+          "rock-art",
+          "canyons",
+          "guelta",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.8,
+          10.9
+        ]
+      },
+      "properties": {
+        "slug": "zakouma",
+        "name": "Zakouma National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A conservation comeback story in the heart of Africa, a remote savanna park where elephants, once slaughtered in their thousands by poachers, now thrive again alongside vast herds and one of the continent's great bird spectacles.",
+        "tags": [
+          "safari",
+          "elephants",
+          "conservation",
+          "birds",
+          "savanna",
+          "comeback",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           116.3972,
           39.9163
         ]
@@ -17057,6 +17255,70 @@
           "tomb",
           "silk-road",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2429,
+          -4.2634
+        ]
+      },
+      "properties": {
+        "slug": "brazzaville",
+        "name": "Brazzaville",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A surprisingly relaxed capital on the great Congo River, gazing across the water at its huge, frenetic twin Kinshasa, famous for rumba, riverside calm, and the flamboyant, impeccably-dressed dandies known as sapeurs.",
+        "tags": [
+          "congo-river",
+          "rumba",
+          "sapeurs",
+          "basilica",
+          "capital",
+          "music"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.8,
+          0.5
+        ]
+      },
+      "properties": {
+        "slug": "odzala",
+        "name": "Odzala-Kokoua National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Deep in the Congo Basin, the second-largest rainforest on Earth, a park where you track western lowland gorillas through the jungle and watch forest elephants gather in natural clearings, a genuine expedition into the green heart of Africa.",
+        "tags": [
+          "rainforest",
+          "lowland-gorillas",
+          "forest-elephants",
+          "bais",
+          "congo-basin",
+          "remote"
         ],
         "stay": false,
         "season": []
@@ -17349,6 +17611,71 @@
           "light",
           "sandbar",
           "dunes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.312,
+          -4.322
+        ]
+      },
+      "properties": {
+        "slug": "congo-river-kinshasa",
+        "name": "The Congo River & Kinshasa",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the world's great rivers and one of Africa's largest, most electric cities face each other here: the mighty, deep-flowing Congo, and Kinshasa, a roaring metropolis that gave the world Congolese rumba.",
+        "tags": [
+          "congo-river",
+          "kinshasa",
+          "rumba",
+          "megacity",
+          "music",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.25,
+          -1.52
+        ]
+      },
+      "properties": {
+        "slug": "virunga-nyiragongo",
+        "name": "Virunga & Nyiragongo",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Africa's oldest national park, a place of staggering drama: a volcano cradling one of the world's largest permanent lakes of molten lava, mountain gorillas in the forests, and rangers who have died defending it all.",
+        "tags": [
+          "virunga",
+          "nyiragongo",
+          "lava-lake",
+          "mountain-gorillas",
+          "volcano",
+          "unesco",
+          "care"
         ],
         "stay": false,
         "season": []
@@ -18072,6 +18399,70 @@
           "sainte-croix",
           "hiking",
           "climbing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8,
+          0.5
+        ]
+      },
+      "properties": {
+        "slug": "ivindo",
+        "name": "Ivindo & the Rainforest Interior",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The green heart of Gabon: a vast tract of pristine equatorial rainforest hiding thundering waterfalls and a legendary forest clearing where elephants, gorillas, and buffalo gather in the open, deep in one of the wildest places on Earth.",
+        "tags": [
+          "rainforest",
+          "kongou-falls",
+          "langoue-bai",
+          "forest-elephants",
+          "congo-basin",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6,
+          -2.1
+        ]
+      },
+      "properties": {
+        "slug": "loango",
+        "name": "Loango National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Where the rainforest meets the Atlantic in the most surreal way: elephants and buffalo strolling on the beach, hippos surfing in the ocean waves, and gorillas in the forest behind, on a wild, empty coast.",
+        "tags": [
+          "where-jungle-meets-sea",
+          "gorillas",
+          "forest-elephants",
+          "beaches",
+          "whales",
+          "gabon"
         ],
         "stay": false,
         "season": []
@@ -21314,6 +21705,73 @@
           "forest-elephant",
           "chimpanzees",
           "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7,
+          24.8
+        ]
+      },
+      "properties": {
+        "slug": "akakus",
+        "name": "The Akakus & the Fezzan",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A desert range in Libya's deep southwest where the sand and rock rise into soaring natural arches and pinnacles, their walls covered with prehistoric paintings of a green Sahara that vanished thousands of years ago.",
+        "tags": [
+          "sahara",
+          "akakus",
+          "rock-art",
+          "arches",
+          "dunes",
+          "tuareg",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2905,
+          32.6386
+        ]
+      },
+      "properties": {
+        "slug": "leptis-magna",
+        "name": "Leptis Magna",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the most spectacular and complete Roman cities anywhere, a vast marble metropolis on the Libyan coast, lavished with grandeur by an emperor born there, and long preserved by the desert sand that buried it.",
+        "tags": [
+          "roman",
+          "ruins",
+          "mediterranean",
+          "septimius-severus",
+          "ancient-city",
+          "unesco",
+          "care"
         ],
         "stay": false,
         "season": []
@@ -25366,6 +25824,74 @@
           "dambulla",
           "frescoes",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.8,
+          18.5
+        ]
+      },
+      "properties": {
+        "slug": "jebel-barkal",
+        "name": "Jebel Barkal & Karima",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A lone flat-topped mountain rising from the Nile-side desert, held sacred for thousands of years as a home of the god Amun, ringed by ancient temples and its own field of royal pyramids.",
+        "tags": [
+          "nubia",
+          "kush",
+          "napata",
+          "amun",
+          "sacred-mountain",
+          "pyramids",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.75,
+          16.94
+        ]
+      },
+      "properties": {
+        "slug": "meroe",
+        "name": "The Pyramids of Mero\u00eb",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "More pyramids than all of Egypt, steeper, smaller, and standing almost alone in the rolling sands of the Sudanese desert, the royal tombs of the ancient Black African kingdom of Kush.",
+        "tags": [
+          "nubia",
+          "kush",
+          "pyramids",
+          "meroe",
+          "desert",
+          "nile",
+          "unesco",
+          "care"
         ],
         "stay": false,
         "season": []
