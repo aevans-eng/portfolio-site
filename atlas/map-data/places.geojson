@@ -16547,6 +16547,105 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -68.15,
+          -16.5
+        ]
+      },
+      "properties": {
+        "slug": "la-paz",
+        "name": "La Paz & Tiwanaku",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The highest seat of government in the world, a breathtaking city that spills down a steep Andean canyon so that you ride cable cars between neighbourhoods, browse a market of dried llama foetuses, and gaze up at snow peaks from a bowl of brick and adobe.",
+        "tags": [
+          "highest-capital",
+          "cable-cars",
+          "witches-market",
+          "tiwanaku",
+          "andes",
+          "cholitas"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.4891,
+          -20.1338
+        ]
+      },
+      "properties": {
+        "slug": "salar-uyuni",
+        "name": "Salar de Uyuni",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The largest salt flat on Earth, an endless blinding-white plain that becomes, when a thin film of rainwater covers it, the world's biggest mirror, so that you seem to walk across the sky, gateway to a high desert of coloured lagoons and flamingos.",
+        "tags": [
+          "salt-flat",
+          "mirror",
+          "altiplano",
+          "lagoons",
+          "flamingos",
+          "4x4",
+          "high-altitude"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.2627,
+          -19.0333
+        ]
+      },
+      "properties": {
+        "slug": "sucre-potosi",
+        "name": "Sucre & Potos\u00ed",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Bolivia's elegant white colonial capital, a city of whitewashed mansions and a mild climate, paired with nearby Potos\u00ed, once one of the richest cities on Earth, built on a mountain of silver that funded an empire and consumed countless lives.",
+        "tags": [
+          "colonial",
+          "white-city",
+          "potosi",
+          "silver",
+          "cerro-rico",
+          "mines",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           17.8983,
           43.2578
         ]
@@ -17687,6 +17786,102 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -73.794,
+          2.267
+        ]
+      },
+      "properties": {
+        "slug": "cano-cristales",
+        "name": "Ca\u00f1o Cristales",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Often called the most beautiful river in the world, a remote jungle stream that, for a few months each year, blazes with colour, its bed carpeted in an endemic aquatic plant that turns brilliant red among green, yellow, and blue, the \"river of five colours.\"",
+        "tags": [
+          "river-of-five-colors",
+          "macarena",
+          "aquatic-plants",
+          "remote",
+          "seasonal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.4794,
+          10.391
+        ]
+      },
+      "properties": {
+        "slug": "cartagena",
+        "name": "Cartagena",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A ravishing walled colonial city on the Caribbean, all balconied mansions dripping with bougainvillea, cobbled plazas, and golden churches within massive stone ramparts, once the treasure port of the Spanish Main.",
+        "tags": [
+          "walled-city",
+          "colonial",
+          "caribbean",
+          "plazas",
+          "rosario-islands",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57,
+          4.638
+        ]
+      },
+      "properties": {
+        "slug": "coffee-region",
+        "name": "The Coffee Region & Cocora",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Green Andean valleys quilted with coffee farms and dotted with brightly-painted towns, above which rises the surreal Cocora Valley, where the tallest palm trees on Earth spike improbably out of misty green hills.",
+        "tags": [
+          "coffee",
+          "cocora",
+          "wax-palms",
+          "salento",
+          "medellin",
+          "andes",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           15.2429,
           -4.2634
         ]
@@ -18098,6 +18293,105 @@
           "volcano",
           "unesco",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.4,
+          -0.7
+        ]
+      },
+      "properties": {
+        "slug": "ecuadorian-amazon",
+        "name": "The Ecuadorian Amazon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Ecuador's compact but staggeringly biodiverse slice of the Amazon, the \"Oriente,\" where a short flight from the Andes drops you into rainforest so rich that a single patch can hold more tree and animal species than all of North America.",
+        "tags": [
+          "amazon",
+          "yasuni",
+          "rainforest",
+          "clay-licks",
+          "indigenous",
+          "biodiversity",
+          "lodges"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.5,
+          -0.75
+        ]
+      },
+      "properties": {
+        "slug": "galapagos",
+        "name": "The Gal\u00e1pagos",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The islands that gave Darwin the idea of evolution, a volcanic archipelago far out in the Pacific where the wildlife, giant tortoises, marine iguanas, blue-footed boobies, sea lions, evolved without fear of humans and lets you walk and swim right among it.",
+        "tags": [
+          "darwin",
+          "endemic",
+          "wildlife",
+          "tortoises",
+          "snorkeling",
+          "evolution",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.4678,
+          -0.1807
+        ]
+      },
+      "properties": {
+        "slug": "quito-volcanoes",
+        "name": "Quito & the Avenue of Volcanoes",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A high Andean capital with one of the best-preserved colonial old towns in the Americas, sitting almost on the equator and strung along a corridor of snow-capped volcanoes that the explorer Humboldt dubbed the Avenue of the Volcanoes.",
+        "tags": [
+          "colonial",
+          "equator",
+          "cotopaxi",
+          "quilotoa",
+          "otavalo",
+          "andes",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -24628,6 +24922,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -60.0,
+          -22.0
+        ]
+      },
+      "properties": {
+        "slug": "gran-chaco",
+        "name": "The Gran Chaco",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of South America's last great wildernesses, a vast, hot, thorn-forest plain teeming with wildlife and dotted, improbably, with prosperous German-speaking Mennonite farming colonies carved out of the bush.",
+        "tags": [
+          "chaco",
+          "wilderness",
+          "jaguars",
+          "mennonites",
+          "birds",
+          "remote",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.7,
+          -27.12
+        ]
+      },
+      "properties": {
+        "slug": "jesuit-missions",
+        "name": "The Jesuit Missions",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The romantic red-stone ruins of a lost utopian experiment, the Jesuit \"reductions,\" where in the 17th and 18th centuries priests and the indigenous Guaran\u00ed built a network of self-governing Christian communities, later swept away, and dramatised in the film \"The Mission.\"",
+        "tags": [
+          "jesuit",
+          "reductions",
+          "guarani",
+          "ruins",
+          "the-mission",
+          "baroque",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -77.8,
           -6.2
         ]
@@ -28373,6 +28733,70 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -57.844,
+          -34.47
+        ]
+      },
+      "properties": {
+        "slug": "colonia",
+        "name": "Colonia del Sacramento",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A dreamy little old town of cobbled lanes and colonial houses on a point in the River Plate, fought over for centuries by Portugal and Spain, now a romantic, near-perfectly-preserved step back in time an hour's ferry from Buenos Aires.",
+        "tags": [
+          "colonial",
+          "portuguese",
+          "cobblestones",
+          "river-plate",
+          "lighthouse",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.1645,
+          -34.9011
+        ]
+      },
+      "properties": {
+        "slug": "montevideo",
+        "name": "Montevideo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of Latin America's most laid-back and livable capitals, a city of faded belle-\u00e9poque elegance strung along a river-sea promenade, where everyone carries a thermos of mate and the weekends beat to Afro-Uruguayan drums.",
+        "tags": [
+          "rambla",
+          "ciudad-vieja",
+          "mate",
+          "candombe",
+          "asado",
+          "tango"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           64.4286,
           39.7747
         ]
@@ -28461,6 +28885,105 @@
           "madrasa",
           "blue-domes",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.535,
+          5.97
+        ]
+      },
+      "properties": {
+        "slug": "angel-falls",
+        "name": "Angel Falls & the Tepuis",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The tallest waterfall on Earth, a ribbon of water plunging almost a kilometre off the sheer edge of a flat-topped mountain, in a primeval landscape of table-mountains so otherworldly it inspired \"The Lost World.\"",
+        "tags": [
+          "tallest-waterfall",
+          "tepuis",
+          "canaima",
+          "roraima",
+          "lost-world",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.75,
+          11.9
+        ]
+      },
+      "properties": {
+        "slug": "los-roques",
+        "name": "Los Roques",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A scattering of tiny coral islands and sandbars in impossibly clear turquoise water far off the Venezuelan coast, one of the Caribbean's most pristine and beautiful archipelagos, blissfully undeveloped.",
+        "tags": [
+          "archipelago",
+          "caribbean",
+          "coral",
+          "beaches",
+          "posadas",
+          "snorkeling",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.15,
+          8.59
+        ]
+      },
+      "properties": {
+        "slug": "merida-andes",
+        "name": "M\u00e9rida & the Andes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A lively Andean university town in the mountains of western Venezuela, base for adventure in high p\u00e1ramo and snow peaks, and home to what is billed as the highest and longest cable car in the world.",
+        "tags": [
+          "andes",
+          "cable-car",
+          "paramo",
+          "mountains",
+          "mucumbari",
+          "adventure",
+          "care"
         ],
         "stay": false,
         "season": []
