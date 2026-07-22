@@ -15898,6 +15898,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          103.867,
+          13.4125
+        ]
+      },
+      "properties": {
+        "slug": "angkor",
+        "name": "Angkor",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The temples of a vanished empire spread across the jungle near Siem Reap: the largest religious monument on earth, a bridge of stone gods, faces carved into towers, and a ruined temple strangled by the roots of giant trees.",
+        "tags": [
+          "angkor-wat",
+          "khmer",
+          "temples",
+          "bayon",
+          "ta-prohm",
+          "jungle",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.181,
+          10.6104
+        ]
+      },
+      "properties": {
+        "slug": "kampot-coast",
+        "name": "Kampot & the Coast",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A sleepy river town of faded colonial shophouses backed by a misty mountain, famous for a pepper prized in the world's best kitchens, with quiet coast and islands close by.",
+        "tags": [
+          "kampot-pepper",
+          "river",
+          "kep",
+          "bokor",
+          "islands",
+          "colonial",
+          "laid-back"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.9282,
+          11.5564
+        ]
+      },
+      "properties": {
+        "slug": "phnom-penh",
+        "name": "Phnom Penh",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Cambodia's riverfront capital, where a golden royal palace and a lively market sit a short distance from the prison and the killing field that memorialise one of the 20th century's worst genocides.",
+        "tags": [
+          "royal-palace",
+          "khmer-rouge",
+          "tuol-sleng",
+          "killing-fields",
+          "mekong",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           116.3972,
           39.9163
         ]
@@ -18939,6 +19037,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          83.9856,
+          28.2096
+        ]
+      },
+      "properties": {
+        "slug": "annapurna-pokhara",
+        "name": "Annapurna & Pokhara",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The gateway to some of the world's greatest and most accessible mountain trekking, where a relaxed lakeside town sits beneath a wall of Himalayan giants and trails lead for days or weeks into their heart.",
+        "tags": [
+          "himalaya",
+          "trekking",
+          "annapurna",
+          "pokhara",
+          "teahouse-trek",
+          "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.925,
+          27.9881
+        ]
+      },
+      "properties": {
+        "slug": "everest-khumbu",
+        "name": "Everest & the Khumbu",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The trek to the foot of the highest mountain on earth, through the homeland of the Sherpa, past monasteries and prayer flags to a base camp under an icefall, no climbing required.",
+        "tags": [
+          "everest",
+          "sagarmatha",
+          "sherpa",
+          "base-camp",
+          "namche",
+          "himalaya",
+          "high-altitude"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.324,
+          27.7172
+        ]
+      },
+      "properties": {
+        "slug": "kathmandu-valley",
+        "name": "The Kathmandu Valley",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A single valley holding three former royal cities and some of the holiest sites in Hinduism and Buddhism, a dense concentration of pagoda temples, palace squares, and pilgrim life, much of it rebuilt after a major earthquake.",
+        "tags": [
+          "durbar-square",
+          "boudhanath",
+          "pashupatinath",
+          "newar",
+          "temples",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.9041,
           52.3676
         ]
@@ -19883,6 +20078,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          129.2247,
+          35.8562
+        ]
+      },
+      "properties": {
+        "slug": "gyeongju",
+        "name": "Gyeongju",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The capital of the ancient Silla kingdom for a thousand years, often called a museum without walls, where grassy royal burial mounds rise between the streets and a perfect stone Buddha watches the sunrise from a hilltop grotto.",
+        "tags": [
+          "silla",
+          "royal-tombs",
+          "bulguksa",
+          "seokguram",
+          "grass-mounds",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.5292,
+          33.3617
+        ]
+      },
+      "properties": {
+        "slug": "jeju",
+        "name": "Jeju Island",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A volcanic island south of the mainland built around Korea's highest mountain, ringed by black-rock coast, lava tubes, and craters, and home to the haenyeo, generations of women who free-dive for seafood without air tanks.",
+        "tags": [
+          "volcanic",
+          "hallasan",
+          "lava-tubes",
+          "haenyeo",
+          "craters",
+          "coast",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.978,
+          37.5665
+        ]
+      },
+      "properties": {
+        "slug": "seoul",
+        "name": "Seoul & the DMZ",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A hyper-modern megacity of neon, K-pop, and endless food, wrapped around granite mountains and old palaces, an hour from the most heavily fortified border on earth.",
+        "tags": [
+          "palaces",
+          "hanok",
+          "dmz",
+          "food",
+          "markets",
+          "mountains",
+          "hallyu"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -3.588,
           37.176
         ]
@@ -20069,6 +20362,105 @@
           "medieval",
           "tagus",
           "swords",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2168,
+          6.0329
+        ]
+      },
+      "properties": {
+        "slug": "galle",
+        "name": "Galle & the South Coast",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A walled colonial port on the south coast, its ramparts enclosing a mix of Dutch, Portuguese, and Sri Lankan streets, backed by a coastline of beaches, blue whales, and fishermen perched on stilts in the surf.",
+        "tags": [
+          "dutch-fort",
+          "ramparts",
+          "beaches",
+          "whales",
+          "mirissa",
+          "stilt-fishermen",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.6337,
+          7.2906
+        ]
+      },
+      "properties": {
+        "slug": "kandy-hill-country",
+        "name": "Kandy & the Hill Country",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The last royal capital, wrapped around a lake and guarding a temple that holds a tooth of the Buddha, and the gateway to green tea highlands crossed by a slow, spectacular train.",
+        "tags": [
+          "tea",
+          "temple-of-the-tooth",
+          "ella",
+          "train",
+          "plantations",
+          "adams-peak",
+          "hill-country"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.7603,
+          7.957
+        ]
+      },
+      "properties": {
+        "slug": "sigiriya",
+        "name": "Sigiriya & the Cultural Triangle",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A sheer rock rising two hundred metres from the jungle, its summit once crowned by a king's palace reached through the paws of a giant carved lion, at the centre of a landscape of ruined royal cities and cave temples.",
+        "tags": [
+          "lion-rock",
+          "ancient-cities",
+          "anuradhapura",
+          "polonnaruwa",
+          "dambulla",
+          "frescoes",
           "unesco"
         ],
         "stay": false,
@@ -20364,6 +20756,103 @@
           "boat",
           "castle",
           "day-trip"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.84,
+          8.01
+        ]
+      },
+      "properties": {
+        "slug": "andaman-coast",
+        "name": "The Andaman Coast",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Thailand's turquoise southwest coast, where sheer limestone karsts rise straight out of warm clear water off white-sand beaches, some of them world-famous, over-loved, and worth escaping the crowds to enjoy.",
+        "tags": [
+          "andaman",
+          "limestone-karst",
+          "railay",
+          "phi-phi",
+          "krabi",
+          "beaches",
+          "diving"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5018,
+          13.7563
+        ]
+      },
+      "properties": {
+        "slug": "bangkok",
+        "name": "Bangkok",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A hot, frenetic megacity where gold-spired temples and the royal Grand Palace sit amid a sprawl of markets, canals, sky trains, and some of the best street food on the planet.",
+        "tags": [
+          "temples",
+          "street-food",
+          "grand-palace",
+          "markets",
+          "chao-phraya",
+          "nightlife"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.9853,
+          18.7883
+        ]
+      },
+      "properties": {
+        "slug": "chiang-mai",
+        "name": "Chiang Mai & the North",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The old capital of the northern Lanna kingdom, a moated old town packed with teak temples, ringed by forested mountains, hill villages, and ethical elephant sanctuaries, and far more relaxed than Bangkok.",
+        "tags": [
+          "lanna",
+          "temples",
+          "mountains",
+          "elephants",
+          "night-market",
+          "hill-tribes"
         ],
         "stay": false,
         "season": []
@@ -20888,6 +21377,103 @@
           "prehistory",
           "salisbury-plain",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.1839,
+          20.9101
+        ]
+      },
+      "properties": {
+        "slug": "ha-long-bay",
+        "name": "Ha Long Bay",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Thousands of forested limestone towers rising straight out of a jade-green sea, an emerald maze of islets and caves that is one of Asia's iconic seascapes, and one of its most crowded.",
+        "tags": [
+          "karst",
+          "limestone-islands",
+          "cruise",
+          "kayak",
+          "lan-ha",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.338,
+          15.8801
+        ]
+      },
+      "properties": {
+        "slug": "hoi-an",
+        "name": "Hoi An",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A beautifully preserved old trading port of ochre merchant houses and a Japanese covered bridge, strung at night with thousands of silk lanterns reflected in the river.",
+        "tags": [
+          "old-town",
+          "lanterns",
+          "tailors",
+          "trading-port",
+          "thu-bon",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.78,
+          10.035
+        ]
+      },
+      "properties": {
+        "slug": "mekong-delta",
+        "name": "The Mekong Delta",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Where the Mekong finally splits into nine arms and empties into the sea, a green, watery world of rice paddies, orchards, and stilt houses, where whole markets float on boats.",
+        "tags": [
+          "mekong",
+          "floating-market",
+          "canals",
+          "rice",
+          "orchards",
+          "homestay",
+          "can-tho"
         ],
         "stay": false,
         "season": []
