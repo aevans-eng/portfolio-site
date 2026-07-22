@@ -22359,6 +22359,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          131.4913,
+          33.2846
+        ]
+      },
+      "properties": {
+        "slug": "beppu",
+        "name": "Beppu",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A whole town on the boil: Beppu gushes more hot-spring water than anywhere else in Japan, so steam drifts from drains and hillsides all over it, and you can bathe in mineral pools, get buried in naturally-heated sand, or gawp at hot springs the colour of blood and cobalt.",
+        "tags": [
+          "onsen",
+          "hot-springs",
+          "jigoku",
+          "hells",
+          "sand-bath",
+          "kyushu",
+          "steam"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           132.4553,
           34.3853
         ]
@@ -22547,6 +22580,39 @@
           "climb",
           "five-lakes",
           "sacred"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.205,
+          34.409
+        ]
+      },
+      "properties": {
+        "slug": "onomichi-shimanami",
+        "name": "Onomichi & the Shimanami Kaid\u014d",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A cat-filled hillside temple town where you rent a bike and pedal out across the Seto Inland Sea itself, island to island over a chain of soaring bridges, one of the only places on Earth you can cycle across a sea.",
+        "tags": [
+          "cycling",
+          "shimanami-kaido",
+          "seto-inland-sea",
+          "onomichi",
+          "temples",
+          "islands",
+          "cats"
         ],
         "stay": false,
         "season": []
