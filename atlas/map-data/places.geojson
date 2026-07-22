@@ -15606,6 +15606,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          25.3939,
+          42.7358
+        ]
+      },
+      "properties": {
+        "slug": "buzludzha",
+        "name": "The Buzludzha Monument",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A colossal concrete flying saucer marooned on a Balkan mountaintop, built by the Communist Party in 1981 and left to rot when the regime fell, its mosaics now peeling in the wind.",
+        "tags": [
+          "communist",
+          "brutalist",
+          "abandoned",
+          "spomenik",
+          "ufo",
+          "balkan-mountains",
+          "ruin"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7453,
+          42.1354
+        ]
+      },
+      "properties": {
+        "slug": "plovdiv",
+        "name": "Plovdiv",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the oldest continuously inhabited cities in Europe, where a Roman theatre still stages performances, painted merchant mansions climb cobbled hills, and a former craftsmen's quarter has turned into an arts district.",
+        "tags": [
+          "ancient-city",
+          "roman-theatre",
+          "kapana",
+          "revival-houses",
+          "thrace",
+          "old-town"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.34,
+          42.1333
+        ]
+      },
+      "properties": {
+        "slug": "rila-monastery",
+        "name": "Rila Monastery",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Bulgaria's grandest monastery, set deep in forested mountains, its courtyard ringed by tiers of black-and-white striped arches and blazing with frescoes under a painted porch.",
+        "tags": [
+          "orthodox",
+          "monastery",
+          "rila-mountains",
+          "frescoes",
+          "unesco",
+          "seven-lakes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           18.1077,
           42.6407
         ]
@@ -15888,6 +15985,105 @@
           "light",
           "sandbar",
           "dunes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.8,
+          59.5
+        ]
+      },
+      "properties": {
+        "slug": "lahemaa",
+        "name": "Lahemaa National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An easy escape from Tallinn into deep Estonian nature: pine forest, boulder-strewn coast, elegant old manor houses, and raised bogs you cross on boardwalks past pools the colour of tea.",
+        "tags": [
+          "bog",
+          "boardwalk",
+          "manor-houses",
+          "forest",
+          "coast",
+          "viru",
+          "tallinn"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4853,
+          58.2529
+        ]
+      },
+      "properties": {
+        "slug": "saaremaa",
+        "name": "Saaremaa",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Estonia's largest island, a slow, flat world of junipers, wooden windmills, and small stone churches, with a field of craters where a meteorite slammed into the ground within human memory.",
+        "tags": [
+          "island",
+          "windmills",
+          "kaali-crater",
+          "kuressaare",
+          "juniper",
+          "spa",
+          "baltic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7536,
+          59.437
+        ]
+      },
+      "properties": {
+        "slug": "tallinn",
+        "name": "Tallinn",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the best-preserved medieval towns in northern Europe, a walled tangle of merchant houses, spires, and gate towers, run by a country so digital you can become an e-resident from your laptop.",
+        "tags": [
+          "medieval",
+          "hanseatic",
+          "old-town",
+          "telliskivi",
+          "e-estonia",
+          "baltic",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -17179,6 +17375,202 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          24.859,
+          57.154
+        ]
+      },
+      "properties": {
+        "slug": "gauja-valley",
+        "name": "The Gauja Valley & Sigulda",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A green river valley of sandstone bluffs, forest, and old castles that Latvians call their Switzerland, threaded with legends and reachable by a cable car strung across the gorge.",
+        "tags": [
+          "gauja",
+          "sigulda",
+          "turaida",
+          "castles",
+          "sandstone-caves",
+          "national-park",
+          "forest"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.02,
+          56.13
+        ]
+      },
+      "properties": {
+        "slug": "latgale-lakes",
+        "name": "The Latgale Lakes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The quiet, lake-strewn southeast corner of Latvia, poorer and more mixed than the rest, where blue lakes, Orthodox and Catholic churches, and a living folk-pottery tradition sit far off any tourist trail.",
+        "tags": [
+          "lakes",
+          "latgale",
+          "aglona",
+          "rezekne",
+          "rural",
+          "pottery",
+          "orthodox"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.1052,
+          56.9496
+        ]
+      },
+      "properties": {
+        "slug": "riga",
+        "name": "Riga",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The biggest of the Baltic capitals, pairing a Hanseatic old town with entire streets of extravagant Art Nouveau apartment buildings, faces and mythical beasts staring down from the fa\u00e7ades.",
+        "tags": [
+          "art-nouveau",
+          "jugendstil",
+          "old-town",
+          "central-market",
+          "hanseatic",
+          "daugava",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.005,
+          55.3033
+        ]
+      },
+      "properties": {
+        "slug": "curonian-spit",
+        "name": "The Curonian Spit",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A thread of sand barely a few kilometres wide running a hundred kilometres down the Baltic, with some of the highest drifting dunes in Europe on one side and a calm lagoon on the other.",
+        "tags": [
+          "sand-dunes",
+          "baltic",
+          "nida",
+          "kaliningrad-border",
+          "pine",
+          "ferry",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4169,
+          56.0154
+        ]
+      },
+      "properties": {
+        "slug": "hill-of-crosses",
+        "name": "The Hill of Crosses",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A low mound near \u0160iauliai carpeted in hundreds of thousands of crosses, planted over generations as a stubborn act of faith and defiance that Soviet bulldozers could not stop.",
+        "tags": [
+          "pilgrimage",
+          "crosses",
+          "defiance",
+          "soviet",
+          "siauliai",
+          "catholic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2797,
+          54.6872
+        ]
+      },
+      "properties": {
+        "slug": "vilnius",
+        "name": "Vilnius",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the largest and finest Baroque old towns in Northern Europe, with a bohemian breakaway \"republic\" of artists across the river that has its own tongue-in-cheek constitution.",
+        "tags": [
+          "baroque",
+          "old-town",
+          "uzupis",
+          "jewish-heritage",
+          "kgb",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           18.7712,
           42.4247
         ]
@@ -17364,6 +17756,105 @@
           "birds",
           "seals",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8016,
+          41.1231
+        ]
+      },
+      "properties": {
+        "slug": "lake-ohrid",
+        "name": "Lake Ohrid",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the oldest and deepest lakes in Europe, ringed by mountains, with a mellow old town of Byzantine churches climbing above the water and a small red-roofed chapel perched on a cliff over the shore.",
+        "tags": [
+          "ancient-lake",
+          "ohrid",
+          "kaneo",
+          "byzantine",
+          "churches",
+          "unesco",
+          "balkans"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3,
+          41.95
+        ]
+      },
+      "properties": {
+        "slug": "matka-canyon",
+        "name": "Matka Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A steep river canyon with an emerald reservoir at the bottom, cliffside medieval monasteries, and a boat ride to a cave said to be one of the deepest underwater caves in the world, all half an hour from the capital.",
+        "tags": [
+          "canyon",
+          "kayak",
+          "caves",
+          "monasteries",
+          "treska",
+          "skopje",
+          "day-trip"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.428,
+          41.9973
+        ]
+      },
+      "properties": {
+        "slug": "skopje",
+        "name": "Skopje",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital of two clashing faces: a genuine Ottoman old bazaar on one bank, and on the other a government-built fantasy of giant statues, fake-classical fa\u00e7ades, and warrior fountains that has to be seen to be believed.",
+        "tags": [
+          "ottoman",
+          "bazaar",
+          "statues",
+          "kitsch",
+          "mother-teresa",
+          "vardar",
+          "stone-bridge"
         ],
         "stay": false,
         "season": []
@@ -17919,6 +18410,102 @@
           "drvengrad",
           "zlatibor",
           "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1077,
+          48.1486
+        ]
+      },
+      "properties": {
+        "slug": "bratislava",
+        "name": "Bratislava",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A small, easygoing capital on the Danube, overshadowed by nearby Vienna and all the better for it, with a compact old town, a blocky white castle, and bronze statues of eccentrics popping out of the pavement.",
+        "tags": [
+          "old-town",
+          "castle",
+          "danube",
+          "quirky-statues",
+          "communist-bridge",
+          "wine"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.1,
+          49.1667
+        ]
+      },
+      "properties": {
+        "slug": "high-tatras",
+        "name": "The High Tatras",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A compact wall of sharp granite peaks, the highest in the Carpathians, packed with glacial tarns and mountain huts, giving big-alpine scenery in a range you can cross on foot in a day or two.",
+        "tags": [
+          "tatras",
+          "carpathians",
+          "tarns",
+          "hiking",
+          "strbske-pleso",
+          "mountain-huts"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7683,
+          48.9997
+        ]
+      },
+      "properties": {
+        "slug": "spis-castle",
+        "name": "Spi\u0161 Castle & Levo\u010da",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the largest castle complexes in Central Europe, a vast sprawl of pale ruined walls on a bare hill above the Spi\u0161 plain, with a walled medieval town nearby holding the tallest Gothic wooden altar in the world.",
+        "tags": [
+          "castle-ruins",
+          "spis",
+          "levoca",
+          "gothic-altar",
+          "unesco",
+          "medieval"
         ],
         "stay": false,
         "season": []
