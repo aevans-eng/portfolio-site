@@ -104,6 +104,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          44.8149,
+          40.1408
+        ]
+      },
+      "properties": {
+        "slug": "geghard-garni",
+        "name": "Geghard & Garni",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A medieval monastery partly hacked out of the living rock of a cliff, its inner chapels carved directly into the mountain, paired with the only Greco-Roman colonnaded temple left in the region, standing on a dramatic gorge.",
+        "tags": [
+          "monastery",
+          "rock-cut",
+          "garni-temple",
+          "pagan",
+          "khachkar",
+          "gorge",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.0,
+          40.56
+        ]
+      },
+      "properties": {
+        "slug": "lake-sevan",
+        "name": "Lake Sevan & Dilijan",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the largest high-altitude lakes in the world, a vast blue expanse in the Armenian highlands with a medieval monastery on a peninsula above it, and forested \"Armenian Switzerland\" a short drive away.",
+        "tags": [
+          "lake-sevan",
+          "sevanavank",
+          "dilijan",
+          "monasteries",
+          "forest",
+          "highland"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4991,
+          40.1792
+        ]
+      },
+      "properties": {
+        "slug": "yerevan",
+        "name": "Yerevan",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the world's oldest continuously inhabited cities, built largely from local pink volcanic stone, with caf\u00e9s spilling across its squares and the twin-peaked bulk of Mount Ararat, Armenia's lost national symbol, floating on the horizon.",
+        "tags": [
+          "ararat",
+          "pink-city",
+          "tuff",
+          "matenadaran",
+          "cascade",
+          "brandy",
+          "cafes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.7519,
           47.0744
         ]
@@ -192,6 +290,103 @@
           "klimt",
           "zentralfriedhof",
           "danube"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.892,
+          40.3777
+        ]
+      },
+      "properties": {
+        "slug": "baku",
+        "name": "Baku",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A Caspian boomtown where a walled medieval old city of caravanserais and a mysterious stone tower sits beneath a skyline of oil-wealth showpieces, including three curved towers shaped like flames.",
+        "tags": [
+          "caspian",
+          "old-city",
+          "icherisheher",
+          "flame-towers",
+          "oil",
+          "maiden-tower",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.4,
+          40.1
+        ]
+      },
+      "properties": {
+        "slug": "gobustan",
+        "name": "Gobustan & the Mud Volcanoes",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A stony semi-desert south of Baku carved with thousands of prehistoric rock drawings, next to a field of cold mud volcanoes that gurgle and belch grey slurry, a landscape more like another planet than a country.",
+        "tags": [
+          "petroglyphs",
+          "mud-volcanoes",
+          "rock-art",
+          "semi-desert",
+          "caspian",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1706,
+          41.1919
+        ]
+      },
+      "properties": {
+        "slug": "sheki",
+        "name": "Sheki",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An old Silk Road town in the green foothills of the Greater Caucasus, home to a small summer palace whose windows are filled with intricate coloured glass lattices assembled without nails or glue.",
+        "tags": [
+          "silk-road",
+          "khans-palace",
+          "shebeke",
+          "caravanserai",
+          "caucasus",
+          "halva"
         ],
         "stay": false,
         "season": []
@@ -20131,6 +20326,106 @@
           "rorbuer",
           "aurora",
           "norway"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3436,
+          31.5497
+        ]
+      },
+      "properties": {
+        "slug": "lahore",
+        "name": "Lahore",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The cultural heart of Pakistan, a Mughal capital of vast red-sandstone mosques and forts, a labyrinthine walled old city, and a food scene locals will tell you is the whole point of the place.",
+        "tags": [
+          "mughal",
+          "badshahi-mosque",
+          "lahore-fort",
+          "walled-city",
+          "food",
+          "wagah",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.1386,
+          27.3294
+        ]
+      },
+      "properties": {
+        "slug": "mohenjo-daro",
+        "name": "Mohenjo-daro",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the world's first cities, a Bronze Age metropolis on the Indus laid out on a grid with brick houses, public baths, and covered drains 4,500 years ago, built by a civilisation whose writing we still cannot read.",
+        "tags": [
+          "indus-valley",
+          "bronze-age",
+          "ancient-city",
+          "archaeology",
+          "sindh",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.787,
+          33.746
+        ]
+      },
+      "properties": {
+        "slug": "taxila-gandhara",
+        "name": "Taxila & Gandhara",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The ruins of an ancient centre of learning where Greek and Buddhist worlds fused, producing the serene Gandhara sculpture that gave the Buddha his first human face.",
+        "tags": [
+          "gandhara",
+          "buddhist",
+          "taxila",
+          "greco-buddhist",
+          "ruins",
+          "archaeology",
+          "unesco",
+          "care"
         ],
         "stay": false,
         "season": []
