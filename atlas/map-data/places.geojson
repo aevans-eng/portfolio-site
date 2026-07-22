@@ -16677,6 +16677,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -1.5197,
+          12.3714
+        ]
+      },
+      "properties": {
+        "slug": "ouagadougou-fespaco",
+        "name": "Ouagadougou & FESPACO",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A dusty, friendly Sahel capital with an outsized cultural life, home to the largest film festival in Africa, which every two years turns the city into the beating heart of African cinema.",
+        "tags": [
+          "fespaco",
+          "cinema",
+          "bronze",
+          "crafts",
+          "sahel",
+          "capital",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.76,
+          10.63
+        ]
+      },
+      "properties": {
+        "slug": "sindou-banfora",
+        "name": "The Sindou Peaks & Banfora",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A wind-carved ridge of narrow stone spires and blades rising from the savanna, near a green corner of Burkina Faso with waterfalls and a lake where hippos wallow among the reeds.",
+        "tags": [
+          "sindou-peaks",
+          "banfora",
+          "waterfalls",
+          "hippos",
+          "rock-formations",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           103.867,
           13.4125
         ]
@@ -18604,6 +18669,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -12.29,
+          11.32
+        ]
+      },
+      "properties": {
+        "slug": "fouta-djallon",
+        "name": "The Fouta Djallon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A cool, green highland plateau of sandstone cliffs, deep valleys, and waterfalls, so full of rivers that it feeds three of West Africa's greatest, earning it the name \"water tower of West Africa.\"",
+        "tags": [
+          "highlands",
+          "waterfalls",
+          "trekking",
+          "fula",
+          "water-tower",
+          "plateau"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4,
+          7.6
+        ]
+      },
+      "properties": {
+        "slug": "mount-nimba",
+        "name": "The Nimba Mountains",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A green, forested mountain range straddling three countries, so rich in creatures found nowhere else, including a toad that gives birth to live young and tool-using chimpanzees, that it is protected as one of West Africa's most precious ecological treasures.",
+        "tags": [
+          "nimba",
+          "endemic",
+          "rainforest",
+          "chimpanzees",
+          "biosphere",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.0402,
           47.4979
         ]
@@ -19889,6 +20019,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -4.0083,
+          5.36
+        ]
+      },
+      "properties": {
+        "slug": "abidjan-grand-bassam",
+        "name": "Abidjan & Grand-Bassam",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "West Africa's slickest, most cosmopolitan city, spread across lagoons and skylines with a buzzing music and food scene, next door to a crumbling former colonial capital of faded mansions on the beach.",
+        "tags": [
+          "abidjan",
+          "lagoon",
+          "music",
+          "grand-bassam",
+          "colonial",
+          "beaches",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.29,
+          6.81
+        ]
+      },
+      "properties": {
+        "slug": "yamoussoukro-basilica",
+        "name": "The Yamoussoukro Basilica",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the largest churches in the world, a colossal domed basilica modelled on St Peter's in Rome, rising improbably out of a small, half-empty planned city in the middle of West Africa.",
+        "tags": [
+          "basilica",
+          "largest-church",
+          "yamoussoukro",
+          "planned-capital",
+          "catholic",
+          "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           132.4553,
           34.3853
         ]
@@ -21055,6 +21250,70 @@
           "maronite",
           "hiking",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.8,
+          6.3
+        ]
+      },
+      "properties": {
+        "slug": "monrovia-coast",
+        "name": "Monrovia & the Surf Coast",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A rough, resilient capital named after an American president, born from the return of freed slaves to Africa, on an Atlantic coast that hides some of West Africa's best and emptiest surf.",
+        "tags": [
+          "monrovia",
+          "americo-liberian",
+          "surf",
+          "robertsport",
+          "beaches",
+          "atlantic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5,
+          5.3
+        ]
+      },
+      "properties": {
+        "slug": "sapo",
+        "name": "Sapo National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Liberia's largest protected rainforest and the second-largest remaining block of primary forest in West Africa, a dense, dripping wilderness hiding forest elephants, chimpanzees, and the elusive pygmy hippo.",
+        "tags": [
+          "rainforest",
+          "upper-guinea-forest",
+          "pygmy-hippo",
+          "forest-elephant",
+          "chimpanzees",
+          "remote"
         ],
         "stay": false,
         "season": []
@@ -22765,6 +23024,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          8.5,
+          18.0
+        ]
+      },
+      "properties": {
+        "slug": "air-tenere",
+        "name": "The A\u00efr & T\u00e9n\u00e9r\u00e9",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the Sahara's most sublime landscapes: a range of dark volcanic mountains rising from a golden ocean of dunes, home to the Tuareg, ancient rock art, and a lone acacia that was once the most isolated tree on earth.",
+        "tags": [
+          "sahara",
+          "air-mountains",
+          "tenere",
+          "tuareg",
+          "dunes",
+          "rock-art",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6,
+          13.32
+        ]
+      },
+      "properties": {
+        "slug": "koure-giraffes",
+        "name": "The Last Giraffes of Kour\u00e9",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The last wild giraffes in all of West Africa, a small, recovering herd of a pale, distinctive subspecies that roams freely among the villages and fields near Niger's capital, saved from the brink of extinction.",
+        "tags": [
+          "giraffes",
+          "west-african-giraffe",
+          "conservation",
+          "sahel",
+          "niamey",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           8.592,
           12.0022
         ]
@@ -24163,6 +24488,70 @@
           "drvengrad",
           "zlatibor",
           "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.2317,
+          8.4657
+        ]
+      },
+      "properties": {
+        "slug": "freetown-peninsula",
+        "name": "Freetown & the Peninsula Beaches",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A hilly, hectic capital founded as a home for freed slaves, backed by forested mountains that tumble down to a string of white-sand beaches so beautiful they once starred in a chocolate-bar advert as the very image of paradise.",
+        "tags": [
+          "freetown",
+          "freed-slaves",
+          "beaches",
+          "peninsula",
+          "chimpanzee",
+          "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.34,
+          7.55
+        ]
+      },
+      "properties": {
+        "slug": "tiwai-island",
+        "name": "Tiwai Island",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A small forested island in a jungle river, one of the most biodiverse spots in West Africa for its size, home to a dozen kinds of primate and the elusive, rarely-seen pygmy hippopotamus.",
+        "tags": [
+          "rainforest",
+          "pygmy-hippo",
+          "primates",
+          "chimpanzees",
+          "river-island",
+          "conservation"
         ],
         "stay": false,
         "season": []
