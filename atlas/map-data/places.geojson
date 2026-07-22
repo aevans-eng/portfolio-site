@@ -18174,6 +18174,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -82.3666,
+          23.1136
+        ]
+      },
+      "properties": {
+        "slug": "havana",
+        "name": "Havana",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A gorgeous, crumbling time-capsule of a city, where 1950s American cars cruise past grand faded colonial mansions, salsa spills from doorways, and the sea crashes over the Malec\u00f3n seawall at sunset.",
+        "tags": [
+          "old-havana",
+          "classic-cars",
+          "malecon",
+          "music",
+          "revolution",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.984,
+          21.802
+        ]
+      },
+      "properties": {
+        "slug": "trinidad-cuba",
+        "name": "Trinidad",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A perfectly-preserved colonial town of pastel houses and cobbled streets that sugar wealth built and time forgot, where horses still clip through the lanes and music pours down the church steps each night.",
+        "tags": [
+          "colonial",
+          "cobblestones",
+          "sugar",
+          "music",
+          "playa-ancon",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.708,
+          22.617
+        ]
+      },
+      "properties": {
+        "slug": "vinales",
+        "name": "Vi\u00f1ales",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A lush green valley where Cuba's finest tobacco is grown by hand as it has been for centuries, dotted with red-earth fields, palm-thatched drying barns, and strange, sheer-sided limestone hills that rise like giant loaves from the farmland.",
+        "tags": [
+          "tobacco",
+          "mogotes",
+          "karst",
+          "farms",
+          "caves",
+          "countryside",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.8712,
           50.2306
         ]
@@ -18359,6 +18456,71 @@
           "light",
           "sandbar",
           "dunes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5,
+          19.4
+        ]
+      },
+      "properties": {
+        "slug": "dr-north-coast",
+        "name": "Saman\u00e1 & the North Coast",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Dominican Republic's lush, less-developed northern coast, where thousands of humpback whales come each winter to breed in a sheltered bay, and palm-backed beaches, jungle waterfalls, and kitesurfing bays line the shore.",
+        "tags": [
+          "humpback-whales",
+          "samana",
+          "beaches",
+          "waterfalls",
+          "cabarete",
+          "amber",
+          "kitesurf"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.89,
+          18.47
+        ]
+      },
+      "properties": {
+        "slug": "santo-domingo",
+        "name": "Santo Domingo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The oldest continuously-inhabited European city in the Americas, where Spanish colonisation of the New World began, its Zona Colonial holding the first cathedral, the first paved street, and the first university built in the hemisphere.",
+        "tags": [
+          "colonial-zone",
+          "first-city",
+          "columbus",
+          "cathedral",
+          "merengue",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -20101,6 +20263,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -58.16,
+          6.8
+        ]
+      },
+      "properties": {
+        "slug": "georgetown",
+        "name": "Georgetown & the Coast",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A faded, ramshackle colonial capital of grand wooden buildings and bustling markets, a Caribbean-flavoured city on the South American coast and the gateway to Guyana's vast rainforest interior.",
+        "tags": [
+          "colonial",
+          "wooden-architecture",
+          "markets",
+          "diverse",
+          "gateway",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.483,
+          5.172
+        ]
+      },
+      "properties": {
+        "slug": "kaieteur",
+        "name": "Kaieteur Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the most powerful single-drop waterfalls on Earth, where a jungle river plunges over a sheer cliff nearly five times the height of Niagara in a single, thundering fall, deep in pristine rainforest and almost entirely to yourself.",
+        "tags": [
+          "waterfall",
+          "single-drop",
+          "rainforest",
+          "potaro",
+          "pristine",
+          "golden-frog"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.244,
+          19.574
+        ]
+      },
+      "properties": {
+        "slug": "citadelle",
+        "name": "The Citadelle Laferri\u00e8re",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A colossal stone fortress crowning a mountain peak, built by the newly-free people of the only nation ever born from a successful slave revolution, as a defiant vow never to be enslaved again.",
+        "tags": [
+          "fortress",
+          "revolution",
+          "independence",
+          "henri-christophe",
+          "mountaintop",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -86.53,
           16.32
         ]
@@ -21506,6 +21765,70 @@
           "planned-capital",
           "catholic",
           "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.65,
+          18.05
+        ]
+      },
+      "properties": {
+        "slug": "blue-mountains",
+        "name": "The Blue Mountains & Kingston",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Misty green peaks that grow one of the world's most prized coffees, rising above Kingston, the gritty, vibrant capital that gave the world reggae and Bob Marley.",
+        "tags": [
+          "blue-mountain-coffee",
+          "hiking",
+          "reggae",
+          "kingston",
+          "bob-marley",
+          "peak"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.348,
+          18.268
+        ]
+      },
+      "properties": {
+        "slug": "negril-west",
+        "name": "Negril & the West",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Jamaica's mellow west end, home to a legendary seven-mile stretch of white sand and, around the point, low limestone cliffs where the ritual is a rum punch and a plunge into the sea as the sun drops into the Caribbean.",
+        "tags": [
+          "seven-mile-beach",
+          "cliffs",
+          "sunset",
+          "dunns-river",
+          "reggae",
+          "beaches"
         ],
         "stay": false,
         "season": []
@@ -27561,6 +27884,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -55.204,
+          5.852
+        ]
+      },
+      "properties": {
+        "slug": "paramaribo",
+        "name": "Paramaribo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A UNESCO-listed old town of black-and-white Dutch-colonial wooden buildings, in one of the most extraordinarily diverse societies on Earth, where a mosque and a synagogue stand peacefully side by side.",
+        "tags": [
+          "dutch-colonial",
+          "wooden-architecture",
+          "diversity",
+          "mosque-synagogue",
+          "river",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.0,
+          4.0
+        ]
+      },
+      "properties": {
+        "slug": "suriname-interior",
+        "name": "The Rainforest Interior",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the most forested countries on the planet, an almost entirely pristine wilderness of rainforest and rivers where communities descended from escaped slaves, the Maroons, have kept living African-rooted cultures deep in the jungle.",
+        "tags": [
+          "rainforest",
+          "maroon",
+          "indigenous",
+          "rivers",
+          "pristine",
+          "biodiversity",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           18.0686,
           59.3293
         ]
@@ -28264,6 +28652,72 @@
           "beaches",
           "markets",
           "gulf-of-guinea"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.68,
+          11.25
+        ]
+      },
+      "properties": {
+        "slug": "tobago",
+        "name": "Tobago",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Trinidad's small, sleepy sister island, all palm-fringed beaches, coral reefs, and forested hills, crowned by what is claimed to be the oldest legally-protected rainforest in the western hemisphere.",
+        "tags": [
+          "beaches",
+          "reef",
+          "rainforest",
+          "buccoo",
+          "diving",
+          "laid-back",
+          "birds"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.51,
+          10.66
+        ]
+      },
+      "properties": {
+        "slug": "trinidad-carnival",
+        "name": "Trinidad: Carnival & the Pitch Lake",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The island that invented the steel drum and threw one of the world's greatest street parties, home to an epic Carnival, a lake of natural tar you can walk on, and a swamp that turns scarlet each evening as flocks of ibis fly in to roost.",
+        "tags": [
+          "carnival",
+          "steelpan",
+          "soca",
+          "pitch-lake",
+          "scarlet-ibis",
+          "caroni",
+          "music"
         ],
         "stay": false,
         "season": []
