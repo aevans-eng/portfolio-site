@@ -6,6 +6,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          67.82,
+          34.81
+        ]
+      },
+      "properties": {
+        "slug": "bamiyan",
+        "name": "Bamiyan & Band-e-Amir",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A high Silk Road valley where two colossal Buddhas once stood carved into the cliff until the Taliban dynamited them, and, over the ridge, a chain of impossibly blue lakes dammed by natural mineral walls.",
+        "tags": [
+          "buddhas",
+          "hazara",
+          "band-e-amir",
+          "lakes",
+          "silk-road",
+          "national-park",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.204,
+          34.352
+        ]
+      },
+      "properties": {
+        "slug": "herat",
+        "name": "Herat",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An ancient Silk Road city in western Afghanistan, long a jewel of Persian and Timurid culture, with a great tiled Friday Mosque, a restored citadel, and the leaning minarets of a vanished royal complex.",
+        "tags": [
+          "silk-road",
+          "citadel",
+          "friday-mosque",
+          "minarets",
+          "timurid",
+          "herat",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.75,
           40.1
         ]
@@ -387,6 +453,71 @@
           "caravanserai",
           "caucasus",
           "halva"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.586,
+          26.2285
+        ]
+      },
+      "properties": {
+        "slug": "manama-dilmun",
+        "name": "Manama & the Dilmun Sites",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A relaxed island capital built on one of the oldest trading civilisations in the Gulf, the ancient land of Dilmun, where a waterside fort mound holds five thousand years of layered cities beneath it.",
+        "tags": [
+          "dilmun",
+          "qalat-al-bahrain",
+          "souq",
+          "national-museum",
+          "pearling",
+          "manama",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.61,
+          25.9
+        ]
+      },
+      "properties": {
+        "slug": "tree-of-life",
+        "name": "The Tree of Life",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A single large tree standing alone in the Bahraini desert, hundreds of years old, thriving with no obvious source of water for miles, which has made it a local legend.",
+        "tags": [
+          "desert",
+          "lone-tree",
+          "mystery",
+          "mesquite",
+          "bahrain",
+          "oddity"
         ],
         "stay": false,
         "season": []
@@ -18610,6 +18741,105 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          44.4208,
+          32.5364
+        ]
+      },
+      "properties": {
+        "slug": "babylon",
+        "name": "Babylon & Baghdad",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The ruins of Babylon, one of the most famous cities of the ancient world, home to the legendary Hanging Gardens and the great blue Ishtar Gate, on the plains south of Baghdad, a heartland of civilisation now hard and risky to reach.",
+        "tags": [
+          "mesopotamia",
+          "babylon",
+          "ishtar-gate",
+          "baghdad",
+          "ancient",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.009,
+          36.191
+        ]
+      },
+      "properties": {
+        "slug": "erbil-kurdistan",
+        "name": "Erbil & Iraqi Kurdistan",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A great mounded citadel rising over a modern city, claimed as one of the longest continuously inhabited places on earth, at the heart of Iraqi Kurdistan, the country's most stable and welcoming region.",
+        "tags": [
+          "kurdistan",
+          "citadel",
+          "erbil",
+          "mountains",
+          "bazaar",
+          "continuously-inhabited",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.103,
+          30.9626
+        ]
+      },
+      "properties": {
+        "slug": "ur-marshes",
+        "name": "Ur & the Mesopotamian Marshes",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The great ziggurat of Ur, a stepped brick temple-mountain from one of humanity's first cities, on the edge of the Mesopotamian marshes, a watery world of reed islands where a distinctive culture has lived for five thousand years.",
+        "tags": [
+          "sumer",
+          "ur",
+          "ziggurat",
+          "marsh-arabs",
+          "wetlands",
+          "garden-of-eden",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -9.4309,
           52.9715
         ]
@@ -19495,6 +19725,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          48.33,
+          29.44
+        ]
+      },
+      "properties": {
+        "slug": "failaka-island",
+        "name": "Failaka Island",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A low island off Kuwait City layered with the ruins of a Greek settlement founded in the wake of Alexander the Great, and, from a much more recent conflict, a bullet-scarred town abandoned since the Gulf War and never reinhabited.",
+        "tags": [
+          "greek-ruins",
+          "alexander",
+          "ghost-town",
+          "gulf-war",
+          "island",
+          "archaeology",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.9774,
+          29.3759
+        ]
+      },
+      "properties": {
+        "slug": "kuwait-city",
+        "name": "Kuwait City",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A wealthy, low-key Gulf capital where the iconic blue-globed water towers stand over a modern waterfront, and a bustling old souq and museums recall a merchant and pearling past, and a recent war.",
+        "tags": [
+          "kuwait-towers",
+          "souq",
+          "gulf-war",
+          "corniche",
+          "museums",
+          "oil"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           77.2,
           42.45
         ]
@@ -19779,6 +20074,106 @@
           "central-market",
           "hanseatic",
           "daugava",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2039,
+          34.0069
+        ]
+      },
+      "properties": {
+        "slug": "baalbek",
+        "name": "Baalbek",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The largest Roman temple complex ever built, where columns the height of a seven-storey building still stand and a near-complete temple rises over foundation stones so colossal no one is entirely sure how they were moved.",
+        "tags": [
+          "roman",
+          "temples",
+          "jupiter",
+          "bacchus",
+          "megaliths",
+          "bekaa",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5018,
+          33.8938
+        ]
+      },
+      "properties": {
+        "slug": "beirut",
+        "name": "Beirut",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A battered, brilliant Mediterranean capital that has been destroyed and rebuilt more times than almost any city, layering Roman ruins, Ottoman and French quarters, war scars, and a famously defiant appetite for food and nightlife.",
+        "tags": [
+          "mediterranean",
+          "layers",
+          "nightlife",
+          "food",
+          "resilience",
+          "corniche",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.049,
+          34.245
+        ]
+      },
+      "properties": {
+        "slug": "cedars-qadisha",
+        "name": "The Cedars & the Qadisha Valley",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A deep holy gorge where hermits and Christian communities carved monasteries into the cliffs, above it a surviving grove of the ancient cedars that once covered these mountains and gave Lebanon its emblem.",
+        "tags": [
+          "cedars-of-god",
+          "qadisha",
+          "monasteries",
+          "gorge",
+          "maronite",
+          "hiking",
           "unesco"
         ],
         "stay": false,
@@ -21314,6 +21709,71 @@
           "moorish-castle",
           "lisbon",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.531,
+          25.2854
+        ]
+      },
+      "properties": {
+        "slug": "doha",
+        "name": "Doha",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A Gulf capital that turned its oil and gas wealth toward culture, anchored by one of the world's finest museums of Islamic art in a sculptural building on its own island, across the bay from a futuristic skyline.",
+        "tags": [
+          "museum-of-islamic-art",
+          "souq-waqif",
+          "corniche",
+          "skyline",
+          "gulf",
+          "dhows"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.2,
+          24.85
+        ]
+      },
+      "properties": {
+        "slug": "khor-al-adaid",
+        "name": "Khor Al Adaid (the Inland Sea)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A place where the sea reaches deep inland to meet the desert, an arm of the Gulf lapping at the foot of tall crescent dunes, reachable only by driving across the sand.",
+        "tags": [
+          "inland-sea",
+          "dunes",
+          "desert",
+          "4x4",
+          "gulf",
+          "camp",
+          "saudi-border"
         ],
         "stay": false,
         "season": []
@@ -23083,6 +23543,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          54.475,
+          24.4128
+        ]
+      },
+      "properties": {
+        "slug": "abu-dhabi",
+        "name": "Abu Dhabi",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The UAE's calmer, wealthier capital, home to one of the most beautiful modern mosques in the world and an outpost of the Louvre under a vast latticed dome that rains down \"a shower of light.\"",
+        "tags": [
+          "sheikh-zayed-mosque",
+          "louvre",
+          "corniche",
+          "capital",
+          "culture",
+          "desert"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2744,
+          25.1972
+        ]
+      },
+      "properties": {
+        "slug": "dubai",
+        "name": "Dubai",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A city that rose from a small pearling and trading port to a skyline of record-breaking towers in a single generation, headlined by the tallest building on earth, all air-conditioned excess on the edge of the desert.",
+        "tags": [
+          "burj-khalifa",
+          "skyscrapers",
+          "desert",
+          "creek",
+          "malls",
+          "luxury"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.7833,
+          23.1333
+        ]
+      },
+      "properties": {
+        "slug": "liwa-oasis",
+        "name": "The Liwa Oasis",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Where the UAE's malls and skylines give way to the real Arabia: a crescent of oasis villages at the foot of towering apricot dunes on the edge of the Empty Quarter, including one of the tallest dunes in the country.",
+        "tags": [
+          "empty-quarter",
+          "dunes",
+          "liwa",
+          "moreeb",
+          "oasis",
+          "desert",
+          "bedouin"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -4.0763,
           53.0685
         ]
@@ -23466,6 +24023,71 @@
           "orchards",
           "homestay",
           "can-tho"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.2067,
+          15.3547
+        ]
+      },
+      "properties": {
+        "slug": "sanaa",
+        "name": "Old Sana'a",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the oldest continuously inhabited cities on earth, a walled old town of tall gingerbread-like tower houses, their brown mud-brick fa\u00e7ades iced with white geometric patterns, built up over more than a thousand years.",
+        "tags": [
+          "old-city",
+          "tower-houses",
+          "gingerbread",
+          "mud-brick",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.9,
+          12.5
+        ]
+      },
+      "properties": {
+        "slug": "socotra",
+        "name": "Socotra",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An isolated Indian Ocean island so evolutionarily strange it is called the Gal\u00e1pagos of the Arabian Sea, where umbrella-shaped \"dragon's blood\" trees bleed red sap and much of the plant life grows nowhere else on earth.",
+        "tags": [
+          "endemic",
+          "dragons-blood-tree",
+          "island",
+          "biodiversity",
+          "indian-ocean",
+          "unesco",
+          "care"
         ],
         "stay": false,
         "season": []
