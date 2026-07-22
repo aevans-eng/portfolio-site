@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalandula Falls — Wander Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#f2e9d4; --card:#f7f1e1; --ink:#2b2620; --muted:#7c6f56; --line:#d9c9a6;
+          --pine:#2f5c46; --rust:#b0562e; --kc:#437a52; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Spectral",Georgia,serif; font-size:1.06rem; line-height:1.7; -webkit-font-smoothing:antialiased; }
+  body::before{ content:""; position:fixed; inset:0; z-index:9999; pointer-events:none; opacity:.5;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/></svg>"); }
+  a{ color:var(--rust); }
+
+  /* hero band */
+  .hero{ position:relative; min-height:44vh; padding:26px 24px 62px; overflow:hidden; color:#f7f1e1;
+    background:linear-gradient(150deg, color-mix(in srgb,var(--kc) 82%, #000) 0%, var(--kc) 55%, color-mix(in srgb,var(--kc) 70%, #f2e9d4) 100%); }
+  .hero.has-img{ background-size:cover; background-position:center; }
+  .hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(transparent 40%, rgba(30,22,12,.55)); }
+  .hero-ghost{ position:absolute; right:-2%; bottom:-8%; font-family:"Fraunces",serif; font-weight:900;
+    font-size:min(30vw,240px); line-height:.8; color:#fff; opacity:.09; letter-spacing:-.03em;
+    text-transform:lowercase; white-space:nowrap; pointer-events:none; }
+  .hero-inner{ position:relative; z-index:2; max-width:720px; margin:0 auto; }
+  .back{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+    color:#f7f1e1; text-decoration:none; opacity:.85; }
+  .back:hover{ opacity:1; }
+  .kicker{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+    opacity:.8; margin:44px 0 10px; }
+  h1{ font-family:"Fraunces",serif; font-weight:900; font-size:clamp(2.3rem,7vw,4rem); line-height:.98;
+    letter-spacing:-.02em; margin:0 0 16px; text-wrap:balance; }
+  .tags{ display:flex; flex-wrap:wrap; gap:7px; }
+  .tag{ font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.06em; text-transform:uppercase;
+    border:1px solid rgba(247,241,225,.5); border-radius:20px; padding:3px 11px; }
+
+  /* instrument bar */
+  .meta{ position:relative; z-index:3; max-width:720px; margin:-34px auto 0; padding:0 24px; }
+  .meta-in{ display:flex; flex-wrap:wrap; gap:22px 30px; align-items:center; background:var(--card);
+    border:1px solid var(--line); border-radius:5px; padding:16px 22px; box-shadow:0 10px 34px rgba(60,45,20,.15); }
+  .stat{ font-family:"IBM Plex Mono",monospace; font-size:.74rem; color:var(--muted); line-height:1.3; }
+  .stat b{ display:block; font-size:.92rem; color:var(--ink); font-weight:600; margin-top:2px; }
+  .meter{ display:inline-flex; gap:3px; margin-top:4px; }
+  .meter i{ width:15px; height:7px; border-radius:1px; background:var(--line); }
+  .meter i.on{ background:var(--kc); }
+
+  /* reading column */
+  .wrap{ max-width:720px; margin:38px auto 90px; padding:0 24px; }
+  .sec{ margin:0 0 30px; }
+  .sec h2{ font-family:"Fraunces",serif; font-weight:600; font-size:1.5rem; line-height:1.1;
+    margin:34px 0 10px; display:flex; align-items:baseline; gap:12px; }
+  .sec h2 .idx{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; font-weight:500; color:var(--rust);
+    letter-spacing:.05em; }
+  .sec p{ margin:.55rem 0; }
+  .sec.lead p{ font-size:1.24rem; line-height:1.55; }
+  .sec.lead p:first-of-type::first-letter{ font-family:"Fraunces",serif; font-weight:900; float:left;
+    font-size:4.1rem; line-height:.72; padding:6px 12px 0 0; color:var(--kc); }
+  .sec.skip{ border-left:3px solid var(--rust); padding:2px 0 2px 20px; }
+  .sec.skip h2{ color:var(--rust); }
+  .sec.odd h2{ font-style:italic; }
+  .sec.locals{ background:color-mix(in srgb,var(--kc) 9%, var(--card)); border:1px solid var(--line);
+    border-radius:6px; padding:6px 26px 20px; margin-top:40px; position:relative; }
+  .sec.locals::before{ content:"\201C"; position:absolute; top:-18px; left:16px; font-family:"Fraunces",serif;
+    font-weight:900; font-size:5rem; color:var(--kc); opacity:.4; }
+  .sec.locals h2{ font-style:italic; }
+  .sec.locals p{ font-style:italic; color:#4a4232; }
+  blockquote{ border-left:3px solid var(--kc); margin:1rem 0; padding:.2rem 0 .2rem 1rem; color:var(--muted); font-style:italic; }
+  ul{ padding-left:1.2rem; } li{ margin:.3rem 0; }
+  code{ background:#e9dfc6; padding:1px 5px; border-radius:3px; font-family:"IBM Plex Mono",monospace; font-size:.85em; }
+  .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
+    border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
+  .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .mine{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .react{ display:inline-flex; gap:5px; }
+  .rx{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.06em; text-transform:uppercase;
+    padding:8px 11px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .rx:hover{ border-color:var(--rust); color:var(--rust); }
+  .rx.on{ background:var(--rust); border-color:var(--rust); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
+</style></head>
+<body>
+  <header class="hero">
+    <div class="hero-ghost">Nature</div>
+    <div class="hero-inner">
+      <a class="back" href="../index.html">← The Atlas</a>
+      <div class="kicker">north · field dossier</div>
+      <h1>Kalandula Falls</h1>
+      <div class="tags"><span class="tag">waterfall</span><span class="tag">angola</span><span class="tag">remote</span><span class="tag">off-the-map</span><span class="tag">lucala-river</span><span class="tag">care</span></div>
+    </div>
+  </header>
+  <div class="meta"><div class="meta-in">
+    <div class="stat">Kind<b style="color:var(--kc)">Nature</b></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    
+    <div class="stat">Effort<b>A remote waterfall reached by long drives; a day, part of harder Angola travel</b></div>
+    <div class="stat">Best<b>Wet season (Nov–April) for maximum flow; access needs a 4x4 and planning</b></div>
+    <div class="stat mine" style="margin-left:auto">
+      <button id="wantBtn" class="visit"></button>
+      <button id="visitBtn" class="visit"></button>
+      <span id="reactWrap" class="react" style="display:none">
+        <button id="loveBtn" class="rx" title="Loved it">♥ loved</button>
+        <button id="mehBtn" class="rx" title="Didn't do it for me">meh</button>
+      </span>
+    </div>
+  </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 9/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class=""></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class=""></i><i class=""></i></span></span></div></div>
+  <main class="wrap">
+    <section class="sec lead"><h2>The hook</h2><p>One of the largest waterfalls in Africa by volume, a broad horseshoe of falling water in the Angolan interior, almost unknown to outside travellers because the country has been so hard to visit.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Kalandula Falls, on the Lucala River in northern Angola, is a genuinely major waterfall, a wide, curving curtain of water over a hundred metres high, ranking among the biggest on the continent by volume, and in full flow it is a spectacular, thundering sight framed by lush greenery. What makes it remarkable as a destination is precisely how few people see it: Angola endured a long civil war and remained largely closed and difficult for tourism for decades, so its considerable natural attractions, this waterfall chief among them, sit almost entirely off the international map. Reaching it means real effort, long drives on rough roads, careful planning, and a tolerance for minimal infrastructure, and Angola remains a challenging, expensive place to travel independently. But for the adventurous, standing before a first-rank African waterfall with no crowds, no railings, and no souvenir stalls is a rare and powerful experience, a glimpse of a country slowly opening up.</p></section>
+<section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Reach it by 4x4 as part of a wider northern Angola trip, ideally with local guidance given the tough logistics and language (Portuguese); the wet season gives the most dramatic flow. Treat it as part of genuine frontier travel, and check current entry requirements and conditions, which have been improving but remain complex.</p></section>
+    <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Kalandula_Falls" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Kalandula_Falls</a>  ·  <a href="https://en.wikipedia.org/wiki/Angola" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Angola</a></div>
+  </main>
+<script>
+(function(){
+  var SLUG = "kalandula-falls";
+  var wantBtn=document.getElementById('wantBtn'), visitBtn=document.getElementById('visitBtn'),
+      reactWrap=document.getElementById('reactWrap'), loveBtn=document.getElementById('loveBtn'),
+      mehBtn=document.getElementById('mehBtn');
+  function g(k){ try{ return JSON.parse(localStorage.getItem(k))||{}; }catch(e){ return {}; } }
+  function s(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  function paint(){
+    var vis=g('atlas_visited')[SLUG], want=g('atlas_want')[SLUG], rx=g('atlas_rating')[SLUG];
+    wantBtn.textContent = want ? '\u2605 Saved' : '\u2606 Want to go';
+    wantBtn.classList.toggle('on', !!want);
+    visitBtn.textContent = vis ? ('\u2713 Visited ' + vis) : 'Mark visited';
+    visitBtn.classList.toggle('on', !!vis);
+    reactWrap.style.display = vis ? '' : 'none';   // a reaction only means something once you've been
+    loveBtn.classList.toggle('on', rx==='love');
+    mehBtn.classList.toggle('on', rx==='meh');
+  }
+  wantBtn.addEventListener('click', function(){
+    var w=g('atlas_want'); if(w[SLUG]) delete w[SLUG]; else w[SLUG]=new Date().toISOString().slice(0,10);
+    s('atlas_want', w); paint();
+  });
+  visitBtn.addEventListener('click', function(){
+    var v=g('atlas_visited'); if(v[SLUG]) delete v[SLUG]; else v[SLUG]=new Date().toISOString().slice(0,10);
+    s('atlas_visited', v);
+    if(!v[SLUG]){ var r=g('atlas_rating'); delete r[SLUG]; s('atlas_rating', r); }  // un-visiting clears the reaction
+    paint();
+  });
+  function react(val){ var r=g('atlas_rating'); if(r[SLUG]===val) delete r[SLUG]; else r[SLUG]=val; s('atlas_rating', r); paint(); }
+  loveBtn.addEventListener('click', function(){ react('love'); });
+  mehBtn.addEventListener('click', function(){ react('meh'); });
+  paint();
+})();
+</script>
+</body></html>

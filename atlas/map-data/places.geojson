@@ -170,6 +170,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          16.0,
+          -9.08
+        ]
+      },
+      "properties": {
+        "slug": "kalandula-falls",
+        "name": "Kalandula Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the largest waterfalls in Africa by volume, a broad horseshoe of falling water in the Angolan interior, almost unknown to outside travellers because the country has been so hard to visit.",
+        "tags": [
+          "waterfall",
+          "angola",
+          "remote",
+          "off-the-map",
+          "lucala-river",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2,
+          -14.75
+        ]
+      },
+      "properties": {
+        "slug": "namibe-tundavala",
+        "name": "Namibe & Tundavala",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Southern Angola's raw drama: the Namib desert running straight into the Atlantic, ancient plants that live for a thousand years, and a mountain escarpment that simply drops away a thousand metres into space.",
+        "tags": [
+          "namib",
+          "desert",
+          "welwitschia",
+          "tundavala",
+          "escarpment",
+          "atlantic",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           44.8149,
           40.1408
         ]
@@ -20903,6 +20968,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          48.419,
+          -18.928
+        ]
+      },
+      "properties": {
+        "slug": "andasibe-lemurs",
+        "name": "Andasibe & the Eastern Rainforests",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An accessible eastern rainforest where the eerie, whale-like song of the indri, the largest living lemur, echoes through the trees at dawn, and a guided walk brings you face to face with creatures found only on this island.",
+        "tags": [
+          "lemurs",
+          "indri",
+          "rainforest",
+          "endemic",
+          "chameleons",
+          "madagascar"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.42,
+          -20.25
+        ]
+      },
+      "properties": {
+        "slug": "baobabs-tsingy",
+        "name": "The Baobabs & Tsingy",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Western Madagascar's twin wonders: a dirt road lined with giant, ancient baobab trees glowing at sunset, and, further north, a forest of razor-sharp limestone pinnacles you cross on ladders and rope bridges.",
+        "tags": [
+          "baobabs",
+          "tsingy",
+          "limestone",
+          "endemic",
+          "morondava",
+          "bemaraha",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.26,
+          -13.32
+        ]
+      },
+      "properties": {
+        "slug": "nosy-be",
+        "name": "Nosy Be & the North",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Madagascar's main beach island, a laid-back tropical escape of white sand, warm turquoise water, and the scent of ylang-ylang, with more islands, reefs, and lemur-filled reserves within easy reach.",
+        "tags": [
+          "island",
+          "beaches",
+          "diving",
+          "lemurs",
+          "ylang-ylang",
+          "amber-mountain",
+          "madagascar"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           34.1,
           -11.9
         ]
@@ -21088,6 +21251,204 @@
           "orang-asli",
           "wildlife",
           "river"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.36,
+          20.46
+        ]
+      },
+      "properties": {
+        "slug": "chinguetti",
+        "name": "Chinguetti & the Adrar",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A near-abandoned medieval caravan town half-buried in the encroaching Sahara, where families still guard crumbling libraries of ancient hand-written manuscripts, once a great centre of learning on the road to Mecca.",
+        "tags": [
+          "sahara",
+          "caravan-town",
+          "ancient-libraries",
+          "adrar",
+          "ksour",
+          "oasis",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.0,
+          21.0
+        ]
+      },
+      "properties": {
+        "slug": "iron-ore-train",
+        "name": "The Iron Ore Train",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the longest and heaviest trains on earth, a two-and-a-half-kilometre snake of open ore wagons crossing the Sahara, which the truly intrepid ride for free by climbing aboard and lying atop the iron ore.",
+        "tags": [
+          "train",
+          "sahara",
+          "iron-ore",
+          "adventure",
+          "zouerat",
+          "nouadhibou",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.4,
+          21.12
+        ]
+      },
+      "properties": {
+        "slug": "richat-structure",
+        "name": "The Richat Structure (Eye of the Sahara)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A vast geological bullseye in the Sahara, concentric rings of rock nearly forty kilometres across, so perfectly formed that astronauts use it as a landmark from orbit and it long baffled the people who lived beside it.",
+        "tags": [
+          "geology",
+          "eye-of-the-sahara",
+          "richat",
+          "desert",
+          "bullseye",
+          "adrar",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.38,
+          -20.44
+        ]
+      },
+      "properties": {
+        "slug": "chamarel",
+        "name": "Chamarel & the Interior",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The green, mountainous heart of Mauritius, where volcanic soil forms a hillside of surreal rainbow-striped dunes, a high waterfall drops into a gorge, and the island's last native forest shelters birds saved from the brink.",
+        "tags": [
+          "seven-coloured-earths",
+          "waterfall",
+          "black-river-gorges",
+          "rum",
+          "endemic",
+          "dodo"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.31,
+          -20.45
+        ]
+      },
+      "properties": {
+        "slug": "le-morne",
+        "name": "Le Morne & the Lagoons",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A dramatic basalt mountain plunging into a turquoise lagoon at the island's tip, its beauty shadowed by a poignant history as a refuge for escaped slaves, and a base for some of the Indian Ocean's best beaches and water sports.",
+        "tags": [
+          "lagoon",
+          "beaches",
+          "le-morne",
+          "kitesurfing",
+          "maroon-history",
+          "coral-reef",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          63.42,
+          -19.72
+        ]
+      },
+      "properties": {
+        "slug": "rodrigues",
+        "name": "Rodrigues",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Mauritius's small, far-flung sister island, a slow, unspoiled world of a huge shallow lagoon, hilly Creole villages, and empty beaches, the way the main island was decades ago.",
+        "tags": [
+          "island",
+          "lagoon",
+          "rodrigues",
+          "creole",
+          "unspoiled",
+          "octopus",
+          "hiking"
         ],
         "stay": false,
         "season": []
@@ -21611,6 +21972,105 @@
           "imperial-city",
           "moulay-idriss",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.45,
+          -21.65
+        ]
+      },
+      "properties": {
+        "slug": "bazaruto",
+        "name": "The Bazaruto Archipelago",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A cluster of Indian Ocean islands ringed by turquoise lagoons and towering sand dunes, where traditional dhows sail warm clear water that shelters coral reefs, whales, and one of Africa's last populations of dugongs.",
+        "tags": [
+          "islands",
+          "indian-ocean",
+          "dhows",
+          "dugongs",
+          "diving",
+          "sand-dunes",
+          "beaches"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.735,
+          -15.035
+        ]
+      },
+      "properties": {
+        "slug": "ilha-quirimbas",
+        "name": "Ilha de Mo\u00e7ambique & the Quirimbas",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A tiny coral island that was once the capital of Portuguese East Africa, its faded stone town of churches, forts, and mansions crumbling gracefully by the Indian Ocean, gateway to a string of pristine tropical islands.",
+        "tags": [
+          "swahili",
+          "portuguese",
+          "stone-town",
+          "quirimbas",
+          "diving",
+          "dhows",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.583,
+          -25.966
+        ]
+      },
+      "properties": {
+        "slug": "maputo",
+        "name": "Maputo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A warm, faded, thoroughly lived-in capital on the Indian Ocean, where crumbling Portuguese-colonial and Art Deco buildings, jacaranda-lined avenues, fiery peri-peri seafood, and a strong music scene mingle into something distinctly Mozambican.",
+        "tags": [
+          "portuguese",
+          "seafood",
+          "markets",
+          "music",
+          "art-deco",
+          "capital",
+          "indian-ocean"
         ],
         "stay": false,
         "season": []
@@ -24674,6 +25134,104 @@
           "elephants",
           "night-market",
           "hill-tribes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7,
+          35.3
+        ]
+      },
+      "properties": {
+        "slug": "el-djem",
+        "name": "El Djem",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A gigantic Roman amphitheatre, one of the largest and best-preserved in the world, rising with astonishing completeness out of a small Tunisian town, a colosseum you can wander almost alone.",
+        "tags": [
+          "roman",
+          "amphitheatre",
+          "colosseum",
+          "thysdrus",
+          "ruins",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1815,
+          36.8065
+        ]
+      },
+      "properties": {
+        "slug": "tunis-carthage",
+        "name": "Tunis, Carthage & Sidi Bou Said",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The capital and its coast pack in three worlds: a labyrinthine medieval medina, the scattered ruins of Carthage, the great rival of Rome, and a blue-and-white clifftop village straight out of a painting.",
+        "tags": [
+          "carthage",
+          "medina",
+          "sidi-bou-said",
+          "bardo",
+          "mosaics",
+          "phoenician",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0167,
+          33.4667
+        ]
+      },
+      "properties": {
+        "slug": "tunisia-sahara",
+        "name": "The Tunisian Sahara",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Tunisia's slice of the Sahara: palm oasis towns, Berber granary-fortresses, a vast mirage-shimmering salt lake, and the desert sets where \"Star Wars\" filmed Luke Skywalker's home planet, Tatooine.",
+        "tags": [
+          "sahara",
+          "oasis",
+          "ksour",
+          "star-wars",
+          "chott-el-djerid",
+          "matmata",
+          "dunes"
         ],
         "stay": false,
         "season": []
