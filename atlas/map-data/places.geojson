@@ -6,6 +6,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          19.75,
+          40.1
+        ]
+      },
+      "properties": {
+        "slug": "albanian-riviera",
+        "name": "The Albanian Riviera",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A stretch of Ionian coast where mountains drop straight into turquoise water, still cheaper and rougher than the Greek islands across the strait, though catching up fast.",
+        "tags": [
+          "ionian",
+          "beaches",
+          "himara",
+          "gjipe",
+          "butrint",
+          "riviera",
+          "turquoise"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9522,
+          40.7058
+        ]
+      },
+      "properties": {
+        "slug": "berat",
+        "name": "Berat",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The \"city of a thousand windows,\" where tiers of white Ottoman houses climb a steep hillside stacked so their rows of windows all seem to look out at once, below a castle quarter people still live in.",
+        "tags": [
+          "ottoman",
+          "thousand-windows",
+          "castle",
+          "mangalem",
+          "osum",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7717,
+          42.3925
+        ]
+      },
+      "properties": {
+        "slug": "theth",
+        "name": "Theth & the Accursed Mountains",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A stone-tower village at the end of a rough road deep in the Accursed Mountains, where families ran on ancient clan law and blood feud, now the start of one of the Balkans' finest mountain hikes.",
+        "tags": [
+          "accursed-mountains",
+          "prokletije",
+          "valbona",
+          "kulla",
+          "blood-feud",
+          "hiking",
+          "guesthouses"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.7519,
           47.0744
         ]
@@ -15408,6 +15506,106 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          17.8983,
+          43.2578
+        ]
+      },
+      "properties": {
+        "slug": "blagaj",
+        "name": "Blagaj Tekija",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A white Sufi dervish house built right against the foot of a cliff, where a river bursts full-grown out of a cave in the rock beside it.",
+        "tags": [
+          "dervish",
+          "sufi",
+          "spring",
+          "karst",
+          "buna",
+          "herzegovina",
+          "tekke"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.8148,
+          43.337
+        ]
+      },
+      "properties": {
+        "slug": "mostar",
+        "name": "Mostar & the Stari Most",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A graceful Ottoman stone bridge arching high over a green river, blown up during the war and rebuilt stone by stone, where young men still dive from the parapet into the cold water below.",
+        "tags": [
+          "ottoman",
+          "bridge",
+          "neretva",
+          "divers",
+          "war",
+          "reconstruction",
+          "herzegovina",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4131,
+          43.8563
+        ]
+      },
+      "properties": {
+        "slug": "sarajevo",
+        "name": "Sarajevo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A city in a steep valley where a single street carries you from Ottoman bazaar to Austro-Hungarian boulevard in a few paces, and where the scars of a modern siege are still legible if you look.",
+        "tags": [
+          "ottoman",
+          "austro-hungarian",
+          "bascarsija",
+          "siege",
+          "tunnel",
+          "coffee",
+          "balkans"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           18.1077,
           42.6407
         ]
@@ -16981,6 +17179,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          18.7712,
+          42.4247
+        ]
+      },
+      "properties": {
+        "slug": "bay-of-kotor",
+        "name": "The Bay of Kotor",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A deep, twisting bay that looks like a fjord but is really a drowned river canyon, walled in by grey mountains, with a medieval Venetian town at the far end under a fortress wall that climbs the cliff.",
+        "tags": [
+          "kotor",
+          "fjord-like-bay",
+          "venetian",
+          "city-walls",
+          "adriatic",
+          "cruise",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0983,
+          43.145
+        ]
+      },
+      "properties": {
+        "slug": "durmitor-tara",
+        "name": "Durmitor & the Tara Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A high massif of jagged peaks and glacial lakes above one of the deepest river canyons on earth, where the Tara has cut more than a kilometre down through the mountains.",
+        "tags": [
+          "durmitor",
+          "tara-canyon",
+          "black-lake",
+          "rafting",
+          "glacial-lakes",
+          "unesco",
+          "zabljak"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.03,
+          42.6733
+        ]
+      },
+      "properties": {
+        "slug": "ostrog",
+        "name": "Ostrog Monastery",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A white Orthodox monastery built directly into a vertical cliff face high above a valley, looking as though it has been glued to the rock, and one of the most visited pilgrimage sites in the Balkans.",
+        "tags": [
+          "monastery",
+          "orthodox",
+          "cliff",
+          "pilgrimage",
+          "sveti-vasilije",
+          "rock-church"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.9041,
           52.3676
         ]
@@ -17428,6 +17724,298 @@
           "moorish-castle",
           "lisbon",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.0,
+          45.1667
+        ]
+      },
+      "properties": {
+        "slug": "danube-delta",
+        "name": "The Danube Delta",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Where the Danube finally reaches the Black Sea and dissolves into one of the best-preserved wetlands in Europe, a maze of channels, floating reed islands, and one of the largest reed beds on earth, thick with pelicans.",
+        "tags": [
+          "delta",
+          "birds",
+          "pelicans",
+          "reeds",
+          "wetland",
+          "unesco",
+          "fishing-villages"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6172,
+          45.6017
+        ]
+      },
+      "properties": {
+        "slug": "transfagarasan",
+        "name": "The Transf\u0103g\u0103r\u0103\u0219an",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A dizzying mountain road built by a dictator's army across the highest wall of the Carpathians, hairpinning up to a glacial lake near the top and only open for a few snow-free months a year.",
+        "tags": [
+          "carpathians",
+          "mountain-road",
+          "fagaras",
+          "balea-lake",
+          "ceausescu",
+          "driving"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3672,
+          45.515
+        ]
+      },
+      "properties": {
+        "slug": "transylvania",
+        "name": "Transylvania & the Saxon Towns",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A green upland of medieval German towns and fortified farm-churches under the Carpathians, marketed hard on a Dracula connection that is mostly invented, and quietly wonderful for reasons that have nothing to do with vampires.",
+        "tags": [
+          "saxon",
+          "fortified-churches",
+          "sighisoara",
+          "bran",
+          "dracula",
+          "carpathians",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4489,
+          44.7866
+        ]
+      },
+      "properties": {
+        "slug": "belgrade",
+        "name": "Belgrade",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A blunt, energetic capital where the Sava meets the Danube under an old fortress that has been fought over and destroyed dozens of times, now known as much for river-barge nightclubs as for its scarred history.",
+        "tags": [
+          "kalemegdan",
+          "danube",
+          "sava",
+          "splavovi",
+          "nightlife",
+          "balkans",
+          "ottoman"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.8335,
+          45.2671
+        ]
+      },
+      "properties": {
+        "slug": "novi-sad",
+        "name": "Novi Sad & Fru\u0161ka Gora",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Serbia's easygoing second city, spread along the Danube beneath a huge star-shaped fortress that hosts one of Europe's big summer music festivals, backed by a ridge dotted with old monasteries.",
+        "tags": [
+          "vojvodina",
+          "petrovaradin",
+          "exit-festival",
+          "fruska-gora",
+          "danube",
+          "pannonian"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.5,
+          43.7975
+        ]
+      },
+      "properties": {
+        "slug": "sargan-eight",
+        "name": "The \u0160argan Eight & Mokra Gora",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A narrow-gauge heritage railway that loops through the mountains in a figure eight to climb a steep grade, paired with a hilltop wooden village a film director built for a movie and then kept.",
+        "tags": [
+          "narrow-gauge",
+          "railway",
+          "kusturica",
+          "drvengrad",
+          "zlatibor",
+          "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0936,
+          46.3625
+        ]
+      },
+      "properties": {
+        "slug": "lake-bled",
+        "name": "Lake Bled",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The postcard of the Julian Alps: a small green lake with a church on a tiny island in the middle and a medieval castle on a cliff above, backed by snow peaks.",
+        "tags": [
+          "julian-alps",
+          "island-church",
+          "castle",
+          "pletna",
+          "bohinj",
+          "triglav"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5058,
+          46.0569
+        ]
+      },
+      "properties": {
+        "slug": "ljubljana",
+        "name": "Ljubljana & the Karst Caves",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of Europe's most relaxed small capitals, a car-free riverside centre of bridges guarded by dragons, within easy reach of the limestone country that gave the whole world the word \"karst.\"",
+        "tags": [
+          "plecnik",
+          "dragon-bridge",
+          "karst",
+          "skocjan",
+          "postojna",
+          "riverside",
+          "students"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5683,
+          45.5285
+        ]
+      },
+      "properties": {
+        "slug": "piran",
+        "name": "Piran",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Slovenia's short Adriatic coast squeezes in one gem: a small Venetian town packed onto a point, all terracotta roofs and a marble square, with medieval salt pans still worked by hand nearby.",
+        "tags": [
+          "adriatic",
+          "venetian",
+          "salt-pans",
+          "tartini",
+          "istria",
+          "seafront"
         ],
         "stay": false,
         "season": []
