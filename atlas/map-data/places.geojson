@@ -202,6 +202,101 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          91.97,
+          21.4272
+        ]
+      },
+      "properties": {
+        "slug": "cox-bazar",
+        "name": "Cox's Bazar",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Often called the world's longest natural sea beach, an unbroken sweep of sand running well over a hundred kilometres down the Bay of Bengal, and the seaside heart of Bangladeshi holiday life.",
+        "tags": [
+          "beach",
+          "bay-of-bengal",
+          "longest-beach",
+          "domestic-tourism",
+          "coast"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.407,
+          23.71
+        ]
+      },
+      "properties": {
+        "slug": "dhaka",
+        "name": "Dhaka & the Rivers",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the most densely packed cities on earth, a roaring, river-bound megacity of countless cycle rickshaws, Mughal relics, and boat-choked waterways, overwhelming and utterly alive.",
+        "tags": [
+          "old-dhaka",
+          "rickshaws",
+          "rivers",
+          "buriganga",
+          "mughal",
+          "boats"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.95,
+          21.95
+        ]
+      },
+      "properties": {
+        "slug": "sundarbans",
+        "name": "The Sundarbans",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The largest mangrove forest on earth, a vast tidal labyrinth of channels and half-submerged trees at the mouth of the Ganges, and the last stronghold of tigers that have learned to swim.",
+        "tags": [
+          "mangroves",
+          "royal-bengal-tiger",
+          "delta",
+          "boat",
+          "wildlife",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -118.1186,
           36.6072
         ]
@@ -18744,6 +18839,200 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          76.945,
+          43.238
+        ]
+      },
+      "properties": {
+        "slug": "almaty",
+        "name": "Almaty & the Tian Shan",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Kazakhstan's green former capital, sitting right under the snow peaks of the Tian Shan, in the region where the apple is thought to have first grown wild.",
+        "tags": [
+          "tian-shan",
+          "apples",
+          "charyn-canyon",
+          "big-almaty-lake",
+          "silk-road",
+          "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.4491,
+          51.1694
+        ]
+      },
+      "properties": {
+        "slug": "astana",
+        "name": "Astana",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A brand-new capital conjured out of the bare steppe in a single generation, a showcase of wild futuristic architecture rising from flat grassland, and one of the coldest capital cities in the world.",
+        "tags": [
+          "planned-capital",
+          "futuristic",
+          "architecture",
+          "steppe",
+          "cold",
+          "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.2,
+          43.7
+        ]
+      },
+      "properties": {
+        "slug": "mangystau",
+        "name": "Mangystau",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A remote desert region by the Caspian where the earth turns alien: white chalk canyons, valleys of strange eroded pinnacles, mosques carved deep underground, and rock that looks like another planet.",
+        "tags": [
+          "desert",
+          "chalk-cliffs",
+          "underground-mosques",
+          "bozjyra",
+          "caspian",
+          "rock-formations"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2,
+          42.45
+        ]
+      },
+      "properties": {
+        "slug": "issyk-kul",
+        "name": "Lake Issyk-Kul & the Tian Shan",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the world's largest and deepest mountain lakes, a vast blue sheet of slightly salty water that never freezes, ringed by the snow peaks of the Tian Shan and the summer camps of herders.",
+        "tags": [
+          "issyk-kul",
+          "tian-shan",
+          "alpine-lake",
+          "jailoo",
+          "nomads",
+          "karakol",
+          "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7985,
+          40.5283
+        ]
+      },
+      "properties": {
+        "slug": "osh",
+        "name": "Osh & the Southern Silk Road",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of Central Asia's oldest cities, a Silk Road crossroads in the fertile Ferghana Valley, where a sprawling ancient bazaar spreads beneath a craggy sacred mountain that pilgrims have climbed for millennia.",
+        "tags": [
+          "silk-road",
+          "bazaar",
+          "sulaiman-too",
+          "ferghana",
+          "pamir-highway",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1,
+          41.85
+        ]
+      },
+      "properties": {
+        "slug": "song-kol",
+        "name": "Song-K\u00f6l & the Jailoos",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A high mountain lake on a treeless plateau at three thousand metres, where Kyrgyz herders bring their animals and yurts each summer, and the night sky is thick with stars far from any light.",
+        "tags": [
+          "song-kol",
+          "jailoo",
+          "yurt",
+          "nomads",
+          "horses",
+          "high-pasture",
+          "milky-way"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           105.95,
           13.95
         ]
@@ -21352,6 +21641,70 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          68.37,
+          39.07
+        ]
+      },
+      "properties": {
+        "slug": "fann-mountains",
+        "name": "The Fann Mountains",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A compact range of sharp peaks and impossibly coloured turquoise lakes within reach of the capital, some of the finest and most accessible mountain trekking in Central Asia.",
+        "tags": [
+          "fann-mountains",
+          "iskanderkul",
+          "alpine-lakes",
+          "trekking",
+          "dushanbe",
+          "turquoise"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0,
+          37.5
+        ]
+      },
+      "properties": {
+        "slug": "pamir-highway",
+        "name": "The Pamir Highway",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the world's great road journeys, a rough ribbon of tarmac and gravel climbing over passes above four thousand metres across the \"roof of the world,\" past glacial lakes, yak herders, and the mountains of four countries.",
+        "tags": [
+          "pamirs",
+          "roof-of-the-world",
+          "wakhan",
+          "high-altitude",
+          "road-trip",
+          "homestays"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           98.84,
           8.01
         ]
@@ -21677,6 +22030,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          58.3261,
+          37.9601
+        ]
+      },
+      "properties": {
+        "slug": "ashgabat",
+        "name": "Ashgabat",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital rebuilt almost entirely in gleaming white marble, with gold-domed ministries, giant monuments, and empty grand boulevards, one of the strangest and most tightly controlled cities on earth.",
+        "tags": [
+          "white-marble",
+          "monuments",
+          "gold-statues",
+          "authoritarian",
+          "planned-city",
+          "oddity",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.4394,
+          40.2525
+        ]
+      },
+      "properties": {
+        "slug": "darvaza-crater",
+        "name": "The Darvaza Gas Crater",
+        "kind": "oddity",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A wide pit in the Karakum desert that has been on fire for decades, a roaring crater of flame nicknamed the Door to Hell, at its most hypnotic when you camp beside it and watch it burn against the black desert night.",
+        "tags": [
+          "gas-crater",
+          "door-to-hell",
+          "karakum",
+          "desert",
+          "fire",
+          "camping"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.192,
+          37.662
+        ]
+      },
+      "properties": {
+        "slug": "merv",
+        "name": "Ancient Merv",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The eroded remains of what was once among the largest cities in the world, a great Silk Road oasis reduced to walls, mounds, and a lone soaring mausoleum standing in the desert, after the Mongols destroyed it.",
+        "tags": [
+          "silk-road",
+          "ruins",
+          "oasis",
+          "mongol",
+          "mausoleum",
+          "archaeology",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.5234,
           50.4501
         ]
@@ -21962,6 +22413,104 @@
           "avebury",
           "prehistory",
           "salisbury-plain",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4286,
+          39.7747
+        ]
+      },
+      "properties": {
+        "slug": "bukhara",
+        "name": "Bukhara",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The most complete medieval city in Central Asia, a living Silk Road town of madrasas, minarets, and covered trading bazaars gathered around an old stone pool, that feels less restored museum than a place still lived in.",
+        "tags": [
+          "silk-road",
+          "madrasa",
+          "minaret",
+          "old-town",
+          "trading-domes",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.3639,
+          41.3783
+        ]
+      },
+      "properties": {
+        "slug": "khiva",
+        "name": "Khiva",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A walled desert city that looks almost too perfect to be real, a compact maze of mud-brick minarets, madrasas, and palaces enclosed by high ramparts, once the seat of a khanate and a notorious slave market.",
+        "tags": [
+          "silk-road",
+          "itchan-kala",
+          "walled-city",
+          "minaret",
+          "khorezm",
+          "desert",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.975,
+          39.627
+        ]
+      },
+      "properties": {
+        "slug": "samarkand",
+        "name": "Samarkand",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The great crossroads of the Silk Road, where the conqueror Timur built a capital of colossal turquoise-domed mosques and madrasas covered in dazzling blue tile, headlined by the three vast facing schools of the Registan.",
+        "tags": [
+          "silk-road",
+          "registan",
+          "timur",
+          "tilework",
+          "madrasa",
+          "blue-domes",
           "unesco"
         ],
         "stay": false,
