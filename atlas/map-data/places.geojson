@@ -17465,6 +17465,233 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          76.46,
+          15.335
+        ]
+      },
+      "properties": {
+        "slug": "hampi",
+        "name": "Hampi",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The ruins of one of the greatest cities of the medieval world, temples and palaces scattered for miles across a surreal landscape of giant balancing boulders, sacked and abandoned five centuries ago and never rebuilt.",
+        "tags": [
+          "vijayanagara",
+          "ruins",
+          "temples",
+          "boulders",
+          "tungabhadra",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7873,
+          26.9124
+        ]
+      },
+      "properties": {
+        "slug": "jaipur",
+        "name": "Jaipur & Rajasthan",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The capital of Rajasthan, a planned 18th-century city painted terracotta pink, backed by hilltop forts and palaces, and the gateway to India's most romantic region of desert kingdoms.",
+        "tags": [
+          "rajput",
+          "pink-city",
+          "amber-fort",
+          "palaces",
+          "bazaars",
+          "hawa-mahal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3388,
+          9.4981
+        ]
+      },
+      "properties": {
+        "slug": "kerala-backwaters",
+        "name": "The Kerala Backwaters",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A green maze of palm-lined canals, lakes, and rice paddies along the southwest coast, where villages live on the water and you drift through it all on a converted rice barge.",
+        "tags": [
+          "backwaters",
+          "houseboat",
+          "alleppey",
+          "canals",
+          "palms",
+          "kerala",
+          "coir"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.9199,
+          24.8318
+        ]
+      },
+      "properties": {
+        "slug": "khajuraho",
+        "name": "The Khajuraho Temples",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A group of thousand-year-old Hindu and Jain temples in the middle of nowhere, their walls covered in some of the finest stone carving in India, including the frankly erotic sculptures they are famous for.",
+        "tags": [
+          "temples",
+          "sculpture",
+          "erotic-carvings",
+          "chandela",
+          "medieval",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.2676,
+          30.0869
+        ]
+      },
+      "properties": {
+        "slug": "rishikesh",
+        "name": "Rishikesh & the Himalayan Foothills",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Where the Ganges leaves the Himalaya and runs clear and cold through a town of ashrams, yoga schools, and swaying footbridges, the self-styled yoga capital of the world and the spot where the Beatles once came to meditate.",
+        "tags": [
+          "ganges",
+          "yoga",
+          "ashram",
+          "beatles",
+          "rafting",
+          "himalaya",
+          "pilgrimage"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0421,
+          27.1751
+        ]
+      },
+      "properties": {
+        "slug": "taj-mahal",
+        "name": "The Taj Mahal, Agra",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A white marble tomb a grieving emperor built for his wife, so perfectly proportioned that the most photographed building on earth still stops people cold when they walk through the gate and see it for real.",
+        "tags": [
+          "mughal",
+          "marble",
+          "mausoleum",
+          "agra",
+          "shah-jahan",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.0104,
+          25.3176
+        ]
+      },
+      "properties": {
+        "slug": "varanasi",
+        "name": "Varanasi",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the oldest continuously lived-in cities on earth and the holiest in Hinduism, where life and death happen openly on the steps down to the Ganges, and Hindus come to die because doing so here is said to end the cycle of rebirth.",
+        "tags": [
+          "ganges",
+          "ghats",
+          "hindu",
+          "cremation",
+          "pilgrimage",
+          "old-city",
+          "sacred"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -9.4309,
           52.9715
         ]
