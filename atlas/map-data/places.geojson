@@ -17462,6 +17462,232 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -116.1773,
+          51.4254
+        ]
+      },
+      "properties": {
+        "slug": "banff-rockies",
+        "name": "Banff & the Canadian Rockies",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Canadian Rockies at their most sublime: sawtooth peaks reflected in lakes of an impossible glacial turquoise, threaded by one of the world's most spectacular drives, with grizzlies, elk, and glaciers along the way.",
+        "tags": [
+          "rockies",
+          "banff",
+          "lake-louise",
+          "icefields-parkway",
+          "glaciers",
+          "wildlife",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.5,
+          45.0
+        ]
+      },
+      "properties": {
+        "slug": "bay-of-fundy",
+        "name": "The Bay of Fundy & Atlantic Canada",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Where the highest tides on Earth rise and fall as much as a five-storey building twice a day, so that you can walk the ocean floor at low tide and kayak over the same spot hours later, along a coast of fishing villages, whales, and rugged cliffs.",
+        "tags": [
+          "highest-tides",
+          "tidal-bore",
+          "hopewell-rocks",
+          "whales",
+          "cabot-trail",
+          "gros-morne"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.165,
+          58.7684
+        ]
+      },
+      "properties": {
+        "slug": "churchill",
+        "name": "Churchill",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A tiny, remote outpost on the shore of Hudson Bay billed as the polar bear capital of the world, where each autumn the great white bears gather to wait for the sea to freeze, beluga whales throng the summer river, and the northern lights blaze overhead.",
+        "tags": [
+          "polar-bears",
+          "beluga-whales",
+          "aurora",
+          "tundra",
+          "hudson-bay",
+          "sub-arctic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0849,
+          43.0896
+        ]
+      },
+      "properties": {
+        "slug": "niagara-falls",
+        "name": "Niagara Falls",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Not the tallest waterfall, but one of the most powerful, a thundering, mile-wide horseshoe of green water hurling an astonishing volume over the edge in clouds of spray, best met head-on from a boat at its churning base.",
+        "tags": [
+          "waterfall",
+          "horseshoe-falls",
+          "boat",
+          "toronto",
+          "honeymoon",
+          "wine"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.208,
+          46.8139
+        ]
+      },
+      "properties": {
+        "slug": "old-quebec",
+        "name": "Old Qu\u00e9bec City",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The most European city in North America, a walled old town of cobbled lanes, stone houses, and a fairy-tale ch\u00e2teau on a cliff above the St Lawrence, the only fortified city north of Mexico with its ramparts still intact.",
+        "tags": [
+          "walled-city",
+          "french",
+          "chateau-frontenac",
+          "cobblestones",
+          "winter-carnival",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1207,
+          49.2827
+        ]
+      },
+      "properties": {
+        "slug": "vancouver",
+        "name": "Vancouver & the Coast",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the most beautifully-sited cities in the world, wedged between the Pacific and a wall of coastal mountains, where you can ski in the morning and sail in the afternoon, gateway to the wild coast of British Columbia.",
+        "tags": [
+          "pacific",
+          "stanley-park",
+          "mountains",
+          "whistler",
+          "vancouver-island",
+          "multicultural"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -139.0,
+          64.0
+        ]
+      },
+      "properties": {
+        "slug": "yukon-north",
+        "name": "The Yukon & the North",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Canada's vast, empty, spectacular north: a wilderness of mountains, tundra, and wild rivers larger than most countries, where gold-rush ghost towns cling to the past, the midnight sun shines all summer, and the aurora blazes across the winter dark.",
+        "tags": [
+          "aurora",
+          "wilderness",
+          "klondike",
+          "dawson-city",
+          "nahanni",
+          "tundra",
+          "midnight-sun"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           22.0,
           17.0
         ]
@@ -20123,6 +20349,72 @@
           "arched-bridges",
           "pindus",
           "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.0,
+          70.5
+        ]
+      },
+      "properties": {
+        "slug": "east-greenland",
+        "name": "East Greenland & Scoresby Sound",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The wildest edge of the Arctic: the largest fjord system on Earth, a labyrinth of iceberg-filled channels and sheer mountains reaching deep into Greenland's uninhabited east, home to a single tiny, remote Inuit settlement and roaming muskoxen.",
+        "tags": [
+          "scoresby-sound",
+          "fjords",
+          "wilderness",
+          "inuit",
+          "muskox",
+          "aurora",
+          "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.1,
+          69.22
+        ]
+      },
+      "properties": {
+        "slug": "ilulissat",
+        "name": "The Ilulissat Icefjord",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A fjord choked with icebergs the size of buildings and city blocks, calved from one of the fastest-moving glaciers on Earth, drifting out to sea past a small Inuit town under the midnight sun or the northern lights.",
+        "tags": [
+          "icebergs",
+          "glacier",
+          "icefjord",
+          "midnight-sun",
+          "inuit",
+          "aurora",
+          "unesco"
         ],
         "stay": false,
         "season": []
