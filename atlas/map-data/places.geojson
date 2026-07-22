@@ -15505,6 +15505,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          0.2058,
+          49.707
+        ]
+      },
+      "properties": {
+        "slug": "etretat",
+        "name": "\u00c9tretat",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "White chalk cliffs on the Normandy coast that the sea has cut into natural arches and a lone needle of rock, the seascape Monet painted again and again.",
+        "tags": [
+          "normandy",
+          "chalk-cliffs",
+          "arch",
+          "monet",
+          "alabaster-coast",
+          "seaside"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1747,
+          45.0537
+        ]
+      },
+      "properties": {
+        "slug": "lascaux-vezere",
+        "name": "Lascaux & the V\u00e9z\u00e8re Caves",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Dordogne valley where Ice Age people painted galleries of bulls, horses, and deer seventeen thousand years ago, so vivid the discovery reset what we thought \"primitive\" meant.",
+        "tags": [
+          "cave-art",
+          "prehistory",
+          "dordogne",
+          "perigord",
+          "font-de-gaume",
+          "ice-age",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.517,
+          47.6161
+        ]
+      },
+      "properties": {
+        "slug": "loire-chateaux",
+        "name": "The Loire Ch\u00e2teaux",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A river valley packed with the pleasure-palaces French kings and nobles built when a castle stopped being a fortress and became a statement, including one with a double-helix staircase said to owe something to Leonardo.",
+        "tags": [
+          "chambord",
+          "chenonceau",
+          "renaissance",
+          "loire",
+          "gardens",
+          "leonardo",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           6.876,
           45.929
         ]
@@ -15702,6 +15800,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.7267,
+          37.9715
+        ]
+      },
+      "properties": {
+        "slug": "acropolis-athens",
+        "name": "The Acropolis & Athens",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The rock at the centre of Athens, crowned by the Parthenon, the building that has defined what \"classical\" means for two and a half thousand years, still standing over a chaotic modern city.",
+        "tags": [
+          "parthenon",
+          "ancient-greece",
+          "classical",
+          "plaka",
+          "acropolis-museum",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.501,
+          38.4824
+        ]
+      },
+      "properties": {
+        "slug": "delphi",
+        "name": "Delphi",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The ancient world's most important oracle, set on a terraced mountainside the Greeks believed was the centre of the earth, where kings and cities came to hear the future in riddles.",
+        "tags": [
+          "oracle",
+          "apollo",
+          "parnassus",
+          "ancient-greece",
+          "ruins",
+          "museum",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           21.63,
           39.715
         ]
@@ -15789,6 +15952,39 @@
           "villages",
           "beaches",
           "anti-santorini"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.75,
+          39.8833
+        ]
+      },
+      "properties": {
+        "slug": "zagori-vikos",
+        "name": "Zagori & the Vikos Gorge",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A cluster of grey-stone mountain villages in the remote northwest, linked by old packhorse trails and single-arch bridges, above a limestone gorge reckoned among the deepest in the world for its width.",
+        "tags": [
+          "epirus",
+          "stone-villages",
+          "vikos",
+          "gorge",
+          "arched-bridges",
+          "pindus",
+          "hiking"
         ],
         "stay": false,
         "season": []
@@ -16120,6 +16316,104 @@
           "rock-churches",
           "gravina",
           "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3486,
+          40.8065
+        ]
+      },
+      "properties": {
+        "slug": "pompeii-herculaneum",
+        "name": "Pompeii & Herculaneum",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Two Roman towns buried alive by Vesuvius in AD 79 and dug back out, one enormous and famous, the other smaller and far better preserved, with wooden doors, upstairs floors, and carbonised food still in place.",
+        "tags": [
+          "roman",
+          "vesuvius",
+          "ruins",
+          "archaeology",
+          "ad79",
+          "frozen-city",
+          "campania"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1968,
+          44.4184
+        ]
+      },
+      "properties": {
+        "slug": "ravenna",
+        "name": "Ravenna's Mosaics",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An unassuming town in the flatlands that was once the capital of the western Roman Empire, holding some of the best-preserved Byzantine mosaics anywhere, ceilings of gold and deep blue from the sixth century.",
+        "tags": [
+          "byzantine",
+          "mosaics",
+          "san-vitale",
+          "galla-placidia",
+          "unesco",
+          "dante"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6136,
+          43.0676
+        ]
+      },
+      "properties": {
+        "slug": "val-dorcia",
+        "name": "The Val d'Orcia",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The exact Tuscany of the imagination, rolling wheat and clay hills with lone cypress rows leading to farmhouses, wrapped around wine towns that take their reds very seriously.",
+        "tags": [
+          "tuscany",
+          "cypress",
+          "pienza",
+          "montalcino",
+          "brunello",
+          "unesco",
+          "landscape"
         ],
         "stay": false,
         "season": []
@@ -16491,6 +16785,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -4.7794,
+          37.879
+        ]
+      },
+      "properties": {
+        "slug": "cordoba-mezquita",
+        "name": "The Mezquita of C\u00f3rdoba",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A vast former mosque whose interior is a hypnotic forest of red-and-white striped double arches, with an entire Christian cathedral built into the middle of it centuries later.",
+        "tags": [
+          "moorish",
+          "mosque-cathedral",
+          "umayyad",
+          "andalusia",
+          "arches",
+          "unesco",
+          "patios"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -4.855,
           43.197
         ]
@@ -16514,6 +16841,71 @@
           "cable-car",
           "covadonga",
           "national-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1744,
+          41.4036
+        ]
+      },
+      "properties": {
+        "slug": "sagrada-familia",
+        "name": "Gaud\u00ed's Barcelona",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A basilica begun in 1882 and still unfinished, its interior a forest of branching stone columns under coloured light, the strangest and most ambitious building of Antoni Gaud\u00ed's strange, ambitious city.",
+        "tags": [
+          "gaudi",
+          "modernisme",
+          "catalonia",
+          "park-guell",
+          "casa-batllo",
+          "unesco",
+          "architecture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5457,
+          42.8805
+        ]
+      },
+      "properties": {
+        "slug": "santiago-de-compostela",
+        "name": "Santiago de Compostela",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The end of the Camino, where pilgrims have walked across Europe for a thousand years to reach one cathedral, and where a giant silver censer swings across the transept on a rope, trailing smoke.",
+        "tags": [
+          "camino",
+          "pilgrimage",
+          "cathedral",
+          "galicia",
+          "botafumeiro",
+          "unesco"
         ],
         "stay": false,
         "season": []
