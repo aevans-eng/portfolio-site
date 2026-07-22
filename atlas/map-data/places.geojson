@@ -17034,6 +17034,236 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          32.8998,
+          24.0889
+        ]
+      },
+      "properties": {
+        "slug": "aswan-abu-simbel",
+        "name": "Aswan & Abu Simbel",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The gentle, Nubian-flavoured southern end of the Nile, where you sail feluccas between granite islands, and, further south, four colossal seated statues guard temples that were sawn apart and lifted to higher ground to save them from a rising lake.",
+        "tags": [
+          "nubia",
+          "abu-simbel",
+          "philae",
+          "felucca",
+          "aswan-dam",
+          "ramesses",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2357,
+          30.0444
+        ]
+      },
+      "properties": {
+        "slug": "cairo",
+        "name": "Cairo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A thundering megacity of some twenty million on the Nile, where a thousand years of minarets and medieval streets, one of the world's great troves of pharaonic treasure, and relentless modern chaos all press together.",
+        "tags": [
+          "islamic-cairo",
+          "khan-el-khalili",
+          "museum",
+          "mosques",
+          "nile",
+          "coptic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1342,
+          29.9792
+        ]
+      },
+      "properties": {
+        "slug": "giza-pyramids",
+        "name": "The Pyramids of Giza",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The last of the ancient world's seven wonders still standing, tombs of stone raised four and a half thousand years ago on the desert edge of Cairo, so old that they were already ancient when the Romans came to gawp.",
+        "tags": [
+          "pyramids",
+          "sphinx",
+          "ancient-egypt",
+          "wonder",
+          "giza",
+          "cairo",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6571,
+          25.7188
+        ]
+      },
+      "properties": {
+        "slug": "luxor",
+        "name": "Luxor",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Built over ancient Thebes, the capital of pharaonic Egypt at its height, a place often called the world's greatest open-air museum, where colossal temples line one bank of the Nile and the tombs of kings honeycomb the hills on the other.",
+        "tags": [
+          "thebes",
+          "karnak",
+          "valley-of-the-kings",
+          "temples",
+          "tombs",
+          "nile",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.975,
+          28.556
+        ]
+      },
+      "properties": {
+        "slug": "mount-sinai",
+        "name": "Mount Sinai & St Catherine's",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The mountain where, by tradition, Moses received the Ten Commandments, climbed through the night by pilgrims and travellers to watch the sun rise over a sea of bare peaks, with one of the world's oldest monasteries at its foot.",
+        "tags": [
+          "moses",
+          "monastery",
+          "sunrise",
+          "pilgrimage",
+          "bedouin",
+          "sinai",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5167,
+          28.5
+        ]
+      },
+      "properties": {
+        "slug": "red-sea-diving",
+        "name": "The Red Sea Reefs",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Some of the most accessible world-class coral reefs on the planet, where you can step off a Sinai beach straight onto walls of fish and coral in warm, staggeringly clear water.",
+        "tags": [
+          "coral-reef",
+          "diving",
+          "snorkeling",
+          "dahab",
+          "blue-hole",
+          "ras-muhammad",
+          "red-sea"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.15,
+          27.3
+        ]
+      },
+      "properties": {
+        "slug": "white-desert",
+        "name": "The White Desert",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A stretch of the Sahara where the wind has carved white chalk into surreal mushrooms, towers, and animal shapes, an eerie moonscape you camp among under a sky thick with stars.",
+        "tags": [
+          "white-desert",
+          "chalk-formations",
+          "bahariya",
+          "camping",
+          "sahara",
+          "oasis"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           25.8,
           59.5
         ]
@@ -20663,6 +20893,235 @@
           "pilgrimage",
           "sveti-vasilije",
           "rock-church"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.131,
+          31.047
+        ]
+      },
+      "properties": {
+        "slug": "ait-benhaddou",
+        "name": "A\u00eft Benhaddou & the Desert Road",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A fortified village of red-earth towers rising in tiers above a river on the old caravan road to the Sahara, so cinematically perfect it has stood in for ancient cities in countless films.",
+        "tags": [
+          "kasbah",
+          "ksar",
+          "ouarzazate",
+          "film-desert",
+          "draa",
+          "sahara",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.2636,
+          35.1688
+        ]
+      },
+      "properties": {
+        "slug": "chefchaouen",
+        "name": "Chefchaouen",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A small mountain town in the Rif whose old medina is painted almost entirely in shades of blue, lane after lane of cobalt and powder-blue walls, steps, and doorways climbing the hillside.",
+        "tags": [
+          "blue-city",
+          "rif",
+          "medina",
+          "mountains",
+          "photogenic",
+          "north-morocco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0078,
+          34.0181
+        ]
+      },
+      "properties": {
+        "slug": "fes",
+        "name": "F\u00e8s",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The best-preserved medieval city in the Arab world, a vast walled medina of thousands of tangled car-free lanes where donkeys still carry the loads, artisans work as they have for centuries, and dyers stand waist-deep in vats of colour.",
+        "tags": [
+          "medina",
+          "tanneries",
+          "qarawiyyin",
+          "medieval",
+          "car-free",
+          "artisans",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.92,
+          31.1
+        ]
+      },
+      "properties": {
+        "slug": "high-atlas",
+        "name": "The High Atlas & Toubkal",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A wall of high mountains just south of Marrakech, home to Berber villages of flat-roofed houses on terraced slopes and to the highest peak in North Africa, walkable from a trailhead an hour from the city.",
+        "tags": [
+          "atlas",
+          "toubkal",
+          "berber",
+          "trekking",
+          "villages",
+          "imlil",
+          "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9811,
+          31.6295
+        ]
+      },
+      "properties": {
+        "slug": "marrakech",
+        "name": "Marrakech",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The great red city at the foot of the Atlas, where a huge open square erupts each night into a carnival of food stalls, musicians, and storytellers, and a labyrinth of souks and hidden courtyard palaces waits behind rose-coloured walls.",
+        "tags": [
+          "medina",
+          "jemaa-el-fna",
+          "souks",
+          "riads",
+          "atlas",
+          "gardens",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8416,
+          34.0209
+        ]
+      },
+      "properties": {
+        "slug": "rabat",
+        "name": "Rabat",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Morocco's calm, walkable capital on the Atlantic, where a blue-and-white cliff-top kasbah, an unfinished medieval minaret, and a Roman-Islamic ruin overgrown with storks sit above a mellow modern city.",
+        "tags": [
+          "capital",
+          "kasbah-oudayas",
+          "hassan-tower",
+          "chellah",
+          "atlantic",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.556,
+          34.074
+        ]
+      },
+      "properties": {
+        "slug": "volubilis-meknes",
+        "name": "Volubilis & Mekn\u00e8s",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The best-preserved Roman ruins in Morocco, a whole provincial city of arches, columns, and intact floor mosaics standing among the wheat fields, beside a grand but overlooked former imperial capital.",
+        "tags": [
+          "roman",
+          "volubilis",
+          "mosaics",
+          "meknes",
+          "imperial-city",
+          "moulay-idriss",
+          "unesco"
         ],
         "stay": false,
         "season": []
