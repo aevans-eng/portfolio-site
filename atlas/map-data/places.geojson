@@ -15898,6 +15898,233 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          116.3972,
+          39.9163
+        ]
+      },
+      "properties": {
+        "slug": "beijing",
+        "name": "Beijing",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The imperial capital, laid out on a grand ceremonial axis, where you cross the enormous walled Forbidden City the emperors ruled from, then dive into the grey courtyard-house lanes that still survive between the towers.",
+        "tags": [
+          "forbidden-city",
+          "hutong",
+          "temple-of-heaven",
+          "imperial",
+          "summer-palace",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0668,
+          30.5728
+        ]
+      },
+      "properties": {
+        "slug": "chengdu-pandas",
+        "name": "Chengdu & the Pandas",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The relaxed capital of Sichuan, famous for teahouses, mouth-numbing hotpot, and the breeding base on its edge where you can watch giant pandas up close as they eat, sleep, and tumble out of trees.",
+        "tags": [
+          "giant-panda",
+          "sichuan",
+          "teahouse",
+          "hotpot",
+          "breeding-base",
+          "leshan"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5704,
+          40.4319
+        ]
+      },
+      "properties": {
+        "slug": "great-wall",
+        "name": "The Great Wall",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Not one wall but many, built and rebuilt over two thousand years and running for thousands of kilometres across mountains and desert, best met on a steep, half-wild section with a watchtower and no crowd.",
+        "tags": [
+          "great-wall",
+          "ming",
+          "mutianyu",
+          "jinshanling",
+          "badaling",
+          "fortification",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.49,
+          24.7736
+        ]
+      },
+      "properties": {
+        "slug": "guilin-yangshuo",
+        "name": "Guilin & Yangshuo",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The landscape from the back of the twenty-yuan note come to life: hundreds of steep, rounded limestone peaks rising like green teeth out of paddy fields and a slow jade-green river winding among them.",
+        "tags": [
+          "karst",
+          "li-river",
+          "yangshuo",
+          "limestone-peaks",
+          "rice-terraces",
+          "cormorant"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.117,
+          29.6558
+        ]
+      },
+      "properties": {
+        "slug": "lhasa-potala",
+        "name": "Lhasa & the Potala",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The historic heart of Tibetan Buddhism, high on the plateau at 3,650 metres, where the vast white-and-red Potala Palace rises over the city and pilgrims still shuffle and prostrate their way around the old temple at its centre.",
+        "tags": [
+          "tibet",
+          "potala",
+          "jokhang",
+          "buddhism",
+          "pilgrimage",
+          "plateau",
+          "high-altitude",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4737,
+          31.2304
+        ]
+      },
+      "properties": {
+        "slug": "shanghai",
+        "name": "Shanghai",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "China's showcase megacity, where a curved waterfront of 1920s European banks stares across the river at a wall of futuristic towers, and leafy old French Concession lanes hide behind the glass.",
+        "tags": [
+          "bund",
+          "art-deco",
+          "skyline",
+          "french-concession",
+          "lilong",
+          "yangtze"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.2785,
+          34.3841
+        ]
+      },
+      "properties": {
+        "slug": "xian-terracotta",
+        "name": "The Terracotta Army, Xi'an",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An entire army of life-size clay soldiers, thousands of them, each with a different face, buried in battle formation to guard a first emperor's tomb and forgotten for two thousand years until a farmer digging a well hit one.",
+        "tags": [
+          "terracotta-warriors",
+          "qin-shi-huang",
+          "xian",
+          "tomb",
+          "silk-road",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           18.1077,
           42.6407
         ]
