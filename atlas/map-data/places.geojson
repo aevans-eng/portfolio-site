@@ -22470,6 +22470,234 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -110.32,
+          24.15
+        ]
+      },
+      "properties": {
+        "slug": "baja-sea-of-cortez",
+        "name": "Baja & the Sea of Cortez",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A long, wild desert peninsula between two seas, where card\u00f3n cacti march to the shore and the Sea of Cortez, so teeming with life that Cousteau called it \"the aquarium of the world,\" fills with whales, whale sharks, and swirling schools of fish.",
+        "tags": [
+          "whales",
+          "whale-sharks",
+          "sea-of-cortez",
+          "desert",
+          "cabo-pulmo",
+          "la-paz",
+          "diving"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.5678,
+          20.6843
+        ]
+      },
+      "properties": {
+        "slug": "chichen-itza",
+        "name": "Chich\u00e9n Itz\u00e1 & the Yucat\u00e1n",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The most famous Maya city, crowned by a perfect stepped pyramid where, twice a year, the sun casts a shadow-serpent slithering down the staircase, at the heart of a region of jungle-shrouded ruins and swimmable sacred sinkholes.",
+        "tags": [
+          "maya",
+          "pyramid",
+          "cenotes",
+          "tulum",
+          "merida",
+          "equinox",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.6,
+          27.2
+        ]
+      },
+      "properties": {
+        "slug": "copper-canyon",
+        "name": "Copper Canyon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A network of vast canyons deeper and larger overall than the Grand Canyon, crossed by one of the world's great railway journeys, in a rugged sierra that is the homeland of the Rar\u00e1muri, famed as some of the finest long-distance runners on Earth.",
+        "tags": [
+          "copper-canyon",
+          "el-chepe",
+          "train",
+          "raramuri",
+          "sierra-madre",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.2574,
+          21.019
+        ]
+      },
+      "properties": {
+        "slug": "guanajuato",
+        "name": "Guanajuato & the Baj\u00edo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A jewel-box colonial city that silver wealth built, its rainbow houses spilling up steep ravines, its traffic hidden in tunnels beneath, and its lanes so narrow that lovers can kiss across one balcony to another.",
+        "tags": [
+          "colonial",
+          "silver",
+          "san-miguel",
+          "callejones",
+          "tunnels",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1332,
+          19.4326
+        ]
+      },
+      "properties": {
+        "slug": "mexico-city",
+        "name": "Mexico City & Teotihuac\u00e1n",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the world's great capitals, built on the ruins of the Aztec island city of Tenochtitl\u00e1n, layering ancient temples, colonial grandeur, world-class museums, and some of the best food anywhere, near the vast pyramids of a civilisation that vanished before the Aztecs arrived.",
+        "tags": [
+          "aztec",
+          "teotihuacan",
+          "food",
+          "museums",
+          "zocalo",
+          "murals",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.25,
+          19.6
+        ]
+      },
+      "properties": {
+        "slug": "monarch-butterflies",
+        "name": "The Monarch Butterfly Reserve",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Every winter, hundreds of millions of monarch butterflies complete one of nature's most astonishing migrations, flying thousands of kilometres from Canada and the US to cluster in these few Mexican mountain forests, weighing down the fir branches and filling the air like drifting orange snow.",
+        "tags": [
+          "monarchs",
+          "migration",
+          "michoacan",
+          "fir-forest",
+          "seasonal",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7266,
+          17.0732
+        ]
+      },
+      "properties": {
+        "slug": "oaxaca",
+        "name": "Oaxaca",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Mexico's culinary and cultural heart, a graceful colonial city where the food is a religion, mezcal flows, indigenous traditions run deep, and a hilltop of ancient Zapotec ruins overlooks it all.",
+        "tags": [
+          "food",
+          "mezcal",
+          "monte-alban",
+          "day-of-the-dead",
+          "indigenous",
+          "crafts",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           28.86,
           47.13
         ]
@@ -23978,6 +24206,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -77.8,
+          -6.2
+        ]
+      },
+      "properties": {
+        "slug": "chachapoyas-kuelap",
+        "name": "Chachapoyas & Ku\u00e9lap",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Northern Peru's answer to Machu Picchu without the crowds: a massive stone citadel wrapped in cloud forest, built by the \"warriors of the clouds\" long before the Inca, near cliff tombs guarded by staring figures and one of the world's tallest waterfalls.",
+        "tags": [
+          "chachapoya",
+          "kuelap",
+          "cloud-forest",
+          "gocta-falls",
+          "fortress",
+          "sarcophagi"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -72.877,
           -13.394
         ]
@@ -24002,6 +24262,169 @@
           "cusco",
           "remote",
           "peru"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9675,
+          -13.532
+        ]
+      },
+      "properties": {
+        "slug": "cusco-sacred-valley",
+        "name": "Cusco & the Sacred Valley",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The ancient capital of the Inca empire, the \"navel of the world,\" where Spanish colonial churches and mansions were built directly on top of masterful Inca stonework, gateway to a valley strewn with ruins and Machu Picchu beyond.",
+        "tags": [
+          "inca",
+          "cusco",
+          "sacred-valley",
+          "ollantaytambo",
+          "pisac",
+          "colonial",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.9,
+          -15.84
+        ]
+      },
+      "properties": {
+        "slug": "lake-titicaca",
+        "name": "Lake Titicaca",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The highest navigable lake in the world, an immense sheet of deep blue water high in the Andes, where people live on floating islands woven entirely from reeds and keep ancient traditions on islands where time seems to have stopped.",
+        "tags": [
+          "titicaca",
+          "uros",
+          "reed-islands",
+          "taquile",
+          "andes",
+          "high-altitude",
+          "quechua"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0428,
+          -12.0464
+        ]
+      },
+      "properties": {
+        "slug": "lima",
+        "name": "Lima",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the world's great food cities, a sprawling Pacific capital where clifftop bohemian districts overlook the surf, colonial palaces line the old centre, and the ceviche and fine dining are reason enough to visit.",
+        "tags": [
+          "gastronomy",
+          "ceviche",
+          "barranco",
+          "colonial",
+          "pacific",
+          "museums"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.13,
+          -14.739
+        ]
+      },
+      "properties": {
+        "slug": "nazca-lines",
+        "name": "The Nazca Lines",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Enormous figures, a hummingbird, a monkey, a spider, and straight lines running for kilometres, etched into the desert floor two thousand years ago, so vast they only reveal themselves from the air, and so mysterious no one is certain why they were made.",
+        "tags": [
+          "nazca",
+          "geoglyphs",
+          "desert",
+          "ancient",
+          "mystery",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.2,
+          -12.5
+        ]
+      },
+      "properties": {
+        "slug": "peruvian-amazon",
+        "name": "The Peruvian Amazon",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Peru's vast, pristine slice of the Amazon, among the most biodiverse places on the planet, where you can drift the rivers past caimans and giant otters, walk beneath the canopy, and watch hundreds of macaws set a clay riverbank ablaze with colour.",
+        "tags": [
+          "amazon",
+          "rainforest",
+          "manu",
+          "tambopata",
+          "macaws",
+          "biodiversity",
+          "lodges"
         ],
         "stay": false,
         "season": []
