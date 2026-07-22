@@ -17601,6 +17601,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          132.4553,
+          34.3853
+        ]
+      },
+      "properties": {
+        "slug": "hiroshima-miyajima",
+        "name": "Hiroshima & Miyajima",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The city rebuilt from the world's first atomic bombing, where a skeletal ruined dome is kept exactly as the blast left it, paired with a nearby island whose great vermilion shrine gate appears to float at high tide.",
+        "tags": [
+          "peace-memorial",
+          "atomic-bomb",
+          "itsukushima",
+          "floating-torii",
+          "deer",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           138.4623,
           36.7328
         ]
@@ -17624,6 +17656,39 @@
           "nagano",
           "japan-alps",
           "winter"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6562,
+          36.5613
+        ]
+      },
+      "properties": {
+        "slug": "kanazawa",
+        "name": "Kanazawa",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A wealthy old castle town on the Japan Sea coast that came through history intact, with one of the country's three great gardens, preserved geisha and samurai quarters, and a tradition of gold leaf so refined the locals put it on ice cream.",
+        "tags": [
+          "kenroku-en",
+          "geisha-district",
+          "samurai",
+          "gold-leaf",
+          "castle",
+          "edo",
+          "chubu"
         ],
         "stay": false,
         "season": []
@@ -17658,6 +17723,138 @@
           "kobo-daishi",
           "wakayama",
           "japan"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7681,
+          35.0116
+        ]
+      },
+      "properties": {
+        "slug": "kyoto",
+        "name": "Kyoto",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Japan's old imperial capital, spared the wartime bombing, holding more than a thousand years of temples, Zen gardens, and geisha districts, and now so popular that the trick is dodging the crowds it draws.",
+        "tags": [
+          "temples",
+          "geisha",
+          "zen-gardens",
+          "fushimi-inari",
+          "gion",
+          "arashiyama",
+          "kansai"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7274,
+          35.3606
+        ]
+      },
+      "properties": {
+        "slug": "mount-fuji",
+        "name": "Mount Fuji & Hakone",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Japan's highest mountain and its great sacred symbol, a near-perfect volcanic cone that has been painted and climbed for centuries, most reliably seen from the hot-spring valleys at its foot in clear winter air.",
+        "tags": [
+          "fuji",
+          "volcano",
+          "hakone",
+          "onsen",
+          "climb",
+          "five-lakes",
+          "sacred"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6503,
+          35.6762
+        ]
+      },
+      "properties": {
+        "slug": "tokyo",
+        "name": "Tokyo",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the world's largest cities, and one that works: a sprawl of distinct neighbourhoods stitched together by immaculate trains, where a thousand-year-old shrine sits a block from a neon canyon and the food is extraordinary at every price.",
+        "tags": [
+          "megacity",
+          "neighbourhoods",
+          "food",
+          "shrines",
+          "trains",
+          "neon",
+          "kanto"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.5469,
+          30.3583
+        ]
+      },
+      "properties": {
+        "slug": "yakushima",
+        "name": "Yakushima",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A near-circular island of mountains and rainforest off Japan's southern tip, drenched in rain and moss, where cedar trees thousands of years old grow in a green half-light that inspired the forest of Princess Mononoke.",
+        "tags": [
+          "ancient-cedars",
+          "rainforest",
+          "jomon-sugi",
+          "mononoke",
+          "moss",
+          "unesco",
+          "kyushu"
         ],
         "stay": false,
         "season": []
