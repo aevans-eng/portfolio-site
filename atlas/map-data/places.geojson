@@ -19955,6 +19955,200 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          37.2606,
+          -2.6527
+        ]
+      },
+      "properties": {
+        "slug": "amboseli",
+        "name": "Amboseli",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The classic image of Africa: herds of great elephants crossing a dusty plain with the snow-capped dome of Kilimanjaro, Africa's highest mountain, floating behind them across the border in Tanzania.",
+        "tags": [
+          "elephants",
+          "kilimanjaro",
+          "safari",
+          "maasai",
+          "swamps",
+          "big-tuskers"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.0833,
+          -0.3667
+        ]
+      },
+      "properties": {
+        "slug": "lake-nakuru",
+        "name": "Lake Nakuru & the Rift Lakes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A shallow soda lake in the floor of the Great Rift Valley that can turn pink with vast flocks of flamingos, ringed by a park that is one of Kenya's best places to see rhinos.",
+        "tags": [
+          "flamingos",
+          "rhinos",
+          "rift-valley",
+          "soda-lakes",
+          "naivasha",
+          "birds"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.15,
+          -1.5
+        ]
+      },
+      "properties": {
+        "slug": "maasai-mara",
+        "name": "The Maasai Mara",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The classic African savanna of the imagination, endless golden grassland dotted with acacias and big cats, and the stage for the great migration, when millions of wildebeest and zebra pour across in a thundering, crocodile-menaced river crossing.",
+        "tags": [
+          "safari",
+          "great-migration",
+          "big-cats",
+          "maasai",
+          "savanna",
+          "wildebeest"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.8219,
+          -1.2921
+        ]
+      },
+      "properties": {
+        "slug": "nairobi-mount-kenya",
+        "name": "Nairobi & Mount Kenya",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The only capital city on earth with a full national park on its doorstep, where lions and rhinos roam against a skyline of tower blocks, gateway to the glaciered second-highest mountain in Africa.",
+        "tags": [
+          "nairobi-national-park",
+          "elephants",
+          "giraffe",
+          "mount-kenya",
+          "gateway",
+          "highlands"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.53,
+          0.55
+        ]
+      },
+      "properties": {
+        "slug": "samburu",
+        "name": "Samburu & the Northern Frontier",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A hot, semi-arid land north of the highlands, drier and wilder than the famous parks, home to a cast of desert-adapted species found almost nowhere else and to the proud, red-ochre Samburu people.",
+        "tags": [
+          "samburu",
+          "special-five",
+          "grevys-zebra",
+          "reticulated-giraffe",
+          "ewaso-river",
+          "arid"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.902,
+          -2.2717
+        ]
+      },
+      "properties": {
+        "slug": "swahili-coast-lamu",
+        "name": "The Swahili Coast & Lamu",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An ancient trading culture where Africa met Arabia and India across the monsoon-borne Indian Ocean, its oldest living town a car-free maze of coral-stone houses and carved doors, where dhows still sail and donkeys carry the loads.",
+        "tags": [
+          "swahili",
+          "lamu",
+          "dhows",
+          "stone-town",
+          "indian-ocean",
+          "car-free",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           48.33,
           29.44
         ]
@@ -22719,6 +22913,233 @@
           "tartini",
           "istria",
           "seafront"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4241,
+          -33.9249
+        ]
+      },
+      "properties": {
+        "slug": "cape-town",
+        "name": "Cape Town & Table Mountain",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the most beautifully sited cities on earth, wrapped around a flat-topped mountain that drops to the sea, where you can ride a cable car above the clouds in the morning and swim off a white beach in the afternoon.",
+        "tags": [
+          "table-mountain",
+          "cape-point",
+          "peninsula",
+          "robben-island",
+          "beaches",
+          "winelands"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8602,
+          -33.9321
+        ]
+      },
+      "properties": {
+        "slug": "cape-winelands",
+        "name": "The Cape Winelands",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A region of vineyards cradled by dramatic mountains just inland of Cape Town, dotted with gabled white Cape Dutch estates, some of the oldest in the Southern Hemisphere, pouring world-class wine over long lunches.",
+        "tags": [
+          "wine",
+          "stellenbosch",
+          "franschhoek",
+          "cape-dutch",
+          "mountains",
+          "food"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.27,
+          -29.47
+        ]
+      },
+      "properties": {
+        "slug": "drakensberg",
+        "name": "The Drakensberg",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "South Africa's grandest mountains, a towering wall of basalt cliffs and green foothills rising to the roof of the country, hiding thousands of ancient San rock paintings in its caves and overhangs.",
+        "tags": [
+          "mountains",
+          "escarpment",
+          "san-rock-art",
+          "hiking",
+          "amphitheatre",
+          "lesotho",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.05,
+          -34.05
+        ]
+      },
+      "properties": {
+        "slug": "garden-route",
+        "name": "The Garden Route",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A famously scenic stretch of South Africa's southern coast, where indigenous forest, cliffs, lagoons, and beaches string together into one of the country's classic self-drive road trips.",
+        "tags": [
+          "coast",
+          "forest",
+          "knysna",
+          "tsitsikamma",
+          "lagoons",
+          "road-trip",
+          "whales"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0473,
+          -26.2041
+        ]
+      },
+      "properties": {
+        "slug": "joburg-cradle",
+        "name": "Johannesburg, Soweto & the Cradle of Humankind",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "South Africa's biggest, rawest city, where the story of apartheid and the struggle against it is told with unflinching power, and where, just outside town, caves have yielded some of the richest evidence of human origins on earth.",
+        "tags": [
+          "apartheid-museum",
+          "soweto",
+          "mandela",
+          "cradle-of-humankind",
+          "fossils",
+          "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.5,
+          -24.0
+        ]
+      },
+      "properties": {
+        "slug": "kruger",
+        "name": "Kruger National Park",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of Africa's great game reserves, the size of a small country, where you can drive yourself past lions, elephants, and rhinos on tarred roads, making a Big Five safari genuinely affordable and independent.",
+        "tags": [
+          "safari",
+          "big-five",
+          "self-drive",
+          "wildlife",
+          "lowveld",
+          "blyde-canyon"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0,
+          -30.5
+        ]
+      },
+      "properties": {
+        "slug": "namaqualand-kalahari",
+        "name": "Namaqualand & the Kalahari",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A semi-desert that stays brown and empty most of the year, then, for a few weeks each spring, erupts into a carpet of orange and white wildflowers stretching to the horizon, in a corner of the country that also holds the red dunes of the Kalahari.",
+        "tags": [
+          "wildflowers",
+          "spring-bloom",
+          "kalahari",
+          "kgalagadi",
+          "desert",
+          "red-dunes",
+          "remote"
         ],
         "stay": false,
         "season": []
