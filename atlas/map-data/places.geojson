@@ -6,6 +6,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          12.7519,
+          47.0744
+        ]
+      },
+      "properties": {
+        "slug": "grossglockner",
+        "name": "The Grossglockner High Alpine Road",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A 1930s mountain road of thirty-six hairpins that climbs to a balcony staring straight at Austria's highest peak and the long grey tongue of its shrinking glacier.",
+        "tags": [
+          "alps",
+          "hohe-tauern",
+          "glacier",
+          "pasterze",
+          "mountain-pass",
+          "driving",
+          "carinthia"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6493,
+          47.5615
+        ]
+      },
+      "properties": {
+        "slug": "hallstatt",
+        "name": "Hallstatt",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A postcard village wedged between a lake and a cliff, sitting on a salt mine so old that an entire Iron Age culture is named after it. It is also so photographed that China built a full-size copy.",
+        "tags": [
+          "salzkammergut",
+          "salt-mine",
+          "alpine-lake",
+          "hallstatt-culture",
+          "unesco",
+          "dachstein"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3738,
+          48.2082
+        ]
+      },
+      "properties": {
+        "slug": "vienna",
+        "name": "Vienna",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The capital of a vanished empire that still lives like one, all imperial boulevards and gilded concert halls, where the coffee houses are protected culture and even the vast central cemetery is a destination.",
+        "tags": [
+          "habsburg",
+          "coffee-house",
+          "ringstrasse",
+          "music",
+          "klimt",
+          "zentralfriedhof",
+          "danube"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -118.1186,
           36.6072
         ]
@@ -15310,6 +15408,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          18.1077,
+          42.6407
+        ]
+      },
+      "properties": {
+        "slug": "dubrovnik",
+        "name": "Dubrovnik",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A walled marble city jutting into the Adriatic, once an independent merchant republic that outmanoeuvred bigger powers for centuries, now so popular that cruise-ship days can make the lanes impassable.",
+        "tags": [
+          "walled-city",
+          "adriatic",
+          "ragusa",
+          "city-walls",
+          "game-of-thrones",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6387,
+          45.0811
+        ]
+      },
+      "properties": {
+        "slug": "istria",
+        "name": "Istria",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Croatia's northern peninsula, quietly Italian in feel, with a Venetian fishing town stacked on a headland, a nearly complete Roman amphitheatre at Pula, and inland hills full of truffles and medieval villages.",
+        "tags": [
+          "rovinj",
+          "pula-arena",
+          "truffles",
+          "motovun",
+          "venetian",
+          "hilltowns",
+          "wine"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.582,
+          44.8654
+        ]
+      },
+      "properties": {
+        "slug": "plitvice-lakes",
+        "name": "Plitvice Lakes",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Sixteen lakes stacked in a wooded canyon, each spilling into the next over natural stone dams, the water an unreal turquoise, all crossed on low wooden boardwalks that run right at the surface.",
+        "tags": [
+          "waterfalls",
+          "travertine",
+          "terraced-lakes",
+          "national-park",
+          "boardwalks",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           6.876,
           45.929
         ]
@@ -15670,6 +15865,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -9.4309,
+          52.9715
+        ]
+      },
+      "properties": {
+        "slug": "cliffs-of-moher",
+        "name": "The Cliffs of Moher & the Burren",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A wall of black cliffs dropping some two hundred metres straight into the Atlantic, next to the Burren, a grey limestone desert where Arctic and Mediterranean flowers grow side by side in the cracks.",
+        "tags": [
+          "clare",
+          "atlantic",
+          "sea-cliffs",
+          "burren",
+          "karst",
+          "wild-atlantic-way"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.8897,
+          53.5606
+        ]
+      },
+      "properties": {
+        "slug": "connemara",
+        "name": "Connemara",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The wild, boggy west of Galway, where the Irish language is still spoken day to day, quartzite mountains rise out of brown moorland, and a Victorian castle sits reflected in a lake below them.",
+        "tags": [
+          "galway",
+          "gaeltacht",
+          "kylemore",
+          "twelve-bens",
+          "bog",
+          "killary",
+          "irish-language"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.4755,
+          53.6947
+        ]
+      },
+      "properties": {
+        "slug": "newgrange",
+        "name": "Newgrange & the Boyne Tombs",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A grass-covered stone mound built around 3200 BC, older than Stonehenge and the Egyptian pyramids, engineered so that at the winter solstice a beam of sunrise light runs straight down a long passage into the burial chamber.",
+        "tags": [
+          "passage-tomb",
+          "neolithic",
+          "winter-solstice",
+          "bru-na-boinne",
+          "meath",
+          "unesco",
+          "megalithic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.2497,
           42.4913
         ]
@@ -15904,6 +16197,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.9041,
+          52.3676
+        ]
+      },
+      "properties": {
+        "slug": "amsterdam",
+        "name": "Amsterdam's Canal Ring",
+        "kind": "wander-zone",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A city built as a set of concentric canal rings four centuries ago, still lined with narrow leaning merchant houses, best seen from a bike or the quiet back canals rather than the packed centre.",
+        "tags": [
+          "canals",
+          "golden-age",
+          "jordaan",
+          "gables",
+          "bikes",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.82,
+          52.06
+        ]
+      },
+      "properties": {
+        "slug": "hoge-veluwe",
+        "name": "De Hoge Veluwe & the Kr\u00f6ller-M\u00fcller",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A national park of heath and pine you cross on free white bikes left out for anyone, with one of the world's great Van Gogh collections sitting in a museum in the middle of the woods.",
+        "tags": [
+          "national-park",
+          "van-gogh",
+          "kroller-muller",
+          "white-bikes",
+          "heath",
+          "sculpture-garden"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.66,
+          53.42
+        ]
+      },
+      "properties": {
+        "slug": "wadden-sea",
+        "name": "The Wadden Sea & Mudflat Walking",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The largest unbroken system of tidal mudflats on Earth, where at low water you can walk for hours across the sea floor from the mainland to an offshore island, with a guide who knows which channels will drown you.",
+        "tags": [
+          "wadlopen",
+          "mudflats",
+          "tidal",
+          "frisian-islands",
+          "birds",
+          "seals",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           13.6,
           68.1
         ]
@@ -15961,6 +16351,103 @@
           "cusco",
           "remote",
           "peru"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.546,
+          41.1608
+        ]
+      },
+      "properties": {
+        "slug": "douro-valley",
+        "name": "The Douro Valley",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The oldest demarcated wine region in the world, where the Douro river winds between hillsides terraced by hand into thousands of narrow steps, all of it for port.",
+        "tags": [
+          "port-wine",
+          "terraces",
+          "river",
+          "quintas",
+          "pinhao",
+          "unesco",
+          "railway"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9135,
+          38.5714
+        ]
+      },
+      "properties": {
+        "slug": "evora",
+        "name": "\u00c9vora",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A walled town in the empty Alentejo plains with a Roman temple still standing in its centre, a chapel lined floor to ceiling with human bones, and a stone circle older than Stonehenge in the fields nearby.",
+        "tags": [
+          "alentejo",
+          "chapel-of-bones",
+          "roman-temple",
+          "almendres",
+          "megaliths",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.3906,
+          38.7876
+        ]
+      },
+      "properties": {
+        "slug": "sintra",
+        "name": "Sintra",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A cool, wooded hill above Lisbon that Portuguese kings and rich romantics filled with fantasy palaces, including a lurid yellow-and-red one on the summit and a garden with an initiation well you spiral down into the earth.",
+        "tags": [
+          "pena-palace",
+          "romanticism",
+          "quinta-da-regaleira",
+          "moorish-castle",
+          "lisbon",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -16060,6 +16547,104 @@
           "tagus",
           "swords",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.679,
+          46.6799
+        ]
+      },
+      "properties": {
+        "slug": "glacier-express",
+        "name": "The Glacier Express & the Bernina Line",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A day-long train billed as the slowest express in the world, crawling across a viaduct that curves into a cliff, over passes, and down to Italian-speaking valleys, on a line hand-built through mountains a century ago.",
+        "tags": [
+          "rhaetian-railway",
+          "graubunden",
+          "bernina",
+          "landwasser-viaduct",
+          "unesco",
+          "engineering",
+          "alps"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9086,
+          46.5936
+        ]
+      },
+      "properties": {
+        "slug": "lauterbrunnen",
+        "name": "Lauterbrunnen & the Jungfrau",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A flat green valley walled in by sheer cliffs with seventy-two waterfalls spilling off the tops, and car-free villages perched on the rim above it. Tolkien is said to have modelled Rivendell on it.",
+        "tags": [
+          "bernese-oberland",
+          "waterfalls",
+          "murren",
+          "wengen",
+          "jungfraujoch",
+          "cliffs",
+          "alps"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6586,
+          45.9763
+        ]
+      },
+      "properties": {
+        "slug": "matterhorn",
+        "name": "The Matterhorn & Zermatt",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The most recognisable mountain in the Alps, a near-perfect rock pyramid standing alone above a car-free village, first climbed in a race that killed four men on the way down.",
+        "tags": [
+          "alps",
+          "valais",
+          "zermatt",
+          "gornergrat",
+          "mountaineering",
+          "glacier"
         ],
         "stay": false,
         "season": []
