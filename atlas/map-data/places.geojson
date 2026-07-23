@@ -18402,6 +18402,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -74.03,
+          11.3
+        ]
+      },
+      "properties": {
+        "slug": "tayrona-minca",
+        "name": "Tayrona & Minca",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Where the snow-capped Sierra Nevada plunges to the Caribbean in the space of a few miles: jungle trails opening onto palm-backed golden beaches in Tayrona, and, up in the cool green hills, the mellow coffee-and-birdsong village of Minca.",
+        "tags": [
+          "tayrona",
+          "minca",
+          "jungle",
+          "beaches",
+          "sierra-nevada",
+          "birds",
+          "coffee"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           15.2429,
           -4.2634
         ]
@@ -20685,6 +20718,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -89.954,
+          15.534
+        ]
+      },
+      "properties": {
+        "slug": "semuc-champey",
+        "name": "Semuc Champey",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A staircase of turquoise limestone pools spilling through the jungle, formed on a natural stone bridge under which an entire river vanishes underground and roars beneath your feet, deep in the remote Guatemalan interior.",
+        "tags": [
+          "limestone-pools",
+          "turquoise",
+          "caves",
+          "jungle",
+          "lanquin",
+          "river",
+          "waterfall"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -89.6237,
           17.222
         ]
@@ -21402,6 +21468,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          98.141,
+          3.554
+        ]
+      },
+      "properties": {
+        "slug": "bukit-lawang",
+        "name": "Bukit Lawang",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A riverside jungle village on the edge of Sumatra's great rainforest, one of the last places on Earth where you can trek into the wild and meet the critically endangered Sumatran orangutan swinging through the canopy.",
+        "tags": [
+          "orangutans",
+          "rainforest",
+          "gunung-leuser",
+          "sumatra",
+          "jungle-trek",
+          "river",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           119.489,
           -8.55
         ]
@@ -21989,6 +22088,38 @@
           "viterbo",
           "dali",
           "oddity"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.71,
+          44.128
+        ]
+      },
+      "properties": {
+        "slug": "cinque-terre",
+        "name": "The Cinque Terre",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Five impossibly pretty fishing villages of stacked pastel houses clinging to the cliffs of the Ligurian coast, linked by a footpath along the sea and by trains that burrow through the headlands, above terraced vineyards dropping to the blue Mediterranean.",
+        "tags": [
+          "liguria",
+          "coast",
+          "villages",
+          "hiking",
+          "terraces",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -25389,6 +25520,39 @@
           "irrawaddy",
           "ancient-capital",
           "sunrise",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.63,
+          16.89
+        ]
+      },
+      "properties": {
+        "slug": "hpa-an",
+        "name": "Hpa-An",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A sleepy river town ringed by dramatic limestone mountains riddled with Buddha-filled caves, a laid-back, rural corner of Myanmar that travellers who found it quietly loved more than the famous sights.",
+        "tags": [
+          "karst",
+          "caves",
+          "mount-zwegabin",
+          "monasteries",
+          "rural",
+          "thanlwin",
           "care"
         ],
         "stay": false,
@@ -30836,6 +31000,38 @@
           "mucumbari",
           "adventure",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.9784,
+          22.823
+        ]
+      },
+      "properties": {
+        "slug": "ha-giang-loop",
+        "name": "The H\u00e0 Giang Loop",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A multi-day motorbike loop through the wildest, most spectacular mountains in Vietnam's far north, past limestone peaks, terraced valleys, and villages of ethnic-minority peoples, that has quietly become the country's most beloved adventure.",
+        "tags": [
+          "motorbike",
+          "mountains",
+          "ethnic-minorities",
+          "karst",
+          "homestays",
+          "far-north"
         ],
         "stay": false,
         "season": []
