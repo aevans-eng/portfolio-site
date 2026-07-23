@@ -18402,39 +18402,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.03,
-          11.3
-        ]
-      },
-      "properties": {
-        "slug": "tayrona-minca",
-        "name": "Tayrona & Minca",
-        "kind": "nature",
-        "kindLabel": "Nature",
-        "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
-        "drive": "",
-        "hook": "Where the snow-capped Sierra Nevada plunges to the Caribbean in the space of a few miles: jungle trails opening onto palm-backed golden beaches in Tayrona, and, up in the cool green hills, the mellow coffee-and-birdsong village of Minca.",
-        "tags": [
-          "tayrona",
-          "minca",
-          "jungle",
-          "beaches",
-          "sierra-nevada",
-          "birds",
-          "coffee"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           15.2429,
           -4.2634
         ]
@@ -22523,39 +22490,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.4913,
-          33.2846
-        ]
-      },
-      "properties": {
-        "slug": "beppu",
-        "name": "Beppu",
-        "kind": "town",
-        "kindLabel": "Town",
-        "color": "#3c7f7a",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
-        "drive": "",
-        "hook": "A whole town on the boil: Beppu gushes more hot-spring water than anywhere else in Japan, so steam drifts from drains and hillsides all over it, and you can bathe in mineral pools, get buried in naturally-heated sand, or gawp at hot springs the colour of blood and cobalt.",
-        "tags": [
-          "onsen",
-          "hot-springs",
-          "jigoku",
-          "hells",
-          "sand-bath",
-          "kyushu",
-          "steam"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           132.4553,
           34.3853
         ]
@@ -25553,39 +25487,6 @@
           "irrawaddy",
           "ancient-capital",
           "sunrise",
-          "care"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          97.63,
-          16.89
-        ]
-      },
-      "properties": {
-        "slug": "hpa-an",
-        "name": "Hpa-An",
-        "kind": "town",
-        "kindLabel": "Town",
-        "color": "#3c7f7a",
-        "depth": 5,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
-        "radius": 11,
-        "drive": "",
-        "hook": "A sleepy river town ringed by dramatic limestone mountains riddled with Buddha-filled caves, a laid-back, rural corner of Myanmar that travellers who found it quietly loved more than the famous sights.",
-        "tags": [
-          "karst",
-          "caves",
-          "mount-zwegabin",
-          "monasteries",
-          "rural",
-          "thanlwin",
           "care"
         ],
         "stay": false,
