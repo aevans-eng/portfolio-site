@@ -22064,6 +22064,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.3426,
+          44.4949
+        ]
+      },
+      "properties": {
+        "slug": "bologna-emilia-romagna",
+        "name": "Bologna & Emilia-Romagna",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The gastronomic heart of Italy, a region where the everyday food is arguably the country's best, anchored by Bologna, a warm red-brick university city of endless arcaded porticoes that most first-timers skip on the dash between Venice and Florence.",
+        "tags": [
+          "food",
+          "bologna",
+          "parma",
+          "modena",
+          "porticoes",
+          "ragu",
+          "balsamic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.2497,
           42.4913
         ]
