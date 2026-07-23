@@ -22457,6 +22457,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          137.63,
+          36.25
+        ]
+      },
+      "properties": {
+        "slug": "kamikochi",
+        "name": "Kamik\u014dchi & the Japan Alps",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A pristine highland valley in the heart of the Northern Japan Alps, where a clear turquoise river winds through marshes and forest beneath a wall of jagged three-thousand-metre peaks, closed to private cars and kept deliberately wild.",
+        "tags": [
+          "japan-alps",
+          "kamikochi",
+          "hiking",
+          "azusa-river",
+          "hotaka",
+          "mount-yari",
+          "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           136.6562,
           36.5613
         ]
@@ -22524,6 +22557,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          135.771,
+          33.84
+        ]
+      },
+      "properties": {
+        "slug": "kumano-kodo",
+        "name": "The Kumano Kod\u014d",
+        "kind": "route",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An ancient network of pilgrimage trails winding for days through the misty cedar forests and mountains of the Kii Peninsula, linking great shrines and hot-spring villages, one of only two pilgrimage routes in the world granted the same heritage status as Spain's Camino de Santiago.",
+        "tags": [
+          "pilgrimage",
+          "kii-peninsula",
+          "cedar-forest",
+          "hongu",
+          "onsen",
+          "unesco",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           135.7681,
           35.0116
         ]
@@ -22580,6 +22646,38 @@
           "climb",
           "five-lakes",
           "sacred"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.995,
+          34.4583
+        ]
+      },
+      "properties": {
+        "slug": "naoshima",
+        "name": "Naoshima, the Art Island",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A small fishing island in the calm Inland Sea that a publishing magnate and a great architect turned into one of the world's most remarkable art destinations, where sleek concrete galleries are half-buried in hillsides and a giant polka-dot pumpkin sits on a jetty over the water.",
+        "tags": [
+          "contemporary-art",
+          "benesse",
+          "tadao-ando",
+          "kusama",
+          "seto-inland-sea",
+          "islands"
         ],
         "stay": false,
         "season": []
