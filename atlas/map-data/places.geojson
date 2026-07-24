@@ -21907,6 +21907,173 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          75.1779,
+          20.0268
+        ]
+      },
+      "properties": {
+        "slug": "ajanta-ellora",
+        "name": "Ajanta & Ellora Caves",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Two of the greatest works of rock-cut architecture on earth: at Ajanta, a cliff of Buddhist cave-temples with 2,000-year-old murals; at Ellora, a temple the size of a cathedral carved top-down from a single hill of solid basalt.",
+        "tags": [
+          "rock-cut",
+          "kailasa",
+          "buddhist",
+          "hindu",
+          "jain",
+          "murals",
+          "maharashtra",
+          "deccan",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8765,
+          31.62
+        ]
+      },
+      "properties": {
+        "slug": "amritsar",
+        "name": "Amritsar & the Golden Temple",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The holiest shrine of the Sikhs: a gilded temple seeming to float on a sacred pool, ringed by white marble, open to everyone of any faith, and attached to a kitchen that feeds tens of thousands of people, free, every single day.",
+        "tags": [
+          "sikh",
+          "golden-temple",
+          "harmandir-sahib",
+          "langar",
+          "punjab",
+          "wagah",
+          "food"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2663,
+          27.041
+        ]
+      },
+      "properties": {
+        "slug": "darjeeling",
+        "name": "Darjeeling",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The old British hill station of tea and toy trains: a town tumbling down a Himalayan ridge among the world's most famous tea gardens, with a narrow-gauge steam railway puffing up to it and Kangchenjunga filling the skyline on a clear morning.",
+        "tags": [
+          "tea",
+          "toy-train",
+          "kangchenjunga",
+          "hill-station",
+          "west-bengal",
+          "himalaya",
+          "tiger-hill"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8278,
+          15.4989
+        ]
+      },
+      "properties": {
+        "slug": "goa",
+        "name": "Goa",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "India's smallest state and its most famous coast: 100 km of Arabian Sea beaches, faded Portuguese churches and mansions, and a laid-back \"susegad\" ease that has drawn everyone from hippies to package tours for fifty years.",
+        "tags": [
+          "beaches",
+          "portuguese",
+          "konkan",
+          "susegad",
+          "old-goa",
+          "spice",
+          "seafood"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3188,
+          14.5479
+        ]
+      },
+      "properties": {
+        "slug": "gokarna",
+        "name": "Gokarna",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Goa's quieter, soulful cousin down the Karnataka coast: an old Hindu pilgrimage town backed by a string of cliff-framed beaches you walk between on a headland path, with far less noise and neon than the party coast to the north.",
+        "tags": [
+          "beaches",
+          "temple-town",
+          "karnataka",
+          "konkan",
+          "om-beach",
+          "backpacker",
+          "coastal-walk"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           76.46,
           15.335
         ]
@@ -22005,6 +22172,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.0243,
+          26.2389
+        ]
+      },
+      "properties": {
+        "slug": "jodhpur",
+        "name": "Jodhpur",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The \"Blue City\": a sea of indigo-washed houses spilling down from one of India's mightiest hill forts, Mehrangarh, whose ramparts rise sheer from the rock and look down on a tangle of bazaars at the edge of the Thar Desert.",
+        "tags": [
+          "blue-city",
+          "mehrangarh",
+          "marwar",
+          "rajasthan",
+          "fort",
+          "thar-edge",
+          "bazaar"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           76.3388,
           9.4981
         ]
@@ -22070,6 +22270,107 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          77.5771,
+          34.1526
+        ]
+      },
+      "properties": {
+        "slug": "ladakh",
+        "name": "Ladakh",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A high-altitude cold desert on the Tibetan plateau's western edge, whitewashed gompas on ochre crags, prayer flags over 5,000-metre passes, and lakes so blue against the bare rock they look unreal, all inside India but a world from it.",
+        "tags": [
+          "himalaya",
+          "tibetan-buddhism",
+          "leh",
+          "pangong",
+          "nubra",
+          "gompas",
+          "high-desert",
+          "passes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.5822,
+          25.2986
+        ]
+      },
+      "properties": {
+        "slug": "meghalaya",
+        "name": "Meghalaya \u2014 Living Root Bridges",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The wettest inhabited place on earth, where for centuries the Khasi people have trained the roots of living fig trees across rivers to grow into bridges, some centuries old and strong enough to carry crowds, deep in a green, cloud-wrapped hill country.",
+        "tags": [
+          "root-bridges",
+          "cherrapunji",
+          "khasi",
+          "waterfalls",
+          "caves",
+          "shillong",
+          "northeast",
+          "monsoon"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.75,
+          23.95
+        ]
+      },
+      "properties": {
+        "slug": "rann-of-kutch",
+        "name": "Rann of Kutch",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A salt marsh the size of a small country that dries each winter into a dead-flat, blinding-white plain stretching to the horizon, best under a full moon, when the salt glows and the line between ground and sky disappears.",
+        "tags": [
+          "salt-desert",
+          "white-rann",
+          "gujarat",
+          "kutch",
+          "handicrafts",
+          "full-moon",
+          "rann-utsav"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           78.2676,
           30.0869
         ]
@@ -22103,6 +22404,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          88.6065,
+          27.3389
+        ]
+      },
+      "properties": {
+        "slug": "sikkim-gangtok",
+        "name": "Sikkim",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A tiny former Himalayan kingdom wedged between Nepal, Tibet, and Bhutan, rising from subtropical valleys to Kangchenjunga, the third-highest mountain on earth, with Buddhist monasteries, high glacial lakes, and famously friendly hill people.",
+        "tags": [
+          "himalaya",
+          "kangchenjunga",
+          "buddhist",
+          "monasteries",
+          "gangtok",
+          "tsomgo",
+          "northeast"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0713,
+          32.2264
+        ]
+      },
+      "properties": {
+        "slug": "spiti-valley",
+        "name": "Spiti Valley",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A cold desert valley high in Himachal, quieter and rougher than Ladakh, where whitewashed monasteries stack up on bluffs above a grey river and villages claim to be among the highest inhabited places on earth.",
+        "tags": [
+          "himalaya",
+          "tibetan-buddhism",
+          "key-monastery",
+          "high-desert",
+          "himachal",
+          "villages",
+          "snow-leopard"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           78.0421,
           27.1751
         ]
@@ -22125,6 +22492,39 @@
           "agra",
           "shah-jahan",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7125,
+          24.5854
+        ]
+      },
+      "properties": {
+        "slug": "udaipur",
+        "name": "Udaipur",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Rajasthan's romantic counterpoint to the desert cities: a white palace-city built around a chain of lakes, with a marble palace seeming to float on the water and old ghats where the town does its washing and its worship at the water's edge.",
+        "tags": [
+          "lakes",
+          "city-palace",
+          "mewar",
+          "rajasthan",
+          "ghats",
+          "pichola",
+          "sunset"
         ],
         "stay": false,
         "season": []
