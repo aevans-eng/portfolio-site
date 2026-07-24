@@ -18307,6 +18307,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          118.161,
+          30.134
+        ]
+      },
+      "properties": {
+        "slug": "huangshan",
+        "name": "Huangshan (Yellow Mountains)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The granite peaks that Chinese landscape painting has drawn for a thousand years: jagged summits, gnarled pines rooted in bare rock, and a \"sea of clouds\" that pools in the valleys and leaves the tops floating.",
+        "tags": [
+          "yellow-mountains",
+          "granite-peaks",
+          "sea-of-clouds",
+          "anhui",
+          "pines",
+          "sunrise",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.918,
+          33.2603
+        ]
+      },
+      "properties": {
+        "slug": "jiuzhaigou",
+        "name": "Jiuzhaigou",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A remote valley in the Sichuan highlands filled with lakes so clear and so vividly coloured, turquoise, jade, cobalt, that the fallen logs and travertine terraces on their beds look suspended in glass.",
+        "tags": [
+          "lakes",
+          "waterfalls",
+          "sichuan",
+          "tibetan",
+          "travertine",
+          "autumn",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           91.117,
           29.6558
         ]
@@ -18373,6 +18439,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          100.1167,
+          27.1833
+        ]
+      },
+      "properties": {
+        "slug": "tiger-leaping-gorge",
+        "name": "Tiger Leaping Gorge",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the deepest river gorges on earth, where the young Yangtze roars through a two-kilometre-deep slot between snow peaks, and a two-day footpath traverses the cliffs high above it.",
+        "tags": [
+          "trek",
+          "yangtze",
+          "yunnan",
+          "high-trail",
+          "haba-snow-mountain",
+          "gorge",
+          "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           109.2785,
           34.3841
         ]
@@ -18394,6 +18493,72 @@
           "xian",
           "tomb",
           "silk-road",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.75,
+          23.0967
+        ]
+      },
+      "properties": {
+        "slug": "yuanyang-rice-terraces",
+        "name": "Yuanyang Rice Terraces",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Whole mountainsides carved into thousands of curved rice terraces by the Hani people over more than a thousand years, and in winter, flooded and mirror-still, they turn the hills into a staircase of sky.",
+        "tags": [
+          "rice-terraces",
+          "hani",
+          "yunnan",
+          "honghe",
+          "reflections",
+          "sunrise",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.4344,
+          29.3157
+        ]
+      },
+      "properties": {
+        "slug": "zhangjiajie",
+        "name": "Zhangjiajie",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Thousands of sheer quartzite pillars, some 300 metres tall, rising out of the mist in a forested park in Hunan, the landscape that was scanned and stylised into the floating \"Hallelujah Mountains\" of Avatar.",
+        "tags": [
+          "avatar-mountains",
+          "wulingyuan",
+          "sandstone-pillars",
+          "hunan",
+          "glass-bridge",
+          "tianmen",
           "unesco"
         ],
         "stay": false,
