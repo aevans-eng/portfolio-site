@@ -25375,6 +25375,79 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          13.566,
+          42.47
+        ]
+      },
+      "properties": {
+        "slug": "abruzzo-gran-sasso",
+        "name": "Abruzzo \u2014 Gran Sasso & the Wild Apennines",
+        "kind": "nature",
+        "country": "italy",
+        "region": "rome-lazio",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Italy's empty quarter, an hour from Rome: the highest Apennine peaks over a steppe-like plateau nicknamed \"little Tibet\", ruined mountaintop castles, cliff-hung hermitages, and the last wild bears and wolves in the peninsula's spine.",
+        "voice": "Italians volunteer it unprompted and twice over: \"l'Abruzzo \u00e8 drammaticamente sottovalutato \u2014 l'entroterra \u00e8 pieno di villaggi pittoreschi, con castelli, eremi e monaster",
+        "tags": [
+          "gran-sasso",
+          "campo-imperatore",
+          "apennines",
+          "bears",
+          "wolves",
+          "hermitages",
+          "borghi",
+          "rocca-calascio"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6027,
+          40.634
+        ]
+      },
+      "properties": {
+        "slug": "amalfi-coast",
+        "name": "Amalfi Coast",
+        "kind": "nature",
+        "country": "italy",
+        "region": "naples-campania",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Pastel towns stacked impossibly down cliffs into a turquoise sea \u2014 Positano, Amalfi, and Ravello strung along one of the most beautiful coastlines on earth, with lemon terraces above and a medieval maritime republic's history underneath.",
+        "voice": "It's the fixture on Italians' own must-see lists: \"Costiera amalfitana,\" one wrote, recommending it first among the south's essentials \u2014 \"belle cittadine caratteristiche;",
+        "tags": [
+          "positano",
+          "ravello",
+          "sentiero-degli-dei",
+          "lemons",
+          "coast-road",
+          "ferries",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           11.3426,
           44.4949
         ]
@@ -25536,7 +25609,7 @@
         "radius": 11,
         "drive": "",
         "hook": "A whole range of pale limestone towers that turn rose and orange at sunset, standing over green meadows instead of the usual grey Alpine scree. Old coral reefs, pushed two miles into the sky.",
-        "voice": "",
+        "voice": "The fame now cuts both ways, and locals say so: \"Sopravvalutato: Dolomiti! Non andateci!\" one CAI-trail veteran wrote with heavy irony \u2014 flip-flops and sundresses at alti",
         "tags": [
           "alps",
           "limestone",
@@ -25592,6 +25665,79 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.2558,
+          43.7696
+        ]
+      },
+      "properties": {
+        "slug": "florence",
+        "name": "Florence",
+        "kind": "town",
+        "country": "italy",
+        "region": "tuscany-umbria",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The city where the Renaissance happened: Brunelleschi's dome over a sea of terracotta roofs, Michelangelo's David, and the Uffizi's corridors of Botticelli \u2014 the highest density of Western art anywhere, in a centre you cross on foot in twenty minutes.",
+        "voice": "The affection survives the crowds: \"Anyone I know who has been has loved their time in Florence\u2026 it's considered the birthplace of the Renaissance,\" one traveller wrote, ",
+        "tags": [
+          "renaissance",
+          "uffizi",
+          "duomo",
+          "david",
+          "ponte-vecchio",
+          "tuscany",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6365,
+          43.7262
+        ]
+      },
+      "properties": {
+        "slug": "le-marche-urbino",
+        "name": "Le Marche & Urbino",
+        "kind": "town",
+        "country": "italy",
+        "region": "tuscany-umbria",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The region Italians call \"a Molise that made it\": Tuscany's hills without Tuscany's crowds, a perfect Renaissance city on a double hilltop, white cliffs over a green Adriatic, and one of Europe's grandest cave systems \u2014 all largely left to the Italians themselves.",
+        "voice": "The region's own thread says it plainly: \"una delle regioni pi\u00f9 belle e sottovalutate d'Italia,\" with specifics \u2014 \"bella visita a Recanati, Sirolo, Genga\u2026 davvero stupend",
+        "tags": [
+          "urbino",
+          "conero",
+          "sirolo",
+          "frasassi",
+          "recanati",
+          "adriatic",
+          "renaissance",
+          "borghi"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           16.6106,
           40.6664
         ]
@@ -25618,6 +25764,42 @@
           "rock-churches",
           "gravina",
           "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2681,
+          40.8518
+        ]
+      },
+      "properties": {
+        "slug": "naples",
+        "name": "Naples",
+        "kind": "town",
+        "country": "italy",
+        "region": "naples-campania",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Italy at maximum volume: the city that invented pizza, living raucously on top of Greek and Roman foundations under Vesuvius, with one of the world's great archaeology museums hiding in the din.",
+        "voice": "The argument itself is the evidence. Challenged that the city is overrated, a Neapolitan fired back: \"You have the MANN, one of the most important archaeology museums in ",
+        "tags": [
+          "pizza",
+          "mann",
+          "spaccanapoli",
+          "vesuvius",
+          "baroque",
+          "street-life",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -25699,6 +25881,117 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "slug": "rome",
+        "name": "Rome",
+        "kind": "town",
+        "country": "italy",
+        "region": "rome-lazio",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The Eternal City, literally: the Colosseum and Forum of the ancient empire, the Pantheon's two-thousand-year-old dome, the Vatican's Sistine ceiling, and baroque fountains on every second piazza \u2014 three millennia stacked in one living, chaotic, glorious city.",
+        "voice": "Travellers come back slightly stunned: \"You're surrounded by history everywhere you turn, and it's impossible to escape it,\" one wrote; another, planning honestly \u2014 \"Rome",
+        "tags": [
+          "colosseum",
+          "forum",
+          "vatican",
+          "pantheon",
+          "trastevere",
+          "baroque",
+          "ancient",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7355,
+          38.1735
+        ]
+      },
+      "properties": {
+        "slug": "san-vito-zingaro",
+        "name": "San Vito Lo Capo & the Zingaro Reserve",
+        "kind": "nature",
+        "country": "italy",
+        "region": "sicily",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The beach Sicilians themselves call the most beautiful they've ever seen: a white crescent under a headland at San Vito Lo Capo, and next door a car-free coastal reserve where a footpath links seven turquoise coves you can only reach by walking or by boat.",
+        "voice": "The source is as native as it gets: \"Io sono siciliano\u2026 la spiaggia pi\u00f9 bella in assoluto che io abbia mai visto qui \u00e8 la zona di San Vito Lo Capo \u2014 \u00e8 veramente bella sia",
+        "tags": [
+          "sicily",
+          "beach",
+          "zingaro",
+          "coves",
+          "snorkeling",
+          "couscous",
+          "tonnara",
+          "coastal-walk"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7768,
+          45.6495
+        ]
+      },
+      "properties": {
+        "slug": "trieste",
+        "name": "Trieste",
+        "kind": "town",
+        "country": "italy",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Italy's least Italian city and proud of it: a grand Habsburg port facing the Adriatic with Vienna at its back, all monumental squares, literary caf\u00e9s, and a white castle on the sea \u2014 the empire's lost harbour, still slightly elsewhere.",
+        "voice": "It recurs across languages: \"a totally unexpected BLAST. The hills! The harbour! The architecture!\" from one traveller; Italians answering their own underrated-destinatio",
+        "tags": [
+          "habsburg",
+          "miramare",
+          "coffee",
+          "karst",
+          "bora",
+          "joyce",
+          "border-city",
+          "adriatic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           11.6136,
           43.0676
         ]
@@ -25725,6 +26018,43 @@
           "brunello",
           "unesco",
           "landscape"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3155,
+          45.4408
+        ]
+      },
+      "properties": {
+        "slug": "venice",
+        "name": "Venice",
+        "kind": "town",
+        "country": "italy",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The only city on earth built entirely on water: a labyrinth of canals, marble palaces, and footbridges where every wrong turn is the point, still carrying a thousand years of maritime-empire swagger.",
+        "voice": "Travellers who stay come back converted: \"We spent three nights in Venice and all I have to say is MAGICAL,\" one wrote \u2014 \"I'm convinced 95% of negative Venice stories are",
+        "tags": [
+          "lagoon",
+          "canals",
+          "san-marco",
+          "doge",
+          "biennale",
+          "murano",
+          "carnevale",
+          "unesco"
         ],
         "stay": false,
         "season": []
