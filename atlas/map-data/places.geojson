@@ -564,6 +564,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          131.5583,
+          -24.2506
+        ]
+      },
+      "properties": {
+        "slug": "kings-canyon-macdonnells",
+        "name": "Kings Canyon & the West MacDonnells",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The rest of the Red Centre that isn't the Rock: a 100-metre-walled canyon you walk the rim of at sunrise, and a chain of hidden gorges and waterholes strung west of Alice Springs that many Australians have never seen.",
+        "tags": [
+          "red-centre",
+          "kings-canyon",
+          "west-macdonnells",
+          "larapinta",
+          "gorges",
+          "outback",
+          "northern-territory"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           144.9631,
           -37.8136
         ]
@@ -17170,6 +17203,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -56.4836,
+          -21.1261
+        ]
+      },
+      "properties": {
+        "slug": "bonito",
+        "name": "Bonito",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A town in Brazil's interior where the rivers run so clear you snorkel down them as if flying, drifting over white sand and waving weed with shoals of fish an arm's length away.",
+        "tags": [
+          "snorkeling",
+          "rivers",
+          "cerrado",
+          "caves",
+          "waterfalls",
+          "mato-grosso-do-sul",
+          "ecotourism"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -32.43,
           -3.85
         ]
@@ -27125,6 +27191,39 @@
           "cordillera",
           "indigenous",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.7286,
+          9.1732
+        ]
+      },
+      "properties": {
+        "slug": "camiguin",
+        "name": "Camiguin",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A small volcanic island where you can dive a well-kept reef in the morning, soak in a spring-fed pool at the foot of a volcano in the afternoon, and have most of it nearly to yourself.",
+        "tags": [
+          "island",
+          "volcano",
+          "diving",
+          "hot-springs",
+          "white-island",
+          "waterfalls",
+          "mindanao"
         ],
         "stay": false,
         "season": []
