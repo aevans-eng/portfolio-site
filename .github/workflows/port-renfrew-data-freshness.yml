@@ -1,0 +1,57 @@
+# Watchdog for aaronevans.ca/port-renfrew comment-window data.
+#
+# The site's data is refreshed by a weekly scheduled task on Aaron's machine
+# (forestry-port-renfrew/scripts/auto_refresh.ps1). If that ever stops running
+# (laptop off, moved, broken), this workflow notices the live data going stale
+# and opens an issue, which emails Aaron. It never fixes anything itself.
+
+name: port-renfrew data freshness
+
+on:
+  schedule:
+    - cron: "0 17 * * 3" # Wednesdays 17:00 UTC (morning Pacific)
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Read data age from the live site
+        id: age
+        run: |
+          set -e
+          json=$(curl -fsS "https://aaronevans.ca/port-renfrew/freshness.json" || echo "")
+          as_of=$(echo "$json" | jq -r '.as_of // empty' 2>/dev/null || echo "")
+          if [ -z "$as_of" ]; then
+            echo "status=unreadable" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          age=$(( ( $(date +%s) - $(date -d "$as_of" +%s) ) / 86400 ))
+          echo "as_of=$as_of" >> "$GITHUB_OUTPUT"
+          echo "age=$age" >> "$GITHUB_OUTPUT"
+          if [ "$age" -gt 10 ]; then
+            echo "status=stale" >> "$GITHUB_OUTPUT"
+          else
+            echo "status=fresh" >> "$GITHUB_OUTPUT"
+          fi
+          echo "as_of=$as_of age=${age}d status: see above"
+
+      - name: Open an issue if stale or unreadable
+        if: steps.age.outputs.status != 'fresh'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Port Renfrew comment-window data is stale (watchdog)"
+          existing=$(gh issue list -R "$GITHUB_REPOSITORY" --state open --search "in:title watchdog" --json number --jq 'length')
+          if [ "$existing" -gt 0 ]; then
+            echo "an open watchdog issue already exists; not filing another"
+            exit 0
+          fi
+          if [ "${{ steps.age.outputs.status }}" = "unreadable" ]; then
+            body="The freshness manifest https://aaronevans.ca/port-renfrew/freshness.json could not be read, so the data age is unknown. The weekly refresh may be failing. Fix: run 'python scripts/refresh.py --deploy' from forestry-port-renfrew, and check the PortRenfrew-FOM-Refresh scheduled task."
+          else
+            body="Comment-window data was last refreshed ${{ steps.age.outputs.as_of }} (${{ steps.age.outputs.age }} days ago; threshold is 10). The site is already warning visitors that deadlines may be out of date. Fix: run 'python scripts/refresh.py --deploy' from forestry-port-renfrew, and check the PortRenfrew-FOM-Refresh scheduled task on the laptop."
+          fi
+          gh issue create -R "$GITHUB_REPOSITORY" --title "$title" --body "$body"

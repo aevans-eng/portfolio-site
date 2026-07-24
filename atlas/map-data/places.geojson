@@ -17625,6 +17625,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          104.68,
+          14.3907
+        ]
+      },
+      "properties": {
+        "slug": "preah-vihear",
+        "name": "Preah Vihear",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An 11th-century Khmer temple strung along the very edge of a cliff, 500 metres above the plains, reached by a road so steep and so remote that you may have the whole ridge and its view to yourself.",
+        "tags": [
+          "khmer",
+          "temple",
+          "dangrek",
+          "cliff",
+          "unesco",
+          "remote",
+          "border"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           9.17,
           4.2
         ]
@@ -21196,6 +21229,40 @@
           "palaces",
           "bazaars",
           "hawa-mahal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9121,
+          26.9124
+        ]
+      },
+      "properties": {
+        "slug": "jaisalmer",
+        "name": "Jaisalmer",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A city of golden sandstone rising out of the Thar Desert, crowned by one of the world's few forts people still live inside, its lanes glowing amber at sunset and its edge opening onto empty dunes and some of India's darkest skies.",
+        "tags": [
+          "thar",
+          "desert",
+          "fort",
+          "rajasthan",
+          "havelis",
+          "camel",
+          "golden-city",
+          "stars"
         ],
         "stay": false,
         "season": []
@@ -28684,6 +28751,39 @@
           "casa-batllo",
           "unesco",
           "architecture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9812,
+          43.3183
+        ]
+      },
+      "properties": {
+        "slug": "san-sebastian",
+        "name": "San Sebasti\u00e1n",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A Belle \u00c9poque city curled around one of Europe's most beautiful urban beaches, and, by many counts, the best place to eat in the world for its size, where you graze standing up, plate by plate, bar to bar.",
+        "tags": [
+          "basque",
+          "pintxos",
+          "michelin",
+          "la-concha",
+          "food",
+          "donostia",
+          "txakoli"
         ],
         "stay": false,
         "season": []
