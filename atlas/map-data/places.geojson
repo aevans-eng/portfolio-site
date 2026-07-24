@@ -18210,6 +18210,40 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          117.963,
+          40.952
+        ]
+      },
+      "properties": {
+        "slug": "chengde",
+        "name": "Chengde Mountain Resort",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Qing emperors' summer capital: an enormous walled garden-palace of lakes, meadows, and pavilions, ringed by outlying temples, one of them a half-scale replica of Lhasa's Potala Palace, a few hours north of Beijing and largely overlooked.",
+        "tags": [
+          "qing",
+          "imperial",
+          "mountain-resort",
+          "putuo-zongcheng",
+          "potala",
+          "hebei",
+          "gardens",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           104.0668,
           30.5728
         ]
@@ -18232,6 +18266,107 @@
           "hotpot",
           "breeding-base",
           "leshan"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.133,
+          40.11
+        ]
+      },
+      "properties": {
+        "slug": "datong-yungang",
+        "name": "Datong \u2014 Yungang Grottoes & the Hanging Temple",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Fifty-odd caves cut into a sandstone cliff in the fifth century, holding tens of thousands of Buddhas, from a colossal seated figure seventeen metres tall down to inch-high rows carved across whole walls, plus, nearby, a wooden temple pinned improbably to a sheer cliff face.",
+        "tags": [
+          "yungang",
+          "grottoes",
+          "hanging-temple",
+          "buddhist",
+          "shanxi",
+          "wei-dynasty",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.81,
+          40.04
+        ]
+      },
+      "properties": {
+        "slug": "dunhuang-mogao",
+        "name": "Dunhuang & the Mogao Caves",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An oasis at the desert edge of the old Silk Road, where hundreds of cliff caves hold a thousand years of Buddhist murals and painted sculpture, one of the greatest galleries of ancient art anywhere, with camel-track dunes right at the town's back.",
+        "tags": [
+          "silk-road",
+          "mogao",
+          "buddhist-caves",
+          "murals",
+          "gansu",
+          "desert",
+          "dunes",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.334,
+          29.52
+        ]
+      },
+      "properties": {
+        "slug": "emeishan-leshan",
+        "name": "Emeishan & the Leshan Giant Buddha",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of China's four sacred Buddhist mountains, temples and monasteries climbing through cloud forest to a golden summit above a sea of cloud, with troops of bold macaques along the way, and, an hour off, a Buddha carved 71 metres tall into a river cliff.",
+        "tags": [
+          "emeishan",
+          "sacred-mountain",
+          "buddhist",
+          "leshan",
+          "giant-buddha",
+          "sichuan",
+          "macaques",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -18297,6 +18432,106 @@
           "limestone-peaks",
           "rice-terraces",
           "cormorant"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.276,
+          26.8
+        ]
+      },
+      "properties": {
+        "slug": "guizhou-miao-villages",
+        "name": "Guizhou \u2014 Miao & Dong Villages",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "China's poorest, greenest province, terraced hills strung with wooden Miao and Dong villages, silver-costumed festivals, drum towers and roofed \"wind and rain\" bridges, and, in its west, the biggest waterfall in Asia.",
+        "tags": [
+          "miao",
+          "dong",
+          "ethnic-minorities",
+          "terraces",
+          "xijiang",
+          "huangguoshu",
+          "guizhou",
+          "festivals"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.149,
+          30.24
+        ]
+      },
+      "properties": {
+        "slug": "hangzhou-west-lake",
+        "name": "Hangzhou & West Lake",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The lake that a thousand years of Chinese poets and painters agreed was the loveliest in the country: willow causeways, arched bridges, and pagodas laid out around still water, an hour's train from Shanghai.",
+        "tags": [
+          "west-lake",
+          "causeways",
+          "longjing-tea",
+          "pagodas",
+          "gardens",
+          "unesco",
+          "jiangnan"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.534,
+          45.803
+        ]
+      },
+      "properties": {
+        "slug": "harbin-ice-festival",
+        "name": "Harbin & the Ice Festival",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Every winter, a whole city of buildings, towers, and slides is cut from blocks of frozen river and lit from within in neon colour, the largest ice festival on earth, in a Chinese city that still looks half-Russian.",
+        "tags": [
+          "ice-festival",
+          "snow-sculpture",
+          "winter",
+          "russian",
+          "songhua",
+          "heilongjiang",
+          "manchuria"
         ],
         "stay": false,
         "season": []
@@ -18373,6 +18608,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          75.99,
+          39.47
+        ]
+      },
+      "properties": {
+        "slug": "kashgar",
+        "name": "Kashgar",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The westernmost city of China and one of the oldest oasis towns on the Silk Road, closer to Kabul and Bishkek than to Beijing, a Uyghur, Central Asian place of mosques, bazaars, and a still-famous Sunday market, seen honestly.",
+        "tags": [
+          "silk-road",
+          "uyghur",
+          "xinjiang",
+          "old-town",
+          "sunday-market",
+          "oasis",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           91.117,
           29.6558
         ]
@@ -18397,6 +18665,106 @@
           "plateau",
           "high-altitude",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.47,
+          34.558
+        ]
+      },
+      "properties": {
+        "slug": "longmen-grottoes",
+        "name": "Longmen Grottoes (Luoyang)",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Two riverside cliffs honeycombed with over 2,000 caves and 100,000 carved Buddhas, presided over by a seventeen-metre Vairocana whose calm face, said to be modelled on an empress, is one of the masterpieces of Chinese sculpture.",
+        "tags": [
+          "longmen",
+          "grottoes",
+          "vairocana",
+          "buddhist",
+          "luoyang",
+          "tang",
+          "unesco",
+          "silk-road"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.101,
+          36.256
+        ]
+      },
+      "properties": {
+        "slug": "mount-tai",
+        "name": "Mount Tai (Taishan)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The most revered mountain in China, climbed for three thousand years by emperors, pilgrims, and poets up a granite stairway of thousands of steps to a ridge of temples where crowds still gather in the cold to watch the sun come up.",
+        "tags": [
+          "taishan",
+          "sacred-mountain",
+          "pilgrimage",
+          "sunrise",
+          "stairway",
+          "shandong",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.175,
+          37.201
+        ]
+      },
+      "properties": {
+        "slug": "pingyao",
+        "name": "Pingyao",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The best-preserved walled town in China: a complete Ming-era city wall enclosing a grid of grey-brick courtyard houses, temples, and old bank buildings, small enough to walk in a day and largely intact where other \"ancient towns\" were rebuilt for show.",
+        "tags": [
+          "walled-city",
+          "ming",
+          "qing",
+          "piaohao-banking",
+          "courtyard",
+          "shanxi",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -18439,6 +18807,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          120.585,
+          31.299
+        ]
+      },
+      "properties": {
+        "slug": "suzhou",
+        "name": "Suzhou",
+        "kind": "town",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The old \"Venice of the East\": a canal city where retired scholars spent centuries building the most refined private gardens in China, miniature worlds of rock, water, and framed views behind plain white walls.",
+        "tags": [
+          "gardens",
+          "canals",
+          "silk",
+          "jiangnan",
+          "humble-administrator",
+          "pingtan",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           100.1167,
           27.1833
         ]
@@ -18462,6 +18863,73 @@
           "haba-snow-mountain",
           "gorge",
           "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.004,
+          32.4
+        ]
+      },
+      "properties": {
+        "slug": "wudang-mountains",
+        "name": "Wudang Mountains",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The sacred mountain of Taoism and the legendary birthplace of tai chi: misty peaks strung with Ming-dynasty temples, a bronze hall on the highest summit, and monasteries where you can still learn breathing, meditation, and internal martial arts.",
+        "tags": [
+          "taoism",
+          "tai-chi",
+          "martial-arts",
+          "temples",
+          "golden-hall",
+          "hubei",
+          "retreat",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.51,
+          35.2
+        ]
+      },
+      "properties": {
+        "slug": "xiahe-labrang",
+        "name": "Xiahe & Labrang Monastery",
+        "kind": "point",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the great monasteries of Tibetan Buddhism, home to hundreds of maroon-robed monks and the world's longest covered prayer-wheel walk, in a grassland town you can reach without the permits and tours that Tibet proper requires.",
+        "tags": [
+          "tibetan-buddhism",
+          "labrang",
+          "monastery",
+          "amdo",
+          "gansu",
+          "prayer-wheels",
+          "grassland"
         ],
         "stay": false,
         "season": []
@@ -18559,6 +19027,39 @@
           "hunan",
           "glass-bridge",
           "tianmen",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.165,
+          38.915
+        ]
+      },
+      "properties": {
+        "slug": "zhangye-danxia",
+        "name": "Zhangye Danxia (Rainbow Mountains)",
+        "kind": "nature",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Hills painted in stripes, rust red, ochre, cream, and green, laid down as mineral-stained sediment, tilted on end, and eroded into smooth ridges that look airbrushed under low sun.",
+        "tags": [
+          "danxia",
+          "rainbow-mountains",
+          "sandstone",
+          "gansu",
+          "silk-road",
+          "boardwalks",
           "unesco"
         ],
         "stay": false,
