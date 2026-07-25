@@ -26264,7 +26264,7 @@
         "radius": 9,
         "drive": "",
         "hook": "Two Roman towns buried alive by Vesuvius in AD 79 and dug back out, one enormous and famous, the other smaller and far better preserved, with wooden doors, upstairs floors, and carbonised food still in place.",
-        "voice": "",
+        "voice": "Italians and long-time Italy hands put it on the short list of things that must be seen, not merely enjoyed: asked to name the country's essentials, an American with \"30 ",
         "tags": [
           "roman",
           "vesuvius",
@@ -26556,7 +26556,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The exact Tuscany of the imagination, rolling wheat and clay hills with lone cypress rows leading to farmhouses, wrapped around wine towns that take their reds very seriously.",
-        "voice": "",
+        "voice": "It's what Italians send you to once the headline cities are done: \"Tuscany countryside, Pienza as an example,\" one wrote, pairing it with Arezzo and, closer to Rome, Civi",
         "tags": [
           "tuscany",
           "cypress",
@@ -30795,6 +30795,78 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.4792,
+          51.9225
+        ]
+      },
+      "properties": {
+        "slug": "rotterdam",
+        "name": "Rotterdam",
+        "kind": "town",
+        "country": "netherlands",
+        "region": "randstad",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The Dutch city with no old town, because the Luftwaffe erased it in a single afternoon in 1940 \u2014 and the one that responded by treating the empty ground as a permanent architectural experiment.",
+        "voice": "The Dutch position it precisely when visitors ask which cities to add: \"all of them are good cities with interesting things to visit \u2014 depends a lot on what you are into,",
+        "tags": [
+          "architecture",
+          "cube-houses",
+          "markthal",
+          "port",
+          "rebuilt",
+          "modernism",
+          "erasmus-bridge"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1214,
+          52.0907
+        ]
+      },
+      "properties": {
+        "slug": "utrecht",
+        "name": "Utrecht",
+        "kind": "town",
+        "country": "netherlands",
+        "region": "randstad",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Amsterdam's canals without Amsterdam's crowds, and with a twist the capital doesn't have: the Oudegracht runs a full storey below street level, so its medieval wharves and cellar vaults are now terraces at the waterline while the city goes about its business overhead.",
+        "voice": "The Dutch make this recommendation almost as a correction: \"the country is so much more than Amsterdam,\" one wrote. \"By all means, Amsterdam is a fun place, but make sure",
+        "tags": [
+          "canals",
+          "wharf-cellars",
+          "dom-tower",
+          "cycling",
+          "students",
+          "miffy",
+          "day-trips"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.66,
           53.42
         ]
@@ -30848,7 +30920,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The upper South Island's contrasts: a golden-sand coastal track winding past turquoise bays perfect for kayaking, and, over the mountains on the wild west coast, glaciers that flow down through rainforest almost to the sea.",
-        "voice": "",
+        "voice": "The instruction is consistent and specific: \"go kayaking in the Abel Tasman national park.\" Kiwis route the whole trip around it \u2014 \"you can do an amazing road trip from A",
         "tags": [
           "abel-tasman",
           "coast-track",
@@ -30954,7 +31026,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The adventure capital of the world set on a jewel-blue lake beneath jagged peaks, and, over the mountains, the fiords: sheer cliffs and waterfalls plunging into dark water at Milford Sound, one of the most beautiful places on the planet.",
-        "voice": "",
+        "voice": "New Zealanders and returning visitors treat the fiords as non-negotiable: \"further down is Te Anau and Milford Sound \u2014 this is the bit with all the fiords, it's an absolu",
         "tags": [
           "milford-sound",
           "fiordland",
@@ -31994,7 +32066,7 @@
         "radius": 11,
         "drive": "",
         "hook": "The highest navigable lake in the world, an immense sheet of deep blue water high in the Andes, where people live on floating islands woven entirely from reeds and keep ancient traditions on islands where time seems to have stopped.",
-        "voice": "",
+        "voice": "The advice Peruvians give visitors is mostly about distance and pacing: \"2 weeks is pretty short for Peru if you want to 'see everything',\" one wrote. \"It is a massive co",
         "tags": [
           "titicaca",
           "uros",
