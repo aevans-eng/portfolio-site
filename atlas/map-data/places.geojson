@@ -21293,6 +21293,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          16.6068,
+          49.1951
+        ]
+      },
+      "properties": {
+        "slug": "brno",
+        "name": "Brno",
+        "kind": "town",
+        "country": "czechia",
+        "region": "moravia",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The Czech second city that gets a fraction of Prague's visitors: a star fortress on one hill facing a neo-Gothic cathedral on the next, a pedestrian centre full of live music, and one of the founding buildings of modern architecture sitting quietly in a suburb.",
+        "voice": "The enthusiasm from Europe regulars is unusually unguarded: \"Brno, Czech Republic, is one of the best cities in the world!\" one wrote, listing \"incredible architecture, a",
+        "tags": [
+          "villa-tugendhat",
+          "spilberk",
+          "moravia",
+          "functionalism",
+          "city-of-music",
+          "ossuary",
+          "students"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.8712,
           50.2306
         ]
@@ -30280,6 +30316,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.691,
+          50.8514
+        ]
+      },
+      "properties": {
+        "slug": "maastricht",
+        "name": "Maastricht",
+        "kind": "town",
+        "country": "netherlands",
+        "region": "south-east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The Netherlands' oldest city and its least Dutch: a Roman river crossing turned Burgundian town on the Belgian and German borders, with medieval churches, caf\u00e9 terraces on every square, and hundreds of kilometres of hand-cut tunnels running under the hill outside.",
+        "voice": "A resident, half-apologising for the plug, made the whole case in a sentence: \"I'd need to promote my hometown\u2026 Maastricht in the Netherlands. Hundreds of caf\u00e9s, bars, re",
+        "tags": [
+          "roman",
+          "caves",
+          "limburg",
+          "gastronomy",
+          "terraces",
+          "bookshop-church",
+          "carnival",
+          "borders"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.66,
           53.42
         ]
@@ -31842,6 +31915,42 @@
           "royal-castle",
           "phoenix",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0385,
+          51.1079
+        ]
+      },
+      "properties": {
+        "slug": "wroclaw",
+        "name": "Wroc\u0142aw",
+        "kind": "town",
+        "country": "poland",
+        "region": "south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Poland's most cheerful big city: a rebuilt market square of colour-blocked merchant houses, a dozen islands stitched together by a hundred-odd bridges over the Odra, and several hundred small bronze gnomes hidden around the streets.",
+        "voice": "Europe regulars name it as the Polish city travellers skip and shouldn't: \"when you travel to Poland, it's usually Krak\u00f3w, Warsaw, Gda\u0144sk. But Wroc\u0142aw has almost as much ",
+        "tags": [
+          "market-square",
+          "odra-islands",
+          "gnomes",
+          "students",
+          "silesia",
+          "panorama",
+          "bridges"
         ],
         "stay": false,
         "season": []
@@ -34913,6 +35022,79 @@
           "elephants",
           "night-market",
           "hill-tribes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.74,
+          17.87
+        ]
+      },
+      "properties": {
+        "slug": "isaan-mekong",
+        "name": "Isaan & the Mekong",
+        "kind": "town",
+        "country": "thailand",
+        "region": "northeast",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Thailand's north-east, a third of the country and closer to Laos than to Bangkok in language, food, and music, where the Mekong runs along the border past small towns, and Khmer temples older than Angkor's peak sit on volcanic hills.",
+        "voice": "The steer comes with an argument for going slow: \"check out Isaan to get off the beaten track,\" one wrote, describing \"the slow life\" \u2014 and then made the case that actual",
+        "tags": [
+          "mekong",
+          "mor-lam",
+          "khmer-temples",
+          "som-tam",
+          "rural",
+          "phanom-rung",
+          "festivals",
+          "lao-culture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.55,
+          11.65
+        ]
+      },
+      "properties": {
+        "slug": "koh-kood-koh-mak",
+        "name": "Koh Kood & Koh Mak",
+        "kind": "nature",
+        "country": "thailand",
+        "region": "east",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Thailand's far-eastern islands, almost at the Cambodian border: white sand and genuinely clear water with no full-moon parties, no strip of bars, and, on Koh Mak, a local agreement to keep development low-rise and quiet.",
+        "voice": "Thais recommending them do it with a note of reluctance that says everything: \"we Thais wish to keep this island group fairly secret,\" one wrote, before giving it away an",
+        "tags": [
+          "islands",
+          "clear-water",
+          "waterfalls",
+          "no-nightlife",
+          "trat",
+          "snorkeling",
+          "quiet"
         ],
         "stay": false,
         "season": []
