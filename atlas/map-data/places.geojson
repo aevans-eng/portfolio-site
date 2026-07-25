@@ -20404,6 +20404,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          87.02,
+          48.68
+        ]
+      },
+      "properties": {
+        "slug": "kanas-lake",
+        "name": "Kanas Lake & the Altai",
+        "kind": "nature",
+        "country": "china",
+        "region": "northwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A milky-turquoise lake held in dark Siberian taiga at the top corner of China, where Kazakhstan, Russia and Mongolia meet: log-built Tuvan villages, larch forest that turns gold in autumn, and a landscape that looks nothing like the rest of the country.",
+        "voice": "The trip reports read like discovery: posting a 40 km solo walk over the mountains from Hemu to Kanas, one hiker wrote that \"I was almost sure that I would not meet any C",
+        "tags": [
+          "altai",
+          "alpine-lake",
+          "tuvan",
+          "hemu",
+          "taiga",
+          "xinjiang",
+          "larch-forest",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           75.99,
           39.47
         ]
@@ -26027,6 +26064,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.884,
+          42.418
+        ]
+      },
+      "properties": {
+        "slug": "la-tuscia",
+        "name": "La Tuscia \u2014 Etruscan Lazio",
+        "kind": "town",
+        "country": "italy",
+        "region": "rome-lazio",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The country north of Rome that Italians say the rest of the world forgets: painted Etruscan tombs where 2,500-year-old frescoes of dancers and divers survive underground, a papal city with a walled medieval quarter, and Europe's largest volcanic crater lake.",
+        "voice": "Italians arguing about which of their regions is most underrated keep dragging Lazio beyond Rome into the light: \"da veneto direi che la regione pi\u00f9 sottovalutata parados",
+        "tags": [
+          "etruscan",
+          "tarquinia",
+          "viterbo",
+          "bolsena",
+          "tufa",
+          "necropolis",
+          "civita",
+          "thermal-springs",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.6365,
           43.7262
         ]
@@ -29169,6 +29244,43 @@
           "raramuri",
           "sierra-madre",
           "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.3496,
+          20.6597
+        ]
+      },
+      "properties": {
+        "slug": "guadalajara",
+        "name": "Guadalajara",
+        "kind": "town",
+        "country": "mexico",
+        "region": "west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The birthplace of mariachi, tequila, and the wide-brimmed charro hat, which is to say the place most of what the world pictures as \"Mexican\" actually comes from, with a colonial core, a fierce muralist tradition, and agave fields an hour out of town.",
+        "voice": "The case gets made on its own thread, \"Guadalajara is underrated\", with residents and visitors agreeing the beach traffic passes it by: \"most Americans go to Mexico for t",
+        "tags": [
+          "mariachi",
+          "tequila",
+          "orozco",
+          "tlaquepaque",
+          "jalisco",
+          "cantinas",
+          "birria",
+          "agave"
         ],
         "stay": false,
         "season": []
