@@ -24833,6 +24833,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          93.83,
+          27.59
+        ]
+      },
+      "properties": {
+        "slug": "ziro-valley",
+        "name": "Ziro Valley",
+        "kind": "nature",
+        "country": "india",
+        "region": "northeast",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A flat green bowl of rice paddies at 1,500 metres in Arunachal Pradesh, ringed by pine hills and farmed by the Apatani, whose fields raise rice and fish in the same water and whose oldest women wear facial tattoos and nose plugs from a practice now ended.",
+        "voice": "Indian travellers place it firmly in the \"why doesn't anyone go\" category: \"such an underrated destination,\" one wrote after visiting, \"barely any tourists. Very peaceful",
+        "tags": [
+          "apatani",
+          "rice-fields",
+          "arunachal",
+          "pine-hills",
+          "music-festival",
+          "permits",
+          "tribal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           115.2625,
           -8.5069
         ]
@@ -25845,6 +25881,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.6198,
+          44.8381
+        ]
+      },
+      "properties": {
+        "slug": "ferrara",
+        "name": "Ferrara",
+        "kind": "town",
+        "country": "italy",
+        "region": "emilia-romagna",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A Renaissance city built to a plan, with a genuine moated castle in the middle of it, nine kilometres of intact walls you can cycle on top of, and, for a city this handsome in this country, remarkably few visitors.",
+        "voice": "It's the name Italy regulars reach for when the famous cities come up: \"my favourite hidden gem in Italy\u2026 Ferrara has it all,\" one wrote, and in another thread on the cou",
+        "tags": [
+          "este",
+          "moated-castle",
+          "city-walls",
+          "cycling",
+          "renaissance",
+          "jewish-quarter",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           11.2558,
           43.7696
         ]
@@ -26271,6 +26343,43 @@
           "chocolate",
           "alps",
           "cinema-museum"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.11,
+          42.72
+        ]
+      },
+      "properties": {
+        "slug": "umbria-hill-towns",
+        "name": "Umbria \u2014 Orvieto, Assisi & the Hill Towns",
+        "kind": "town",
+        "country": "italy",
+        "region": "tuscany-umbria",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Tuscany's quieter neighbour: stone towns standing on volcanic outcrops above oak woods, a cathedral fa\u00e7ade in Orvieto that is essentially a wall of gold mosaic and carved marble, and Giotto's frescoes in Assisi that mark the moment Western painting changed.",
+        "voice": "Asked where to go for a fortnight in Italy, Italians steer people off the Tuscan track: \"Umbria is a nice place for nature, food and drink experiences, and history,\" one ",
+        "tags": [
+          "orvieto",
+          "assisi",
+          "gubbio",
+          "spoleto",
+          "perugia",
+          "giotto",
+          "truffles",
+          "hill-towns"
         ],
         "stay": false,
         "season": []
@@ -29200,6 +29309,42 @@
           "indigenous",
           "crafts",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.88,
+          21.37
+        ]
+      },
+      "properties": {
+        "slug": "santa-maria-del-oro",
+        "name": "Laguna de Santa Mar\u00eda del Oro",
+        "kind": "nature",
+        "country": "mexico",
+        "region": "west",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A turquoise lake filling the crater of an extinct volcano, ringed by jungle-covered walls, with a handful of family restaurants along the shore, campsites, and water warm enough to swim in most of the year, twenty minutes off the highway in Nayarit.",
+        "voice": "It heads Mexicans' own list of the loveliest little-known places in the country: \"Santa Mar\u00eda del Oro en Nayarit\u2026 est\u00e1 bien ching\u00f3n,\" one wrote \u2014 \"es un lago con aguas tu",
+        "tags": [
+          "crater-lake",
+          "nayarit",
+          "swimming",
+          "camping",
+          "jungle",
+          "kayaking",
+          "quiet"
         ],
         "stay": false,
         "season": []
@@ -36198,6 +36343,42 @@
           "national-park",
           "unesco",
           "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.709,
+          55.608
+        ]
+      },
+      "properties": {
+        "slug": "northumberland-coast",
+        "name": "The Northumberland Coast",
+        "kind": "nature",
+        "country": "united-kingdom",
+        "region": "england-north",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "England's emptiest good coastline: enormous pale sand beaches with a castle at the end of most of them, a tidal island you can only reach when the sea allows, seabird colonies offshore, and some of the darkest skies in the country behind it.",
+        "voice": "British travellers name it repeatedly on \"underrated UK\" threads and then immediately regret doing so, the tone is protective and a little sarcastic: don't tell anyone, t",
+        "tags": [
+          "bamburgh",
+          "lindisfarne",
+          "dunstanburgh",
+          "farne-islands",
+          "puffins",
+          "dark-skies",
+          "beaches"
         ],
         "stay": false,
         "season": []
