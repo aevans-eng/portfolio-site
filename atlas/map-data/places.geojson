@@ -27022,7 +27022,7 @@
         "radius": 9,
         "drive": "",
         "hook": "Japan's old imperial capital, spared the wartime bombing, holding more than a thousand years of temples, Zen gardens, and geisha districts, and now so popular that the trick is dodging the crowds it draws.",
-        "voice": "",
+        "voice": "Visitors who split their time keep reporting the same verdict. \"Regret not coming here and instead going to Osaka,\" one wrote after a rushed day trip \u2014 \"Kyoto was the bes",
         "tags": [
           "temples",
           "geisha",
@@ -27102,6 +27102,43 @@
           "kusama",
           "seto-inland-sea",
           "islands"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8048,
+          34.6851
+        ]
+      },
+      "properties": {
+        "slug": "nara",
+        "name": "Nara",
+        "kind": "town",
+        "country": "japan",
+        "region": "kansai",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Japan's first permanent capital, where more than a thousand sika deer wander freely through a park of eighth-century temples, and a wooden hall the size of a cathedral holds a fifteen-metre bronze Buddha cast in 752.",
+        "voice": "It's a fixture in every Kansai itinerary travellers write for each other: \"1 week in Kansai: 2 days Osaka, 4 days Kyoto, 1 day Nara,\" runs one standard plan, with the reg",
+        "tags": [
+          "todai-ji",
+          "great-buddha",
+          "deer",
+          "kasuga-taisha",
+          "lanterns",
+          "nara-park",
+          "unesco",
+          "8th-century"
         ],
         "stay": false,
         "season": []
