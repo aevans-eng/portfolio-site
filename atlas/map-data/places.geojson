@@ -33490,6 +33490,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1686,
+          41.3874
+        ]
+      },
+      "properties": {
+        "slug": "barcelona",
+        "name": "Barcelona",
+        "kind": "town",
+        "country": "spain",
+        "region": "catalonia-aragon",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The city where one architect's obsession reshaped a whole streetscape: Gaud\u00ed's warped stone and broken tile everywhere, a medieval quarter behind it, mountains on one side and a beach on the other, and a tourism problem the residents have started protesting about.",
+        "voice": "Even the \"hidden gems\" here are famous, and residents are wry about it \u2014 but the steer is consistent: away from the top three. Posting the Hospital de Sant Pau, one visit",
+        "tags": [
+          "gaudi",
+          "modernisme",
+          "gothic-quarter",
+          "sant-pau",
+          "montjuic",
+          "beach",
+          "catalan",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -2.935,
           43.263
         ]
@@ -33662,6 +33699,43 @@
           "rias",
           "percebes",
           "green-spain"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7038,
+          40.4168
+        ]
+      },
+      "properties": {
+        "slug": "madrid",
+        "name": "Madrid",
+        "kind": "town",
+        "country": "spain",
+        "region": "center",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital with no single postcard monument and, partly because of that, one of Europe's most liveable big cities: three of the world's great art museums within ten minutes of each other, boulevards and plazas built for walking, and a day that runs until two in the morning.",
+        "voice": "The affection here is unusually direct, and often comes with a shrug at the city's reputation. \"I think the issue with Madrid is there is no obvious major attraction like",
+        "tags": [
+          "prado",
+          "retiro",
+          "tapas",
+          "plazas",
+          "art-triangle",
+          "guadarrama",
+          "nightlife",
+          "walkable"
         ],
         "stay": false,
         "season": []
