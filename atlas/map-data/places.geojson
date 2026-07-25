@@ -29970,6 +29970,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -9.7595,
+          31.5085
+        ]
+      },
+      "properties": {
+        "slug": "essaouira",
+        "name": "Essaouira",
+        "kind": "town",
+        "country": "morocco",
+        "region": "atlantic-coast",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The antidote to Marrakech: a small blue-and-white walled port on the Atlantic where the medina is laid out on a grid you cannot get lost in, the hustle drops to almost nothing, and the wind blows hard enough to have made the town a kitesurfing capital.",
+        "voice": "It's the recovery stop in most itineraries. Listing what worked across a long Moroccan trip, one traveller named \"Asilah, a small seaside city with a nice medina and a go",
+        "tags": [
+          "ramparts",
+          "fishing-port",
+          "gnawa",
+          "windsurfing",
+          "argan",
+          "medina",
+          "relaxed",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -5.0078,
           34.0181
         ]
@@ -29987,7 +30024,7 @@
         "radius": 11,
         "drive": "",
         "hook": "The best-preserved medieval city in the Arab world, a vast walled medina of thousands of tangled car-free lanes where donkeys still carry the loads, artisans work as they have for centuries, and dyers stand waist-deep in vats of colour.",
-        "voice": "",
+        "voice": "Solo travellers rank it near the top and tell you how to survive it: \"the Imperial Cities of Rabat, Meknes, and \u2014 one of my highlights \u2014 Fes,\" one wrote. \"The Fes medina ",
         "tags": [
           "medina",
           "tanneries",
@@ -30059,7 +30096,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The great red city at the foot of the Atlas, where a huge open square erupts each night into a carnival of food stalls, musicians, and storytellers, and a labyrinth of souks and hidden courtyard palaces waits behind rose-coloured walls.",
-        "voice": "",
+        "voice": "The advice that recurs is about dosage and vigilance, not avoidance. \"You only need 3 days in Marrakech,\" one solo traveller wrote, pairing it with the desert and the coa",
         "tags": [
           "medina",
           "jemaa-el-fna",
@@ -30068,6 +30105,43 @@
           "atlas",
           "gardens",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.01,
+          31.1
+        ]
+      },
+      "properties": {
+        "slug": "merzouga-erg-chebbi",
+        "name": "Merzouga & Erg Chebbi",
+        "kind": "nature",
+        "country": "morocco",
+        "region": "south",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Sahara as everyone pictures it: a single wall of orange dune rising 150 metres out of flat stony desert, going soft pink at dawn, with camps in the hollows behind it and a night sky most visitors have never seen the equal of.",
+        "voice": "It survives every honest ledger of the country. Even the traveller who found Morocco exhausting, six weeks and \"by the end I barely wanted to leave my accommodation\", sti",
+        "tags": [
+          "sahara",
+          "dunes",
+          "camel",
+          "desert-camp",
+          "stars",
+          "berber",
+          "ait-benhaddou-route",
+          "gnawa"
         ],
         "stay": false,
         "season": []
@@ -30095,7 +30169,7 @@
         "radius": 9,
         "drive": "",
         "hook": "Morocco's calm, walkable capital on the Atlantic, where a blue-and-white cliff-top kasbah, an unfinished medieval minaret, and a Roman-Islamic ruin overgrown with storks sit above a mellow modern city.",
-        "voice": "",
+        "voice": "Rabat's champions are the people who actually stayed there. \"Rabat was my favourite spot,\" one solo traveller wrote of a six-week trip. \"Not many people recommend it on t",
         "tags": [
           "capital",
           "kasbah-oudayas",
@@ -31847,7 +31921,7 @@
         "radius": 11,
         "drive": "",
         "hook": "The ancient capital of the Inca empire, the \"navel of the world,\" where Spanish colonial churches and mansions were built directly on top of masterful Inca stonework, gateway to a valley strewn with ruins and Machu Picchu beyond.",
-        "voice": "",
+        "voice": "The two things travellers insist on are altitude and pacing. \"I live in Denver and spend a fair amount of time in the Rocky Mountains, and I really felt the altitude in C",
         "tags": [
           "inca",
           "cusco",
@@ -31919,7 +31993,7 @@
         "radius": 11,
         "drive": "",
         "hook": "One of the world's great food cities, a sprawling Pacific capital where clifftop bohemian districts overlook the surf, colonial palaces line the old centre, and the ceviche and fine dining are reason enough to visit.",
-        "voice": "",
+        "voice": "Peru's returning visitors are unusually emphatic about the country as a whole: \"came back a few weeks ago from 2 weeks solo in Peru and I can't recommend it enough \u2014 am a",
         "tags": [
           "gastronomy",
           "ceviche",
@@ -31927,6 +32001,43 @@
           "colonial",
           "pacific",
           "museums"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.545,
+          -13.1631
+        ]
+      },
+      "properties": {
+        "slug": "machu-picchu",
+        "name": "Machu Picchu",
+        "kind": "point",
+        "country": "peru",
+        "region": "andes",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An Inca royal estate built on a knife-edge ridge at 2,430 metres, abandoned within a century of its construction, never found by the Spanish, and left to cloud forest until 1911 \u2014 terraces, temples, and stonework fitted without mortar, with the peaks falling away on every side.",
+        "voice": "The advice that recurs is about context, not logistics: \"with regards to Machu Picchu, just pay for a guide, you're not too cool for it,\" one traveller wrote. \"Without co",
+        "tags": [
+          "inca",
+          "ruins",
+          "andes",
+          "inca-trail",
+          "cloud-forest",
+          "huayna-picchu",
+          "unesco",
+          "terraces"
         ],
         "stay": false,
         "season": []
