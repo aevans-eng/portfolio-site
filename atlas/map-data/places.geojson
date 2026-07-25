@@ -22400,6 +22400,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          7.35,
+          48.24
+        ]
+      },
+      "properties": {
+        "slug": "alsace",
+        "name": "Alsace \u2014 the Wine Road & Strasbourg",
+        "kind": "town",
+        "country": "france",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The most German corner of France: a 170 km wine road threading hillside villages of crooked half-timbered houses painted in sweet-shop colours, ruined castles on the ridge above, and a cathedral city that keeps a whole quarter standing on water.",
+        "voice": "It turns up on Europe regulars' honest lists of what deserves more attention: \"these are not undiscovered, but they do seem to me to be under-rated,\" one wrote, naming \"t",
+        "tags": [
+          "wine-road",
+          "riesling",
+          "half-timbered",
+          "strasbourg",
+          "colmar",
+          "christmas-markets",
+          "storks"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -3.079,
           47.594
         ]
@@ -25846,6 +25882,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          10.508,
+          43.843
+        ]
+      },
+      "properties": {
+        "slug": "lucca",
+        "name": "Lucca",
+        "kind": "town",
+        "country": "italy",
+        "region": "tuscany-umbria",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A Tuscan town that kept its complete Renaissance ramparts and then planted trees on top of them, so the defensive wall is now a four-kilometre elevated park you cycle around, looking down into the town on one side and out to the hills on the other.",
+        "voice": "It converts people who came for the famous cities: after four weeks across Italy, one traveller reported that \"we only stayed in 4 cities and Lucca was our favorite,\" add",
+        "tags": [
+          "city-walls",
+          "cycling",
+          "puccini",
+          "towers",
+          "tuscany",
+          "amphitheatre-square",
+          "quiet-base"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           16.6106,
           40.6664
         ]
@@ -25944,6 +26016,43 @@
           "ad79",
           "frozen-city",
           "campania"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.174,
+          40.352
+        ]
+      },
+      "properties": {
+        "slug": "puglia",
+        "name": "Puglia \u2014 Lecce, the Trulli & the Salento Coast",
+        "kind": "town",
+        "country": "italy",
+        "region": "deep-south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Italy's heel: a baroque city carved out of butter-soft golden limestone, whitewashed hill towns, whole villages of conical drystone trulli houses, and several hundred kilometres of some of the clearest water in the Mediterranean.",
+        "voice": "Italians recommend it and puncture it in the same thread. The case for: \"In Puglia I'd stay in Lecce or Ostuni\u2026 Alberobello, Cisternino, Locorotondo\u2026 best southern cuisin",
+        "tags": [
+          "lecce",
+          "baroque",
+          "trulli",
+          "alberobello",
+          "salento",
+          "olive-oil",
+          "sea",
+          "ostuni"
         ],
         "stay": false,
         "season": []
@@ -26100,6 +26209,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          7.6869,
+          45.0703
+        ]
+      },
+      "properties": {
+        "slug": "turin",
+        "name": "Turin",
+        "kind": "town",
+        "country": "italy",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Italy's first capital and the Savoy royal seat: eighteen kilometres of elegant arcades, baroque caf\u00e9s that invented the aperitivo, the Alps standing at the end of the streets, and the second-finest collection of Egyptian antiquities on earth after Cairo.",
+        "voice": "When Italy regulars are asked what the country most undervalues, Turin arrives with impatience: \"Why hasn't a single person mentioned Torino yet?\" one wrote, and another ",
+        "tags": [
+          "savoy",
+          "museo-egizio",
+          "arcades",
+          "aperitivo",
+          "chocolate",
+          "alps",
+          "cinema-museum"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           11.6136,
           43.0676
         ]
@@ -26162,6 +26307,42 @@
           "biennale",
           "murano",
           "carnevale",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9916,
+          45.4384
+        ]
+      },
+      "properties": {
+        "slug": "verona",
+        "name": "Verona",
+        "kind": "town",
+        "country": "italy",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A first-century Roman amphitheatre still in weekly use, staging full-scale opera to twenty thousand people under the open sky, at the heart of a pink-marble city looped by the river Adige.",
+        "voice": "Asked to name Italy's finest monument, one Italian broke ranks: \"Unpopular opinion, l'arena di Verona mi piace pi\u00f9 del colosseo\" \u2014 I like the Verona arena more than the C",
+        "tags": [
+          "roman-arena",
+          "opera",
+          "adige",
+          "romeo-juliet",
+          "marble",
+          "veneto",
           "unesco"
         ],
         "stay": false,
@@ -31708,6 +31889,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -25.49,
+          37.78
+        ]
+      },
+      "properties": {
+        "slug": "azores",
+        "name": "The Azores",
+        "kind": "nature",
+        "country": "portugal",
+        "region": "atlantic-islands",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Nine volcanic islands a third of the way across the Atlantic: crater lakes filling collapsed calderas, hot springs you sink into after a hike, hedgerows of hydrangeas along every lane, and whales moving through deep water offshore.",
+        "voice": "The dominant note in Azorean threads is protective, not promotional. To a visitor asking why nobody talks about the islands, the top reply was blunt: \"Because it needs to",
+        "tags": [
+          "volcanic",
+          "calderas",
+          "hot-springs",
+          "whales",
+          "sao-miguel",
+          "pico",
+          "hydrangeas",
+          "atlantic"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -8.4256,
           40.2081
         ]
@@ -31841,6 +32059,43 @@
           "belem",
           "miradouros",
           "earthquake"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.95,
+          32.75
+        ]
+      },
+      "properties": {
+        "slug": "madeira",
+        "name": "Madeira",
+        "kind": "nature",
+        "country": "portugal",
+        "region": "atlantic-islands",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A volcanic island rising straight out of the Atlantic to 1,800 metres, wrapped in ancient laurel forest and threaded by levadas, irrigation channels dug across cliffs for five centuries, whose maintenance paths now form one of the world's great walking networks.",
+        "voice": "Three weeks in, one visitor's verdict was unglamorous and convincing: \"I highly recommend Madeira for anyone who likes hiking, the weather is good, not too hot, not too c",
+        "tags": [
+          "levadas",
+          "laurisilva",
+          "hiking",
+          "cliffs",
+          "funchal",
+          "poncha",
+          "subtropical",
+          "unesco"
         ],
         "stay": false,
         "season": []
@@ -33163,6 +33418,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          0.95,
+          42.57
+        ]
+      },
+      "properties": {
+        "slug": "aiguestortes-vall-daran",
+        "name": "Aig\u00fcestortes & the Vall d'Aran",
+        "kind": "nature",
+        "country": "spain",
+        "region": "catalonia-aragon",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Catalonia's only national park: two hundred glacial lakes scattered across granite basins beneath the twin peaks of Els Encantats, linked by a hut-to-hut circuit, with a valley next door that faces north into France and speaks its own language.",
+        "voice": "Asked what foreign visitors overlook in Spain, the top answer heads straight for these mountains: \"Get yourself up to Aig\u00fcestortes. You won't regret it,\" one wrote, addin",
+        "tags": [
+          "pyrenees",
+          "glacial-lakes",
+          "carros-de-foc",
+          "romanesque",
+          "aranese",
+          "hiking",
+          "national-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -3.588,
           37.176
         ]
@@ -33189,6 +33480,42 @@
           "generalife",
           "alandalus",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.935,
+          43.263
+        ]
+      },
+      "properties": {
+        "slug": "bilbao",
+        "name": "Bilbao",
+        "kind": "town",
+        "country": "spain",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The city that turned a dying steel port into a template other cities still copy: Gehry's titanium Guggenheim curled along a cleaned-up river, with a dense old quarter behind it serving some of the best bar food in Spain.",
+        "voice": "When Spaniards are asked which of their cities is underrated, Bilbao leads the list and the reasoning is practical: \"Amazing food. Not as picturesque as San Sebasti\u00e1n but",
+        "tags": [
+          "guggenheim",
+          "pintxos",
+          "basque",
+          "industrial",
+          "ria",
+          "txakoli",
+          "architecture"
         ],
         "stay": false,
         "season": []
@@ -33261,6 +33588,80 @@
           "arches",
           "unesco",
           "patios"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.37,
+          39.47
+        ]
+      },
+      "properties": {
+        "slug": "extremadura",
+        "name": "Extremadura \u2014 M\u00e9rida, C\u00e1ceres & Trujillo",
+        "kind": "town",
+        "country": "spain",
+        "region": "center",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Spain's emptiest region holds one of the best-preserved Roman theatres in the world, a medieval walled city so intact it doubles as a fantasy capital on screen, and the home towns of the conquistadors, all with barely a tour bus in sight.",
+        "voice": "Spaniards naming what foreign visitors miss put the whole region forward: \"almost all of Extremadura, but Zafra, Trujillo, M\u00e9rida, C\u00e1ceres, etc, are amazing places to vis",
+        "tags": [
+          "roman",
+          "merida",
+          "caceres",
+          "trujillo",
+          "conquistadors",
+          "jamon-iberico",
+          "dehesa",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.18,
+          43.16
+        ]
+      },
+      "properties": {
+        "slug": "galicia-costa-da-morte",
+        "name": "Galicia \u2014 the Costa da Morte & C\u00edes Islands",
+        "kind": "nature",
+        "country": "spain",
+        "region": "north",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The \"Coast of Death\": Spain's wild Atlantic edge, named for the ships it wrecked, where granite headlands drop into cold surf, lighthouses stand at the end of the known world, and the seafood is arguably the best in Europe.",
+        "voice": "Galicians answer the \"most underrated\" question with restrained pride and then try to keep it quiet: \"Galicia is a little paradise. Everything about it is lovely,\" one wr",
+        "tags": [
+          "atlantic",
+          "seafood",
+          "cies-islands",
+          "lighthouses",
+          "celtic",
+          "rias",
+          "percebes",
+          "green-spain"
         ],
         "stay": false,
         "season": []
