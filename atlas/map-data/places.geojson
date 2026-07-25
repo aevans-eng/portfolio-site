@@ -21051,6 +21051,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -75.5812,
+          6.2442
+        ]
+      },
+      "properties": {
+        "slug": "medellin-guatape",
+        "name": "Medell\u00edn & Guatap\u00e9",
+        "kind": "town",
+        "country": "colombia",
+        "region": "andes",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The city that went from the most dangerous on earth to a case study in urban repair \u2014 cable cars running as public transit up the hillsides that were once cut off \u2014 and, two hours away, a granite monolith with 700 steps up its side above a maze of green lakes.",
+        "voice": "Colombia's pitch, as travellers keep repeating it: \"if you want jungle, go to Brazil. If you want beaches, go to a Caribbean island. If you want mountains, go to Ecuador.",
+        "tags": [
+          "metrocable",
+          "comuna-13",
+          "guatape",
+          "el-penol",
+          "paisa",
+          "transformation",
+          "street-art"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           15.2429,
           -4.2634
         ]
@@ -21111,6 +21147,43 @@
           "bais",
           "congo-basin",
           "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.14,
+          9.39
+        ]
+      },
+      "properties": {
+        "slug": "manuel-antonio-drake-bay",
+        "name": "Manuel Antonio & Drake Bay",
+        "kind": "nature",
+        "country": "costa-rica",
+        "region": "pacific",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Costa Rica's most-loved small park, where rainforest runs right down to white beaches and sloths, capuchins and toucans are close enough to see without binoculars \u2014 and, far south, a bay with no through road where the wildlife density is on another level.",
+        "voice": "Both halves get named unprompted. \"The biodiversity is amazing, and Manuel Antonio will forever be one of my favorite parks,\" one traveller wrote, opening with the caveat",
+        "tags": [
+          "rainforest",
+          "sloths",
+          "monkeys",
+          "beaches",
+          "osa",
+          "whales",
+          "wildlife-guides",
+          "biodiversity"
         ],
         "stay": false,
         "season": []
@@ -37370,6 +37443,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          105.8342,
+          21.0278
+        ]
+      },
+      "properties": {
+        "slug": "hanoi",
+        "name": "Hanoi",
+        "kind": "town",
+        "country": "vietnam",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A thousand-year-old capital where the Old Quarter's thirty-six guild streets still sort themselves by trade, the pavements belong to plastic-stool kitchens, and crossing the road means walking slowly into a river of scooters and trusting it to part around you.",
+        "voice": "Travellers rate its museums unusually highly: \"the history and museums in both Hanoi and HCMC, in different ways, can go toe-to-toe with any in the world,\" one wrote afte",
+        "tags": [
+          "old-quarter",
+          "pho",
+          "bun-cha",
+          "egg-coffee",
+          "french-colonial",
+          "scooters",
+          "lakes",
+          "museums"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           108.338,
           15.8801
         ]
@@ -37395,6 +37505,42 @@
           "trading-port",
           "thu-bon",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.09,
+          20.66
+        ]
+      },
+      "properties": {
+        "slug": "mai-chau",
+        "name": "Mai Chau",
+        "kind": "nature",
+        "country": "vietnam",
+        "region": "north",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A flat green floor of rice paddies enclosed by limestone hills three hours west of Hanoi, where White Thai villages rent rooms in stilt houses and the whole valley can be cycled in an afternoon.",
+        "voice": "It's the answer people give when asked what they'd go back for: \"my favourite destination on my Vietnam trip was, without a doubt, Mai Chau,\" one traveller wrote \u2014 \"beaut",
+        "tags": [
+          "rice-fields",
+          "homestay",
+          "white-thai",
+          "cycling",
+          "karst",
+          "hot-springs",
+          "quiet"
         ],
         "stay": false,
         "season": []
