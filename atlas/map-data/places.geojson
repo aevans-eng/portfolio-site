@@ -24223,6 +24223,79 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -21.9426,
+          64.1466
+        ]
+      },
+      "properties": {
+        "slug": "reykjavik-golden-circle",
+        "name": "Reykjav\u00edk & the Golden Circle",
+        "kind": "town",
+        "country": "iceland",
+        "region": "reykjavik-southwest",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The world's northernmost capital \u2014 small enough to cross on foot, with a concrete church like a basalt organ pipe on the hill \u2014 and, an hour inland, the rift valley where the Atlantic is pulling apart, a geyser that gave its name to all geysers, and a waterfall dropping into a canyon.",
+        "voice": "The practical advice from returning visitors is consistent: \"within Reykjav\u00edk, I found walking to be the best way to get around \u2014 there are buses but it's not a very big ",
+        "tags": [
+          "geysir",
+          "gullfoss",
+          "thingvellir",
+          "hallgrimskirkja",
+          "geothermal-pools",
+          "tectonic-rift",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.51,
+          63.53
+        ]
+      },
+      "properties": {
+        "slug": "south-coast-ring-road",
+        "name": "The South Coast & Ring Road",
+        "kind": "nature",
+        "country": "iceland",
+        "region": "south",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The stretch of Route 1 where Iceland unloads everything at once: waterfalls you can walk behind, a beach of black sand and basalt columns under sea stacks, glacier tongues spilling off an icecap, and a lagoon of drifting icebergs, all within a few hours' drive.",
+        "voice": "Visitors describe it as somewhere that resists photography: \"it's a really nice place, it really is another world, pics don't do it justice,\" wrote one who camped for twe",
+        "tags": [
+          "ring-road",
+          "waterfalls",
+          "black-sand",
+          "glaciers",
+          "seljalandsfoss",
+          "vik",
+          "reynisfjara",
+          "camping"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           75.1779,
           20.0268
         ]
@@ -31474,6 +31547,80 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.3221,
+          60.3913
+        ]
+      },
+      "properties": {
+        "slug": "bergen-preikestolen",
+        "name": "Bergen & Preikestolen",
+        "kind": "town",
+        "country": "norway",
+        "region": "west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A harbour lined with leaning wooden trading houses that have burned and been rebuilt on the same medieval footprint for 900 years, backed by seven mountains \u2014 and, a few hours south, a flat granite slab that ends abruptly 600 metres above a fjord.",
+        "voice": "The recurring Norwegian complaint is that visitors do the cities and leave: one long note to travellers laments \"so many doing exactly the same things in exactly the same",
+        "tags": [
+          "bryggen",
+          "hanseatic",
+          "fish-market",
+          "funicular",
+          "preikestolen",
+          "lysefjord",
+          "rain",
+          "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.01,
+          62.101
+        ]
+      },
+      "properties": {
+        "slug": "geirangerfjord-naeroyfjord",
+        "name": "Geirangerfjord & N\u00e6r\u00f8yfjord",
+        "kind": "nature",
+        "country": "norway",
+        "region": "west",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Sea inlets carved 500 metres deep by ice and walled by rock that rises a kilometre straight out of the water, with abandoned farms clinging to ledges halfway up and waterfalls, the Seven Sisters, the Bridal Veil, falling the entire height into the fjord.",
+        "voice": "Norwegians are blunt about visitors who never leave the capital: \"if you visit Oslo, you have no idea what Norway is about,\" one wrote in a long note to travellers, frust",
+        "tags": [
+          "fjords",
+          "waterfalls",
+          "flam-railway",
+          "ferries",
+          "cliffs",
+          "farms",
+          "unesco",
+          "trollstigen"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           13.6,
           68.1
         ]
@@ -31500,6 +31647,43 @@
           "rorbuer",
           "aurora",
           "norway"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9553,
+          69.6492
+        ]
+      },
+      "properties": {
+        "slug": "tromso",
+        "name": "Troms\u00f8 & the Northern Lights",
+        "kind": "town",
+        "country": "norway",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A university city on an Arctic island 350 km inside the polar circle, sitting under the auroral oval \u2014 the band where the northern lights appear most often \u2014 with mountains across the strait, whales offshore in winter, and a sun that doesn't rise for two months.",
+        "voice": "The steer is straightforward: \"Troms\u00f8 is a very cool town and one of the best places to see the Northern Lights,\" one traveller wrote, pairing it with the standing advice",
+        "tags": [
+          "aurora",
+          "arctic",
+          "polar-night",
+          "midnight-sun",
+          "sami",
+          "whales",
+          "dog-sledding",
+          "cathedral"
         ],
         "stay": false,
         "season": []
