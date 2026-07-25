@@ -22400,6 +22400,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -3.079,
+          47.594
+        ]
+      },
+      "properties": {
+        "slug": "carnac-brittany",
+        "name": "Carnac & Megalithic Brittany",
+        "kind": "point",
+        "country": "france",
+        "region": "northwest",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "More than three thousand standing stones marching in parallel rows across fields for four kilometres, raised by farmers around 4500 BC, older than Stonehenge and the pyramids, and nobody knows why.",
+        "voice": "Asked for Brittany's overlooked wonders, travellers there go straight to the stones: \"that part of the world is full of megalithic monuments\u2026 Carnac is fascinating, but t",
+        "tags": [
+          "megaliths",
+          "menhirs",
+          "alignments",
+          "neolithic",
+          "morbihan",
+          "broceliande",
+          "brittany"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           0.2058,
           49.707
         ]
@@ -22569,6 +22605,78 @@
           "unesco",
           "pilgrimage",
           "tides"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7,
+          49.34
+        ]
+      },
+      "properties": {
+        "slug": "normandy-d-day",
+        "name": "Normandy \u2014 the D-Day Coast & Bayeux",
+        "kind": "point",
+        "country": "france",
+        "region": "northwest",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The beaches where the liberation of Western Europe began, quiet stretches of sand and bluff whose ordinary emptiness is the point, backed by cemeteries, gun batteries, and a small town holding a 70-metre embroidery that has told a conquest story since the 1070s.",
+        "voice": "A Normandy local's own route is the one to copy: \"'hidden' gems in Normandy regarding WW2: Memorial museum in Caen, then D-Day beaches, Arromanches museum,\" with the tape",
+        "tags": [
+          "d-day",
+          "omaha-beach",
+          "arromanches",
+          "bayeux-tapestry",
+          "cemeteries",
+          "ww2",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3522,
+          48.8566
+        ]
+      },
+      "properties": {
+        "slug": "paris",
+        "name": "Paris",
+        "kind": "town",
+        "country": "france",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The most visited city on earth, and still worth it: the Louvre and the Seine and the boulevards, yes, but also a city of twenty villages where the actual pleasure is walking until you find a caf\u00e9 you like and sitting in it.",
+        "voice": "Regulars there give the same two-part advice. On the myth of secret Paris: \"Paris is the most visited city in the world, there aren't really 'hidden gems.' The best strat",
+        "tags": [
+          "louvre",
+          "seine",
+          "haussmann",
+          "canal-saint-martin",
+          "belleville",
+          "cafes",
+          "marches"
         ],
         "stay": false,
         "season": []
@@ -28563,6 +28671,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -89.811,
+          18.105
+        ]
+      },
+      "properties": {
+        "slug": "calakmul",
+        "name": "Calakmul",
+        "kind": "point",
+        "country": "mexico",
+        "region": "yucatan",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "One of the largest Maya cities ever built, capital of the Snake Kingdom and Tikal's great rival, sunk deep in a jungle biosphere near the Guatemalan border, where you climb a pyramid and see nothing to the horizon but unbroken canopy.",
+        "voice": "Mexicans recommending their own overlooked places put it at the top: Campeche \"tiene muchos lugares incre\u00edbles poco visitados,\" one wrote, and singled out Calakmul as \"la",
+        "tags": [
+          "maya",
+          "jungle",
+          "biosphere",
+          "pyramids",
+          "campeche",
+          "howler-monkeys",
+          "unesco",
+          "snake-kingdom"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -88.5678,
           20.6843
         ]
@@ -28659,6 +28804,78 @@
           "callejones",
           "tunnels",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.976,
+          21.598
+        ]
+      },
+      "properties": {
+        "slug": "huasteca-potosina",
+        "name": "Huasteca Potosina",
+        "kind": "nature",
+        "country": "mexico",
+        "region": "bajio",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A green corner of San Luis Potos\u00ed where mineral-rich rivers run an unreal turquoise and fall over limestone in terraces, curtains, and a 105-metre plunge, plus a surrealist's concrete jungle folly hidden in the cloud forest.",
+        "voice": "Mexicans name it first when asked what their own country undervalues, \"toda la Huasteca Potosina\u2026 est\u00e1 super infravalorada\" \u2014 and then a local supplies the honest counter",
+        "tags": [
+          "waterfalls",
+          "tamul",
+          "surrealist-garden",
+          "cascadas",
+          "rafting",
+          "san-luis-potosi",
+          "caves"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.017,
+          20.931
+        ]
+      },
+      "properties": {
+        "slug": "izamal",
+        "name": "Izamal",
+        "kind": "town",
+        "country": "mexico",
+        "region": "yucatan",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An entire town painted egg-yolk yellow, built around a colossal Franciscan monastery that the Spanish raised directly on top of a Maya pyramid, with more pyramids still standing among the houses, usually empty.",
+        "voice": "It converts even the heat-averse: \"si no fuera por el calor infernal que hace, Izamal en Yucat\u00e1n me encant\u00f3,\" one Mexican wrote \u2014 but for the infernal heat, I loved it \u2014 ",
+        "tags": [
+          "yellow-city",
+          "maya",
+          "convent",
+          "pyramids",
+          "yucatan",
+          "pueblo-magico",
+          "horse-carriage"
         ],
         "stay": false,
         "season": []
@@ -28766,6 +28983,43 @@
           "indigenous",
           "crafts",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.5832,
+          22.7709
+        ]
+      },
+      "properties": {
+        "slug": "zacatecas",
+        "name": "Zacatecas",
+        "kind": "town",
+        "country": "mexico",
+        "region": "bajio",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A silver-boom city wedged into a narrow ravine at 2,400 metres, built entirely from pink cantera stone, with one of the most extravagant baroque cathedral fa\u00e7ades in the Americas and a cable car running over the rooftops to the hill above.",
+        "voice": "The affection and the caution arrive together. \"Zacatecas es chulo de a madre,\" one Mexican wrote \u2014 it's gorgeous \u2014 and another: \"definitivamente debe ser de las ciudades",
+        "tags": [
+          "silver",
+          "baroque",
+          "cantera-rosa",
+          "mine-tour",
+          "cable-car",
+          "unesco",
+          "altitude",
+          "care"
         ],
         "stay": false,
         "season": []
@@ -31417,6 +31671,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -8.245,
+          40.1
+        ]
+      },
+      "properties": {
+        "slug": "aldeias-de-xisto",
+        "name": "The Schist Villages (Aldeias do Xisto)",
+        "kind": "town",
+        "country": "portugal",
+        "region": "center",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Two dozen villages built entirely from dark schist slabs, tucked into the wooded mountains of Portugal's interior, several of them abandoned and slowly restored, with river beaches dammed into the streams below them.",
+        "voice": "The Portuguese find these on their own doorstep: posting the Lous\u00e3 castle, one wrote, \"morei ali perto toda a vida e n\u00e3o sabia da exist\u00eancia deste castelinho at\u00e9 ontem\" \u2014",
+        "tags": [
+          "schist",
+          "villages",
+          "lousa",
+          "river-beaches",
+          "serra",
+          "castle",
+          "hiking",
+          "interior"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -8.4256,
           40.2081
         ]
@@ -32908,6 +33199,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -6.2886,
+          36.5271
+        ]
+      },
+      "properties": {
+        "slug": "cadiz",
+        "name": "C\u00e1diz",
+        "kind": "town",
+        "country": "spain",
+        "region": "andalusia",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Arguably the oldest continuously inhabited city in Western Europe, founded by Phoenicians around 1100 BC, packed onto a spit of land almost entirely surrounded by Atlantic: salt air down every street and a city beach inside the old walls.",
+        "voice": "Spaniards post about it with simple, unguarded fondness, \"favorite spot in C\u00e1diz,\" one wrote of the seafront, drawing a crowd of agreement, and the Americans with family ",
+        "tags": [
+          "carnaval",
+          "atlantic",
+          "phoenician",
+          "old-town",
+          "beaches",
+          "sherry",
+          "flamenco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -4.7794,
           37.879
         ]
@@ -32934,6 +33261,42 @@
           "arches",
           "unesco",
           "patios"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4214,
+          36.7213
+        ]
+      },
+      "properties": {
+        "slug": "malaga",
+        "name": "M\u00e1laga",
+        "kind": "town",
+        "country": "spain",
+        "region": "andalusia",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The Costa del Sol's capital, long written off as the airport you fly into on the way to a resort, now one of Andalusia's most enjoyable cities: Roman theatre under a Moorish fortress, a dozen good museums, and a pedestrian old town made for evenings.",
+        "voice": "It draws unusually absolute affection: \"Como alem\u00e1n, M\u00e1laga es mi lugar favorito en el mundo\" \u2014 as a German, M\u00e1laga is my favourite place in the world \u2014 one wrote of its ",
+        "tags": [
+          "andalusia",
+          "picasso",
+          "alcazaba",
+          "tapas",
+          "costa-del-sol",
+          "museums",
+          "seafood"
         ],
         "stay": false,
         "season": []
