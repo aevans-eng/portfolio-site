@@ -18832,6 +18832,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -41.4,
+          -12.6
+        ]
+      },
+      "properties": {
+        "slug": "chapada-diamantina",
+        "name": "Chapada Diamantina",
+        "kind": "nature",
+        "country": "brazil",
+        "region": "northeast",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "An old diamond-mining highland in the Bahian interior, now a national park of flat-topped ranges cut by canyons: 380-metre waterfalls, caves holding water so clear and blue it looks lit from below, and river-worn rock that runs like polished timber.",
+        "voice": "Brazilians route visitors here for exactly the reasons it deserves: \"Chapada Diamantina in the state of Bahia. Well worth the trip,\" one wrote \u2014 \"stay at Len\u00e7\u00f3is and arra",
+        "tags": [
+          "tablelands",
+          "waterfalls",
+          "caves",
+          "canyons",
+          "lencois",
+          "bahia",
+          "hiking",
+          "blue-cave"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -32.43,
           -3.85
         ]
@@ -18928,6 +18965,43 @@
           "maranhao",
           "seasonal",
           "swimming"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.5035,
+          -20.3856
+        ]
+      },
+      "properties": {
+        "slug": "ouro-preto",
+        "name": "Ouro Preto & Tiradentes",
+        "kind": "town",
+        "country": "brazil",
+        "region": "southeast",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The richest gold town of the 18th-century Americas, left almost intact when the gold ran out: steep cobbled streets falling between whitewashed houses, and some two dozen baroque churches carved by a mixed-race sculptor with no hands who worked with tools strapped to his wrists.",
+        "voice": "Brazilians giving itineraries in Minas route people out of the state capital and into these towns: \"BH 2 nights and then visit Ouro Preto and Tiradentes,\" one advised, ad",
+        "tags": [
+          "baroque",
+          "colonial",
+          "gold-rush",
+          "aleijadinho",
+          "minas-gerais",
+          "churches",
+          "unesco",
+          "cheese"
         ],
         "stay": false,
         "season": []
