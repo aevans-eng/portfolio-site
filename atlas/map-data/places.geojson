@@ -37558,6 +37558,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -91.5,
+          47.95
+        ]
+      },
+      "properties": {
+        "slug": "boundary-waters",
+        "name": "The Boundary Waters",
+        "kind": "nature",
+        "country": "usa",
+        "region": "midwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Over a thousand lakes stitched together by portage trails across a million acres of forest on the Canadian border, where motors are banned, campsites are one-party-only, and you travel entirely by carrying a canoe on your shoulders between the water.",
+        "voice": "Its constituency is unusually fierce. In a thread about proposed rollbacks to protected-land rules, the response was immediate and specific to this place: \"already planni",
+        "tags": [
+          "canoe",
+          "portage",
+          "wilderness",
+          "lakes",
+          "no-motors",
+          "dark-skies",
+          "loons",
+          "permits"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -150.5,
           63.33
         ]
@@ -37595,6 +37632,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -80.93,
+          25.32
+        ]
+      },
+      "properties": {
+        "slug": "everglades",
+        "name": "The Everglades",
+        "kind": "nature",
+        "country": "usa",
+        "region": "florida",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Not a swamp but a river \u2014 100 km wide and a few centimetres deep, moving so slowly you can't see it, across a limestone shelf covered in sawgrass, with alligators, wading birds and the only place on Earth where crocodiles and alligators share water.",
+        "voice": "Park regulars are split on it in a way worth hearing before you go \u2014 it appears in \"most overrated\" threads for the wildlife collapse, while others list it among the park",
+        "tags": [
+          "river-of-grass",
+          "alligators",
+          "wading-birds",
+          "mangroves",
+          "canoe",
+          "pythons",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -112.14,
           36.06
         ]
@@ -37621,6 +37695,42 @@
           "permits",
           "geology",
           "sunrise"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.49,
+          35.61
+        ]
+      },
+      "properties": {
+        "slug": "great-smoky-mountains",
+        "name": "Great Smoky Mountains",
+        "kind": "nature",
+        "country": "usa",
+        "region": "south",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The most visited national park in the United States, by a wide margin, and one of the most biologically diverse temperate places on Earth \u2014 some 19,000 documented species, with tens of thousands more thought to be undescribed, including a global capital of salamanders.",
+        "voice": "It divides park regulars honestly. In an \"overrated\" thread it gets named directly \u2014 \"most overrated for me would be Joshua Tree and Great Smoky Mountains\" \u2014 while others",
+        "tags": [
+          "appalachian",
+          "biodiversity",
+          "synchronous-fireflies",
+          "cades-cove",
+          "free-entry",
+          "salamanders",
+          "unesco"
         ],
         "stay": false,
         "season": []
