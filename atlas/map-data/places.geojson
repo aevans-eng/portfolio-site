@@ -25056,6 +25056,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          88.9,
+          21.9497
+        ]
+      },
+      "properties": {
+        "slug": "sundarbans-india",
+        "name": "The Sundarbans (Indian side)",
+        "kind": "nature",
+        "country": "india",
+        "region": "east",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The largest mangrove forest on Earth \u2014 shared with Bangladesh, which holds the bigger share \u2014 a tidal maze of channels and silt islands where the Ganges meets the sea \u2014 and the only mangrove forest anywhere that holds a population of tigers, which here swim between islands and are almost never seen.",
+        "voice": "Indian travellers push it precisely because it's overlooked and precarious: \"if you are going to India, consider seeing the Sundarbans mangrove forest south of Kolkata \u2014 ",
+        "tags": [
+          "mangroves",
+          "bengal-tiger",
+          "delta",
+          "boat",
+          "unesco",
+          "climate-change",
+          "kolkata",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           78.0421,
           27.1751
         ]
@@ -25216,7 +25253,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A single Hindu island in the world's largest Muslim country, where daily offerings sit on every doorstep, rice terraces stair-step down the hills, and temples cling to sea cliffs, all of it now wrestling with its own popularity.",
-        "voice": "",
+        "voice": "Bali's reputation precedes it, and travellers meet that head on: \"it has a pretty bad reputation either as a shithole full of pissed Australians (Kuta) or a tourist trap ",
         "tags": [
           "hindu",
           "temples",
@@ -37614,7 +37651,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The Roman Empire's northern edge, a stone wall run coast to coast across northern England around AD 122, still marching over the crags with forts and mile-castles strung along it.",
-        "voice": "",
+        "voice": "Northern England gets recommended for the emptiness rather than the monuments: \"an amazing place to check out if you're in the north of England is Kielder Forest in North",
         "tags": [
           "roman",
           "frontier",
@@ -37759,7 +37796,7 @@
         "radius": 7,
         "drive": "",
         "hook": "The most famous prehistoric monument in the world, and a bigger, stranger stone circle twenty miles north that you can actually walk into with a pub in the middle of it.",
-        "voice": "",
+        "voice": "The steer travellers give each other for England is to spend time in the small walkable cities rather than only at the monuments: an exchange student at Oxford \"absolutel",
         "tags": [
           "neolithic",
           "stone-circle",
