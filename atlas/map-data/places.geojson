@@ -38103,6 +38103,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -78.35,
+          38.53
+        ]
+      },
+      "properties": {
+        "slug": "shenandoah-blue-ridge",
+        "name": "Shenandoah & the Blue Ridge Parkway",
+        "kind": "nature",
+        "country": "usa",
+        "region": "mid-atlantic",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A national park shaped like a ribbon \u2014 170 km long and rarely more than a few miles wide \u2014 following a ridge with a road down its spine, 75 overlooks, and the Appalachian Trail running the length of it.",
+        "voice": "Park regulars name it among the eastern parks that formed them before they ever saw the West \u2014 \"had been to Shenandoah, Smokies, Everglades before\" is how one framed a li",
+        "tags": [
+          "skyline-drive",
+          "blue-ridge",
+          "appalachian-trail",
+          "waterfalls",
+          "black-bears",
+          "autumn",
+          "overlooks"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -110.5,
           44.6
         ]
