@@ -28933,6 +28933,78 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          101.6869,
+          3.139
+        ]
+      },
+      "properties": {
+        "slug": "kuala-lumpur",
+        "name": "Kuala Lumpur",
+        "kind": "town",
+        "country": "malaysia",
+        "region": "west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Three cuisines and three cultures sharing one city, and the food is the reason to come: Malay, Chinese and Indian cooking developed side by side for generations here, so a single street can offer nasi lemak, char kway teow and banana-leaf curry, all excellent, all cheap.",
+        "voice": "The food is what visitors keep coming back to: \"absolutely incredible food. I still think about it three years later. Make sure a street food tour is on your list,\" one w",
+        "tags": [
+          "hawker-food",
+          "petronas",
+          "batu-caves",
+          "chinatown",
+          "mamak",
+          "colonial",
+          "night-markets"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.943,
+          5.864
+        ]
+      },
+      "properties": {
+        "slug": "sepilok-sandakan",
+        "name": "Sepilok & the Kinabatangan",
+        "kind": "nature",
+        "country": "malaysia",
+        "region": "borneo",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The best place on earth to meet an orangutan that isn't in a cage: a rehabilitation centre in Sabah where orphaned apes are taught to be wild again, next door to a sun bear sanctuary, and upriver a stretch of the Kinabatangan where the wildlife concentrates because the forest around it has gone.",
+        "voice": "Malaysians say the island half of their country is the part visitors skip: \"I was born in the Borneo part of Malaysia\u2026 it seems that part of Malaysia is most ignored when",
+        "tags": [
+          "orangutans",
+          "sun-bears",
+          "proboscis-monkeys",
+          "kinabatangan",
+          "rainforest",
+          "birdwatching",
+          "sabah"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           102.4,
           4.3833
         ]
@@ -36286,7 +36358,7 @@
         "radius": 11,
         "drive": "",
         "hook": "The only city that straddles two continents, capital of two great empires in turn, where a fifteen-hundred-year-old former cathedral, imperial mosques, and a labyrinthine bazaar crowd the hills above the Bosphorus.",
-        "voice": "",
+        "voice": "The affection runs deep \u2014 \"Istanbul is probably my favourite place in the world,\" one traveller wrote \u2014 but the advice that recurs is to cross the water: \"take the ferry ",
         "tags": [
           "bosphorus",
           "hagia-sophia",
