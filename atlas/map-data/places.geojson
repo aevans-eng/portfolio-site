@@ -36040,7 +36040,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The old capital of the northern Lanna kingdom, a moated old town packed with teak temples, ringed by forested mountains, hill villages, and ethical elephant sanctuaries, and far more relaxed than Bangkok.",
-        "voice": "",
+        "voice": "It's the base people use and then keep extending: \"Thailand is my favourite,\" wrote someone who spent fourteen months there. \"People usually visit Northern Thailand for c",
         "tags": [
           "lanna",
           "temples",
@@ -36121,6 +36121,42 @@
           "trat",
           "snorkeling",
           "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.44,
+          19.36
+        ]
+      },
+      "properties": {
+        "slug": "pai-mae-hong-son",
+        "name": "Pai & the Mae Hong Son Loop",
+        "kind": "town",
+        "country": "thailand",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "762 curves of mountain road north-west of Chiang Mai, ridden on a rented scooter past waterfalls, hot springs and hill villages, ending in a small valley town that people arrive at for two days and leave after ten.",
+        "voice": "It's the stop people extend: \"seconding Pai. I spent 10 days there during my 3 week vacation,\" one traveller wrote. \"Most fun thing you can do is meet some people and all",
+        "tags": [
+          "scooter-loop",
+          "waterfalls",
+          "hot-springs",
+          "canyon",
+          "hill-tribes",
+          "backpacker",
+          "mountains"
         ],
         "stay": false,
         "season": []
