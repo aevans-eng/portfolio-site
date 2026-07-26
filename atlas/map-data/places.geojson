@@ -18454,7 +18454,7 @@
         "radius": 11,
         "drive": "",
         "hook": "The highest seat of government in the world, a breathtaking city that spills down a steep Andean canyon so that you ride cable cars between neighbourhoods, browse a market of dried llama foetuses, and gaze up at snow peaks from a bowl of brick and adobe.",
-        "voice": "",
+        "voice": "La Paz draws unusually absolute praise from people who have travelled the continent widely. \"Personally I love La Paz/El Alto and think it is one of the most unique citie",
         "tags": [
           "highest-capital",
           "cable-cars",
@@ -19917,7 +19917,7 @@
         "radius": 11,
         "drive": "",
         "hook": "Patagonia's crown jewel: three sheer granite towers soaring above a turquoise glacial lake, at the heart of a national park of glaciers, emerald valleys, and roaming guanacos that draws trekkers from around the world.",
-        "voice": "",
+        "voice": "A two-week Chile trip on r/travel split evenly between Santiago and Patagonia, and only one half of it produced superlatives: \"the 2nd week was in Patagonia trekking in T",
         "tags": [
           "patagonia",
           "granite-towers",
@@ -21247,7 +21247,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The heart of Costa Rica's famous ecotourism: a misty cloud forest dripping with life and a perfect volcano cone rising over hot springs, linked by canopy walkways, zip-lines, and the country's easygoing \"pura vida\" spirit.",
-        "voice": "",
+        "voice": "Both halves of this pin get named in the r/solotravel Costa Rica thread, and for activity rather than scenery: \"La Fortuna \u2014 I enjoyed the canyoneering, rappelling. Monte",
         "tags": [
           "cloud-forest",
           "arenal-volcano",
@@ -22120,6 +22120,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          32.67,
+          26.1417
+        ]
+      },
+      "properties": {
+        "slug": "dendera",
+        "name": "Dendera",
+        "kind": "point",
+        "country": "egypt",
+        "region": "nile-valley",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An hour north of Luxor, a temple to Hathor whose ceiling still carries its original paint \u2014 deep blue night skies, gold stars, and a sky-goddess stretched the length of the hall \u2014 because for centuries the colour lay hidden under soot.",
+        "voice": "One traveller's month-long, rail-and-taxi Egypt itinerary on r/travel routed deliberately out to it \u2014 \"take a local train to Qena, then get a taxi to Dendera\" \u2014 and gave ",
+        "tags": [
+          "temple",
+          "hathor",
+          "ceiling",
+          "zodiac",
+          "ptolemaic",
+          "cleopatra",
+          "nile",
+          "day-trip"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           31.1342,
           29.9792
         ]
@@ -22173,7 +22210,7 @@
         "radius": 11,
         "drive": "",
         "hook": "Built over ancient Thebes, the capital of pharaonic Egypt at its height, a place often called the world's greatest open-air museum, where colossal temples line one bank of the Nile and the tombs of kings honeycomb the hills on the other.",
-        "voice": "",
+        "voice": "Luxor is the anchor of nearly every Egypt itinerary posted to r/travel, and the advice that repeats is about how you get there and what you do next. One traveller who spe",
         "tags": [
           "thebes",
           "karnak",
@@ -27918,7 +27955,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The classic African savanna of the imagination, endless golden grassland dotted with acacias and big cats, and the stage for the great migration, when millions of wildebeest and zebra pour across in a thundering, crocodile-menaced river crossing.",
-        "voice": "",
+        "voice": "A week in Kenya, reported plainly on r/travel: a day and a half in Nairobi, which they \"found rather unimpressive \u2014 lots of shops selling the same touristy stuff,\" then f",
         "tags": [
           "safari",
           "great-migration",
@@ -31392,7 +31429,7 @@
         "radius": 11,
         "drive": "",
         "hook": "New Zealand's highest mountain presiding over a valley of glaciers, iceberg-dotted lakes, and turquoise rivers, in one of the largest dark-sky reserves on Earth, where the Southern Alps meet a blaze of stars.",
-        "voice": "",
+        "voice": "The recommendation that arrives with the most force in the r/solotravel New Zealand thread is not about the mountain at all \u2014 it is about what is above it. A campervan tr",
         "tags": [
           "southern-alps",
           "aoraki",
@@ -31428,7 +31465,7 @@
         "radius": 11,
         "drive": "",
         "hook": "New Zealand's biggest city, a laid-back \"City of Sails\" spread over harbours and old volcanoes, and gateway to the subtropical north, where the Bay of Islands scatters green islets across turquoise water and the nation's founding treaty was signed.",
-        "voice": "",
+        "voice": "The Bay of Islands recommendation in the r/solotravel thread is about history rather than beaches. An American who spent two months in the country listed \"learning about ",
         "tags": [
           "auckland",
           "city-of-sails",
@@ -31436,6 +31473,43 @@
           "waitangi",
           "beaches",
           "sailing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.5028,
+          -45.8788
+        ]
+      },
+      "properties": {
+        "slug": "dunedin-otago-peninsula",
+        "name": "Dunedin & the Otago Peninsula",
+        "kind": "town",
+        "country": "new-zealand",
+        "region": "south-lower",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A Victorian Scottish city at the end of a long harbour, with a headland an hour away that holds the only mainland breeding colony of royal albatross anywhere in the world \u2014 birds with three-metre wingspans coming in over a clifftop car park.",
+        "voice": "Dunedin arrives in the r/solotravel New Zealand thread inside a South Island route someone clearly loved, and gets the most personal verb in the list: \"I adore Dunedin, i",
+        "tags": [
+          "albatross",
+          "penguins",
+          "wildlife",
+          "scottish",
+          "gold-rush",
+          "castle",
+          "student-town",
+          "coast"
         ],
         "stay": false,
         "season": []
@@ -34544,7 +34618,7 @@
         "radius": 11,
         "drive": "",
         "hook": "One of the most beautifully sited cities on earth, wrapped around a flat-topped mountain that drops to the sea, where you can ride a cable car above the clouds in the morning and swim off a white beach in the afternoon.",
-        "voice": "",
+        "voice": "The most useful description of Cape Town in the r/travel South Africa thread came from someone born and raised there, and it is notable for how little of it is about the ",
         "tags": [
           "table-mountain",
           "cape-point",
@@ -36406,7 +36480,7 @@
         "radius": 9,
         "drive": "",
         "hook": "Tanzania's vast, wild, little-visited south, huge parks the size of small countries where you can watch wildlife along a great river with barely another vehicle in sight, the antidote to the crowded northern circuit.",
-        "voice": "",
+        "voice": "This pin exists largely because of one line in the r/travel Tanzania thread. After running through the northern circuit \u2014 Serengeti, Ngorongoro, Manyara, Tarangire, all r",
         "tags": [
           "ruaha",
           "nyerere",
@@ -36477,7 +36551,7 @@
         "radius": 11,
         "drive": "",
         "hook": "A spice island in the Indian Ocean where an ancient Swahili trading town of carved doors and winding lanes gives way to turquoise water and white sand, a place of monsoon dhows, cloves, and a heavy history.",
-        "voice": "",
+        "voice": "Zanzibar draws a flat \"simply amazing\" in the r/travel Tanzania thread, but the specifics are more useful than the verdict. On the town: \"spend two nights in Stone Town \u2014",
         "tags": [
           "stone-town",
           "swahili",
