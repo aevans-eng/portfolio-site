@@ -29943,6 +29943,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -97.1,
+          18.85
+        ]
+      },
+      "properties": {
+        "slug": "orizaba",
+        "name": "Orizaba & Pico de Orizaba",
+        "kind": "town",
+        "country": "mexico",
+        "region": "central-mexico",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A well-loved and frankly well-visited Porfirian town in a green Veracruz valley, with the highest mountain in Mexico \u2014 a glaciated 5,636 m volcano, third-highest in North America \u2014 standing directly over its rooftops on a clear morning.",
+        "voice": "Orizaba came up twice in one long Mexican thread asking for the most beautiful little-known town people had actually been to \u2014 and the first thing the top comment does is",
+        "tags": [
+          "volcano",
+          "colonial",
+          "mountains",
+          "cable-car",
+          "river-walk",
+          "art-nouveau",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -104.88,
           21.37
         ]
@@ -34908,6 +34944,41 @@
           "aranese",
           "hiking",
           "national-park"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.992,
+          36.996
+        ]
+      },
+      "properties": {
+        "slug": "alhama-de-granada",
+        "name": "Alhama de Granada",
+        "kind": "town",
+        "country": "spain",
+        "region": "andalusia",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A white town built along the lip of a gorge an hour from Granada, with hot water running out of the hillside below it \u2014 free, outdoors, and open at night.",
+        "voice": "",
+        "tags": [
+          "hot-springs",
+          "gorge",
+          "white-town",
+          "moorish",
+          "free",
+          "andalusia"
         ],
         "stay": false,
         "season": []
