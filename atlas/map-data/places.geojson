@@ -21087,6 +21087,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -74.03,
+          11.3
+        ]
+      },
+      "properties": {
+        "slug": "tayrona-minca",
+        "name": "Tayrona & Minca",
+        "kind": "nature",
+        "country": "colombia",
+        "region": "caribbean",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The place where the world's highest coastal mountain range comes down to the Caribbean \u2014 jungle running straight into palm-backed bays \u2014 with a cool coffee village in the hills above it as the antidote to the heat.",
+        "voice": "Backpackers route it as a pair rather than separately: \"Santa Marta was fantastic, and they have the Minca region pretty close as well,\" one wrote \u2014 the coast for the par",
+        "tags": [
+          "jungle",
+          "caribbean-beaches",
+          "sierra-nevada",
+          "coffee",
+          "hammocks",
+          "birdwatching",
+          "kogi"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           15.2429,
           -4.2634
         ]
@@ -35879,6 +35915,42 @@
           "boat",
           "castle",
           "day-trip"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3014,
+          22.6273
+        ]
+      },
+      "properties": {
+        "slug": "kaohsiung",
+        "name": "Kaohsiung",
+        "kind": "town",
+        "country": "taiwan",
+        "region": "south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Taiwan's big southern port, warm when Taipei is grey and drizzling, where disused dock warehouses became an arts district and a temple pond is guarded by a dragon and a tiger you walk through \u2014 in one side, out the other, for luck.",
+        "voice": "It's the standard \"if you're heading south\" stop rather than a headline: \"if you are making your way around the island and heading south, consider a stop in Kaohsiung,\" o",
+        "tags": [
+          "harbour",
+          "pier-2",
+          "lotus-pond",
+          "night-market",
+          "metro",
+          "warm-winter",
+          "cijin"
         ],
         "stay": false,
         "season": []
