@@ -21353,7 +21353,7 @@
         "radius": 7,
         "drive": "",
         "hook": "Sixteen lakes stacked in a wooded canyon, each spilling into the next over natural stone dams, the water an unreal turquoise, all crossed on low wooden boardwalks that run right at the surface.",
-        "voice": "",
+        "voice": "It anchors the standard Croatian loop: travellers describe spontaneous trips taking in \"Split, Plitvi\u010dka jezera, Zagreb and Dubrovnik,\" with the lakes the fixed point eve",
         "tags": [
           "waterfalls",
           "travertine",
@@ -21361,6 +21361,43 @@
           "national-park",
           "boardwalks",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4402,
+          43.5081
+        ]
+      },
+      "properties": {
+        "slug": "split-diocletian",
+        "name": "Split & Diocletian's Palace",
+        "kind": "town",
+        "country": "croatia",
+        "region": "dalmatia",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A Roman emperor's retirement palace that never became a ruin, because people simply moved in and never left \u2014 so its fourth-century walls, cellars and colonnaded courtyard now contain apartments, bars and laundry lines, seventeen centuries on.",
+        "voice": "Travellers describe it as the pleasant surprise of a Croatian trip: \"I liked Split, it wasn't that crowded when we were there, the old city is\" the draw, one wrote of a s",
+        "tags": [
+          "roman",
+          "diocletian",
+          "unesco",
+          "riva",
+          "islands",
+          "ferries",
+          "marjan",
+          "dalmatia"
         ],
         "stay": false,
         "season": []
@@ -24134,7 +24171,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A grand imperial capital split by the Danube into hilly Buda and flat Pest, sitting on hot springs that feed sprawling thermal bath palaces where the city goes to soak and play chess in the steam.",
-        "voice": "",
+        "voice": "A Hungarian-American who visits several times a year gives the standing advice: \"Budapest \u2014 most people just go here, and it's a wonderful and cheap city. Get tickets to ",
         "tags": [
           "thermal-baths",
           "danube",
@@ -32735,6 +32772,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          120.993,
+          14.002
+        ]
+      },
+      "properties": {
+        "slug": "taal-volcano",
+        "name": "Taal Volcano",
+        "kind": "nature",
+        "country": "philippines",
+        "region": "luzon",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An island in a lake, on an island in a lake, on an island \u2014 a volcano sitting inside its own crater lake, itself inside a vastly larger caldera, two hours from Manila and one of the most restless volcanoes on earth.",
+        "voice": "It's the trip visitors stuck in Manila for work keep naming: \"I was in Manila for business for around a month and didn't get to see much of the countryside,\" one wrote, \"",
+        "tags": [
+          "volcano",
+          "crater-lake",
+          "tagaytay",
+          "caldera",
+          "day-trip",
+          "manila",
+          "active",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           23.87,
           52.7
         ]
@@ -34446,6 +34520,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.9,
+          36.6
+        ]
+      },
+      "properties": {
+        "slug": "four-rivers-bike-path",
+        "name": "The Seoul\u2013Busan Bike Path",
+        "kind": "nature",
+        "country": "south-korea",
+        "region": "central",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A 633-kilometre cycle route from Seoul to Busan that is almost entirely separated from traffic \u2014 riverside path the whole way, with its own passport you get stamped at booths along the route, crossing the country coast to coast without sharing the road with a car.",
+        "voice": "It's the tip cyclists pass on to each other: \"for all the cyclists heading to South Korea, there is a beautiful bike path that runs the entire country from Seoul to Busan",
+        "tags": [
+          "cycling",
+          "four-rivers",
+          "car-free",
+          "passport-stamps",
+          "jjimjilbang",
+          "han-river",
+          "nakdong"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           129.2247,
           35.8562
         ]
@@ -35113,7 +35223,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A walled colonial port on the south coast, its ramparts enclosing a mix of Dutch, Portuguese, and Sri Lankan streets, backed by a coastline of beaches, blue whales, and fishermen perched on stilts in the surf.",
-        "voice": "",
+        "voice": "Galle turns up in nearly every shortlist of the island: \"my highlights were World's End, Galle, Ella and Udawalawe Park,\" one traveller wrote after a compact six-day trip",
         "tags": [
           "dutch-fort",
           "ramparts",
