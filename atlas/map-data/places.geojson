@@ -37558,6 +37558,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -150.5,
+          63.33
+        ]
+      },
+      "properties": {
+        "slug": "denali-alaska",
+        "name": "Denali & Interior Alaska",
+        "kind": "nature",
+        "country": "usa",
+        "region": "alaska",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "North America's highest mountain rising 5,500 metres from a plain that is barely above sea level \u2014 the greatest base-to-summit rise of any mountain on Earth \u2014 above six million acres of tundra with almost no trails, because the terrain is open enough not to need them.",
+        "voice": "The advice that recurs is a warning against ambition: \"you will not be able to see them all in two weeks. They are too spread out and remote \u2014 you'd be going to more than",
+        "tags": [
+          "denali",
+          "tundra",
+          "grizzly",
+          "caribou",
+          "park-road",
+          "trailless",
+          "northern-lights",
+          "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -112.14,
           36.06
         ]
@@ -37630,6 +37667,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -159.65,
+          22.15
+        ]
+      },
+      "properties": {
+        "slug": "na-pali-kauai",
+        "name": "The N\u0101 Pali Coast, Kaua\u02bbi",
+        "kind": "nature",
+        "country": "usa",
+        "region": "hawaii",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Twenty-seven kilometres of coastline where 1,200-metre cliffs drop straight into the Pacific in fluted green pleats \u2014 no road reaches it, and it can only be seen from a boat, a helicopter, or a trail that people train for.",
+        "voice": "The most emphatic endorsement in the parks threads is for a place that isn't a national park at all: \"I can't believe no one has mentioned the N\u0101 Pali Coast in Kaua\u02bbi. I'",
+        "tags": [
+          "kalalau",
+          "cliffs",
+          "fluted-ridges",
+          "sea-caves",
+          "permits",
+          "hanakapiai",
+          "snorkeling",
+          "kauai"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -74.006,
           40.7128
         ]
@@ -37656,6 +37730,42 @@
           "parks",
           "walking",
           "transplants"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.6,
+          47.8
+        ]
+      },
+      "properties": {
+        "slug": "olympic",
+        "name": "Olympic National Park",
+        "kind": "nature",
+        "country": "usa",
+        "region": "pacific-northwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Three parks in one: a temperate rainforest that receives up to four metres of rain a year and grows moss in curtains, a wild coastline of sea stacks and tide pools, and glaciated mountains in the middle \u2014 with no road crossing the interior.",
+        "voice": "The single most repeated recommendation is specific and modest: \"you shouldn't miss the Hoh Rainforest trail. It is so beautiful \u2014 we walked into a herd of Roosevelt elk.",
+        "tags": [
+          "hoh-rainforest",
+          "roosevelt-elk",
+          "sea-stacks",
+          "hurricane-ridge",
+          "tide-pools",
+          "moss",
+          "unesco"
         ],
         "stay": false,
         "season": []
