@@ -33841,6 +33841,79 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          103.782,
+          1.283
+        ]
+      },
+      "properties": {
+        "slug": "haw-par-villa",
+        "name": "Haw Par Villa",
+        "kind": "oddity",
+        "country": "singapore",
+        "region": "main",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A theme park built by the Tiger Balm millionaires in 1937 to teach Chinese morality through a thousand painted concrete statues \u2014 including a walk-through depiction of the ten courts of hell, complete with dismemberment, in loving detail, free of charge.",
+        "voice": "It's the recommendation travellers make with obvious delight: \"I highly recommend Haw Par Villa. It's a sort of theme park developed by the makers of Tiger Balm, portrayi",
+        "tags": [
+          "tiger-balm",
+          "chinese-mythology",
+          "ten-courts-of-hell",
+          "dioramas",
+          "kitsch",
+          "free",
+          "weird"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.845,
+          1.28
+        ]
+      },
+      "properties": {
+        "slug": "hawker-centres",
+        "name": "The Hawker Centres",
+        "kind": "point",
+        "country": "singapore",
+        "region": "main",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Open-air food halls where a hundred specialist stalls each cook one dish, perfected over decades, for a few dollars \u2014 a tradition UNESCO added to its intangible cultural heritage list, and the reason one of the world's most expensive cities is also one of its cheapest places to eat superbly.",
+        "voice": "Singaporeans set expectations plainly: \"hostels are mad expensive here compared to most of Asia, especially SEA, so be prepared to go over budget,\" one wrote \u2014 \"food is r",
+        "tags": [
+          "hawker",
+          "chicken-rice",
+          "laksa",
+          "maxwell",
+          "food-culture",
+          "unesco",
+          "cheap-eats",
+          "kopitiam"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           17.1077,
           48.1486
         ]
