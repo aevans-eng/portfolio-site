@@ -916,7 +916,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The capital of a vanished empire that still lives like one, all imperial boulevards and gilded concert halls, where the coffee houses are protected culture and even the vast central cemetery is a destination.",
-        "voice": "",
+        "voice": "Vienna's reputation for coldness gets contradicted by the people who actually stayed: \"so much scepticism about how cold and distant people are there,\" one wrote after a ",
         "tags": [
           "habsburg",
           "coffee-house",
@@ -25812,6 +25812,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -10.268,
+          52.1409
+        ]
+      },
+      "properties": {
+        "slug": "dingle-kerry",
+        "name": "The Dingle Peninsula",
+        "kind": "nature",
+        "country": "ireland",
+        "region": "south",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A finger of Kerry reaching into the Atlantic where the road hugs cliffs above beaches nobody is on, drystone beehive huts from the early Christian era stand in farmers' fields, and Irish is still the daily language \u2014 with a harbour town of trad music at the base of it.",
+        "voice": "People who lived in Ireland pick it out over the famous circuit: \"the bike loop through Dingle might have been one of my favourite things I did while living in Ireland,\" ",
+        "tags": [
+          "slea-head",
+          "gaeltacht",
+          "beehive-huts",
+          "blasket-islands",
+          "trad-music",
+          "cliffs",
+          "cycling"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -6.4755,
           53.6947
         ]
@@ -28127,7 +28163,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A serene old royal town on a finger of land between the Mekong and a tributary, full of gilded temples and French-colonial villas, where at dawn lines of barefoot monks collect alms through the mist.",
-        "voice": "",
+        "voice": "Repeat visitors are unusually protective of it: \"Luang Prabang is one of the most beautiful towns in Southeast Asia,\" one wrote. \"Unlike many tourism hotspots, it seems l",
         "tags": [
           "temples",
           "alms-giving",
@@ -30852,7 +30888,7 @@
         "radius": 11,
         "drive": "",
         "hook": "The trek to the foot of the highest mountain on earth, through the homeland of the Sherpa, past monasteries and prayer flags to a base camp under an icefall, no climbing required.",
-        "voice": "",
+        "voice": "Trekkers are candid about the mix of awe and grind: \"I did the Everest Base Camp trek last year. It was amazing just to see Everest in person and also to challenge myself",
         "tags": [
           "everest",
           "sagarmatha",
@@ -32841,6 +32877,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          19.9496,
+          49.2992
+        ]
+      },
+      "properties": {
+        "slug": "zakopane-tatras",
+        "name": "Zakopane & the Tatras",
+        "kind": "nature",
+        "country": "poland",
+        "region": "south",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Poland's only alpine range, packed into a small border massif of granite peaks and glacial lakes, with a wooden mountain town at its foot that has its own architecture, dialect, music and cheese.",
+        "voice": "It's the stop travellers don't expect to be the highlight: \"I visited Krak\u00f3w, Warsaw and Zakopane,\" one backpacker wrote. \"I wasn't overly impressed with Warsaw\u2026 Zakopane",
+        "tags": [
+          "tatras",
+          "hiking",
+          "morskie-oko",
+          "goral",
+          "wooden-architecture",
+          "oscypek",
+          "skiing",
+          "kasprowy"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -8.245,
           40.1
         ]
@@ -33290,7 +33363,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A dizzying mountain road built by a dictator's army across the highest wall of the Carpathians, hairpinning up to a glacial lake near the top and only open for a few snow-free months a year.",
-        "voice": "",
+        "voice": "Its fame is specific and earned: \"cycling enthusiasts, you must ride what's called the Transf\u0103g\u0103r\u0103\u0219an,\" one wrote. \"Top Gear called it the greatest road in the world. It'",
         "tags": [
           "carpathians",
           "mountain-road",
