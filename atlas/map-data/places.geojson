@@ -37558,6 +37558,78 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -112.14,
+          36.06
+        ]
+      },
+      "properties": {
+        "slug": "grand-canyon",
+        "name": "The Grand Canyon",
+        "kind": "nature",
+        "country": "usa",
+        "region": "southwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "446 kilometres long, up to 29 wide, and about 1,800 metres deep, with two billion years of rock stacked in its walls \u2014 the rare famous sight that photographs genuinely cannot prepare you for, because the scale is the whole point.",
+        "voice": "Park regulars group it with the Utah canyons as a single overwhelming class of landscape \u2014 \"Zion, Bryce, and the Grand Canyon\" \u2014 while giving the same advice that applies",
+        "tags": [
+          "colorado-river",
+          "south-rim",
+          "north-rim",
+          "rim-to-rim",
+          "permits",
+          "geology",
+          "sunrise"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.5498,
+          38.5733
+        ]
+      },
+      "properties": {
+        "slug": "moab-arches-canyonlands",
+        "name": "Moab \u2014 Arches & Canyonlands",
+        "kind": "nature",
+        "country": "usa",
+        "region": "southwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Two thousand natural stone arches in one park \u2014 more than anywhere else on Earth \u2014 and next door a canyon system so large and so lightly developed that standing at its edge feels closer to looking at a planet than a park.",
+        "voice": "The parks people rate highest tend to be named as a set, and this corner is always in it: \"Zion, Bryce, and the Grand Canyon are\u2026\" one wrote, listing the Southwest's cany",
+        "tags": [
+          "arches",
+          "delicate-arch",
+          "canyonlands",
+          "island-in-the-sky",
+          "dark-skies",
+          "slickrock",
+          "colorado-river"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -74.006,
           40.7128
         ]
@@ -37584,6 +37656,79 @@
           "parks",
           "walking",
           "transplants"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.5,
+          44.6
+        ]
+      },
+      "properties": {
+        "slug": "yellowstone-tetons",
+        "name": "Yellowstone & Grand Teton",
+        "kind": "nature",
+        "country": "usa",
+        "region": "rockies",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The world's first national park sits on top of an active supervolcano, which is why half of Earth's geysers are here \u2014 and next door, without foothills to soften them, the Tetons rise 2,000 metres straight off the valley floor.",
+        "voice": "Park regulars name them together and for the same reason: \"I love Glacier, Grand Tetons and Yellowstone for their big skies. Glacier and GT have such beautiful peaks, and",
+        "tags": [
+          "geysers",
+          "bison",
+          "wolves",
+          "hot-springs",
+          "tetons",
+          "lamar-valley",
+          "supervolcano",
+          "wildlife"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.0263,
+          37.2982
+        ]
+      },
+      "properties": {
+        "slug": "zion",
+        "name": "Zion National Park",
+        "kind": "nature",
+        "country": "usa",
+        "region": "southwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A canyon cut 800 metres into red and cream Navajo sandstone, narrow enough at its head that you hike the river itself between walls a few metres apart, and steep enough that the famous route up climbs a fin with chains bolted into the rock.",
+        "voice": "A former ranger's advice is the most useful thing in the threads: \"I used to be a ranger at Zion, so here's my two cents. My favourite view in the park is from Observatio",
+        "tags": [
+          "slot-canyon",
+          "angels-landing",
+          "the-narrows",
+          "kolob",
+          "shuttle",
+          "permits",
+          "sandstone"
         ],
         "stay": false,
         "season": []
