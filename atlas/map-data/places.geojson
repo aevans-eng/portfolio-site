@@ -35780,6 +35780,114 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          120.227,
+          22.9997
+        ]
+      },
+      "properties": {
+        "slug": "tainan",
+        "name": "Tainan",
+        "kind": "town",
+        "country": "taiwan",
+        "region": "south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The island's capital for over two centuries and still its food capital: a low, hot, temple-dense city where the local sport is eating in small portions at many stalls, and where nearly every dish has a shop that has done only that dish for three generations.",
+        "voice": "Taiwan's food reputation is the thing visitors mention first \u2014 \"a really unexpectedly great country. I knew that the food was excellent, but culturally it's really intere",
+        "tags": [
+          "old-capital",
+          "temples",
+          "danzai-noodles",
+          "street-food",
+          "qing",
+          "anping",
+          "snacks"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      },
+      "properties": {
+        "slug": "taipei",
+        "name": "Taipei",
+        "kind": "town",
+        "country": "taiwan",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital where you can eat your way through a night market for a few pounds, soak in a volcanic hot spring inside the city limits, and be on a mountain trail twenty minutes after leaving the metro \u2014 all with infrastructure that mostly just works.",
+        "voice": "Former residents are unusually emphatic: \"I used to live in Taiwan, and will not hesitate to tell anyone it's one of the best places in the world to travel\u2026 it's a mix of",
+        "tags": [
+          "night-markets",
+          "palace-museum",
+          "hot-springs",
+          "hiking",
+          "metro",
+          "street-food",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.49,
+          24.158
+        ]
+      },
+      "properties": {
+        "slug": "taroko-hualien",
+        "name": "Taroko Gorge & Hualien",
+        "kind": "nature",
+        "country": "taiwan",
+        "region": "east",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A canyon cut through solid marble, so narrow in places that the walls nearly close overhead, with a road and footpaths carved into the rock face by hand \u2014 on the side of Taiwan where the Central Range drops straight into the Pacific.",
+        "voice": "It's the recommendation people make for getting past Taipei: \"for those willing to go a bit further afield than the Taipei area, I can recommend Hualien on the east coast",
+        "tags": [
+          "marble-gorge",
+          "cliffs",
+          "east-coast",
+          "rift-valley",
+          "indigenous",
+          "earthquake",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           68.37,
           39.07
         ]
