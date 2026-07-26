@@ -33491,6 +33491,115 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          49.1088,
+          55.7963
+        ]
+      },
+      "properties": {
+        "slug": "kazan",
+        "name": "Kazan",
+        "kind": "town",
+        "country": "russia",
+        "region": "european-west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The capital of Tatarstan, where a mosque and an Orthodox cathedral stand inside the same white kremlin walls, street signs run in Tatar and Russian, and the city has spent five centuries being both Muslim and Russian at once.",
+        "voice": "It's the city travellers name when asked what to add beyond the two capitals: \"I would recommend Kazan as well \u2014 a mix of Europe and Asia in one city, plus more tourist f",
+        "tags": [
+          "tatar",
+          "kremlin",
+          "mosque-and-cathedral",
+          "volga",
+          "unesco",
+          "bilingual",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.0,
+          53.5
+        ]
+      },
+      "properties": {
+        "slug": "lake-baikal",
+        "name": "Lake Baikal",
+        "kind": "nature",
+        "country": "russia",
+        "region": "siberia",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The oldest and deepest lake on Earth \u2014 25 million years old, 1,642 metres down \u2014 holding around a fifth of all the world's unfrozen fresh water, and freezing each winter into transparent ice you can walk, drive and cycle across.",
+        "voice": "Travellers who made the trip describe Russia as a place that rewarded the effort of preparation \u2014 \"learning the Cyrillic alphabet will help immensely\" is the recurring fi",
+        "tags": [
+          "deepest-lake",
+          "ice",
+          "olkhon",
+          "trans-siberian",
+          "endemic-species",
+          "buryat",
+          "unesco",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3086,
+          59.9375
+        ]
+      },
+      "properties": {
+        "slug": "st-petersburg",
+        "name": "St Petersburg",
+        "kind": "town",
+        "country": "russia",
+        "region": "european-west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A capital built from nothing on a swamp by imperial decree, laid out in canals and pastel baroque along the Neva, holding one of the largest art collections on Earth \u2014 and, for a few weeks in June, never quite going dark.",
+        "voice": "Travellers who spent time there rated the country highly and gave one piece of advice above all others: \"learning the Cyrillic alphabet will help immensely \u2014 you don't ne",
+        "tags": [
+          "hermitage",
+          "canals",
+          "imperial",
+          "white-nights",
+          "baroque",
+          "neva",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.0606,
           -1.9536
         ]
