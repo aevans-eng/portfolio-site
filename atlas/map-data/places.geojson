@@ -37522,6 +37522,78 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -103.25,
+          29.25
+        ]
+      },
+      "properties": {
+        "slug": "big-bend-texas",
+        "name": "Big Bend & West Texas",
+        "kind": "nature",
+        "country": "usa",
+        "region": "texas",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The least-visited great national park in the lower 48, where the Rio Grande cuts 460-metre limestone canyons on the Mexican border, a whole mountain range sits inside the desert, and the night sky is among the darkest in North America.",
+        "voice": "Texans set expectations about the distances first: \"Texas is as huge as stereotyped. It takes about 12 hours to drive from El Paso to Houston, and half of that stretch is",
+        "tags": [
+          "chihuahuan-desert",
+          "rio-grande",
+          "santa-elena",
+          "chisos",
+          "dark-skies",
+          "marfa",
+          "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006,
+          40.7128
+        ]
+      },
+      "properties": {
+        "slug": "new-york-city",
+        "name": "New York City",
+        "kind": "town",
+        "country": "usa",
+        "region": "northeast",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A city of transplants where almost nobody is from, which is exactly why it's easy to arrive alone \u2014 and where the actual pleasure is neighbourhood-level: a subway ride to somewhere you've never heard of, and eating whatever that block does best.",
+        "voice": "The case for it as a solo destination is made repeatedly: \"NYC is the friendliest of cities for solo travellers. A city of transplants \u2014 everyone is quick to ask where yo",
+        "tags": [
+          "boroughs",
+          "museums",
+          "subway",
+          "immigrant-food",
+          "parks",
+          "walking",
+          "transplants"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           64.4286,
           39.7747
         ]
