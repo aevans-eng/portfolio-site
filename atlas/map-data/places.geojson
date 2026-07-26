@@ -28006,6 +28006,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          20.7397,
+          42.2139
+        ]
+      },
+      "properties": {
+        "slug": "prizren-gjakova",
+        "name": "Prizren & Gjakova",
+        "kind": "town",
+        "country": "kosovo",
+        "region": "main",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "Two Ottoman towns in Europe's least-visited country: Prizren stacked below a hilltop fortress with a river running through its middle, and Gjakova an hour away with one of the oldest bazaars in the Balkans \u2014 both absurdly cheap and almost entirely undiscovered.",
+        "voice": "Travellers in the Balkans keep arriving surprised: \"Gjakova, Kosovo \u2014 underrated European day trip in the Balkans,\" wrote one who bussed over from Prizren, describing \"an",
+        "tags": [
+          "ottoman",
+          "old-town",
+          "fortress",
+          "bazaar",
+          "dokufest",
+          "cheap",
+          "balkans",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           48.33,
           29.44
         ]
