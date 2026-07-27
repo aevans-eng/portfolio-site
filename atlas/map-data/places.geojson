@@ -22680,7 +22680,7 @@
         "radius": 11,
         "drive": "",
         "hook": "One of the hottest and lowest places on earth, an alien landscape of neon-yellow sulphur springs, salt flats worked by camel caravans, and a volcano with a lake of molten lava you can peer into at night.",
-        "voice": "",
+        "voice": "The Danakil is the reason most people's Ethiopia itinerary bends east, and the thread's most useful contribution about it is logistical rather than lyrical \u2014 because the ",
         "tags": [
           "danakil",
           "dallol",
@@ -25116,7 +25116,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A green maze of palm-lined canals, lakes, and rice paddies along the southwest coast, where villages live on the water and you drift through it all on a converted rice barge.",
-        "voice": "",
+        "voice": "The backwaters get the most unguarded sentence in the whole southern-India thread: \"you guys have to go to Kerala at least once in your life and sail the backwaters in a ",
         "tags": [
           "backwaters",
           "houseboat",
@@ -25234,6 +25234,42 @@
           "shillong",
           "northeast",
           "monsoon"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.24,
+          9.46
+        ]
+      },
+      "properties": {
+        "slug": "periyar-thekkady",
+        "name": "Periyar & Thekkady",
+        "kind": "nature",
+        "country": "india",
+        "region": "south",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A tiger reserve in the Kerala hills where you walk rather than drive \u2014 three days on foot through the forest, sleeping in it, guided by men who used to poach the animals they are now showing you.",
+        "voice": "The recommendation on r/solotravel is four lines long and does not need more: \"I did a 3-day tiger safari on foot in Periyar reserve in Thekkady, Kerala. The tour guides ",
+        "tags": [
+          "tiger-reserve",
+          "walking-safari",
+          "elephants",
+          "spices",
+          "western-ghats",
+          "conservation",
+          "kerala"
         ],
         "stay": false,
         "season": []
@@ -32735,7 +32771,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A laid-back Caribbean archipelago of jungle-covered islands, over-water bungalows, and mellow beach bars, where you hop by boat between reefs, surf breaks, mangroves, and sloth-filled jungle.",
-        "voice": "",
+        "voice": "Bocas is the one thing Panamanians in the r/travel country thread insist on. \"You NEED to go to Bocas del Toro,\" one wrote. \"It is by far the best experience for tourists",
         "tags": [
           "caribbean",
           "archipelago",
@@ -32779,6 +32815,43 @@
           "ships",
           "rainforest",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.95,
+          9.5667
+        ]
+      },
+      "properties": {
+        "slug": "san-blas-guna-yala",
+        "name": "San Blas (Guna Yala)",
+        "kind": "nature",
+        "country": "panama",
+        "region": "east",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Hundreds of low palm islands on Panama's Caribbean side, most of them uninhabited and some barely bigger than the hut on them \u2014 governed not by Panama in any everyday sense but by the Guna, who won that autonomy in a revolution a century ago and still run the archipelago on their own terms.",
+        "voice": "The islands arrive in the r/travel Panama thread as a correction to the rest of the discussion: \"I can't believe no one has mentioned the San Blas islands so far. They we",
+        "tags": [
+          "islands",
+          "caribbean",
+          "indigenous-autonomy",
+          "guna",
+          "sailing",
+          "camping",
+          "basic",
+          "care"
         ],
         "stay": false,
         "season": []
