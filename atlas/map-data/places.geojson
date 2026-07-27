@@ -21660,6 +21660,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          14.3175,
+          48.8127
+        ]
+      },
+      "properties": {
+        "slug": "cesky-krumlov",
+        "name": "\u010cesk\u00fd Krumlov",
+        "kind": "town",
+        "country": "czechia",
+        "region": "west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A medieval town wrapped inside a tight double bend of the Vltava, under a castle with a painted tower \u2014 and a river the Czechs treat as a summer highway, so the best view of the place is from a rented raft drifting through the middle of it.",
+        "voice": "A Czech contributor to the r/travel country thread ran through the places worth adding to a Prague trip and did not hedge on this one: \"\u010cesk\u00fd Krumlov: yes! Very touristy,",
+        "tags": [
+          "castle",
+          "unesco",
+          "river",
+          "rafting",
+          "baroque-theatre",
+          "medieval",
+          "day-trip",
+          "touristy"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.8712,
           50.2306
         ]
@@ -21712,7 +21749,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A handsome Moravian university town that feels like Prague without the crowds, with a giant Baroque plague column big enough to have a chapel inside it and a cheese famous for its smell.",
-        "voice": "",
+        "voice": "Olomouc's endorsement carries weight because of who gave it. A Czech local, listing the places they would send a visitor after Prague, put it in the same breath as Brno a",
         "tags": [
           "moravia",
           "baroque",
@@ -21748,7 +21785,7 @@
         "radius": 7,
         "drive": "",
         "hook": "A Gothic and Baroque city that came through the twentieth century almost unscathed, stacked along a river with a statue-lined stone bridge, a hilltop castle, and a medieval clock that draws a crowd on the hour.",
-        "voice": "",
+        "voice": "A Prague local posting in the r/travel country thread led not with the castle or the bridge but with Vy\u0161ehrad: \"a monastery sitting on top of a hill, with really beautifu",
         "tags": [
           "charles-bridge",
           "old-town",
@@ -24057,6 +24094,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -90.876,
+          14.501
+        ]
+      },
+      "properties": {
+        "slug": "acatenango",
+        "name": "Volc\u00e1n Acatenango",
+        "kind": "nature",
+        "country": "guatemala",
+        "region": "highlands",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "You climb a dormant volcano all afternoon, pitch a tent on the ridge at 3,600 m, and then spend the night watching the volcano next door erupt \u2014 lava thrown into the dark every fifteen minutes or so, close enough to hear before you see it.",
+        "voice": "It comes up twice, unprompted, in the r/solotravel Guatemala thread, in both cases from people ranking their own trip. One lists it directly after learning to weave at La",
+        "tags": [
+          "volcano",
+          "overnight-hike",
+          "eruption",
+          "camping",
+          "altitude",
+          "antigua",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -90.7295,
           14.5586
         ]
@@ -24609,7 +24682,7 @@
         "radius": 9,
         "drive": "",
         "hook": "Mountains streaked red, green, and blue rise over a valley where a hot river runs warm enough to bathe in, and for most of the year no road can reach it.",
-        "voice": "",
+        "voice": "Landmannalaugar arrives in the r/travel Iceland thread as the thing someone did not expect to be their highlight: after a South Coast and Ring Road trip, \"one of the cool",
         "tags": [
           "highlands",
           "rhyolite",
