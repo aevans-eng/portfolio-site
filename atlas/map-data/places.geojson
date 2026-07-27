@@ -38766,6 +38766,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -90.1848,
+          38.6247
+        ]
+      },
+      "properties": {
+        "slug": "gateway-arch",
+        "name": "The Gateway Arch",
+        "kind": "point",
+        "country": "usa",
+        "region": "midwest",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A 630-foot stainless steel catenary curve on the Mississippi, the tallest arch in the world \u2014 and you get to the top in a windowless egg-shaped pod that clanks up the inside of the leg like a cross between a lift and a ferris wheel.",
+        "voice": "The Arch occupies a unique place in r/NationalPark: it is the sub's running joke. Posts about genuinely spectacular parks get captioned \"it's no Gateway Arch, but Denali ",
+        "tags": [
+          "monument",
+          "architecture",
+          "tram",
+          "mississippi",
+          "saarinen",
+          "national-park",
+          "downtown"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -112.14,
           36.06
         ]
@@ -38828,6 +38864,79 @@
           "free-entry",
           "salamanders",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.532,
+          38.52
+        ]
+      },
+      "properties": {
+        "slug": "meramec-greenway",
+        "name": "Castlewood & Lone Elk",
+        "kind": "nature",
+        "country": "usa",
+        "region": "midwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Twenty-five minutes from the Arch: a bluff trail with the Meramec River bending below it, and next door a park where you drive in among bison and a herd of elk that has the run of the place.",
+        "voice": "The most-upvoted Missouri hiking post in the corpus is a photo of a bull elk sitting squarely on the White Buffalo Trail at Lone Elk, captioned \"uh, sir? That's my trail.",
+        "tags": [
+          "bluffs",
+          "river",
+          "hiking",
+          "elk",
+          "bison",
+          "day-trip",
+          "meramec",
+          "st-louis"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.0921,
+          38.2093
+        ]
+      },
+      "properties": {
+        "slug": "missouri-cave-country",
+        "name": "Missouri Cave Country",
+        "kind": "nature",
+        "country": "usa",
+        "region": "midwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Missouri has over 7,500 recorded caves \u2014 the second-most of any state \u2014 and the best-known of them sits on Route 66 behind a barn roof painted with its own advertisement, which is either the problem with it or the entire point.",
+        "voice": "Missourians are matter-of-fact about the resource and protective of it. \"Even though people commonly call MO the Show Me State, its other unofficial nickname is the Cave ",
+        "tags": [
+          "caves",
+          "karst",
+          "route-66",
+          "show-cave",
+          "jesse-james",
+          "missouri",
+          "roadside-americana"
         ],
         "stay": false,
         "season": []
@@ -38973,6 +39082,43 @@
           "tide-pools",
           "moss",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.356,
+          37.15
+        ]
+      },
+      "properties": {
+        "slug": "ozark-riverways",
+        "name": "The Current River & Jacks Fork",
+        "kind": "nature",
+        "country": "usa",
+        "region": "midwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Two spring-fed rivers running clear and cold through the Missouri Ozarks, fed by some of the largest springs on the continent \u2014 one of which is over 300 feet deep and doesn't join a creek so much as become one.",
+        "voice": "The affection here is unusually plain-spoken. \"Eminence, Missouri. Current River, Jacks Fork and Black River are all beautiful floats,\" one commenter wrote. \"Eminence is ",
+        "tags": [
+          "springs",
+          "float-trip",
+          "canoe",
+          "karst",
+          "camping",
+          "ozarks",
+          "first-national-river",
+          "missouri"
         ],
         "stay": false,
         "season": []
