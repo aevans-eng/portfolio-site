@@ -22983,6 +22983,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.8357,
+          45.764
+        ]
+      },
+      "properties": {
+        "slug": "lyon",
+        "name": "Lyon",
+        "kind": "town",
+        "country": "france",
+        "region": "east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "France's eating city, built where two rivers meet, with a Renaissance old town threaded by traboules \u2014 covered passages cut straight through the middle of buildings, unmarked, that let you walk from one street to the next through somebody's courtyard.",
+        "voice": "The recommendation in the r/travel France thread comes from someone who lived there and does not hedge: \"I lived in the city of Lyon for a time and could not recommend vi",
+        "tags": [
+          "food",
+          "unesco",
+          "traboules",
+          "roman",
+          "funicular",
+          "rivers",
+          "silk",
+          "resistance"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           6.876,
           45.929
         ]
@@ -23117,6 +23154,43 @@
           "belleville",
           "cafes",
           "marches"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0257,
+          48.6493
+        ]
+      },
+      "properties": {
+        "slug": "saint-malo",
+        "name": "Saint-Malo",
+        "kind": "town",
+        "country": "france",
+        "region": "northwest",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A granite corsair city inside its own walls on the Breton coast, where the tide moves through some of the largest ranges in Europe \u2014 far enough out that you walk to offshore islands, then far enough in that people jump off a diving board into the sea from the beach.",
+        "voice": "It arrives third on one traveller's list of favourite French trips in the r/travel thread, behind the Loire ch\u00e2teaux by bike and the D-Day beaches \u2014 and the description i",
+        "tags": [
+          "walled-city",
+          "tides",
+          "corsairs",
+          "brittany",
+          "swimming",
+          "ramparts",
+          "rebuilt",
+          "seafood"
         ],
         "stay": false,
         "season": []
@@ -35084,7 +35158,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A hyper-modern megacity of neon, K-pop, and endless food, wrapped around granite mountains and old palaces, an hour from the most heavily fortified border on earth.",
-        "voice": "",
+        "voice": "The thing r/travel's Korea thread got genuinely animated about is not a sight. Someone scanned the whole discussion, found the omission and objected in caps: \"I came over",
         "tags": [
           "palaces",
           "hanok",
