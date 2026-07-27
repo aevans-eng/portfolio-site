@@ -28514,6 +28514,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          102.6167,
+          20.5667
+        ]
+      },
+      "properties": {
+        "slug": "nong-khiaw",
+        "name": "Nong Khiaw & the Nam Ou",
+        "kind": "town",
+        "country": "laos",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A village where the Nam Ou cuts between limestone walls, three hours upriver from Luang Prabang \u2014 with a viewpoint climb that puts you above the mist at dawn and a boat further up to a village with no road at all.",
+        "voice": "It comes up on r/travel as the answer for people who have done Luang Prabang and want the next thing north: \"there's a town called Nong Khiew upriver from LPB \u2014 approx 8 ",
+        "tags": [
+          "karst",
+          "river",
+          "viewpoint",
+          "trekking",
+          "caves",
+          "slow-travel",
+          "waterfalls",
+          "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           103.15,
           19.43
         ]
@@ -28540,6 +28577,43 @@
           "uxo",
           "mystery",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.4486,
+          18.9236
+        ]
+      },
+      "properties": {
+        "slug": "vang-vieng",
+        "name": "Vang Vieng",
+        "kind": "town",
+        "country": "laos",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Limestone towers standing straight out of a river valley \u2014 and the most instructive cautionary tale in Southeast Asian tourism, a town that partied itself into being shut down by its own government and reopened as something else entirely.",
+        "voice": "The clearest account of what happened here comes from a regular visitor on r/solotravel, and it is neither nostalgic nor moralising: \"one destination that shows up on all",
+        "tags": [
+          "karst",
+          "river",
+          "caves",
+          "lagoons",
+          "ballooning",
+          "tubing",
+          "reinvented",
+          "honest"
         ],
         "stay": false,
         "season": []
@@ -31221,7 +31295,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The gateway to some of the world's greatest and most accessible mountain trekking, where a relaxed lakeside town sits beneath a wall of Himalayan giants and trails lead for days or weeks into their heart.",
-        "voice": "",
+        "voice": "Pokhara's role in a Nepal trip is settled in the r/solotravel thread by someone correcting a first-timer's itinerary, and the correction is worth copying: they had allott",
         "tags": [
           "himalaya",
           "trekking",
