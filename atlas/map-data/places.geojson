@@ -19048,6 +19048,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -44.7131,
+          -23.2178
+        ]
+      },
+      "properties": {
+        "slug": "paraty",
+        "name": "Paraty",
+        "kind": "town",
+        "country": "brazil",
+        "region": "southeast",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A whitewashed colonial port between the mountains and a bay full of islands, with streets of enormous uneven cobbles that the sea deliberately floods at the highest tides and then drains, washing the town clean.",
+        "voice": "A Belgian traveller on r/travel set out to write about the stretch of coast south of Rio that the rest of the thread had skipped, and Paraty is what they wrote about: \"an",
+        "tags": [
+          "colonial",
+          "cobblestones",
+          "unesco",
+          "bay",
+          "islands",
+          "cachaca",
+          "gold-route",
+          "touristy"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.1729,
           -22.9068
         ]
@@ -19563,7 +19600,7 @@
         "radius": 11,
         "drive": "",
         "hook": "Where the highest tides on Earth rise and fall as much as a five-storey building twice a day, so that you can walk the ocean floor at low tide and kayak over the same spot hours later, along a coast of fishing villages, whales, and rugged cliffs.",
-        "voice": "",
+        "voice": "Fundy gets a careful, first-hand write-up in the r/travel Canada thread rather than a rave, which suits it: \"Fundy National Park is a very beautiful place. It has quite a",
         "tags": [
           "highest-tides",
           "tidal-bore",
@@ -19571,6 +19608,43 @@
           "whales",
           "cabot-trail",
           "gros-morne"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6,
+          46.7
+        ]
+      },
+      "properties": {
+        "slug": "cape-breton-cabot-trail",
+        "name": "Cape Breton & the Cabot Trail",
+        "kind": "nature",
+        "country": "canada",
+        "region": "atlantic",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A road that climbs out of the sea and runs along the top of headlands for 300 km around a Nova Scotian island \u2014 best in the first week of October, when the maple and birch on the highlands turn and the whole loop goes orange.",
+        "voice": "The recommendation in the r/travel Canada thread comes from someone on the East Coast, and it is specific about season and campsite rather than general: \"Cape Breton has ",
+        "tags": [
+          "road-trip",
+          "coast",
+          "autumn-colour",
+          "hiking",
+          "gaelic",
+          "acadian",
+          "whales",
+          "highlands"
         ],
         "stay": false,
         "season": []
@@ -21032,7 +21106,7 @@
         "radius": 11,
         "drive": "",
         "hook": "Green Andean valleys quilted with coffee farms and dotted with brightly-painted towns, above which rises the surreal Cocora Valley, where the tallest palm trees on Earth spike improbably out of misty green hills.",
-        "voice": "",
+        "voice": "The coffee region's best current recommendation on r/solotravel is not Salento. It is Jard\u00edn, further north in Antioquia, from someone who had just walked out of it: \"gor",
         "tags": [
           "coffee",
           "cocora",
@@ -35984,7 +36058,7 @@
         "radius": 11,
         "drive": "",
         "hook": "The largest glacier in the Alps, a twenty-kilometre river of ice curving between peaks, viewed from ridge-top villages reached only by cable car, and visibly retreating year by year.",
-        "voice": "",
+        "voice": "The Bernese Oberland's walking gets its best summary in a single r/solotravel comment, and it is worth following literally: \"the Interlaken region, especially Lauterbrunn",
         "tags": [
           "valais",
           "glacier",
@@ -36029,6 +36103,42 @@
           "unesco",
           "engineering",
           "alps"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0833,
+          46.5833
+        ]
+      },
+      "properties": {
+        "slug": "gruyeres",
+        "name": "Gruy\u00e8res",
+        "kind": "town",
+        "country": "switzerland",
+        "region": "west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A single cobbled street of medieval houses running uphill to a castle, with the Alps behind it, the cheese it gave its name to being made in the valley below \u2014 and, in a building on the same square, a museum of H.R. Giger's biomechanical nightmares.",
+        "voice": "A traveller on r/travel who had planned to spend the day in Montreux and changed their mind mid-trip: \"we ended up deciding to spend the day taking the train up to Gruy\u00e8r",
+        "tags": [
+          "medieval",
+          "castle",
+          "cheese",
+          "giger",
+          "alps",
+          "day-trip",
+          "car-free"
         ],
         "stay": false,
         "season": []
@@ -36092,7 +36202,7 @@
         "radius": 9,
         "drive": "",
         "hook": "A medieval town on a lake ringed by mountains, with a covered wooden footbridge from the fourteenth century and cog railways and cable cars up peaks that rise straight from the water.",
-        "voice": "",
+        "voice": "Lucerne's most useful endorsement in the r/travel Switzerland thread comes from someone who lives an hour away and could have picked their own city. A Basel native, havin",
         "tags": [
           "chapel-bridge",
           "lake",
