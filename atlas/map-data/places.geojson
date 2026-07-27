@@ -417,7 +417,7 @@
         "radius": 11,
         "drive": "",
         "hook": "The end of the world's greatest hits: a colossal glacier that calves house-sized ice into a milky lake with a crack like thunder, and, up the road, jagged granite spires that draw trekkers and climbers from across the planet.",
-        "voice": "",
+        "voice": "Perito Moreno draws unqualified enthusiasm and a precise piece of trip-planning advice in the same r/travel comment: \"one of the biggest glaciers in the world. You can wa",
         "tags": [
           "perito-moreno",
           "glacier",
@@ -22087,6 +22087,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -78.9,
+          -0.8667
+        ]
+      },
+      "properties": {
+        "slug": "quilotoa-loop",
+        "name": "The Quilotoa Loop",
+        "kind": "nature",
+        "country": "ecuador",
+        "region": "sierra",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Three days walking between Andean villages at 3,500 m, sleeping in a different family's hostel each night, and on the last morning coming over a rise to a turquoise lake sitting inside a volcano.",
+        "voice": "The recommendation on r/solotravel is unfussy and functionally complete, which is why it is quoted at length: \"I'd highly recommend doing the Quilotoa Loop \u2014 it's a prett",
+        "tags": [
+          "crater-lake",
+          "trek",
+          "andes",
+          "villages",
+          "hostels",
+          "self-guided",
+          "altitude",
+          "cheap"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -78.4678,
           -0.1807
         ]
@@ -24055,6 +24092,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -89.92,
+          17.755
+        ]
+      },
+      "properties": {
+        "slug": "el-mirador",
+        "name": "El Mirador",
+        "kind": "point",
+        "country": "guatemala",
+        "region": "peten",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The largest Maya city ever built, still under the jungle \u2014 you walk five days through Pet\u00e9n to stand on a pyramid the size of a hill that has never been cleared, and there is no road, no fence, and almost nobody else.",
+        "voice": "",
+        "tags": [
+          "maya",
+          "jungle",
+          "trek",
+          "unexcavated",
+          "pyramids",
+          "preclassic",
+          "remote",
+          "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -89.954,
           15.534
         ]
@@ -24108,7 +24182,7 @@
         "radius": 11,
         "drive": "",
         "hook": "One of the greatest cities of the ancient Maya, its steep temple-pyramids thrusting up through the rainforest canopy, wreathed in mist and the roar of howler monkeys, a lost metropolis reclaimed by the jungle.",
-        "voice": "",
+        "voice": "Tikal is named without argument in the r/solotravel Guatemala thread \u2014 \"there are other great places in Guatemala such as Lake Atitl\u00e1n, Tikal and Semuc Champey\" \u2014 but the",
         "tags": [
           "maya",
           "temples",
