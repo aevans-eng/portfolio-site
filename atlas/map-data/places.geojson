@@ -738,7 +738,7 @@
         "radius": 11,
         "drive": "",
         "hook": "Australia's wild island state, a compact world of ancient rainforest, jagged mountains, and pristine white-sand coves, some of the cleanest air on Earth, marsupials found nowhere else, and, in its capital, one of the world's most provocative art museums.",
-        "voice": "",
+        "voice": "Tasmania's advocate in the r/travel Australia thread is a Tasmanian, and the recommendation arrives as an aside at the end of a complaint about mainland prices \u2014 which is",
         "tags": [
           "wilderness",
           "cradle-mountain",
@@ -25905,7 +25905,7 @@
         "radius": 7,
         "drive": "",
         "hook": "A wall of black cliffs dropping some two hundred metres straight into the Atlantic, next to the Burren, a grey limestone desert where Arctic and Mediterranean flowers grow side by side in the cracks.",
-        "voice": "",
+        "voice": "The Cliffs top the highlights list of a traveller who had driven most of the island across two trips \u2014 and they are named in the same breath as the thing next door: \"Clif",
         "tags": [
           "clare",
           "atlantic",
@@ -33081,7 +33081,7 @@
         "radius": 9,
         "drive": "",
         "hook": "Poland's old royal capital, one of the few big Polish cities the war left standing, with a vast medieval square, a hilltop castle, and a nearby salt mine hollowed into underground chapels.",
-        "voice": "",
+        "voice": "Krak\u00f3w is the one Polish city nobody in these threads argues about. A Canadian living in Toru\u0144 ranked the country's cities without hedging \u2014 \"the best places to visit in ",
         "tags": [
           "old-town",
           "wawel",
@@ -33090,6 +33090,43 @@
           "auschwitz",
           "jewish-quarter",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5984,
+          53.0138
+        ]
+      },
+      "properties": {
+        "slug": "torun",
+        "name": "Toru\u0144",
+        "kind": "town",
+        "country": "poland",
+        "region": "central",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A red-brick Gothic town on the Vistula that the war never touched \u2014 Copernicus was born in it, it has been making the same gingerbread for seven centuries, and almost nobody on the Krak\u00f3w\u2013Warsaw circuit stops.",
+        "voice": "Toru\u0144's strongest endorsement in the r/travel Poland threads comes from a Canadian who moved there: \"It's AMAZING. The old town is massive, it's a miniature Krak\u00f3w.\" Thei",
+        "tags": [
+          "gothic",
+          "unesco",
+          "copernicus",
+          "gingerbread",
+          "brick",
+          "vistula",
+          "teutonic",
+          "day-trip"
         ],
         "stay": false,
         "season": []
