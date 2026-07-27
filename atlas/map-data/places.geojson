@@ -38692,6 +38692,79 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -90.0615,
+          38.6606
+        ]
+      },
+      "properties": {
+        "slug": "cahokia-mounds",
+        "name": "Cahokia Mounds",
+        "kind": "point",
+        "country": "usa",
+        "region": "midwest",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Twenty minutes from the Gateway Arch stands the largest earthwork in the Americas, at the centre of what was, around AD 1100, a city bigger than London \u2014 and almost nobody outside the region has heard of it.",
+        "voice": "The Reddit evidence for Cahokia is thinner than the site deserves, and this dossier will not inflate it. What exists is a St. Louis local answering a trip-planning reques",
+        "tags": [
+          "mississippian",
+          "unesco",
+          "earthworks",
+          "pre-columbian",
+          "archaeology",
+          "monks-mound",
+          "woodhenge"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1997,
+          38.6331
+        ]
+      },
+      "properties": {
+        "slug": "city-museum",
+        "name": "The City Museum",
+        "kind": "oddity",
+        "country": "usa",
+        "region": "midwest",
+        "kindLabel": "Oddity",
+        "color": "#8f5276",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A ten-storey former shoe factory that a sculptor spent years turning into a climbable structure \u2014 caves of rebar and concrete, a ten-storey slide, two decommissioned planes bolted to the outside, and a ferris wheel on the roof. There is nothing else like it anywhere, and it is not really a museum.",
+        "voice": "The recommendation that best captures it comes from a St. Louis trip-planning thread on r/solotravel, and it needs no elaboration: \"the City Museum is a ton of fun too \u2014 ",
+        "tags": [
+          "salvage",
+          "sculpture",
+          "playground",
+          "climbing",
+          "slides",
+          "rooftop",
+          "architecture",
+          "one-of-a-kind"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -150.5,
           63.33
         ]
@@ -38756,6 +38829,43 @@
           "pythons",
           "unesco",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.2845,
+          38.6383
+        ]
+      },
+      "properties": {
+        "slug": "forest-park-stl",
+        "name": "Forest Park",
+        "kind": "nature",
+        "country": "usa",
+        "region": "midwest",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A city park about five hundred acres larger than Central Park, containing a zoo, an art museum, a science centre and a history museum \u2014 all of which are free, permanently, to everyone.",
+        "voice": "A St. Louis local answering a visitor's trip-planning question on r/solotravel led with it, ahead of the Arch, and the reason is entirely practical: \"Forest Park is amazi",
+        "tags": [
+          "urban-park",
+          "free",
+          "zoo",
+          "art-museum",
+          "worlds-fair",
+          1904,
+          "science-center",
+          "st-louis"
         ],
         "stay": false,
         "season": []
