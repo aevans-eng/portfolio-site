@@ -935,6 +935,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          15.4,
+          48.37
+        ]
+      },
+      "properties": {
+        "slug": "wachau-valley",
+        "name": "The Wachau Valley",
+        "kind": "route",
+        "country": "austria",
+        "region": "east",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Forty kilometres of the Danube between two small towns, terraced with vineyards that have been worked since the Middle Ages, with a vast yellow baroque abbey at one end and a ruined castle where Richard the Lionheart was imprisoned in the middle \u2014 and a flat cycle path the whole way.",
+        "voice": "The Austrians in the r/travel country thread mostly want to correct an assumption. One who spent a year living in Burgenland put it plainly: \"don't assume Austria's just ",
+        "tags": [
+          "danube",
+          "vineyards",
+          "abbey",
+          "cycling",
+          "riverboat",
+          "unesco",
+          "day-trip",
+          "wine"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           49.892,
           40.3777
         ]
@@ -18134,7 +18171,7 @@
         "radius": 9,
         "drive": "",
         "hook": "Bruges's bigger, grittier neighbour and, for many, the better one: a medieval Flemish city just as handsome but full of students and real life, home to the extraordinary Van Eyck altarpiece.",
-        "voice": "",
+        "voice": "Ghent is the consensus pick of the Belgians and long-stay visitors in the r/travel country thread, and the reasoning is always comparative: \"my favourite city is Ghent. I",
         "tags": [
           "flanders",
           "van-eyck",
@@ -18142,6 +18179,43 @@
           "canals",
           "student-city",
           "gravensteen"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.72,
+          50.91
+        ]
+      },
+      "properties": {
+        "slug": "westvleteren",
+        "name": "Westvleteren & the Hop Country",
+        "kind": "point",
+        "country": "belgium",
+        "region": "flanders",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The one beer you cannot buy anywhere else \u2014 brewed by monks who refuse to distribute it \u2014 at the end of a bike ride through the hop fields that supply it.",
+        "voice": "The case is made in the r/travel Belgium thread with unusual force: \"for anyone who remotely enjoys beer, you MUST make the trip out to Westvleteren. It has been rated by",
+        "tags": [
+          "trappist",
+          "abbey",
+          "beer",
+          "cycling",
+          "hops",
+          "flanders",
+          "day-trip",
+          "no-export"
         ],
         "stay": false,
         "season": []
@@ -31120,7 +31194,7 @@
         "radius": 9,
         "drive": "",
         "hook": "The best-preserved Roman ruins in Morocco, a whole provincial city of arches, columns, and intact floor mosaics standing among the wheat fields, beside a grand but overlooked former imperial capital.",
-        "voice": "",
+        "voice": "Meknes gets recommended in the r/solotravel Morocco thread for exactly the reason it is usually skipped. Listing the places they most enjoyed after a month in the country",
         "tags": [
           "roman",
           "volubilis",
@@ -33778,7 +33852,7 @@
         "radius": 7,
         "drive": "",
         "hook": "Home to one of the oldest universities in the world, whose gilded Baroque library is guarded at night by a resident colony of bats that eat the insects threatening the books.",
-        "voice": "",
+        "voice": "Coimbra is the stop everyone tells you not to skip on the Porto\u2013Lisbon run, and the recommendations are unusually concrete about why.\n\n\"If you're going by car from Porto ",
         "tags": [
           "university",
           "joanina-library",
