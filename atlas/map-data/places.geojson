@@ -24777,6 +24777,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -19.7,
+          64.1197
+        ]
+      },
+      "properties": {
+        "slug": "gjain",
+        "name": "Gj\u00e1in",
+        "kind": "nature",
+        "country": "iceland",
+        "region": "south",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A small green valley hidden in the middle of a black volcanic plain \u2014 waterfalls, basalt columns and moss packed into a space you could cross in ten minutes, invisible until you are standing at its edge.",
+        "voice": "The strongest signal is behavioural rather than descriptive. One traveller, in a thread about places that look nothing like their Instagram versions: \"we went to Gj\u00e1in an",
+        "tags": [
+          "waterfall",
+          "valley",
+          "hidden",
+          "game-of-thrones",
+          "thjorsardalur",
+          "basalt",
+          "4wd",
+          "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -16.179,
           64.048
         ]
