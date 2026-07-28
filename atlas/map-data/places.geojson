@@ -21341,6 +21341,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -82.8333,
+          9.7333
+        ]
+      },
+      "properties": {
+        "slug": "cahuita-puerto-viejo",
+        "name": "Cahuita & Puerto Viejo",
+        "kind": "town",
+        "country": "costa-rica",
+        "region": "caribbean",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The side of Costa Rica that does not feel like Costa Rica \u2014 Afro-Caribbean, Creole-speaking, reggae on the beach road, and noticeably cheaper than the Pacific coast everyone flies into.",
+        "voice": "The recommendation that anchors this pin is a cost answer, which is fitting for a coast whose appeal is partly that it is affordable. A traveller shocked by Costa Rican p",
+        "tags": [
+          "caribbean",
+          "afro-caribbean",
+          "sloths",
+          "reef",
+          "cheaper",
+          "bicycles",
+          "national-park",
+          "creole"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -84.14,
           9.39
         ]
@@ -32240,6 +32277,43 @@
           "cathedral",
           "revolution",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.9667,
+          12.3
+        ]
+      },
+      "properties": {
+        "slug": "little-corn-island",
+        "name": "Little Corn Island",
+        "kind": "nature",
+        "country": "nicaragua",
+        "region": "caribbean",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A Caribbean island seventy kilometres off Nicaragua with no cars, no roads worth the name, and a north shore where the usual report is that there was nobody else on it.",
+        "voice": "Asked, in a thread about the most beautiful beach anyone had ever been to anywhere in the world, one traveller answered with this and nothing else: \"the north shore of Li",
+        "tags": [
+          "caribbean",
+          "island",
+          "diving",
+          "no-cars",
+          "beaches",
+          "off-grid",
+          "creole",
+          "quiet"
         ],
         "stay": false,
         "season": []
