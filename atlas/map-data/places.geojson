@@ -35083,6 +35083,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          13.8833,
+          46.2833
+        ]
+      },
+      "properties": {
+        "slug": "lake-bohinj",
+        "name": "Lake Bohinj",
+        "kind": "nature",
+        "country": "slovenia",
+        "region": "alps",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Half an hour past Lake Bled, inside Triglav National Park, a lake four times larger with a fraction of the people \u2014 no island church, no clifftop castle, and consequently no coaches.",
+        "voice": "The clearest recommendation on the record is a correction issued to an entire thread. Asked for a peaceful European place with beautiful natural scenery, one traveller an",
+        "tags": [
+          "lake",
+          "julian-alps",
+          "triglav",
+          "swimming",
+          "quiet",
+          "hiking",
+          "waterfall",
+          "alternative-to-bled"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.5058,
           46.0569
         ]
@@ -35144,6 +35181,81 @@
           "tartini",
           "istria",
           "seafront"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5528,
+          46.3389
+        ]
+      },
+      "properties": {
+        "slug": "soca-valley",
+        "name": "The So\u010da Valley",
+        "kind": "nature",
+        "country": "slovenia",
+        "region": "alps",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "A river the colour of antifreeze running the length of a valley in the Julian Alps \u2014 a green-blue so saturated that photographs of it get accused of editing \u2014 with the best whitewater in this part of Europe and one of the First World War's worst fronts in the hills above it.",
+        "voice": "The colour is what everyone leads with. A hiker who came for the mountains: \"the Julian Alps took us by surprise, as did the intense blue of the So\u010da river\u2026 so much more ",
+        "tags": [
+          "river",
+          "julian-alps",
+          "rafting",
+          "kayaking",
+          "canyoning",
+          "bovec",
+          "kobarid",
+          "ww1",
+          "emerald"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0781,
+          46.3931
+        ]
+      },
+      "properties": {
+        "slug": "vintgar-gorge",
+        "name": "The Vintgar Gorge",
+        "kind": "nature",
+        "country": "slovenia",
+        "region": "alps",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A wooden walkway pinned to the wall of a limestone slot fifteen minutes from Lake Bled, with the Radovna river running green directly beneath the planks for a mile and a half.",
+        "voice": "The recommendation this pin rests on comes from a Slovene, and it arrives attached to a complaint about somewhere else. Asked about Bovec in the So\u010da valley, they describ",
+        "tags": [
+          "gorge",
+          "boardwalk",
+          "river",
+          "bled",
+          "waterfall",
+          "easy-walk",
+          "timed-entry",
+          "julian-alps"
         ],
         "stay": false,
         "season": []
