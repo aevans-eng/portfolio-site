@@ -28777,6 +28777,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          78.39,
+          42.49
+        ]
+      },
+      "properties": {
+        "slug": "karakol-ala-kul",
+        "name": "Karakol & the Ala-K\u00f6l Trek",
+        "kind": "nature",
+        "country": "kyrgyzstan",
+        "region": "north",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A four-day loop out of a scruffy Silk Road town: up through spruce forest to a glacial lake the colour of antifreeze at 3,500 m, over a pass, then down a valley to hot springs with no road in and no phone signal anywhere.",
+        "voice": "The most useful comment in the corpus is a Kyrgyz answer to the question of what foreign visitors do not know about their own country \u2014 and it is notable for saying that ",
+        "tags": [
+          "trekking",
+          "alpine-lake",
+          "hot-springs",
+          "tian-shan",
+          "yurts",
+          "no-internet",
+          "4x4",
+          "silk-road"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           72.7985,
           40.5283
         ]
