@@ -22271,6 +22271,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -79.2167,
+          -4.2667
+        ]
+      },
+      "properties": {
+        "slug": "vilcabamba",
+        "name": "Vilcabamba",
+        "kind": "town",
+        "country": "ecuador",
+        "region": "sierra",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A small town in a southern Andean valley that got famous in the 1970s for the improbable ages its residents claimed to be \u2014 and that keeps drawing people who arrive for a week and are still there years later.",
+        "voice": "The most convincing account comes from someone who did not visit but lived here, answering a thread about where people had felt healthiest: \"Vilcabamba, Ecuador. I lived ",
+        "tags": [
+          "andes",
+          "valley",
+          "slow-travel",
+          "hiking",
+          "expat",
+          "longevity",
+          "climate",
+          "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           32.8998,
           24.0889
         ]
