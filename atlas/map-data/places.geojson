@@ -24848,6 +24848,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -22.9,
+          65.9
+        ]
+      },
+      "properties": {
+        "slug": "westfjords",
+        "name": "The Westfjords",
+        "kind": "nature",
+        "country": "iceland",
+        "region": "west-westfjords",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The peninsula almost nobody drives to \u2014 a clenched fist of fjords in Iceland's northwest, connected to the rest of the country by a single narrow neck, where the Ring Road does not go and consequently neither do the tour buses.",
+        "voice": "The clearest verdict comes from a solo traveller who did the whole country and named the winner without hedging: \"Westfjords were for sure the best part. The driving, fjo",
+        "tags": [
+          "fjords",
+          "remote",
+          "puffins",
+          "hot-springs",
+          "hornstrandir",
+          "dynjandi",
+          "arctic-fox",
+          "empty"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           75.1779,
           20.0268
         ]
@@ -35181,6 +35218,43 @@
           "tartini",
           "istria",
           "seafront"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.9903,
+          45.6636
+        ]
+      },
+      "properties": {
+        "slug": "skocjan-caves",
+        "name": "The \u0160kocjan Caves",
+        "kind": "point",
+        "country": "slovenia",
+        "region": "center",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Not a cave with formations \u2014 a canyon with a roof on it. The Reka river disappears underground here and carves a gorge up to 140 metres high inside the rock, crossed by a footbridge suspended in the dark with the river roaring somewhere below you.",
+        "voice": "It surfaces most convincingly in threads that ask people to name a single best thing. From \"what was your best travel destination of this year\": \"Slovenia. I will never f",
+        "tags": [
+          "cave",
+          "unesco",
+          "karst",
+          "underground-canyon",
+          "river",
+          "bridge",
+          "guided-only",
+          "cold"
         ],
         "stay": false,
         "season": []
