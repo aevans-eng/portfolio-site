@@ -32538,6 +32538,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          7.6875,
+          62.5675
+        ]
+      },
+      "properties": {
+        "slug": "andalsnes",
+        "name": "\u00c5ndalsnes & Romsdalen",
+        "kind": "town",
+        "country": "norway",
+        "region": "central",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A small town at the head of a fjord where the mountains stand straight up out of the water \u2014 reached by one of Europe's great train journeys, and the start of a ridge walk that spends most of a day looking down on all of it.",
+        "voice": "This pin exists because of a thread whose entire purpose was to argue for the place: \"If you're going to Norway this summer, consider adding \u00c5ndalsnes to your trip.\" The ",
+        "tags": [
+          "ridge-walk",
+          "fjord",
+          "train",
+          "romsdalseggen",
+          "trollstigen",
+          "hiking",
+          "cheap-access",
+          "central-norway"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.3221,
           60.3913
         ]
