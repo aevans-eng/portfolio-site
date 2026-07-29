@@ -21163,6 +21163,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -73.9256,
+          11.0383
+        ]
+      },
+      "properties": {
+        "slug": "ciudad-perdida",
+        "name": "Ciudad Perdida (Teyuna)",
+        "kind": "route",
+        "country": "colombia",
+        "region": "caribbean",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A terraced city built into the Sierra Nevada around 800 CE \u2014 roughly six centuries older than Machu Picchu \u2014 reachable only by a four-day walk, and still regarded as sacred by the descendants of the people who built it.",
+        "voice": "The clearest framing of why it is worth the effort is also the shortest: \"Look into Ciudad Perdida (the lost city) on the coast of Colombia. There are guided hikes to vis",
+        "tags": [
+          "trek",
+          "archaeology",
+          "pre-columbian",
+          "jungle",
+          "indigenous",
+          "sierra-nevada",
+          "multi-day",
+          "guided-only"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -75.57,
           4.638
         ]
@@ -33198,6 +33235,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -82.4333,
+          8.7833
+        ]
+      },
+      "properties": {
+        "slug": "boquete",
+        "name": "Boquete & the Chiriqu\u00ed Highlands",
+        "kind": "town",
+        "country": "panama",
+        "region": "west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A cloud-forest town at 1,200 m on the flank of Panama's only volcano, where the temperature sits around 20 \u00b0C at dawn and 26 \u00b0C at midday every day of the year, and hummingbirds are ordinary.",
+        "voice": "The best description of what the highlands actually feel like comes from someone weighing where to buy a place in Panama, who found the mountain towns beat the beaches fo",
+        "tags": [
+          "highlands",
+          "cloud-forest",
+          "coffee",
+          "volcano",
+          "birds",
+          "quetzal",
+          "cool-climate",
+          "remote-work",
+          "expats"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -79.5199,
           8.9824
         ]
@@ -37356,6 +37431,44 @@
           "boat",
           "castle",
           "day-trip"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4879,
+          22.6597
+        ]
+      },
+      "properties": {
+        "slug": "green-island-ludao",
+        "name": "Green Island (Ludao)",
+        "kind": "town",
+        "country": "taiwan",
+        "region": "east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A small volcanic island off Taiwan's southeast coast with clear-water diving, one of the world's few saltwater hot springs \u2014 and the prison where the Republic of China held its political prisoners for four decades.",
+        "voice": "The account that gives this island its weight is a family one. Someone posting photographs from a government-sponsored memorial event explained who they belonged to: \"Rec",
+        "tags": [
+          "island",
+          "human-rights",
+          "white-terror",
+          "memorial",
+          "diving",
+          "hot-spring",
+          "volcanic",
+          "history",
+          "ferry"
         ],
         "stay": false,
         "season": []
