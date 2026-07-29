@@ -37366,6 +37366,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.8447,
+          25.1097
+        ]
+      },
+      "properties": {
+        "slug": "jiufen",
+        "name": "Jiufen",
+        "kind": "town",
+        "country": "taiwan",
+        "region": "north",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A gold-mining town stacked up a hillside above the sea northeast of Taipei, hung with red lanterns and threaded by stone stairways \u2014 and one of the most oversubscribed places in Taiwan, which is why when you go matters more than whether.",
+        "voice": "The endorsements are mostly in the form of \"there is more to Taiwan than Taipei, and this is part of it\" \u2014 one traveller weighing a second Japan trip against a first Taiw",
+        "tags": [
+          "hill-town",
+          "gold-mining",
+          "teahouse",
+          "lanterns",
+          "fog",
+          "crowded",
+          "day-trip",
+          "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           120.3014,
           22.6273
         ]
@@ -37500,6 +37537,43 @@
           "indigenous",
           "earthquake",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3714,
+          22.3419
+        ]
+      },
+      "properties": {
+        "slug": "xiaoliuqiu",
+        "name": "Xiaoliuqiu (Little Liuqiu)",
+        "kind": "town",
+        "country": "taiwan",
+        "region": "south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Taiwan's only coral island, twenty-five minutes off the southwest coast, where green sea turtles are common enough in the shallows that people describe seeing them as guaranteed.",
+        "voice": "The most useful endorsement frames the island as an argument about Taiwan itself. Someone describing why the country left them \"feeling so empty\" after leaving put it dow",
+        "tags": [
+          "island",
+          "coral",
+          "sea-turtles",
+          "snorkelling",
+          "ferry",
+          "scooter",
+          "day-trip",
+          "easy-access"
         ],
         "stay": false,
         "season": []
