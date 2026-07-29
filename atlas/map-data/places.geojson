@@ -24134,6 +24134,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.73,
+          39.12
+        ]
+      },
+      "properties": {
+        "slug": "skopelos",
+        "name": "Skopelos & the Sporades",
+        "kind": "town",
+        "country": "greece",
+        "region": "aegean",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A Greek island that is green rather than white and blue \u2014 pine forest running down to the water on nearly every side \u2014 in an archipelago most itineraries skip entirely for the Cyclades.",
+        "voice": "The most substantial account comes from a remote worker complaining that Greece gets flattened to two destinations: \"I'm disappointed to see that Athens and Crete are the",
+        "tags": [
+          "island",
+          "pine-forest",
+          "sporades",
+          "ferry",
+          "mamma-mia",
+          "quiet",
+          "long-stay",
+          "cheap-shoulder"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           20.75,
           39.8833
         ]
@@ -35405,6 +35442,43 @@
           "postojna",
           "riverside",
           "students"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6444,
+          46.4406
+        ]
+      },
+      "properties": {
+        "slug": "mangart-saddle",
+        "name": "The Mangart Saddle Road",
+        "kind": "route",
+        "country": "slovenia",
+        "region": "alps",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The highest road in Slovenia \u2014 twelve kilometres of single-lane hairpins and rough-cut tunnels climbing to a saddle at 2,072 m, where the Julian Alps stack away into Italy in receding blue layers.",
+        "voice": "The most striking endorsement comes from a hiker with an unusually wide basis for comparison, ranking their favourite landscapes anywhere: after naming Glacier National P",
+        "tags": [
+          "mountain-road",
+          "julian-alps",
+          "hairpins",
+          "tunnels",
+          "sunset",
+          "high-altitude",
+          "driving",
+          "seasonal"
         ],
         "stay": false,
         "season": []
