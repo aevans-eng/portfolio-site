@@ -30079,6 +30079,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          114.8167,
+          4.05
+        ]
+      },
+      "properties": {
+        "slug": "gunung-mulu",
+        "name": "Gunung Mulu",
+        "kind": "nature",
+        "country": "malaysia",
+        "region": "borneo",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A rainforest park in Sarawak with no road to it, holding the largest known cave chamber on Earth \u2014 and every dry evening, around three million bats pour out of a cliff-face cave mouth in a column that takes an hour to finish.",
+        "voice": "Malaysians name it when asked what outsiders miss about their own country \u2014 it heads the answers in a thread on underrated Malaysian destinations, and it comes up when Sa",
+        "tags": [
+          "caves",
+          "karst",
+          "rainforest",
+          "bats",
+          "pinnacles",
+          "sarawak",
+          "fly-in",
+          "unesco",
+          "expensive"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           116.5583,
           6.075
         ]
@@ -38482,6 +38520,43 @@
           "phanom-rung",
           "festivals",
           "lao-culture"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.5333,
+          8.9167
+        ]
+      },
+      "properties": {
+        "slug": "khao-sok",
+        "name": "Khao Sok",
+        "kind": "nature",
+        "country": "thailand",
+        "region": "south",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Limestone towers standing straight out of a green lake, slept on in floating bamboo rafthouses with no road and often no power \u2014 in a rainforest considerably older than the Amazon.",
+        "voice": "Thai commenters treat the park's antiquity as its defining fact. In a lighthearted thread about where a Thai wizarding school would be, the argument for this one was stra",
+        "tags": [
+          "rainforest",
+          "lake",
+          "karst",
+          "rafthouse",
+          "wildlife",
+          "reservoir",
+          "surat-thani",
+          "jungle"
         ],
         "stay": false,
         "season": []
