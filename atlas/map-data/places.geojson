@@ -28363,6 +28363,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          124.1572,
+          24.3448
+        ]
+      },
+      "properties": {
+        "slug": "yaeyama-islands",
+        "name": "The Yaeyama Islands",
+        "kind": "wander-zone",
+        "country": "japan",
+        "region": "kyushu",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 5,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "radius": 11,
+        "drive": "",
+        "hook": "The far southwest end of Japan \u2014 closer to Taiwan than to Okinawa's main island, and 2,000 km from Tokyo \u2014 where the country turns subtropical, the reefs are healthy, and the local languages are not Japanese.",
+        "voice": "The most useful account comes from someone comparing Japan's islands directly, having just done several: \"Just spent a week in the Yaeyama Islands and three full days in ",
+        "tags": [
+          "islands",
+          "subtropical",
+          "diving",
+          "reefs",
+          "ryukyu",
+          "iriomote",
+          "yonaguni",
+          "ferries",
+          "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           130.5469,
           30.3583
         ]
@@ -40919,6 +40957,43 @@
           "orchards",
           "homestay",
           "can-tho"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9744,
+          20.2506
+        ]
+      },
+      "properties": {
+        "slug": "ninh-binh",
+        "name": "Ninh B\u00ecnh",
+        "kind": "nature",
+        "country": "vietnam",
+        "region": "north",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The same drowned limestone towers as H\u1ea1 Long Bay, except standing in rice fields and rivers instead of the sea \u2014 and you go through them in a rowing boat propelled by someone's feet.",
+        "voice": "It turns up in the strongest possible category \u2014 a thread asking for the best travel experience anyone had ever had. One answer listed, among Antarctica, a great white di",
+        "tags": [
+          "karst",
+          "rivers",
+          "rowing-boats",
+          "rice-fields",
+          "temples",
+          "day-range-hanoi",
+          "cycling",
+          "caves"
         ],
         "stay": false,
         "season": []
