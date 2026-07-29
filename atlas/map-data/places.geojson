@@ -34363,6 +34363,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          123.595,
+          9.1994
+        ]
+      },
+      "properties": {
+        "slug": "siquijor",
+        "name": "Siquijor",
+        "kind": "town",
+        "country": "philippines",
+        "region": "visayas",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A small Visayan island with a national reputation for witchcraft and folk healing, currently being recommended by Filipino travellers as the antidote to Siargao \u2014 and simultaneously asked by its own resort owners to please receive fewer visitors.",
+        "voice": "The clearest endorsement is a redirection. In a thread titled around disappointment with Siargao and the Philippines generally, the advice was blunt: \"Skip Siargao, get o",
+        "tags": [
+          "island",
+          "waterfalls",
+          "folk-healing",
+          "visayas",
+          "scooter",
+          "ferry",
+          "overtourism",
+          "infrastructure"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           120.993,
           14.002
         ]
