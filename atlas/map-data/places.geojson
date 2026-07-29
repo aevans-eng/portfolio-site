@@ -27894,6 +27894,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          142.8544,
+          43.6636
+        ]
+      },
+      "properties": {
+        "slug": "daisetsuzan",
+        "name": "Daisetsuzan",
+        "kind": "nature",
+        "country": "japan",
+        "region": "hokkaido",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Japan's largest national park, an active volcanic plateau in central Hokkaid\u014d that the Ainu called Kamuy Mintar \u2014 the playground of the gods \u2014 where autumn arrives in mid-September, weeks before anywhere else in the country.",
+        "voice": "In a discussion of Japan away from the standard route, someone working through Hokkaid\u014d's options was unequivocal about which one mattered: \"For hiking and nature, Daiset",
+        "tags": [
+          "hiking",
+          "volcanoes",
+          "onsen",
+          "autumn-colour",
+          "bears",
+          "national-park",
+          "hokkaido",
+          "alpine"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           132.4553,
           34.3853
         ]
@@ -40882,6 +40919,43 @@
           "orchards",
           "homestay",
           "can-tho"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.2833,
+          17.5833
+        ]
+      },
+      "properties": {
+        "slug": "phong-nha-ke-bang",
+        "name": "Phong Nha-K\u1ebb B\u00e0ng",
+        "kind": "nature",
+        "country": "vietnam",
+        "region": "north-central",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A limestone massif on the Laos border holding the largest cave passage on Earth \u2014 one chamber has its own jungle, its own weather, and clouds that form inside it.",
+        "voice": "The most authoritative endorsement here comes from someone who guides in the country for a living. In an AMA after six years as a local guide in northern Vietnam, asked w",
+        "tags": [
+          "caves",
+          "karst",
+          "son-doong",
+          "national-park",
+          "cycling",
+          "jungle",
+          "underrated",
+          "quang-binh"
         ],
         "stay": false,
         "season": []
