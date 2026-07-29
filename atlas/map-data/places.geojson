@@ -23565,6 +23565,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          44.6428,
+          42.6572
+        ]
+      },
+      "properties": {
+        "slug": "stepantsminda-kazbegi",
+        "name": "Stepantsminda & the Kazbegi Mountains",
+        "kind": "town",
+        "country": "georgia",
+        "region": "center",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A village at the end of the Georgian Military Highway, under a 5,047 m glaciated peak, with a 14th-century church alone on the ridge above it \u2014 and Russia three kilometres up the road.",
+        "voice": "The clearest endorsement comes from a remote worker who spent a Schengen reset in the country and expected Tbilisi to be the highlight: they liked the city's food and \"gr",
+        "tags": [
+          "mountains",
+          "caucasus",
+          "hiking",
+          "glacier",
+          "military-highway",
+          "remote",
+          "church",
+          "winter",
+          "border-zone"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           43.0167,
           42.9167
         ]
