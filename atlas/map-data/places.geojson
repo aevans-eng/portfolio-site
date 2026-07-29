@@ -33709,6 +33709,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -71.5375,
+          -16.409
+        ]
+      },
+      "properties": {
+        "slug": "arequipa-colca",
+        "name": "Arequipa & the Colca Canyon",
+        "kind": "town",
+        "country": "peru",
+        "region": "andes",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A white volcanic-stone city under three volcanoes, and four hours north of it a canyon twice the depth of the Grand Canyon where Andean condors ride the morning thermals up past the rim.",
+        "voice": "Arequipa is consistently named as one of the country's most likeable cities and, usefully, always with the canyon attached. A traveller mapping out where to spend time in",
+        "tags": [
+          "colonial",
+          "canyon",
+          "condors",
+          "volcanoes",
+          "altitude",
+          "sillar",
+          "trekking",
+          "arequipa"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -77.8,
           -6.2
         ]
@@ -33807,6 +33844,43 @@
           "pisac",
           "colonial",
           "unesco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5278,
+          -9.5278
+        ]
+      },
+      "properties": {
+        "slug": "huaraz-cordillera-blanca",
+        "name": "Huaraz & the Cordillera Blanca",
+        "kind": "wander-zone",
+        "country": "peru",
+        "region": "andes",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The highest tropical mountain range on Earth \u2014 more than fifty peaks above 5,700 m packed into 180 km \u2014 reached from a scruffy market town where a bed costs a few dollars and the trailheads start at the edge of it.",
+        "voice": "The strongest thing anyone says about this range is about wanting to come back to it. One traveller who had left Peru without making it here described the pull: \"Coming b",
+        "tags": [
+          "trekking",
+          "mountains",
+          "altitude",
+          "glacial-lakes",
+          "huayhuash",
+          "laguna-69",
+          "cheap",
+          "backpacker"
         ],
         "stay": false,
         "season": []
