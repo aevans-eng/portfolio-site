@@ -30472,6 +30472,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -88.395,
+          18.6767
+        ]
+      },
+      "properties": {
+        "slug": "bacalar",
+        "name": "Bacalar",
+        "kind": "town",
+        "country": "mexico",
+        "region": "yucatan",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A freshwater lagoon fifty kilometres long that runs through seven distinct shades of blue, four hours south of Canc\u00fan \u2014 and shelters living stromatolites, among the oldest forms of life on the planet.",
+        "voice": "The most genuine endorsement on record is a regret, which is usually the most reliable kind. Someone advising a visitor on where to base themselves on the Caribbean coast",
+        "tags": [
+          "lagoon",
+          "freshwater",
+          "stromatolites",
+          "cenotes",
+          "quintana-roo",
+          "kayak",
+          "slow",
+          "southern-caribbean"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -110.32,
           24.15
         ]
@@ -30606,6 +30643,42 @@
           "raramuri",
           "sierra-madre",
           "hiking"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.9958,
+          20.6483
+        ]
+      },
+      "properties": {
+        "slug": "grutas-de-tolantongo",
+        "name": "Grutas de Tolantongo",
+        "kind": "nature",
+        "country": "mexico",
+        "region": "bajio",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A turquoise thermal river running through a canyon in Hidalgo, with terraced hot pools built into the cliff face a hundred metres above it \u2014 and it is owned and run by the local ejido rather than a resort company.",
+        "voice": "Recommendations for this place cluster in Mexican threads rather than foreign ones, which is itself the useful signal \u2014 it is a place Mexicans send other Mexicans.\n\nAsked",
+        "tags": [
+          "hot-springs",
+          "canyon",
+          "thermal-river",
+          "caves",
+          "hidalgo",
+          "domestic-tourism",
+          "cliffside-pools"
         ],
         "stay": false,
         "season": []
@@ -30893,6 +30966,43 @@
           "river-walk",
           "art-nouveau",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.5,
+          16.2
+        ]
+      },
+      "properties": {
+        "slug": "san-jose-del-pacifico",
+        "name": "San Jos\u00e9 del Pac\u00edfico",
+        "kind": "town",
+        "country": "mexico",
+        "region": "oaxaca-south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A village strung along a ridge at 2,500 m in the Sierra Sur, where the cloud comes up the valley from the Pacific and sits below you \u2014 and where a wooden cabin with that view has long cost less than a hostel bed on the coast.",
+        "voice": "The fullest account came from a backpacker who posted about the cabins and then explained what the place actually was: \"This was one of the best parts of my Mexico backpa",
+        "tags": [
+          "mountains",
+          "cloud-forest",
+          "cabins",
+          "cheap",
+          "hiking",
+          "sierra-sur",
+          "oaxaca",
+          "stopover"
         ],
         "stay": false,
         "season": []
