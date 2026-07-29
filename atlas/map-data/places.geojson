@@ -36531,6 +36531,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          81.83,
+          6.84
+        ]
+      },
+      "properties": {
+        "slug": "arugam-bay",
+        "name": "Arugam Bay",
+        "kind": "town",
+        "country": "sri-lanka",
+        "region": "north-east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A surf town on Sri Lanka's east coast that is busy exactly when the rest of the island is being rained on \u2014 and the one notable place the country's railway never reached.",
+        "voice": "A Sri Lankan describing their own east coast gives the fullest account: \"I spent a week in Arugambay working, hiking, rock climbing, enjoying the ocean, and generally chi",
+        "tags": [
+          "surf",
+          "east-coast",
+          "monsoon-inverse",
+          "cheap",
+          "lagoon",
+          "elephants",
+          "laid-back",
+          "seasonal"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           80.2168,
           6.0329
         ]
