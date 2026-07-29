@@ -21415,6 +21415,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -83.4886,
+          9.4842
+        ]
+      },
+      "properties": {
+        "slug": "cerro-chirripo",
+        "name": "Cerro Chirrip\u00f3",
+        "kind": "route",
+        "country": "costa-rica",
+        "region": "pacific",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Costa Rica's highest point at 3,821 m, in a landscape nobody associates with the country \u2014 frost-hollowed p\u00e1ramo and glacial lakes above the treeline \u2014 and on a clear dawn you can see the Pacific and the Caribbean at the same time.",
+        "voice": "There is less enthusiasm on record for this mountain than for Costa Rica's rainforest destinations, and that gap is itself informative \u2014 it is a demanding, permit-gated w",
+        "tags": [
+          "summit",
+          "hiking",
+          "permit-required",
+          "paramo",
+          "altitude",
+          "two-oceans",
+          "hard",
+          "talamanca"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -84.14,
           9.39
         ]
@@ -21513,6 +21550,43 @@
           "scarlet-macaws",
           "osa",
           "remote"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.5028,
+          10.5433
+        ]
+      },
+      "properties": {
+        "slug": "tortuguero",
+        "name": "Tortuguero",
+        "kind": "town",
+        "country": "costa-rica",
+        "region": "caribbean",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A village on a sand spit between the Caribbean and a system of freshwater canals, with no road to it \u2014 you arrive by boat or not at all \u2014 and the most important green turtle nesting beach in the western hemisphere.",
+        "voice": "The strongest endorsement is also the one that explains why it belongs here rather than on the standard circuit. A traveller who did the usual route \u2014 Arenal, Monteverde,",
+        "tags": [
+          "canals",
+          "no-roads",
+          "turtles",
+          "wildlife",
+          "caribbean",
+          "boat-access",
+          "rainforest",
+          "village"
         ],
         "stay": false,
         "season": []
@@ -22190,6 +22264,43 @@
           "volcano",
           "unesco",
           "care"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0045,
+          -2.9006
+        ]
+      },
+      "properties": {
+        "slug": "cuenca-cajas",
+        "name": "Cuenca & El Cajas",
+        "kind": "town",
+        "country": "ecuador",
+        "region": "sierra",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "An Andean colonial city at 2,560 m that one well-travelled visitor ranked third-best in the world behind Buenos Aires and Kyoto \u2014 with a national park of glacial lakes and p\u00e1ramo starting forty minutes up the road.",
+        "voice": "The strongest endorsement is a ranking, and the company it keeps is the point. Asked for their favourite city anywhere, one traveller put Buenos Aires first for \"the city",
+        "tags": [
+          "colonial",
+          "highlands",
+          "paramo",
+          "unesco",
+          "panama-hats",
+          "museums",
+          "andes",
+          "walkable"
         ],
         "stay": false,
         "season": []
