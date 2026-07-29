@@ -33735,6 +33735,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.9702,
+          20.4487
+        ]
+      },
+      "properties": {
+        "slug": "batanes",
+        "name": "Batanes",
+        "kind": "town",
+        "country": "philippines",
+        "region": "luzon",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The Philippines' northernmost province \u2014 closer to Taiwan than to Luzon \u2014 where the Ivatan build houses out of metre-thick stone and cogon thatch specifically to survive the typhoons that pass over them every year.",
+        "voice": "The clearest statement of what Batanes represents came sideways, in an argument about protecting somewhere else. Someone worried about outside money reshaping Siargao poi",
+        "tags": [
+          "islands",
+          "remote",
+          "ivatan",
+          "stone-houses",
+          "typhoons",
+          "hills",
+          "northernmost",
+          "expensive-access",
+          "protected"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           124.7286,
           9.1732
         ]
@@ -36055,6 +36093,44 @@
           "markets",
           "mountains",
           "hallyu"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.8667,
+          37.5
+        ]
+      },
+      "properties": {
+        "slug": "ulleungdo",
+        "name": "Ulleungdo",
+        "kind": "town",
+        "country": "south-korea",
+        "region": "south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A volcanic island 120 km out in the East Sea with almost no flat ground \u2014 steep enough that the coastal road had to be drilled through the cliffs \u2014 and a visitor list that is mostly older Koreans and almost no foreigners at all.",
+        "voice": "The strongest endorsement is also the bluntest, from a list of things to do with a month in the country: \"If you're feeling extra adventurous, go to Ulleungdo! Best place",
+        "tags": [
+          "island",
+          "volcanic",
+          "ferry",
+          "remote",
+          "hiking",
+          "squid",
+          "east-sea",
+          "domestic-tourism",
+          "seasonal"
         ],
         "stay": false,
         "season": []
