@@ -36624,6 +36624,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          128.4656,
+          38.1194
+        ]
+      },
+      "properties": {
+        "slug": "seoraksan-sokcho",
+        "name": "Seoraksan & Sokcho",
+        "kind": "nature",
+        "country": "south-korea",
+        "region": "central",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Granite spires and ravines an hour inland from the East Sea, holding the most concentrated autumn colour in South Korea \u2014 and a fishing port at the bottom of the mountain that one traveller calls their favourite place on Earth.",
+        "voice": "The most striking line about this corner of Korea comes from a thread arguing that visitors overlook the smaller cities: \"**Sokcho is my* favorite place in the world. Gye",
+        "tags": [
+          "hiking",
+          "autumn-colour",
+          "granite",
+          "east-coast",
+          "temples",
+          "makgeolli",
+          "day-range-seoul",
+          "sokcho"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.978,
           37.5665
         ]
