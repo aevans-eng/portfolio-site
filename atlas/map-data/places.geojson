@@ -20771,6 +20771,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          118.6757,
+          24.8741
+        ]
+      },
+      "properties": {
+        "slug": "quanzhou",
+        "name": "Quanzhou (Zayton)",
+        "kind": "town",
+        "country": "china",
+        "region": "south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The port Marco Polo and Ibn Battuta both called one of the greatest in the world \u2014 and one of the very few Chinese cities that built around its old centre instead of knocking it down.",
+        "voice": "The clearest case for it is comparative, and the observation at its centre is unusual: \"Quanzhou, just down the road, far fewer tourists (whilst still being a UNESCO worl",
+        "tags": [
+          "unesco",
+          "maritime-silk-road",
+          "fujian",
+          "temples",
+          "multicultural",
+          "old-town",
+          "marco-polo",
+          "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           121.4737,
           31.2304
         ]
@@ -41448,6 +41485,43 @@
           "china-border",
           "ethnic-minority",
           "northern-loop"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.4583,
+          11.9404
+        ]
+      },
+      "properties": {
+        "slug": "da-lat",
+        "name": "\u0110\u00e0 L\u1ea1t",
+        "kind": "town",
+        "country": "vietnam",
+        "region": "south-central",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A pine-forested hill station at 1,500 m where Vietnam stops being hot \u2014 about ten degrees cooler than everywhere else, built by the French as an escape from exactly that, and now the country's coffee heartland.",
+        "voice": "The clearest recommendation comes with a note that people miss it: \"If you're bothered by the hot climate then go to Da Lat! It's mountainous and everything is about 10 d",
+        "tags": [
+          "highlands",
+          "cool-climate",
+          "coffee",
+          "french-colonial",
+          "walkable",
+          "pine-forest",
+          "waterfalls",
+          "lam-dong"
         ],
         "stay": false,
         "season": []
