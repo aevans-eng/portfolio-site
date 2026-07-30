@@ -38217,6 +38217,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.1444,
+          22.7583
+        ]
+      },
+      "properties": {
+        "slug": "taitung",
+        "name": "Taitung & the East Rift Valley",
+        "kind": "town",
+        "country": "taiwan",
+        "region": "east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The quiet end of Taiwan \u2014 the Pacific on one side, the Central Mountains on the other, the cleanest air on the island, and the highest concentration of indigenous population anywhere in the country.",
+        "voice": "The clearest endorsement comes as one half of a pairing, in a Taiwanese thread asking for one overrated and one underrated thing. The answer names a place this atlas also",
+        "tags": [
+          "east-coast",
+          "nature",
+          "indigenous",
+          "rift-valley",
+          "hot-springs",
+          "cycling",
+          "quiet",
+          "clean-air"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           121.49,
           24.158
         ]
