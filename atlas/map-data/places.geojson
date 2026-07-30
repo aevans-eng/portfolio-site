@@ -28153,6 +28153,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          140.74,
+          40.8244
+        ]
+      },
+      "properties": {
+        "slug": "aomori",
+        "name": "Aomori & the Top of Honshu",
+        "kind": "town",
+        "country": "japan",
+        "region": "tohoku",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The top of Honshu \u2014 three hours from Tokyo on the same bullet train everyone rides south, and one of the snowiest inhabited places on Earth, with the second-lowest foreign population of any Japanese prefecture.",
+        "voice": "The framing that puts it best came from someone who had not yet been, arguing that the north gets unfairly passed over: \"Everyone skips Aomori just to go the more famous ",
+        "tags": [
+          "snow",
+          "tohoku",
+          "festival",
+          "onsen",
+          "apples",
+          "beech-forest",
+          "few-foreigners",
+          "shinkansen"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           142.8544,
           43.6636
         ]
