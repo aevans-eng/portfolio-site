@@ -41087,6 +41087,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          106.7233,
+          22.8536
+        ]
+      },
+      "properties": {
+        "slug": "cao-bang-ban-gioc",
+        "name": "Cao B\u1eb1ng & B\u1ea3n Gi\u1ed1c",
+        "kind": "wander-zone",
+        "country": "vietnam",
+        "region": "north",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The largest waterfall on any national border in Asia, falling in wide limestone tiers straight down the line between Vietnam and China \u2014 in the province a six-year local guide names first when asked where to take people who want the real country.",
+        "voice": "The strongest endorsement comes from a professional. Asked in an AMA, after six years guiding in northern Vietnam, where he would take friends from overseas to show them ",
+        "tags": [
+          "waterfall",
+          "karst",
+          "motorbike-loop",
+          "geopark",
+          "caves",
+          "china-border",
+          "ethnic-minority",
+          "northern-loop"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           104.9784,
           22.823
         ]
