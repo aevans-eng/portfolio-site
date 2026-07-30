@@ -21094,6 +21094,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -73.2333,
+          6.6333
+        ]
+      },
+      "properties": {
+        "slug": "barichara",
+        "name": "Barichara & Guane",
+        "kind": "town",
+        "country": "colombia",
+        "region": "andes",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A colonial town built entirely from pale gold sandstone, on a bluff above the Su\u00e1rez river canyon \u2014 repeatedly named Colombia's most beautiful pueblo, and consistently described as quieter than the one everyone visits instead.",
+        "voice": "The strongest endorsement is Colombian, and it comes with the receipts of repetition: \"Barichara. Beautiful small town with amazing colonial architecture that always tops",
+        "tags": [
+          "colonial",
+          "pueblo",
+          "santander",
+          "sandstone",
+          "walking",
+          "chicamocha",
+          "quiet",
+          "hormigas-culonas"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -73.794,
           2.267
         ]
@@ -21262,6 +21299,43 @@
           "paisa",
           "transformation",
           "street-art"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4258,
+          9.2417
+        ]
+      },
+      "properties": {
+        "slug": "mompox",
+        "name": "Santa Cruz de Mompox",
+        "kind": "town",
+        "country": "colombia",
+        "region": "caribbean",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A UNESCO colonial town stranded on an island in the Magdalena river, which the trade route abandoned two centuries ago \u2014 so it simply stopped, and stayed stopped.",
+        "voice": "The most useful description is a comparison Colombians make themselves. Asked which places deserve more attention than the usual \"visit Villa de Leiva, visit Medell\u00edn, vi",
+        "tags": [
+          "colonial",
+          "unesco",
+          "magdalena-river",
+          "garcia-marquez",
+          "filigree",
+          "semana-santa",
+          "isolated",
+          "bolivar"
         ],
         "stay": false,
         "season": []
