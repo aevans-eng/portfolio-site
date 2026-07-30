@@ -34590,6 +34590,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          125.1278,
+          8.1575
+        ]
+      },
+      "properties": {
+        "slug": "bukidnon",
+        "name": "Bukidnon",
+        "kind": "wander-zone",
+        "country": "philippines",
+        "region": "mindanao",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The answer Filipinos give when someone says they don't like beaches \u2014 a landlocked plateau province in northern Mindanao, high enough to be cold, with pine ridges and pineapple fields instead of coastline.",
+        "voice": "The clearest framing comes from a thread asking exactly the right question: where to travel in the Philippines if you do not like beaches. The answer was a list of highla",
+        "tags": [
+          "highlands",
+          "mountains",
+          "mindanao",
+          "no-beach",
+          "plateau",
+          "cool-climate",
+          "indigenous",
+          "waterfalls"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           124.7286,
           9.1732
         ]
@@ -34651,6 +34688,43 @@
           "beaches",
           "panglao",
           "visayas"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.5621,
+          10.7202
+        ]
+      },
+      "properties": {
+        "slug": "iloilo-guimaras",
+        "name": "Iloilo & Guimaras",
+        "kind": "town",
+        "country": "philippines",
+        "region": "visayas",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A Philippine city with walkable streets, clean air and functioning public transport \u2014 a combination Filipinos describe as genuine culture shock \u2014 plus the island next door that grows the country's best mangoes.",
+        "voice": "Asked which place in the Philippines exceeded their expectations \u2014 a destination they had initially rated low \u2014 the top answer was this city, and the surprise was infrast",
+        "tags": [
+          "city",
+          "walkable",
+          "heritage-churches",
+          "food",
+          "panay",
+          "guimaras",
+          "mangoes",
+          "laidback"
         ],
         "stay": false,
         "season": []
