@@ -22385,6 +22385,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -78.4247,
+          -1.3967
+        ]
+      },
+      "properties": {
+        "slug": "banos-agua-santa",
+        "name": "Ba\u00f1os de Agua Santa",
+        "kind": "town",
+        "country": "ecuador",
+        "region": "sierra",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A small town wedged in a gorge below an active volcano, where the thermal water is hot enough to bathe in at dawn and a paved road runs downhill past waterfall after waterfall into the edge of the Amazon.",
+        "voice": "The best account is not a review but a stay. Asked what happened to people stranded abroad during the pandemic, one traveller answered: \"Stayed in Banos, Ecuador for over",
+        "tags": [
+          "waterfalls",
+          "volcano",
+          "thermal-baths",
+          "cheap",
+          "adventure-sports",
+          "cycling",
+          "backpacker",
+          "andes"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -79.0045,
           -2.9006
         ]
