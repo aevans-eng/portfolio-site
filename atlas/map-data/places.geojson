@@ -38676,6 +38676,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          99.7031,
+          17.0206
+        ]
+      },
+      "properties": {
+        "slug": "sukhothai",
+        "name": "Sukhothai & Si Satchanalai",
+        "kind": "point",
+        "country": "thailand",
+        "region": "north",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The first capital of Siam, abandoned and half-swallowed by forest, where you can cycle between thirteenth-century temples and have an entire one to yourself \u2014 halfway along the route everyone takes between Bangkok and Chiang Mai, and almost nobody stops.",
+        "voice": "It arrives in the most useful possible context \u2014 a thread asking for fantastic ruins that are not world famous. One traveller listed a Moroccan site that \"gets maybe a th",
+        "tags": [
+          "ruins",
+          "unesco",
+          "buddhist",
+          "cycling",
+          "historical-park",
+          "lightly-visited",
+          "chedi",
+          "thirteenth-century"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.1333,
           10.0667
         ]
