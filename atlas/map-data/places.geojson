@@ -24830,6 +24830,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -89.4,
+          17.0722
+        ]
+      },
+      "properties": {
+        "slug": "yaxha",
+        "name": "Yaxh\u00e1",
+        "kind": "point",
+        "country": "guatemala",
+        "region": "peten",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Guatemala's third-largest Maya city, on a ridge between two lakes an hour from Tikal \u2014 with a temple you can still climb, at sunset, usually alone.",
+        "voice": "It arrives in the best possible context \u2014 the same r/travel thread asking for \"fantastic ruins that aren't world famous\" that this atlas has drawn on before. One answer w",
+        "tags": [
+          "maya",
+          "ruins",
+          "jungle",
+          "lake",
+          "sunset",
+          "peten",
+          "quiet",
+          "flores"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -12.29,
           11.32
         ]
