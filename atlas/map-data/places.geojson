@@ -24645,6 +24645,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -91.518,
+          14.8347
+        ]
+      },
+      "properties": {
+        "slug": "xela-quetzaltenango",
+        "name": "Xela (Quetzaltenango)",
+        "kind": "town",
+        "country": "guatemala",
+        "region": "highlands",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Guatemala's second city, at 2,330 m in the western highlands \u2014 where people go to actually learn Spanish, because almost nobody there will switch to English for you.",
+        "voice": "The case for Xela is made most clearly by someone answering where to actually learn Spanish, and every clause is a reason: \"I'd suggest Xela in Guatemala. Amazing city, i",
+        "tags": [
+          "spanish-school",
+          "highlands",
+          "volcanoes",
+          "tajumulco",
+          "cheap",
+          "long-stay",
+          "k-iche",
+          "not-touristy"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -12.29,
           11.32
         ]
