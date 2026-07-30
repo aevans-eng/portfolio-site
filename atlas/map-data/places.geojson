@@ -34515,6 +34515,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          123.7833,
+          11.15
+        ]
+      },
+      "properties": {
+        "slug": "bantayan-island",
+        "name": "Bantayan Island",
+        "kind": "town",
+        "country": "philippines",
+        "region": "visayas",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A flat coral island off the top of Cebu with a stretch of white sand Filipinos say could rival Boracay's \u2014 and which they keep recommending precisely because almost nobody has gone there instead.",
+        "voice": "The comparison Filipinos reach for is always the same one. Asked which place exceeded their expectations: \"Bantayan \u2014 the long stretch of white sand could rival that of B",
+        "tags": [
+          "island",
+          "white-sand",
+          "cebu",
+          "quiet",
+          "regulated-pricing",
+          "cheap",
+          "ferry",
+          "long-stay"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           121.9702,
           20.4487
         ]
