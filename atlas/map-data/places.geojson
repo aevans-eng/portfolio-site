@@ -21346,6 +21346,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -77.2694,
+          5.7042
+        ]
+      },
+      "properties": {
+        "slug": "nuqui-bahia-solano",
+        "name": "Nuqu\u00ed & Bah\u00eda Solano (Choc\u00f3)",
+        "kind": "wander-zone",
+        "country": "colombia",
+        "region": "pacific",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "One of the wettest places on Earth, where rainforest runs straight into the Pacific with no road connecting any of it \u2014 and humpback whales come to give birth close enough to hear from the beach.",
+        "voice": "The account that captures why people go anyway is from a Colombian who went unsure and came back converted: \"Yo fui y promet\u00ed volver a los 3 a\u00f1os del viaje, nada m\u00e1s esta",
+        "tags": [
+          "pacific",
+          "rainforest",
+          "humpback-whales",
+          "afro-colombian",
+          "no-roads",
+          "surf",
+          "remote",
+          "choco"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -74.03,
           11.3
         ]
@@ -33746,6 +33783,43 @@
           "cool-climate",
           "remote-work",
           "expats"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1333,
+          8.6
+        ]
+      },
+      "properties": {
+        "slug": "el-valle-de-anton",
+        "name": "El Valle de Ant\u00f3n",
+        "kind": "town",
+        "country": "panama",
+        "region": "east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A town built inside a volcanic caldera \u2014 one of the largest anywhere that people actually live in, six kilometres across \u2014 two hours from Panama City and about ten degrees cooler.",
+        "voice": "The clearest recommendation arrives as a rescue. In a thread titled around Panama City being a hard pass, someone answering the question \"am I missing something?\" pointed",
+        "tags": [
+          "caldera",
+          "highlands",
+          "cool-climate",
+          "hiking",
+          "market",
+          "day-range-panama-city",
+          "walkable",
+          "waterfalls"
         ],
         "stay": false,
         "season": []
