@@ -36959,6 +36959,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          128.098,
+          35.801
+        ]
+      },
+      "properties": {
+        "slug": "haeinsa",
+        "name": "Haeinsa & the Tripitaka Koreana",
+        "kind": "point",
+        "country": "south-korea",
+        "region": "south",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A mountain temple holding 81,258 carved woodblocks \u2014 the complete Buddhist canon, cut in the thirteenth century \u2014 kept in perfect condition for 750 years by four buildings that have no climate control at all.",
+        "voice": "In a thread asking Koreans and residents for the country's underrated destinations, the case for it was made in one sentence and rests on the object: \"Haeinsa (\ud574\uc778\uc0ac) templ",
+        "tags": [
+          "temple",
+          "unesco",
+          "templestay",
+          "woodblocks",
+          "gayasan",
+          "buddhism",
+          "daegu",
+          "mountains"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.5292,
           33.3617
         ]
