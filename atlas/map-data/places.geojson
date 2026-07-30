@@ -31057,6 +31057,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -96.55,
+          15.6667
+        ]
+      },
+      "properties": {
+        "slug": "mazunte-zipolite",
+        "name": "Mazunte, Zipolite & Punta Cometa",
+        "kind": "town",
+        "country": "mexico",
+        "region": "oaxaca-south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A string of small beach towns on Oaxaca's Pacific coast where a caba\u00f1a with an ocean view has cost around ten dollars \u2014 and where, in season, you can watch humpbacks from the balcony you're sleeping on.",
+        "voice": "The best account comes with its own photograph and its own price. Someone posting the view from a ten-dollar hostel on Mexico's Pacific coast explained what it was: \"This",
+        "tags": [
+          "pacific-coast",
+          "cheap",
+          "turtles",
+          "whales",
+          "sunset",
+          "nudist-beach",
+          "oaxaca",
+          "backpacker",
+          "cabana"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -99.1332,
           19.4326
         ]
