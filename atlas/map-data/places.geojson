@@ -1640,39 +1640,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.093,
-          37.421
-        ]
-      },
-      "properties": {
-        "slug": "android-statues",
-        "name": "The Android Lawn Statues",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "50m",
-        "hook": "A lawn of giant foam mascots at the Googleplex, one for every dessert-named Android release, from a Cupcake to a two-story robot.",
-        "voice": "",
-        "tags": [
-          "google",
-          "statues",
-          "tech",
-          "mascots"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -122.43,
           37.861
         ]
@@ -2591,39 +2558,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.902,
-          36.3714
-        ]
-      },
-      "properties": {
-        "slug": "bixby-bridge",
-        "name": "Bixby Creek Bridge",
-        "kind": "point",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Point",
-        "color": "#4b6d8c",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "2h45m",
-        "hook": "The most photographed thing on the coast, and the clearest example of what this map is trying to steer you around.",
-        "voice": "Locals are blunt about it: \"the tourists are hell-bent on taking photos of the bridge... people parking unsafely on the highway,\" and \"many of you will literally park on ",
-        "tags": [
-          "bridge",
-          "icon",
-          "photo-op",
-          "crowded"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.636,
           38.418
         ]
@@ -3445,39 +3379,6 @@
           "pescadero",
           "hike",
           "bike-reachable"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.112,
-          37.453
-        ]
-      },
-      "properties": {
-        "slug": "byxbee-park",
-        "name": "Byxbee Park",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "40m",
-        "hook": "A capped garbage dump turned into a field of earth art: hundreds of leaning poles, chevrons aimed at the runway, a wind-shaped hill, all built on methane.",
-        "voice": "",
-        "tags": [
-          "earth-art",
-          "landfill",
-          "baylands",
-          "oddity"
         ],
         "stay": false,
         "season": []
@@ -5479,40 +5380,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.287,
-          37.356
-        ]
-      },
-      "properties": {
-        "slug": "djerassi",
-        "name": "Djerassi Sculpture Ranch",
-        "kind": "nature",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Nature",
-        "color": "#437a52",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "55m",
-        "hook": "580 acres of Woodside ridge scattered with decades of art, an artists' retreat founded by the man who co-invented the birth-control pill.",
-        "voice": "",
-        "tags": [
-          "art",
-          "residency",
-          "ridge",
-          "sculpture",
-          "hike"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.233,
           39.3235
         ]
@@ -5819,39 +5686,6 @@
           "tide-pools",
           "malibu",
           "los-angeles"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.172,
-          37.4469
-        ]
-      },
-      "properties": {
-        "slug": "el-palo-alto",
-        "name": "El Palo Alto",
-        "kind": "point",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Point",
-        "color": "#4b6d8c",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "45m",
-        "hook": "The thousand-year-old redwood the whole town is named after, standing alone by the railroad tracks.",
-        "voice": "",
-        "tags": [
-          "redwood",
-          "landmark",
-          "history",
-          "tree"
         ],
         "stay": false,
         "season": []
@@ -6399,39 +6233,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.356,
-          37.557
-        ]
-      },
-      "properties": {
-        "slug": "flintstone-house",
-        "name": "The Flintstone House",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "30m",
-        "hook": "The bulbous orange house off Interstate 280 that everyone points at, and that got its owner sued over the dinosaurs in the yard.",
-        "voice": "",
-        "tags": [
-          "roadside",
-          "house",
-          "flintstones",
-          "absurd"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -119.797,
           36.809
         ]
@@ -6666,39 +6467,6 @@
           "nature-center",
           "beverly-hills",
           "los-angeles"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.159,
-          37.409
-        ]
-      },
-      "properties": {
-        "slug": "frenchmans-tower",
-        "name": "Frenchman's Tower",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "45m",
-        "hook": "A lonely two-story brick tower in the Palo Alto foothills that nobody can quite explain, so everyone made up a story.",
-        "voice": "",
-        "tags": [
-          "folly",
-          "tower",
-          "urban-legend",
-          "foothills"
         ],
         "stay": false,
         "season": []
@@ -7225,39 +6993,6 @@
           "presidio",
           "walking",
           "ephemeral"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.172,
-          37.488
-        ]
-      },
-      "properties": {
-        "slug": "great-spirit-path",
-        "name": "The Great Spirit Path",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "40m",
-        "hook": "A poem laid into the ground across a bayfront park, its verses marked by pictograph sculptures, hidden on a capped landfill.",
-        "voice": "",
-        "tags": [
-          "poetry",
-          "stone-art",
-          "landfill",
-          "bayfront"
         ],
         "stay": false,
         "season": []
@@ -7959,41 +7694,6 @@
           "museum",
           "aircraft",
           "prototypes"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.1775,
-          36.999
-        ]
-      },
-      "properties": {
-        "slug": "hole-in-the-wall-beach",
-        "name": "Hole-in-the-Wall Beach (Davenport)",
-        "kind": "nature",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Nature",
-        "color": "#437a52",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "1h20m",
-        "hook": "A sea arch punched through a sandstone cliff on the Davenport coast \u2014 walk through the hole at low tide and a second, emptier beach opens on the other side.",
-        "voice": "",
-        "tags": [
-          "beach",
-          "sea-arch",
-          "low-tide",
-          "davenport",
-          "cliffs",
-          "scramble"
         ],
         "stay": false,
         "season": []
@@ -14653,39 +14353,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.489,
-          37.612
-        ]
-      },
-      "properties": {
-        "slug": "sams-castle",
-        "name": "Sam's Castle",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "30m",
-        "hook": "An actual stone castle on a Pacifica hillside, built after 1906 by a man who wanted to be earthquake-proof, with a wild century behind it.",
-        "voice": "",
-        "tags": [
-          "castle",
-          "history",
-          "pacifica",
-          "haunted"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -122.435,
           37.689
         ]
@@ -15210,39 +14877,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.362,
-          37.546
-        ]
-      },
-      "properties": {
-        "slug": "serra-statue",
-        "name": "The Jun\u00edpero Serra Statue",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "30m",
-        "hook": "A 26-foot concrete Jun\u00edpero Serra kneeling by the freeway and pointing west, that locals swear looks sculpted from mashed potatoes.",
-        "voice": "",
-        "tags": [
-          "statue",
-          "roadside",
-          "history",
-          "oddity"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -118.93,
           34.54
         ]
@@ -15269,40 +14903,6 @@
           "los-padres",
           "topatopa",
           "ventura"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.437,
-          37.7592
-        ]
-      },
-      "properties": {
-        "slug": "seward-slides",
-        "name": "The Seward Street Slides",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "in SF",
-        "hook": "Two-story concrete slides built into one of the city's steepest hills, designed by a fourteen-year-old, ridden on a scrap of cardboard.",
-        "voice": "",
-        "tags": [
-          "slides",
-          "absurd",
-          "free",
-          "hidden",
-          "fun"
         ],
         "stay": false,
         "season": []
@@ -15514,39 +15114,6 @@
           "niland",
           "outsider-art",
           "san-diego"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.205,
-          37.418
-        ]
-      },
-      "properties": {
-        "slug": "slac",
-        "name": "SLAC (the two-mile accelerator)",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "45m",
-        "hook": "A particle accelerator two miles long running under Interstate 280, once the longest building in the world, where they smashed atoms into Nobel Prizes.",
-        "voice": "",
-        "tags": [
-          "physics",
-          "accelerator",
-          "science",
-          "scale"
         ],
         "stay": false,
         "season": []
@@ -17345,39 +16912,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.3,
-          37.51
-        ]
-      },
-      "properties": {
-        "slug": "waterdog-lake",
-        "name": "Waterdog Lake",
-        "kind": "nature",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Nature",
-        "color": "#437a52",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "30m",
-        "hook": "A hidden reservoir at the top of a Belmont street, a genuine little lake tucked in the hills with trails all around it.",
-        "voice": "",
-        "tags": [
-          "lake",
-          "trails",
-          "hidden",
-          "mtb"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -118.2415,
           33.9385
         ]
@@ -17649,39 +17183,6 @@
           "legend",
           "san-jose",
           "icon-redeemed"
-        ],
-        "stay": false,
-        "season": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.388,
-          37.6725
-        ]
-      },
-      "properties": {
-        "slug": "wind-harp",
-        "name": "The Wind Harp",
-        "kind": "oddity",
-        "country": "",
-        "region": "bay-area-3hr",
-        "kindLabel": "Oddity",
-        "color": "#8f5276",
-        "depth": 2,
-        "dots": "\u25cf\u25cf\u25cb\u25cb\u25cb",
-        "radius": 5,
-        "drive": "20m",
-        "hook": "A 92-foot steel harp on a hilltop by the bay, played by nothing but the wind.",
-        "voice": "",
-        "tags": [
-          "sculpture",
-          "wind",
-          "sound",
-          "bay-trail"
         ],
         "stay": false,
         "season": []
