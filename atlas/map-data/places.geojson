@@ -22576,6 +22576,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -88.105,
+          13.172
+        ]
+      },
+      "properties": {
+        "slug": "el-cuco-eastern-beaches",
+        "name": "El Cuco & the Eastern Beaches",
+        "kind": "town",
+        "country": "el-salvador",
+        "region": "east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Ask Salvadorans which beach in the country is actually the best and a name comes back that is not the famous one \u2014 a long flat stretch of sand three hours east of everything, where the waves are gentle enough for children at one end and world-class right-hand points break at the other.",
+        "voice": "The clearest endorsement is an unhedged answer to the direct question, \"what is the best beach in El Salvador?\": \"Para m\u00ed, la mejor playa de El Salvador es la de El Cuco,",
+        "tags": [
+          "beach",
+          "sand",
+          "surf",
+          "punta-mango",
+          "playa-las-flores",
+          "la-union",
+          "eastern-el-salvador",
+          "quiet",
+          "shells"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -89.382,
           13.494
         ]
@@ -22588,18 +22626,20 @@
         "region": "west",
         "kindLabel": "Nature",
         "color": "#437a52",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "",
-        "hook": "A mellow black-sand surf town on El Salvador's Pacific coast, gateway to a string of world-class right-hand point breaks that have made this little country a rising star of Central American surfing.",
-        "voice": "",
+        "hook": "The most accessible surf on this coast and a string of long right-hand points \u2014 including one rated among the best in the world \u2014 forty minutes from the capital. Come for the waves. Locals will tell you the beaches are better elsewhere.",
+        "voice": "The clearest local framing of what El Tunco is for comes from a direct comparison with the country's best swimming beach: \"El Tunco is all about night life. You got bars,",
         "tags": [
           "surf",
           "black-sand",
           "el-tunco",
+          "punta-roca",
           "point-breaks",
           "beach-town",
+          "nightlife",
           "pacific"
         ],
         "stay": false,
