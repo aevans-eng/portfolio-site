@@ -32716,6 +32716,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -86.5833,
+          13.4833
+        ]
+      },
+      "properties": {
+        "slug": "somoto-canyon-esteli",
+        "name": "Somoto Canyon & Estel\u00ed",
+        "kind": "nature",
+        "country": "nicaragua",
+        "region": "pacific",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A slot canyon at the headwaters of the Coco river, near the Honduran border, that outsiders only formally documented in 2004 \u2014 you get through it by swimming, scrambling and jumping, not by walking.",
+        "voice": "The clearest endorsement is from someone who had time to compare. A solo female traveller who spent three months in the country, and was explicit that her \"backpacking cr",
+        "tags": [
+          "canyon",
+          "swimming",
+          "northern-highlands",
+          "cigars",
+          "esteli",
+          "river",
+          "guided",
+          "off-circuit"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           8.5,
           18.0
         ]
