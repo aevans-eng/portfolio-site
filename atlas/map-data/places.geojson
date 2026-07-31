@@ -22069,6 +22069,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -80.8047,
+          -1.5567
+        ]
+      },
+      "properties": {
+        "slug": "puerto-lopez-isla-de-la-plata",
+        "name": "Puerto L\u00f3pez & Isla de la Plata",
+        "kind": "town",
+        "country": "ecuador",
+        "region": "coast",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A working fishing town on Ecuador's Pacific coast where you can see blue-footed boobies, snorkel a reef and watch humpbacks breed \u2014 for a fraction of what the Gal\u00e1pagos costs, which is why Ecuadorians call the island offshore the poor man's Gal\u00e1pagos.",
+        "voice": "The clearest recommendation frames it exactly as the alternative it is: \"If you're looking for something more lowkey than the Galapagos you should head to Puerto Lopez, y",
+        "tags": [
+          "pacific-coast",
+          "whales",
+          "blue-footed-boobies",
+          "budget",
+          "snorkelling",
+          "machalilla",
+          "fishing-town"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -78.9,
           -0.8667
         ]
