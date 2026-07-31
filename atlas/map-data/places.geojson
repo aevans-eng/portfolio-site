@@ -27764,6 +27764,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          128.8419,
+          32.6947
+        ]
+      },
+      "properties": {
+        "slug": "goto-islands",
+        "name": "The Got\u014d Islands",
+        "kind": "wander-zone",
+        "country": "japan",
+        "region": "kyushu",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "An archipelago off Nagasaki where Japanese Catholics hid their faith for two and a half centuries of prohibition \u2014 worshipping in secret, disguising Mary as Kannon \u2014 and then built churches all over the islands the moment they could.",
+        "voice": "The recommendation that lands hardest comes from a reply to someone who had made a Catholic pilgrimage to Nagasaki and stopped there: \"Did you go to Goto Islands? That's ",
+        "tags": [
+          "islands",
+          "hidden-christians",
+          "unesco",
+          "churches",
+          "nagasaki",
+          "ferry",
+          "remote",
+          "history"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           132.4553,
           34.3853
         ]
