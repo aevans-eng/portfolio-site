@@ -21209,6 +21209,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -83.8,
+          9.55
+        ]
+      },
+      "properties": {
+        "slug": "san-gerardo-de-dota",
+        "name": "San Gerardo de Dota & the Zona de los Santos",
+        "kind": "nature",
+        "country": "costa-rica",
+        "region": "pacific",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A steep river valley at 2,200 m in the Talamanca mountains, reached over a pass Costa Ricans call the Hill of Death \u2014 and the most reliable place on Earth to see a resplendent quetzal.",
+        "voice": "Costa Ricans put this valley up against the famous options rather than below them. Asked to choose between two bases, one answered plainly: \"As for picking between la for",
+        "tags": [
+          "cloud-forest",
+          "quetzal",
+          "birding",
+          "coffee",
+          "talamanca",
+          "high-altitude",
+          "no-beach",
+          "tarrazu"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -83.5028,
           10.5433
         ]
