@@ -34349,6 +34349,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          123.8667,
+          13.7667
+        ]
+      },
+      "properties": {
+        "slug": "caramoan",
+        "name": "Caramoan",
+        "kind": "nature",
+        "country": "philippines",
+        "region": "luzon",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A peninsula of limestone islands at the far end of Bicol that international Survivor productions have used for years \u2014 and which Filipinos say beats Boracay, while remaining awkward enough to reach that few of them go.",
+        "voice": "Asked for the most beautiful place they had ever been in the Philippines, one Filipino answered with a list that puts this first and then explains the pattern behind it: ",
+        "tags": [
+          "islands",
+          "limestone",
+          "bicol",
+          "boat-hopping",
+          "survivor",
+          "uncrowded",
+          "jellyfish-risk"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           124.173,
           9.828
         ]
@@ -34411,6 +34447,43 @@
           "guimaras",
           "mangoes",
           "laidback"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.7,
+          6.2167
+        ]
+      },
+      "properties": {
+        "slug": "lake-sebu",
+        "name": "Lake Sebu",
+        "kind": "town",
+        "country": "philippines",
+        "region": "mindanao",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A highland lake in South Cotabato covered in lotus and fish pens, home of the T'boli and their dreamweavers \u2014 and a zipline that crosses a gorge above a chain of seven waterfalls.",
+        "voice": "The most telling comment is not really about the lake \u2014 it is about how a place this good stays unknown. In a thread asking why Philippine tourism lags its neighbours, on",
+        "tags": [
+          "lake",
+          "highlands",
+          "tboli",
+          "waterfalls",
+          "zipline",
+          "weaving",
+          "mindanao",
+          "no-beach"
         ],
         "stay": false,
         "season": []
