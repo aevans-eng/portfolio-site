@@ -34539,6 +34539,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.55,
+          15.75
+        ]
+      },
+      "properties": {
+        "slug": "aurora-dipaculao",
+        "name": "Dipaculao & the Aurora Coast",
+        "kind": "nature",
+        "country": "philippines",
+        "region": "luzon",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The Pacific side of Luzon, where the Sierra Madre runs straight into the ocean \u2014 and specifically the stretch north of Baler, which is the part Filipinos who have been to both actually recommend.",
+        "voice": "The pin rests on one Filipino explicitly correcting the province's own reputation: \"Aurora is actually an underrated place IMO, most people is Baler ang pinupuntahan sa A",
+        "tags": [
+          "pacific-coast",
+          "sierra-madre",
+          "undeveloped",
+          "surf",
+          "coves",
+          "rock-formations",
+          "aurora",
+          "basic-accommodation"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           122.95,
           10.677
         ]
