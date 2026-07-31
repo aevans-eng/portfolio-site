@@ -28088,6 +28088,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          139.6,
+          36.75
+        ]
+      },
+      "properties": {
+        "slug": "nikko",
+        "name": "Nikk\u014d",
+        "kind": "town",
+        "country": "japan",
+        "region": "kanto",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A mausoleum complex of impossible gold and lacquer set in a cedar forest two hours north of Tokyo \u2014 and the one place near the capital where being snowed in is the best thing that can happen to you.",
+        "voice": "The best account of Nikk\u014d is not about the shrines at all. Asked what the most fun they had ever had in Japan was, one traveller picked winter here over anything else: \"I",
+        "tags": [
+          "unesco",
+          "shrines",
+          "cedar-forest",
+          "onsen",
+          "waterfalls",
+          "day-range-tokyo",
+          "snow",
+          "tochigi"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           133.205,
           34.409
         ]
