@@ -30210,6 +30210,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          102.24,
+          6.125
+        ]
+      },
+      "properties": {
+        "slug": "kota-bharu-kelantan",
+        "name": "Kota Bharu & Kelantan",
+        "kind": "town",
+        "country": "malaysia",
+        "region": "east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The most culturally distinct corner of peninsular Malaysia \u2014 a state with its own dialect, its own food, Thai temples in the rice fields, and a shadow-puppet and silverwork tradition that survives here and almost nowhere else.",
+        "voice": "The case for going is made in terms of difference rather than beauty: \"Kelantan is really good for random wandering cause it feels different. Kota Bharu is laid back but ",
+        "tags": [
+          "malay-culture",
+          "thai-border",
+          "wayang-kulit",
+          "nasi-kerabu",
+          "markets",
+          "conservative",
+          "east-coast",
+          "crafts"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           101.6869,
           3.139
         ]
@@ -30272,6 +30309,44 @@
           "rainforest",
           "birdwatching",
           "sabah"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.7333,
+          4.85
+        ]
+      },
+      "properties": {
+        "slug": "taiping-perak",
+        "name": "Taiping & the Perak Small Towns",
+        "kind": "town",
+        "country": "malaysia",
+        "region": "west",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The town Malaysians name when you ask which one they actually like \u2014 a rain-soaked old tin town under the hills, built around the country's first public gardens, where the rain trees have grown out over the lake for a century.",
+        "voice": "Taiping's evidence is unusual for this atlas: it comes almost entirely from Malaysians answering \"which town do you actually like\", unprompted by any question about touri",
+        "tags": [
+          "colonial",
+          "tin-mining",
+          "lake-gardens",
+          "bukit-larut",
+          "hill-station",
+          "rain",
+          "perak",
+          "small-town",
+          "ipoh"
         ],
         "stay": false,
         "season": []

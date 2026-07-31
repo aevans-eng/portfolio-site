@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kota Bharu & Kelantan — Wander Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#f2e9d4; --card:#f7f1e1; --ink:#2b2620; --muted:#7c6f56; --line:#d9c9a6;
+          --pine:#2f5c46; --rust:#b0562e; --kc:#3c7f7a; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Spectral",Georgia,serif; font-size:1.06rem; line-height:1.7; -webkit-font-smoothing:antialiased; }
+  body::before{ content:""; position:fixed; inset:0; z-index:9999; pointer-events:none; opacity:.5;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/></svg>"); }
+  a{ color:var(--rust); }
+
+  /* hero band */
+  .hero{ position:relative; min-height:44vh; padding:26px 24px 62px; overflow:hidden; color:#f7f1e1;
+    background:linear-gradient(150deg, color-mix(in srgb,var(--kc) 82%, #000) 0%, var(--kc) 55%, color-mix(in srgb,var(--kc) 70%, #f2e9d4) 100%); }
+  .hero.has-img{ background-size:cover; background-position:center; }
+  .hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(transparent 40%, rgba(30,22,12,.55)); }
+  .hero-ghost{ position:absolute; right:-2%; bottom:-8%; font-family:"Fraunces",serif; font-weight:900;
+    font-size:min(30vw,240px); line-height:.8; color:#fff; opacity:.09; letter-spacing:-.03em;
+    text-transform:lowercase; white-space:nowrap; pointer-events:none; }
+  .hero-inner{ position:relative; z-index:2; max-width:720px; margin:0 auto; }
+  .back{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+    color:#f7f1e1; text-decoration:none; opacity:.85; }
+  .back:hover{ opacity:1; }
+  .kicker{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+    opacity:.8; margin:44px 0 10px; }
+  h1{ font-family:"Fraunces",serif; font-weight:900; font-size:clamp(2.3rem,7vw,4rem); line-height:.98;
+    letter-spacing:-.02em; margin:0 0 16px; text-wrap:balance; }
+  .tags{ display:flex; flex-wrap:wrap; gap:7px; }
+  .tag{ font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.06em; text-transform:uppercase;
+    border:1px solid rgba(247,241,225,.5); border-radius:20px; padding:3px 11px; }
+
+  /* instrument bar */
+  .meta{ position:relative; z-index:3; max-width:720px; margin:-34px auto 0; padding:0 24px; }
+  .meta-in{ display:flex; flex-wrap:wrap; gap:22px 30px; align-items:center; background:var(--card);
+    border:1px solid var(--line); border-radius:5px; padding:16px 22px; box-shadow:0 10px 34px rgba(60,45,20,.15); }
+  .stat{ font-family:"IBM Plex Mono",monospace; font-size:.74rem; color:var(--muted); line-height:1.3; }
+  .stat b{ display:block; font-size:.92rem; color:var(--ink); font-weight:600; margin-top:2px; }
+  .meter{ display:inline-flex; gap:3px; margin-top:4px; }
+  .meter i{ width:15px; height:7px; border-radius:1px; background:var(--line); }
+  .meter i.on{ background:var(--kc); }
+
+  /* reading column */
+  .wrap{ max-width:720px; margin:38px auto 90px; padding:0 24px; }
+  .sec{ margin:0 0 30px; }
+  .sec h2{ font-family:"Fraunces",serif; font-weight:600; font-size:1.5rem; line-height:1.1;
+    margin:34px 0 10px; display:flex; align-items:baseline; gap:12px; }
+  .sec h2 .idx{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; font-weight:500; color:var(--rust);
+    letter-spacing:.05em; }
+  .sec p{ margin:.55rem 0; }
+  .sec.lead p{ font-size:1.24rem; line-height:1.55; }
+  .sec.lead p:first-of-type::first-letter{ font-family:"Fraunces",serif; font-weight:900; float:left;
+    font-size:4.1rem; line-height:.72; padding:6px 12px 0 0; color:var(--kc); }
+  .sec.skip{ border-left:3px solid var(--rust); padding:2px 0 2px 20px; }
+  .sec.skip h2{ color:var(--rust); }
+  .sec.odd h2{ font-style:italic; }
+  .sec.locals{ background:color-mix(in srgb,var(--kc) 9%, var(--card)); border:1px solid var(--line);
+    border-radius:6px; padding:6px 26px 20px; margin-top:40px; position:relative; }
+  .sec.locals::before{ content:"\201C"; position:absolute; top:-18px; left:16px; font-family:"Fraunces",serif;
+    font-weight:900; font-size:5rem; color:var(--kc); opacity:.4; }
+  .sec.locals h2{ font-style:italic; }
+  .sec.locals p{ font-style:italic; color:#4a4232; }
+  blockquote{ border-left:3px solid var(--kc); margin:1rem 0; padding:.2rem 0 .2rem 1rem; color:var(--muted); font-style:italic; }
+  ul{ padding-left:1.2rem; } li{ margin:.3rem 0; }
+  code{ background:#e9dfc6; padding:1px 5px; border-radius:3px; font-family:"IBM Plex Mono",monospace; font-size:.85em; }
+  .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
+    border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
+  .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .mine{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .react{ display:inline-flex; gap:5px; }
+  .rx{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.06em; text-transform:uppercase;
+    padding:8px 11px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .rx:hover{ border-color:var(--rust); color:var(--rust); }
+  .rx.on{ background:var(--rust); border-color:var(--rust); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
+</style></head>
+<body>
+  <header class="hero">
+    <div class="hero-ghost">Town</div>
+    <div class="hero-inner">
+      <a class="back" href="../index.html">← The Atlas</a>
+      <div class="kicker">east · field dossier</div>
+      <h1>Kota Bharu & Kelantan</h1>
+      <div class="tags"><span class="tag">malay-culture</span><span class="tag">thai-border</span><span class="tag">wayang-kulit</span><span class="tag">nasi-kerabu</span><span class="tag">markets</span><span class="tag">conservative</span><span class="tag">east-coast</span><span class="tag">crafts</span></div>
+    </div>
+  </header>
+  <div class="meta"><div class="meta-in">
+    <div class="stat">Kind<b style="color:var(--kc)">Town</b></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
+    
+    <div class="stat">Effort<b>Flight from KL, or the jungle railway up the interior; two or three days</b></div>
+    <div class="stat">Best<b>March–September; the northeast monsoon floods Kelantan roughly November–January</b></div>
+    <div class="stat mine" style="margin-left:auto">
+      <button id="wantBtn" class="visit"></button>
+      <button id="visitBtn" class="visit"></button>
+      <span id="reactWrap" class="react" style="display:none">
+        <button id="loveBtn" class="rx" title="Loved it">♥ loved</button>
+        <button id="mehBtn" class="rx" title="Didn't do it for me">meh</button>
+      </span>
+    </div>
+  </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 5/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class="neg"></i></span></span></div></div>
+  <main class="wrap">
+    <section class="sec lead"><h2>The hook</h2><p>The most culturally distinct corner of peninsular Malaysia — a state with its own dialect, its own food, Thai temples in the rice fields, and a shadow-puppet and silverwork tradition that survives here and almost nowhere else.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p><strong>Kelantan</strong> sits against the Thai border, and everything about it reads differently from the west coast. The <strong>dialect</strong> is far enough from standard Malay that other Malaysians struggle with it. The <strong>food</strong> is its own cuisine: <em>nasi kerabu</em> dyed blue with butterfly-pea flower, <em>laksam</em>, <em>roti titab</em>, and the fermented-fish <em>budu</em> that the rest of the country jokes about.</p>
+<p><strong>Kota Bharu</strong> is small, low-rise and walkable in the centre. <strong>Siti Khadijah Market</strong> is the fixed point — a covered market run overwhelmingly by women traders, stacked in tiers around an open well, and it is the thing people name first. Around it sit the royal museums of the old sultanate, including <strong>Istana Jahar</strong>.</p>
+<p>Kelantan is also where Malaysia's Thai Buddhist minority lives, and the temples out in the paddy are genuinely unexpected: <strong>Wat Photivihan</strong> at Tumpat holds one of Southeast Asia's largest <strong>reclining Buddhas</strong>, a few kilometres from villages that are otherwise entirely Malay-Muslim.</p>
+<p>It is the last stronghold of <strong>wayang kulit</strong> shadow puppetry, <em>dikir barat</em> singing, kite-making and silver work — crafts that are state-supported here because they went extinct elsewhere.</p></section>
+<section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Fly into Kota Bharu, or arrive on the <strong>jungle railway</strong> through the interior, which is a reason to come in itself. Two or three days: the market at dawn, the museums, then hire a car or driver for the Tumpat temples and the coast. Ask locally about wayang kulit performances rather than expecting a schedule.</p></section>
+<section class="sec locals"><h2>From the locals</h2><p>The case for going is made in terms of difference rather than beauty: "<strong>Kelantan is really good for random wandering cause it feels different. Kota Bharu is laid back but its got a lot of young people, so doesn't feel dead. A lot of nice local shops, budget cafes etc. catered to the young and broke like me that are worth exploring.</strong>"</p>
+<p>Agreeing, another Malaysian gave the specifics — and it is a good list of exactly what is here: "There are some unique things to do including <strong>seeing the giant sleeping Buddha or visiting Istana Jahar museum</strong>. Plus <strong>the food there is very unique, I really loved Roti Titab, Laksam and Nasi kerabu</strong>. I'd go back there just to visit Kopitiam Kita alone."</p>
+<p>On the market, offered in a discussion about turning markets into attractions elsewhere: "In Kota Bharu, the <strong>Siti Khadijah Market is probably the most famous tourist attraction in the city.</strong>"</p>
+<p>One more thing is worth knowing, because it cuts against the state's reputation elsewhere in Malaysia. A Kelantanese describing their grandmother's city: "<strong>in Kota Bharu, majority of the chinese and malays are living there harmoniously and it's been that way even before</strong> [the] <strong>BN era at Kelantan.</strong>" The politics that make national news and the way the town actually runs are not the same thing.</p></section>
+    <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Kota_Bharu" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Kota_Bharu</a>  ·  <a href="https://en.wikipedia.org/wiki/Kelantan" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Kelantan</a>  ·  <a href="https://reddit.com/r/malaysia/comments/1dam7sz/whats_an_underrated_malaysian_destination_that/l7ld85d/" target="_blank" rel="noopener">https://reddit.com/r/malaysia/comments/1dam7sz/whats_an_underrated_malaysian_destination_that/l7ld85d/</a>  ·  <a href="https://reddit.com/r/malaysia/comments/1dam7sz/whats_an_underrated_malaysian_destination_that/l7ma6m6/" target="_blank" rel="noopener">https://reddit.com/r/malaysia/comments/1dam7sz/whats_an_underrated_malaysian_destination_that/l7ma6m6/</a>  ·  <a href="https://reddit.com/r/malaysia/comments/1dam7sz/whats_an_underrated_malaysian_destination_that/l7n3zvr/" target="_blank" rel="noopener">https://reddit.com/r/malaysia/comments/1dam7sz/whats_an_underrated_malaysian_destination_that/l7n3zvr/</a>  ·  <a href="https://reddit.com/r/malaysia/comments/1ftn5ft/nga_markets_to_be_transformed_into_tourist/lpt291z/" target="_blank" rel="noopener">https://reddit.com/r/malaysia/comments/1ftn5ft/nga_markets_to_be_transformed_into_tourist/lpt291z/</a>  ·  <a href="https://reddit.com/r/malaysia/comments/n3s009/takpa_janji_melayu_isley/gwrue3y/" target="_blank" rel="noopener">https://reddit.com/r/malaysia/comments/n3s009/takpa_janji_melayu_isley/gwrue3y/</a>  ·  <a href="https://reddit.com/r/malaysia/comments/tsxiap/religious_authorities_to_monitor_ponteng_puasa/i2ue77o/" target="_blank" rel="noopener">https://reddit.com/r/malaysia/comments/tsxiap/religious_authorities_to_monitor_ponteng_puasa/i2ue77o/</a>  ·  <a href="https://reddit.com/r/malaysia/comments/14s5nmz/kelantan_maju_sebab_ada_flyover/jqvhvqr/" target="_blank" rel="noopener">https://reddit.com/r/malaysia/comments/14s5nmz/kelantan_maju_sebab_ada_flyover/jqvhvqr/</a>  ·  <a href="https://reddit.com/r/malaysia/comments/rwhkv8/what_is_a_stereotype_about_your_home_state_that/hrc4t82/" target="_blank" rel="noopener">https://reddit.com/r/malaysia/comments/rwhkv8/what_is_a_stereotype_about_your_home_state_that/hrc4t82/</a></div>
+  </main>
+<script>
+(function(){
+  var SLUG = "kota-bharu-kelantan";
+  var wantBtn=document.getElementById('wantBtn'), visitBtn=document.getElementById('visitBtn'),
+      reactWrap=document.getElementById('reactWrap'), loveBtn=document.getElementById('loveBtn'),
+      mehBtn=document.getElementById('mehBtn');
+  function g(k){ try{ return JSON.parse(localStorage.getItem(k))||{}; }catch(e){ return {}; } }
+  function s(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  function paint(){
+    var vis=g('atlas_visited')[SLUG], want=g('atlas_want')[SLUG], rx=g('atlas_rating')[SLUG];
+    wantBtn.textContent = want ? '\u2605 Saved' : '\u2606 Want to go';
+    wantBtn.classList.toggle('on', !!want);
+    visitBtn.textContent = vis ? ('\u2713 Visited ' + vis) : 'Mark visited';
+    visitBtn.classList.toggle('on', !!vis);
+    reactWrap.style.display = vis ? '' : 'none';   // a reaction only means something once you've been
+    loveBtn.classList.toggle('on', rx==='love');
+    mehBtn.classList.toggle('on', rx==='meh');
+  }
+  wantBtn.addEventListener('click', function(){
+    var w=g('atlas_want'); if(w[SLUG]) delete w[SLUG]; else w[SLUG]=new Date().toISOString().slice(0,10);
+    s('atlas_want', w); paint();
+  });
+  visitBtn.addEventListener('click', function(){
+    var v=g('atlas_visited'); if(v[SLUG]) delete v[SLUG]; else v[SLUG]=new Date().toISOString().slice(0,10);
+    s('atlas_visited', v);
+    if(!v[SLUG]){ var r=g('atlas_rating'); delete r[SLUG]; s('atlas_rating', r); }  // un-visiting clears the reaction
+    paint();
+  });
+  function react(val){ var r=g('atlas_rating'); if(r[SLUG]===val) delete r[SLUG]; else r[SLUG]=val; s('atlas_rating', r); paint(); }
+  loveBtn.addEventListener('click', function(){ react('love'); });
+  mehBtn.addEventListener('click', function(){ react('meh'); });
+  paint();
+})();
+</script>
+</body></html>
