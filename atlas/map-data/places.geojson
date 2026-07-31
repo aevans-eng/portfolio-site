@@ -34092,6 +34092,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          122.95,
+          10.677
+        ]
+      },
+      "properties": {
+        "slug": "bacolod-negros",
+        "name": "Bacolod & Negros Occidental",
+        "kind": "town",
+        "country": "philippines",
+        "region": "visayas",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The city Filipinos name when the question is food \u2014 capital of the sugar country, birthplace of chicken inasal, and the answer people give even while conceding that the city an hour away holds the official gastronomy title.",
+        "voice": "This is a place recommended in the plainest possible terms. Asked where to go aside from Palawan, Siargao, Siquijor, Boracay, Cebu and Bohol, one Filipino ran through opt",
+        "tags": [
+          "food",
+          "inasal",
+          "masskara",
+          "sugar-haciendas",
+          "negros",
+          "ruins",
+          "cheap",
+          "visayas"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           121.1,
           16.9333
         ]
