@@ -22069,6 +22069,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -78.7719,
+          -0.0517
+        ]
+      },
+      "properties": {
+        "slug": "mindo",
+        "name": "Mindo",
+        "kind": "nature",
+        "country": "ecuador",
+        "region": "sierra",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A cloud-forest village two hours down the mountain from Quito, in one of the densest concentrations of bird species anywhere on Earth \u2014 and one of the few places where \"go for the birds\" persuades people who have never birded.",
+        "voice": "The recommendations are short and consistent, and they cluster with safety advice because that is what people ask about Ecuador now. Asked whether the country is safe to ",
+        "tags": [
+          "cloud-forest",
+          "birding",
+          "hummingbirds",
+          "butterflies",
+          "chocolate",
+          "day-range-quito",
+          "tubing"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -80.8047,
           -1.5567
         ]
