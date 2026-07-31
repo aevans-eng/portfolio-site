@@ -39331,6 +39331,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          102.104,
+          12.61
+        ]
+      },
+      "properties": {
+        "slug": "chanthaburi",
+        "name": "Chanthaburi",
+        "kind": "town",
+        "country": "thailand",
+        "region": "east",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Thailand's gem-cutting capital \u2014 a riverside town four hours from Bangkok where a Gothic cathedral stands over a Vietnamese Catholic quarter, sapphire dealers trade on a single street each weekend, and the biggest event of the year is the durian harvest.",
+        "voice": "Chanthaburi's evidence is a small, consistent cluster of people who have actually spent time there, answering what the most underrated place in Thailand is.\n\nThe clearest",
+        "tags": [
+          "gems",
+          "sapphires",
+          "cathedral",
+          "riverside",
+          "fruit",
+          "waterfalls",
+          "eastern-thailand",
+          "koh-chang-gateway"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           98.9853,
           18.7883
         ]
