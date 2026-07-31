@@ -38991,6 +38991,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          99.9631,
+          8.4304
+        ]
+      },
+      "properties": {
+        "slug": "nakhon-si-thammarat",
+        "name": "Nakhon Si Thammarat",
+        "kind": "town",
+        "country": "thailand",
+        "region": "south",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "One of the oldest cities in Thailand, holding a temple many Thais consider the most revered in the south \u2014 in a province with jungle, mountains and beaches that international visitors pass straight through on the way to the islands.",
+        "voice": "Asked for the most underrated place to visit in Thailand, one answer names the province and then lists why in a single breath: \"For me personally Nakhon Si Thammarat. It ",
+        "tags": [
+          "temple",
+          "southern-thailand",
+          "mountains",
+          "waterfalls",
+          "shadow-puppetry",
+          "under-touristed",
+          "needs-a-car"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           98.44,
           19.36
         ]
