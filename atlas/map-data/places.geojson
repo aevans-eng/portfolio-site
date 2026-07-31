@@ -32832,6 +32832,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -87.4,
+          12.71
+        ]
+      },
+      "properties": {
+        "slug": "aposentillo-jiquilillo",
+        "name": "Jiquilillo & Aposentillo",
+        "kind": "nature",
+        "country": "nicaragua",
+        "region": "pacific",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The empty end of Nicaragua's Pacific coast \u2014 a long grey beach north of Chinandega backed by one of Central America's larger mangrove estuaries, with almost nothing built on it and, on a clear night, no light at all.",
+        "voice": "The pin rests on one clear, unprompted local contrast. Asked about the country's beaches, a Nicaraguan ran through the favourites \u2014 Las Pe\u00f1itas near Le\u00f3n for small-town f",
+        "tags": [
+          "beach",
+          "mangrove",
+          "padre-ramos",
+          "estuary",
+          "dark-sky",
+          "chinandega",
+          "undeveloped",
+          "quiet",
+          "northwest"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -85.956,
           11.9344
         ]
@@ -32929,6 +32967,43 @@
           "off-grid",
           "creole",
           "quiet"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.92,
+          12.96
+        ]
+      },
+      "properties": {
+        "slug": "matagalpa-highlands",
+        "name": "Matagalpa & the Northern Highlands",
+        "kind": "town",
+        "country": "nicaragua",
+        "region": "pacific",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The cold, wet, green Nicaragua \u2014 coffee mountains two hours north of Managua where the lodges sit inside working plantations and the forest locals call misty jungle closes over the trail.",
+        "voice": "The clearest statement of what the highlands are for comes from a Nicaraguan sorting the whole country by what a visitor wants: warm and colonial means Granada; beaches a",
+        "tags": [
+          "coffee",
+          "cloud-forest",
+          "mountains",
+          "selva-negra",
+          "jinotega",
+          "cool-climate",
+          "waterfalls",
+          "no-beach"
         ],
         "stay": false,
         "season": []
