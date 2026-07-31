@@ -34530,6 +34530,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          120.9,
+          17.0833
+        ]
+      },
+      "properties": {
+        "slug": "sagada",
+        "name": "Sagada",
+        "kind": "town",
+        "country": "philippines",
+        "region": "luzon",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A cold pine-forest town high in the Cordillera where the Igorot hung their dead in coffins on limestone cliffs \u2014 and which a single hit film in 2014 turned from a quiet place into a congested one.",
+        "voice": "The plainest statement of what Sagada is for comes from someone planning a solo January trip: \"Sagada ang favorite place ko para magchill lang and unwind. Sulit kapag pum",
+        "tags": [
+          "mountains",
+          "cold",
+          "hanging-coffins",
+          "igorot",
+          "caves",
+          "cordillera",
+          "overtourism",
+          "slow"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           123.595,
           9.1994
         ]
