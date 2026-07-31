@@ -30827,6 +30827,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -90.525,
+          19.845
+        ]
+      },
+      "properties": {
+        "slug": "campeche",
+        "name": "San Francisco de Campeche",
+        "kind": "town",
+        "country": "mexico",
+        "region": "yucatan",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The walled city the Yucat\u00e1n tourist circuit drives past \u2014 pastel streets inside genuine pirate-era ramparts, a sea wall to walk at dusk, and almost nobody on it.",
+        "voice": "The clearest endorsement arrives as the second half of a complaint about the famous places. Asked which destinations disappointed and which surprised: \"Decepci\u00f3n: Canc\u00fan ",
+        "tags": [
+          "colonial",
+          "walled-city",
+          "unesco",
+          "pirates",
+          "malecon",
+          "gulf-coast",
+          "uncrowded",
+          "pan-de-cazon",
+          "edzna"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -88.5678,
           20.6843
         ]
