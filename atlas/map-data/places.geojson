@@ -28234,6 +28234,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          132.6853,
+          35.4019
+        ]
+      },
+      "properties": {
+        "slug": "shimane-izumo",
+        "name": "Shimane \u2014 Izumo & Matsue",
+        "kind": "wander-zone",
+        "country": "japan",
+        "region": "chugoku",
+        "kindLabel": "Wander zone",
+        "color": "#c17d3a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "The prefecture with the fewest foreign visitors in Japan, on the Sea of Japan coast \u2014 holding the shrine where, in the tenth lunar month, every deity in the country is said to leave home and gather.",
+        "voice": "The clearest recommendation comes from a thread asking for less-known places on a second trip to Japan: \"Shimane, the 2nd least populated prefecture of Japan, is a very u",
+        "tags": [
+          "shrine",
+          "shinto",
+          "castle",
+          "garden",
+          "san-in",
+          "least-visited",
+          "sleeper-train",
+          "chugoku"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.6503,
           35.6762
         ]
