@@ -36865,6 +36865,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          129.2233,
+          35.1885
+        ]
+      },
+      "properties": {
+        "slug": "haedong-yonggungsa",
+        "name": "Haedong Yonggungsa",
+        "kind": "point",
+        "country": "south-korea",
+        "region": "south",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "Almost every Korean Buddhist temple is in the mountains. This one is bolted to a rock shelf above the sea on the edge of Busan, so the first thing that reaches it each morning is the sunrise off the Pacific.",
+        "voice": "Asked for the single best thing they did in South Korea, one traveller did not name a city or a mountain: \"Watching the sunrise at Haedong Yonggungsa Temple. That moment ",
+        "tags": [
+          "temple",
+          "seaside",
+          "sunrise",
+          "busan",
+          "buddhist",
+          "day-range-busan",
+          "crowded-by-day"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           128.098,
           35.801
         ]
