@@ -33736,6 +33736,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -81.75,
+          7.45
+        ]
+      },
+      "properties": {
+        "slug": "isla-coiba",
+        "name": "Isla Coiba & Santa Catalina",
+        "kind": "nature",
+        "country": "panama",
+        "region": "west",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A prison island so feared that nobody developed it, so its forest and reef survived intact \u2014 now a UNESCO marine park where the same currents that feed the Gal\u00e1pagos bring hammerheads, whale sharks and humpbacks.",
+        "voice": "Asked for their favourite place in the entire country, one Panamanian did not qualify it: \"En el pa\u00eds entero? Coiba, no hay competencia\" \u2014 in the whole country? Coiba, no",
+        "tags": [
+          "island",
+          "marine-park",
+          "unesco",
+          "diving",
+          "snorkelling",
+          "former-prison",
+          "surf",
+          "veraguas"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -79.5199,
           8.9824
         ]
