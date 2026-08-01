@@ -10085,12 +10085,12 @@
         "region": "bay-area-3hr",
         "kindLabel": "Wander zone",
         "color": "#c17d3a",
-        "depth": 4,
-        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
-        "radius": 9,
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
         "drive": "in SF",
         "hook": "The one part of San Francisco to walk with no plan. It's the warmest, densest, most argued-over square mile in the city.",
-        "voice": "Locals treat it as a walk, not a checklist, and steer newcomers to 24th Street over the more touristed north end.",
+        "voice": "A note on this section. It previously asserted that \"locals treat it as a walk, not a checklist\" with no source behind it. That claim has been removed rather than dressed",
         "tags": [
           "food",
           "murals",
@@ -28375,6 +28375,43 @@
           "temples",
           "islands",
           "cats"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.662,
+          35.027
+        ]
+      },
+      "properties": {
+        "slug": "saga-toriimoto-otagi",
+        "name": "Saga-Toriimoto \u2014 Otagi & Adashino Nenbutsuji",
+        "kind": "point",
+        "country": "japan",
+        "region": "kansai",
+        "kindLabel": "Point",
+        "color": "#4b6d8c",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "Walk straight through Arashiyama's famous bamboo grove without stopping, keep going uphill for forty minutes, and you reach twelve hundred stone figures with individual faces \u2014 and a second, smaller bamboo grove with nobody in it.",
+        "voice": "The clearest instruction in the corpus is also the bluntest, given as a top tip for Arashiyama: \"go to arashiyama and walk straight through the bamboo forest\u2026 keep walkin",
+        "tags": [
+          "kyoto",
+          "arashiyama",
+          "temples",
+          "rakan-statues",
+          "bamboo",
+          "preserved-street",
+          "uncrowded",
+          "sagano"
         ],
         "stay": false,
         "season": []
