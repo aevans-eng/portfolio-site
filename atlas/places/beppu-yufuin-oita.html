@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beppu, Yufuin & the Oita Onsen Country — Wander Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#f2e9d4; --card:#f7f1e1; --ink:#2b2620; --muted:#7c6f56; --line:#d9c9a6;
+          --pine:#2f5c46; --rust:#b0562e; --kc:#3c7f7a; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Spectral",Georgia,serif; font-size:1.06rem; line-height:1.7; -webkit-font-smoothing:antialiased; }
+  body::before{ content:""; position:fixed; inset:0; z-index:9999; pointer-events:none; opacity:.5;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/></svg>"); }
+  a{ color:var(--rust); }
+
+  /* hero band */
+  .hero{ position:relative; min-height:44vh; padding:26px 24px 62px; overflow:hidden; color:#f7f1e1;
+    background:linear-gradient(150deg, color-mix(in srgb,var(--kc) 82%, #000) 0%, var(--kc) 55%, color-mix(in srgb,var(--kc) 70%, #f2e9d4) 100%); }
+  .hero.has-img{ background-size:cover; background-position:center; }
+  .hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(transparent 40%, rgba(30,22,12,.55)); }
+  .hero-ghost{ position:absolute; right:-2%; bottom:-8%; font-family:"Fraunces",serif; font-weight:900;
+    font-size:min(30vw,240px); line-height:.8; color:#fff; opacity:.09; letter-spacing:-.03em;
+    text-transform:lowercase; white-space:nowrap; pointer-events:none; }
+  .hero-inner{ position:relative; z-index:2; max-width:720px; margin:0 auto; }
+  .back{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+    color:#f7f1e1; text-decoration:none; opacity:.85; }
+  .back:hover{ opacity:1; }
+  .kicker{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+    opacity:.8; margin:44px 0 10px; }
+  h1{ font-family:"Fraunces",serif; font-weight:900; font-size:clamp(2.3rem,7vw,4rem); line-height:.98;
+    letter-spacing:-.02em; margin:0 0 16px; text-wrap:balance; }
+  .tags{ display:flex; flex-wrap:wrap; gap:7px; }
+  .tag{ font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.06em; text-transform:uppercase;
+    border:1px solid rgba(247,241,225,.5); border-radius:20px; padding:3px 11px; }
+
+  /* instrument bar */
+  .meta{ position:relative; z-index:3; max-width:720px; margin:-34px auto 0; padding:0 24px; }
+  .meta-in{ display:flex; flex-wrap:wrap; gap:22px 30px; align-items:center; background:var(--card);
+    border:1px solid var(--line); border-radius:5px; padding:16px 22px; box-shadow:0 10px 34px rgba(60,45,20,.15); }
+  .stat{ font-family:"IBM Plex Mono",monospace; font-size:.74rem; color:var(--muted); line-height:1.3; }
+  .stat b{ display:block; font-size:.92rem; color:var(--ink); font-weight:600; margin-top:2px; }
+  .meter{ display:inline-flex; gap:3px; margin-top:4px; }
+  .meter i{ width:15px; height:7px; border-radius:1px; background:var(--line); }
+  .meter i.on{ background:var(--kc); }
+
+  /* reading column */
+  .wrap{ max-width:720px; margin:38px auto 90px; padding:0 24px; }
+  .sec{ margin:0 0 30px; }
+  .sec h2{ font-family:"Fraunces",serif; font-weight:600; font-size:1.5rem; line-height:1.1;
+    margin:34px 0 10px; display:flex; align-items:baseline; gap:12px; }
+  .sec h2 .idx{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; font-weight:500; color:var(--rust);
+    letter-spacing:.05em; }
+  .sec p{ margin:.55rem 0; }
+  .sec.lead p{ font-size:1.24rem; line-height:1.55; }
+  .sec.lead p:first-of-type::first-letter{ font-family:"Fraunces",serif; font-weight:900; float:left;
+    font-size:4.1rem; line-height:.72; padding:6px 12px 0 0; color:var(--kc); }
+  .sec.skip{ border-left:3px solid var(--rust); padding:2px 0 2px 20px; }
+  .sec.skip h2{ color:var(--rust); }
+  .sec.odd h2{ font-style:italic; }
+  .sec.locals{ background:color-mix(in srgb,var(--kc) 9%, var(--card)); border:1px solid var(--line);
+    border-radius:6px; padding:6px 26px 20px; margin-top:40px; position:relative; }
+  .sec.locals::before{ content:"\201C"; position:absolute; top:-18px; left:16px; font-family:"Fraunces",serif;
+    font-weight:900; font-size:5rem; color:var(--kc); opacity:.4; }
+  .sec.locals h2{ font-style:italic; }
+  .sec.locals p{ font-style:italic; color:#4a4232; }
+  blockquote{ border-left:3px solid var(--kc); margin:1rem 0; padding:.2rem 0 .2rem 1rem; color:var(--muted); font-style:italic; }
+  ul{ padding-left:1.2rem; } li{ margin:.3rem 0; }
+  code{ background:#e9dfc6; padding:1px 5px; border-radius:3px; font-family:"IBM Plex Mono",monospace; font-size:.85em; }
+  .sources{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted); line-height:1.7;
+    border-top:1px solid var(--line); padding-top:16px; margin-top:44px; word-break:break-word; }
+  .sources a{ color:var(--muted); }
+  .visit{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .visit:hover{ border-color:var(--pine); color:var(--pine); }
+  .visit.on{ background:var(--pine); border-color:var(--pine); color:#f6efdd; }
+  .mine{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .react{ display:inline-flex; gap:5px; }
+  .rx{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.06em; text-transform:uppercase;
+    padding:8px 11px; border:1px solid var(--line); border-radius:3px; background:var(--card);
+    color:var(--muted); cursor:pointer; }
+  .rx:hover{ border-color:var(--rust); color:var(--rust); }
+  .rx.on{ background:var(--rust); border-color:var(--rust); color:#f6efdd; }
+  .scorecard{ max-width:720px; margin:14px auto 0; padding:0 24px; }
+  .scorecard-in{ display:flex; flex-wrap:wrap; gap:10px 26px; background:var(--card); border:1px solid var(--line);
+    border-radius:5px; padding:13px 22px; }
+  .sc-axis{ font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); }
+  .sc-axis .m{ display:inline-flex; gap:2px; margin-left:7px; vertical-align:middle; }
+  .sc-axis .m i{ width:11px; height:6px; border-radius:1px; background:var(--line); }
+  .sc-axis .m i.on{ background:var(--kc); }
+  .sc-axis .m i.neg{ background:var(--rust); }
+  .sc-why{ font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace; width:100%; }
+</style></head>
+<body>
+  <header class="hero">
+    <div class="hero-ghost">Town</div>
+    <div class="hero-inner">
+      <a class="back" href="../index.html">← The Atlas</a>
+      <div class="kicker">kyushu · field dossier</div>
+      <h1>Beppu, Yufuin & the Oita Onsen Country</h1>
+      <div class="tags"><span class="tag">onsen</span><span class="tag">hot-springs</span><span class="tag">steam</span><span class="tag">yufuin</span><span class="tag">kurokawa</span><span class="tag">kyushu</span><span class="tag">oita</span><span class="tag">ryokan</span><span class="tag">off-golden-route</span></div>
+    </div>
+  </header>
+  <div class="meta"><div class="meta-in">
+    <div class="stat">Kind<b style="color:var(--kc)">Town</b></div>
+    <div class="stat">Depth<span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    
+    <div class="stat">Effort<b>Two hours from Fukuoka by train; two or three days to do more than one town</b></div>
+    <div class="stat">Best<b>November–March, when the steam is most visible and the baths are best; autumn for the hills</b></div>
+    <div class="stat mine" style="margin-left:auto">
+      <button id="wantBtn" class="visit"></button>
+      <button id="visitBtn" class="visit"></button>
+      <span id="reactWrap" class="react" style="display:none">
+        <button id="loveBtn" class="rx" title="Loved it">♥ loved</button>
+        <button id="mehBtn" class="rx" title="Didn't do it for me">meh</button>
+      </span>
+    </div>
+  </div></div>
+  <div class="scorecard"><div class="scorecard-in"><span class="sc-why">Why this rating · 9/12</span><span class="sc-axis">Singularity<span class="m"><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Hold<span class="m"><i class="on"></i><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Story<span class="m"><i class="on"></i><i class=""></i></span></span><span class="sc-axis">Local love<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Sensory<span class="m"><i class="on"></i><i class="on"></i></span></span><span class="sc-axis">Crowd tax<span class="m"><i class="neg"></i><i class=""></i></span></span></div></div>
+  <main class="wrap">
+    <section class="sec lead"><h2>The hook</h2><p>A city that steams. Beppu sits on more hot-spring water than anywhere else in Japan, and on a cold morning the vapour rises out of drains, gutters and hillsides all over town — with the ghibli-looking village of Yufuin twenty minutes inland.</p></section>
+<section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p><strong>Beppu</strong> produces a greater volume of geothermal water than any other place in Japan, and more than almost anywhere on earth. The practical consequence is that the town is not built <em>around</em> an onsen; it is built <em>on top of</em> them. Steam vents through street grates. Neighbourhood bathhouses cost a couple of hundred yen and are used by people on the way home from work.</p>
+<p>The <strong>jigoku</strong> — the "hells" — are the tourist face of it: pools too hot to enter, one cobalt blue, one blood red, kept as a viewing circuit. Worth an afternoon, and not the reason to come.</p>
+<p>The reason to come is the ordinary bathing. <strong>Sand baths</strong> where you are buried in volcanically heated sand on the beach, <strong>steam baths</strong>, and the small municipal <em>sento</em> scattered through the back streets.</p>
+<p><strong>Yufuin</strong>, inland under Mount Yufu, is the soft counterpart — a walkable village of craft shops, a lake and high-end <em>ryokan</em>, and the single best description of it in the corpus is a Kyushu resident's: "it's like this little floral town that looks like it came out of a ghibli movie."</p>
+<p>Wider <strong>Oita</strong> and the Kumamoto border hold <strong>Kurokawa Onsen</strong>, a village of riverside baths that is deliberately kept low-rise and is the connoisseur's pick.</p></section>
+<section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Train from Fukuoka, about two hours. Give it two or three days: Beppu for the municipal baths and the sand bath, Yufuin as a day or an overnight, Kurokawa if you have a car. <strong>Stay in a ryokan at least one night</strong> — this is the region where that is the point rather than the splurge. Winter is best: the colder the air, the more visible the steam.</p></section>
+<section class="sec locals"><h2>From the locals</h2><p>The most complete account comes from someone who lives in Kyushu, answering what the most off-the-beaten-path part of Japan is: "<strong>Oita is one of the most beautiful places in Japan in my opinion.</strong> My friend took me on a random trip one time and didn't say where we were going. <strong>Stopped off in a little town called Yufuin, it's like this little floral town that looks like it came out of a ghibli movie.</strong> Then we went further into Beppu. We basically drove around and found hot springs and things to see. <strong>Smoke was filling into the sky, and I remember eating eggs that were steamed from one of the natural hot springs.</strong> TLDR: <strong>Oita is beautiful, strongly recommend.</strong>"</p>
+<p>Asked for the best thermal baths they had ever been to — a question with the whole world available — one answer named this town and did not qualify it: "<strong>Beppu, Japan. Stayed at a private onsen. I felt like I was literally in heaven.</strong>"</p>
+<p>And from someone visiting family rather than sightseeing, which is usually the more reliable witness: "I visited my relatives in Beppu this January, <strong>their onsens are amazing and the small city is filled with great food and amazing scenery.</strong>"</p></section>
+    <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Beppu" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Beppu</a>  ·  <a href="https://en.wikipedia.org/wiki/Yufuin" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Yufuin</a>  ·  <a href="https://reddit.com/r/travel/comments/1falram/best_thermal_baths_youve_ever_been_to/llumlst/" target="_blank" rel="noopener">https://reddit.com/r/travel/comments/1falram/best_thermal_baths_youve_ever_been_to/llumlst/</a>  ·  <a href="https://reddit.com/r/japanlife/comments/rd7cip/whats_the_most_off_the_beaten_path_part_of_japan/hnzam1q/" target="_blank" rel="noopener">https://reddit.com/r/japanlife/comments/rd7cip/whats_the_most_off_the_beaten_path_part_of_japan/hnzam1q/</a>  ·  <a href="https://reddit.com/r/JapanTravelTips/comments/1nt85ya/one_city_not_tokyo_to_base_trip_from/ngrtzei/" target="_blank" rel="noopener">https://reddit.com/r/JapanTravelTips/comments/1nt85ya/one_city_not_tokyo_to_base_trip_from/ngrtzei/</a>  ·  <a href="https://reddit.com/r/JapanTravelTips/comments/1lfw4mz/how_was_your_first_time_experience_at_an_onsen_as/myrpge9/" target="_blank" rel="noopener">https://reddit.com/r/JapanTravelTips/comments/1lfw4mz/how_was_your_first_time_experience_at_an_onsen_as/myrpge9/</a>  ·  <a href="https://reddit.com/r/JapanTravelTips/comments/1cgq776/tourists_making_onsens_dirty/l1xdxpp/" target="_blank" rel="noopener">https://reddit.com/r/JapanTravelTips/comments/1cgq776/tourists_making_onsens_dirty/l1xdxpp/</a>  ·  <a href="https://reddit.com/r/JapanTravel/comments/av924o/friendly_reminder_japan_exists_outside_tokyo_kyoto/ehdkqmc/" target="_blank" rel="noopener">https://reddit.com/r/JapanTravel/comments/av924o/friendly_reminder_japan_exists_outside_tokyo_kyoto/ehdkqmc/</a>  ·  <a href="https://reddit.com/r/JapanTravel/comments/ctss4u/to_all_the_people_that_recommended_i_go_to_beppu/exnbcvg/" target="_blank" rel="noopener">https://reddit.com/r/JapanTravel/comments/ctss4u/to_all_the_people_that_recommended_i_go_to_beppu/exnbcvg/</a></div>
+  </main>
+<script>
+(function(){
+  var SLUG = "beppu-yufuin-oita";
+  var wantBtn=document.getElementById('wantBtn'), visitBtn=document.getElementById('visitBtn'),
+      reactWrap=document.getElementById('reactWrap'), loveBtn=document.getElementById('loveBtn'),
+      mehBtn=document.getElementById('mehBtn');
+  function g(k){ try{ return JSON.parse(localStorage.getItem(k))||{}; }catch(e){ return {}; } }
+  function s(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  function paint(){
+    var vis=g('atlas_visited')[SLUG], want=g('atlas_want')[SLUG], rx=g('atlas_rating')[SLUG];
+    wantBtn.textContent = want ? '\u2605 Saved' : '\u2606 Want to go';
+    wantBtn.classList.toggle('on', !!want);
+    visitBtn.textContent = vis ? ('\u2713 Visited ' + vis) : 'Mark visited';
+    visitBtn.classList.toggle('on', !!vis);
+    reactWrap.style.display = vis ? '' : 'none';   // a reaction only means something once you've been
+    loveBtn.classList.toggle('on', rx==='love');
+    mehBtn.classList.toggle('on', rx==='meh');
+  }
+  wantBtn.addEventListener('click', function(){
+    var w=g('atlas_want'); if(w[SLUG]) delete w[SLUG]; else w[SLUG]=new Date().toISOString().slice(0,10);
+    s('atlas_want', w); paint();
+  });
+  visitBtn.addEventListener('click', function(){
+    var v=g('atlas_visited'); if(v[SLUG]) delete v[SLUG]; else v[SLUG]=new Date().toISOString().slice(0,10);
+    s('atlas_visited', v);
+    if(!v[SLUG]){ var r=g('atlas_rating'); delete r[SLUG]; s('atlas_rating', r); }  // un-visiting clears the reaction
+    paint();
+  });
+  function react(val){ var r=g('atlas_rating'); if(r[SLUG]===val) delete r[SLUG]; else r[SLUG]=val; s('atlas_rating', r); paint(); }
+  loveBtn.addEventListener('click', function(){ react('love'); });
+  mehBtn.addEventListener('click', function(){ react('meh'); });
+  paint();
+})();
+</script>
+</body></html>

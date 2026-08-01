@@ -27840,6 +27840,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          131.4914,
+          33.2846
+        ]
+      },
+      "properties": {
+        "slug": "beppu-yufuin-oita",
+        "name": "Beppu, Yufuin & the Oita Onsen Country",
+        "kind": "town",
+        "country": "japan",
+        "region": "kyushu",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 4,
+        "dots": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "radius": 9,
+        "drive": "",
+        "hook": "A city that steams. Beppu sits on more hot-spring water than anywhere else in Japan, and on a cold morning the vapour rises out of drains, gutters and hillsides all over town \u2014 with the ghibli-looking village of Yufuin twenty minutes inland.",
+        "voice": "The most complete account comes from someone who lives in Kyushu, answering what the most off-the-beaten-path part of Japan is: \"Oita is one of the most beautiful places ",
+        "tags": [
+          "onsen",
+          "hot-springs",
+          "steam",
+          "yufuin",
+          "kurokawa",
+          "kyushu",
+          "oita",
+          "ryokan",
+          "off-golden-route"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           142.8544,
           43.6636
         ]
