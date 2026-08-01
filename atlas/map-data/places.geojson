@@ -28422,6 +28422,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          137.5972,
+          36.5772
+        ]
+      },
+      "properties": {
+        "slug": "tateyama-kurobe",
+        "name": "The Tateyama\u2013Kurobe Alpine Route",
+        "kind": "route",
+        "country": "japan",
+        "region": "chubu",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A crossing of the Northern Japan Alps by cable car, trolleybus and ropeway, over a pass where the spring snow is cut into a corridor with twenty-metre walls on either side of the road.",
+        "voice": "It turns up where you would want it to \u2014 in a thread asking for favourite lesser-known places in Japan, answered by someone based in Tokyo: \"Tateyama Kurobe Alpine Route ",
+        "tags": [
+          "alpine",
+          "snow-corridor",
+          "kurobe-dam",
+          "gorge-railway",
+          "hiking",
+          "toyama",
+          "nagano",
+          "seasonal",
+          "route"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.6503,
           35.6762
         ]
