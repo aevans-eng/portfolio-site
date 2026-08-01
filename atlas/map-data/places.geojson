@@ -38796,6 +38796,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.785,
+          25.055
+        ]
+      },
+      "properties": {
+        "slug": "pingxi-line",
+        "name": "The Pingxi Line & Houtong",
+        "kind": "route",
+        "country": "taiwan",
+        "region": "north",
+        "kindLabel": "Route",
+        "color": "#8a6d3b",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A single-track coal railway built in the 1920s, now running tourists up a green gorge past a waterfall, a village that belongs to its cats, and the ruins of the mines the line was laid for.",
+        "voice": "The most useful endorsement is from someone who does it repeatedly rather than once: \"I try to fit in regular day trips up and down the Pingxi train line (especially Hout",
+        "tags": [
+          "railway",
+          "coal-mining",
+          "cat-village",
+          "waterfall",
+          "sky-lanterns",
+          "day-trip",
+          "taipei",
+          "old-street"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           120.227,
           22.9997
         ]
