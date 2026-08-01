@@ -34908,6 +34908,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          124.25,
+          13.75
+        ]
+      },
+      "properties": {
+        "slug": "catanduanes",
+        "name": "Catanduanes",
+        "kind": "nature",
+        "country": "philippines",
+        "region": "luzon",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "The island that takes the Pacific first. Catanduanes sits east of everything in the Philippines, absorbs the strongest typhoons in the country before they reach the mainland, and is green, empty and almost entirely un-gentrified as a result.",
+        "voice": "The clearest signal is a protective one, which in this project usually means more than praise. Asked which Philippine island deserves more attention, a Filipino answered ",
+        "tags": [
+          "island",
+          "surf",
+          "puraran",
+          "binurong-point",
+          "bicol",
+          "typhoons",
+          "uncrowded",
+          "cliffs",
+          "gatekept"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           124.173,
           9.828
         ]
