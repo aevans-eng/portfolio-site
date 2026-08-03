@@ -35130,6 +35130,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.6333,
+          16.35
+        ]
+      },
+      "properties": {
+        "slug": "maddela-quirino",
+        "name": "Maddela & Quirino Province",
+        "kind": "nature",
+        "country": "philippines",
+        "region": "luzon",
+        "kindLabel": "Nature",
+        "color": "#437a52",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A province Filipinos joke does not exist. Quirino is so far off every route that \"Quirino province does not actually exist\" is a running gag in Philippine internet culture \u2014 and the joke is the most reliable indicator in this atlas that somewhere is genuinely unvisited.",
+        "voice": "The clearest signal is protective, and it arrived within minutes of the post: \"Maganda talaga dyan. And less touristy. Mga hidden gems in PH. Dapat enjoy muna ng mga loca",
+        "tags": [
+          "waterfalls",
+          "caves",
+          "river",
+          "sierra-madre",
+          "cagayan-valley",
+          "undeveloped",
+          "gatekept",
+          "far"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           119.39,
           11.18
         ]
