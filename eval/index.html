@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Image triage</title>
+<style>
+:root{--bg:#f4f1ec;--card:#fffdf9;--ink:#16160f;--mid:#54544c;--light:#8b8b82;
+--green:#4a6741;--amber:#a9701c;--red:#a33d2d;--rule:rgba(22,22,15,.13);--hair:rgba(22,22,15,.07);
+--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font:15px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,sans-serif;background:var(--bg);color:var(--ink);
+ padding-bottom:env(safe-area-inset-bottom)}
+img,video{display:block;max-width:100%}
+header{position:sticky;top:0;z-index:50;background:rgba(244,241,236,.97);
+ -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+ border-bottom:1px solid var(--rule);padding:10px 14px;padding-top:calc(10px + env(safe-area-inset-top))}
+.hrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;max-width:1600px;margin:0 auto}
+h1{font-size:16px;font-weight:700;letter-spacing:-.01em}
+.counts{display:flex;gap:5px;font-family:var(--mono);font-size:12px}
+.pill{padding:3px 8px;border-radius:3px;border:1px solid var(--rule);background:var(--card);white-space:nowrap}
+.pill.a{color:var(--green);border-color:rgba(74,103,65,.35)}
+.pill.c{color:var(--amber);border-color:rgba(169,112,28,.35)}
+.pill.r{color:var(--red);border-color:rgba(163,61,45,.35)}
+.pill.u{color:var(--light)}
+.spacer{flex:1}
+.saved{font-size:11px;color:var(--green);font-family:var(--mono);opacity:0;transition:opacity .3s}
+.saved.on{opacity:1}
+button{font:inherit;cursor:pointer;border:1px solid var(--rule);background:var(--card);color:var(--mid);
+ padding:8px 13px;border-radius:5px;min-height:38px}
+button:active{transform:scale(.97)}
+button.pri{background:var(--green);color:#fff;border-color:var(--green);font-weight:600}
+.filters{display:flex;gap:4px;overflow-x:auto;max-width:100%}
+.filters button{padding:7px 11px;font-size:13px;white-space:nowrap}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+main{max-width:1600px;margin:0 auto;padding:14px;display:grid;
+ grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;overflow:hidden;
+ display:flex;flex-direction:column}
+.card.done{border-color:rgba(74,103,65,.45)}
+.media{background:#eceae4;height:240px;display:flex;align-items:center;justify-content:center;
+ overflow:hidden;position:relative}
+.media img{max-height:240px;width:auto;object-fit:contain;cursor:zoom-in}
+.media video{max-height:240px;width:100%;background:#111}
+.vbadge{position:absolute;top:8px;left:8px;background:var(--ink);color:#fff;font-family:var(--mono);
+ font-size:9px;letter-spacing:.1em;padding:3px 7px;border-radius:3px;pointer-events:none}
+.meta{padding:9px 12px 5px;display:flex;gap:8px;align-items:baseline;border-top:1px solid var(--hair)}
+.cid{font-family:var(--mono);font-weight:700;font-size:13px;color:var(--green)}
+.fn{font-family:var(--mono);font-size:10.5px;color:var(--mid);word-break:break-all;flex:1}
+.why{padding:0 12px 8px;font-size:11.5px;color:var(--light);font-style:italic}
+.grades{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;padding:0 12px 8px}
+.grades button{font-family:var(--mono);font-weight:700;font-size:13px;padding:0;min-height:46px}
+.grades button[data-g=A].on{background:var(--green);color:#fff;border-color:var(--green)}
+.grades button[data-g=C].on{background:var(--amber);color:#fff;border-color:var(--amber)}
+.grades button[data-g=R].on{background:var(--red);color:#fff;border-color:var(--red)}
+.note{width:calc(100% - 24px);margin:0 12px 12px;padding:9px;border:1px solid var(--rule);
+ border-radius:5px;font:13px var(--mono);background:#fff;color:var(--ink)}
+.note:focus{outline:none;border-color:var(--green)}
+.sec{grid-column:1/-1;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.14em;
+ text-transform:uppercase;color:var(--mid);border-bottom:1px solid var(--ink);padding-bottom:8px;margin-top:10px}
+#lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;
+ align-items:center;justify-content:center;cursor:zoom-out;padding:16px}
+#lb.on{display:flex}
+#lb img{max-width:97vw;max-height:94vh;width:auto}
+#toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
+ background:var(--ink);color:#fff;padding:12px 20px;border-radius:6px;font-size:13.5px;opacity:0;
+ transition:opacity .25s;z-index:200;pointer-events:none;max-width:90vw;text-align:center}
+#toast.on{opacity:1}
+.hint{font-size:11.5px;color:var(--light)}
+@media(max-width:600px){
+  main{padding:10px;gap:10px;grid-template-columns:1fr}
+  .media,.media img,.media video{height:auto;max-height:300px}
+  .media{min-height:180px}
+  h1{font-size:15px}
+  .hint{display:none}
+}
+</style></head><body>
+
+<header><div class="hrow">
+  <h1>Image triage</h1>
+  <div class="counts">
+    <span class="pill a">A <b id="cA">0</b></span>
+    <span class="pill c">C <b id="cC">0</b></span>
+    <span class="pill r">R <b id="cR">0</b></span>
+    <span class="pill u">left <b id="cU">0</b></span>
+  </div>
+  <span class="saved" id="saved">saved</span>
+  <span class="spacer"></span>
+  <div class="filters">
+    <button data-f="all" class="on">All</button>
+    <button data-f="todo">Ungraded</button>
+    <button data-f="A">A</button><button data-f="C">C</button><button data-f="R">R</button>
+  </div>
+  <span class="hint">Hover a card, press A / C / R</span>
+  <button id="reset">Reset</button>
+  <button id="send" class="pri">Send results</button>
+</div></header>
+
+<main id="grid"></main>
+<div id="lb"></div><div id="toast"></div>
+
+<script>
+const ITEMS = [
+{
+"id": "Q1",
+"file": "2026-01-hackathon-elevator.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/2026-01-hackathon-elevator.jpg",
+"video": false,
+"g": "R",
+"why": "Luggage in an elevator"
+},
+{
+"id": "Q2",
+"file": "before-after.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/before-after.png",
+"video": false,
+"g": "R",
+"why": "CATIA chrome + the modelled part is early/poor"
+},
+{
+"id": "Q3",
+"file": "cad-assembly.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/cad-assembly.png",
+"video": false,
+"g": "R",
+"why": ""
+},
+{
+"id": "Q4",
+"file": "calibration-coupon.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/calibration-coupon.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q5",
+"file": "carrier-assembly-tree.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/carrier-assembly-tree.png",
+"video": false,
+"g": "R",
+"why": ""
+},
+{
+"id": "Q6",
+"file": "catia-gears-closeup.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/catia-gears-closeup.png",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q7",
+"file": "catia-tree-diagram.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/catia-tree-diagram.png",
+"video": false,
+"g": "A",
+"why": "Generated diagram, clean already"
+},
+{
+"id": "Q8",
+"file": "early-gear-mesh-print-test.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/early-gear-mesh-print-test.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q9",
+"file": "early-test-setup-2x4s.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/early-test-setup-2x4s.jpg",
+"video": false,
+"g": "R",
+"why": ""
+},
+{
+"id": "Q10",
+"file": "full-assembly-cross-section.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/full-assembly-cross-section.png",
+"video": false,
+"g": "R",
+"why": "Q24 is the same view, clean. Redundant."
+},
+{
+"id": "Q11",
+"file": "housing-lid-detail.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/housing-lid-detail.png",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q12",
+"file": "initial-onshape-design-with-sketches.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/initial-onshape-design-with-sketches.jpg",
+"video": false,
+"g": "R",
+"why": "A photograph of a monitor"
+},
+{
+"id": "Q13",
+"file": "master-assembly-tree.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/master-assembly-tree.png",
+"video": false,
+"g": "R",
+"why": ""
+},
+{
+"id": "Q14",
+"file": "master-assembly-with-gears.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/master-assembly-with-gears.png",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q15",
+"file": "rev00a-carrier-top.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00a-carrier-top.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q16",
+"file": "rev00a-cross-section.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00a-cross-section.png",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q17",
+"file": "rev00a-herringbone-closeup.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00a-herringbone-closeup.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q18",
+"file": "rev00a-no-lid.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00a-no-lid.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q19",
+"file": "rev00a-vs-00b-assembly.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00a-vs-00b-assembly.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q20",
+"file": "rev00a-vs-00b-carriers.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00a-vs-00b-carriers.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q21",
+"file": "rev00a-vs-00b-lids.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00a-vs-00b-lids.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q22",
+"file": "rev00a-with-lid.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00a-with-lid.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q23",
+"file": "rev00b-3d-printing.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-3d-printing.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q24",
+"file": "rev00b-cross-section.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-cross-section.png",
+"video": false,
+"g": "A",
+"why": "Current hero. Only chrome-free CAD render you have."
+},
+{
+"id": "Q25",
+"file": "rev00b-dial-gauge-backlash-setup.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-dial-gauge-backlash-setup.jpg",
+"video": false,
+"g": "C",
+"why": "Dial face is sharp. Crop out keyboard, mouse, cables, vise."
+},
+{
+"id": "Q26",
+"file": "rev00b-lid-off-rest-installed.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-lid-off-rest-installed.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q27",
+"file": "rev00b-lower-carrier-planets-sun-installed.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-lower-carrier-planets-sun-installed.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q28",
+"file": "rev00b-mounted-with-motor.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-mounted-with-motor.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q29",
+"file": "rev00b-parts-laid-out-no-body.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-parts-laid-out-no-body.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q30",
+"file": "rev00b-parts-laid-out.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-parts-laid-out.jpg",
+"video": false,
+"g": "A",
+"why": "Anatomy block. Ring, planets, sun, carrier all legible."
+},
+{
+"id": "Q31",
+"file": "rev00b-side-profile.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-side-profile.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q32",
+"file": "rev00b-sun-planets-ring-bearings-installed.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-sun-planets-ring-bearings-installed.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q33",
+"file": "rev00b-testing-with-claude-code.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-testing-with-claude-code.jpg",
+"video": false,
+"g": "R",
+"why": ""
+},
+{
+"id": "Q34",
+"file": "rev00b-top-output-shaft.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-top-output-shaft.jpg",
+"video": false,
+"g": "R",
+"why": "Your feet are in frame"
+},
+{
+"id": "Q35",
+"file": "rev00b-vs-00a-side-by-side.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev00b-vs-00a-side-by-side.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q36",
+"file": "rev01-cad-cross-section-with-old-motor-housing.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-cad-cross-section-with-old-motor-housing.png",
+"video": false,
+"g": "R",
+"why": ""
+},
+{
+"id": "Q37",
+"file": "rev01-cad-cross-section.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-cad-cross-section.png",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q38",
+"file": "rev01-cad-view.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-cad-view.png",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q39",
+"file": "rev01-cad-with-test-stands.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-cad-with-test-stands.png",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q40",
+"file": "rev01-carrier-closeup.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-carrier-closeup.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q41",
+"file": "rev01-carrier-planets-closeup.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-carrier-planets-closeup.jpg",
+"video": false,
+"g": "A",
+"why": "Planetary layout in real hardware"
+},
+{
+"id": "Q42",
+"file": "rev01-catia-master-assembly-tree.png",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-catia-master-assembly-tree.png",
+"video": false,
+"g": "R",
+"why": ""
+},
+{
+"id": "Q43",
+"file": "rev01-dyno-coupling.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-dyno-coupling.jpg",
+"video": false,
+"g": "R",
+"why": "2x4s, window glare"
+},
+{
+"id": "Q44",
+"file": "rev01-dyno-test-setup-backside.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-dyno-test-setup-backside.jpg",
+"video": false,
+"g": "R",
+"why": "2x4s, Irwin clamps, office carpet"
+},
+{
+"id": "Q45",
+"file": "rev01-gearbox-bottom.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-gearbox-bottom.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q46",
+"file": "rev01-gearbox-closeup.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-gearbox-closeup.jpg",
+"video": false,
+"g": "A",
+"why": "Excellent"
+},
+{
+"id": "Q47",
+"file": "rev01-gearbox-front.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-gearbox-front.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q48",
+"file": "rev01-gears-greased.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-gears-greased.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q49",
+"file": "rev01-motor-housing-test-plate.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-motor-housing-test-plate.jpg",
+"video": false,
+"g": "C",
+"why": ""
+},
+{
+"id": "Q50",
+"file": "rev01-motor-only-dyno-test-setup.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-motor-only-dyno-test-setup.jpg",
+"video": false,
+"g": "R",
+"why": "2x4s and clamps"
+},
+{
+"id": "Q51",
+"file": "rev01-parts-laid-out.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-parts-laid-out.jpg",
+"video": false,
+"g": "A",
+"why": "Best photo in the set. Black parts, grey bench."
+},
+{
+"id": "Q52",
+"file": "rev01-vs-rev00b-assembled.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-vs-rev00b-assembled.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q53",
+"file": "rev01-vs-rev00b-gears-closeup.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-vs-rev00b-gears-closeup.jpg",
+"video": false,
+"g": "A",
+"why": "Black vs white gears. Comparison block."
+},
+{
+"id": "Q54",
+"file": "rev01-vs-rev00b-gears.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-vs-rev00b-gears.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q55",
+"file": "rev01-with-motor-housing.jpg",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/images/rev01-with-motor-housing.jpg",
+"video": false,
+"g": "A",
+"why": ""
+},
+{
+"id": "Q56",
+"file": "rev00b-backlash-demo.mp4",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/videos/rev00b-backlash-demo.mp4",
+"video": true,
+"g": "C",
+"why": "Poster frame cluttered - watch it"
+},
+{
+"id": "Q57",
+"file": "rev00b-easy-assembly.mp4",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/videos/rev00b-easy-assembly.mp4",
+"video": true,
+"g": "A",
+"why": "11.6 MB, needs compressing"
+},
+{
+"id": "Q58",
+"file": "rev00b-hand-backdriving.mp4",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/videos/rev00b-hand-backdriving.mp4",
+"video": true,
+"g": "A",
+"why": "The backdrivability proof"
+},
+{
+"id": "Q59",
+"file": "rev00b-spinning.mp4",
+"proj": "QDD gearbox",
+"src": "../qdd-gearbox/videos/rev00b-spinning.mp4",
+"video": true,
+"g": "C",
+"why": "Laptop with orange screen fills the frame"
+},
+{
+"id": "H1",
+"file": "angle-of-twist-equation.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/angle-of-twist-equation.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H2",
+"file": "cover.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/cover.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H3",
+"file": "critical-weld-location.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/critical-weld-location.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H4",
+"file": "design-progression.gif",
+"proj": "Hitch receiver",
+"src": "../hitch/images/design-progression.gif",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H5",
+"file": "fea-crossbar-distortion.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/fea-crossbar-distortion.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H6",
+"file": "fea-v1-deflection.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/fea-v1-deflection.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H7",
+"file": "fea-v1-stress-1.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/fea-v1-stress-1.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H8",
+"file": "fea-v1-stress-2.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/fea-v1-stress-2.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H9",
+"file": "fea-v2-deflection.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/fea-v2-deflection.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H10",
+"file": "fea-v2-stress-1.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/fea-v2-stress-1.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H11",
+"file": "fea-v2-stress-2.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/fea-v2-stress-2.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H12",
+"file": "gusset-box-plating.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/gusset-box-plating.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H13",
+"file": "gusset-detail.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/gusset-detail.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H14",
+"file": "gusset-implementation.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/gusset-implementation.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H15",
+"file": "gusset-triangle.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/gusset-triangle.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H16",
+"file": "polar-moment-formula.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/polar-moment-formula.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H17",
+"file": "receiver-diagram.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/receiver-diagram.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H18",
+"file": "throat-stress-equation.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/throat-stress-equation.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H19",
+"file": "v1-field-test.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/v1-field-test.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H20",
+"file": "v1-prototype-1.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/v1-prototype-1.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H21",
+"file": "v1-prototype-2.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/v1-prototype-2.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H22",
+"file": "v1-prototype-3.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/v1-prototype-3.png",
+"video": false,
+"g": "",
+"why": ""
+},
+{
+"id": "H23",
+"file": "weld-force-equation.png",
+"proj": "Hitch receiver",
+"src": "../hitch/images/weld-force-equation.png",
+"video": false,
+"g": "",
+"why": ""
+}
+];
+const KEY = 'aaron-triage-v1';
+let state = JSON.parse(localStorage.getItem(KEY) || '{}');
+ITEMS.forEach(it=>{ if(!state[it.id]) state[it.id] = {g: it.g, note: ''}; });
+
+const grid = document.getElementById('grid');
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('on');
+  clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('on'),2200);}
+function save(){
+  localStorage.setItem(KEY, JSON.stringify(state)); counts();
+  const s=document.getElementById('saved'); s.classList.add('on');
+  clearTimeout(s._t); s._t=setTimeout(()=>s.classList.remove('on'),1200);
+}
+function counts(){
+  let a=0,c=0,r=0;
+  ITEMS.forEach(i=>{const g=state[i.id].g; if(g==='A')a++;else if(g==='C')c++;else if(g==='R')r++;});
+  cA.textContent=a; cC.textContent=c; cR.textContent=r; cU.textContent=ITEMS.length-a-c-r;
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
+
+function render(filter='all'){
+  grid.innerHTML=''; let proj=null;
+  ITEMS.forEach(it=>{
+    const g = state[it.id].g;
+    if(filter==='todo' && g) return;
+    if(['A','C','R'].includes(filter) && g!==filter) return;
+    if(it.proj!==proj){ proj=it.proj;
+      const h=document.createElement('div'); h.className='sec'; h.textContent=proj; grid.appendChild(h); }
+    const el=document.createElement('article');
+    el.className='card'+(g?' done':''); el.dataset.id=it.id;
+    const media = it.video
+      ? '<video src="'+it.src+'" controls preload="metadata" playsinline muted loop></video><span class="vbadge">VIDEO</span>'
+      : '<img src="'+it.src+'" alt="'+esc(it.file)+'" loading="lazy">';
+    el.innerHTML =
+      '<div class="media">'+media+'</div>'+
+      '<div class="meta"><span class="cid">'+it.id+'</span><span class="fn">'+esc(it.file)+'</span></div>'+
+      (it.why? '<div class="why">'+esc(it.why)+'</div>' : '<div class="why"></div>')+
+      '<div class="grades">'+
+        '<button data-g="A" class="'+(g==='A'?'on':'')+'">A use</button>'+
+        '<button data-g="C" class="'+(g==='C'?'on':'')+'">C crop</button>'+
+        '<button data-g="R" class="'+(g==='R'?'on':'')+'">R drop</button>'+
+      '</div>'+
+      '<input class="note" placeholder="note - e.g. crop to the dial face" value="'+esc(state[it.id].note||'')+'">';
+    grid.appendChild(el);
+  });
+  counts();
+}
+function setGrade(id, g){
+  state[id].g = (state[id].g===g) ? '' : g;
+  save();
+  const card=[...grid.querySelectorAll('.card')].find(c=>c.dataset.id===id);
+  if(card){ card.classList.toggle('done', !!state[id].g);
+    card.querySelectorAll('.grades button').forEach(b=>b.classList.toggle('on', b.dataset.g===state[id].g)); }
+}
+grid.addEventListener('click', e=>{
+  const b = e.target.closest('.grades button');
+  if(b){ setGrade(b.closest('.card').dataset.id, b.dataset.g); return; }
+  const img = e.target.closest('.media img');
+  if(img){ const lb=document.getElementById('lb');
+    lb.innerHTML='<img src="'+img.src+'">'; lb.classList.add('on'); }
+});
+grid.addEventListener('input', e=>{
+  if(e.target.classList.contains('note')){
+    state[e.target.closest('.card').dataset.id].note = e.target.value; save(); }
+});
+document.getElementById('lb').addEventListener('click', e=>e.currentTarget.classList.remove('on'));
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape') document.getElementById('lb').classList.remove('on');
+  if(e.target.tagName==='INPUT') return;
+  const k=e.key.toUpperCase(); if(!['A','C','R'].includes(k)) return;
+  const card = document.querySelector('.card:hover');
+  if(card){ e.preventDefault(); setGrade(card.dataset.id, k); }
+});
+document.querySelectorAll('.filters button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); render(b.dataset.f); window.scrollTo(0,0);
+  });
+});
+function results(){
+  let out='# Image triage results\n', proj=null;
+  ITEMS.forEach(it=>{
+    if(it.proj!==proj){ proj=it.proj; out+='\n## '+proj+'\n\n| # | File | Grade | Note |\n|---|---|---|---|\n'; }
+    const s=state[it.id];
+    out+='| '+it.id+' | '+it.file+' | '+(s.g||'-')+' | '+(s.note||'')+' |\n';
+  });
+  let a=0,c=0,r=0;
+  ITEMS.forEach(i=>{const g=state[i.id].g; if(g==='A')a++;else if(g==='C')c++;else if(g==='R')r++;});
+  out+='\n**Totals:** A '+a+' | C '+c+' | R '+r+' | ungraded '+(ITEMS.length-a-c-r)+'\n';
+  return out;
+}
+document.getElementById('send').addEventListener('click', async ()=>{
+  const text = results();
+  if(navigator.share){
+    try{ await navigator.share({title:'Image triage results', text:text}); return; }catch(err){}
+  }
+  try{ await navigator.clipboard.writeText(text); toast('Copied - paste it to Claude'); return; }catch(err){}
+  const blob=new Blob([text],{type:'text/markdown'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='triage-results.md'; a.click(); toast('Downloaded triage-results.md');
+});
+document.getElementById('reset').addEventListener('click',()=>{
+  if(!confirm('Clear all grades and return to the proposed ones?')) return;
+  state={}; ITEMS.forEach(it=>state[it.id]={g:it.g,note:''}); save(); render('all'); toast('Reset to proposals');
+});
+render('all');
+</script></body></html>
