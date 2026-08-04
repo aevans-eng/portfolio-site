@@ -39810,6 +39810,42 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          98.45,
+          15.15
+        ]
+      },
+      "properties": {
+        "slug": "sangkhlaburi",
+        "name": "Sangkhlaburi & the Mon Bridge",
+        "kind": "town",
+        "country": "thailand",
+        "region": "central",
+        "kindLabel": "Town",
+        "color": "#3c7f7a",
+        "depth": 3,
+        "dots": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "radius": 7,
+        "drive": "",
+        "hook": "A Mon town at the far end of Kanchanaburi province, joined to itself by the longest wooden bridge in Thailand \u2014 and overlooking a reservoir that swallowed the old settlement, whose temple rises back out of the water each dry season.",
+        "voice": "The most useful account is also the most specific, offered to someone planning a road trip and worth quoting in full for what it names: \"If you have time, make a trip to ",
+        "tags": [
+          "mon-culture",
+          "wooden-bridge",
+          "sunken-temple",
+          "reservoir",
+          "kanchanaburi",
+          "border",
+          "thai-not-farang"
+        ],
+        "stay": false,
+        "season": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           99.7031,
           17.0206
         ]
