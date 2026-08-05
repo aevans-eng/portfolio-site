@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /eval/
-Disallow: /_archive-old-ghost/
 
 Sitemap: https://aaronevans.ca/sitemap.xml
 Sitemap: https://aaronevans.ca/port-renfrew/sitemap.xml
