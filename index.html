@@ -64,7 +64,7 @@
   .intro p { font-size: clamp(16px,1.5vw,19px); color: var(--text-mid); max-width: 54ch; line-height: 1.55; }
   .intro p b { color: var(--ink); font-weight: 600; }
 
-  .projects { display: flex; flex-direction: column; gap: var(--s4); padding-bottom: var(--s5); }
+  .projects { display: flex; flex-direction: column; gap: var(--s4); padding: var(--s4) 0 var(--s5); }
   .pcard {
     display: grid; grid-template-columns: minmax(0,1fr) minmax(0,46%);
     gap: var(--s4); align-items: center;
@@ -138,10 +138,7 @@
 
 <div class="wrap-v2">
 
-  <section class="intro">
-    <h1>I design and test mechanical hardware.</h1>
-    <p>Fourth-year mechanical engineering at UVic. Right now that means a <b>5:1</b> printed planetary gearbox for a backdrivable actuator, and a trailer hitch I built from scrap and then had to stiffen.</p>
-  </section>
+  <h1 class="sr-only">Aaron Evans — mechanical engineering projects</h1>
 
   <section class="projects">
 
