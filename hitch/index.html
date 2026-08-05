@@ -95,9 +95,7 @@
             <li><b>1 &mdash; Crossbar.</b> Upsized 2.0&Prime; to 2.5&Prime;. The whole fix.</li>
             <li><b>2 &mdash; Receiver tube.</b> Where the rack load enters.</li>
             <li><b>3 &mdash; Critical weld.</b> V1 sat at 0.95 FoS here.</li>
-            <li><b>4 &mdash; Angle iron gusset.</b> Takes the joint past 2.0.</li>
-            <li><b>5 &mdash; Side plates.</b> Treated as rigid supports.</li>
-            <li><b>6 &mdash; Load point.</b> 180&nbsp;lb at the rack COG, scaled 4&times;.</li>
+            <li><b>4 &mdash; Side plates.</b> Treated as rigid supports.</li>
           </ul>
         </div>
       </div>
@@ -105,20 +103,16 @@
       <figure class="annofig" data-fig="fea">
         <div class="stage">
           <img src="images/fea-v2-stress-1.png" alt="FEA plot of the V2 hitch assembly under 4G loading" width="1296" height="885">
-          <button class="hs" style="--x:56%;--y:44%" data-i="0" aria-pressed="false"
+          <button class="hs" style="--x:40%;--y:45%" data-i="0" aria-pressed="false"
             data-t="Crossbar" data-b="The soft spring in the chain. Upsizing from <b>2.0&Prime;</b> to <b>2.5&Prime;</b> square tube bought a <b>52.6%</b> theoretical stiffness gain, because midline area is squared in Bredt's formula while wall thickness is only linear.">1</button>
           <button class="hs" style="--x:48%;--y:70%" data-i="1" aria-pressed="false"
             data-t="Receiver tube" data-b="Where the rack load enters. Modelled as a cantilever beam. Bending here turned out to be almost irrelevant, about <b>6%</b> of tip deflection.">2</button>
-          <button class="hs" style="--x:55%;--y:63%" data-i="2" aria-pressed="false"
+          <button class="hs" style="--x:56%;--y:62%" data-i="2" aria-pressed="false"
             data-t="Critical weld" data-b="The receiver-to-crossbar joint. Norton's weld-as-a-line method put V1 at <b>0.95 FoS</b> under 4G, so upsizing the crossbar alone was not enough.">3</button>
-          <button class="hs" style="--x:62%;--y:58%" data-i="3" aria-pressed="false"
-            data-t="Angle iron gusset" data-b="Won a weighted matrix against a triangle gusset, full box plating, and a tube sleeve. Cheap, off the shelf, easy to cut and weld, and it takes the joint past <b>2.0 FoS</b>.">4</button>
-          <button class="hs" style="--x:23%;--y:23%" data-i="4" aria-pressed="false"
-            data-t="Side plates" data-b="Treated as rigid supports. They sit vertically with a high area moment relative to the load, and there are two sharing it, so deflection concentrates in the crossbar instead.">5</button>
-          <button class="hs" style="--x:45%;--y:84%" data-i="5" aria-pressed="false"
-            data-t="Load point" data-b="<b>180 lb</b> at the rack centre of gravity, applied as a remote load and scaled to <b>4G</b> for the worst-case bump.">6</button>
+          <button class="hs" style="--x:23%;--y:23%" data-i="3" aria-pressed="false"
+            data-t="Side plates" data-b="Treated as rigid supports. They sit vertically with a high area moment relative to the load, and there are two sharing it, so deflection concentrates in the crossbar instead.">4</button>
         </div>
-        <div class="stage-hint"><span class="pip"></span>6 callouts &middot; click or press &larr; &rarr;</div>
+        <div class="stage-hint"><span class="pip"></span>4 callouts &middot; click or press &larr; &rarr;</div>
       </figure>
     </div>
   </div>

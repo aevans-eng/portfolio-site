@@ -147,7 +147,7 @@
       <figure class="annofig" data-fig="parts">
         <div class="stage">
           <img src="images/rev00b-parts-laid-out.jpg" alt="Printed gearbox parts laid out before assembly" width="1600" height="1200" loading="lazy">
-          <button class="hs" style="--x:20%;--y:23%" data-i="0" aria-pressed="false"
+          <button class="hs" style="--x:7%;--y:21%" data-i="0" aria-pressed="false"
             data-t="Gearbox housing" data-b="Mates to the motor face and carries the output bearing. The bearing shaft runs <b>+0.10 mm</b> over nominal.">1</button>
           <button class="hs" style="--x:33%;--y:58%" data-i="1" aria-pressed="false"
             data-t="Housing lid" data-b="Closes the gear cavity and locates the second bearing. Bore offset <b>+0.10 mm</b>. Rev 00A had the lid dragging on the carrier; that was fixed in 00B.">2</button>
@@ -170,19 +170,19 @@
     <div class="rowhead"><span class="n">03</span><span class="t">What it does</span><span class="m">Rev 00B on the bench</span></div>
     <div class="videowall">
       <div class="vcard">
-        <div class="vshell"><video src="videos/rev00b-hand-backdriving.mp4" muted loop playsinline preload="none" poster="images/rev00b-parts-laid-out.jpg" aria-label="Output shaft being turned by hand"></video><span class="vplay" aria-hidden="true"></span></div>
+        <div class="vshell"><video src="videos/rev00b-hand-backdriving.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-hand-backdriving.jpg" aria-label="Output shaft being turned by hand"></video><span class="vplay" aria-hidden="true"></span></div>
         <div class="vmeta"><div class="vclaim">Backdrives by hand</div><div class="vsub">A low ratio keeps reflected inertia down, so the output turns without fighting the motor.</div></div>
       </div>
       <div class="vcard">
-        <div class="vshell"><video src="videos/rev00b-spinning.mp4" muted loop playsinline preload="none" poster="images/rev00b-parts-laid-out.jpg" aria-label="Gearbox running under power"></video><span class="vplay" aria-hidden="true"></span></div>
+        <div class="vshell"><video src="videos/rev00b-spinning.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-spinning.jpg" aria-label="Gearbox running under power"></video><span class="vplay" aria-hidden="true"></span></div>
         <div class="vmeta"><div class="vclaim">Runs under power</div><div class="vsub">Driven through the ODrive at the 5:1 output.</div></div>
       </div>
       <div class="vcard">
-        <div class="vshell"><video src="videos/rev00b-backlash-demo.mp4" muted loop playsinline preload="none" poster="images/rev00b-dial-gauge-backlash-setup.jpg" aria-label="Backlash demonstration with a dial indicator"></video><span class="vplay" aria-hidden="true"></span></div>
+        <div class="vshell"><video src="videos/rev00b-backlash-demo.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-backlash-demo.jpg" aria-label="Backlash demonstration with a dial indicator"></video><span class="vplay" aria-hidden="true"></span></div>
         <div class="vmeta"><div class="vclaim">0&deg; backlash</div><div class="vsub">Phases shorted for braking, output rocked against a dial indicator.</div></div>
       </div>
       <div class="vcard">
-        <div class="vshell"><video src="videos/rev00b-easy-assembly.mp4" muted loop playsinline preload="none" poster="images/rev00b-parts-laid-out.jpg" aria-label="Gearbox being assembled by hand"></video><span class="vplay" aria-hidden="true"></span></div>
+        <div class="vshell"><video src="videos/rev00b-easy-assembly.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-easy-assembly.jpg" aria-label="Gearbox being assembled by hand"></video><span class="vplay" aria-hidden="true"></span></div>
         <div class="vmeta"><div class="vclaim">Assembles by hand</div><div class="vsub">Every fit is a finger-press transition. No press, no heat-set inserts.</div></div>
       </div>
     </div>
@@ -190,7 +190,7 @@
 
   <!-- ============ 04 BACKLASH ============ -->
   <section class="blk">
-    <div class="rowhead"><span class="n">04</span><span class="t">Backlash</span><span class="m">T-012 &middot; passed</span></div>
+    <div class="rowhead"><span class="n">04</span><span class="t">Test results</span><span class="m">1 of 7 closed</span></div>
     <div class="evidence">
       <img src="images/rev00b-dial-gauge-backlash-setup.jpg" alt="Dial indicator mounted against the output shaft screw" loading="lazy">
       <div>
@@ -296,6 +296,7 @@
 <div class="rowhead"><span class="n">07</span><span class="t">Printing to fit</span><span class="m">6 interfaces</span></div>
     <div class="evstack">
       <img src="images/calibration-coupon.jpg" alt="Printed calibration coupon measured with calipers" loading="lazy">
+        <p style="font-size:12.5px;color:var(--text-light);margin:-8px 0 var(--s2);line-height:1.5">Test coupon carrying representative bearing bores, shaft posts, and clearance holes.</p>
       <div>
         <p class="lede" style="margin-bottom:var(--s2)">FDM bores print <b>0.1&ndash;0.4&nbsp;mm</b> undersized, and the error grows as features shrink. I printed a coupon, measured it, and fed the numbers back into CATIA as parameters.</p>
         <div class="chips">
