@@ -129,7 +129,7 @@
   <!-- ============ 02 V1 ============ -->
   <section class="blk">
     <div class="rowhead"><span class="n">02</span><span class="t">Built from a scrap hitch</span><span class="m">V1 &middot; $50, 4 days</span></div>
-    <p class="lede">Market options ran about <b>$500</b> and cut departure angle. I took a free donor hitch off marketplace, cut it down, and rewelded it to fit the tow bar the vehicle came with. It survived the trip, but the rack visibly swung backwards on cross-ditches.</p>
+    <p class="lede">Market options ran about <b>$500</b> and cut departure angle. I took a free donor hitch off marketplace, cut it down, and rewelded it to fit. It survived the trip, but the rack visibly swung backwards on cross-ditches.</p>
     <div class="figrow">
       <figure class="capfig">
         <img src="images/v1-prototype-1.png" alt="Donor hitch cut down and rewelded to fit" loading="lazy">
@@ -146,10 +146,12 @@
     </div>
   </section>
 
-  <!-- ============ 03 DIAGNOSIS ============ -->
+  <!-- ============ 03 DIAGNOSIS + MATH ============ -->
   <section class="blk">
-    <div class="rowhead"><span class="n">03</span><span class="t">Torsion, not bending</span><span class="m">Parametric MATLAB model</span></div>
-    <div class="evidence">
+    <div class="duo">
+      <div>
+<div class="rowhead"><span class="n">03</span><span class="t">Torsion, not bending</span><span class="m">Parametric MATLAB model</span></div>
+    <div class="evstack">
       <img src="images/receiver-diagram.png" alt="Model of the receiver and crossbar assembly with the load applied" loading="lazy">
       <div>
         <div class="ev-num">94<span style="font-size:.45em">%</span></div>
@@ -157,12 +159,10 @@
         <p class="ev-note">I modelled the receiver as a cantilever beam and the crossbar with Bredt's thin-wall torsion formula. Bending contributed <b>0.0011&Prime;</b> against <b>0.0164&Prime;</b> from twist, which told me exactly which part to stiffen.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ============ 04 THE MATH ============ -->
-  <section class="blk">
-    <div class="rowhead"><span class="n">04</span><span class="t">The governing equations</span><span class="m">4 hand calcs</span></div>
-    <p class="lede">Torque, length, and material were all fixed by the vehicle and the donor stock. The only lever left was the polar moment, <b>J</b>.</p>
+      </div>
+      <div>
+<div class="rowhead"><span class="n">04</span><span class="t">The governing equations</span><span class="m">4 hand calcs</span></div>
+    <p class="lede">Torque, length, and material were all fixed. The only lever left was the polar moment, <b>J</b>.</p>
     <div class="eqrow">
       <figure class="eq"><img src="images/angle-of-twist-equation.png" alt="Angle of twist equation" loading="lazy"><figcaption>Angle of twist</figcaption></figure>
       <figure class="eq"><img src="images/polar-moment-formula.png" alt="Bredt thin-wall polar moment formula" loading="lazy"><figcaption>Bredt, thin wall</figcaption></figure>
@@ -184,17 +184,21 @@
         </div>
       </details>
     </div>
+      </div>
+    </div>
   </section>
+
+
 
   <!-- ============ 05 RESULT ============ -->
   <section class="blk">
-    <div class="rowhead"><span class="n">05</span><span class="t">V2 result</span><span class="m">FEA &middot; 4G load case</span></div>
+    <div class="rowhead"><span class="n">04</span><span class="t">V2 result</span><span class="m">FEA &middot; 4G load case</span></div>
     <div class="evidence">
       <img src="images/fea-v2-deflection.png" alt="FEA deflection plot of the V2 receiver tip" loading="lazy">
       <div>
         <div class="ev-num">0.0119<span style="font-size:.32em">&Prime;</span></div>
         <div class="ev-lbl">V2 tip deflection &middot; down from 0.0190&Prime;</div>
-        <p class="ev-note">Both ends of the crossbar fixed, remote load at the derived COG, curvature-based mesh refined at corners and features. Average FoS at the critical nodes came out at <b>2.7</b> under 4G.</p>
+        <p class="ev-note">Both ends of the crossbar fixed, remote load at the COG, mesh refined at corners. Average FoS at the critical nodes came out at <b>2.7</b> under 4G.</p>
       </div>
     </div>
     <div class="table-wrap"><table class="t2">
@@ -210,7 +214,7 @@
 
   <!-- ============ 06 WHERE THE MODEL BROKE ============ -->
   <section class="blk">
-    <div class="rowhead"><span class="n">06</span><span class="t">Where the hand calc stopped working</span><span class="m">The useful part</span></div>
+    <div class="rowhead"><span class="n">05</span><span class="t">Where the hand calc stopped working</span><span class="m">The useful part</span></div>
     <p class="lede">V1's hand calc matched FEA within <b>8.9%</b>, which validated the model. V2 came out <b>37%</b> off, and that gap taught me more than the result did.</p>
     <div class="drawers">
       <details class="drawer" open>
@@ -247,9 +251,9 @@
 
   <!-- ============ 07 PROGRESSION ============ -->
   <section class="blk">
-    <div class="rowhead"><span class="n">07</span><span class="t">V1 to V2 to V3</span><span class="m">Design progression</span></div>
-    <figure class="capfig" style="max-width:780px">
-      <img src="images/design-progression.gif" alt="Animated progression from V1 through V2 to the V3 concept" loading="lazy" style="aspect-ratio:auto">
+    <div class="rowhead"><span class="n">06</span><span class="t">V1 to V2 to V3</span><span class="m">Design progression</span></div>
+    <figure class="capfig" style="max-width:620px">
+      <img src="images/design-progression.gif" alt="Animated progression from V1 through V2 to the V3 concept" loading="lazy" style="aspect-ratio:auto;max-height:330px;object-fit:contain">
       <figcaption><b>V1 salvaged, V2 built, V3 on paper.</b> The triangle gusset and fish plating stay concepts, because V2 met the requirement.</figcaption>
     </figure>
   </section>

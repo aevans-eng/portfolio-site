@@ -398,7 +398,7 @@ a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01)
 }
 .stage-hint .pip { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 2.2s ease-in-out infinite; }
 
-.panel { margin-top: var(--s3); padding-top: var(--s2); border-top: 1px solid var(--rule); min-height: 126px; }
+.panel { margin-top: var(--s2); padding-top: 14px; border-top: 1px solid var(--rule); min-height: 108px; }
 .panel-n { font-family: var(--mono); font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-bottom: 6px; }
 .panel-t { font-family: var(--serif); font-size: 23px; font-weight: 600; color: var(--ink); letter-spacing: -.015em; line-height: 1.2; margin-bottom: 8px; }
 .panel-b { font-size: 15px; color: var(--text-mid); line-height: 1.6; max-width: 56ch; }
@@ -408,12 +408,12 @@ a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01)
 .nojs b { color: var(--ink); }
 
 /* ===== SECTION HEADERS ===== */
-.rowhead { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid var(--ink); padding-bottom: 10px; margin-bottom: var(--s3); }
+.rowhead { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid var(--ink); padding-bottom: 8px; margin-bottom: var(--s2); }
 .rowhead .n { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--green); letter-spacing: .1em; }
 .rowhead .t { font-family: var(--serif); font-size: 24px; font-weight: 600; letter-spacing: -.015em; color: var(--ink); flex: 1; }
 .rowhead .m { font-family: var(--mono); font-size: 10.5px; color: var(--text-light); }
-.blk { padding: var(--s5) 0 0; }
-.lede { font-size: 16px; color: var(--text-mid); max-width: 62ch; line-height: 1.6; margin-bottom: var(--s3); }
+.blk { padding: var(--s4) 0 0; }
+.lede { font-size: 15.5px; color: var(--text-mid); max-width: 62ch; line-height: 1.55; margin-bottom: var(--s2); }
 .lede b { color: var(--ink); font-weight: 700; }
 
 /* ===== VIDEO WALL ===== */
@@ -436,9 +436,9 @@ a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01)
 .vcard .vsub { font-size: 12.5px; color: var(--text-light); margin-top: 3px; line-height: 1.45; }
 
 /* ===== EVIDENCE CARD ===== */
-.evidence { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,.75fr); gap: var(--s4); align-items: center; }
-.evidence img { width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 4px; }
-.ev-num { font-family: var(--mono); font-size: clamp(56px,9vw,116px); font-weight: 700; letter-spacing: -.05em; line-height: .9; color: var(--green); }
+.evidence { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: var(--s4); align-items: center; }
+.evidence img { width: 100%; height: auto; max-height: 300px; object-fit: cover; border: 1px solid var(--rule); border-radius: 4px; }
+.ev-num { font-family: var(--mono); font-size: clamp(48px,7vw,92px); font-weight: 700; letter-spacing: -.05em; line-height: .9; color: var(--green); }
 .ev-lbl { font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--text-light); margin-top: 12px; }
 .ev-note { font-size: 15px; color: var(--text-mid); margin-top: 14px; line-height: 1.6; max-width: 40ch; }
 
@@ -467,7 +467,7 @@ a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01)
 
 /* ===== CAPTIONED FIGURES / ROWS ===== */
 .figrow { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: var(--s3); }
-.capfig img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border: 1px solid var(--rule); border-radius: 4px; }
+.capfig img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: cover; border: 1px solid var(--rule); border-radius: 4px; }
 .capfig figcaption { font-size: 12.5px; color: var(--text-light); margin-top: 10px; line-height: 1.5; }
 .capfig figcaption b { color: var(--text-mid); font-weight: 600; }
 
@@ -475,7 +475,7 @@ a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01)
 .drawers { margin-top: var(--s3); }
 .drawer { border-bottom: 1px solid var(--hair); }
 .drawer:first-of-type { border-top: 1px solid var(--rule); }
-.drawer > summary { cursor: pointer; list-style: none; padding: 16px 0; display: flex; align-items: center; gap: 14px; }
+.drawer > summary { cursor: pointer; list-style: none; padding: 13px 0; display: flex; align-items: center; gap: 14px; }
 .drawer > summary::-webkit-details-marker { display: none; }
 .drawer .chev { color: var(--text-faint); font-size: 12px; transition: transform .3s cubic-bezier(.4,0,.2,1); flex-shrink: 0; width: 12px; }
 .drawer[open] .chev { transform: rotate(90deg); color: var(--green); }
@@ -512,3 +512,11 @@ a.img-link:hover img { border-color: var(--green-border); transform: scale(1.01)
   .rowhead .t { font-size: 20px; }
   .sbar .sl { width: 64px; font-size: 11px; }
 }
+
+/* pair two blocks side by side so the page stops stacking */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s4); align-items: start; }
+@media (max-width: 900px) { .duo { grid-template-columns: 1fr; gap: var(--s3); } }
+
+/* evidence card stacked, for when it sits inside a half-width duo column */
+.evstack > img { width: 100%; height: auto; max-height: 240px; object-fit: cover;
+  border: 1px solid var(--rule); border-radius: 4px; margin-bottom: var(--s2); }
