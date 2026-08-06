@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>document.documentElement.classList.add('js')</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>/* Reset zoom on mobile navigation */!function(){var v=document.querySelector('meta[name=viewport]');if(v){v.content='width=device-width,initial-scale=1,maximum-scale=1';setTimeout(function(){v.content='width=device-width,initial-scale=1,maximum-scale=5'},100)}}()</script>
@@ -39,17 +40,17 @@
 </script>
 <style>
   .backlink { display:inline-flex; align-items:center; gap:7px; font-family:var(--mono);
-    font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-light);
+    font-size:var(--fs-xs); letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
     text-decoration:none; padding:var(--s5) 0 0; }
   .backlink:hover { color:var(--green); }
   .pagefoot { margin-top:var(--s4); }
   /* equation plates: white so the black glyphs read against warm paper */
   .eqrow { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:var(--s2); }
-  .eq { background:#fff; border:1px solid var(--rule); border-radius:4px; padding:18px 16px;
+  .eq { background:#fff; border:1px solid var(--rule); border-radius:var(--radius); padding:18px 16px;
     display:flex; flex-direction:column; justify-content:center; }
   .eq img { width:100%; height:auto; }
-  .eq figcaption { font-family:var(--mono); font-size:10px; letter-spacing:.09em; text-transform:uppercase;
-    color:var(--text-light); margin-top:14px; }
+  .eq figcaption { font-family:var(--mono); font-size:var(--fs-xs); letter-spacing:.09em; text-transform:uppercase;
+    color:var(--muted); margin-top:14px; }
 </style>
 </head>
 <body>
@@ -92,7 +93,7 @@
 
         <div class="panel" data-panel="fea">
           <ul class="nojs">
-            <li><b>1 &mdash; Crossbar.</b> Upsized 2.0&Prime; to 2.5&Prime;. The whole fix.</li>
+            <li><b>1 &mdash; Crossbar.</b> Upsized 2.0&Prime; to 2.5&Prime;, the main change.</li>
             <li><b>2 &mdash; Receiver tube.</b> Where the rack load enters.</li>
             <li><b>3 &mdash; Critical weld.</b> V1 sat at 0.95 FoS here.</li>
             <li><b>4 &mdash; Side plates.</b> Treated as rigid supports.</li>
@@ -121,7 +122,7 @@
 <div class="wrap-v2">
 
   <!-- ============ 02 V1 ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">02</span><span class="t">Built from a scrap hitch</span><span class="m">V1 &middot; $50, 4 days</span></div>
     <p class="lede">Market options ran about <b>$500</b> and cut departure angle. I took a free donor hitch off marketplace, cut it down, and rewelded it to fit. It survived the trip, but the rack visibly swung backwards on cross-ditches.</p>
     <div class="figrow">
@@ -134,14 +135,14 @@
         <figcaption><b>Mounted.</b> Kept the departure angle a bolt-on would have cost.</figcaption>
       </figure>
       <figure class="capfig">
-        <img src="images/v1-field-test.png" alt="V1 hitch loaded during the field test" loading="lazy">
+        <img src="images/v1-field-test.png" alt="Two mountain bikes loaded on the V1 hitch rack, being strapped down beside the vehicle on a wet logging road" loading="lazy">
         <figcaption><b>Field test.</b> Four days, and the movement that started this.</figcaption>
       </figure>
     </div>
   </section>
 
   <!-- ============ 03 DIAGNOSIS + MATH ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="duo">
       <div>
 <div class="rowhead"><span class="n">03</span><span class="t">Torsion, not bending</span><span class="m">Parametric MATLAB model</span></div>
@@ -185,7 +186,7 @@
 
 
   <!-- ============ 05 RESULT ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">04</span><span class="t">V2 result</span><span class="m">FEA &middot; 4G load case</span></div>
     <div class="evidence">
       <img src="images/fea-v2-deflection.png" alt="FEA deflection plot of the V2 receiver tip" loading="lazy">
@@ -207,7 +208,7 @@
   </section>
 
   <!-- ============ 06 WHERE THE MODEL BROKE ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">05</span><span class="t">Where the hand calc stopped working</span><span class="m">The useful part</span></div>
     <p class="lede">V1's hand calc matched FEA within <b>8.9%</b>, which validated the model. V2 came out <b>37%</b> off, and that gap taught me more than the result did.</p>
     <div class="drawers">
@@ -244,7 +245,7 @@
   </section>
 
   <!-- ============ 07 PROGRESSION ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">06</span><span class="t">V1 to V2 to V3</span><span class="m">Design progression</span></div>
     <figure class="capfig" style="max-width:620px">
       <img src="images/design-progression.gif" alt="Animated progression from V1 through V2 to the V3 concept" loading="lazy" style="aspect-ratio:auto;max-height:330px;object-fit:contain">
@@ -322,6 +323,27 @@ document.querySelectorAll('.annofig').forEach(function (fig) {
   function close() { overlay.classList.remove('active'); img.src = ''; }
   overlay.addEventListener('click', close);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+
+/* ===== Scroll reveal =====
+   Fails safe in three ways: the hidden state only applies under html.js so a
+   script-less client never meets invisible content, missing IntersectionObserver
+   shows everything immediately, and a timer shows everything anyway if the
+   observer exists but never fires. */
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  function showAll() {
+    Array.prototype.forEach.call(els, function (e) { e.classList.add('visible'); });
+  }
+  if (!('IntersectionObserver' in window)) { showAll(); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  Array.prototype.forEach.call(els, function (e) { io.observe(e); });
+  setTimeout(showAll, 2500);
 })();
 </script>
 </body>

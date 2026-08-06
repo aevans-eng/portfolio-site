@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>document.documentElement.classList.add('js')</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>/* Reset zoom on mobile navigation */!function(){var v=document.querySelector('meta[name=viewport]');if(v){v.content='width=device-width,initial-scale=1,maximum-scale=1';setTimeout(function(){v.content='width=device-width,initial-scale=1,maximum-scale=5'},100)}}()</script>
@@ -39,14 +40,14 @@
 </script>
 <style>
   .backlink { display:inline-flex; align-items:center; gap:7px; font-family:var(--mono);
-    font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-light);
+    font-size:var(--fs-xs); letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
     text-decoration:none; padding:var(--s5) 0 0; }
   .backlink:hover { color:var(--green); }
   .chips { display:flex; flex-wrap:wrap; gap:7px; margin:var(--s2) 0 0; }
   .chip { display:flex; align-items:baseline; gap:6px; padding:6px 11px; background:var(--green-bg);
-    border:1px solid var(--green-border); border-radius:3px; font-size:12px; }
-  .chip .cv { font-family:var(--mono); font-weight:700; color:var(--green); font-size:12.5px; }
-  .chip .cl { color:var(--text-light); font-size:10.5px; }
+    border:1px solid var(--green-border); border-radius:var(--radius); font-size:var(--fs-sm); }
+  .chip .cv { font-family:var(--mono); font-weight:700; color:var(--green); font-size:var(--fs-sm); }
+  .chip .cl { color:var(--muted); font-size:var(--fs-xs); }
   .pagefoot { margin-top:var(--s4); }
   .subgrid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,430px); gap:0 var(--s4); align-items:start; }
   @media (max-width:960px){ .subgrid { grid-template-columns:1fr; gap:var(--s3) 0; }
@@ -95,7 +96,7 @@
           <ul class="nojs">
             <li><b>1 &mdash; Output carrier.</b> Holds the planet pins, drives the output flange.</li>
             <li><b>2 &mdash; Planet gear.</b> Bore offset +0.15&nbsp;mm for a press fit.</li>
-            <li><b>3 &mdash; Ring gear.</b> Internal teeth printed into the housing.</li>
+            <li><b>3 &mdash; Ring gear.</b> Printed ring, internal teeth, mates to the housing.</li>
             <li><b>4 &mdash; Output bearing.</b> 6805-2RS, 25&nbsp;mm ID / 37&nbsp;mm OD.</li>
             <li><b>5 &mdash; Planet bearings.</b> 5 &times; 14 &times; 5&nbsp;mm on each pin.</li>
             <li><b>6 &mdash; Motor.</b> D6374 outrunner, off the shelf.</li>
@@ -111,7 +112,7 @@
           <button class="hs" style="--x:35%;--y:28%" data-i="1" aria-pressed="false"
             data-t="Planet gear" data-b="Three planets ride on the carrier pins. The bore runs <b>+0.15 mm</b> over nominal to land a finger-press fit after printing.">2</button>
           <button class="hs" style="--x:24.5%;--y:31%" data-i="2" aria-pressed="false"
-            data-t="Ring gear" data-b="Internal teeth printed straight into the housing. The ring-to-housing bore takes <b>+0.30 mm</b>, the largest offset in the build.">3</button>
+            data-t="Ring gear" data-b="Internal teeth on a printed ring that mates to the housing. That interface takes <b>+0.30 mm</b>, the largest offset in the build.">3</button>
           <button class="hs" style="--x:35%;--y:36%" data-i="3" aria-pressed="false"
             data-t="Output bearing" data-b="6805-2RS, <b>25 mm</b> ID and <b>37 mm</b> OD. The housing shaft carries a <b>+0.10 mm</b> offset.">4</button>
           <button class="hs" style="--x:57%;--y:25.5%" data-i="4" aria-pressed="false"
@@ -128,7 +129,7 @@
 <div class="wrap-v2">
 
   <!-- ============ 02 THE PARTS ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">02</span><span class="t">The parts</span><span class="m">Rev 00B, before assembly</span></div>
     <div class="subgrid">
       <div>
@@ -148,17 +149,17 @@
         <div class="stage">
           <img src="images/rev00b-parts-laid-out.jpg" alt="Printed gearbox parts laid out before assembly" width="1600" height="1200" loading="lazy">
           <button class="hs" style="--x:7%;--y:21%" data-i="0" aria-pressed="false"
-            data-t="Gearbox housing" data-b="Mates to the motor face and carries the output bearing. The bearing shaft runs <b>+0.10 mm</b> over nominal.">1</button>
+            data-t="Gearbox housing" data-b="Everything else indexes off this face. The output bearing is already seated in it, the dark ring near the middle.">1</button>
           <button class="hs" style="--x:33%;--y:58%" data-i="1" aria-pressed="false"
-            data-t="Housing lid" data-b="Closes the gear cavity and locates the second bearing. Bore offset <b>+0.10 mm</b>. Rev 00A had the lid dragging on the carrier; that was fixed in 00B.">2</button>
+            data-t="Housing lid" data-b="Closes the cavity and picks up the second bearing. On Rev 00A this face dragged on the carrier, which 00B relieved.">2</button>
           <button class="hs" style="--x:48%;--y:32%" data-i="2" aria-pressed="false"
-            data-t="Carrier" data-b="Sets the planet pin spacing and transmits torque to the output. Printed as one piece so the three axes stay parallel.">3</button>
+            data-t="Carrier" data-b="Three pins, printed as one piece. Doing it whole is what holds the planet axes parallel without shimming.">3</button>
           <button class="hs" style="--x:66%;--y:38%" data-i="3" aria-pressed="false"
-            data-t="Ring gear" data-b="Internal teeth printed directly into the housing ring. The ring-to-housing bore takes <b>+0.30 mm</b>, the largest offset in the build.">4</button>
+            data-t="Ring gear" data-b="Its own printed part, teeth on the inside face. The ring-to-housing interface carries <b>+0.30 mm</b>, the largest offset in the build.">4</button>
           <button class="hs" style="--x:71%;--y:49%" data-i="4" aria-pressed="false"
-            data-t="Sun gear" data-b="Driven straight off the motor shaft. Tooth profiles come from Caden Kraft's pygeartrain.">5</button>
+            data-t="Sun gear" data-b="Sits on the motor shaft. Tooth profiles come from Caden Kraft's pygeartrain.">5</button>
           <button class="hs" style="--x:72%;--y:62%" data-i="5" aria-pressed="false"
-            data-t="Planet gears" data-b="Three planets, each on a <b>5 &times; 14 &times; 5 mm</b> bearing. Bore offset <b>+0.15 mm</b>. Herringbone teeth keep the mesh axially located.">6</button>
+            data-t="Planet gears" data-b="Bearings seat directly in the printed bore, with no sleeve or insert. Three planets share the load between the sun and the ring.">6</button>
         </div>
         <div class="stage-hint"><span class="pip"></span>6 callouts &middot; click or press &larr; &rarr;</div>
       </figure>
@@ -166,30 +167,30 @@
   </section>
 
   <!-- ============ 03 VIDEO WALL ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">03</span><span class="t">What it does</span><span class="m">Rev 00B on the bench</span></div>
     <div class="videowall">
       <div class="vcard">
-        <div class="vshell"><video src="videos/rev00b-hand-backdriving.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-hand-backdriving.jpg" aria-label="Output shaft being turned by hand"></video><span class="vplay" aria-hidden="true"></span></div>
+        <div class="vshell"><video controls src="videos/rev00b-hand-backdriving.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-hand-backdriving.jpg" aria-label="Output shaft being turned by hand"></video><span class="vplay" aria-hidden="true"></span></div>
         <div class="vmeta"><div class="vclaim">Backdrives by hand</div><div class="vsub">A low ratio keeps reflected inertia down, so the output turns without fighting the motor.</div></div>
       </div>
       <div class="vcard">
-        <div class="vshell"><video src="videos/rev00b-spinning.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-spinning.jpg" aria-label="Gearbox running under power"></video><span class="vplay" aria-hidden="true"></span></div>
+        <div class="vshell"><video controls src="videos/rev00b-spinning.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-spinning.jpg" aria-label="Gearbox running under power"></video><span class="vplay" aria-hidden="true"></span></div>
         <div class="vmeta"><div class="vclaim">Runs under power</div><div class="vsub">Driven through the ODrive at the 5:1 output.</div></div>
       </div>
       <div class="vcard">
-        <div class="vshell"><video src="videos/rev00b-backlash-demo.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-backlash-demo.jpg" aria-label="Backlash demonstration with a dial indicator"></video><span class="vplay" aria-hidden="true"></span></div>
+        <div class="vshell"><video controls src="videos/rev00b-backlash-demo.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-backlash-demo.jpg" aria-label="Backlash demonstration with a dial indicator"></video><span class="vplay" aria-hidden="true"></span></div>
         <div class="vmeta"><div class="vclaim">0&deg; backlash</div><div class="vsub">Phases shorted for braking, output rocked against a dial indicator.</div></div>
       </div>
       <div class="vcard">
-        <div class="vshell"><video src="videos/rev00b-easy-assembly.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-easy-assembly.jpg" aria-label="Gearbox being assembled by hand"></video><span class="vplay" aria-hidden="true"></span></div>
+        <div class="vshell"><video controls src="videos/rev00b-easy-assembly.mp4" muted loop playsinline preload="none" poster="images/posters/rev00b-easy-assembly.jpg" aria-label="Gearbox being assembled by hand"></video><span class="vplay" aria-hidden="true"></span></div>
         <div class="vmeta"><div class="vclaim">Assembles by hand</div><div class="vsub">Every fit is a finger-press transition. No press, no heat-set inserts.</div></div>
       </div>
     </div>
   </section>
 
   <!-- ============ 04 BACKLASH ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">04</span><span class="t">Test results</span><span class="m">1 of 7 closed</span></div>
     <div class="evidence">
       <img src="images/rev00b-dial-gauge-backlash-setup.jpg" alt="Dial indicator mounted against the output shaft screw" loading="lazy">
@@ -231,13 +232,13 @@
   </section>
 
   <!-- ============ 06 REVISIONS ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">05</span><span class="t">Three revisions</span><span class="m">00A &rarr; 00B &rarr; 01</span></div>
-    <p class="lede">Rev 00A ran, but had fit and mesh problems. Rev 00B closed <b>5</b> of them and passed the backlash requirement. Rev 01 added the integrated motor housing and the dyno hardware.</p>
+    <p class="lede">Rev 00A ran, but the fits and the mesh both needed work. Closing <b>5</b> of those issues got Rev 00B through the backlash requirement, and Rev 01 then packaged the motor inside the housing and added the dyno hardware.</p>
     <div class="figrow">
       <figure class="capfig">
         <img src="images/rev00a-vs-00b-assembly.jpg" alt="Rev 00A and Rev 00B assemblies side by side" loading="lazy">
-        <figcaption><b>00A vs 00B.</b> Bearing fits corrected, lid drag eliminated.</figcaption>
+        <figcaption><b>00A vs 00B.</b> Corrected bearing fits, and the lid no longer drags.</figcaption>
       </figure>
       <figure class="capfig">
         <img src="images/rev01-vs-rev00b-gears.jpg" alt="Rev 01 and Rev 00B gear sets side by side" loading="lazy">
@@ -245,17 +246,17 @@
       </figure>
       <figure class="capfig">
         <img src="images/rev01-vs-rev00b-assembled.jpg" alt="Rev 01 and Rev 00B assembled gearboxes side by side" loading="lazy">
-        <figcaption><b>Assembled.</b> Rev 01 packages the motor inside the housing.</figcaption>
+        <figcaption><b>Assembled.</b> The motor now sits inside the Rev 01 housing.</figcaption>
       </figure>
     </div>
   </section>
 
   <!-- ============ 06 DESIGN DECISIONS ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="duo">
       <div>
 <div class="rowhead"><span class="n">06</span><span class="t">Why planetary</span><span class="m">6 concepts, 7 criteria</span></div>
-    <p class="lede">Planetary won on cost, transparency, and durability, which were what mattered for a printed prototype.</p>
+    <p class="lede">Planetary won on cost, transparency, and durability, which is what mattered for a printed prototype.</p>
     <div class="scorebars">
       <div class="sbar win"><span class="sl">Planetary</span><span class="strack"><span class="sfill" style="width:100%"><span class="sv">4.40</span></span></span></div>
       <div class="sbar"><span class="sl">Sequential</span><span class="strack"><span class="sfill" style="width:92%"><span class="sv">4.05</span></span></span></div>
@@ -348,7 +349,7 @@
 
 
   <!-- ============ 09 WHAT'S NEXT ============ -->
-  <section class="blk">
+  <section class="blk reveal">
     <div class="rowhead"><span class="n">08</span><span class="t">On the dyno next</span><span class="m">6 tests open</span></div>
     <div class="evidence">
       <img src="images/early-test-setup-2x4s.jpg" alt="Early dyno setup with the gearbox clamped to a wooden frame" loading="lazy">
@@ -439,6 +440,7 @@ document.querySelectorAll('.annofig').forEach(function (fig) {
   if (!vids.length) return;
 
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var autoplayOK = !reduce && ('IntersectionObserver' in window);
 
   function start(v) {
     if (v.readyState === 0) { v.preload = 'auto'; v.load(); }
@@ -448,7 +450,12 @@ document.querySelectorAll('.annofig').forEach(function (fig) {
 
   vids.forEach(function (v) {
     var shell = v.closest('.vshell') || v.parentNode;
-    v.addEventListener('playing', function () { shell.classList.add('playing'); });
+    v.addEventListener('playing', function () {
+      shell.classList.add('playing');
+      /* markup ships with controls so the clip is playable without JS and by
+         keyboard; once autoplay is actually running they are redundant */
+      if (autoplayOK) v.removeAttribute('controls');
+    });
     v.addEventListener('pause', function () { shell.classList.remove('playing'); });
     shell.addEventListener('click', function () {
       if (v.paused) { start(v); } else { v.pause(); }
@@ -483,6 +490,27 @@ document.querySelectorAll('.annofig').forEach(function (fig) {
   function close() { overlay.classList.remove('active'); img.src = ''; }
   overlay.addEventListener('click', close);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+
+/* ===== Scroll reveal =====
+   Fails safe in three ways: the hidden state only applies under html.js so a
+   script-less client never meets invisible content, missing IntersectionObserver
+   shows everything immediately, and a timer shows everything anyway if the
+   observer exists but never fires. */
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  function showAll() {
+    Array.prototype.forEach.call(els, function (e) { e.classList.add('visible'); });
+  }
+  if (!('IntersectionObserver' in window)) { showAll(); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  Array.prototype.forEach.call(els, function (e) { io.observe(e); });
+  setTimeout(showAll, 2500);
 })();
 </script>
 </body>
