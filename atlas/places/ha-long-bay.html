@@ -59,6 +59,14 @@
   .sec.skip{ border-left:3px solid var(--rust); padding:2px 0 2px 20px; }
   .sec.skip h2{ color:var(--rust); }
   .sec.odd h2{ font-style:italic; }
+  /* The honest note is a caveat block, not body prose — it should read as the page arguing
+     with itself. Heavier than .skip (a one-liner) and quieter than .locals (a pull-quote). */
+  .sec.honest{ background:color-mix(in srgb,var(--rust) 7%, var(--card));
+    border-left:3px solid var(--rust); border-radius:0 6px 6px 0;
+    padding:4px 24px 18px; margin-top:36px; }
+  .sec.honest h2{ color:var(--rust); }
+  .sec.honest p{ font-size:.98rem; }
+  .sec.honest strong{ color:var(--rust); }
   .sec.locals{ background:color-mix(in srgb,var(--kc) 9%, var(--card)); border:1px solid var(--line);
     border-radius:6px; padding:6px 26px 20px; margin-top:40px; position:relative; }
   .sec.locals::before{ content:"\201C"; position:absolute; top:-18px; left:16px; font-family:"Fraunces",serif;
@@ -125,6 +133,7 @@
     <section class="sec lead"><h2>The hook</h2><p>Thousands of forested limestone towers rising straight out of a jade-green sea, an emerald maze of islets and caves that is one of Asia's iconic seascapes, and one of its most crowded.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Ha Long Bay is a drowned karst landscape: an armada of steep limestone islands and sea stacks, riddled with caves and hidden lagoons, standing in shallow green water off Vietnam's north coast. Drifting among them by boat, kayaking into a hidden lagoon through a low cave mouth, or waking up anchored among the towers is genuinely magical. The honest problem is popularity, because the main bay heaves with cruise boats and the water near the busiest routes can be less than pristine. The fix is to go where the crowds thin: the adjoining Lan Ha Bay and Bai Tu Long Bay have the same scenery with a fraction of the traffic. Choose the boat and the route carefully and it lives up to its fame; do it on the cheapest packed day-tour and you may wonder what the fuss is about.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Do an overnight cruise rather than a rushed day trip, and pick an operator that runs into the quieter Lan Ha or Bai Tu Long bays. Kayak among the towers and into a lagoon at dawn before the day boats arrive. Autumn brings the clearest air.</p></section>
+<section class="sec honest"><h2>The honest note</h2><p>The recurring advice is about <em>how</em> to see it rather than whether: "I'd avoid taking an overnight cruise in Ha Long Bay," one traveller wrote after recommending the rest of the country warmly. The bay is genuinely spectacular and genuinely over-sold — hundreds of boats work the same routes, quality varies enormously at the same price, and the water shows it. Travellers who enjoy it most tend to go via Lan Ha or Bai Tu Long instead, where the same karst scenery comes with a fraction of the traffic.</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_Bay" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_Bay</a>  ·  <a href="https://en.wikipedia.org/wiki/Lan_Ha_Bay" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Lan_Ha_Bay</a>  ·  <a href="https://reddit.com/r/travel/comments/2kknxb/_/clm9vtv/" target="_blank" rel="noopener">https://reddit.com/r/travel/comments/2kknxb/_/clm9vtv/</a></div>
   </main>
 <script>

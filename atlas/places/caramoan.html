@@ -59,6 +59,14 @@
   .sec.skip{ border-left:3px solid var(--rust); padding:2px 0 2px 20px; }
   .sec.skip h2{ color:var(--rust); }
   .sec.odd h2{ font-style:italic; }
+  /* The honest note is a caveat block, not body prose — it should read as the page arguing
+     with itself. Heavier than .skip (a one-liner) and quieter than .locals (a pull-quote). */
+  .sec.honest{ background:color-mix(in srgb,var(--rust) 7%, var(--card));
+    border-left:3px solid var(--rust); border-radius:0 6px 6px 0;
+    padding:4px 24px 18px; margin-top:36px; }
+  .sec.honest h2{ color:var(--rust); }
+  .sec.honest p{ font-size:.98rem; }
+  .sec.honest strong{ color:var(--rust); }
   .sec.locals{ background:color-mix(in srgb,var(--kc) 9%, var(--card)); border:1px solid var(--line);
     border-radius:6px; padding:6px 26px 20px; margin-top:40px; position:relative; }
   .sec.locals::before{ content:"\201C"; position:absolute; top:-18px; left:16px; font-family:"Fraunces",serif;
@@ -127,6 +135,9 @@
 <p>Several international editions of <em>Survivor</em> filmed here across more than a decade, which is why the infrastructure exists at all in a place this far from anywhere. It has not made it busy.</p>
 <p>The setting is Bicol — Mayon volcano country, the region of <em>bicol express</em> and chilli-and-coconut cooking — so the trip pairs naturally with Naga and the volcano.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Fly to Naga, drive to Sabang, take the boat. The land route around is long. Base in Caramoan town and take a standard island-hopping day, then a second at a slower pace. Three days is right. Go March to May when the sea is calm.</p></section>
+<section class="sec honest"><h2>The honest note</h2><p><strong>Box jellyfish are a real and specific danger here, and this belongs before anything else.</strong> In a thread asking Filipinos for the downsides of famous local spots, the entry for this one is unambiguous: "Caramoan — <strong>check for boxed jellyfish season. It's dangerous and they can cancel tours when there are reports of sightings. Far from the hospital if ever you come across one.</strong>" That last clause is the important one. Ask locally before swimming, and take a cancelled tour as good news rather than bad.</p>
+<p><strong>Getting there is the filter.</strong> Plane, road, then boat — and the seas that make the boat leg unpleasant are the same ones that close it.</p>
+<p><strong>It is remote in the medical sense</strong>, not just the scenic one.</p></section>
 <section class="sec locals"><h2>From the locals</h2><p>Asked for the most beautiful place they had ever been in the Philippines, one Filipino answered with a list that puts this first and then explains the pattern behind it: "<strong>Caramoan</strong>, camiguin, siquijor, batanes, el nido, siargao. <strong>Kapag mas mahirap puntahan, mas maganda</strong>" — the harder it is to get to, the more beautiful it is.</p>
 <p>The sharpest endorsement is comparative, and the comparison is with the country's most famous beach: "<strong>Taena after ko makarating dyan sa Caramoan, di na ako naimpress nung first time ko sa Boracay. Iba ang ganda ng lugar na yan</strong>" — after I made it to Caramoan, my first time in Boracay didn't impress me. That place's beauty is something else.</p>
 <p>And on why so few Filipinos go, from a thread asking what is <em>truly</em> underrated at the moment: "<strong>Caramoan, popular sa foreigners pero parang hindi masyado sa atin</strong> … Ang ganda ganda, hindi crowded" — popular with foreigners but seemingly not with us; very beautiful, not crowded.</p></section>

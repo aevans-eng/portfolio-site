@@ -59,6 +59,14 @@
   .sec.skip{ border-left:3px solid var(--rust); padding:2px 0 2px 20px; }
   .sec.skip h2{ color:var(--rust); }
   .sec.odd h2{ font-style:italic; }
+  /* The honest note is a caveat block, not body prose — it should read as the page arguing
+     with itself. Heavier than .skip (a one-liner) and quieter than .locals (a pull-quote). */
+  .sec.honest{ background:color-mix(in srgb,var(--rust) 7%, var(--card));
+    border-left:3px solid var(--rust); border-radius:0 6px 6px 0;
+    padding:4px 24px 18px; margin-top:36px; }
+  .sec.honest h2{ color:var(--rust); }
+  .sec.honest p{ font-size:.98rem; }
+  .sec.honest strong{ color:var(--rust); }
   .sec.locals{ background:color-mix(in srgb,var(--kc) 9%, var(--card)); border:1px solid var(--line);
     border-radius:6px; padding:6px 26px 20px; margin-top:40px; position:relative; }
   .sec.locals::before{ content:"\201C"; position:absolute; top:-18px; left:16px; font-family:"Fraunces",serif;
@@ -125,6 +133,7 @@
     <section class="sec lead"><h2>The hook</h2><p>Widely rated one of the world's best single-day hikes, a trek across a raw volcanic wonderland of steaming craters, jewel-coloured lakes, and lava fields, past the perfect cone that played Mount Doom in "The Lord of the Rings."</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>In the middle of the North Island rises a cluster of active volcanoes, and the land around them, Tongariro National Park, is a place of such natural and cultural significance that it was one of the first sites in the world granted dual UNESCO World Heritage status for both its landscape and its sacredness to Māori, who hold the mountains as ancestors. The park's signature is the Tongariro Alpine Crossing, a strenuous full-day walk of around twenty kilometres that is regularly ranked among the greatest day hikes on the planet: it climbs through an otherworldly volcanic terrain of old lava flows, steaming vents, and red craters, past the vividly-coloured Emerald Lakes and the blue Blue Lake, all beneath the near-perfect cone of Mount Ngauruhoe, which starred as Mount Doom in the films shot across New Zealand. The scenery is stark, elemental, and unforgettable. It is demanding, exposed, and subject to fast-changing, sometimes dangerous alpine weather (and occasional volcanic activity), so preparation and good conditions matter. In winter, the same peaks become a ski field. For a walk into a raw, living volcanic landscape, Tongariro is world-class.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Do the Tongariro Alpine Crossing on a clear day in the summer walking season, well-prepared with layers, water, and boots (it is long, exposed, and the weather turns fast; check forecasts and any volcanic alerts). Shuttles run to the trailheads. In winter it becomes an alpine and ski area. It anchors the central North Island between Rotorua and Wellington.</p></section>
+<section class="sec honest"><h2>The honest note</h2><p>The Alpine Crossing is season-dependent in a way visitors underestimate: "going in the winter meant we missed out on a few activities, like the Tongariro Crossing," one traveller reported — and the Milford Track "would have been shut had we wanted to walk it when we were nearby." Between roughly May and October the route becomes an alpine mountaineering proposition needing ice axe and crampons, not a day walk. Check the forecast the morning of, and be willing to abandon it.</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Tongariro_Alpine_Crossing" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Tongariro_Alpine_Crossing</a>  ·  <a href="https://en.wikipedia.org/wiki/Tongariro_National_Park" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Tongariro_National_Park</a>  ·  <a href="https://reddit.com/r/solotravel/comments/12ilcxu/" target="_blank" rel="noopener">https://reddit.com/r/solotravel/comments/12ilcxu/</a></div>
   </main>
 <script>

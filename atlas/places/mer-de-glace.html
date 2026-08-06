@@ -59,6 +59,14 @@
   .sec.skip{ border-left:3px solid var(--rust); padding:2px 0 2px 20px; }
   .sec.skip h2{ color:var(--rust); }
   .sec.odd h2{ font-style:italic; }
+  /* The honest note is a caveat block, not body prose — it should read as the page arguing
+     with itself. Heavier than .skip (a one-liner) and quieter than .locals (a pull-quote). */
+  .sec.honest{ background:color-mix(in srgb,var(--rust) 7%, var(--card));
+    border-left:3px solid var(--rust); border-radius:0 6px 6px 0;
+    padding:4px 24px 18px; margin-top:36px; }
+  .sec.honest h2{ color:var(--rust); }
+  .sec.honest p{ font-size:.98rem; }
+  .sec.honest strong{ color:var(--rust); }
   .sec.locals{ background:color-mix(in srgb,var(--kc) 9%, var(--card)); border:1px solid var(--line);
     border-radius:6px; padding:6px 26px 20px; margin-top:40px; position:relative; }
   .sec.locals::before{ content:"\201C"; position:absolute; top:-18px; left:16px; font-family:"Fraunces",serif;
@@ -125,6 +133,7 @@
     <section class="sec lead"><h2>The hook</h2><p>France's largest glacier, reached by a little red rack railway, with the ice cave re-carved every summer because the glacier keeps dropping out from under it.</p></section>
 <section class="sec "><h2><span class="idx">01</span>Why it's worth it</h2><p>Chamonix sits directly under Mont Blanc, the highest peak in the Alps, and it is the birthplace of alpinism, so the whole valley is geared to getting ordinary people up among serious mountains. Two rides matter. The Montenvers rack railway climbs to the Mer de Glace, a long river of ice you can walk down onto through a tunnel cut fresh each year; painted markers on the rock show where the surface used to be, and the drop over recent decades is the clearest picture of a shrinking glacier you will see without a rope. The other is the Aiguille du Midi cable car, which hauls you to 3,842 metres and a glass box hung over a two-kilometre drop, with Mont Blanc close enough to feel the scale. Both are busy and both are worth it. The glacier retreat is not a caption here, it is the view.</p></section>
 <section class="sec "><h2><span class="idx">02</span>How to experience it</h2><p>Go up early; the cable car queues build fast and clouds close the summit by afternoon. On the Mer de Glace, take the stairs (or the small gondola) down to the ice and read the year-markers on the way. If you have the legs, the Grand Balcon Nord trail links the two and gives you the massif without the lift crowds.</p></section>
+<section class="sec honest"><h2>The honest note</h2><p>This is the pin where France's changing landscape is most literal. The Mer de Glace has retreated so far that the staircase from the Montenvers station down to the ice has been extended repeatedly — each set of steps marked with the year the glacier reached it, so you descend past dated signs reading like a countdown. The train and the view remain spectacular; the glacier itself is visibly smaller than the photographs that sold it.</p></section>
     <div class="sources">Sources · <a href="https://en.wikipedia.org/wiki/Mer_de_Glace" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Mer_de_Glace</a>  ·  <a href="https://en.wikipedia.org/wiki/Aiguille_du_Midi" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Aiguille_du_Midi</a>  ·  <a href="https://reddit.com/r/travel/comments/2jw66z/" target="_blank" rel="noopener">https://reddit.com/r/travel/comments/2jw66z/</a></div>
   </main>
 <script>
