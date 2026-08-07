@@ -6,17 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>/* Reset zoom on mobile navigation */!function(){var v=document.querySelector('meta[name=viewport]');if(v){v.content='width=device-width,initial-scale=1,maximum-scale=1';setTimeout(function(){v.content='width=device-width,initial-scale=1,maximum-scale=5'},100)}}()</script>
 <title>Torsion-Optimized Hitch — Aaron Evans | Engineering Analysis Project</title>
-<meta name="description" content="I built a trailer hitch from scrap, then used torsion analysis and FEA to figure out why it flexed and how to fix it. 31% deflection reduction with a crossbar upsize and gusset. By Aaron Evans.">
+<meta name="description" content="I built a trailer hitch from scrap, then used torsion analysis and FEA to figure out why it flexed and how to fix it. 37% deflection reduction with a crossbar upsize and gusset. By Aaron Evans.">
 <link rel="canonical" href="https://aaronevans.ca/hitch/">
 <meta property="og:title" content="Torsion-Optimized Hitch — Aaron Evans">
-<meta property="og:description" content="Built a hitch from scrap, analyzed why it flexed, and redesigned it. Torsion modeling in MATLAB, FEA validation, 31% deflection reduction.">
+<meta property="og:description" content="Built a hitch from scrap, analyzed why it flexed, and redesigned it. Torsion modeling in MATLAB, FEA validation, 37% deflection reduction.">
 <meta property="og:image" content="https://aaronevans.ca/hitch/images/cover.png">
 <meta property="og:url" content="https://aaronevans.ca/hitch/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Aaron Evans">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Torsion-Optimized Hitch — Aaron Evans">
-<meta name="twitter:description" content="Built a hitch from scrap, analyzed why it flexed, and redesigned it. Torsion modeling in MATLAB, FEA validation, 31% deflection reduction.">
+<meta name="twitter:description" content="Built a hitch from scrap, analyzed why it flexed, and redesigned it. Torsion modeling in MATLAB, FEA validation, 37% deflection reduction.">
 <meta name="twitter:image" content="https://aaronevans.ca/hitch/images/cover.png">
 <link rel="icon" type="image/png" href="../assets/favicon-32.png">
 <link rel="stylesheet" href="../assets/styles.css">
@@ -34,7 +34,7 @@
       "sameAs": "https://www.uvic.ca"
     }
   },
-  "description": "Custom trailer hitch built from scrap, then analyzed with torsion modeling and FEA. Crossbar upsize and gusset reinforcement reduced deflection by 31%.",
+  "description": "Custom trailer hitch built from scrap, then analyzed with torsion modeling and FEA. Crossbar upsize and gusset reinforcement reduced deflection by 37%.",
   "url": "https://aaronevans.ca/hitch/"
 }
 </script>
@@ -83,7 +83,7 @@
         <p class="dek">I built a hitch from scrap for a mountain biking trip. It held, but the rack swung backwards over big bumps. So I modelled why, then fixed it with a tube upsize and a gusset instead of buying a <b>$500</b> unit.</p>
 
         <div class="metrics">
-          <div class="metric"><div class="mv ok">31<span class="u">%</span></div><div class="ml">Less deflection</div></div>
+          <div class="metric"><div class="mv ok">37<span class="u">%</span></div><div class="ml">Less deflection</div></div>
           <div class="metric"><div class="mv">2.7</div><div class="ml">FoS at 4G</div></div>
           <div class="metric"><div class="mv">94<span class="u">%</span></div><div class="ml">Was torsion</div></div>
           <div class="metric"><div class="mv">8.9<span class="u">%</span></div><div class="ml">Calc vs FEA</div></div>
@@ -103,14 +103,14 @@
 
       <figure class="annofig" data-fig="fea">
         <div class="stage">
-          <img src="images/fea-v2-stress-1.png" alt="FEA plot of the V2 hitch assembly under 4G loading" width="1296" height="885">
-          <button class="hs" style="--x:40%;--y:45%" data-i="0" aria-pressed="false"
+          <img src="images/fea-v2-stress-2.png" alt="FEA deflection plot of the V2 hitch assembly, vertical displacement in inches" width="1285" height="899">
+          <button class="hs" style="--x:70%;--y:73%" data-i="0" aria-pressed="false"
             data-t="Crossbar" data-b="The soft spring in the chain. Upsizing from <b>2.0&Prime;</b> to <b>2.5&Prime;</b> square tube bought a <b>52.6%</b> theoretical stiffness gain, because midline area is squared in Bredt's formula while wall thickness is only linear.">1</button>
-          <button class="hs" style="--x:48%;--y:70%" data-i="1" aria-pressed="false"
+          <button class="hs" style="--x:47%;--y:71%" data-i="1" aria-pressed="false"
             data-t="Receiver tube" data-b="Where the rack load enters. Modelled as a cantilever beam. Bending here turned out to be almost irrelevant, about <b>6%</b> of tip deflection.">2</button>
-          <button class="hs" style="--x:56%;--y:62%" data-i="2" aria-pressed="false"
-            data-t="Critical weld" data-b="The receiver-to-crossbar joint. Norton's weld-as-a-line method put V1 at <b>0.95 FoS</b> under 4G, so upsizing the crossbar alone was not enough.">3</button>
-          <button class="hs" style="--x:23%;--y:23%" data-i="3" aria-pressed="false"
+          <button class="hs" style="--x:52%;--y:62%" data-i="2" aria-pressed="false"
+            data-t="Gusset and critical weld" data-b="The receiver-to-crossbar joint. Norton's weld-as-a-line method put V1 at <b>0.95 FoS</b> under 4G, so upsizing the crossbar alone was not enough. The angle iron is the V2 fix.">3</button>
+          <button class="hs" style="--x:28%;--y:12%" data-i="3" aria-pressed="false"
             data-t="Side plates" data-b="Treated as rigid supports. They sit vertically with a high area moment relative to the load, and there are two sharing it, so deflection concentrates in the crossbar instead.">4</button>
         </div>
         <div class="stage-hint"><span class="pip"></span>4 callouts &middot; click or press &larr; &rarr;</div>
@@ -202,7 +202,7 @@
         <tr><td>FEA tip deflection</td><td class="num">0.0190&Prime;</td><td class="num">0.0119&Prime;</td></tr>
         <tr><td>MATLAB prediction</td><td class="num">0.0175&Prime;</td><td class="num">0.0087&Prime;</td></tr>
         <tr><td>MATLAB vs FEA variance</td><td class="num">8.9%</td><td class="num">37%</td></tr>
-        <tr class="win"><td><b>Deflection reduction</b></td><td class="num">&mdash;</td><td class="num">31%</td></tr>
+        <tr class="win"><td><b>Deflection reduction</b></td><td class="num">&mdash;</td><td class="num">37%</td></tr>
       </tbody>
     </table></div>
   </section>
